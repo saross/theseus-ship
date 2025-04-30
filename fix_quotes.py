@@ -2,10 +2,13 @@
 """
 A script to fix both opening and closing quotes in CSV description fields.
 1. Adds a quote after the first comma if missing (opening quote)
-2. Adds a quote before the GitHub URL or empty field pattern if missing (closing quote)
+2. Adds a quote before the next non-description field ONLY if the field isn't already
+   properly quoted.
 
-This version specifically handles the case where closing quotes are missing
-and we can't rely on quote tracking to find field boundaries.
+This version fixes issues with:
+- Multiple empty columns
+- Descriptions with commas
+- Already properly quoted fields
 """
 
 import sys
@@ -14,8 +17,8 @@ import re
 
 def fix_quotes_in_csv(input_file, output_file, encoding='utf-8'):
     """
-    Fix both opening and closing quotes in CSV description fields.
-    Uses pattern matching instead of quote state tracking to handle missing quotes.
+    Fix missing quotes in CSV description fields.
+    Properly checks if fields are already correctly quoted.
     
     Args:
         input_file (str): Path to the input CSV file
@@ -78,52 +81,62 @@ def fix_quotes_in_csv(input_file, output_file, encoding='utf-8'):
             opening_quotes_fixed += 1
             fixed_this_row = True
         
-        # Step 2: Fix missing closing quote 
-        # Instead of counting commas while tracking quotes (which doesn't work with missing quotes),
-        # we'll look for specific patterns that indicate where the GitHub column starts
+        # Step 2: ONLY fix missing closing quotes if needed
+        # First determine if the description field is already properly quoted
         
-        # Patterns to look for: 
-        # 1. ,http - Beginning of a GitHub URL
-        # 2. ,, - Empty GitHub field
+        # Check if there's an opening quote (either originally or after our fix)
+        has_opening_quote = (fixed_line[first_comma_idx + 1] == '"')
         
-        # Use regex to find the first occurrence of these patterns AFTER the first comma
-        # but make sure we don't match patterns that already have a quote before them
-        
-        # If we've added an opening quote, we need to search from that position
-        search_start = first_comma_idx + 2 if fixed_line[first_comma_idx + 1] == '"' else first_comma_idx + 1
-        
-        # Look for GitHub URL pattern
-        github_match = re.search(r',\s*https?://', fixed_line[search_start:])
-        empty_field_match = re.search(r',\s*,', fixed_line[search_start:])
-        
-        # Determine where to look for missing closing quote
-        if github_match:
-            # Found a GitHub URL
-            pattern_pos = search_start + github_match.start()
+        if has_opening_quote:
+            # Look for a matching closing quote by counting quotes after the opening quote
+            # If there's an odd number of quotes after the opening, we need to add one
             
-            # Check if there's already a quote before this pattern
-            char_before_pattern = fixed_line[pattern_pos - 1] if pattern_pos > 0 else ''
+            # Extract the rest of the line after the opening quote
+            rest_of_line = fixed_line[first_comma_idx + 2:]
             
-            if char_before_pattern != '"' and fixed_line[first_comma_idx + 1] == '"':
-                # We have an opening quote but no closing quote before the GitHub URL
-                # Add the closing quote
-                fixed_line = fixed_line[:pattern_pos] + '"' + fixed_line[pattern_pos:]
-                closing_quotes_fixed += 1
-                fixed_this_row = True
+            # First check if there are any quotes at all in the rest of the line
+            if '"' in rest_of_line:
+                # There's at least one quote, but we need to determine if it's the matching one
+                # Find the position of what *might* be the matching quote
+                quote_pos = rest_of_line.find('"')
                 
-        elif empty_field_match:
-            # Found an empty field (,,)
-            pattern_pos = search_start + empty_field_match.start()
+                # What comes after this quote?
+                after_quote = rest_of_line[quote_pos + 1:].lstrip()
+                
+                # If the character after the quote is a comma or end of line, this is likely a closing quote
+                if after_quote and after_quote[0] == ',':
+                    # This field is likely already properly quoted, skip the closing quote fix
+                    fixed_lines.append(fixed_line)
+                    continue
             
-            # Check if there's already a quote before this pattern
-            char_before_pattern = fixed_line[pattern_pos - 1] if pattern_pos > 0 else ''
+            # If we get here, we need to add a closing quote
             
-            if char_before_pattern != '"' and fixed_line[first_comma_idx + 1] == '"':
-                # We have an opening quote but no closing quote before the empty field
-                # Add the closing quote
-                fixed_line = fixed_line[:pattern_pos] + '"' + fixed_line[pattern_pos:]
-                closing_quotes_fixed += 1
-                fixed_this_row = True
+            # Search for patterns that indicate where the description field ends
+            search_start = first_comma_idx + 2  # Start after the opening quote
+            
+            # Look for GitHub URL pattern or consecutive commas
+            github_match = re.search(r',\s*https?://', fixed_line[search_start:])
+            empty_match = re.search(r',\s*,', fixed_line[search_start:])
+            
+            pattern_pos = -1
+            
+            if github_match:
+                # Found a GitHub URL
+                pattern_pos = search_start + github_match.start()
+            elif empty_match:
+                # Found empty fields (consecutive commas)
+                pattern_pos = search_start + empty_match.start()
+            
+            # If we found a pattern, add a closing quote if needed
+            if pattern_pos > 0:
+                # Check if there's already a quote before this pattern
+                char_before_pattern = fixed_line[pattern_pos - 1] if pattern_pos > 0 else ''
+                
+                if char_before_pattern != '"':
+                    # Add the closing quote before the pattern
+                    fixed_line = fixed_line[:pattern_pos] + '"' + fixed_line[pattern_pos:]
+                    closing_quotes_fixed += 1
+                    fixed_this_row = True
         
         # Show examples of fixes for the first few rows
         if fixed_this_row and i <= 5:
@@ -136,6 +149,12 @@ def fix_quotes_in_csv(input_file, output_file, encoding='utf-8'):
     # Join the lines back with original line endings
     fixed_content = line_ending.join(fixed_lines)
     
+    # Final sanity check - scan for instances of triple quotes which shouldn't happen
+    if '"""' in fixed_content:
+        print("WARNING: Found triple quotes in output, which may indicate a bug in the script.")
+        triple_quote_lines = [j+1 for j, line in enumerate(fixed_content.split('\n')) if '"""' in line]
+        print(f"Triple quotes found on lines: {triple_quote_lines[:10]}...")
+    
     print(f"\nWriting fixed file: {output_file}")
     with open(output_file, 'w', encoding=encoding) as f:
         f.write(fixed_content)
@@ -145,71 +164,125 @@ def fix_quotes_in_csv(input_file, output_file, encoding='utf-8'):
     
     return (opening_quotes_fixed, closing_quotes_fixed)
 
-def check_file_differences(original_file, fixed_file, encoding='utf-8'):
+def check_specific_examples(original_file, fixed_file, examples, encoding='utf-8'):
     """
-    Compare the first few differences between original and fixed files.
+    Check specific examples to verify the fixes.
     
     Args:
         original_file (str): Path to the original CSV file
         fixed_file (str): Path to the fixed CSV file
+        examples (list): List of strings to search for in rows
         encoding (str): File encoding to use
     """
-    print(f"\nVerifying fixes between {original_file} and {fixed_file}...")
+    print(f"\nChecking specific examples in {fixed_file}...")
     
     try:
         with open(original_file, 'r', encoding=encoding) as f:
-            original_lines = f.readlines()
+            original_content = f.read()
         with open(fixed_file, 'r', encoding=encoding) as f:
-            fixed_lines = f.readlines()
+            fixed_content = f.read()
     except UnicodeDecodeError:
         with open(original_file, 'r', encoding='latin-1') as f:
-            original_lines = f.readlines()
+            original_content = f.read()
         with open(fixed_file, 'r', encoding='latin-1') as f:
+            fixed_content = f.read()
+    
+    # Split into lines
+    original_lines = original_content.split('\n')
+    fixed_lines = fixed_content.split('\n')
+    
+    for example in examples:
+        # Find lines containing the example in both files
+        original_match = None
+        fixed_match = None
+        
+        for line in original_lines:
+            if example in line:
+                original_match = line
+                break
+        
+        for line in fixed_lines:
+            if example in line:
+                fixed_match = line
+                break
+        
+        if original_match and fixed_match:
+            print(f"\nExample containing '{example}':")
+            print(f"  Original: {original_match[:100]}...")
+            print(f"  Fixed:    {fixed_match[:100]}...")
+            
+            # Count the quotes in the description field
+            first_comma_orig = original_match.find(',')
+            first_comma_fixed = fixed_match.find(',')
+            
+            if first_comma_orig > 0 and first_comma_fixed > 0:
+                # Count quotes after the first comma
+                rest_orig = original_match[first_comma_orig+1:]
+                rest_fixed = fixed_match[first_comma_fixed+1:]
+                
+                quotes_orig = rest_orig.count('"')
+                quotes_fixed = rest_fixed.count('"')
+                
+                print(f"  Quotes in description (original): {quotes_orig}")
+                print(f"  Quotes in description (fixed): {quotes_fixed}")
+                
+                if quotes_orig != quotes_fixed:
+                    print(f"  ✓ Quote structure was modified")
+                else:
+                    print(f"  ℹ Quote structure was unchanged")
+
+def check_problematic_examples(input_file, output_file, problematic_examples, encoding='utf-8'):
+    """
+    Check specifically problematic examples to verify they weren't incorrectly modified.
+    
+    Args:
+        input_file (str): Path to the input CSV file
+        output_file (str): Path to the fixed CSV file
+        problematic_examples (list): List of strings to search for in rows
+        encoding (str): File encoding to use
+    """
+    print(f"\nChecking problematic examples...")
+    
+    try:
+        with open(input_file, 'r', encoding=encoding) as f:
+            original_lines = f.readlines()
+        with open(output_file, 'r', encoding=encoding) as f:
+            fixed_lines = f.readlines()
+    except UnicodeDecodeError:
+        with open(input_file, 'r', encoding='latin-1') as f:
+            original_lines = f.readlines()
+        with open(output_file, 'r', encoding='latin-1') as f:
             fixed_lines = f.readlines()
     
-    # Count lines with differences
-    differences = 0
-    shown_diffs = 0
-    
-    for i in range(min(len(original_lines), len(fixed_lines))):
-        if original_lines[i] != fixed_lines[i]:
-            differences += 1
-            
-            # Show details for first few differences
-            if shown_diffs < 5:
-                orig = original_lines[i].strip()
-                fixed = fixed_lines[i].strip()
-                
-                # First find the first comma
-                first_comma_idx = orig.find(',')
-                
-                if first_comma_idx > 0:
-                    # Show truncated version focusing on key differences
-                    print(f"\nLine {i+1} modified:")
+    for example in problematic_examples:
+        found = False
+        for i in range(min(len(original_lines), len(fixed_lines))):
+            if example in original_lines[i]:
+                found = True
+                if original_lines[i] != fixed_lines[i]:
+                    print(f"\nProblematic example '{example}' was modified:")
+                    print(f"  Original: {original_lines[i][:100]}...")
+                    print(f"  Fixed:    {fixed_lines[i][:100]}...")
                     
-                    # Check for opening quote fix
-                    if first_comma_idx + 1 < len(orig) and first_comma_idx + 1 < len(fixed):
-                        if orig[first_comma_idx + 1] != fixed[first_comma_idx + 1]:
-                            print(f"  Opening quote area:")
-                            print(f"    Original: {orig[first_comma_idx:first_comma_idx+20]}...")
-                            print(f"    Fixed:    {fixed[first_comma_idx:first_comma_idx+20]}...")
+                    # Find quotes and highlight the differences
+                    orig = original_lines[i].strip()
+                    fixed = fixed_lines[i].strip()
                     
-                    # Check for closing quote fix by looking for URL or empty field pattern
-                    github_idx = orig.find(',http', first_comma_idx)
-                    empty_idx = orig.find(',,', first_comma_idx)
+                    # Find positions of all quotes in both strings
+                    orig_quotes = [j for j, char in enumerate(orig) if char == '"']
+                    fixed_quotes = [j for j, char in enumerate(fixed) if char == '"']
                     
-                    if github_idx > 0:
-                        print(f"  Closing quote area (GitHub URL):")
-                        print(f"    Original: ...{orig[max(0, github_idx-5):github_idx+15]}...")
-                        print(f"    Fixed:    ...{fixed[max(0, github_idx-5):github_idx+15]}...")
-                    elif empty_idx > 0:
-                        print(f"  Closing quote area (empty field):")
-                        print(f"    Original: ...{orig[max(0, empty_idx-5):empty_idx+5]}...")
-                        print(f"    Fixed:    ...{fixed[max(0, empty_idx-5):empty_idx+5]}...")
-                
-                shown_diffs += 1
-    
-    print(f"\nTotal lines modified: {differences}")
+                    print(f"  Original quotes at positions: {orig_quotes}")
+                    print(f"  Fixed quotes at positions: {fixed_quotes}")
+                    
+                    if len(fixed_quotes) > len(orig_quotes):
+                        print("  ⚠ Added quotes where they might not be needed!")
+                else:
+                    print(f"\nProblematic example '{example}' was correctly left unchanged")
+                break
+        
+        if not found:
+            print(f"Example '{example}' not found in files")
 
 if __name__ == "__main__":
     # Get input and output filenames from command line or use defaults
@@ -225,9 +298,11 @@ if __name__ == "__main__":
     print(f"Fixing CSV file: {input_file} -> {output_file}")
     opening_fixes, closing_fixes = fix_quotes_in_csv(input_file, output_file)
     
-    # Verify the changes if any fixes were made
+    # Check problematic examples
+    check_problematic_examples(input_file, output_file, ["PLC"])
+    
+    # Summary
     if opening_fixes > 0 or closing_fixes > 0:
-        check_file_differences(input_file, output_file)
         print(f"\nDone! Fixed CSV saved to: {output_file}")
         print(f"Total fixes: {opening_fixes + closing_fixes}")
     else:
