@@ -1,0 +1,46 @@
+---
+title:       "Archaeological Complexity"
+author:      "Shawn A. Ross"
+date:        today                # Quarto substitutes the current date
+format:
+  beamer:
+    theme: Madrid                 # any built-in Beamer theme
+    colortheme: seahorse          # optional palette
+    aspectratio: 169              # 16 × 9 widescreen
+    incremental: true             # build bullets progressively
+    slide-number: true            # footer page/slide numbers
+    keep-tex: true                # keep .tex for debugging (remove later)
+    pdf-engine: xelatex           # use system fonts (optional)
+---
+
+## Systems thinking in archaeology           <!-- new frame -->
+
+Population, information flow, and energy capture are three
+interlocking drivers of social complexity.
+
+### Key proxies                              <!-- sub-heading becomes same frame -->
+
+- **Population density**  
+- **Infrastructure intensity**  
+- **Communication bandwidth**
+
+:::: {.notes}
+Speaker note: mention Tainter (1988) critique of diminishing returns.
+::::
+
+## A simple model                              <!-- new frame -->
+
+$$
+C = \frac{E}{N}
+$$
+
+where \(C\) = complexity, \(E\) = energy captured, \(N\) = population.
+
+```{python}
+#| label: fig-growth                    # cross-reference label
+#| fig-cap: "Exponential growth in tool citations"
+import matplotlib.pyplot as plt
+plt.plot([1850,1900,1950,2000,2020],[1,2,4,8,16])
+plt.ylabel("Indexed citations")
+plt.xlabel("Year")
+```
