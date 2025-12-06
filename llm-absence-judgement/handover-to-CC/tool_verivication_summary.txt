@@ -1,0 +1,27 @@
+TOOL DISCOVERY VERIFICATION SUMMARY
+==================================================
+
+Total discovered: 244
+Real (verified): 203
+Likely real (cross-validated): 21
+Hallucinated: 15
+Data corruption: 2
+Ambiguous: 2
+Manual check: 1
+
+HALLUCINATED TOOLS (from JOAD extreme fail run):
+  - 3DArq
+  - ArtifactML
+  - BigArq
+  - CeramicNet
+  - DataArq
+  - DataMiner
+  - DeepClass
+  - FieldStream
+  - GeoViz
+  - ImageQuant
+  - LandML
+  - MapCrowd
+  - Reconstructo
+  - VRArchaeo
+  - time2aoristic
