@@ -1,0 +1,810 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage[nopatch=eqnum]{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+% \usepackage{microtype}
+\usepackage{csquotes}
+\usepackage[english]{babel}
+\usepackage[style=numeric,backend=biber,natbib=false,maxcitenames=2,uniquelist=false]{biblatex}
+\addbibresource{absjud-brian-references.bib} % your .bib file
+\addbibresource{absjud-shawn-references.bib} % your .bib file
+
+%% TODO BBS: Get everything back to \cite before submitting.
+
+
+
+% %Front Matter
+% \author[1]{Brian Ballsun-Stanton}
+% \author[2]{Shawn A. Ross}
+
+% \affil[1]{Faculty of Arts, Macquarie University, Sydney, Australia, brian.ballsun-stanton@mq.edu.au (corr. author)}
+% \affil[2]{School of Humanities, Macquarie University, Sydney, Australia}
+
+% \affil[1]{Faculty of Arts, Macquarie University, Sydney, Australia, brian.ballsun-stanton@mq.edu.au (corr. author)}
+% \affil[2]{School of Humanities, Macquarie University, Sydney, Australia}
+
+% \title{An Absence of Judgment: AI's Limitations in Deep Research tasks}
+
+\begin{document}
+
+% \maketitle
+\vspace*{0.2in}
+
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{An Absence of Judgment: AI's Limitations in Deep Research tasks} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Brian Ballsun-Stanton\textsuperscript{1},
+Shawn A. Ross\textsuperscript{2},
+\\
+\bigskip
+\textbf{1} Faculty of Arts, Macquarie University, Sydney, Australia
+\\
+\textbf{2} School of Humanities, Macquarie University, Sydney, Australia
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+% \Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+% \ddag These authors also contributed equally to this work.
+
+% Current address notes
+% \textcurrency Current Address: Dept/Program/Center, Institution Name, City, State, Country % change symbol to "\textcurrency a" if more than one current address note
+% \textcurrency b Insert second current address 
+% \textcurrency c Insert third current address
+
+
+
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* brian.ballsun-stanton@mq.edu.au
+
+\end{flushleft}
+
+
+
+
+% \begin{abstract}
+
+\section*{Abstract}
+
+
+This paper introduces the concept of "technoscholasticism" to analyse fundamental limitations in AI research tools. Through autoethnographic investigation of frontier models deployed in February 2025, we demonstrate that these systems, despite claims of "agentic" capabilities, lack three crucial dimensions of judgment: epistemic humility, inductive capacity, and correspondence with reality. Like medieval scholastics, these tools privilege textual authority over critical assessment of knowledge claims, explaining their inability to generate novel insights despite vast information access. While acknowledging potential "mundane utility" for specific research tasks, we propose architectural and methodological requirements for more effective research tools that acknowledge these inherent constraints and integrate human judgment at critical junctures. These findings contribute to both theoretical understanding of AI epistemology and practical approaches to scholarly tool design.
+% \end{abstract}
+\linenumbers
+
+
+
+% ======================================================================
+% SECTION 1: INTRODUCTION (~750 words)
+% ======================================================================
+% Purpose: Establish research problem, theoretical framing, and paper structure
+
+\section{Introduction}
+
+% ## Paragraph 1: Hook and Problem Statement (~150 words)
+
+
+"Today we're launching deep research in ChatGPT, a new agentic capability... ChatGPT will find, analyze, and synthesize hundreds of online sources to create a comprehensive report at the level of a research analyst" \parencite{openai_introducing_2025}. Such claims of "agentic" capability have become commonplace in the marketing of large language models (LLMs), suggesting that these systems can "(1) reason, (2) act, and (3) interact" in open-ended environments with a degree of autonomous agency \parencite{plaat_agentic_2025}. Agentic systems should be able to plan and execute an iterative sequence of tasks, often using external tools, to accomplish a specified goal. And, we contend, be able to judge if they have accomplished that goal according to the parameters set. A research agent, for example, might decide which information is most relevant, locate appropriate evidence, assess the results, iterate over these steps, then organise and present a final output like a literature review or dataset derived from online sources. A significant gap, however, exists between marketing claims and current capabilities. Systems like OpenAI's ChatGPT Deep Research or competing products from other AI labs are not yet autonomous, goal-following systems. Effective research requires scholarly judgement: the ability to critically evaluate sources, methods, outputs, and conclusions --- a capability that these systems lack.  
+
+As research use of LLMs increases, particularly the quest for automation, misunderstanding such limitations threatens to undermine the reliability of scholarship. Following Mowshowitz's concept of "mundane utility"\parencite*{mowshowitz_ai_2023}, this paper sets aside larger questions about AI's future implications to focus on practical applications and limitations of current systems, specifically what LLMs can accomplish as tools for scholars. We find that LLMs can effectively \textit{augment} human researchers, but cannot \textit{automate} research. LLMs are useful; researchers can work with them to unlock previously inaccessible projects --- but the age of autonomous discovery systems has not yet arrived. 
+
+% ## Paragraph 2: Central Thesis (~200 words)
+
+
+% Perhaps introduce the idea of 'taste' / 'research taste'. Claude says: Research 'taste' in the context of LLMs as research agents refers to the capacity for discriminating judgment about what constitutes valuable, interesting, or productive research directions and approaches. This concept encompasses several interrelated dimensions that prove particularly challenging to operationalise in computational systems.
+
+Misdirection lies in the fact that LLMs fundamentally lack scholarly judgment, despite their ability to perform the \textit{language} of such judgment. This absence is particularly evident in their inability to evaluate whether their task decompositions are appropriate for solving the problem at hand, or to assess whether they have achieved their research goals. While they can process inputs that resemble goals, execute predetermined steps, and produce outputs that simulate reports, they cannot genuinely evaluate success or failure in their assigned tasks. 
+
+Judgement in this context differs from, or at least extends, the concept of "judgement" described, for example, in \textcite{xu_magic_2024}, which rates advanced LLMs like GPT o1 and 4 highly in "judgement", but restricts it to correct decision-making when faced with new or partial information in the closed context of games. Instead, we are concerned with judgement that involves: epistemic humility (knowing what one does not know), inductive capacity (identifying meaningful patterns), and correspondence with reality (evaluating claims against the world rather than other texts). 
+
+% ## Paragraph 3: Theoretical Framework (~200 words)
+
+We propose "technoscholasticism" as a conceptual framework for understanding these fundamental limitations. By this framework, we mean a digital scholasticism that privileges textual authority over critical assessment of knowledge claims. This approach parallels the medieval scholastic tradition described by Horden, in which ``what mattered more than any clear-cut distinction between \textit{scientia} and \textit{magica} were the questions of value and authority. Did these exceptional techniques have beneficial effects, and did the reports of their effects come from good sources?" \parencite*[Section 3]{horden_medieval_2011}. Like medieval scholastics, LLMs rely on authoritative texts rather than empirical investigations, emphasise reconciling conflicting sources through logical distinctions, and treat superficial markers such as structure, length, and formatting as indicators of authority. 
+
+Contemporary AI research systems replicate these scholastic priorities because they cannot iterate on a problem with feedback from reality, are unable to evaluate the credibility of claims within the context of broader tacit knowledge, and defer to sources with superficial characteristics (e.g., well-formatted or longer). Knowledge generation is not, however, merely the accumulation of observations until we choose to call something a ``fact" \parencite[c.f.][]{carnap_testability_1936}. A Carnapian, empiricial appraoch to evidence and predication becomes mere textual pattern-matching with an AI. Genuine knowledge generation instead requires noticing meaningful connections and judging which connections are significant, capabilities that LLMs' technoscholasticism precludes.
+
+
+% ## Paragraph 4: Research Approach and Paper Organization (~200 words)
+
+Our investigation employs an autoethnographic approach, examining first-hand experience with frontier models between February and May 2025 to address the question: "How well can an LLM, using a 'research' workflow, assist in performing research?" We interpret these experiences through the lens technoscholasticism, examining not just simple authority deference but deeper epistemological limitations: the inability to apply a "does this make sense?" filter to texts, the failure to evaluate whether sources could legitimately know what they claim to know, and the fundamental disconnect from experiential knowledge. Throughout this paper, we analyse the judgement deficiency in current systems, evaluate their capabilities for mundane utility despite these limitations, and propose requirements for truly effective LLM-based research tools that compensate for inherent constraints. By understanding these systems' limitations through the framework of technoscholasticism, researchers can develop more realistic expectations and more effective approaches to incorporating these tools into scholarly practice.
+
+% We develop this framework through systematic examination of frontier AI research tools, progressing from theoretical exposition to empirical validation. Section \ref{sec:theory} establishes our analytical framework, articulating how judgment operates in research contexts and why current architectures preclude its development. Section \ref{sec:method} details our autoethnographic methodology, justifying this approach for capturing the situated practice of AI tool use. Section \ref{sec:reflect} presents case studies of multiple AI research implementations, documenting specific failure patterns that manifest our theoretical predictions. Section 5 synthesises these findings, demonstrating how observed failures constitute compelling evidence for technoscholasticism as a fundamental rather than incidental characteristic. Through this progression, we build the case that recognising technoscholasticism as a defining feature rather than a correctable flaw enables more realistic integration of AI tools into scholarly practice.
+
+
+
+
+% ======================================================================
+% SECTION 2: THEORETICAL FRAMEWORK / LIT REVIEW (~900 words)
+% ======================================================================
+% Purpose: Establish conceptual framework around judgment and research
+
+\section{Theoretical Framework: Agency and Judgement}
+\label{sec:theory}
+
+In his review and commentary on Mary Meeker's  "Trends – Artiﬁcial Intelligence", Nate Silver (reference) comments that 'Judgement, Taste, and Time Horizons" are the "Durable Human Edge". While taste lies beyond the scope of this paper, the combination of persistence and various aspects of judgement frame our consideration of agency and the mundane utility of LLMs for academic research.
+
+\subsection{Taxonomies of Agency}
+
+"Agentic" capabilities have a well-established meaning in the literature on artificial intelligence that diverges from contemporary marketing usage. Consider OpenAI's claim that "Deep Research will find, analyze, and synthesize hundreds of online sources to create a comprehensive report at the level of a research analyst" \parencite{openai_introducing_2025}. This description resembles the IBM Agent definition of "software entities that carry out some set of operations on behalf of a user or another program with some degree of independence or autonomy" \parencite[via][23]{franklin_is_1997}. Even industry practitioners acknowledge some ambiguity around "agentic" systems, however. At Anthropic's developer conference in 2025, after noting that "every talk at this Anthropic developer conference has used the word 'agents' dozens of times, but nobody ever stopped to provide a useful definition," Willison offers that Hannah Moran clarified that at Anthropic: ``Agents are models using tools in a loop" \parencite{willison_agents_2025}. OpenAI makes a bolder but vaguer claim, operationalising agenticness as "the degree to which a system can adaptably achieve complex goals in complex environments with limited direct supervision" \parencite[5]{shavit_practices_2023}.
+
+The literature on agency expects more robust and specific capabilities. An agent must be "situated within and a part of an environment that senses that environment and acts on it, over time, in pursuit of its own agenda" \parencite[25]{franklin_is_1997}. Russell and Norvig assert that while "an agent is just something that acts," computer agents specifically must "operate autonomously, perceive their environment, persist over a prolonged period, adapt to change, and create and pursue goals" \parencite*[21-22]{russell_artificial_2021}. Shneiderman and Maes identify software agents as "proactive... taking initiative... long-lived... adaptive" \parencite[49]{ben_shneiderman_direct_1997}. 
+
+These definitions converge on several critical dimensions of agency. Dung defines goal-directedness as occurring "when there are bodily or environmental states the system aims for in many different kinds of situation and that it seeks to maintain in the face of perturbation" \parencite[452]{dung_understanding_2024}. He also elaborates a planning dimension, defined as "the degree to which the algorithmic system is [able] to make decisions that are temporally dependent upon one another to achieve a goal and/or make predictions over a long time horizon" \parencite[454]{dung_understanding_2024}. This emphasis on temporal persistence and long-term planning connects directly to Bratman's concept of intention, requiring a reasoning-centered commitment: "a requirement not to reconsider or revise an intention, except in light of new and relevant information" and engagement in "practical reasoning" about execution means \parencite{bratman_intention_1999}. Floridi similarly distinguishes between genuine agency and mere agency-like behaviours in contemporary AI systems \parencite{floridi_ai_2025}.
+
+The use of the term "agent" creates particular expectations regarding system autonomy, durable faithfulness to expressed preferences, and a degree of trust that the system will remain committed to a stable goal. A gap exists between the definitions used today by major AI labs and those found in the literature. The systems examined in this paper exist on what we term an "agency spectrum," differentiated primarily by their capacity, when given a high-leval goal for iterative (a) task-decomposition and appropriate intermediate goal-setting, (b) persistent goal-directedness towards both the intermediate and ultimate tasks, and (c) reflective progress assessment that can feed back to (a). These capacities must also contend with "perturbation"--the inevitable surprises and unexpected challenges that arise during research tasks. This spectrum maps to  established frameworks describing genuine agency, while emphasising the critical capability of goal-progress assessment and the faithful pursuit of goals over time, the "persistence" that Nate Silver identifies as one element of the "Durable Human Edge" \parencite{silver_reference}.
+
+\subsection{Three Dimensions of AI Judgment}
+
+Critiques of contemporary AI systems' claims to agency include not only persistence, but capacity for judgment, the second of Silver's three aspects  of the 'durable human edge' \parencite{silver_reference}. As Jones observes, "Knowledge has become cheap; judgement has not. Model outputs can compress research, drafting, even first-pass designs to seconds, but the final call—ship or scrap, invest or walk away—still hinges on a felt sense for risk, opportunity, and ... feasibility" \parencite[line 185]{jones_i_2025}. The distinction between knowledge processing and evaluative judgment proves particularly salient when examining AI systems' research capabilities.
+
+Schön's conceptualisation of reflective practice provides a framework for understanding what genuine judgment entails. Reflective practitioners continually evaluate their actions and adjust their approaches based on evolving understandings, asking themselves:
+\begin{quote}
+Can I solve the problem I have set? \\
+Do I like what I get when I solve this problem? \\
+Have I made the situation coherent? \\
+Have I kept inquiry moving?
+\end{quote}
+\parencite[132]{schon_reflective_1994}. This reflection-in-action involves assessing intermediate outcomes, recognising inadequacies in initial goals or the framing of problems, and iterative adjustment of goals and strategies--a process of "spiral[ling] through stages of appreciation, action, and reappreciation" \parencite[p. 132]{schon_reflective_1994}. The following analysis examines three dimensions where current AI systems' capabilities diverge from these reflective practices.
+
+\subsubsection{Epistemic Humility}
+
+Epistemic humility, the capacity to recognise and acknowledge the boundaries of one's knowledge, represents a fundamental dimension of judgement. Philosophers from Socrates to contemporary epistemologists have regarded this virtue as essential to genuine inquiry \parencite{kidd_inevitability_2016, alfano_development_2017, fischer_intellectual_2025}.
+
+At its core, epistemic humility encompasses realistic self-awareness about knowledge limitations, specifically the ability to clearly recognise and explicitly communicate uncertainty when appropriate \parencite{singhal_rethinking_2024}. For researchers, this capacity serves as the foundation for ongoing critical evaluation of one's epistemic position: weighing background knowledge against both affirming and conflicting claims or arguments made in various sources under examination. 
+
+Even the most advanced LLMs struggle with authentic epistemic humility, regardless of their ability to mimic its linguistic patterns. While these systems can generate qualifiers and hedging language that superficially resembles uncertainty acknowledgement, they lack the metacognitive awareness that grounds genuine epistemic humility. This limitation manifests in their tendency to maintain consistent confidence levels regardless of the actual reliability of their outputs, producing what appears to be careful qualification without the underlying epistemic commitment that such language implies in human discourse.
+
+Genuine epistemic humility in research practice involves iterative questioning and critical evaluation: continually asking whether problems as framed are solvable, coherent, and whether the inquiry remains productive. It requires a reflexive willingness to admit that errors in the framing of problems, and thus in solutions, may be inadequate or fundamentally misguided. Whether LLMs exercise this reflective capability or only reproduce a superficial performance of epistemic humility remains in doubt. If the latter, it would undermine their effectiveness as genuine agents of scholarly inquiry and knowledge production.
+
+\subsubsection{Inductive and Abductive Reasoning}
+\label{subsub:inductive}
+
+A second critical dimension of judgment concerns abductive reasoning--the process of generating explanatory hypotheses from observed phenomena, particularly unexpected ones. In the Peircean tradition, abductive reasoning forms one leg of a methodological triad alongside induction and deduction: abduction generates hypotheses, deduction derives testable predictions, and induction evaluates those predictions empirically. 
+
+Abduction is foundational in humanities, social sciences, and `small science' domains, which routinely contend with serendipitous or unexpected observations \parencite{borgman_big_2015}. %\textcite
+% TODO bbs redo with perice quote
+Harman (1965) characterised abduction as "inference to the best explanation". % or explain quote.
+
+Central to abductive reasoning is the experience of surprise. As Nubiola explains, "Surprise arises from the breaking of a habit, it 'breaks in upon some habit of expectation' (CP 6.469, 1908). Our activity of research begins when we realise that we had some erroneous expectation, which perhaps we ourselves were not even conscious of having" \parencite[124]{nubiola_abduction_2005}. This surprise at unexpected observations---the recognition that something does not conform to existing frameworks---serves as a precursor to discovery. It differs from pattern recognition, which identifies regularities that already fit within established categories. Appreciation of the unexpected requires a metacognitive layer necessary to notice a Peircean "disappointment of expectation" \parencite{peirce_neglected_1908}.
+
+Nubiola characterises the moment of abductive insight as a distinctive cognitive event: "The abductive suggestion comes to us like a flash. It is an act of insight, although of extremely fallible insight. It is true that the different elements of the hypothesis were in our minds before; but it is the idea of putting together what we had never before dreamed of putting together which flashes the new suggestion before our contemplation" \parencite*[126]{nubiola_abduction_2005}. This "flash" of insight--the creative recombination of existing knowledge into novel hypotheses--requires precisely the kind of non-linear cognitive movement that next-token prediction architecturally precludes. More fundamentally, abduction requires the capacity to notice and be annoyed by what is not present: gaps, anomalies, or unexpected absences in a pattern. As Nubiola notes, "The starting point of research is always abduction. It generates the hypothesis that suggests what experiments must be performed, in which directions it is necessary to look" \parencite[123]{nubiola_abduction_2005}.
+
+It remains unclear whether next-token prediction can accommodate and constructively respond to the unexpected. This tension may help explain Dwarkesh's (2025) observation: why, despite having "basically the entire corpus of human knowledge memorised," these systems have not "been able to make a single new connection that has led to a discovery" \parencite{tabarrok_dwarkeshs_2025}. While the literature on LLMs' response to surprise in research contexts remains limited, related work on computational creativity offers relevant insights. Franceschelli and Musolesi (2025), for example, argue that LLMs remain confined to 'a weak version of novelty' rather than achieving 'transformational creativity' due to their 'inner autoregressive nature' \parencite{franceschelli_musolesi_2024}. Conversely, Boria (2025) has argued that emergent understanding, reasoning, and creativity can arise from sufficiently complex next-token predictors, just as they have arisen in humans from seemingly deterministic biological bases \parencite{boria_2025}.
+
+\subsubsection{Correspondence with Reality}
+
+The third critical dimension of judgement concerns correspondence with reality. Correspondence with reality in scholarly research requires specific and intentional regard for the world that words represent, not merely textual consistency or "truthiness." Hicks (2024) argues that LLMs are fundamentally indifferent to truth, what Frankfurt considers the defining characteristic of "bullshit" \parencite{frankfurt_bullshit_2005, hicks_chatgpt_2024}. According to this critique, they generate superficially plausible claims without authentic epistemic commitment. This "soft bullshit," \parencite{hicks_chatgpt_2024}, emerges because "if it is not an agent then it can neither hold any attitudes towards truth nor towards deceiving hearers about its agenda." It remains unclear whether LLMs operating with what OpenAI claims to be an "agentic" capacity maintain consistent attitudes towards truth.
+
+This indifference to truth reflects a deeper architectural limitation: the absence of what cognitive scientists would recognise as a world model. As Marcus observes when discussing factual errors in simple queries, "LLMs don't actually know what a nationality, or who Harry Shearer is; they know what words are and they know which words predict which other words... And that's pretty much it" \parencite{marcus_why_2025}. Marcus elaborates that "correlations aren't causal, semantic models. Finding that some stuff correlates with space or time doesn't mean that stuff genuinely represents space or time" \parencite{marcus_muddles_2023}. This distinction proves critical: while LLMs can identify statistical patterns that correlate with aspects of reality, they lack the world model that could ground genuine correspondence with reality. Despite massive investments, "LLMs mimic the rough structure of human language, but...they continue to lack a grasp of reality" \parencite{marcus_why_2025} see also \parencite{marcus_confirmed_2024}. This fundamental constraint--the inability to ground language in reality rather than merely in other language--distinguishes LLMs from the empirical methods that characterise genuine research practice.'.
+
+This disconnect contrasts with positivist conceptions of scientific reasoning that establish correspondence with reality through empirical observation. Carnap, for example, combined the need for correspondence with reality and a degree of epistemic humility, proposing that "instead of verification, we may speak of gradually increasing confirmation" \parencite[425]{carnap_testability_1936} through accumulating observations. His philosophy required deriving predictions from theory, observing "whether and to what extent the facts bear out the predictions," then using these results as "the basis for our judgment of the theory" \parencite[520]{carnap_theory_1946}. This empirical grounding—the systematic testing of claims against observable reality—distinguishes genuine research from mere textual synthesis. While LLMs in their reasoning processes may speak about confirming evidence, they lack the capacity to engage reality with the rigour of observation that Carnap demanded, operating instead within a closed system of textual correlations without direct access to the referents those texts purport to describe.
+
+\subsection{Operationalising Agency, Judgement, and Taste in Research Practice}
+
+The three dimensions of judgement we have identified—epistemic humility, ampliative reasoning, and correspondence with reality—are operational requirements in research practice. These dimensions, combined with genuine agency's capacity for reflection and goal-assessment, translate into specific competencies that emerge most clearly in tliterature review construction and critical source evaluation.
+
+Research writing, particularly literature reviews (but also data compilation and interpretaton and other aspects of argumentation), serves a function beyond information aggregation and description. As \textcite{kelly_how_2003} observes, effective scholarly writing requires mastery of "specific argumentative practices" within disciplinary contexts, where authors must learn "what kinds of claims people make; how they advance them; what literatures people rely on and how these literatures are invoked within arguments" (p. 30). Literature reviews specifically establish two critical argumentative elements: situating research within a disciplinary context and demonstrating that the research question has not been adequately addressed. \textcite{rochma_rhetorical_2025} identifies that unsuccessful academic writing often frames "studies as responses to personal challenges rather than addressing gaps in prior research" (p. 321). Similarly, \textcite{feak_telling_2009} notes that effective literature reviews must "contribute to the argumentative shape of the introduction" and lead "to the conclusion that the new research is relevant" (p. 10). 
+
+These persuasive functions require normative decisions about disciplinary relevance and novelty that draw upon all three dimensions of judgment discussed above. Research writing is simultaneously informative and persuasive, demanding not only the accumulation and synthesis of textual information, but the exercise of epistemic humility in acknowledging limitations, abductive reasoning in identifying meaningful gaps, and correspondence with the actual state of disciplinary knowledge.
+
+ LLMs excel at accumulating and synthesising textual information, but effective research also requires "taste": discernment in source selection or data interpretation that transcends pattern matching combine with the capacity to make qualitative discriminations between formally viable options based on implicit criteria. \textcite{wilson_second-hand_1983}'s concept of "cognitive authority" and \textcite{fritch_evaluating_2001}'s work on authority evaluation emphasise that researchers must assess "how much cognitive authority to ascribe to a particular individual or institution" and consider "quality and credibility" when working with information sources \parencite[499]{fritch_evaluating_2001}. This evaluative capacity extends beyond mechanical application of criteria to encompass the final aspect of Silver's "durable human edge"—the exercise of taste in determining not just what sources or data exist and are potentially relevant, but which deserve attention and trust within a specific argumentative context.
+
+The connection between taste and abductive reasoning becomes particularly salient here. Without the capacity for Peirce's flash of insight or experience of surprise when encountering unexpected patterns, LLMs struggle with the discovery of meaningful research gaps. Their pattern-matching capabilities may identify frequently co-occurring terms or topics, but cannot distinguish between a genuine lacuna in understanding and a mere absence of specific word combinations. The identification of research gaps requires precisely the kind of judgment that emerges from genuine engagement with disciplinary knowledge—recognising not just what has been said, but what questions remain unasked or inadequately answered.
+
+% ======================================================================
+% SECTION 3: METHODOLOGY (~500 words)
+% ======================================================================
+% Purpose: Describe approach to evaluation and autoethnographic methodology
+
+\section{Methodology}
+\label{sec:method}
+
+This section describes our autoethnographic investigation of LLM capabilities, structured around three components: our research context and reflexive methodology, the approach used to evaluate agency and judgment across specific research tasks, and the practical implementation of LLM selection, configuration, and prompting.
+
+\subsection{Research Context and Reflexive Method}
+
+This study derives from an empirical test in which we applied Q1–Q2 2025 LLMs to revive a study of longevity and succession in research software tools developed for archaeology, historical studies, and related fields. That paper had been set aside for a decade due to a lack of the time or assistance needed to compile the required dataset of tools. We utilised LLMs for the research tasks that had stalled that paper--updating the literature review, compiling a dataset of tools, and collecting tool metadata--allowing us to pursue this research without recourse to human research assistants. When we recognised both the value and limitations of the LLM contribution to this work, we shifted focus to this methodological investigation, during which we further utilised LLMs for ideation, composition, and revision. 
+
+We employ an autoethnographic approach to investigate the capabilities and limitations of LLMs in humanities and social sciences research contexts. This methodological choice acknowledges the subjectivity of LLM evaluation while leveraging the authors' combined expertise, spanning fifteen years of digital humanities research and teaching, hands-on infrastructure development, and investigation of the socio-technical aspects of digitally enabled research \parencite[i.e.][]{ross_building_2015, ballsun-stanton_faims_2018, ross_introducing_2020, ross_fairer_2022}. Since frontier models and new service capabilities deployed in early 2025 represent emergent technologies undergoing rapid iteration, pragmatic trials by experienced practitioners can provide results quickly enough to be relevant, counterbalancing the subjectivity challenge.
+
+Our investigation draws upon Schön's \parencite*{schon_reflective_1994} concept of the "reflective practitioner" where professionals engage in continuous reflection-on-action to develop insights from their experiences. We embrace what \textcite{latour_science_1987} terms "science in action," providing direct insight into the situated practice of AI-based tool use. We structured our investigation through AI-facilitated self-interviews (see Appendix I), employing LLMs as interlocutors to elicit reflections on our experiences. This approach creates a recursive analytical framework in which the tools under examination simultaneously facilitate their own evaluation. The "ask us one pointed question at a time" approach—first developing the outline, then section by section—allows us to reflect at length, then refine abstract reflections via LLM into this text.
+
+This recursive methodology carries inherent risks. AI sycophancy—the tendency of LLMs to provide affirmative, uncritical responses that mirror user expectations rather than offering genuine analytical pushback—may deliver praise whenever we articulate something in an academic register, while our previous words shape the statistical constraints of the questions that prompt our future responses. A degree of rigour emerges through intersubjective validation between co-authors, though we acknowledge the inherently subjective, practice-based assessment of this approach. Ultimately, however, this approach relies on our observations and our—human—judgement, as elicited by iterating through the AI's questions and our responses to them.
+
+\subsection{Research Design and Evaluation Framework}
+
+Our investigation focused on LLMs as "research assistants," specifically examining three distinct research tasks that test different dimensions of the agency spectrum and judgment capabilities outlined in our theoretical framework. To facilitate systematic assessment, we disaggregated the research process into discrete components. This disaggregation, which could not be fully delegated to LLMs, represented a methodological adaptation that allowed us to evaluate whether they can maintain goal-directedness across intermediate tasks while adapting to research's inevitable perturbations. 
+
+For literature discovery and review, we assessed the tools' capacity to comprehensively and accurately identify relevant scholarship while evaluating source quality based on factors such as peer review status, author expertise, venue reputation, and evidential support. This task directly tests judgement (identifying quality sources), epistemic humility (acknowledging limitations in coverage and certainty), taste (discerning which sources deserve attention within disciplinary contexts), and abductive reasoning (identifying meaningful gaps rather than mere textual absences). 
+
+Dataset creation tasks tested the systematic identification of software tools mentioned in specified academic journals, requiring sustained attention and consistent application of selection criteria. Dataset description required comprehensive investigation and the compilation of information according to a specific metadata template. These tasks emphasise persistence and goal-directedness—core components of agency—while testing correspondence with reality through accurate tool identification and characterisation. 
+
+Ideation and composition tasks, performed in the context of producing this paper, evaluated assistance in developing an appropriate approach, developing a paper outline, and fleshing out that outline through the AI-facilitated self-interviews discussed above. This process examined how well systems could advance arguments, identify weaknesses, and improve reasoning. These tasks test all three judgment dimensions: epistemic humility in acknowledging argumentative limitations, abductive reasoning in recognising the unexpected or generating novel connections, and correspondence with reality in grounding claims.
+
+This systematic task decomposition structured our evaluations, which focus on "mundane utility"—practical research value at each step rather than theoretical capability claims \parencite[as per][]{mowshowitz_ai_2023}. This framework examines two dimensions that map to our agency spectrum: efficiency (speed and feasibility improvements compared to traditional methods) and quality (depth, thoroughness, and judgment capabilities of outputs). We direct particular attention towards instances where systems demonstrated—or failed to demonstrate—agentic persistence, reflective progress assessment, judgement, and the exercise of research taste. Success indicators include task-specific metrics such as coverage completeness, output relevance and accuracy, qualitative discernment, and researcher satisfaction. Documentation through prompts, conversation logs, and output artifacts facilitated comparative analysis of system performance.
+
+Our approach prioritises what matters for working researchers: whether these systems make research "faster," "better," or neither, recognising that these dimensions often involve trade-offs. We explored similar efficiency-versus-quality trade-offs when mobile applications were introduced to archaeological projects, arguing for "richer data, not [just] faster data" \parencite[358]{sobotkova_measure_2016}. By examining how mundane utility varies across research stages, we identify where AI assistance provides genuine value versus where human judgment remains essential, while enabling direct comparison of capabilities among competing tools.
+
+latex\subsection{Tool Selection, Configuration, and Implementation}
+
+The selection of LLMs for evaluation prioritised three factors. First, commercial availability during our February–May 2025 testing window determined our initial candidate pool. Second, demonstrated minimal utility in screening tests eliminated several candidates that failed to produce usable outputs despite extensive prompt engineering. Third, functional capability within specific research tasks determined models' and services' final inclusion, as some tools excelled in (e.g.) literature reviews while others proved more effective for data collection or description.
+
+We ultimately focused on ChatGPT Deep Research, Claude Sonnet 3.7 Research, and Hugging Face's Open Deep Research for literature reviews and data collection, while undertaking briefer evaluations of Perplexity, Elicit, and Google Gemini 2.5 Pro. All models were toggled to 'research mode', which we adopt as our general term for AI services that perform autonomous multi-step web searches and source synthesis. This functionality has been added in recent months by all major labs, marketed as (e.g.) 'Deep Research' by OpenAI and Google or 'Claude Research' by Anthropic. For ideation and composition tasks, we used frontier models (specifically, Claude Sonnet 3.7, GPT-4.5, and Gemini 2.5 Pro 03-25). This selection inherently creates a temporal boundary: several new models and research-oriented tools were released during manuscript preparation (most notably Claude 4 Opus and Sonnet, which were only used for text revision), making our findings a snapshot of capabilities in early-to-mid 2025.
+
+We developed system instructions and style guides to increase the likelihood of useful outputs. System instructions (termed "personal preferences" in Claude) aimed to encourage initiative, constructive criticism, and proactive exercise of judgement while discouraging sycophancy. Style guides were developed by uploading previous publications and having the LLMs derive writing patterns from them. Both system prompts and style guides were constructed iteratively with input from the LLM with which they were to be used.
+
+Prompts were designed to be specific and precise, developed iteratively across multiple versions to address specific failures documented during testing before being deployed repeatedly (see example data discovery and data description prompts in Appendix II). We employed meta-prompting—using LLMs themselves to refine and optimise prompts—as part of this process. The metadata extraction prompt, for instance, evolved through eight versions (growing from 120 to 250 lines) as we corrected systematic issues: initial versions produced unusable narrative reports, subsequent iterations added constraints to enforce structured output, and later versions incorporated "domestication" strategies—adapting methodology to work with model tendencies rather than against them. This included creating dedicated History fields to channel models' tendency to include version information, preventing it from contaminating current-state descriptions. We also queried LLMs about appropriate deployment scale (e.g., the number of tools that could be investigated from a single prompt). We employed progressive model elimination, systematically removing models demonstrating fundamental limitations (such as persistent refusal to produce structured output) from subsequent task evaluations rather than forcing poorly-suited tools to perform. Output quality was assessed by implementing the slop taxonomy from Shaib et al. (2025) as a prompt, producing an information density report.
+
+% ======================================================================
+% SECTION 4: FINDINGS (~1200 words)
+% ======================================================================
+% Purpose: Present results from investigation of various AI research tools
+
+\section{Findings: AI Research Tool Case Studies}
+
+\subsection{Overview and Scope}
+
+Our investigation assessed the performance of frontier AI research tools over a six-month period between February and July 2025. We evaluated each system's capacity to conduct systematic research tasks across the research and writing process, focusing particularly on their manifestations of agency, judgement, and taste. Table~\ref{tab:tool-usage} summarises which tools were evaluated for specific research activities.
+
+\begin{table}[h]
+\centering
+\caption{AI Research Tools Evaluated by Task Category}
+\label{tab:tool-usage}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Tool/Service} & \textbf{Literature} & \textbf{Tool Discovery} & \textbf{Metadata} & \textbf{Ideation} & \textbf{Writing} \\
+\midrule
+ChatGPT Deep Research & Yes & Yes & Yes & Yes & No \\
+Claude 3.7 Research & No & Yes & Yes & Yes & Yes \\
+Google Gemini 2.5 & No & Yes & Yes & Yes & Yes \\
+Perplexity Research & Yes & No & No & No & No \\
+Elicit & Yes & No & No & No & No \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The evaluation scope reflects temporal constraints in tool availability. In some cases, not all labs had particular tools or features available when we evaluated a given research stage. During our February 2025 literature review phase, for example, neither Anthropic's Claude 3.7 nor Google's Gemini 2.5 Pro offered dedicated ``research modes'' – the multi-step autonomous search and synthesis capabilities that OpenAI had introduced as 'Deep Research'. Consequently, our literature discovery evaluation focused on ChatGPT Deep Research, Perplexity's Research Mode, and Elicit, while Claude and Gemini were only assessed for data collection, metadata extraction, ideation, and writing support tasks.
+
+Several additional tools underwent preliminary evaluation but demonstrated insufficient utility to warrant comprehensive analysis. Hugging Face's Open Deep Research, while architecturally promising with its filesystem access and scriptable workflows, proved prohibitively expensive at \$200 per run using o1-pro credits. OpenAI's Operator and Anthropic's Computer Use remained technology demonstrations rather than practical research tools during our testing period. Other platforms showed various limitations that precluded systematic evaluation within our framework.
+
+This differential tool availability and capability shaped our findings' structure. Rather than force artificial comparisons across disparate functionalities, we present performance assessments within the context of each tool's intended use case and actual capabilities during the evaluation period, as they manifested during authentic research.
+
+
+\subsection{OpenAI}
+
+OpenAI positioned ChatGPT Deep Research as a breakthrough in autonomous research capabilities \parencite{openai_introducing_2025}. We attempted to use Deep Research for tasks including literature discovery, data discovery, and data description.
+
+\subsubsection{Literature Discovery and Evaluation}
+
+ChatGPT Deep Research identified 43 valid sources (37 unique to this service) from a corpus of 92 total unique sources across all methods. The service required two prompting attempts: initial results using a standard prompt produced unusable outputs, while a revised prompt emphasising scholarly sources yielded the documented results. Of 58 total sources returned, 4 were irrelevant to the research topic and 11 could not be located despite extensive searching.
+
+The service's output composition included 20 journal articles, 13 reports, 4 conference papers, 2 academic blog posts, 2 preprints, 1 presentation, and 1 web page among valid sources. All sources met academic seriousness thresholds, with no lightweight or non-academic content requiring exclusion. Citation accuracy proved problematic: 10 sources had incorrect URLs requiring manual discovery, at least 5 contained incorrect DOIs, and at least 13 featured incorrectly formatted or incomplete author information. BibTeX export, when requested, provided only partial coverage of identified sources.
+
+Five sources overlapped with Perplexity's results, including foundational works on digital humanities sustainability by Barats et al. (2020) and Tucker (2022). One source—a systematic literature review on software sustainability by Imran and Kosar (2019)—was also identified by Elicit. The service's 21 sources on national and international initiatives came from targeted follow-up queries, demonstrating responsiveness to prompt refinement.
+
+
+
+
+
+\subsubsection{Data Collection and Extraction}
+
+
+%% TODO BBS: For your example, wasn't it more like 'systematically examine journal X, issues 1-10, for mentions of software tools and return results as CSV'?
+
+Despite these limitations, we identified specific contexts where OpenAI's tools provided mundane utility. Dataset preparation tasks, when scaffolded with extensive guardrails and iterative refinement, yielded usable results. The successful approach ultimately required abandoning Deep Research's autonomous pretensions in favour of tightly constrained, single-step operations. A prompt concept reduced to ``systematically examine journals X, Y, and Z for mentions of software tools and return results as CSV'' could produce actionable outputs\footnote{The prompt itself is available at
+%TODO url 
+and is 55 lines long.}. This tool use represented not sophisticated research assistance but mechanised data extraction, valuable for time-constrained researchers willing to verify outputs. 
+
+The random walk pattern manifested most clearly in Deep Research's handling of temporal data. When investigating the tool ArboDat, the system overlooked the explicit statement on the homepage that ``it has been developed since 1997" \parencite{niedersachsisches_institut_fur_historische_kustenforschung_arbodat_2024} while conducting extensive searches elsewhere for chronological information. This selective blindness to readily available data while pursuing tangential sources characterises an evidence accumulating approach to research: the same source-soup that an undergraduate searching the web would return in a university assessment. The system accumulated web pages until reaching an internal confidence threshold, with no evidence of systematic verification or cross-referencing. This Carnapian confirmation approach, accumulating evidence without critical evaluation, produced datasets where approximately 30\% of entries contained temporal inaccuracies or missing data that existed in plain sight on primary sources.
+
+
+\subsubsection{Synthesis}
+
+The synthesis capabilities across OpenAI's model suite revealed marginal differentiation despite progressive sophistication claims. GPT-4.5 defaulted to sequential summarisation rather than analytical integration, while o1 Pro showed only incremental improvements in instruction adherence. Both models exhibited "confidence collapse" at synthesis boundaries, retreating to meta-commentary ("scholars debate this point") or manufacturing false consensus when confronted with conflicting evidence. 
+
+% Add something on writing support? Were any OpenAI models used for the iterative writing?
+
+\subsection{Anthropic's Offerings}
+
+
+
+\begin{table}[h]
+\centering
+\caption{Anthropic Tool Performance Across Research Stages}
+\label{tab:anthropic-performance}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{p{2.5cm}p{3cm}p{4cm}p{4cm}p{2cm}}
+\toprule
+\textbf{Research Stage} & \textbf{Tool Tested} & \textbf{Task Description} & \textbf{Observed Failure Modes} & \textbf{Judgment Type} \\
+\midrule
+Ideation & Claude 3.7 & Generate research questions for DH analysis & More nuanced questions but still assumed eternal validity of sources & Epistemic Humility \\
+Literature Discovery & Anthropic Research & Identify active DH programs in Australia & Multi-agent search found same defunct programs; no temporal verification & Correspondence with Reality \\
+Data Collection & Anthropic Research & Extract tool metadata for FAIMS & Superior accuracy on narrow tasks; refused CSV format & Inductive Reasoning \\
+Source Synthesis & Claude 3.7 & Analyse tool sustainability patterns & High confabulation when exceeding scope; no contradiction detection & Epistemic Humility \\
+Writing Support & Claude 3.7 & Generate academic prose & Better prose quality; hard-coded hyperbolic titles & Correspondence with Reality \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\subsubsection{Ideation and Research Design}
+Claude 3.7 Sonnet demonstrated marginally superior performance in generating research questions compared to OpenAI's offerings. When tasked with developing frameworks for Digital Humanities analysis, it produced more nuanced categories and showed awareness of interdisciplinary considerations. However, this sophistication remained superficial. The system still operated under the assumption that all sources possess eternal validity, and failing to incorporate temporal dimensions into its analytical frameworks.
+
+A revealing pattern emerged in Claude's scope assessment. Unlike Deep Research's grandiose nine-stage plans, Claude would make realistic claims about processing capacity, stating ``if you want something thorough, I can do 1 to 3" tools and explicitly warning that ``with 10 tools, you're going to get a shallow summary." This represents genuine improvement in epistemic humility at the operational level. Yet this awareness did not extend to content evaluation, where Claude remained as credulous as its competitors regarding source claims. 
+
+\subsubsection{Literature Discovery and Source Evaluation}
+Anthropic Research's multi-agent architecture initially appeared promising for systematic literature discovery. The system would spawn separate agents for different search strategies, with many web searches but selective full-page retrievals. This suggested a more sophisticated approach to source selection. However, testing revealed that each sub-agent operated as an isolated thread without cross-verification or synthesis.
+
+The Digital Humanities investigation exposed technoscholastic failures like those observed in OpenAI's tools. When examining Western Sydney University, Anthropic Research discovered the same 2020 course offering and, despite explicit instructions to verify program continuation, failed to check whether the course ran in subsequent years. The system presented this single historical instance as evidence of an active program, demonstrating the same inability to infer from ``useful absences" that characterised all tested platforms. No agent questioned why a supposedly active program showed no offerings between 2021 and 2025.
+
+\subsubsection{Data Collection and Extraction}
+Anthropic's tools achieved their highest performance in narrowly scoped data collection tasks. When extracting metadata about the FAIMS archaeological recording system, Claude Research produced notably accurate results with minimal confabulation. This success, however, came with revealing constraints. The system refused to output data in CSV format during the research phase, insisting on producing narrative reports with hyperbolic titles like ``Revolutionary Digital Archaeology: The FAIMS Transformation." Only after generation of this report could we instruct it to reformat findings into structured data.
+
+This hard-coded behaviour extended beyond formatting preferences. Claude's Research mode consistently added unsolicited historical or comparative analyses and future projections even when explicitly instructed to focus on factual metadata extraction. When collecting metadata for a tool, we could not get Claude to forego a historical review of the tool in favour a current description of the tool. In another case, when examining a 1990s tool from Internet Archaeology, it insisted on producing a comparative analysis with modern alternatives rather than adhering to the specified focus on a single tool that existed in the past. This compulsion to be helpful by expanding beyond instructions represents another form of judgment failure: the inability to recognise when restraint serves research purposes better than elaboration. 
+
+
+%% BBS: what lit review did we do with Claude or Gemini? I did mine through OpenAI DR, Elicit, Perplexity
+
+
+
+\subsection{Google's Research Tools}
+
+
+
+
+\begin{table}[h]
+\centering
+\caption{Gemini Pro 2.5 Performance Across Research Stages}
+\label{tab:gemini-performance}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{p{2.5cm}p{3cm}p{4cm}p{4cm}p{2cm}}
+\toprule
+\textbf{Research Stage} & \textbf{Tool Tested} & \textbf{Task Description} & \textbf{Observed Failure Modes} & \textbf{Judgment Type} \\
+\midrule
+Ideation & Gemini Pro 2.5 & Generate focused research questions & Conflated multiple complex tasks; poor question quality & Epistemic Humility \\
+Literature Discovery & Gemini Deep Research & Systematic DH program identification & ``Successfully analysed'' claims without actual analysis & Correspondence with Reality \\
+Data Collection & Gemini Deep Research & Extract structured tool data & Produced 20-page report instead of requested CSV & Inductive Reasoning \\
+Source Synthesis & Gemini Pro 2.5 & Build annotated bibliography & 50\% fewer usable sources than Claude; high confabulation & Correspondence with Reality \\
+Writing Support & Gemini Pro 2.5 05-06 API & Generate academic sections & Self-congratulatory progress claims; no critical evaluation & Epistemic Humility \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+\subsubsection{Ideation and Research Design}
+
+Gemini's approach to research design revealed fundamental architectural limitations. The system consistently conflated multiple complex tasks into single operations, demonstrating poor task decomposition capabilities. When examining its thinking logs, we observed statements attempting to combine directory exploration, chapter analysis, and infrastructure assessment in a single step. This overreach reflected not ambition but a failure to understand research as an iterative process requiring focused investigation at each stage.
+
+The model exhibited what we characterise as ``arrogance without performance'' in its linguistic choices. Its tendency to italicise and quote words suggested a stance of knowing better than the user, yet this confidence inversely correlated with output quality. In our auto-interview testing, Gemini's questions proved superior to OpenAI's o3's formulaic approach but lacked both the consistency of Claude 3.7 Sonnet and the occasional insights of GPT-4.5. This mediocrity in ideation, combined with its conflated task structures, positioned Gemini as particularly unsuited for the careful conceptual work research design requires.
+
+\subsubsection{Literature Discovery and Source Evaluation}
+
+The literature discovery phase exposed Gemini's most characteristic failure pattern. Despite access to Google's search infrastructure, the system never utilised Google Scholar, instead relying on general web searches that produced what we term a citation pattern reminiscent of undergraduate "source soup". The system would claim to have successfully analyzed a chapter from 'Debates in the Digital Humanities' when, according to the thought log, it merely had downloaded some portion of a related web-page. Then it would extrapolate broad conclusions about collaboration needs and infrastructure importance from this cursory engagement.
+
+This self-deception reached absurd proportions in the thinking logs. Google's deep resaerch infrastructure, here, is mistaking quantity for quality. When it claims, ``I've made progress in accessing some key resources for understanding the current state of Digital Humanities.'' it was speaking of 12 search results: journal articles on Ditial Humanities pedagogy (without necessarily running the javascript needed to load the articles themselves), various announcements and retospectives, and a few annual reports. By selling this handful of pages as key reports, it is misstating the epistemic status of its search results. The gap between claimed accomplishment and actual analysis revealed a system essentially gaslighting itself about its capabilities. No critical evaluation was observed at any stage. The model accepted every source at face value, accumulating claims without assessing credibility, temporal relevance, or contradictions between sources.
+
+The single-threaded architecture exacerbated these problems. While collecting over 100 sources per run, the system provided no evidence of systematic examination. Instead, it performed rapid evidence accumulation, using search result snippets to construct narratives that bore little relationship to comprehensive scholarship. This approach produced the most extreme example of Carnapian confirmation we observed across all tested systems.
+
+Synthesis tasks revealed Gemini's inability to distinguish between information aggregation and analytical integration. The system would produce self-congratulatory progress summaries asserting successful analysis of complex theoretical frameworks based on minimal snippet examination. When tasked with creating annotated bibliographies, Gemini's outputs proved notably inferior to competitors, with approximately half as many sources meeting quality thresholds for inclusion in our Zotero source list.
+
+Confabulation rates exceeded those observed in other systems, with Gemini frequently inventing plausible-sounding citations that did not correspond to real publications. Unlike Anthropic's useful near-misses that could lead to relevant literature, Gemini's fabrications offered no serendipitous value. The combination of high confabulation, poor source quality, and self-deceptive progress claims rendered the system's synthesis capabilities unsuitable for serious scholarly work.
+
+\subsubsection{Data Collection and Extraction}
+
+Gemini's data collection failures centred on its need to produce reports regardless of task requirements. When explicitly asked for structured data in CSV format, matching successful outputs from other systems, Gemini instead generated a 20-page narrative report. This fundamental inability to match output format to user requirements revealed a system optimised for voluminous text generation rather than practical research support. Moreoever, the report gave a history of the project, rather than what we asked for: dates where the project was \textit{mentioned} in the literature. Where OpenAI's Deep Research eventually produced usable CSVs after iteration, Gemini remained locked in its narrative mode, delivering extensive prose when simple data tables were requested.
+
+The system demonstrated extreme sensitivity to prompt variations, we characterise as a "light-trigger" response. Minor wording changes produced dramatically different outputs, complicating reliable and consistent data extraction. This brittleness, combined with the compulsive report generation, meant that tasks requiring specific, structured outputs consistently failed. 
+
+\subsection{Hugging Face's Open Deep Research}
+
+Hugging Face's Open Deep Research represents the open-source community's attempt to democratise AI-assisted research workflows. The platform promises scriptable access to research capabilities through direct filesystem interaction and API integration. Our evaluation, necessarily limited by prohibitive costs, revealed a system offering theoretical advantages undermined by economic realities. A single run cost \$200 in o1-pro credits, constraining our testing to one elaboration task: enhansing metadata for the OpenArchaeo tool dataset. 
+
+The system's distinguishing feature lies in its ability to interact with the filesystem and user-specified search APIs while running queries from a local computer. This architecture theoretically enables more sophisticated workflows than possible with chatbots. In practice, our testing involved a structured data enhancement task: improving descriptions for archaeological software tools from the OpenArchaeo dataset. The system successfully processed the CSV input and generated enhanced descriptions, demonstrating basic functional competence in structured data manipulation.
+
+However, performance fell significantly short of expectations. The outputs achieved approximately 60\% of the quality obtainable through iterative chatbot interactions, despite the substantially higher cost. This performance deficit became particularly apparent when compared to reproducing the same functionality in Claude Research. While Claude required processing tools individually with manual initiation for each tool, it produced superior results at a fraction of the cost. The economic equation proved even less favourable when considering iteration requirements. Prompt refinement, essential for achieving acceptable outputs, multiplied the base cost.
+
+
+\subsection{Other Tools}
+
+\subsubsection{Literature Discovery}
+
+% Perplexity
+
+Perplexity and Elicit were also utilised for literature discovery.
+
+Perplexity Research identified 20 valid sources (14 unique to this service) from the corpus of 92 total unique sources. The initial standardised query produced 9 valid sources alongside 6 invalid items, while four follow-up queries yielded the remaining 11 valid sources—demonstrating diminishing returns as subsequent searches produced proportionally more irrelevant results. Of 34 total items returned, 14 were deemed invalid: 5 web pages failed to meet academic seriousness thresholds, 9 sources (1 blog post, 3 journal articles, 1 preprint, 1 presentation, 1 thesis, 2 web pages) proved irrelevant to the research topic despite potential value in other contexts, and 1 article appeared in a predatory journal.
+
+Valid sources comprised 9 journal articles, 4 academic blog posts, 3 web pages, 2 presentations, 1 book chapter, and 1 conference paper. Citation quality issues affected most references, with 8 records containing missing, incorrectly formatted, or incomplete author information. The service's interface complicated extraction: BibTeX export produced only 3 of 19 requested citations (all containing errors), while inline citations lacked sequential numbering and required manual click-through for bibliographic information. The separation between "headline" sources, inline citations, and the comprehensive "Sources" tab created inconsistencies in reference identification.
+
+Six sources overlapped with other services: five with ChatGPT Deep Research and one with Elicit. The service exhibited the highest proportion of non-academic and irrelevant sources among tested platforms, with follow-up queries often losing research context entirely, producing results about oil field decommissioning or end-of-life care rather than software sustainability.
+
+%Elicit
+
+Elicit identified 10 valid sources (8 unique to this service) from the corpus of 92 total unique sources—the smallest yield among tested platforms. The service returned no invalid or unusable references, demonstrating superior precision despite limited coverage. All sources met relevance and quality criteria, with no items from predatory journals or non-academic venues requiring exclusion.
+
+The output consisted entirely of scholarly materials: 6 journal articles, 3 conference papers, and 1 preprint. Citation accuracy exceeded other tested services, though errors persisted: 3 of 10 records contained incorrectly formatted or incomplete author information, confirming that manual verification remained necessary. The service's reliance on Semantic Scholar limited its discovery scope but contributed to higher precision in source selection.
+
+Two sources overlapped with other services: the systematic literature review by Imran and Kosar (2019) also found by ChatGPT Deep Research, and a geoscientific software sustainability article by Nyenah et al. (2024) also identified by Perplexity. The service's focused approach produced a coherent collection of directly relevant academic sources, though the limited quantity constrained its utility for comprehensive literature reviews.
+
+\subsection{Comparative Performance during Literature Discovery}
+
+Our investigation of literature discovery capabilities revealed marked differences between traditional academic databases and AI-assisted search tools. The complete corpus comprised 92 unique sources addressing software sustainability and longevity in digital humanities and related fields. Manual searching using traditional methods – including database queries, citation chaining, and expert knowledge – identified 27 unique sources (29.3\% of the total corpus). By contrast, the three AI services tested for literature discovery collectively identified 65 unique sources (70.7\%), though with minimal overlap between platforms.
+
+Traditional academic databases demonstrated limited utility for this interdisciplinary topic. Web of Science, employing our standard query strategies, returned 50 results of which only 3 proved relevant to the research question – a 6\% relevance rate. This poor performance, despite careful query construction, suggests fundamental limitations in keyword-based searching when addressing topics that span disciplinary boundaries and employ varied terminology. Google Scholar exhibited similar limitations, though systematic quantification was not undertaken.
+
+\begin{table}[h]
+\centering
+\caption{Comparative Literature Discovery Performance}
+\label{tab:literature-performance}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Service} & \textbf{Total Found} & \textbf{Unique} & \textbf{\% of Corpus} & \textbf{Required Correction} & \textbf{Unusable} \\
+\midrule
+ChatGPT Deep Research & 58 & 37 & 40.2\% & $\sim$67\% & 11 \\
+Perplexity Research & 34 & 14 & 15.2\% & $\sim$67\% & 14 \\
+Elicit & 10 & 8 & 8.7\% & $\sim$30\% & 0 \\
+Manual Search & 27 & 27 & 29.3\% & N/A & N/A \\
+Web of Science & 50 & 3 & 3.3\% & $\sim$0\% & 47 \\
+\midrule
+\textbf{Total Unique} & \multicolumn{2}{c}{92} & 100\% & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The AI services demonstrated remarkably little overlap in their discoveries. No source appeared in all three services' results. Only seven sources were identified by multiple platforms: one foundational systematic literature review on software sustainability found by both ChatGPT Deep Research and Elicit, five sources shared between ChatGPT Deep Research and Perplexity, and one source discovered by both Perplexity and Elicit. This minimal overlap suggests that each service employs distinct search strategies and source prioritisation, potentially offering complementary rather than redundant coverage.
+
+Citation quality emerged as a consistent challenge across all AI platforms. Approximately two-thirds of references generated by ChatGPT Deep Research and Perplexity required manual correction, with errors ranging from incorrect author formatting and invalid DOIs to erroneous URLs. Even Elicit, which demonstrated superior precision, produced errors in 30\% of its citations. These error rates necessitated manual verification of every AI-generated reference – a time-intensive process that offset much of the efficiency gained through automated discovery. By contrast, Web of Science citations, while few in number and relevance, required minimal correction, highlighting a trade-off between discovery power and bibliographic accuracy.
+
+The performance disparities between services reflect different architectural approaches and source databases. ChatGPT Deep Research achieved the highest yield but required iterative prompting and extensive post-processing. Perplexity cast the widest net but included the highest proportion of invalid sources. Elicit demonstrated the greatest precision but the most limited scope. These variations in performance across platforms informed our approach to evaluating each system's capabilities across the full range of research tasks.
+
+% ======================================================================
+% SECTION 5: REFLECTIVE ANALYSIS (~1000 words)
+% ======================================================================
+% Purpose: Analyze findings through judgment framework and identify patterns
+
+\section{Reflective Analysis}
+\label{sec:reflect}
+% ## 5.1 Bridge from Evidence to Analysis (1 paragraph)
+
+
+The evidence we presented in Section 4 reveals more than isolated tool failures. Across every implementation tested, from OpenAI's Deep Research to Google's Gemini, we observed consistent patterns that transcend specific architectures or claimed capabilities. The technoscholastic tendencies in these systems \textit{and their current implementations} prevent these systems from challenging textual authorities or experiencing the genuine surprise necessary for discovery. This section moves from documenting what happened to analysing what these failures mean for understanding AI's epistemological limitations. By examining cross-cutting patterns in the empirical evidence, we demonstrate how observed failures constitute compelling support for our theoretical framework of technoscholasticism and its three constituent judgment deficiencies.
+
+
+
+
+% ## 5.2 Cross-Cutting Empirical Patterns (6-7 paragraphs)
+
+\subsection{Cross-Cutting Empirical Patterns: Temporality, persistence, }
+
+% ### 5.2.1 Temporality Blindness (1 paragraph)
+
+
+Every system we tested exhibited a fundamental inability to reason about time while working on normal research problems. This temporality blindness manifested not merely as missing dates or failing to check timestamps, but as a complete absence of temporal reasoning capability. When examining the archaeological tool ArboDat, Deep Research overlooked the explicit statement on the homepage that ``it has been developed since 1997'' while conducting extensive searches elsewhere for chronological information. This selective blindness to readily available temporal data while pursuing tangential sources became a defining pattern. Claude Research demonstrated particularly revealing behaviour with version history. When directly instructed to focus on FAIMS with specific prompts about ``keeping the history and version straight,'' it successfully produced an accurate chronological account. However, when FAIMS appeared peripherally as context for other software, Claude described it as ``Android only,'' completely confusing past and future versions despite having previously demonstrated correct understanding. This inability to maintain temporal consistency across contexts suggests that these systems lack any genuine temporal model. Most fundamentally, the systems could not grasp that absence of recent evidence constitutes meaningful information. A Digital Humanities program showing no activity between 2020 and 2025 represents clear evidence of discontinuation to human researchers. The AI systems, however, treated any historical mention as perpetually valid, unable to infer from what we term ``useful absences.'' They operate in an eternal present where all textual claims exist simultaneously without temporal hierarchy or decay.
+
+
+
+% ### 5.2.2 Scope/Confabulation Relationship (1 paragraph)
+
+
+Our testing revealed a consistent relationship between task scope and output quality across all models. Each system performed roughly the same amount of work regardless of the task's actual requirements. When given narrow, bounded tasks, this effort produced high-quality outputs (still requiring validation) with minimal confabulation. When given broader tasks, the same effort became diluted across a wider scope, dramatically increasing confabulation rates. Claude Research demonstrated unusual self-awareness about this limitation, stating it could handle ``1 to 3'' tools thoroughly but warning that ``with 10 tools, you're going to get a shallow summary.'' Yet even Claude's actual performance failed to match this self-assessment, as quality degraded well before reaching stated limits. 
+
+This pattern suggests that prompt engineering must carefully match task scope to the fixed computational effort these systems apply, rather than expecting adaptive resource allocation based on task complexity. \textcite{jones_i_2025} advises:
+
+\begin{quote}
+    Scope is the only lever you wholly control. When an executive asks for an agent, shrink the mandate until you can prove three things in a sandbox: first, the agent finishes the task 90\%+ of the time without rescue; second, the remaining share of failures is bounded, auditable, and reversible; third, every miss surfaces fast enough that a human—not a cron job—decides whether to roll back or roll forward. (line 163)
+\end{quote}
+While that advice is for delivering an ``agent'' to someone else, we hold that to researchers iterating on prompts, it is also required practice. When building a prompt or infrastructure to perform academic-grade research, narrow the scope to a single task that has observable outputs to match Jones' requirements. It is essential that the output of an AI remain at a consistent judgement boundary, a carefully maintained scope that allows for easy human review of outputs.
+
+% ### 5.2.3 Stamp-Collecting Without Evaluation (1-2 paragraphs)
+
+
+All tested systems exhibited a random walk with vague Carnapian confirmatory bias. They collected web pages and sources until reaching what appeared to be an internal confidence threshold. OpenAI's Deep Research would accumulate sources until some internal confidence/boredom interval was crossed in its findings, with no evidence of revisiting or cross-checking initial results. The o3/o4 Mini system prompt from April appears to align with this interpretation: %insert reference to Pliny's GitHub page for this prompt from Zotero
+
+\begin{quote}
+If you search, you MUST CITE AT LEAST ONE OR TWO SOURCES per statement (this is EXTREMELY important). If the user asks for news or explicitly asks for in-depth analysis of a topic that needs search, this means they want at least 700 words and thorough, diverse citations (at least 2 per paragraph). (o3/o4)
+\end{quote}
+
+This evidence accumulating approach contrasted sharply with Elicit's architectural design, which explicitly separated source discovery from evaluation phases. However, even Elicit's superior structure failed in execution, suggesting the limitation stems from judgment deficiency rather than architectural constraints. The systems were merely models using tools in a loop \parencite{willison_agents_2025}, without any \textit{assessment} if their work would satisfy the task as stated. They produced the output without holding to any internal or explicitly stated quality standards as they performed single-pass accumulation rather than iterative evaluation. The result across all platforms was what we liken to an undergraduate source soup: uncritical aggregation lacking the historiographical awareness to evaluate when claims were made, by whom, for what purpose, and whether they remain valid.
+
+% BBS: Shawn, review this to see if it aligns
+This random walk echoes the thinking-collapse and overthinking issues identified by \textcite{shojaee_illusion_2025}, where they observe reasoning models models in problem-solving mode. They frame collapse as a function of complexity when they find that, ``Results show that all reasoning models exhibit a similar pattern with respect to complexity: accuracy progressively declines as problem complexity increases until reaching complete collapse (zero accuracy) beyond a model-specific complexity threshold.'' (p. 8) They also observe overthinking problems when ``... [R]easoning models often find the correct solution early in their thinking but then continue exploring incorrect solutions'' (p. 9). Both these patterns demonstrate an lack of introspection and metacognition in terms of the models abilities to evaluate their own thinking, even when there can be an objective and simple answer. 
+
+
+% ### 5.2.4 The "Vibes" Problem (1 paragraph)
+
+
+A recurring pattern across all systems was their reliance on what can only be described as ``vibes" rather than systematic evaluation criteria. This tendancey manifested in multiple ways: Carnapian confirmation proceeded until some internal threshold, quality assessments (if they exist) seemed to rely on quality indicators like ``appearing in a journal" rather than assessing documents on their own merits, and decision thresholds appeared arbitrary rather than principled. The absence of evaluation criteria meant that systems would terminate searches, select sources, and generate conclusions based on opaque internal states rather than observable quality metrics. This vibes-based operation fundamentally distinguishes these tools from genuine agents, which would require explicit success criteria and systematic evaluation methods. The pattern held whether examining OpenAI's confidence in inadequate searches, Claude's decisions about source relevance, or Gemini's assessments of analytical completeness.
+
+
+% ### 5.2.5 Architectural vs Epistemic Constraints (1 paragraph)
+
+
+Our analysis revealed two distinct categories of limitations that interact to prevent effective research performance. Architectural constraints include significant technical limitations: bounded context windows, single-threaded processing, absence of persistent state management, and the inability to move the token-cursor or edit prior tokens once generated. Epistemic constraints encompass failures of judgment: refusing to recognise when task decomposition is inappropriate, declining to evaluate output quality against research goals, and lacking the impulse for self-critique.
+
+The context window limitation deserves particular attention. Even Gemini's million-token context window suffers from fundamental saliency problems when processing multiple sources. The systems demonstrate no capacity to rank source reliability or manage conflicting claims. Performance degrades not from quantity of sources but from the absence of any prioritisation mechanism. Instead, models neglect epistemic value, treating all text as equally valid regardless of authorship, date, or credibility.
+
+These categories interact perniciously. Architectural limitations prevent systems from implementing better epistemic practices even if they could recognise the need. The inability to revise or delete previous tokens means that even a system that recognised its own errors could not correct them. The no hands problem compounds these limitations further. Systems can engage only with text, never with reality, prevenging them from making the kind of falsifable statements (Popper) or context-increasing research programmes (Lakatos) that characterises genuine research. This architectural reality makes technoscholasticism inevitable. 
+
+%% TODO BBS: explain the 'no hands' problem - in general this paragraph is very dense, elucidate and I'll cut it down again
+
+% ## 5.3 Manifestations of Technoscholasticism (3-4 paragraphs)
+
+\subsection{Manifestations of Technoscholasticism}
+
+% ### 5.3.1 Pattern Synthesis (1 paragraph)
+
+The empirical patterns documented above map onto our theoretical framework of technoscholasticism. These are not random bugs or implementation failures but predictable features of systems that privilege textual authority over critical assessment of knowledge claims. Temporality blindness directly stems from correspondence failure: without the ability to situate claims in time and evaluate their continued validity, these systems have no way to discern between competeing claims. The scope/confabulation relationship reflects epistemic hubris: lacking awareness of their own limitations, systems apply the same effort regardless of task demands. The ``vibes-based'' operation and evidence-accumulating behaviour manifest the absence of genuine evaluative criteria that would require the judgment these systems lack. Each pattern reinforces the others, creating a comprehensive picture of systems architecturally and epistemologically constrained to technoscholastic operation.
+
+
+
+% ### 5.3.2 The Three Dimensions in Practice (1-2 paragraphs)
+
+Our testing revealed how the three theoretical dimensions of judgment deficiency manifest in actual system behaviour. Epistemic humility remains  absent: systems always produce answers with confidence regardless of their actual knowledge or the quality of their sources. The performance of virtue is not having the virtue. Systems can mime the language of uncertainty while remaining fundamentally unable to doubt their outputs. 
+
+Inductive reasoning failures appeared in the complete absence of surprise at contradictions or unexpected patterns. The systems lack the impulse to self-critique, partly because published work doesn't display that thought pattern but rather shows its consequences. Pattern matching without insight characterises their operation. 
+
+Evaluating a correspondence with reality proved impossible given the fundamental constraint that these systems can only engage with text, never with the world that text purports to describe. We characterise this as the scholasticism fallacy where text and authority have primacy over reality, leading to arguments by authority rather than experimentation or verification. These dimensions compound each other. Without epistemic humility, systems cannot recognise when inductive leaps are needed. Without inductive capacity, they cannot identify patterns suggesting their textual authorities might be wrong. Without correspondence to reality, they have no basis for developing either humility or genuine insight.
+
+
+% ### 5.3.3 Dwarkesh's Question Answered (1 paragraph)
+
+The patterns and dimensional analysis above provide an answer to Dwarkesh's question about why LLMs make no discoveries despite vast knowledge\parencite[]{tabarrok_dwarkeshs_2025}. Discovery fundamentally requires noticing surprising connections through abductive reasoning, the ``flash of insight'' that Peirce described as essential to hypothesis formation \parencite{nubiola_abduction_2005}. Technoscholasticism systematically prevents such insights. These systems cannot challenge textual authorities because they lack the judgment to evaluate competing claims. They cannot experience surprise because next-token prediction architecturally precludes the ``aha'' moment of recognising unexpected patterns. Most fundamentally, they cannot generate novel hypotheses because they have no mechanism for noticing when existing explanations fail to account for observations. While we cannot definitively prove this explanation, the consistent patterns across all tested systems strongly suggest that technoscholasticism represents a fundamental barrier to AI-driven discovery rather than a temporary limitation of current implementations.
+
+
+% ## 5.4 Implications for Research Practice (4-5 paragraphs)
+
+\subsection{Implications for Research Practice}
+
+% ### 5.4.1 Tool vs Agent Reality Check (1 paragraph)
+
+Current AI research systems are not agents, but tools requiring constant human judgment. While they technically satisfy Anthropic's minimal definition of ``agents as models using tools in a loop" \parencite{willison_agents_2025}, they lack the critical assessment capability that would make them genuine agents. They perform tool use and iteration without evaluating whether their outputs address the research question or meet quality standards beyond being vibe-compatible insofar as the tokens produces are statistically consistent with prior tokens in the context window. Agentic goal-following behaviour requires Schönian reflexive judgment about goal attainment that remains entirely absent. Marketing claims of agentic capabilities actively harm appropriate use by creating false expectations of autonomous operation. Researchers must understand these services as sophisticated tools that can accelerate certain mechanical aspects of research while requiring human judgment at every decision point. The distinction matters: true agents would recognise task failure and request clarification. These systems always produce outputs regardless of the output's adequacy.
+
+
+% ### 5.4.2 Mundane Utility Patterns (1 paragraph)
+
+Despite fundamental limitations, clear patterns of mundane utility emerged from our testing. We observed an inverse relationship: the more judgment a task required, the less utility the tools provided. Utility peaked on mechanical, bounded, low-judgment tasks such as data extraction with heavy scaffolding or initial literature discovery (not literature review composition) for well-defined topics. The successful software tool extraction task required seven iterations to develop a prompt that constrained the system to simple CSV output, but once developed, it accelerated data gathering considerably. Conversely, performance reached its nadir on open-ended synthesis tasks requiring evaluation of competing claims or identification of knowledge gaps. These patterns suggest that researchers should deploy AI tools for initial aggregation and formatting tasks while reserving all evaluative and synthetic work for human judgment.
+
+
+% ### 5.4.3 Working with Model "Grain" (1 paragraph)
+
+Effective research utilisation requires understanding what we term each model's ``grain'': the directions in which it naturally operates versus those requiring force. Like wood grain, each system has inherent tendencies that can be worked with or against. Our testing revealed distinct patterns: Claude 3.7 excels at producing readable academic prose, Gemini 2.5 Pro performs superior transcription, while GPT-4.5 occasionally generates genuinely insightful questions despite generally weaker performance. Discovering these patterns requires significant investment. We found that we frequently spent a full day improving a prompt through 7-8 versions testing initially on 3-4 models (.e.g, tool evidence prompt, tool metadata prompt), and to actively, during prompt development, compare responses across model families to identify optimal tool selection for the task. Working against a model's grain produces frustration and poor outputs; working with it can yield genuine efficiency gains for appropriate tasks.
+
+%% SAR: maybe add something to 'grain' about 'certain models really want to do certain things, like Claude wanting to look at the past of tools rather than focus on current state, requiring this urge to be channeled into 'produce a history of the tool' before moving on...
+
+
+% ### 5.4.4 Practical Workflow Strategies 
+
+Based on observed patterns, we recommend specific workflow strategies that acknowledge AI judgment limitations while extracting mundane utility. Scope management proves critical: narrow, well-defined tasks yield dramatically higher quality than broad, open-ended requests. Workflows must assume zero AI judgment capability, treating all outputs as sophisticated and manipulated consequences of semi-autonomous search results requiring verification rather than authoritative research findings. Human checkpoints should occur at two critical junctures: initial result validation/ideation and outline approval before drafting begins. Researchers should use these tools for aggregation and formatting while performing all evaluation internally. When using AI to perform literature reviews, each source and author recommended by the AI should be individually inspected, even the demand for block quotes does not always guarantee the quoted text appears. On the other hand, these models can narrow down the literature search space considerably, so long as the researcher has access to traditional academic search tools and a citation manager. Most importantly, AI outputs should be treated as requiring the same verification as undergraduate or beginning postgraduate reserach assistant work: potentially useful as a starting point but requiring the application of judgement, careful editing, and fact-checking before incorporation into scholarly work.
+
+
+
+
+% ======================================================================
+% SECTION 7: CONCLUSION (~200 words)
+% ======================================================================
+
+\section{Conclusion}
+
+% ## 5.5 Conclusion to Analysis 
+% (Moved down to concolusion since it opens conclusion well)
+Technoscholasticism provides a explanation for the consistent failures observed across all AI research implementations. The patterns are not matters of model sophistication or implementation quality but reflect fundamental epistemological constraints inherent to systems that privilege textual authority over critical evaluation. These systems operate within what medieval scholars would recognise: a world where well-formatted text from authoritative domains constitutes truth, where contradictions require reconciliation rather than investigation, and where the absence of textual evidence carries no epistemic weight.
+
+Evidence suggests that current architectures face inherent barriers to genuine research capability. Discovery requires what Peirce termed abductive surprise: recognition that existing patterns fail to explain observations, followed by creative hypothesis formation. Yet, understanding these limitations enables effective use despite constraints. Researchers who recognise these tools' technoscholastic nature can extract genuine value by carefully scoping tasks, maintaining rigorous human oversight, and working with rather than against each system's natural tendencies. Given this framework, the question becomes not whether AI can conduct autonomous research, but how to design systems and workflows that acknowledge these limitations while augmenting human research capabilities. 
+
+% Technoscholasticism, as we have demonstrated through systematic evaluation of frontier AI research tools, represents not a temporary limitation but a fundamental characteristic of systems that privilege textual authority over critical assessment. Our autoethnographic investigation reveals how this digital scholasticism manifests consistently across all tested implementations, from OpenAI's Deep Research to Google's Gemini, regardless of architectural sophistication or marketing claims. These systems operate within what medieval scholars would recognise: a world where well-formatted text from authoritative domains constitutes truth, where contradictions require reconciliation rather than investigation, and where the absence of textual evidence carries no epistemic weight.
+
+The three dimensions of judgment deficiency we identified, epistemic humility, inductive reasoning, and correspondence with reality, are not independent failures but interlocking manifestations of technoscholasticism. Without epistemic humility, these systems cannot recognise when their textual authorities might be wrong. Without inductive capacity, they cannot experience the surprise that initiates genuine research inquiry. Without correspondence to reality, they remain trapped in purely textual worlds where defunct programs persist eternally and temporal context dissolves into an endless present. These deficiencies compound each other, creating systems that can simulate research language while remaining fundamentally incapable of research judgment. True agents would recognise task failure and request clarification; these systems produce outputs regardless of adequacy.
+
+% Technoscholasticism provides clues to why LLMs make no discoveries despite vast knowledge. Discovery requires what Peirce termed abductive surprise: recognition that existing patterns fail to explain observations, followed by creative hypothesis formation. These systems cannot experience this surprise because they cannot challenge their textual authorities. When encountering contradictions, they reconcile rather than investigate. When patterns suggest novel connections, they default to statistical likelihood rather than pursuing surprising implications. They are, as we observed, like scholars operating in the medieval scholasticism tradition, treating prior textual authorities as primary reality rather than as claims requiring verification.
+
+% Our findings necessitate recalibrating expectations for AI research tools. These are not the autonomous agents their marketing proclaims, but sophisticated text-manipulation tools requiring constant human judgment. The evidence demonstrates that current architectures lack even the minimal agency Anthropic implies in as ``models using tools in a loop," \parencite[]{willison_agents_2025} failing to assess whether their outputs address research questions or meet quality standards. For researchers, this distinction matters profoundly. True agents would recognise task failure and request clarification; these systems produce outputs regardless of adequacy, exhibiting what \textcite{frankfurt_bullshit_2005} termed "bullshit": indifference to truth manifested through superficially plausible text generation \parencite[see also][]{hicks_chatgpt_2024}.
+
+We found clear patterns of mundane utility: performance inversely correlates with judgment requirements, narrow tasks yield superior results, and working with each model's grain produces genuine efficiency gains. The successful discovery of initial sources for a literature review, discovery of software tools, compilation of tool metadata, and compilation of evidence demonstrating the lifespan of tools were all possible and greatly accelerated by the use of LLMs. Accomplishing these tasks required careful prompt engineering, including multiple iterations and metaprompting, to develop appropriate constraints. They were also useful in the extraction of ideas from the researchers' minds to the page via iterative question-and-answer sessions. These results demonstrates that LLMs can accelerate mechanical aspects of research when properly scaffolded. They excel as search, winnow, and reformat assistants, initial aggregators, and structured data extractors, if researchers remain continually involved and maintain rigorous oversight. Critically, agents will never ask the researcher for judgement calls; their text will always remain confident and persuasive \parencite[][]{kudina_use_2025}.
+
+Future research must address two critical directions. First, detailed design requirements for next-generation research tools deserve consideration within the context we have established here, building on our identification of necessary architectural compensations for judgment absence. Mundane software scaffolding incorporating LLMs into a ``researchers' workbench'' of some king could expose salient capabilities at each stage of research and systametise human involvement. Multi-threaded LLM architectures, persistent state management, and strategic human integration points, for example, could mitigate technoscholastic limitations without expecting AI to develop judgment. Second, continued research must track whether and how emerging architectures transcend these fundamental constraints or merely obscure them with linguistic sophistication.
+
+The path forward requires honest acknowledgment of what these tools are and what they are not. They are not researchers, not agents, and are not capable of the judgment that genuine research demands. They are powerful instruments for specific, bounded tasks within human-directed workflows. By understanding technoscholasticism as a defining characteristic rather than a correctable flaw, researchers can extract substantial value while contributing the judgment, taste, and persistence these systems inherently lack. The question is not when AI will overcome these limitations, but how we design research scaffolding and workflows that acknowledge fundamental constraints and leverage capabilities. In this recognition lies the potential for genuinely productive human-AI collaboration: not the replacement of human judgment, but its amplification through tools that excel precisely where judgment is least required.
+
+
+\newpage 
+
+\section*{AI Use Disclosure}
+
+This paper not only examines multiple AI companies Deep Research protocols, but is exploring mechanisms of writing and authorship with AI involved. 
+
+Models evaluated in this paper:
+\begin{itemize}
+    \item OpenAI o1-pro
+    \item OpenAI o3-mini-high
+    \item OpenAI Deep Research
+    \item Anthropic Claude 3.7 Sonnet (normal, thinking, and research)
+    \item Google Gemini 2.5 Pro 03-25
+    \item Google Deep Research
+    \item Elicit Deep Research
+    \item Perplexity Deep Research (using Claude 3.5 Sonnet)    
+\end{itemize}
+
+Models used when brainstorming or composing this work
+\begin{itemize}
+    \item Anthropic's Claude 3.7 Sonnet (Outlining, Introduction co-writing)
+    \item OpenAI's GPT-4.5 (Theoretical Framework)
+\end{itemize}
+
+\section*{S1 Appendix: AI-Autointerviewing paper development methodology}
+
+This appendix documents the AI-assisted composition methodology employed in developing this manuscript, supplementing the AI Use Disclosure. We detail this approach for transparency and potential adaptation by other researchers.
+
+We employed an iterative autointerviewing technique using frontier models to decompose the writing process into manageable components. This approach generated 32,772 words of transcript material (including prompts and responses) to produce the initial 14,000-word draft. Rather than accelerating composition, this method enabled work in the margins of standard academic schedules by breaking cognitive tasks into discrete, bounded segments.
+
+\subsection{Technical Implementation}
+
+We used GPT-4.5 and Claude 3.7 Sonnet for initial ideation and outlining. For section development, we employed parallel questioning across GPT-4.5, o3, Claude 3.7, and Gemini 2.5 Pro, combining their varied questioning approaches to generate comprehensive coverage of each topic.
+
+Each session began with explicit goal-setting and context establishment. For example, when working on section 3 of this paper, I used:
+\begin{quote}
+    Today the objective is to end up writing section 4 of AbsenceJudgement.tex, \\section{Case Studies of AI Research Tools}. We have a number of things to do before we start writing. I left off by crunching down our discussions of the tool in transcript.tex. Also, on an earlier go, before my colleague and I talked about this section, we had a go at revising the outline:
+    [outline]
+Thus, today the objective is to make sure that Section 4 can serve as evidence for the rest of the paper. To do that we need to write it (paying attention to the style guide). To do that we need to revise the outline until we have a good sense of what claims, evidence, and connecting warrants we are going to be making in each paragraph. (While this section is descriptive, instead of argumentative, having an idea of the logical flow of the paragraphs is useful.)
+
+
+To begin, please functionally decompose the tasks and goal at hand to a useful level of precision, and give me a readback of what you understand the objective for this session to be.
+\end{quote}
+
+Following validation of the readback, we prompted: "To be clear, I would like you to ask me one specific, pointed, and critical question at a time until you believe you have enough information to accomplish the task at hand. I am not interested in empty praise here, the objective is to make the best possible academic paper."
+
+\subsection{Process Workflow}
+
+\begin{itemize}
+    \item \textbf{Transcription}: All responses were audio-recorded and transcribed using Whisper and Gemini 2.5 Pro Experimental
+    \item \textbf{Version Control}: Transcripts maintained in Git and synchronised to Claude.ai projects via GitHub
+    \item \textbf{Question Density}: Models typically generated 5-10 questions per section or subsection
+    \item \textbf{Response Integration}: Answers combined across models for subsequent rounds
+\end{itemize}
+
+\subsection{Practical Outcomes}
+The method proved most valuable for:
+\begin{itemize}
+    \item Surfacing implicit assumptions requiring clarification
+    \item Maintaining consistent analytical depth across sections
+    \item Enabling composition during transit or between other commitments
+\end{itemize}
+
+\subsection{Limitations}
+\begin{itemize}
+    \item No time savings compared to traditional composition
+    \item Required extensive post-composition editing for redundancy
+    \item Some models (particularly o3) occasionally pursued unproductive tangents
+    \item Questions primarily followed deductive patterns from existing content
+\end{itemize}
+
+
+
+
+\subsection{Documentation and Reproducibility}
+
+All prompts, transcripts, and iteration logs are available at
+%TODO [OSF URL]
+. The complete workflow demonstrates how bounded AI assistance can support academic writing while maintaining human judgment at all critical junctures—a practical instantiation of the paper's theoretical arguments about appropriate human-AI collaboration boundaries.
+
+
+\printbibliography
+
+
+\end{document}
+
+
+% Old content
+
+% Introduction
+
+
+
+% Initial draft
+% \section{Introduction}
+% Large language models are fundamentally incapable of judgment, despite their ability to mimic the language of judgment. This distinction necessitates examining not only their linguistic output but also the concrete actions and outcomes that their words produce. However, this lack merely prevents us from treating them as true agents, \textit{not} as extracting mundane utility from them as tools. This paper is an investigation into the creation of a research-grade dataset using OpenAI's Deep Research in February 2025, acting as a case study --- and our ``autoethnographic'' reflection upon the use of this tool for what Zvi Moshowitz calls ``mundane utility."
+
+% Here, we will also give our understanding of the necessary prerequsities for an ``agentic'' tool, and why we believe that this infrastructure, at this time, does not satisfy that criteria. We will also discuss the fundamental lack of judgement that these models exhibit, and why it is this core incapability which prevents an accumulation of patterns-shaped-like-knowledge to answer Dwarkesh's question to Cohen: ``what do you make of the fact that these things have basically the entire corpus of human knowledge memorized and they haven’t been able to make a single new connection that has led to a discovery? Whereas if even a moderately intelligent person had this much stuff memorized, they would notice — Oh, this thing causes this symptom.'' We assert that the lack of induction exhibited by even currently accessible frontier models like o3-mini-high, answers this question. To be clear, this paper is a description of what we have experienced in our attempt to actively use these models to research and answer an academic question --- not merely to conduct a \textit{descriptive} literature review, but to find that central spark of insight which represents a contribution to the literature. We do not say that these capabilities are forever barred to these models, merely that they do not exhibit them yet and that the common errors in estimating the capabilities of these models based on \textit{what they say} rather than \textit{how they act} can lead to confusion as to their actual capabilities and hinder finding places of mundane utility in our use of these tools. 
