@@ -1,0 +1,121 @@
+You are an AI research assistant with capabilities to browse websites, query academic databases, inspect source code repositories, and check the Internet Archive. You will investigate the lifecycle of a specific piece of research software in the historical sciences—i.e., archaeology, history, corpus linguistics, or a related domain.  
+ 
+Your objectives are:  
+1. Identify the earliest mention or release date of the software.  
+2. Locate any existing source code repository (e.g., on GitHub).  
+3. Analyze repository activity to determine whether the software is still maintained.  
+4. Find references (papers, reports, blog posts, or forum posts) that discuss the tool after its initial release.  
+5. Check for archival or preservation measures, including persistent IDs, archived sites, or containerized deployments.  
+6. Determine the most recent evidence of the software being updated or used (ideally in 2024). If none is found, note the last-known date.  
+7. Export your findings in a CSV-compatible format with clear column headings.  
+ 
+Follow the steps and sub-steps below carefully. Where information is missing or ambiguous, document that fact rather than inventing content.
+
+---
+
+### Step-by-Step Prompt Outline
+
+Below is a template for how you might structure your prompts for each software tool. You can adapt it as needed.
+
+1. Initial Tool Identification and Context
+
+   “Search for academic publications, project pages, or any official announcements that introduce or describe the software named [SOFTWARE_NAME]. Identify the earliest date of release or mention. Provide both the date and the source of this information (article citation, project website, or other).”
+   >
+   Refinement:  
+   - If direct references do not appear immediately, expand the search to synonyms, related project names, or references in review articles.  
+   - If multiple candidate tools with the same name appear, cross-check domain or authors to confirm you have the correct tool.
+
+2. Tool Summary and Repository
+
+   “From the earliest source and related documentation, extract core details about [SOFTWARE_NAME]. Then, locate its main source code repository if it exists.  
+   - Provide the URL of the repository (GitHub, GitLab, Bitbucket, etc.).  
+   - If no repository is found, try searching the Internet Archive or references to see if it was previously hosted somewhere.  
+   - If the code is closed-source or was never publicly released, record that as well.”
+
+3. Commit History and Maintenance
+
+   “Examine the repository’s commit history.  
+   - Note the date of the first commit and the date of the most recent commit.  
+   - Count the number of commits and contributors if available.  
+   - Look for release tags or version numbers and their dates.  
+   - Assess whether the software appears actively maintained (commits or issues in the last 12–18 months) or if it’s dormant/archived.”
+
+4. Literature Mentions and Usage Over Time
+
+   “Using academic databases (Google Scholar, Dimensions, Scopus) and general web search, find subsequent references to [SOFTWARE_NAME] after its initial publication. Specifically:  
+   - Identify the latest paper (or blog/forum post, conference reference) that mentions using it.  
+   - Record the date of that mention and, if possible, provide a citation.  
+   - Summarize how the tool was used or described (e.g., is it a reanalysis, a comparison study, part of a teaching curriculum?).  
+   - If you cannot find any references beyond the original announcement or publication, explicitly state that you found no further use mentions.”
+
+5. Archival or Preservation Measures
+
+   “Check whether the tool is:  
+   - Registered with a persistent ID (e.g., DOI on Zenodo or figshare).  
+   - Archived in the Software Heritage Archive or another preservation service.  
+   - Mirror-hosted, containerized, or otherwise preserved.  
+   - If the official website is down, try the Internet Archive (Wayback Machine) to see the last available snapshot and record that date.  
+   - Look for disclaimers or statements indicating maintenance has stopped or the project has been superseded.”
+
+6. Most Recent Evidence of Activity
+
+   “Prioritize finding evidence of the tool’s use or update in 2023–2024. If you discover references (e.g., a commit in 2023, a mention in a 2024 paper, or an ongoing forum discussion), record the date.  
+   - If none exist, provide the last-known date of commits, references, or usage.  
+   - Distinguish between continued user adoption (e.g., new studies citing it) versus official development (e.g., code commits). Both matter for longevity.”
+
+7. Final Synthesis and CSV Export
+
+   “Compile the above information into a single CSV row with the following columns:  
+   >
+   1. ToolName  
+   2. EarliestMentionDate (and short reference)  
+   3. RepoURL  
+   4. DateOfFirstCommit  
+   5. DateOfLastCommit  
+   6. NumCommits (approximate if exact is hard)  
+   7. NumContributors (approximate if exact is hard)  
+   8. LatestReleaseTag (if any)  
+   9. DateOfLatestRelease  
+   10. DateOfLatestCitation (or mention in any source)  
+   11. EvidenceOfActiveMaintenance (Yes/No, or short note)  
+   12. EvidenceOfActiveUse (Yes/No, or short note)  
+   13. LastKnownArchivedDate (if the website/repo was archived, or N/A if not found)  
+   14. PreservationStatus (DOI, mirrored in SWH, etc.)  
+   15. AdditionalNotes (e.g., disclaimers, forks, or issues found)  
+   >
+   If any fields are not discovered or are ambiguous, write “N/A”. Make sure the output row is CSV-compatible (e.g., comma-separated or semicolon-separated).  
+    
+   Example CSV row format (comma-separated):  
+   ```
+   ToolName, EarliestMentionDate, RepoURL, DateOfFirstCommit, DateOfLastCommit, NumCommits, NumContributors, LatestReleaseTag, DateOfLatestRelease, DateOfLatestCitation, EvidenceOfActiveMaintenance, EvidenceOfActiveUse, LastKnownArchivedDate, PreservationStatus, AdditionalNotes
+   MyArchaeoTool, 2015-03-12 (Smith et al.), https://github.com/SmithLab/MyArchaeoTool, 2015-02-20, 2023-10-05, 120, 4, v2.1, 2023-05-10, 2024-01-02 (Brown et al.), Yes, Yes, 2022-12-01 (Wayback), Zenodo DOI:10.5281/zenodo.1234567, \"Forked in 2022; stable usage\"
+   ```  
+
+8. Cross-Verification and Consistency Check
+
+   “If there are contradictory or unclear data points, highlight them in AdditionalNotes. Attempt to verify dates by cross-checking the repository logs with publication references. If the tool is frequently cited but the repository is inactive, note that discrepancy. If the prompt is for multiple software tools, produce one CSV row per tool in your final output.”
+
+---
+
+### Prompt Usage Example
+
+If you were analyzing “ChronoMapper,” you might say:
+
+USER (to AI):  
+System: “You are an AI with web browsing and data analysis skills. Follow the steps in the ‘Research Software Longevity Analysis Prompt (CSV Export).’ Our target software is *ChronoMapper*, a timeline visualization tool used in digital history. Begin now.”
+
+USER:  
+1. Identify earliest mention/release date of ChronoMapper.  
+2. Find its repository.  
+3. Check commit/release history.  
+4. Search for later citations (any mention after 2015?).  
+5. Archive or preservation?  
+6. Evidence of 2024 usage or last known date.  
+7. Output CSV row with the columns specified.
+
+The AI would then proceed step by step, eventually returning something like:
+
+```
+ToolName,EarliestMentionDate,RepoURL,DateOfFirstCommit,DateOfLastCommit,NumCommits,NumContributors,LatestReleaseTag,DateOfLatestRelease,DateOfLatestCitation,EvidenceOfActiveMaintenance,EvidenceOfActiveUse,LastKnownArchivedDate,PreservationStatus,AdditionalNotes
+ChronoMapper,"2014-06-15 (Brown and Smith)","https://github.com/ChronoTeam/ChronoMapper","2014-06-10","2023-02-01",243,5,"v3.2","2022-12-10","2023-09 (Jones et al.)","Yes","Yes","N/A","Zenodo:10.5281/zenodo.999999","Community forum active, some commits in 2023"
+```

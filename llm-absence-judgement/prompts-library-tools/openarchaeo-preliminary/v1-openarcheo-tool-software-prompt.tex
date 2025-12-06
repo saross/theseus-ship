@@ -1,0 +1,18 @@
+Here is some data from a csv:
+csv
+item_name,description,github,gist,gitlab,bitbucket,launchpad,twitter,youtube,blogpost,cran,pypi,codeberg,website,publication,DOI,author1_name,author2_name,author3_name,author4_name,author5_name,author6_name,category,platform,tag1,tag2,tag3,tag4,tag5,notes,internetarchive
+quantAAR,R Library for Quantitative Analysis in Archaeology.,https://github.com/ISAAKiel/quantAAR,,,,,,,,,,,,,,ISAAKiel,,,,,,Packages and libraries,R,Statistical analysis,,,,,,https://archive.org/details/github.com-ISAAKiel-quantAAR_-_2020-07-09_13-14-14
+
+We need to improve the data in the following ways:
+1. improve its description to a 50-100 word description
+2. decide if the following tool definition applies 
+
+<definition>
+For our project, a software tool is any discrete piece of software—be it a program, script, or web application—that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets—without offering mechanisms for active computational engagement—are excluded. 
+
+In essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.
+</definition>
+
+If it does, we need to add a tag to the available tags of archhist-software-tool
+
+Then we need to emit ONLY the csv line with updates. 
