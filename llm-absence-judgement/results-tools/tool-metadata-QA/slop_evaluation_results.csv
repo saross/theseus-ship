@@ -1,0 +1,11 @@
+Tool,Total_words,Description_words,History_words,Technical_words,Strengths_words,Weaknesses_words,Anchored_claims,Anchored_per_100,Generic_phrases,Slop_assessment,Notes
+FAIMS,689,112,149,175,126,127,18,2.6,0,None,Ground truth entry; exceptionally well-anchored
+archeoViz,680,86.0,109.0,176.0,110.0,110.0,15,2.2,0,None,High density; specific packages named
+Gephi,850,89.0,123.0,230.0,131.0,126.0,18,2.1,1,Minimal,One generic opening; otherwise excellent
+ARIADNE,950,106.0,135.0,244.0,123.0,126.0,20,2.1,2,Minimal,Minor promotional framing; well-anchored
+PyLithics,580,72.0,101.0,168.0,61.0,59.0,8,1.4,3,Minimal,Some promotional tone; balanced weaknesses
+SEAHORS,750,111.0,129.0,216.0,145.0,149.0,14,1.9,1,Minimal,"Specific versions, dates, packages; minor opening generic"
+LifeForms,638,100.0,120.0,192.0,108.0,118.0,10,1.6,2,Minimal,"Good historical anchoring (1989, Simon Fraser); honest about limited archaeological use"
+SASSA,775,122.0,146.0,228.0,135.0,144.0,12,1.5,2,Minimal,"Well-anchored dates (2005-2007, NERC); frank about sustainability failure"
+SpadeR,741,124.0,145.0,255.0,119.0,98.0,11,1.5,1,Minimal,"Specific version (0.1.1), dates, URLs; acknowledges limited archaeological applicability"
+kdedemo,723,105.0,182.0,211.0,103.0,122.0,12,1.7,1,Minimal,"Excellent historical anchoring (1995-1996, CAA, Internet Archaeology); honest retrospective"
