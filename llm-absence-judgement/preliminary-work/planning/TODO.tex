@@ -1,0 +1,177 @@
+Task:
+    * BBS to figure out how to export chats
+    * BBS Deploy DR, Operator, Computer use, huggingface, for data collection
+        * 1. Just make the *list* of the tools (with citations)
+            * a. Describe the tool from context
+            * b. Link
+            * c. Bibliography of mentions
+        * 2. Find metadata about the tools and build dataset, post quem and ante quem indications
+    * BBS to annotate DR in hypothes.is
+    * SR take all cuts from FAIMS and drop into o3
+    * SR Work on framing text
+    * SR to annotate DR in hypothes.is 
+
+20250220
+    BBS: Combine all tools in single list and filter with human judgement
+    BBS: Apply 20250207 prompt for single tool to see how DR and search does
+        Data:   Tool, Year, citation, url, evidence
+        
+        Evidence: (Blog post, github activity, journal article, "proof of life")
+    * BBS to attempt to run 'Synthetic Prompt for Longevity Analysis of Research Software' in DR
+    * SR to run bibliography search in Perplexity and Elicit
+        -Perplexity is much briefer than OpenAI DR, only three sources. Had to use the follow-up questions.
+    * SR to run standard phase 1 discovery prompt against Open-Archaeo 
+    * SR to upload PDFs to Claude, Elicit, Perplexity and generate lit review from that (being careful with Claude and using a version of Brian's prompt)
+    * SR to build out tool descriptors (summary of what they are: OSS vs commercial, license, on GitHub / GitLabs, etc.
+    * Possible: search of GitHub / GitLabs to build dataset
+
+    
+Outputs:
+    * Thesius Ship: Tool lifecycle predictions paper
+        * others: longevity of DH projects
+        * We're *specifically* looking at tools only.
+    * Build dataset of tools in DH/archaeology
+        * Any tool built since 1995
+        * importance threshold: 
+            * if a tool is cited in a paper
+            * if there is a paper about the tool as primary topic
+            * if the paper bothers to link to a repo or webpage about the tool
+            Minimum criteria: link or citation (and of course, follow the citations)
+    * Corpus:
+        * IA, PLoS1, CAA proceedings, SoftwareX, DH Quarterly, The journal which used to be called LLC (literary and linguistic computing/Journal of DH), OpenArchaeo dataset, american journal of field archeo, 
+        * Possible: CRAN, CTAN, PYPI, Github with tags, Any papers about DH tools - follow their references, 
+        * AI to find suggestions of appropriate other journals.
+    * Scope
+        * DH with an emphasis on histicorical studies
+        * Archaeology
+        * History
+        * Linguistics
+    * Limitations
+        * Explicitly streelight effect -- we're doing this because we have disciplinary awareness in this sub-field, software tool / research infrastructure development over a decade (cite, cite), and an interest in using archaeological methods to date software because it's funny.
+    * Definitions:
+        * minimum necesary: contains code which is evaluated by a scripting system or compiler (R, bash, Python, java, matlab). Contains a license or minimal documentation such that other people could use within the context of the era published.
+        * Not looking for: datasets or collections, even if published in code repositories or generated using code
+    * Methodology
+        * Look for evidence of earlist and latest mention of the tool. 
+        * Post quem and anti quem only, or uncertainty are fine
+        * Average lifespan can be extimated using aoristic modelling
+    * Analysis:
+        * a "field season" of software meta-data collection
+        * A living corpus on github
+        * This is a datapaper showing archaeological techniques are appropriate to software artefacts (both senses of the word)
+    * Discussion:
+        * Basis for future research on appropriate tool design
+
+    2025-02-21
+    * SAR
+        * Using Brian's script as a model, improve / standardise the 'produce an improved description' o3-mini-high prompt, then feed all of the open-archaeo tools through it in whatever sized batches o3 will take. - done
+        * Run the 'identify which ones are tools' script over it, or do that at the same time as per Brian's prompt. - done at same time
+
+
+Things to include in reflective paper
+
+    * Dataset building
+    * Lit review
+    * Steps taken to ensure data accuracy (lots)
+    * Steps taken to ensure data completeness (5%)
+
+
+Next paper: how to automatically keep a dataset updated (probably using hugging face pipelines, aim to write approx. mid-year, both to re-run analyses as LLMs improve, and to build out the dataset from new sources - and begin monitoring those)
+
+2025-02-25 SAR
+    * Run non-DVCed tools from Open-Archaeo through the DR tool prompt
+    * Make sure there are 20-25 tools that are DVCed and have been run through the tool prompt for comparison
+    * Check that the 2-3 JOSS tools are in the dataset
+
+
+2025-04-21 
+    * SAR: dataset of tools in DVC as CSV. 
+    * SAR: open-archaeo - enhanced version, do manual check on 5 percent to see if persuasive * SAR: non-open-archaeo - review, 5 percent check for accuracy, look at citations
+    * SAR: check 'sightings in wild' for both (open-archaeo and non) - DONE
+    * SAR: make a single file of everything that purports to be a reference to a software tool (CSV), not counting the OpenArchaeo improvements - DONE but need to do manual check of 5 percent
+    * Need to determine what exactly counts as a 'tool', eliminate anything that doesn't and make sure that anything that does is included
+    * Do DR on the open-archaeo tools that do have DVC (at least some of them) as a check of DR 'sightings in the wild' vs. DVC commit histories.
+
+    * Crisp definition of 'software tool' -DONE (draft at least, generated with three models, see 'RS-tool-definition...' docs)
+    * Master list of the tools we're looking, url, tool, description, etc., and status as a tool or not
+    * Feed that list back into the sightings 
+    
+    * BBS: Finish article
+    * BBS: Code the GitHub reports for commits
+    * BBS: Run 'sightings in the wild' script over the open-archaeo GitHub items for comparison
+
+
+
+
+
+
+
+2025-07-15
+
+
+
+
+\subsubsection{For Appendices:}
+
+\begin{enumerate}
+    \item \textbf{Literature Discovery Prompts Appendix} 
+    \begin{itemize}
+        \item Include ChatGPT DR initial prompt that failed (to show what doesn't work)
+        \item Include successful revised ChatGPT DR prompt emphasizing scholarly sources
+        \item Include the "standardised prompt" used across all three services
+        \item Add brief commentary on what made the difference
+    \end{itemize}
+    \item \textbf{Web of Science Query Appendix} 
+    \begin{itemize}
+        \item Document exact query syntax used
+        \item Include search parameters (databases, date ranges, etc.)
+        \item Note the 47/50 irrelevant results
+        \item Brief explanation of why traditional queries failed
+    \end{itemize}
+    \item \textbf{Citation Error Examples (if space permits)} 
+    \begin{itemize}
+        \item Pick 2-3 egregious examples showing different error types: 
+        \begin{itemize}
+            \item Wrong author format (e.g., "Smith, J." instead of "Smith, Jane Q., et al.")
+            \item Invalid DOI
+            \item Wrong publication year or journal
+        \end{itemize}
+        \item Show original LLM output vs. corrected citation
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Additional Tasks:}
+
+\begin{enumerate}
+    \item \textbf{Create Comprehensive Performance Table} 
+
+\begin{verbatim}
+Service | Total Found | Valid | Unique | % of Corpus | Citation Errors | Extraction Difficulty
+\end{verbatim}
+
+Include Web of Science and manual search as benchmarks
+    \item \textbf{Bibliography Verification} 
+    \begin{itemize}
+        \item Cross-check that exactly 92 unique sources appear in final bibliography
+        \item Verify distribution matches reported numbers (37 from ChatGPT DR, etc.)
+        \item Flag any discrepancies
+    \end{itemize}
+    \item \textbf{Methods Note on Citation Verification} Consider adding a brief note (perhaps in methods or as footnote) explaining: 
+    \begin{itemize}
+        \item How citations were verified (DOI checking, manual search)
+        \item What constituted "correction" vs. "unusable"
+        \item Time estimates for cleanup per service
+    \end{itemize}
+    \item \textbf{Consider Creating a "Lessons Learned" Box} 
+    \begin{itemize}
+        \item Best practices for using LLMs for literature discovery
+        \item Warning about citation quality
+        \item Recommended hybrid workflow
+    \end{itemize}
+    \item \textbf{Document Overlap Analysis} 
+    \begin{itemize}
+        \item Create list/table of the 7 sources found by multiple services
+        \item Analyze what made these "findable" by multiple approaches
+        \item Consider what this says about "canonical" sources in the field
+    \end{itemize}
+\end{enumerate}

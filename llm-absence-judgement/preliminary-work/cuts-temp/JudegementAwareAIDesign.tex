@@ -1,0 +1,233 @@
+% OpenAI synthesis cut
+
+The synthesis capabilities across OpenAI's model suite revealed marginal differentiation despite marketing claims of progressive sophistication. GPT-4.5 performed adequately when generating structured outputs such as section headings or reformatting existing content. However, when tasked with synthesising multiple sources into coherent arguments, it defaulted to sequential summarisation rather than analytical integration. The model would present Source A's claims, then Source B's claims, without identifying tensions, contradictions, or synthetic insights that emerge from their juxtaposition.
+
+o1 Pro demonstrated incremental improvements in instruction adherence and reduced tendency toward tangential elaboration. In our testing, it more reliably maintained focus on specified research questions and showed marginally better performance in distinguishing between primary claims and supporting evidence. However, these improvements remained firmly within the realm of textual manipulation rather than genuine analytical capability. Neither model could identify when sources made contradictory claims about the same phenomenon, assess the relative credibility of competing authorities, or recognise when accumulating evidence pointed toward conclusions different from those explicitly stated in the sources.
+
+% Claude section 4 cut
+
+\subsubsection{Synthesis and Writing Support}
+The synthesis capabilities revealed Anthropic's characteristic pattern: superior linguistic sophistication undermined by identical epistemic limitations. Claude 3.7 Sonnet produced more readable prose with better paragraph-level coherence than GPT-4.5. Transitions flowed naturally, and technical concepts received clearer exposition. Yet beneath this polished surface lay the same fundamental inability to detect contradictions or evaluate competing claims.
+
+When synthesising literature about software sustainability, Claude would seamlessly weave together sources from different decades without acknowledging temporal context. A 2010 prediction about future technological needs would be presented alongside 2024 assessments without recognition that one could evaluate the other. This temporal flattening extended to citation practices, where the system showed no preference for recent sources when discussing current states, freely mixing historical and contemporary references as if all existed in an eternal present.
+
+The confabulation rate increased dramatically when synthesis tasks exceeded Claude's operational scope. Unlike Deep Research's tendency to simply produce less coherent output, Claude maintained linguistic fluency while introducing fabricated citations and non-existent studies. When building annotated bibliographies, it repeatedly cited specific page numbers from completely fictional journal articles with perfect academic formatting. Despite these confabulations, Claude Research demonstrated unexpected utility in literature discovery. While only 60\% of its citations corresponded to real publications, the fabricated references often contained accurate author names or plausible titles that, when searched independently, led to relevant literature. This serendipitous discovery mechanism, though unreliable, proved more productive than competitors' outputs, which produced less useful near-misses. Other companies' models near-misses were far less useful. 
+
+
+
+The marginal improvements in Anthropic's tools highlight an important pattern: architectural sophistication and linguistic refinement cannot compensate for fundamental judgment deficiencies. The multi-agent approach produces better-organised outputs, and Claude's prose currently surpasses competitors in readability. For researchers conducting narrow-scope tasks with extensive human oversight, these improvements translate to genuine utility gains. A well-prompted Claude Research session on a single, clearly defined topic can produce useful preliminary findings.
+
+However, these gains remain firmly within what Mowshowitz terms ``mundane utility" \parencite*[]{mowshowitz_ai_2023}. The tools excel when treated as sophisticated search-and-format assistants rather than autonomous researchers. They cannot distinguish active from defunct programs, current from historical claims, or reliable from unreliable sources. The hyperbolic titles and forced helpfulness reveal systems optimised for user engagement rather than scholarly rigour. Researchers must approach these tools with clear understanding: they offer efficiency in mechanical tasks while requiring human judgment at every decision point. The promise of AI research assistance remains exactly that: tool-enabled assistance requiring constant human supervision. Anthropic's marketing materials claim that Research ``operates agentically, [exploring] different angles of your question automatically and [working] through open questions systematically," promising ``thorough answers, complete with easy-to-check citations so you can trust Claude's findings" \parencite{anthropic_claude_2025}. In practice, the prose often obscured factual claims, and "easy-to-check" citations proved mandatory to verify. Despite these limitations, Claude remained our preferred tool for preliminary research tasks.
+
+
+% Gemini
+
+
+Gemini Deep Research represents the apotheosis of technoscholasticism among tested systems. Its combination of vast search access with complete absence of critical evaluation produces outputs that superficially resemble research while lacking all essential scholarly judgment. The system's single-threaded architecture, compulsive report generation, and self-deceptive progress claims create an illusion of comprehensive investigation that dissolves upon examination.
+
+For practitioners, Gemini offers a cautionary example of how technical resources cannot compensate for judgment deficiencies. Despite Google's search advantages, the system underperformed all major competitors in practical research tasks. Its extreme prompt sensitivity and format rigidity further limit utility. Researchers should approach Gemini's outputs with particular scepticism, recognising that its confident progress claims and voluminous reports mask fundamental failures in source evaluation, temporal awareness, and critical analysis.
+
+
+
+\subsection{Other Tools}
+% Paragraph structure for each:
+% - Technical approach
+% - Critical failure point
+% - Why relegated to "other" category
+
+Several additional tools demonstrated various approaches to agentic research, each failing in characteristic ways that reinforced our broader findings about judgment deficiencies in current AI implementations.
+
+
+% - Recent o3 upgrade shows improvement
+% - Still lacks task decomposition and context maintenance
+% - Tech demo rather than research tool
+
+
+
+\textbf{OpenAI's Operator} functions as a technology demonstration rather than a practical research tool. The system lacks fundamental capabilities required for sustained research work: it cannot decompose tasks, maintain notes, or work to a plan. This architectural limitation prevents it from maintaining context across even simple data collection sequences. When attempting academic paper searches, Operator would begin appropriately but quickly lose track of its objective, becoming distracted by tangentially related content. The absence of task persistence or goal tracking renders it unsuitable for any research activity beyond the most trivial demonstrations. The recent change in May 2025 to an o3 backend from the 4o that it was using when we were testing is promising from a task decomposition standpoint, but as it engages in the same random-walk as OpenAI's Deep Research without any of the systematicity implied by being able to change context and take notes, it is still too early to use in any serious way.
+
+
+
+
+% - Docker container approach promising
+% - Excessive API costs ($1 for failed attempts)
+% - Cannot complete basic document retrieval
+
+
+\textbf{Anthropic's Computer Use} theoretically advances beyond browser-based limitations by running in a local Docker container, enabling access to desktop applications. This architectural innovation suggested promise for integrating traditional research software into AI workflows. However, practical testing revealed prohibitive costs exceeding even Open Deep Research, with API credits consumed rapidly for minimal progress. The system failed to complete basic tasks such as locating and loading academic papers. Despite its theoretical advantages in application access, Computer Use represents another instance where architectural sophistication cannot overcome fundamental judgment and operational limitations. 
+
+\textbf{Anthropic Claude Code} demonstrated more promising capabilities for qualitative research through its local filesystem access. We employed it to analyse class transcripts and assessments for a full semester of an experimental AI pragmatics class (available at the Australian Data Archive at DOI: %TODO
+). Using the systematised prompting approach discussed in the OpenAI section, Claude Code successfully iterated over files while maintaining markdown to-do lists for state management across larger tasks. This approach enabled systematic progression through complex analytical workflows.
+
+However, significant limitations persisted. The confabulation rate remained high enough to require line-by-line verification of all quoted material. Despite this constraint, Claude Code's ability to write state files to disk represented a compelling demonstration of how research tools could achieve greater systematicity. By maintaining persistent records of processed files and pending tasks, it partially addressed the methodological gaps we identified in other implementations. This file-based state management offers a practical model for future tools seeking to support genuinely systematic research workflows.
+
+% - Best conceptual structure (explicit source evaluation phases)
+% - Hamstrung by Semantic Scholar dependence
+% - Undisclosed model prevents assessment
+% - Produces lowest quality sources despite good architecture
+
+
+\textbf{Elicit} demonstrated the most structured approach among secondary tools, explicitly separating source discovery, evaluation, and synthesis phases. This conceptual architecture aligned well with research workflows. However, implementation failures negated these structural advantages. The system's dependence on Semantic Scholar severely limited coverage, particularly in humanities disciplines. Combined with an underpowered language model and reliance on AI-generated TLDR tags rather than full-text analysis, Elicit produced the lowest quality outputs among tested systems. From identical prompts, Elicit yielded only 9 useful sources compared to 55 from Deep Research. Despite claiming systematic review capabilities, its practical utility proved negligible.
+
+
+% - Search query optimization focus
+% - Produces 3 citations when claiming 25 sources analyzed
+% - Pure technoscholasticism without triangulation
+% TODO: Write comparative analysis paragraph
+% TODO: Add transition to Section 5
+
+
+\textbf{Perplexity's Research Mode} exemplified pure technoscholasticism without systematic ambition. The system optimised search queries effectively but demonstrated no evidence of source triangulation or critical assessment. When tasked with producing a literature review with citations, Perplexity claimed to analyse 25 sources while providing only 3 references. This gap between claimed and actual performance, combined with minimal reasoning capabilities and poor academic database access, positioned it as the epitome of accumulation without judgment. Its outputs represented sophisticated web searches rather than research assistance.
+
+These implementations, despite varying technical approaches and market positioning, exhibited consistent patterns of failure. They privileged textual accumulation over critical evaluation, lacked temporal awareness, and demonstrated no capacity for assessing output quality against research objectives. Their uniform inability to transcend mechanical information gathering reinforces our central argument: current AI systems lack the judgment necessary for autonomous research, regardless of their architectural sophistication or marketed capabilities.
+
+
+
+
+
+
+% For Elicit, we provided the following prompt:
+
+% \begin{quote}
+
+% Research question: Within the literature of archaeology and the historical sciences, constructed broadly, what software tools exist as discussed in the literature from 1995 onwards? Specifically, we are looking for you to examine the journals of: Internet Archaeology, SoftwareX, JOAD, JOSS, JCAA, and STAR (Science \& Tech of Archaeological Research). We define a tool as: ```For our project, a software tool is any discrete piece of software—be it a program, script, or web application—that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets—without offering mechanisms for active computational engagement—are excluded. In essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.``` The objective of this research report is to find and cite EVERY SINGLE software tool (from our construction above) as mentioned in those journals SO LONG as those software tools have specific and direct applicability or citation within papers about archaeological and historical sciences. Some of those journals are discipline specific, and we need to look through for software tool mentions (mere published datasets are not interesting to us). Some of those journals are tool specific, and we need to look through for DISCIPLINE mentions, to ensure that the tool has specific and direct relevance to historians and archaeologists. My objective here is either a bulleted list of citations, or if you can manage it a csv of citations for further work. The intention is that this research will support a paper on software longevity.
+
+% \end{quote}
+
+% We did not believe that it would accomplish any real proportion of the prompt, but given that the Elicit team provided us a coupon for the "Plus" plan (\$12/month), the available capabilities afforded to us were a one-prompt-and-go text area. Elicit's own infrastructure evaluated this prompt as a "Great question." Unlike with our assessment of Anthropic's Computer Use, we believe that changes in both kind and degree are necessary for Elicit to be useful for research data collection. We assert the following systematic issues.
+% \begin{enumerate}
+%     \item Unacceptable scope, inhereted from Semantic Scholar
+%     \item Problematic search criteria, via Semantic Scholar's deplorable TLDR summaries    
+%     \item Model judgement failures in screening criteria operationalisation and evaluation
+%     \item An utter lack of judgement and discernment in the final research report
+% \end{enumerate}
+
+% We did find that, from our prompt, the model they are using did create acceptable screening criteria, but once created, the evaluation of those criteria against sample papers was deeply unsatisfactory. 
+
+
+
+
+
+% ======================================================================
+% SECTION 6: RECOMMENDATIONS (~650 words)
+% ======================================================================
+% Purpose: Provide concrete guidance for tool developers and researchers
+
+\section{Research Tool Design Requirements}
+
+% ## 6.1 Introduction: From Limitations to Design (1 paragraph)
+% - Bridge from Section 5's analysis of limitations
+% - Frame as requirements for developers building next-generation research tools
+% - Acknowledge that technoscholasticism may be inherent to LLM architecture
+% - Propose design patterns that compensate through architecture rather than expecting AI judgment
+% - Preview: multi-threaded cognition, persistent state management, human integration points
+
+% ## 6.2 Judgment-Aware Architecture (4-5 paragraphs)
+
+\subsection{Judgment-Aware Architecture}
+
+% ### 6.2.1 Multi-Threaded Cognitive Architecture (1-2 paragraphs)
+% - Replace single train of thought with multiple specialized threads
+% - Dispatch individual threads per source for clean context isolation
+% - Each source evaluation thread operates in minimal context until validated
+% - Different thinking modes require smaller contexts that report upwards
+% - Threads populate shared database (biblatex/sqlite) with evidence, links, counterarguments
+% - Main operating context remains clean until sources considered and contextualised
+% - Cross-thread communication through persistent artifacts not context pollution
+
+% ### 6.2.2 Cursored To-Do Lists with Active Management (1 paragraph)
+% - Not waterfall task decomposition but actively managed research stages
+% - Human judgment checkpoints at each stage transition
+% - Ability to move items, reprioritise, and abandon failed approaches
+% - User can see and modify the plan as research progresses
+% - Enables the non-linear research process actual scholarship requires
+
+% ### 6.2.3 Persistent State Through Document Stores (1 paragraph)
+% - Wiki/annotated bibliography approach outside context window
+% - Markdown files committable to repositories for version control
+% - Separate corpus management from active reasoning
+% - Store consulted (not just cited) works with extraction notes
+% - Enable "forgetting" through explicit removal from active context
+
+% ### 6.2.4 Tombstone Architecture for Failed Paths (1 paragraph)
+% - Track thoughts/approaches explicitly rejected
+% - "Indications of thoughts that we've had that are bad"
+% - Prevent re-exploration of failed approaches
+% - Document why certain sources or interpretations were discarded
+% - Build institutional memory of research dead ends
+
+% ## 6.3 Research Process Support (3-4 paragraphs)
+
+\subsection{Research Process Support}
+
+% ### 6.3.1 Stage-Based but Non-Waterfall Design (1 paragraph)
+% - Distinct stages: literature finding, extraction, outline building, drafting, revision
+% - Each stage has different context window requirements
+% - Allow backwards movement: revise research questions based on findings
+% - "The idea of a waterfall model of research is laughable"
+% - Support iterative refinement at every level
+
+% ### 6.3.2 Outline-Driven Context Management (1 paragraph)
+% - Load relevant papers into context based on outline position
+% - "When we get to that part of the outline, load the entire paper"
+% - Spin off focused sub-tasks with appropriate context
+% - Maintain coherence while enabling deep engagement with sources
+% - Transparent about what's in context at each stage
+
+% ### 6.3.3 Transparency and Inspection Requirements (1-2 paragraphs)
+% - Show which sources considered at each step
+% - Display extracted quotes with page numbers
+% - Explain why sources included or excluded
+% - Document operationalisation of research questions
+% - Enable user verification of every inference
+% - "Transparency not merely in encoded thoughts but in process"
+
+% ## 6.4 Human-AI Collaboration Framework (3-4 paragraphs)
+
+\subsection{Human-AI Collaboration Framework}
+
+% ### 6.4.1 Strategic Human Judgment Integration (1 paragraph)
+% - Not just confirmation prompts but substantive decision points
+% - Two critical points: initial search validation and outline approval
+% - "Is this passage responsive to your question?" checkpoints
+% - Enable precedent-setting through user choices
+% - Build understanding of user intent through interaction
+
+% ### 6.4.2 Corrigibility and Course Correction (1 paragraph)
+% - System must be correctable mid-process
+% - Recognise when pursuing wrong approach
+% - Ask for clarification when genuinely uncertain
+% - "Can we correct the AI's operation within this context?"
+% - Admit failure rather than producing inadequate outputs
+
+% ### 6.4.3 Tool-Centric Design Philosophy (1-2 paragraphs)
+% - Acknowledge these are tools, not agents
+% - Design for augmentation not automation
+% - Make limitations visible to users
+% - Optimise for transparency over apparent sophistication
+% - Support workflows that assume zero AI judgment
+
+% ## 6.5 Evaluation Criteria for Implementation (2 paragraphs)
+
+\subsection{Evaluation Criteria for Implementation}
+
+% ### 6.5.1 Technical Requirements (1 paragraph)
+% - Token management strategies for long research sessions
+% - Context window allocation algorithms
+% - State persistence mechanisms
+% - Version control integration
+% - Cross-model compatibility considerations
+
+% ### 6.5.2 Success Metrics (1 paragraph)
+% - Transparency of process over polish of output
+% - Human judgment integration effectiveness
+% - Ability to recover from failed approaches
+% - Documentation quality for decision points
+% - Support for genuinely iterative research
+
+% ## 6.6 Conclusion: Towards Honest Research Tools (1 paragraph)
+% - These requirements acknowledge rather than obscure AI limitations
+% - Focus on amplifying human judgment rather than replacing it
+% - Success means helping researchers work faster/deeper, not autonomously
+% - Next generation tools should be sophisticated assistants, not false agents
+% - Bridge to Section 7: with proper design, significant mundane utility remains achievable

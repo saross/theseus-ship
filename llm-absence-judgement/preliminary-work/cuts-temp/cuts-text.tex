@@ -1,0 +1,47 @@
+\footnote{While existential questions about AI are undeniably important, they lie outside the scope of this investigation...Once LLMs possess the capacity for effective judgement, existential questions about the nature of work, continuation-of-culture, or continutiy-of-existance will become salient.}
+
+
+instead of our "plastic [research] pal who is fun to be with"\parencite[Adams referenced in][]{lavine_robotic_2007}
+
+
+One proof of this lack of judgment is that we have never observed an LLM admitting that its answer is inadequate, or that its output requires reconsideration. % without first being prompted to that effect by a user
+
+% BBS Cut, duplicated better below. 
+% We characterise these LLM-driven research tools as adhering to a "technoscholastic" worldview: privileging textual authority over critical assessment of knowledge claims, determining source quality by textual markers rather than by real-world correspondence, and defaulting to heavily cited authorities regardless of their appropriateness. This technoscholasticism explains why, despite having access to vast corpora of human knowledge, these systems have proven incapable of generating genuine insights or novel connections, or acting as autonomous researchers rather than mere tools for researchers. 
+
+% is it 'technical markers' or 'heavily cited' - or some sort of availability bias? The 'source soup' of the lit reviews seems more random than this paragraph implies.
+
+
+We are not claiming a positivist or relativist position in the demarcation problem of the philosophy of science. Rather we are claiming that AI ``agents'' operate in the most na\"ive possible evidence collection mode, mapping to a simplistic reading of Carnap \parencite[][]{bright_carnap_2019, bright_carnaps_2022}. 
+
+%% BBS: I don't love quoting our observations. 
+As one of our observations notes, "Deep Research...takes the entire context window, you push Deep Research, and then it crunches down what it thinks its task is, and then you say go, or you give it a bit of feedback and it goes." (Observation notes 14 Feb 2025) This execution pattern reveals systems that operate within predetermined methodologies through system prompt, code, or interface rather than exhibiting genuine agency. 
+% SAR: Is 'predetermined methodologies' strong enough to describe this limitation? It seems more like following an established routine or executing an algorithm (not sure of the words...)
+
+
+Cut from 'findings'
+
+\begin{table}[h]
+\centering
+\caption{OpenAI Tool Performance Across Research Stages}
+\label{tab:openai-performance}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{p{2.5cm}p{3cm}p{4cm}p{4cm}p{2cm}}
+\toprule
+\textbf{Research Stage} & \textbf{Tool Tested} & \textbf{Task Description} & \textbf{Observed Failure Modes} & \textbf{Judgment Type} \\
+\midrule
+Ideation & Deep Research & Create systematic prompt for software longevity analysis & Proposed elaborate nine-stage methodology; unable to execute even stage one & Epistemic Humility \\
+Literature Discovery & Deep Research & Identify active DH programs in Australia & Presented defunct centres as active (Newcastle death notice ignored) & Correspondence with Reality \\
+Data Collection & Deep Research & Extract software tools from specified journals & Random walk through sources; missed explicit dates on pages & Inductive Reasoning \\
+Source Synthesis & GPT-4.5 & Integrate findings into coherent narrative & Technoscholastic aggregation without temporal critique & Correspondence with Reality \\
+Writing Support & o1 Pro & Generate structured research outputs & Marginal improvement over GPT-4.5; persistent confabulation & Epistemic Humility \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\subsubsection{Ideation and Research Design}
+
+
+\subsubsection{Literature Discovery and Source Evaluation}
+
+Provided with explicit instructions to ``identify trends in program creation, continuation, or discontinuation since 2020,'' the system uncritically accepted institutional claims without temporal verification. The University of Newcastle's Centre for 21st Century Humanities exemplified this failure. Deep Research characterised it as an active ``regional center linking history and computing'' representing Australia's DH ecosystem. Investigation revealed one of the centre's primary datasets displayed a death notice dated April 2024, explicitly stating ``there will be no further updates to data on this website.''\parencite[]{centre_for_21st_century_humanities_colonial_2024} Navigation links were broken, and no mention of the centre appeared on current university research centre pages. Similarly, Western Sydney University's program, offered once in 2020, was presented as evidence of ongoing DH vitality despite the course catalogue marking it ``SUSPENDED.''

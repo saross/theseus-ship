@@ -1,0 +1,123 @@
+Notes on experience
+
+2025-02-07 Day 01
+Initial exploration, presented OpenAI Deep Research (DR) with several possible topics, querried: given the options above, how should we choose an appropriate topic to evaluate the capabilities of frontier models / agents to produce an article for a first-quartile journal? What should we test, and how do we approach it? 
+
+Research questions: 
+* How much and how well can frontier models / agents serve as an RA to unstick a paper?
+* What combination of tools is most useful?
+* What are the strengths and weaknesses 
+* What prompting skills does a researcher need to get the most out of the tool?
+
+Watching the output from DR is...fascinating
+
+Seems to have found / cited some predatory journals, neet to improve prompt to limit to higher quality outlets
+
+Some blogs / other sources appear blocked. This is probably a bad idea for those authors.
+Including some bodies of literature that I would not necessarily have surveyed when preparing the paper, broadening scope (but allowing the broader scope to be managable)
+
+Some really good insights, some less useful, some...very random
+
+Points for including grey literature (and mentioning it at all). DR is using the language of our subdiscipline. Indeed, first 'thought' used 'Grey Literature'.
+
+Order of results is interesting, in the case of Zack Batist, hit his blog (which was blocked), then bounced to his paper in IA. Researchers should blog about their research (and make sure the blog is readable by LLMs) if they want their work to be findable. As it is, we only found his blog and paper by reading the 'Activities' and 'Sources' carefully. FAIR?
+
+What does 'FAIR' mean when the readers are machine intellegences? See 'Writing for LLMs so the Listen' (Gwern) Writing as data for LLMs. Text is data.
+
+Looks at papers in other languages (of course), something that I might be lazy about
+
+Does look at university research publication portals, which opens many closed publications that received public funding?
+
+Can't just live in the prompt / response window, must look at 'activity' and 'sources', and move back and forth between them to evaluate sources, understand what informaiton is being pulled from what source, and how it's being used and analysed.
+
+Finding the Batiste paper (2024) is really important, published in IA, so we probably would have found it, but surfacing new research this quickly is very helpful.
+
+There's some waffle / padding - but it's not like humans don't do this too...
+
+Thoughts: the lit review itself surfaces some important ideas quickly. Need to read it to figure out objections and counter-thoughts. The quality is high enough that it can't just be dismissed as either trivial or incorrect / misleading. 
+
+Quoting patterns and choices are interesting...may need prompt refinement
+In lit review, Batist is cited for work on GitHub, not on Open-Archaeo, which he co-operates and used as a main source of data in his paper.
+
+DR claims, that our paper has not yet been written (empirical data for how long software lives)
+
+Output is a 'good first-year PhD RA' - we have to read the draft and think about it - it's decent, but not as insightful as it could be. Misses the point, buit misses the point in a useful way. 'Does not inherently understand truth of scholarly significance'
+
+How is use of AI changing our writing? Making us think about collaborative writing, RAs, think about the scope of the paper and the direction to take it in, much like a human interlocutor with a different background.
+
+Different in degree and kind from earlier LLMs.
+
+Uses two citation formats, scholarly and 'AI-format'. 
+
+Didn't do everything we asked it to do, didn't generate set of prompts. Need to reprompt.
+
+Follow up prompt to initiate empirical analysis. DR asked for clarification about how to do this - feels like a supervision meeeting where we explain our preconceived approach (look at softaware publications and try to track longevity of tools mentioned in them through various means) and encouraging ideas that DR proposed (web scraping and GitHub analysis). Feels like supervising a first-year PhD...
+
+2025-02-08 Day 02
+
+Reviewed generated text. Impressive. Produced some fluff but also suggested some sources and directions that we hadn't thought of. Thorough review of logevity challenges in DH and frameworks for sustainability and persistence (so far as it goes, nothing about building for interoperability so that when your piece of the ecosystem 'wears out', another can replace it. Apparently not so much literature on software sustainability in DH, since much of the generated text is about collections and digital editions. Nothing on planned decomissioning, something of an assumption that 'not lasting forever' is a failure. Plan for end of life needed, as is done in the repository world; assume that your software won't last forever (missing from generated report). Ah, 'planned sunset' is mentioned alongsied 'regular maintenance' - it is thorough. Good review of case studies, none of which we were familiar with.
+
+Hmm...'best practices serve as a checklist of indicators' - perhaps we can capture these practices and compare them to longevity to empirically test this claim.
+
+2025-02-09 Day 03
+
+Reviewed outputs and explorations to date and developed plan. 
+
+BBS: dealing with uncertainty through aoristic modelling (or a similar statistical approach) regarding the lifespan of tools
+
+SAR: Did some tests, and DR is pretty good at constructing the 'research graph' by looking at Crossref and DataCite DOIs, ORCIDs, etc. - I'm getting decent results without too much time spent developing prompts. I thought this info might be useful when constructing prompts to find citations to research software or look for research software in (e.g.) DataCite.
+
+
+2025-02-20
+SAR: Operator did a better job than I first thought with JOAD. A manual check indicates only one article mentioning a 'software tool' was missed, and in that paper the tools used only get one brief paragraph.
+Mentioning open-archaeo, a list of tools, is an interesting false positive
+It didn't actually extract the tool name and other information as asked, only returned the article title.
+It is very difficult to get consistently good citations out of any of the LLMs, even with extensive prompting.
+
+Lit searches
+DR did much better than Perplexity or 
+Scopus and Web of Science didn't pick up that many either - unlike in earlier papers I've written, something about the publication pattern meant that not a lot of papers on 'software longevity' or 'software sustainability' in HASS came up in the searches.
+Google Scholar not that useful.
+DR proved its worth here.
+
+2025-04-29
+Review of February run on 'find sightings of a tool in the wild': ArboDat homepage clearly states 'has been developed since 1997 as a product of the Landesamt für Denkmalpflege Hessen, Wiesbaden/Germany (HessenARCHÄOLOGIE) under the direction of Prof. Angela Kreuz' but DR does not pick up on this date.
+
+2025-05-02 thoughts
+Interesting how ChatGPT DR utterly fails at the tool metadata task. o3, Gemini, and Claude Research are all pretty good, but even after prompt revision still have some misunderstandings - but no more than human authors often do when discussing FAIMS.
+
+The main learning from today is that for a long-term project like FAIMS, with major changes in architecture / functionality / interoperability, all the models get the various versions confused. Claude can tell the narrative story of FAIMS evolution, but conflates features and capabilities when discussing import/export, interoperability, technologies used, means of customisation, etc.
+
+Have started going down the rabbit hole of asking the model how to improve the prompt, whether certain things can be done, what additional (meta)data would be useful. I'm finding most answers helpful. 
+
+Claude Research has a quirk where it just won't generate the CSV unless prompted after it generates its native report. The report itself is OK, but I'm not thrilled with the tone.
+
+Thoughts 2025-05-04: with repeated prompt revisions and the development of a style guide, the reports and CSVs are pretty good. 'Better than nothing' and 'a good place to start but maybe needs human development' might be accurate assessments.
+
+Sometimes you just can't stop Claude (wants to talk about all the versions of all the software), so just incorporated historical view into prompt, aiming for clarity about what version he's talking about instead of trying to stop him.
+
+Sometimes Claude just...won't. I can't get it to (a) generate CSVs without a separate prompt after it is generated its research report, (b) stop it from making sensational titles - it corrected the title that appears in the main chat, but the title of the report is beyond reach, (c) switch to Australian English. Just won't do these things. People do this too...
+
+these things really are spells in a grimoire, I just made a small adjustment to the prompt and I'm getting decent titles (for now...this happened before that it worked for one or two but then...relapsed). Nope, has quit working again.
+
+Failure mode when Claude Research couldn't find anything is interesting...
+
+Random prompt failures (Claude Research) are annoying and unpredictable. Just did a run (Gelphi) where the report was fine but suddenly and for the first time the CSV is improperly formatted.
+
+You can just see Claude trying...so hard to follow the instructions about titles. Often the title displayed in the main chat is sober, then the one in the report itself is hype. Sometimes both are fine (and the same), then the next prompt the wheels come off again...
+
+when doing htmltoc, Claude Research ran off and did a report on 'this tool and newer ones that do the same thing' - had to reign it in to the specific tool.
+
+Although Claude Research got the history of FAIMS right when we pointed it at FAIMS, when FAIMS comes up as an 'alternative' for other software (e.g., iDig), it's still the Android-only version.
+
+'I'll strictly adhere to the format "[Tool Name]: [Primary Function] for [Application Domain]" for report titles, maintain Australian spelling conventions, and execute the prompt without asking follow-up questions.' ...and...Claude does none of these things.
+
+26 May SAR
+-Claude 3.7 system prompt update, tool metadata went a little wobbly, needed to make minor changes to the 'framing' prompt. Titles got less hyperbolic, but are now very boring and still don't follow the requested pattern, instead are usually something like [Tool]: A comprehensive metadata report. Don't know where it's getting 'metadata' from, cross-contamination from somewhere. Report also changed from default report to a long-form version of what we request in the CSV
+
+'For the report titles, I'll use the format "[Tool Name]: [Primary Function] for [Application Domain]" while maintaining an academic tone.' - um, no.
+
+31 May SAR
+When researching STELLAR, Claude somehow got fixated on harris matrices and, even though it found the right tool, it only mentioned that tool then ploughed ahead with 'I couldn't find the tool so here is a review of harris matrix software'. 
+
+Random field failure where only a list was given for 'alternatives' as opposed to the usual narrative comparison it's always produced in other runs.

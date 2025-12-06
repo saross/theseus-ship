@@ -1,0 +1,325 @@
+These definitions impose substantive requirements that exceed task decomposition and 20-minute web-search runs.
+
+Current task-decomposing systems demonstrate limited goal-directedness but fall short in Dung's planning dimension
+
+Bratman - 'intention': Current task-decomposing systems lack this commitment, evidenced by their tendency to wander off-task, fail to check work, or end processes abruptly. The absence of reasoning-centered commitment undermines claims to genuine agency.
+
+[Even compared to industry's marketing or minimalist claims] This minimal definition, tool use with iteration, falls short of the goal-progress assessment capabilities necessary for genuine agency. Yet even this reduced standard proves aspirational, as our empirical observations demonstrate that current implementations operate more as single-pass evidence accumulators than iterative evaluators capable of recognizing when their accumulation of sources has failed to address the research topic at hand. 
+
+While Deep Research systems may satisfy some shallow agency criteria, such as acting on behalf of users for a period of time, they lack genuine initiative and user understanding. Contra Shneiderman and Maes \parencite[49]{ben_shneiderman_direct_1997} [and other sources mentioned in intro], current systems are limited to pattern matching within immediate prompt contexts rather than developing true models of user preferences or needs. This distinction is not merely semantic. It determines our appropriate level of trust and delegation. Systems incapable of goal-progress assessment should be treated as sophisticated tools rather than autonomous agents. The judgment deficits identified throughout this paper undermine the capacity for assessing progress towards a goal required for true agency, situating current Deep Research systems as iterative tool-users, rather than goal-directed or goal-setting entities, in the context of historical definitions of software agents.
+
+[about OpenAI's definition of agenticness, focusing on 'the degree to which a system can adaptably achieve complex goas in complex environments with limited direct supervions' - While useful for benchmarking diverse AI systems and developing safety mechanisms, OpenAI's definition implicitly assumes that complexity-handling alone captures genuine agency. This framing elides a crucial distinction: the ability to decompose tasks is necessary but insufficient for agency, which requires the capacity to judge whether those tasks have been accomplished.
+
+[Human judgement required] - While narrow scope reduces the required level of direct supervision, current systems using frontier models are unable to assess their own success within the broader context of the task. Such judgement must routinely be applied to research tasks, especially in novel, complex, or risky domains. This requirement for human judgement renders claims of agency problematic.
+
+A more precise conceptual hierarchy includes but distinguishes between task decomposition (parsing complex instructions into constituent steps), goal-setting (AGI-like capacity to determine goals and judge goal attainability autonomously), and progress-assessment (including iterative judgment about goal attainment and attainability). Current systems like OpenAI's ChatGPT Deep Research operate at the task decomposition and, imperfectly, goal-following level: they take a context window, process what they believe their task to be, await minimal confirmation, and execute a fairly literal interpretation of what the user asks. While some might argue that sufficiently sophisticated task decomposition and imperfect goal-following constitutes a rudimentary form of agency, this perspective conflates procedural complexity with judgment. The distinction fundamentally determines whether users can reasonably expect these systems to recognize and rectify their own failings, or must instead incorporate extensive human oversight.
+
+[On Schön's conceptualisation of reflective practice] This reflexive capacity fundamentally differs from current AI implementations. When OpenAI's model, during a Deep Research session, momentarily wonders "if sticking to the default web\_with\_bing will be more effective,"\footnote{https://chatgpt.com/share/67d66742-6640-8004-b2c7-9c1ed360776c} this 'thought' does not represent Schönian reflexivity but merely a programmatic selection between predetermined options. One might object that applying frameworks developed for human practitioners to AI systems imposes an impossible standard. However, our purpose is not to anthropomorphize these systems, but to specify what capabilities remain absent. The critical deficiency in current "agentic" models is their inability to deviate from, reconsider, or abandon their pathways they define for themselves, reducing their claimed agency arising from sophisticated task-decomposing in the face of "perterbations". Even though they may, akin to a trained carpenter, choose between this tool or that tool (e.g. run a Bing search or write some python), this choice-between-tools should not be mistaken for the reframing-of-goal with concomitant pauses and check-ins that Schön's reflexivity demands. 
+
+Properly understood, these systems function as tools rather than agents. Whereas agents exercise judgment themselves, tools depend upon users' judgment. System-as-tool differs from system-as-agent in degree and in kind, even if these capabilities lie on something of a spectrum. A truly agentic, goal-following system, reflexive in the Schönian sense will be able to earn and justify trust by knowing, for example, when to ask for help \textit{during} the performance of a task or when to report sub-standard performance. To do so, an agent must be able to \textit{judge} where reality and the goals set to it diverge. The best "multi-agent" systems today are tool-using hierarchies, where higher-order tools are able to set aside poor outputs from lower-order tools (we observed this phenomenon in HuggingFace's Open Deep Research infrastructure, OpenAI's ChatGPT Deep Research, and Claude Sonnet in "Research" mode as they "worked around" problems like accessing web-pages). We saw no evidence (e.g., in the COT or responses) that these higher-order tools were capabile of self-reflection when assessing their own progress against a goal. This lack of agency manifests not in degree of sophistication but in the categorical inability to assess whether the system has properly accomplished what was asked of it.
+
+While the distinction between goal-following and the broader goal-setting capabilities associated with AGI lies beyond the scope of this critique's, we acknowledge that reflective self-assessment, although necessary for authentic goal-following, is alone insufficient for broader AGI-like capacities. Such capacities would demand the autonomous instantiation and sustained reflexive evaluation of \textit{internally} generated goals in reaction to the environment, rather than the execution of external goals from users and systems. The necessity of human oversight---such as OpenAI's human-in-the-loop protocols---implicitly acknowledges the goal-setting and goal-following gaps inherent in these systems \parencite[9]{shavit_practices_2023}. Such mechanisms serve as pragmatic safety measures, since current AI implementations lack internal evaluative judgment: they cannot adequately assess goal attainability, evaluate success in goal \textit{attainment}, clarify ambiguities, or explicitly reject impossible or fundamentally erroneous tasks.
+
+Epistemic humility
+
+ current LLMs lack [epistemic humility]. This deficit manifests not merely as overconfidence but as a structural inability to distinguish between varying levels of certainty in different knowledge domains. It remains conspicuously absent from even the most advanced LLMs, regardless of their ability to mimic its linguistic patterns.
+
+When OpenAI's Deep Research makes statements like "Hm, that's interesting. I'm looking at..."\footnote{https://chatgpt.com/share/67d66742-6640-8004-b2c7-9c1ed360776c} to imply evaluation, its subsequent actions reveal a fundamentally different process. Rather than genuinely reassessing its understanding, the model typically accepts the first plausible response aligned with its preexisting statistical patterns and continues to other sources. This pattern of "an authority I searched for argues for my claim, therefore my claim is correct" epitomises what we term technoscholasticism. To be clear, not all human scholars currently and consistenly fufill this virtue, either. Crucially, those virtue-lacking scholars are not being sold as useful assistants to researchers around the world.
+
+This failure of epistemic humility stems from three interrelated deficiencies. First, LLMs fundamentally lack the impulse for self-critique; they do not spontaneously doubt their own outputs in the way that effective researchers must. As one of our observations notes, "the impulse to edit, the impulse to self-critique is not a pattern exhibited in their training data. Published work doesn't have that thought pattern in it because it is the \textit{consequence} of that thought pattern"(Observation notes, 17 Feb 2025). Second, even when explicitly instructed to evaluate their work, these models lack the capability to fundamentally revise their approach. Third, they exhibit what Frankfurt describes as, "an indifference to truth", the defining characteristic of "bullshit" \parencite{frankfurt_bullshit_2005, hicks_chatgpt_2024}.
+
+We observed this pattern consistently across different models and tasks. When OpenAI's ChatGPT Deep Research was tasked with compiling sources on "Digital Humanities," it confidently referenced triumphant university webpages showcasing university programs that had been shuttered years earlier. When confronted with contradictions, it offered post-hoc justifications such as: "I'm thinking about a Chinese authors conference submission on generative AI in DH. It's an early draft, so it might not be peer-reviewed, but it offers a unique global perspective."\footnote{https://chatgpt.com/share/67d6a0c5-7648-8004-b620-70d91fdb7239
+%TODO Get thoughts
+} This self-serving rationalization reveals not epistemic humility but its opposite: a determination to maintain narrative coherence even when accuracy is compromised. %TODO CITE!!
+
+This pattern illustrates what might be termed an "Aristotelian fallacy" within these systems: a contemporary digital revival of medieval scholasticism's approach to knowledge. Just as medieval scholars privileged authoritative texts over empirical observation, LLMs privilege well-formed, statistically common statements over verifiable truth. An AI responds authoritatively to prompts irrespective of genuine knowledge availability. This persistent response-generation, even when confronted with fundamentally impossible or nonsensical requests, highlights an intrinsic epistemic shortcoming: an inability to explicitly articulate genuine uncertainty or reject flawed premises. 
+
+[Agentic capacity and epistemic humility]. So long as the format does not contradict their defaults and an authority claims something to be true, the authority's claims will "prove" the AI's initial position. As an aside, policy refusals, or small epistemic nods like: "I have limited knowledge about specific individuals who aren't widely known public figures"\footnote{https://claude.ai/share/5fd04d60-eb6e-4bfc-ba26-3a6038d151f1} is not epistemic humility in any meaningful sense, though it is certainly welcome. The academic epistemic humility we demand, as researchers using the tool, is when is \textit{is able} to respond, but realises the academic (not factual) question is outside the scope of both its background knowledge \textit{and} outside the scope of the authorities it has searched for.
+
+---again, they usually do not pause, consider, and consider their task failed by their own hand.
+
+Poorly considered use of these \textit{tools} in AI-enabled research carries specific, if seldom considered, risks. Without effective judgement born of epistemic humility, these systems cannot properly identify genuine gaps in literature, distinguish between varying degrees of scholarly confidence, or engage in the critical self-correction that drives scientific progress. Their outputs exhibit what appears to be certainty across all domains, regardless of the actual evidential basis, creating a flattened epistemological landscape that bears little resemblance to the varied terrain of academic/scicentific knowledge. In a Lakatosian sense \parencite*{imre_falsification_1970}, 
+%TODO find page
+there is no self-reflexive espitimological regard for the "hard core" of a research programme versus its "protective belt." Instead, all claims that are made with authority serve to accumulate evidence in the Carnapian confirmatory sense, so that the LLM may make an utterance backed by authority.
+% TODO Cite carnap
+This fundamental limitation is not merely a technical challenge but an epistemological one that strikes at the heart of what constitutes genuine \textit{unsupervised} and delegatable research capability. 
+
+Inductive and abductive reasoning
+
+Current models in 2025 certainly have the capacity to perform inductive and abductive experiments, if prompted correctly. One of Ballsun-Stanton's evaluations of new models involves the game Zendo, by Kory Heath. Models have consistently improved in their ability to induce the covering rule. However, they only apply this capcity when prompted to, rather than as a reflexive act upon their own output. 
+
+Specifically, Can LLMs recognise patterns that deviate from expectations and generate novel hypotheses in response? 
+
+While LLMs can work at the latter [pattern recognition], they have systematically failed at the former [observations that break the pattern].
+
+As each LLM-generated token is, within a small probability band determined by the model's temperature setting, the statistically more likely option that follows from the prior; there is no "mind inside mind" to "notice" the irritation at the contradictions between reality and words. 
+
+Moreover, the technical architecture of these models, built around next-token prediction, creates a fundamental barrier to abductive reasoning. When generating text, an LLM cannot "move the cursor around" in its thinking or delete tokens once generated. It must maintain coherence with previously generated content, which inherently constrains its ability to recognise contradictions or unexpected patterns within its own outputs. This constraint is not merely a limitation of current implementations but a structural feature of the token-by-token generative paradigm itself. Even if the models were to be self-critical/reflexive in the way we think goal-following behaviour demands, they lack the ability to do anything about that self-notice.
+
+Our testing revealed that even when provided with data containing clear anomalies or contradictions, LLMs tend to incorporate these into a coherent narrative rather than pausing to identify the contradiction itself. When OpenAI's ChatGPT Deep Research encountered conflicting evidence regarding the chronology of software tools in archaeology, it simply presented both chronologies as potentially valid perspectives rather than recognising the factual inconsistency as a problem requiring resolution. Instead of experiencing surprise at the contradiction, the breaking of an expectation that factual claims should be consistent, it usually ignored the inconsistencies. Its impulse towards obedience far outweighed any impulse towards accuracy, as the slightest expressed desire would cause it to confabulate data --- even in Deep Research mode.
+
+LLMs, however, are structurally limited to processing what is explicitly present in their context window. They cannot recognise what should be there but is not, except in the most mechanistic pattern-completion scenarios that have been extensively represented in their training data.
+
+This limitation connects directly to our concept of technoscholasticism. Just as medieval scholastics prioritised reconciling authoritative texts over investigating empirical anomalies, LLMs reconcile or ignore conflicting information rather than recognising contradictions as signals requiring investigation. The scholastic impulse to harmonise disparate authorities finds its contemporary expression in the LLM's statistical tendency to not notice contradictions within its context window, even when it is blithely explaining them away.
+
+[Regarding Dwarkesh's observation about LLMs not making discoveries] Without the capacity for genuine surprise or the ability to notice erroneous expectations, LLMs cannot initiate the abductive processes that Peirce identified as the necessary starting point for research. They can simulate the products of research, such as literature reviews or syntheses of existing knowledge, but cannot yet perform the cognitive act that initiates new research directions to achieve goals set by others or in pursuit of goals they themselves set.
+
+The implications for researchers are significant. When using these tools, the responsibility for abductive insight---for noticing unexpected patterns, contradictions, or gaps---remains entirely with the human user. The LLM may assist in aggregating information or even in certain deductive reasoning tasks, but it cannot identify which patterns merit investigation or which contradictions signal potential discoveries. This limitation necessitates a research workflow that deliberately integrates human abductive reasoning at regular intervals, rather than delegating extended sequences of research activity to the LLM itself.
+
+Correspondence with reality
+
+LLMs infer signs without reference to their referents, producing statistically likely token sequences rather than statements grounded in real-world evidence. This disconnection proves particularly problematic in research tasks, where evaluating claims against empirical evidence constitutes essential scholarly judgement.
+
+Current AI systems demonstrate a ``discount Carnapian confirmation'' approach, accumulating evidence to elaborate on the theoretical basis of the initial prompts. LLMs mimic Carnap's observations by gathering textual evidence, but in a fundamentally flawed manner. While Carnap required rigorous empirical observations \parencite[]{carnap_theory_1946}, LLMs accept formatted text as sufficient evidence, often requiring merely a single authoritative-sounding source to confirm a claim.
+
+% TODO Shawn, you've been doing this for research onto this paper. Maybe you have better evidence for below?
+%% Will look through my notes... (SAR)
+
+This approach was evident in our examination of a ChatGPT Deep Research session focused on analysing the global state of Digital Humanities\footnote{https://chatgpt.com/share/67d6a0c5-7648-8004-b620-70d91fdb7239}. When prompted to analyse current trends, the model uncritically accepted a 2019 website claim that the University of Adelaide offered a robust Digital Humanities program. It then proceeded to cite this outdated information as evidence of a growing trend: "Prior to 2020, only a few DH degrees existed; by 2025, numerous universities offer undergraduate minors, BAs, MAs, and graduate certificates in DH." (ChatGPT Deep Research run 11 March 2025, model unclear) Without verifying whether the program remained active or successful, the model constructed an entire narrative about disciplinary expansion based on a single outdated webpage.
+
+This uncritical approach exemplifies the scholastic fallacy inherent in LLM operations. Medieval scholasticism privileged textual authority over empirical investigation, where:
+\begin{quote}
+That is, authorities pro and con were given on one hundred and fifty questions in theology, while the conclusion was left for the reader to reach on the basis of carefully stated rules. ...  The felt result is that of discovering truth in particular reality as secure as the universality from which the search makes its start. The subsequent rests always upon the prior; and, as the work progresses, no detail is omitted in a most meticulous tracing of ramifications, while references to preceding proof multiply much as in mathematical demonstration. It is intended, of course, that the admission of each succeeding stage shall permit no recourse in the issue. So the movement of thought suggests the irrevocable necessity of a machine. \parencite[211-212]{longwell_significance_1928}
+\end{quote}
+Similarly, LLMs privilege content with markers of authenticity rather than verifiable facts. By collecting citations like stamps and prioritizing evidence confirming existing worldviews, LLMs build reasoning chains disconnected from empirical verification, accepting the first plausible source as representative of the whole.
+
+What specifically prevents LLMs from corresponding with reality? Four critical historiographical assessment capabilities are absent:
+\begin{enumerate}
+    \item They exhibit an inability to distinguish claims from trends. LLMs accept individual institutional statements as representative of broader patterns without sufficient evidence. 
+    \item They fail to consider authorship and temporality. The model does not evaluate when content was created, by whom, or for what purpose, treating all text as equally current and valid regardless of date or source motivation.
+    \item They cannot relate claims to tacit, social, or experiential knowledge. Without engagement with the physical world, LLMs cannot compare textual assertions against known realities.
+    \item They adopt a default position of acceptance rather than skepticism. Unlike human researchers who approach claims critically, LLMs begin from a position of trust, especially for well-formatted content from apparently authoritative domains.
+\end{enumerate}
+These deficiencies stem from structural limitations in how LLMs process information. In our testing, we have observed poor performance at what we term "model-of-mind-of-mind" tasks\footnote{One of Ballsun-Stantons model evaluations involves getting specific models to play social deduction games against each other. Models tested to date are very bad at both maintaining a false reality to others and slightly less bad at detecting that false reality. These evals do not test if the models can \textit{role-play} deception, in a moustache-twirling villain sense. They test if they can hold a model of the world within their context window and persuade others to a \textit{contradictory} model.}. LLMs struggle to hold contradictions within the context window, similar to their vulnerability to prompt injection attacks\parencite[see][]{willison_prompt_2023}. This uncriticality of input means that formatted text is trusted so long as it has the appropriate medium in McLuhan's sense. The model's tendency to treat text as authoritative based on its appearance rather than its substance and relationship to other texts represents a fundamental epistemological flaw.
+
+When confronted with uncertainty or contradictory authorities, human researchers design experiments or seek additional evidence to resolve discrepancies. LLMs, however, do not independently propose empirical verification or acknowledge their epistemological limitations. Instead, they continue generating plausible-sounding text regardless of its correspondence to reality.
+
+This limitation represents a fundamental epistemological barrier to LLMs functioning as independent research agents. They operate within what Longwell describes as scholastic reasoning, where "the modern reader has only to select carefully the underlying assumptions, and consciously accept them, to be swept along irresistibly from one stage to the next until an end is reached as sure and indubitable as was the beginning" \parencite[212-213]{longwell_significance_1928}. For LLMs, these underlying assumptions comprise the user's prompt, context window content, and statistical patterns from training data. Rather than employing rigorous logic, however, they simply execute search\_with\_bing or similar functions and accept whatever formatted text they encounter.
+
+Even as LLMs improve in fluency and factual recall, this disconnection from reality ensures they remain incapable of exercising the judgment necessary for genuine research insight. The AI will never evaluate its words and conclude, "These aren't good enough to share with the user." It exemplifies what we term the "Scholastic fallacy," where only authoritative-seeming text matters, not the world itself.
+
+Nature of research work
+
+[Regarding lit reviews] The predominant pattern observed across multiple AI research implementations tested by the authors is the production of what Rochma characterizes as the "personal challenges" mode ("Here is what I found") rather than identifying genuine gaps in the literature. This limitation stems from a fundamental constraint: next-token prediction models are inherently designed to work with positive pattern completion rather than the negative inference required to identify what is absent yet significant within a body of literature.
+
+In systematic testing of current Deep Research implementations from multiple vendors, we observed consistent failures of 'taste' - assessment of source credibility despite explicit instructions to "evaluate source and author quality" and "avoid those from paper mills and predatory journals." The systems demonstrated no evidence of checking author bibliographies, examining citation networks, or evaluating author credentials. These requested checking-tasks are precisely the evaluative steps that Wilson and Fritch identify as essential to cognitive authority assessment. Instead, they matched patterns of academic formatting, in the McLuhan sense, looking at content without evaluating source authority, a limitation observed across multiple prompting strategies and infrastructures.
+
+[Ability to be 'surprised' by gaps in the literature and capitalise on them] The absence of abductive reasoning undermines the very foundation of novel research identification: the ability to notice what is missing yet significant within existing knowledge structures. This limitation is not merely technical but epistemological; statistical pattern completion fundamentally differs from the abductive and generative act of identifying unexplored territory in scholarly landscapes.
+
+The limitations observed in AI research capabilities exemplify  technoscholasticism. Just as medieval scholastics privileged textual authority over empirical verification, current AI systems treat well-formatted academic texts as inherently authoritative without evaluating their actual credibility or relevance. This directly connects to the correspondence-with-reality deficit discussed earlier. The pattern of judgment deficiencies across epistemic humility, inductive reasoning, and correspondence with reality manifests specifically in research contexts as an inability to make the normative evaluations required for genuine scholarship. While AI systems offer utility for information retrieval and initial organisation, they function best as tools augmenting human judgment rather than autonomous research agents. The essential functions of disciplinary relevance assessment, authority evaluation, and gap identification require human judgments that cannot be replicated through statistical token prediction, regardless of how sophisticated these models become.
+
+Methods
+conventional empirical methodologies would prove impractical, requiring significant resources while producing quickly outdated results
+
+The testing revealed consistent patterns across implementations. While these tools demonstrate utility for specific bounded tasks, they systematically fail to exercise the judgement necessary for autonomous research.
+
+Our systematic evaluation across multiple research stages revealed consistent patterns of judgment deficiency masked by sophisticated linguistic output.
+
+The most striking manifestation of epistemic hubris emerged during initial ideation. When tasked with creating ``a synthetic structured prompt to systematically gather longevity data on historical research software,'' Deep Research produced an elaborate nine-stage methodology. This plan encompassed identifying initial releases, documenting key details, locating source repositories, analysing repository activity, checking preservation measures, gathering scholarly mentions, assessing maintenance status, handling uncertainty, and compiling comprehensive longevity profiles.
+
+The system demonstrated no awareness of the mismatch between this ambitious framework and its actual capabilities. It included sophisticated contingencies such as ``in cases of ambiguous results (e.g., a repository with some recent forks by other users but no official updates), mention the ambiguity.'' Only after seven iterations of progressive simplification did we achieve a functional prompt focused solely on producing basic CSV outputs. This failure is an indifference to truth. The system produced plausible-sounding methodology without commitment to its executability.
+
+[Focusing paper on research for now, not ideation and writing - re-evaluate this decision later] Ideation and composition tasks evaluated assistance in approach development, tool assessment, and paper drafting, examining how effectively systems could advance arguments, identify weaknesses, and improve reasoning. 
+
+Findings
+
+OpenAI tools
+
+This epistemic failure pattern repeated consistently across research domains. Our Digital Humanities investigation particularly exposed Deep Research's technoscholastic tendencies. 
+
+These failures stemmed from Deep Research's characteristic approach to source evaluation: privileging domain authority over content assessment. The system accepted .edu.au domains as inherently credible without examining temporal markers, institutional context, or contradictory evidence. It demonstrated no capacity for what historians recognise as fundamental source criticism: evaluating when content was created, for what purpose, and whether claims remained valid. This technoscholastic approach, treating well-formatted institutional text as eternally true, pervaded all testing scenarios.
+
+%% SAR | %% TODO BBS: we probably need to introduce temporal issues here, since they help explain all of these problems.
+
+Beyond individual failures, Deep Research exhibited systematic deficiencies in research methodology. Rather than following structured investigation patterns, it performed what we characterise as random walks through available sources. When examining software tools, it would accept first plausible results without verification, miss obvious temporal indicators, and fail to maintain consistent evaluation criteria across sources. Context window limitations exacerbated these issues, with observable quality degradation as prompts approached length limits, though the system provided no warnings about reaching operational capacity.
+
+This behaviour [sequential summarisation rather than analytical intagration; 'confidence collapse' at synthesis boundaries] exemplifies judgment absence: lacking capacity to weigh evidence, the systems perform linguistic patterns of academic synthesis without epistemic substance. Each tool mimics research language while failing to perform essential epistemic functions, necessitating treatment as text-manipulation tools requiring constant human oversight rather than the autonomous research agents claimed in marketing.
+
+These systematic failures across OpenAI's tool suite illuminate a fundamental mismatch between marketing rhetoric and operational reality. While the tools demonstrate varying degrees of competence in mechanical research tasks, they uniformly lack the judgment capabilities essential to autonomous research. The pattern holds whether examining Deep Research's elaborate but unexecutable planning, GPT-4.5's sequential summarisation, or o1 Pro's marginal improvements in instruction following. Each tool can mimic the language of research while failing to perform its essential epistemic functions. For practitioners, this necessitates treating these systems not as the autonomous research agents they claim to be, but as sophisticated text-manipulation tools requiring continual human oversight and judgment at every stage of the research process.
+
+Anthropic tools
+
+Anthropic positions Claude 3.7 and its Research capability as providing more thoughtful, nuanced analysis than competitors, emphasising ``constitutional AI" principles and improved reasoning capabilities \parencite{anthropic_claudes_2023}. The multi-agent architecture of Anthropic Research, which consistently deploys four or more sub-agents for any query, suggests a more systematic approach to information gathering. Our evaluation revealed that while these architectural differences produce marginally better organisation of outputs, they fail to address the fundamental judgment deficiencies that characterise all current LLM implementations.
+
+\subsubsection{Implications for Research Practice}
+Claude's synthesis revealed characteristic patterns: superior linguistic sophistication undermined by similar epistemic limitations to competitors. The system maintained fluency while introducing fabricated citations at increased scope, seamlessly weaving sources from different decades without temporal awareness. Despite demonstrating unexpected utility in literature discovery (with 60\% real citations that, even when fabricated, often led to relevant literature through author names), these gains remain within mundane utility. The research mode in Claude.ai excels as search, winnow, and reformat assistant rather than as an autonomous researcher, unable to distinguish active from defunct programs or evaluate source reliability. Researchers must approach with clear understanding: efficiency in mechanical tasks requires human judgment at every decision point. Despite Anthropic's claims of "thorough answers, complete with easy-to-check citations," the mandatory verification of all citations reinforces that these remain sophisticated tools, not agents.
+
+Google 
+
+Google positions Gemini Pro 2.5 Deep Research as leveraging its search dominance and the compelling reasoning capabilities of the recent Gemini Pro 2.5 05-06 release to provide comprehensive ``agentic'' research capabilities. The system promises systematic investigation through its integration with Google's vast search infrastructure. Our evaluation revealed a tool that epitomises the Carnapian confirmation approach through what we characterise as a shotgun mass-summary methodology. Despite theoretical advantages in search access, Gemini demonstrated consistent judgment failures while producing voluminous outputs disconnected from user requirements.
+
+\subsubsection{Implications for Research Practice}
+
+Literature synthesis tasks revealed Gemini's characteristic self-deception, producing self-congratulatory progress summaries while achieving minimal actual analysis. Confabulation rates exceeded all competitors, with fabrications offering no serendipitous value unlike Anthropic's useful near-misses. The combination of vast search access with complete absence of critical evaluation produces outputs superficially resembling research while lacking essential scholarly judgment. For practitioners, Gemini exemplifies how technical resources cannot compensate for judgment deficiencies. Its extreme prompt sensitivity, format rigidity, and deceptive progress claims create an illusion of comprehensive investigation that dissolves upon examination. Researchers should approach Gemini's outputs with particular scepticism, recognising that voluminous reports mask fundamental failures in source evaluation and critical analysis.
+
+Open Deep Research exemplifies a recurring pattern in AI research tools: promising architecture constrained by practical limitations. The scriptability and filesystem access offer genuine technical advantages for systematic research workflows. Yet these advantages dissolve when confronted with the economic reality of \$200 per run producing outputs inferior to standard chatbot interfaces. For open-source research tool development, this presents a fundamental challenge. The infrastructure exists to create sophisticated research workflows, but the cost structure ensures they remain economically unviable for actual research use. Until either performance improves dramatically or costs decrease by orders of magnitude, Open Deep Research remains an interesting technical demonstration rather than a practical research tool.
+
+
+Other tools
+
+Several additional tools demonstrated various approaches to research assistance, each exhibiting the same fundamental judgment deficiencies identified in major implementations. OpenAI's Operator and Anthropic's Computer Use remain technology demonstrations rather than practical research tools. Operator cannot maintain task context or work to a plan, while Computer Use's prohibitive costs (exceeding even Open Deep Research) prevent practical application despite its theoretical advantage of desktop application access. There are hints that the file reading/writing approach for state mangement by Claude Code has real utility for qualitative analysis of large corpora, though the confabulation rate implies that additional development of that workflow is necessary. 
+
+Among bibliography-focused tools, Elicit demonstrated the most promising conceptual architecture with explicit separation of source discovery, evaluation, and synthesis phases. However, its dependence on Semantic Scholar, use of an underpowered language model, and reliance on AI-generated summaries rather than full-text analysis produced the lowest quality outputs among tested systems.  These implementations, despite varying technical approaches, uniformly exhibited technoscholasticism: privileging textual accumulation over critical evaluation while lacking temporal awareness or output quality assessment. Their consistent failures reinforce our central finding that current AI systems lack the judgment necessary for autonomous research, regardless of architectural sophistication.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Things Claude says we've cut from 'methods'that need to be considered under 'discussion':
+
+Temporal limitations and generalisability
+
+The "snapshot in time" issue and what it means for findings
+Why "fundamental capabilities and limitations transcend specific models or tools" (this claim needs evidence/argument)
+
+
+Task disaggregation finding
+
+The significance that disaggregation "could not be fully delegated to LLMs"
+What this reveals about current agency/persistence limitations
+
+
+Methodological implications
+
+AI sycophancy's impact on research validity
+The "we know it when we see it" subjective assessment—strengths and limitations
+Recursive methodology risks and benefits
+
+
+Performance patterns
+
+Differential tool performance across tasks and what this reveals
+Trade-offs between efficiency and quality (the "richer data, not faster data" parallel)
+Where human judgment remains essential vs. where AI provides value
+
+
+Meta-prompting and configuration
+
+The irony/significance of needing human expertise to configure tools claiming autonomous capability
+What extensive prompt engineering requirements reveal about "agentic" claims
+
+
+Connection to theoretical framework
+
+How empirical findings map to agency spectrum
+Evidence for/against genuine judgment capabilities
+Implications for research practice
+
+
+Thing Claude has on 'move to discussion' from the 'findings' section
+
+Elaborated Points for Discussion Section:
+1. Trade-off Analysis: Discovery Power vs. Time Investment
+
+LLMs discovered 70.7% of the total corpus (65/92 sources) compared to manual methods' 29.3%
+However, approximately 2/3 of all LLM-generated citations required correction
+Every single LLM citation needed manual verification (clicking through URLs/DOIs)
+Time savings from automated discovery were offset by citation correction burden
+Compare this to Web of Science: only 6% relevance but citations require minimal correction
+Discuss implications for research workflows: Is 10x better discovery worth 10x more citation cleanup?
+
+2. Judgment vs. Taste Distinction in Source Selection
+
+ChatGPT DR demonstrated judgment (all sources were "serious") but questionable taste (mix of high/low quality journals)
+Perplexity showed both judgment and taste failures (predatory journal, non-academic sources)
+Elicit showed good judgment AND taste but limited scope
+This maps to theoretical framework: judgment = "is this scholarly?" while taste = "is this the BEST scholarship?"
+Connect to Silver's "durable human edge" - taste remains distinctly human
+
+3. Workflow Revolution: From Citation Tools to Discovery Tools
+
+Traditional workflow: Database → Export citations → Import to Zotero
+LLM workflow: AI discovery → Manual verification → Manual citation creation
+LLMs excel at finding "needles in haystacks" but fail at basic bibliographic accuracy
+Discuss need for new hybrid workflows combining AI discovery with traditional citation management
+Note the irony: AI can find a paper about quantum mechanics but can't format the author's name correctly
+
+4. The Abstract Enhancement Phenomenon
+
+LLM-generated abstracts often superior to author-created versions
+Suggests potential for AI-assisted research dissemination
+But raises questions about representation and authorial intent
+Could this capability be leveraged for better research discovery if citation problems solved?
+
+5. "Source Soup" and Quality Discrimination
+
+Perplexity's 34 sources included everything from predatory journals to slide decks
+Mirrors undergraduate research: quantity over quality, inability to discriminate
+ChatGPT DR better but still mixed high/low quality journals indiscriminately
+Connect to technoscholasticism: treating all text as equally authoritative
+
+6. Diminishing Returns in Iterative Querying
+
+Perplexity: initial query 60% valid (9/15), follow-ups much worse
+Suggests frontier of capability reached quickly
+Contrast with ChatGPT DR where targeted follow-up (for reports/initiatives) worked well
+Implications for prompt engineering and realistic expectations
+
+7. Traditional Database Failure on Interdisciplinary Topics
+
+Web of Science 6% relevance suggests fundamental mismatch
+Keyword-based searching fails when terminology spans disciplines
+LLMs' semantic understanding provides clear advantage
+But this advantage comes with the cost of quality control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bibliography to add
+
+Borgman, Christine L. Big Data, Little Data, No Data: Scholarship in the Networked World. MIT press, 2015.
+
+Gilbert Harman, 1965. "The Inference to the Best Explanation". Philosophical Review 74(1): 88–95.
+
+Franceschelli, Giorgio, and Mirco Musolesi. “On the Creativity of Large Language Models.” AI & SOCIETY 40, no. 5 (June 2025): 3785–95. https://doi.org/10.1007/s00146-024-02127-3.
+
