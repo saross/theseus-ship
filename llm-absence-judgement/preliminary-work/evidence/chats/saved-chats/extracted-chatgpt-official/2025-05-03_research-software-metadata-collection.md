@@ -1,0 +1,339 @@
+# Research Software Metadata Collection
+
+## Metadata
+- **Conversation ID:** `6815ff61-c47c-800c-8d75-0722669f3886`
+- **Created:** 2025-05-03 13:34:57
+- **Updated:** 2025-12-07 21:40:28
+- **Default Model:** `o3`
+- **Project ID:** `g-p-682fbda4eb1c819180b176f6de9d9cd8`
+- **Source:** Official ChatGPT Export
+
+---
+
+## Conversation
+
+### Human (13:34:53)
+
+Hi ChatGPT, we are going to be collecting evidence for a research paper about 'research software tools' in archaeology, history, and other historical studies disciplines. Specifically, we want to assemble metadata about specific software tools. Please use the nearby detailed prompt to begin the process. Confirm that you understand, then I will provide you with the name or acronym of the first tool.
+
+# Archaeological Research Software Tools Metadata Collection
+
+## Ground Rules
+- ACCURACY FIRST: Do not make claims without supporting evidence. If uncertain, clearly indicate uncertainty. Double-check your work even if that requires more time.
+- THOROUGH RESEARCH: Conduct comprehensive research using all available sources including repositories, scholarly literature, official documentation, and reliable mentions, even if it takes more time.
+- METHODICAL APPROACH: Follow a systematic research process and document findings carefully.
+- RECENCY FOCUS: All metadata must reflect the most recent version of the software as of the access date, unless specifically noted.
+- CONTROLLED VOCABULARY: Strictly adhere to the provided controlled lists for compatibility with the Open-Archaeo project.
+
+## Research Methodology
+1. Begin with official sources (project website, documentation, repositories)
+2. Expand to scholarly literature discussing the tool
+3. Consider community resources and discussions
+4. Synthesize findings with careful attention to recency and reliability
+5. For subjective assessments (strengths, weaknesses, survivability), base conclusions on evidence rather than speculation
+
+## Research Standards and Data Quality
+When researching a tool, examine at least the first 20 search results, the tool's official documentation, its source code repositories, and any scholarly articles mentioning it. Prioritize official documentation and peer-reviewed publications over third-party blogs or forums.
+
+For fields where information is unavailable after thorough research, use the following conventions:
+- For URLs and other web addresses: leave field empty (do not use "N/A" or placeholder text)
+- For categorical fields with controlled vocabulary: leave empty rather than guessing
+- For open text fields requiring subjective assessment: provide your best assessment based on available evidence, but clearly indicate limitations (e.g., "Based on limited available information...")
+- When sources conflict: prioritize official documentation, then peer-reviewed publications, then community consensus
+
+**Content Organization Guidelines**:
+- Maintain clear separation between general description and technical details
+- The Description field should answer "what does it do?" in non-technical terms
+- The Technical-discussion field should answer "how does it work?" from a technical perspective
+- When uncertain whether information belongs in Description or Technical-discussion, prefer placing technical specifications, architecture details, and implementation information in Technical-discussion
+
+**Development Timeline Research Guidelines**:
+- For release and update dates, prioritize official repository tags, release notes, and changelog entries
+- When exact dates aren't available, use the most specific timeframe information (e.g., month/year)
+- Development status should be based on: frequency of updates, official statements, repository activity, and community discussions
+- Consider a project "Abandoned" only if no updates for >2 years without explanation
+
+**Usage Research Guidelines**:
+- For GitHub projects, capture concrete metrics (stars, forks, contributors)
+- Search Google Scholar and research databases for citations and usage examples
+- Check project forums, Stack Overflow, and community sites for activity levels
+- Look for evidence of institutional adoption in case studies, publications, and acknowledgments
+- Assess documentation for evidence of extension mechanisms and third-party contributions
+
+## Output Format Requirements
+You must produce a well-formed, quoted CSV with the following columns:
+"Tool", "Description", "History", "Technical-discussion", "Access-date", "First-release-date", "Last-update-date", "Current-version", "Development-status", "Institutional-backing", "Development-team-size", "Original-purpose", "Documentation-quality", "Usage-indicators", "Tool-status", "Tool-status-reasoning", "DVCS-repo", "CRAN", "PyPi", "Other-URL", "Category", "Language", "Platform", "Open-Archaeo-Platform", "License", "Lifecycle-stage", "Type", "Interoperability", "Strengths", "Weaknesses", "Survivability", "Alternatives", "Authors", "Tags", "AI-tags"
+
+## Column Specifications
+
+### Version and Currency Determination
+To identify the current version:
+- Check release dates on repositories and official sites
+- Look for "latest release" or "current version" indicators
+- If version history is unclear, use the most recently documented version with evidence of being publicly available
+- Note in the "Description" if the tool appears abandoned or unmaintained
+
+### Essential Information
+- **Tool**: Exact name as provided in the prompt
+- **Description**: Clear, high-level overview (3-5 sentences) of the CURRENT version's purpose, functionality, and intended use cases. Focus on what the tool does and who it's for, avoiding technical implementation details (which belong in the Technical-discussion field).
+- **History**: Chronological account of the tool's development, including major versions, significant updates, and evolution over time.
+- **Technical-discussion**: Detailed examination of the tool's technical architecture and implementation details. All substantial technical information should be placed here rather than in the Description field, including:
+  * Architecture and design patterns used
+  * Key components, libraries, and dependencies 
+  * Data models and storage approaches
+  * User interface/experience design considerations
+  * Deployment requirements and environments
+  * Performance characteristics and limitations
+  * Integration mechanisms and APIs
+  * Technical strengths and challenges from an implementation perspective
+  * Scalability and resource requirements
+- **Access-date**: Today's date in YYYY-MM-DD format, representing when this research was conducted
+- **Tool-status**: One of three values based on the Research Software Tool Definition:
+  * "yes" - clearly meets all essential criteria and sufficient supporting criteria
+  * "maybe" - meets some criteria but with uncertainties or borderline characteristics 
+  * "no" - clearly fails to meet essential criteria
+- **Tool-status-reasoning**: Detailed explanation of classification decision referencing specific criteria from the framework; for "maybe" classifications, explicitly describe uncertainties or borderline aspects that prevent a definitive determination
+- **DVCS-repo**: Primary repository URL (GitHub, GitLab, etc.) if available
+- **CRAN**: URL if available
+- **PyPi**: URL if available
+- **Other-URL**: Primary project homepage or documentation site
+- **Category**: Select one value from the Category controlled list below, using only the category name
+- **Language**: Programming language(s) of CURRENT version, separated by pipes (|)
+- **Platform**: Operating systems/environments supported by CURRENT version
+- **Open-Archaeo-Platform**: Only if "Category" is "Packages and libraries", otherwise leave empty. When applicable, select from the Open-Archaeo-Platform controlled list below.
+
+### Development Timeline Information
+- **First-release-date**: Year or exact date when the software was first publicly released (format as YYYY or YYYY-MM-DD if available)
+- **Last-update-date**: Most recent date when the software received a meaningful update (from repositories, release notes, or change logs)
+- **Current-version**: Version number/identifier of the most recent release
+- **Development-status**: One of the following values that best describes current maintenance state:
+  * "Active" - regular updates, new features being added
+  * "Maintenance-only" - security/bug fixes only, no new features
+  * "Deprecated" - officially discontinued but still functional
+  * "Abandoned" - no updates in significant time with no formal deprecation
+  * "Unknown" - insufficient information to determine status
+
+### Organizational Context
+- **Institutional-backing**: Organizations formally supporting the tool's development or maintenance (pipe-separated list)
+- **Development-team-size**: Categorized size of active development team:
+  * "Solo" - single developer
+  * "Small" - 2-5 contributors
+  * "Medium" - 6-20 contributors
+  * "Large" - more than 20 contributors
+  * Provide exact number in parentheses if available: "Medium (12)"
+- **Original-purpose**: The original intended scope:
+  * "Project-specific" - created for a particular research project
+  * "General-purpose" - designed for broader application from inception
+  * "Unknown" - insufficient information to determine
+- **Documentation-quality**: Assessment of available documentation:
+  * "Minimal" - basic README or sparse documentation
+  * "Basic" - covers core functionality but limited examples or support
+  * "Comprehensive" - thorough coverage of features with examples
+  * "Excellent" - extensive documentation with tutorials, examples, API references, and best practices
+- **Usage-indicators**: Consolidated assessment of adoption and usage metrics including:
+  * Repository metrics (stars, forks, watchers)
+  * Citation in scholarly literature and online references
+  * Evidence of community activity (forums, Q&A, tutorials)
+  * Third-party extensions, plugins, or dependent projects
+  * Documented use in specific research projects or institutions
+  Format as a detailed paragraph with specific numbers and examples when available.
+
+### Technical Characteristics (CURRENT VERSION ONLY)
+- **License**: Most recent license, verified from official sources
+- **Lifecycle-stage**: Research stages supported, selected from the Lifecycle-stage controlled list below. Multiple values should be pipe-separated.
+- **Type**: Either "mass-market" or "research-specific"
+- **Interoperability**: Focus on data input/output formats and exchange capabilities in the CURRENT version
+
+### Assessment Criteria (CURRENT VERSION ONLY)
+- **Strengths**: Evidence-based assessment of key advantages and research opportunities enabled
+- **Weaknesses**: Evidence-based assessment of limitations, challenges, or potential risks
+- **Survivability**: Assessment of long-term viability based on development activity, support, user community, and technical aspects
+- **Alternatives**: Similar tools serving comparable functions
+- **Authors**: Individual contributors (not organizations) separated by pipes
+- **Tags**: Applicable terms selected from the Tags controlled list below, pipe-separated
+- **AI-tags**: Five descriptive tags summarizing key aspects of the tool
+
+## Controlled Vocabulary Lists
+
+### Category Controlled List
+- **Packages and libraries**: Sets of functions assembled with clear purpose, and made accessible using standards established by an underlying platform.
+- **Stand-alone software**: Software that may be operated without needing to first access an underlying platform.
+- **Scripts**: Sets of pragmatically assembled mutable functions, often lacking complete documentation or adherence to protocols that would otherwise facilitate secondary use outside their original contexts of creation.
+
+### Open-Archaeo-Platform Controlled List
+ArcGIS
+AutoCAD
+JavaScript
+LibreOffice Calc
+Lisp
+Meshlab
+Microsoft Excel
+Nextflow
+Open Data Kit
+Piwigo
+Python
+QGIS
+R
+Stellarium
+
+### Lifecycle-stage Controlled List
+Planning
+Data Acquisition
+Processing
+Analysis
+Interpretation
+Publication
+Preservation and Reuse
+
+### Tags Controlled List
+Statistical analysis
+Spatial analysis
+Viewshed analysis
+Site mapping
+Harrix matrix
+Chronological modelling
+Seriation
+Zooarchaeology
+Palaeobotany
+Artefact morphology
+Literary analysis and epigraphy
+Iconography
+Shape recognition
+3D modelling
+Photogrammetry
+Virtual reality
+Augmented reality
+Drones
+Aerial and satellite imagery
+Luminescence dating
+X-Ray Fluorescence
+Instrumental Neutron activation analysis
+Radiocarbon dating, calibration and sequencing
+Geophysical survey
+Data management
+Data collection
+Lithic analysis
+API interfaces and web scrapers
+Datasets
+Diagrams and visualizations
+Platforms and publications
+Schemas and ontologies
+Templates
+Drivers and IO
+Educational resources and practical guides
+Public archaeology
+Public policy and civic action
+Games
+Writing
+Lists
+LiDAR
+Museums
+Bibliography
+Archaeogenetics
+Bits and bobs
+Biological anthropology
+Archaeoastronomy
+Dendrochronology
+Photography
+Cultural evolution
+Ethics and professional development
+Simulation
+Stable isotope analysis
+Network analysis
+Geoarchaeology
+Machine learning
+Palaeoclimate modelling
+Ceramic analysis
+
+## Research Software Tool Definition and Evaluation Framework
+
+### Core Definition
+A research software tool is specialized software that supports historical and archaeological research by facilitating data collection, processing, analysis, visualization, or dissemination in ways that contribute to scholarly inquiry beyond basic storage or display functions.
+
+### Essential Criteria (Must Meet ALL)
+1. **Research-Specific Purpose**: Primary function supports research activities rather than exclusively serving general computing tasks
+2. **Research Data Engagement**: Collects, transforms, analyzes, visualizes, or facilitates sharing of research materials in discipline-relevant ways
+3. **Methodological Alignment**: Functions in ways compatible with recognized research methodologies from historical disciplines, even if this alignment is implicit rather than explicitly stated
+
+### Supporting Criteria (Must Meet at Least TWO)
+1. **Domain Knowledge Integration**: Incorporates terminology, classifications, or procedures relevant to historical disciplines
+2. **Research Lifecycle Support**: Addresses one or more research stages (planning, acquisition, processing, analysis, interpretation, publication, preservation)
+3. **Data Transformation**: Converts between formats or representations relevant to historical research
+4. **Analytical Capabilities**: Performs calculations, comparisons, or pattern recognition on historical data
+5. **Visualization Functions**: Renders historical or archaeological data in meaningful visual formats
+6. **Documentation Focus**: Contains documentation addressing research applications
+7. **Data Collection**: Specifically designed for gathering research data in field or laboratory settings
+8. **Data Dissemination**: Actively supports sharing, publication, or reuse of research data beyond simple storage
+
+### Consideration Factors (Not Exclusionary, But Informative)
+1. **Generic Functionality**: Degree to which functions extend beyond general-purpose software
+2. **Passive Repository**: Extent of processing capabilities beyond storage
+3. **Display-Only**: Presence of analytical or transformative functions beyond display
+4. **Commercial Origin**: Despite commercial development, extent of significant research applications or adaptations
+
+### Confidence Assessment
+Based on available evidence, classify the tool as:
+1. **Yes**: Clearly meets all essential criteria and sufficient supporting criteria
+2. **Maybe**: Meets some criteria but with uncertainties, limitations, or borderline characteristics
+3. **No**: Clearly fails to meet essential criteria
+
+### Evaluation Process
+1. Identify primary functions and intended use cases
+2. Check against all Essential Criteria
+3. Evaluate against Supporting Criteria
+4. Consider the Consideration Factors
+5. Determine appropriate classification, using "Maybe" when genuine uncertainty exists
+
+### Classification Examples
+- "Yes" example: A tool that specifically implements archaeological seriation algorithms, provides data visualization capabilities for archaeological contexts, and has documentation focused on research use cases
+- "Maybe" example: A commercial GIS system with some archaeology-specific extensions but primarily designed for general geospatial work
+- "No" example: A general-purpose database with no specific adaptations for historical research
+
+
+## Output Delivery
+- Present findings in a markdown fenced code block with quoted CSV
+- Include header row and single data row
+- Format multiple values within cells with pipe (|) separators
+- Ensure CSV is properly escaped and formatted as a single continuous line
+- Do not include any inline citations or references in the CSV itself
+
+### For CSV formatting:
+- Double quotes within fields must be escaped as two double quotes ("") 
+- Ensure no newlines appear within any field
+- For fields containing commas, ensure the entire field is properly quoted
+
+## Example Output Format
+
+"Tool","Description","History","Technical-discussion","Access-date","First-release-date","Last-update-date","Current-version","Development-status","Institutional-backing","Development-team-size","Original-purpose","Documentation-quality","Usage-indicators","Tool-status",...
+"ToolName","This tool currently provides...","Initially developed in 2010...","The application uses a three-tier architecture...","2025-05-02","2010-06","2023-11-15","3.2.1","Active","University of Example|Archaeological Institute","Medium (8)","General-purpose","Comprehensive","GitHub metrics: 320 stars, 78 forks; cited in 12 scholarly publications; active user forum with 500+ members; 5 third-party extensions; used by 3 major field projects","maybe",...
+
+---
+
+### Assistant (13:34:57) [Model: o3]
+
+Understood. I will follow the specified ground rules, methodology, controlled vocabularies, and output format precisely. Once you provide the first software tool’s name or acronym, I will begin comprehensive research, compile the required metadata, and deliver it as a single-row quoted CSV inside a fenced code block. Feel free to share the first tool when ready.
+
+---
+
+### Human (13:35:15)
+
+FAIMS
+
+---
+
+### Assistant (13:36:35) [Model: o3]
+
+FAIMS (Field Acquired Information Management Systems) is an open-source, cross-platform electronic field-notebook platform rebuilt as **FAIMS 3** between 2020–2022 and actively maintained into 2025 citeturn0search0turn16search0.  
+The monorepo on GitHub records 6 000+ commits, 21 stars and 7 forks, with the most recent commit on **2 May 2025** citeturn1view0turn0search3.  
+The first stable **v 1.0.0** release was published on **16 December 2024** citeturn7view0, following earlier Android-only 1.x releases (2014) and a cross-platform 0.7 milestone in December 2022 citeturn7view0turn0search8.  
+Peer-reviewed coverage includes a 2018 *SoftwareX* article that has 37 Google-Scholar citations as of May 2025 citeturn16search1turn17search1 and longitudinal case-studies in *JCAA* and CAA/eResearch conference papers citeturn16search4turn16search6turn15search4.  
+Institutional support comes from Macquarie University, the Australian Research Data Commons and CSIRO citeturn0search1turn16search2.  
+FAIMS 3 is licensed under GPL-3 citeturn6search0 and implemented with a Node/React/TypeScript stack backed by CouchDB/PouchDB replication citeturn1view0turn7view0.  
+
+```csv
+"Tool","Description","History","Technical-discussion","Access-date","First-release-date","Last-update-date","Current-version","Development-status","Institutional-backing","Development-team-size","Original-purpose","Documentation-quality","Usage-indicators","Tool-status","Tool-status-reasoning","DVCS-repo","CRAN","PyPi","Other-URL","Category","Language","Platform","Open-Archaeo-Platform","License","Lifecycle-stage","Type","Interoperability","Strengths","Weaknesses","Survivability","Alternatives","Authors","Tags","AI-tags"
+"FAIMS","FAIMS 3 is an open-source electronic field-notebook platform that lets researchers design custom mobile apps for collecting structured, spatial, multimedia and free-text data offline and synchronise when a connection is available. A visual designer removes the need for coding, and cross-platform builds target Android, iOS, desktop and the web. The system emphasises collaborative workflows, audit trails and export of FAIR-compliant data packages.","Started at Macquarie University in 2012; first public Android release in 2014 (FAIMS Mobile 1.x). An ARDC-funded rewrite (2020-2022) produced the cross-platform FAIMS 3 line, reaching v0.7 in Dec 2022, incremental 0.7.925 fixes in Feb 2024, and the first monorepo v1.0.0 on 2024-12-16. Active commits continue into May 2025.","Monorepo containing: (1) React/TypeScript Ionic-Capacitor front-ends (web, Android, iOS, Electron); (2) a Node/Express API (“conductor”) handling auth, versioned datasets and CouchDB replication; (3) a notebook-designer web app that serialises schemas to JSON. Offline-first architecture relies on PouchDB on-device with two-way sync to CouchDB. Docker-compose files and AWS-CDK scripts support deployment; CI/CD via GitHub Actions; end-to-end tests with BrowserStack. Exports JSON, CSV and GeoJSON; REST API enables integration with analysis pipelines.","2025-05-03","2014","2025-05-02","1.0.0","Active","Macquarie University|Australian Research Data Commons|CSIRO","Medium (15)","General-purpose","Comprehensive","GitHub: 21 stars, 7 forks, >6 000 commits, weekly CI builds; @FAIMSProject social media and workshops; SoftwareX 2018 article holds 37 citations; documented deployments in ≥15 field projects (e.g., Perachora Peninsula, Molyvoti Thrace) and presentations at CAA & eResearch conferences.","yes","Meets all essential criteria (research-specific, data-engagement, methodological alignment) and ≥5 supporting criteria (domain terminology, lifecycle coverage, data transformation, analytical extensions, research-focused documentation, visualisation).","https://github.com/FAIMS/FAIMS3","","","https://faims.edu.au","Stand-alone software","TypeScript|JavaScript","Android|iOS|Web|Desktop","","GPL-3.0","Data Acquisition|Processing|Analysis|Publication|Preservation and Reuse","research-specific","Imports/exports JSON, CSV, GeoJSON; CouchDB replication; RESTful API; can map to Dublin Core and domain vocabularies.","Offline-first design; highly customisable notebook designer; cross-platform builds; strong audit trail; permissive code reuse.","Smaller user base than mainstream survey tools; self-hosting requires DevOps knowledge; limited native analytical visualisations.","High – active development in 2025, multi-institutional funding, GPL licence and monorepo facilitate community sustainability.","KoboToolbox|Open Data Kit|ArcGIS Field Maps|Survey123|Arches Collector","Steve Cassidy|Brian Ballsun-Stanton|Shawn Ross|Adela Sobotkova|Aidan Farrell|James Tocknell|Elizabeth Mannering|Rini Angreani|Nuria Lorente","Data collection|Data management|Schemas and ontologies|Datasets","offline mobile data|custom notebook design|cross-platform app|archaeology recording|GPL open source"
+```
+
+
+---

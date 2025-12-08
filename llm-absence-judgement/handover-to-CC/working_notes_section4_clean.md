@@ -482,5 +482,104 @@ No entries exhibited characteristic slop patterns: verbosity without information
 
 ---
 
+## 14. Gaps Identified for Section 4 Narrative (Claude Code Review, 6 Dec 2025)
+
+This section documents gaps identified during Claude Code's review of handover materials. These represent information needed to complete the Section 4 findings narrative, particularly for the "scaffolding overcomes lack of judgment" theme.
+
+### 14.1 Under-Documented: Segmentation Decisions
+
+**Gap**: The handover documents don't clearly narrate *why* discovery and evidence collection had to be split into separate prompts.
+
+**Questions to resolve**:
+- What was the original combined discovery+evidence prompt attempting to do?
+- What specific failures occurred that forced the split?
+- How many iterations before abandoning the combined approach?
+- What does this reveal about LLM agency limitations?
+
+**Narrative significance**: This exemplifies how lack of agency was overcome through human-imposed task decomposition — a key point for the paper's argument.
+
+### 14.2 Under-Documented: Batch Size Constraints
+
+**Gap**: The operational necessity of processing "only a few journal issues at a time" for discovery and "only one tool at a time" for metadata/evidence isn't foregrounded.
+
+**Questions to resolve**:
+- What happened when larger batches were attempted?
+- How was the optimal batch size determined (trial and error? explicit model guidance?)
+- Does Claude's "1 to 3 tools" self-assessment match actual experience?
+
+**Narrative significance**: Demonstrates that "agentic" capabilities require constant human chunking — the system cannot self-organise work.
+
+### 14.3 Under-Documented: Model Elimination Sequence
+
+**Gap**: The V1→V8 prompt evolution is documented, but the *model elimination story* isn't clear — which models were tried for metadata and why did they fail before Claude became "last model standing"?
+
+**Known from paper/notes**:
+- Gemini: Version confusion (FAIMS example), eliminated early
+- DR: Tried for metadata (Table 1), outcome unclear
+- o3: JOSS "worthless" run, JOAD failures
+
+**Questions to resolve**:
+- What was the sequence of model testing for metadata?
+- Were there specific prompts/sessions where non-Claude models failed?
+- What made Claude's failures (CSV refusal, hyperbolic titles) tolerable vs Gemini's failures (version confusion) intolerable?
+
+### 14.4 Under-Documented: Persistent Annoyances Despite Success
+
+**Gap**: Some weaknesses persisted despite extensive scaffolding. These are mentioned but not systematically catalogued.
+
+**Known persistent issues**:
+- CSV + report in single prompt: Never achieved (always required reprompting)
+- Sensational titles: "Revolutionary Digital Archaeology: The FAIMS Transformation" despite templating
+- History field contamination: Required creating dedicated History field to "channel" model's tendency
+
+**Questions to resolve**:
+- Were there other persistent annoyances that scaffolding couldn't eliminate?
+- How much time was lost to these workarounds?
+- Do these represent fundamental limits of prompt engineering?
+
+### 14.5 Under-Documented: Evidence Prompt V1→V7 Evolution
+
+**Gap**: The metadata prompt evolution (V1→V8) is well-documented, but evidence prompt changes (V1→V7) less so.
+
+**Known**:
+- V1: 122-line elaborate prompt
+- V7: 56-line tightened version
+- Shift from 15-column synthesis to 5-column collection
+
+**Questions to resolve**:
+- What specific failures drove each iteration?
+- Was simplification always the solution, or were there failed attempts at more elaborate scaffolding?
+- Which changes had the biggest impact on output quality?
+
+### 14.6 Data Verification Needed
+
+**Priority items**:
+1. Evidence row count: Verify 1,874 vs 1,179 against `03-tool-evidence.xlsx`
+2. Tool counts at each pipeline stage: Verify 91→97→89→125 flow
+3. Prompt version inventory: Confirm V5 exists or if numbering skipped
+
+---
+
+## 15. Project Management: Outstanding Tasks
+
+### Immediate (for Section 4 completion)
+
+- [ ] Interview to fill gaps (Sections 14.1–14.5)
+- [ ] Reconcile evidence row counts from spreadsheet
+- [ ] Reconstruct model elimination sequence from chat logs/prompts
+- [ ] Document persistent annoyances systematically
+
+### Medium-term (for Discussion section)
+
+- [ ] Questions for Brian (Section 11) — still pending
+- [ ] Synthesise "scaffolding vs judgment" narrative from gap-filling interview
+
+### Deferred
+
+- [ ] Full prompt library review (all versions V1→V8)
+- [ ] Cross-reference paper Section 4 with working notes for consistency
+
+---
+
 *Working notes maintained throughout December 2025 analysis sessions.*
-*Last updated: Verification #5 complete*
+*Last updated: 6 December 2025 — Claude Code review and gap identification*
