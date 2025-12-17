@@ -1,0 +1,148 @@
+{
+  "uuid": "9f9e1308-df3c-48fd-a8cd-415b6e0f8253",
+  "name": "Exploring the Limitations of Large Language Models",
+  "summary": "",
+  "created_at": "2025-02-11T22:49:53.530614Z",
+  "updated_at": "2025-02-11T23:12:40.635597Z",
+  "account": {
+    "uuid": "17538ba7-7aa5-450c-9d3f-69ab346ad799"
+  },
+  "chat_messages": [
+    {
+      "uuid": "1f2ca8d8-3e18-4bde-a227-a072914f0282",
+      "text": "Hi Claude. Here's a (low quality) transcript of a convo I had with ChatGPT. Please 1) remove all of its NOOP responses, 2) extract my text. 3) turn it into a rough outline",
+      "content": [
+        {
+          "start_timestamp": "2025-02-11T21:29:25.337468Z",
+          "stop_timestamp": "2025-02-11T21:29:25.337468Z",
+          "flags": null,
+          "type": "text",
+          "text": "Hi Claude. Here's a (low quality) transcript of a convo I had with ChatGPT. Please 1) remove all of its NOOP responses, 2) extract my text. 3) turn it into a rough outline",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-11T22:49:54.457217Z",
+      "updated_at": "2025-02-11T22:49:54.457217Z",
+      "attachments": [
+        {
+          "file_name": "paste.txt",
+          "file_size": 6501,
+          "file_type": "txt",
+          "extracted_content": "\u201cToday, I would like you to act as my research assistant. Specifically, I am delivering this over audio. I am dictating ideas for an upcoming philosophy and ethnographic paper on the use and judgment of AI. I would like you to, one, transcribe what I say, two, restructure what I say into an outline, and three, note holes in the following. If possible, please don't read back anything, just output it. Are you ready to begin?\u201d\n00:37\nChatGPT said:\nAbsolutely, I'm here to help. Please go ahead with your ideas, and I'll handle\n\n\n\n\n\n\nYou said:\n\u201cRough title, an absence of judgment.\u201d\n00:03\nChatGPT said:\nGot it. I'll note that as your provisional\n\n\n\n\n\n\nYou said:\nTranscript Unavailable\n00:02\nChatGPT said:\nUnderstood. Please continue\n\n\n\n\n\n\nYou said:\n\u201c03 and Deep Research to conduct research.\u201d\n00:05\nChatGPT said:\nNoted. Feel free to expand on\n\n\n\n\n\n\nYou said:\n\u201cCohen's repost of DAKISH talking about why has AI not produced great research.\u201d\n00:10\nChatGPT said:\nGot it. That's an important point to address.\n\n\n\n\n\n\nYou said:\nTranscript Unavailable\n00:02\nChatGPT said:\nUnderstood. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cThe fundamental idea here is that, through my own investigations, but also through blah blah, large language models in their present incarnation are fundamentally incapable of judgment, which means that they are fundamentally incapable of\u201d\n00:23\nChatGPT said:\nNoted.\n\n\n\n\n\n\nYou said:\n\u201cof her research and insights. However, they are able to mimic the language of judgment, so we cannot\u201d\n00:08\nChatGPT said:\nGot it. Please continue.\n\n\n\n\n\n\nYou said:\nTranscript Unavailable\n00:01\nChatGPT said:\nUnderstood. Take your time.\n\n\n\n\n\n\nYou said:\n\u201cWe cannot look at the words they use, we must look at the actions.\u201d\n00:04\nChatGPT said:\nGot it. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cof which those words produce.\u201d\n00:02\nChatGPT said:\nUnderstood. Keep going when\n\n\n\n\n\n\nYou said:\n\u201cBut the other side of that...\u201d\n00:03\nChatGPT said:\nNoted. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cThe other side of that is that the...\u201d\n00:04\nChatGPT said:\nGot it. Please go on.\n\n\n\n\n\n\nYou said:\n\u201cNotionally identic, although this is a place where I disagree with the term, and put in a to-do to pull my definition of identic from my convert with Brett.\u201d\n00:15\nChatGPT said:\nGot it. I'll note that. Please\n\n\n\n\n\n\nYou said:\nTranscript Unavailable\n00:00\nChatGPT said:\nUnderstood. Feel free to continue.\n\n\n\n\n\n\nYou said:\n\u201cDeep Research neither exhibits goal-setting nor goal-following behavior.\u201d\n00:08\nChatGPT said:\nGot it. Please continue.\n\n\n\n\n\n\nYou said:\nTranscript Unavailable\n00:00\nChatGPT said:\nI'm following. Keep going when you're ready.\n\n\n\n\n\n\nYou said:\n\u201cstill bound to the Next Token paradigm, and even though it is\u201d\n00:06\nChatGPT said:\nUnderstood.\n\n\n\n\n\n\nYou said:\n\u201cself-reflexive, being self-reflexive, and\u201d\n00:04\nChatGPT said:\nGot it. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cIt's not even asking if it's done to itself, it is...\u201d\n00:06\nChatGPT said:\nI'm following.\n\n\n\n\n\n\nYou said:\n\u201cRunning a bunch of searches and synthesizing the information.\u201d\n00:04\nChatGPT said:\nGot it. Please go on.\n\n\n\n\n\n\nYou said:\n\u201cThe reason why this isn't agentic is because, fundamentally,\u201d\n00:05\nChatGPT said:\nI'm following you. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cit cannot judge if it has accomplished the goal, mainly because every time there's an output, it thinks it has accomplished the goal. And so the self-critical, self-reflexive, goal-following behavior that an agent has, and for what we can say, we'll say that an\u201d\n00:22\nChatGPT said:\nGot it. That distinction makes\n\n\n\n\n\n\nYou said:\n\u201cFirst week PhD student is our prototypical target.\u201d\n00:05\nChatGPT said:\nUnderstood. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cthe goal-following behavior of that RA is mimicked but fundamentally absent from deep research. Now, on the other hand, we can say that deep research does provide mundane utility, not towards J. V. Murkiewicz there. We can say that deep research, insofar as it's tool-using, is a step towards goal-following behavior.\u201d\n00:34\nChatGPT said:\nGot it.\n\n\n\n\n\n\nYou said:\n\u201cbut because these models fundamentally do not exhibit judgment, then these models are not agentic.\u201d\n00:08\nChatGPT said:\nUnderstood. Please\n\n\n\n\n\n\nYou said:\n\u201cAnd that is basically going to be the fundamental theme is that deep research.\u201d\n00:05\nChatGPT said:\nGot it. The fundamental theme. Please\n\n\n\n\n\n\nYou said:\n\u201cThis is the crucial, fundamental aspect of what we're talking about, and that is the\u201d\n00:08\nChatGPT said:\nUnderstood. Please go on.\n\n\n\n\n\n\nYou said:\n\u201cIt's not even a domain knowledge, right? Because, like, we can actually say that deep research, especially for VO3, et cetera, is exhibits.\u201d\n00:10\nChatGPT said:\nGot it.\n\n\n\n\n\n\nYou said:\n\u201cacceptable fluency. It exhibits quite solid domain knowledge. And these are great. But what it doesn't exhibit is\u201d\n00:11\nChatGPT said:\nUnderstood. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cThe Normal Intuitive Pattern. Pause for a moment, please.\u201d\n00:03\nChatGPT said:\nSure, I'll pause here. Just let me know when you're ready to continue.\n\n\n\n\n\n\nYou said:\nTranscript Unavailable\n00:01\nChatGPT said:\nAlright, let's continue. Please go ahead.\n\n\n\n\n\n\nYou said:\n\u201cAnd let's see. To continue reading.\u201d\n00:02\nChatGPT said:\nSure, go ahead when you're ready.\n\n\n\n\n\n\nYou said:\n\u201cOur use of O3 and deep research to actually prepare and collect a research-worthy dataset is the point that we're making here because\u201d\n00:16\nChatGPT said:\nGot it. Preparing and collecting a research\n\n\n\n\n\n\nYou said:\n\u201cThe Superficial Literature Reviews that previously we had skipped through\u201d\n00:04\nChatGPT said:\nUnderstood. Please continue when you're ready.\n\n\n\n\n\n\nYou said:\n\u201cSee you again.\u201d\n00:00\nChatGPT said:\nGot it. Feel free to continue when you're ready.\n\n\n\n\n\n\nYou said:\n\u201cThank you.\u201d\n00:00\nChatGPT said:\nTake your time. Let me know when you're ready to continue.\n\n\n\n\n\n\nYou said:\n\u201cSo, in the first few days, getting access to O3, you're going to have to do lit reviews.\u201d\n00:06\nChatGPT said:\nGot it. Please continue.\n\n\n\n\n\n\nYou said:\n\u201cThat was quite impressive.\u201d\n00:00\nChatGPT said:\nI'm following. Keep going\n\n\n\n\n\n\nYou said:\n\u201cSpecifically, I was...\u201d\n00:01\nChatGPT said:\nI'm listening. Please continue.\n\n\n\n\n\n\nYou said:\nTranscript Unavailable\n00:01\nChatGPT said:\nTake your time. Let me know when you're ready.\n\n\n\n\n\n\nYou said:\n\u201cI was impressed.\u201d\n00:01\nChatGPT said:\nI'm glad to hear that. Please continue.\n\n\n\n\n\n\nYou said:\nTranscript Unavailable"
+        }
+      ],
+      "files": [
+        {
+          "file_name": "paste.txt"
+        }
+      ]
+    },
+    {
+      "uuid": "02f754d1-b771-41c5-94e2-c27866fbdf10",
+      "text": " I'll help clean up and structure this transcript into a coherent outline. Let me extract just your statements and organize them thematically.\n\n<antThinking>Since this is a structuring task that will be shared directly in our conversation, I should keep it in-line rather than creating an artifact. The key is to remove ChatGPT's repetitive acknowledgments and organize the scattered thoughts into a coherent outline.</antThinking>\n\n# Rough Title: An Absence of Judgment\n\n## Main Thesis\n- Large language models are fundamentally incapable of judgment\n- We must look at actions their words produce, not just the words themselves\n\n## Deep Research and AI Capabilities\n1. Current State\n   - Uses O3 for research\n   - Connected to Cohen's repost of DAKISH on why AI hasn't produced great research\n   - Can mimic language of judgment without true judgment capability\n   - Exhibits acceptable fluency and solid domain knowledge\n\n2. Limitations\n   - Lacks goal-setting and goal-following behavior\n   - Still bound to the Next Token paradigm\n   - Self-reflexive but limited to:\n     - Running searches\n     - Synthesizing information\n   - Cannot truly judge if it has accomplished goals\n     - Assumes goal completion at every output\n\n3. Comparison to Human Researchers\n   - First-week PhD student as prototypical target\n   - Goal-following behavior is mimicked but fundamentally absent\n\n## Practical Applications\n1. Literature Reviews\n   - Initial impressions were \"quite impressive\"\n   - Used for preparing and collecting research-worthy datasets\n   - Improvement over previous superficial literature reviews\n\n## To-Do Notes\n- Pull definition of \"identic\" from conversation with Brett\n\nGaps/Areas Needing Development:\n1. Several incomplete thoughts/interruptions in the transcript\n2. Missing elaboration on \"The Normal Intuitive Pattern\"\n3. Unclear connection between \"mundane utility\" and tool-using behavior\n4. Incomplete discussion of what makes an agent truly \"agentic\"\n5. Missing concrete examples of how the lack of judgment manifests in research outputs",
+      "content": [
+        {
+          "start_timestamp": "2025-02-11T22:49:56.654651Z",
+          "stop_timestamp": "2025-02-11T22:50:07.856125Z",
+          "flags": null,
+          "type": "text",
+          "text": " I'll help clean up and structure this transcript into a coherent outline. Let me extract just your statements and organize them thematically.\n\n<antThinking>Since this is a structuring task that will be shared directly in our conversation, I should keep it in-line rather than creating an artifact. The key is to remove ChatGPT's repetitive acknowledgments and organize the scattered thoughts into a coherent outline.</antThinking>\n\n# Rough Title: An Absence of Judgment\n\n## Main Thesis\n- Large language models are fundamentally incapable of judgment\n- We must look at actions their words produce, not just the words themselves\n\n## Deep Research and AI Capabilities\n1. Current State\n   - Uses O3 for research\n   - Connected to Cohen's repost of DAKISH on why AI hasn't produced great research\n   - Can mimic language of judgment without true judgment capability\n   - Exhibits acceptable fluency and solid domain knowledge\n\n2. Limitations\n   - Lacks goal-setting and goal-following behavior\n   - Still bound to the Next Token paradigm\n   - Self-reflexive but limited to:\n     - Running searches\n     - Synthesizing information\n   - Cannot truly judge if it has accomplished goals\n     - Assumes goal completion at every output\n\n3. Comparison to Human Researchers\n   - First-week PhD student as prototypical target\n   - Goal-following behavior is mimicked but fundamentally absent\n\n## Practical Applications\n1. Literature Reviews\n   - Initial impressions were \"quite impressive\"\n   - Used for preparing and collecting research-worthy datasets\n   - Improvement over previous superficial literature reviews\n\n## To-Do Notes\n- Pull definition of \"identic\" from conversation with Brett\n\nGaps/Areas Needing Development:\n1. Several incomplete thoughts/interruptions in the transcript\n2. Missing elaboration on \"The Normal Intuitive Pattern\"\n3. Unclear connection between \"mundane utility\" and tool-using behavior\n4. Incomplete discussion of what makes an agent truly \"agentic\"\n5. Missing concrete examples of how the lack of judgment manifests in research outputs",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-11T22:50:08.237281Z",
+      "updated_at": "2025-02-11T22:50:08.237281Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "41a363ae-d186-43b6-953a-17f212a2328e",
+      "text": "Ah, sorry, turn this into TeX please.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-11T19:39:42.400227Z",
+          "stop_timestamp": "2025-02-11T19:39:42.400227Z",
+          "flags": null,
+          "type": "text",
+          "text": "Ah, sorry, turn this into TeX please.",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-11T23:12:21.802525Z",
+      "updated_at": "2025-02-11T23:12:21.802525Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "aace3f62-0837-47f8-8594-421592196bc2",
+      "text": " I'll create a LaTeX document structure for your outline.\n\n<antThinking>This needs proper LaTeX formatting including sections and subsections, and should be created as an artifact since it's a complete document that may need future revisions.</antThinking>\n```\nViewing artifacts created via the Analysis Tool web feature preview isn\u2019t yet supported on mobile.\n```\n\n\n\nI've created a LaTeX document that structures your outline. The document includes:\n\n1. Proper LaTeX document class and necessary packages\n2. Clear hierarchical structure using sections and subsections\n3. Itemized lists for detailed points\n4. Placeholder for title page (author can be added)\n\nWould you like me to modify any part of the structure or add additional sections?",
+      "content": [
+        {
+          "start_timestamp": "2025-02-11T23:12:24.196794Z",
+          "stop_timestamp": "2025-02-11T23:12:25.295191Z",
+          "flags": null,
+          "type": "text",
+          "text": " I'll create a LaTeX document structure for your outline.\n\n<antThinking>This needs proper LaTeX formatting including sections and subsections, and should be created as an artifact since it's a complete document that may need future revisions.</antThinking>",
+          "citations": []
+        },
+        {
+          "start_timestamp": "2025-02-11T23:12:25.613055Z",
+          "stop_timestamp": "2025-02-11T23:12:36.391716Z",
+          "flags": null,
+          "type": "tool_use",
+          "name": "artifacts",
+          "input": {
+            "id": "outline-tex",
+            "type": "text/markdown",
+            "title": "LaTeX Outline: An Absence of Judgment",
+            "command": "create",
+            "content": "\\documentclass{article}\n\\usepackage[utf8]{inputenc}\n\\usepackage[margin=1in]{geometry}\n\\usepackage{parskip}\n\n\\title{An Absence of Judgment: On AI's Fundamental Limitations in Research}\n\\author{}\n\\date{}\n\n\\begin{document}\n\n\\maketitle\n\n\\section{Introduction}\nLarge language models are fundamentally incapable of judgment, despite their ability to mimic the language of judgment. This distinction necessitates examining not merely their linguistic output, but the concrete actions and outcomes their words produce.\n\n\\section{Deep Research and AI Capabilities}\n\n\\subsection{Current State}\nThe implementation of O3 for research purposes, while advanced, reveals fundamental limitations. This connects to broader discussions, as highlighted in Cohen's repost of DAKISH regarding AI's inability to produce truly groundbreaking research. While these systems demonstrate acceptable fluency and solid domain knowledge, they lack crucial elements of genuine research capability.\n\n\\subsection{Fundamental Limitations}\n\\begin{itemize}\n    \\item Absence of goal-setting and goal-following behavior\n    \\item Constraint to the Next Token paradigm\n    \\item Limited self-reflexivity, characterized by:\n        \\begin{itemize}\n            \\item Simple search execution\n            \\item Information synthesis without true comprehension\n        \\end{itemize}\n    \\item Inability to genuinely evaluate goal accomplishment\n        \\begin{itemize}\n            \\item System assumes task completion at each output\n            \\item Lacks true self-assessment capability\n        \\end{itemize}\n\\end{itemize}\n\n\\subsection{Comparative Analysis}\nUsing a first-week PhD student as our prototypical target, we observe that while AI systems can mimic goal-following behavior, they fundamentally lack the authentic research capabilities demonstrated by even novice human researchers.\n\n\\section{Practical Applications}\n\n\\subsection{Literature Reviews}\nInitial applications in literature review processes have shown promising results, particularly in:\n\\begin{itemize}\n    \\item Dataset preparation and collection for research purposes\n    \\item Improvement over previous superficial review methodologies\n\\end{itemize}\n\n\\section{Future Development}\n\\subsection{Areas Requiring Further Investigation}\n\\begin{itemize}\n    \\item The Normal Intuitive Pattern concept requires elaboration\n    \\item Connection between mundane utility and tool-using behavior\n    \\item Precise definition of agentic behavior in research contexts\n    \\item Concrete manifestations of judgment absence in research outputs\n\\end{itemize}\n\n\\subsection{To-Do Items}\n\\begin{itemize}\n    \\item Define ``identic'' (reference: conversation with Brett)\n\\end{itemize}\n\n\\end{document}\n",
+            "version_uuid": "ac15094c-9b08-41fc-9f6e-0882ef4e29df"
+          },
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "context": null,
+          "display_content": null,
+          "approval_options": null,
+          "approval_key": null
+        },
+        {
+          "start_timestamp": null,
+          "stop_timestamp": null,
+          "flags": null,
+          "type": "tool_result",
+          "name": "artifacts",
+          "content": [
+            {
+              "type": "text",
+              "text": "OK",
+              "uuid": "772a5bdd-f103-4be1-a6e8-c49e18547850"
+            }
+          ],
+          "is_error": false,
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "display_content": null
+        },
+        {
+          "start_timestamp": "2025-02-11T23:12:38.996767Z",
+          "stop_timestamp": "2025-02-11T23:12:40.460918Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nI've created a LaTeX document that structures your outline. The document includes:\n\n1. Proper LaTeX document class and necessary packages\n2. Clear hierarchical structure using sections and subsections\n3. Itemized lists for detailed points\n4. Placeholder for title page (author can be added)\n\nWould you like me to modify any part of the structure or add additional sections?",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-11T23:12:40.635597Z",
+      "updated_at": "2025-02-11T23:12:40.635597Z",
+      "attachments": [],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "uuid": "c1ee883f-f843-4894-9a72-a75147838e4d",
+  "name": "Integrating Prior Research on AI Limitations",
+  "summary": "",
+  "created_at": "2025-02-13T22:10:14.273096Z",
+  "updated_at": "2025-02-14T07:41:03.606057Z",
+  "account": {
+    "uuid": "17538ba7-7aa5-450c-9d3f-69ab346ad799"
+  },
+  "chat_messages": [
+    {
+      "uuid": "e8155070-b91b-42b4-8c78-d0a7952f9e8d",
+      "text": "To begin, please synthesise yesterday's chat (prior chat 1) into the paper notes. We're getting ready to integrate another transcritp.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T17:00:26.458186Z",
+          "stop_timestamp": "2025-02-13T17:00:26.458186Z",
+          "flags": null,
+          "type": "text",
+          "text": "To begin, please synthesise yesterday's chat (prior chat 1) into the paper notes. We're getting ready to integrate another transcritp.",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-13T22:10:14.968507Z",
+      "updated_at": "2025-02-13T22:10:14.968507Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "3330e843-670a-49c6-8075-f3bb1b96ee8e",
+      "text": " <think>\n1. The prior chat shows a discussion about developing an academic paper on AI limitations, particularly Deep Research\n2. The chat reveals several key themes",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T22:10:16.431895Z",
+          "stop_timestamp": "2025-02-13T22:10:17.205685Z",
+          "flags": null,
+          "type": "text",
+          "text": " <think>\n1. The prior chat shows a discussion about developing an academic paper on AI limitations, particularly Deep Research\n2. The chat reveals several key themes",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-13T22:10:17.730629Z",
+      "updated_at": "2025-02-13T22:10:17.730629Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "a6238584-b754-4217-8da2-12e823fe2968",
+      "text": "To begin, please synthesise yesterday's chat (prior chat 1) into the paper notes. We're getting ready to integrate another transcript.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T17:02:39.671558Z",
+          "stop_timestamp": "2025-02-13T17:02:39.671558Z",
+          "flags": null,
+          "type": "text",
+          "text": "To begin, please synthesise yesterday's chat (prior chat 1) into the paper notes. We're getting ready to integrate another transcript.",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-13T22:10:22.249478Z",
+      "updated_at": "2025-02-13T22:10:22.249478Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "ffb3fdfe-78f5-4ec1-8c79-ec1ba1572030",
+      "text": " <think>\n1. Looking at the prior chat and paper notes\n2. The chat contains dictation about key concepts around agentic systems and Deep Research's limitations\n3. Need to synthesize these points into a cohesive outline\n4. Several themes emerge: uncanny valley of research, limitations in literature reviews, goal-following behavior\n5. This should be organized as an academic outline that builds on the existing LaTeX structure\n</think>\n\n<antThinking>This outline needs to be substantial and will be referenced/modified throughout the conversation. Creating an artifact is appropriate here.</antThinking>\n```\nViewing artifacts created via the Analysis Tool web feature preview isn\u2019t yet supported on mobile.\n```\n\n\n\nReady for your next transcript input.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T22:10:23.638460Z",
+          "stop_timestamp": "2025-02-13T22:10:27.885832Z",
+          "flags": null,
+          "type": "text",
+          "text": " <think>\n1. Looking at the prior chat and paper notes\n2. The chat contains dictation about key concepts around agentic systems and Deep Research's limitations\n3. Need to synthesize these points into a cohesive outline\n4. Several themes emerge: uncanny valley of research, limitations in literature reviews, goal-following behavior\n5. This should be organized as an academic outline that builds on the existing LaTeX structure\n</think>\n\n<antThinking>This outline needs to be substantial and will be referenced/modified throughout the conversation. Creating an artifact is appropriate here.</antThinking>",
+          "citations": []
+        },
+        {
+          "start_timestamp": "2025-02-13T22:10:28.254977Z",
+          "stop_timestamp": "2025-02-13T22:10:40.060741Z",
+          "flags": null,
+          "type": "tool_use",
+          "name": "artifacts",
+          "input": {
+            "id": "paper-outline",
+            "type": "text/markdown",
+            "title": "Research Paper Outline",
+            "command": "create",
+            "content": "# An Absence of Judgment: On AI's Fundamental Limitations in Research\n\n## 1. Introduction\n- Fundamental incapability of judgment in LLMs despite linguistic mimicry\n- Case study: OpenAI's Deep Research (February 2025)\n- Prerequisites for \"agentic\" tools\n- Core thesis on lack of induction preventing knowledge connections\n\n## 2. Agentic Systems Framework\n### 2.1 Goal-Related Characteristics\n- Distinction between goal-following and goal-setting\n- External input requirements\n- Operational definitions of agency\n\n### 2.2 Core Components of Agency\n- Goal processing capabilities\n- Execution mechanisms\n- Assessment and reporting functions\n\n## 3. Deep Research Analysis\n### 3.1 Observed Limitations\n- Failure case: Newspaper article generation\n- Inability to follow explicit guidelines\n- Surface-level competence without true comprehension\n\n### 3.2 The Uncanny Valley of Research\n- Always produces output without questioning assumptions\n- Lacks systematic approach\n- No self-correction or revision process\n- Takes initial search results as \"gospel\"\n- Absence of winnowing or filtering process\n\n### 3.3 Literature Review Capabilities\n- Can perform descriptive reviews without insight\n- Missing elements:\n  - Purpose-driven source selection\n  - Intentional organization\n  - Generation of novel insights\n  - Inductive reasoning\n\n## 4. Comparative Analysis\n### 4.1 Human Researcher Benchmark\n- First-week PhD student comparison\n- Essential elements of research capability\n- Role of judgment in research process\n\n## 5. Implications and Future Directions\n### 5.1 Tool Usage Framework\n- Defining appropriate use cases\n- Limitations and boundaries\n- Integration with human research processes\n\n### 5.2 Future Development Needs\n- Addressing the judgment gap\n- Building true goal-following capabilities\n- Developing systematic research approaches\n\n## 6. Conclusion\n- Synthesis of key findings\n- Implications for AI research tools\n- Future research directions",
+            "version_uuid": "657caad3-daf6-443a-a622-ba599fb26a5e"
+          },
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "context": null,
+          "display_content": null,
+          "approval_options": null,
+          "approval_key": null
+        },
+        {
+          "start_timestamp": null,
+          "stop_timestamp": null,
+          "flags": null,
+          "type": "tool_result",
+          "name": "artifacts",
+          "content": [
+            {
+              "type": "text",
+              "text": "OK",
+              "uuid": "1563e562-b1c2-4902-a863-d3f797648e77"
+            }
+          ],
+          "is_error": false,
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "display_content": null
+        },
+        {
+          "start_timestamp": "2025-02-13T22:10:42.400935Z",
+          "stop_timestamp": "2025-02-13T22:10:43.032515Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nReady for your next transcript input.",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-13T22:10:43.114608Z",
+      "updated_at": "2025-02-13T22:10:43.114608Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "80161b89-f15a-4ccc-aa8a-41df4666de4e",
+      "text": "Transcript is attached",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T17:01:46.986666Z",
+          "stop_timestamp": "2025-02-13T17:01:46.986666Z",
+          "flags": null,
+          "type": "text",
+          "text": "Transcript is attached",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-13T22:12:52.685236Z",
+      "updated_at": "2025-02-13T22:12:52.685236Z",
+      "attachments": [
+        {
+          "file_name": "paste.txt",
+          "file_size": 5590,
+          "file_type": "txt",
+          "extracted_content": "\nUm,\n\nSo the structure of the paper is you have our discussion of why these things are not presented. We have our discussion of human being utility and our experience. These\n\nAnd our experiences are using it for research. And then we have the discussion of what, what do we need? The tool that genuinely does.\n\nHow? Facilitate. What these things are good are how do we interact with these things knowing that there are deficiently And so, the first thing that we need is, A cursor to do this. Right. The, the first thing that we need is.\n\nEach step in the to-do list. So, We can get the user's judgement as. Correctness. Because the thing is, is that for research And this is not. This is not the oh I'm not able to access that we saw in 7th February like This is going to be, oh, this lineup.\n\nOpener is. This output is back. This is not a quick. I should remove this. Because fundamentally, Fundamentally, what we see is that\n\nThey don't consider jud. Put more to the point. They don't have the inductive capacity of the intuition, whatever to know when they should. And therefore, Until we figure out some new technological advance that is we need to Anchor. Um, that\n\nSo, We need to be able to New a brown art todo list, right? It is, it is insufficient Is the current quote, agentic only great things do just take a step, right? Like the idea of a wonderful model of research is laughable. Yes. Uh, we should have that a note towards um the problems of sdlcs and why that's such a problem for us.\n\nUm,\n\nThis to-do list should should first off. Allow us to see what's in the context window. And to see what we're working on, but the the fundamental thing that these large language models don't have is the ability to forget to judge. That a certain line of thinking is bad, then to remove it because We know.\n\nBy virtue of how they work. These large language models. Will anchor. Long text. In their context window. Which means that\n\nAs they anchor on this text, if it's the wrong text. Not only. Not only is it excluding? Um, Content that we want but it's biasing the output in ways. That's not appropriate. And so, therefore, When we build literature for our deep research, We effectively need.\n\nAn indication of What sources? It has considered. What it's using and more to the point, what it's disusing. Um, and so So effectively. Considering that we're playing the game of of, um, Limiting context windows and it's it's hilarious. That 200 000 tokens is limited but what we're talking about.\n\nI've I've easily blown the context window out with trying to drop in nine papers. So Two hundred thousand tokens. Is not sufficient to do researching. Therefore we need a way of managing. Our tokens. And, What this means and we also need introspection. We need to be able to validate this.\n\nWe need ha transparency, not newly in the encoded thoughts. But okay at this step we have a This paper. We are pulling these quotes from it. Here is our summary of and understanding here is where in our document we should be using this paper when we get to this part of our document load the entire paper into the context window for this paragraph.\n\nRight. And so this is why outlines are so useful? Is because they allow us to go up when we get to that part of the outline when we get to that part of the mechanism. Whatever, that's not the right word, but whatever. Go change your context window, your working context window.\n\nTo go. Spin off a line of thought or whatever to apply. That paper to this paragraph, within the context of the section and and the document And so, We need. But, We also need human judgement, right? The first draught is always shit. The first lines of research are seldom the most correct lines, and so therefore, These systems have to leverage human judgement.\n\nAnd and not in the double confirm that deep research does right now, right? Because deep research right now. Takes this takes the entire context window. You push deep research. And then it it crunches down what it thinks its task is. And then you say go or you give it a bit of feedback when it goes.\n\nThat's not what I'm talking about, right? This is not agentic. It is not goal following We cannot treat it as gold following. We must treat it as a tool. It's just a tool. It is a tool that can be useful. It's a tool that can be thoughtful. It's just a tool.\n\nDon't remember if I talked about deleting. But we also need tombstones, we need to have indications of thoughts that we've had that are bad. And we have to be able to remove them durably. From the context window but we need to have proof that we've had this thought and chosen not to have it.\n\nUm, Which is. Ironic. But whatever.\n\nOkay. What time is it?\n\nWe have to outline. We have forgetting.\n\nWe have userjulent.\n\nAnd then we have\n\nAnd then we have different. Stages of interaction, where finding literature. Extracting, the literature and building the outline building, the first draught revising, the draught editing, and then outputting Should all be documented. And so this is why we We can't necessarily follow a waterfall sdlc. When we're producing 10 000 word, research reports.\n\nWe have to consider. Instead. That we have to treat each step in its own step that we need to have different mechanisms for Keep contracted this information. We need to choose which of these parts we're pulling from. And at every stage we have to rely on human judgement. Knowing that the AI's judgements is deficient but more to the point, not only is it deficient, it doesn't know that it's deficiency, doesn't know when to play the judgement.\n\nCool.\n"
+        }
+      ],
+      "files": [
+        {
+          "file_name": "paste.txt"
+        }
+      ]
+    },
+    {
+      "uuid": "11b3f369-2754-4616-af36-59a09d28870a",
+      "text": " <think>\n1. This transcript discusses system design requirements for better research tools\n2. Key points about:\n   - Need for todo lists and transparency\n   - Context window management\n   - Human judgment integration\n   - Documentation of research stages\n   - Importance of being able to \"forget\" or remove content\n3. Need to integrate these points into the outline, particularly expanding the tool usage framework\n</think>\n\n<antThinking>The existing outline needs significant updates to incorporate these new points about system design requirements and research tool capabilities. This warrants a rewrite of the outline.</antThinking>\n```\nViewing artifacts created via the Analysis Tool web feature preview isn\u2019t yet supported on mobile.\n```\n\n\n\nReady for next transcript input.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T22:12:54.797158Z",
+          "stop_timestamp": "2025-02-13T22:12:58.432597Z",
+          "flags": null,
+          "type": "text",
+          "text": " <think>\n1. This transcript discusses system design requirements for better research tools\n2. Key points about:\n   - Need for todo lists and transparency\n   - Context window management\n   - Human judgment integration\n   - Documentation of research stages\n   - Importance of being able to \"forget\" or remove content\n3. Need to integrate these points into the outline, particularly expanding the tool usage framework\n</think>\n\n<antThinking>The existing outline needs significant updates to incorporate these new points about system design requirements and research tool capabilities. This warrants a rewrite of the outline.</antThinking>",
+          "citations": []
+        },
+        {
+          "start_timestamp": "2025-02-13T22:12:58.901800Z",
+          "stop_timestamp": "2025-02-13T22:13:15.334289Z",
+          "flags": null,
+          "type": "tool_use",
+          "name": "artifacts",
+          "input": {
+            "id": "paper-outline",
+            "command": "rewrite",
+            "content": "# An Absence of Judgment: On AI's Fundamental Limitations in Research\n\n## 1. Introduction\n- Fundamental incapability of judgment in LLMs despite linguistic mimicry\n- Case study: OpenAI's Deep Research (February 2025)\n- Prerequisites for \"agentic\" tools\n- Core thesis on lack of induction preventing knowledge connections\n\n## 2. Agentic Systems Framework\n### 2.1 Goal-Related Characteristics\n- Distinction between goal-following and goal-setting\n- External input requirements\n- Operational definitions of agency\n\n### 2.2 Core Components of Agency\n- Goal processing capabilities\n- Execution mechanisms\n- Assessment and reporting functions\n\n## 3. Deep Research Analysis\n### 3.1 Observed Limitations\n- Failure case: Newspaper article generation\n- Inability to follow explicit guidelines\n- Surface-level competence without true comprehension\n\n### 3.2 The Uncanny Valley of Research\n- Always produces output without questioning assumptions\n- Lacks systematic approach\n- No self-correction or revision process\n- Takes initial search results as \"gospel\"\n- Absence of winnowing or filtering process\n\n### 3.3 Literature Review Capabilities\n- Can perform descriptive reviews without insight\n- Missing elements:\n  - Purpose-driven source selection\n  - Intentional organization\n  - Generation of novel insights\n  - Inductive reasoning\n\n## 4. System Design Requirements\n### 4.1 Context Management\n- Transparent context window visibility\n- Token management strategies\n- Source tracking and documentation\n- Ability to \"forget\" or remove irrelevant content\n- Tombstones for discarded thoughts\n\n### 4.2 Research Process Support\n- Structured todo lists for research steps\n- Clear documentation of considered sources\n- Management of working context windows\n- Integration points for human judgment\n- Outline-driven context switching\n\n### 4.3 Stage-Based Approach\n- Literature finding\n- Literature extraction\n- Outline building\n- First draft creation\n- Revision process\n- Editing and output\n- Documentation requirements for each stage\n\n## 5. Human-AI Collaboration Framework\n### 5.1 Judgment Integration\n- Recognition of AI judgment deficiency\n- Strategic points for human intervention\n- Validation and verification processes\n- Beyond simple confirmation mechanisms\n\n### 5.2 Tool-Centric Approach\n- Treating AI as tool rather than agent\n- Leveraging AI capabilities appropriately\n- Managing limitations and boundaries\n- Integration with human research processes\n\n## 6. Future Development Needs\n### 6.1 Technical Requirements\n- Improved context management\n- Better token efficiency\n- Enhanced source tracking\n- Robust documentation systems\n\n### 6.2 Process Requirements\n- Non-waterfall approach to research\n- Flexible stage management\n- Improved human-AI interaction patterns\n- Documentation standards\n\n## 7. Conclusion\n- Synthesis of key findings\n- Implications for AI research tools\n- Future research directions",
+            "version_uuid": "63e4eb57-5772-4804-8830-d539c838cb5f"
+          },
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "context": null,
+          "display_content": null,
+          "approval_options": null,
+          "approval_key": null
+        },
+        {
+          "start_timestamp": null,
+          "stop_timestamp": null,
+          "flags": null,
+          "type": "tool_result",
+          "name": "artifacts",
+          "content": [
+            {
+              "type": "text",
+              "text": "OK",
+              "uuid": "156d5bd0-a119-4c53-bfa0-cf280835058a"
+            }
+          ],
+          "is_error": false,
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "display_content": null
+        },
+        {
+          "start_timestamp": "2025-02-13T22:13:17.310793Z",
+          "stop_timestamp": "2025-02-13T22:13:17.460712Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nReady for next transcript input.",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-13T22:13:17.543725Z",
+      "updated_at": "2025-02-13T22:13:17.543725Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "25b55600-82ec-4e4e-9843-cebec68c0b11",
+      "text": "Ok, integrate this back into the TeX document I shared with you, please.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T00:38:41.820385Z",
+          "stop_timestamp": "2025-02-14T00:38:41.820385Z",
+          "flags": null,
+          "type": "text",
+          "text": "Ok, integrate this back into the TeX document I shared with you, please.",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-14T01:12:56.914939Z",
+      "updated_at": "2025-02-14T01:12:56.914939Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "c1e33221-4e62-4544-8016-c4d493e094f4",
+      "text": " <think>\n1. Need to transform the markdown outline into LaTeX format\n2. Preserve the existing document structure while adding new sections\n3. Maintain consistent LaTeX formatting\n4. Integrate new content while preserving existing elements\n</think>\n\n<antThinking>This requires creating a new LaTeX document artifact that combines the existing content with the new outline structure.</antThinking>\n```\nViewing artifacts created via the Analysis Tool web feature preview isn\u2019t yet supported on mobile.\n```\n\n\n\nReady for next input.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T01:12:59.920451Z",
+          "stop_timestamp": "2025-02-14T01:13:01.241344Z",
+          "flags": null,
+          "type": "text",
+          "text": " <think>\n1. Need to transform the markdown outline into LaTeX format\n2. Preserve the existing document structure while adding new sections\n3. Maintain consistent LaTeX formatting\n4. Integrate new content while preserving existing elements\n</think>\n\n<antThinking>This requires creating a new LaTeX document artifact that combines the existing content with the new outline structure.</antThinking>",
+          "citations": []
+        },
+        {
+          "start_timestamp": "2025-02-14T01:13:01.497823Z",
+          "stop_timestamp": "2025-02-14T01:13:22.221997Z",
+          "flags": null,
+          "type": "tool_use",
+          "name": "artifacts",
+          "input": {
+            "id": "updated-paper",
+            "type": "application/vnd.ant.code",
+            "title": "Updated Paper Draft",
+            "command": "create",
+            "content": "\\documentclass{article}\n\\usepackage[utf8]{inputenc}\n\\usepackage[margin=1in]{geometry}\n\\usepackage{parskip}\n\n\\title{An Absence of Judgment: On AI's Fundamental Limitations in Research}\n\\author{}\n\\date{}\n\n\\begin{document}\n\n\\maketitle\n\n\\section{Introduction}\nLarge language models are fundamentally incapable of judgment, despite their ability to mimic the language of judgment. This distinction necessitates examining not only their linguistic output but also the concrete actions and outcomes that their words produce. However, this lack merely prevents us from treating them as true agents, \\textit{not} as extracting mundane utility from them as tools. This paper is an investigation into the creation of a research-grade dataset using OpenAI's Deep Research in February 2025, acting as a case study --- and our ``autoethnographic'' reflection upon the use of this tool for what Zvi Moshowitz calls ``mundane utility.\"\n\nHere, we will also give our understanding of the necessary prerequisites for an ``agentic'' tool, and why we believe that this infrastructure, at this time, does not satisfy that criteria. We will also discuss the fundamental lack of judgment that these models exhibit, and why it is this core incapability which prevents an accumulation of patterns-shaped-like-knowledge to answer Dwarkesh's question to Cohen: ``what do you make of the fact that these things have basically the entire corpus of human knowledge memorized and they haven't been able to make a single new connection that has led to a discovery? Whereas if even a moderately intelligent person had this much stuff memorized, they would notice \u2014 Oh, this thing causes this symptom.'' We assert that the lack of induction exhibited by even currently accessible frontier models like o3-mini-high, answers this question.\n\n\\section{Agentic Systems Framework}\n\n\\subsection{Goal-Related Characteristics}\n\\begin{itemize}\n    \\item Goal Following vs Goal Setting\n        \\begin{itemize}\n            \\item Agentic systems are goal-following systems\n            \\item This contrasts with AGI, which can set its own goals\n            \\item Key distinction: Agentic systems require external input for goals\n        \\end{itemize}\n    \\item Core Components\n        \\begin{itemize}\n            \\item Goal processing capabilities\n            \\item Execution mechanisms\n            \\item Assessment and reporting functions\n        \\end{itemize}\n\\end{itemize}\n\n\\section{Deep Research Analysis}\n\n\\subsection{Observed Limitations}\nOur investigation reveals fundamental limitations in Deep Research's capabilities, particularly in its ability to engage in genuine research activities. These limitations manifest in several key areas:\n\n\\begin{itemize}\n    \\item Failure in guideline adherence\n    \\item Surface-level competence without true comprehension\n    \\item Inability to question assumptions\n    \\item Lack of systematic approach\n\\end{itemize}\n\n\\subsection{The Uncanny Valley of Research}\nWe observe what we term the \"uncanny valley of research\" - where the system produces outputs that superficially resemble research work but lack crucial elements of genuine research capability:\n\n\\begin{itemize}\n    \\item Always produces output without questioning assumptions\n    \\item Takes initial search results as \"gospel\"\n    \\item Lacks self-correction or revision processes\n    \\item Absence of winnowing or filtering process\n\\end{itemize}\n\n\\section{System Design Requirements}\n\n\\subsection{Context Management}\nEffective research tools require sophisticated context management capabilities:\n\n\\begin{itemize}\n    \\item Transparent context window visibility\n    \\item Token management strategies\n    \\item Source tracking and documentation\n    \\item Ability to \"forget\" or remove irrelevant content\n    \\item Tombstones for discarded thoughts\n\\end{itemize}\n\n\\subsection{Research Process Support}\nThe research process must be supported through structured mechanisms:\n\n\\begin{itemize}\n    \\item Structured todo lists for research steps\n    \\item Clear documentation of considered sources\n    \\item Management of working context windows\n    \\item Integration points for human judgment\n    \\item Outline-driven context switching\n\\end{itemize}\n\n\\subsection{Stage-Based Approach}\nResearch development requires distinct stages, each with specific requirements:\n\n\\begin{itemize}\n    \\item Literature finding\n    \\item Literature extraction\n    \\item Outline building\n    \\item First draft creation\n    \\item Revision process\n    \\item Editing and output\n    \\item Documentation requirements for each stage\n\\end{itemize}\n\n\\section{Human-AI Collaboration Framework}\n\n\\subsection{Judgment Integration}\nThe integration of human judgment is crucial given AI's fundamental limitations:\n\n\\begin{itemize}\n    \\item Recognition of AI judgment deficiency\n    \\item Strategic points for human intervention\n    \\item Validation and verification processes\n    \\item Beyond simple confirmation mechanisms\n\\end{itemize}\n\n\\subsection{Tool-Centric Approach}\nAI systems must be treated as tools rather than agents:\n\n\\begin{itemize}\n    \\item Leveraging AI capabilities appropriately\n    \\item Managing limitations and boundaries\n    \\item Integration with human research processes\n\\end{itemize}\n\n\\section{Future Development}\n\n\\subsection{Technical Requirements}\nFuture development must address several key technical areas:\n\n\\begin{itemize}\n    \\item Improved context management\n    \\item Better token efficiency\n    \\item Enhanced source tracking\n    \\item Robust documentation systems\n\\end{itemize}\n\n\\subsection{Process Requirements}\nProcess improvements are needed in several areas:\n\n\\begin{itemize}\n    \\item Non-waterfall approach to research\n    \\item Flexible stage management\n    \\item Improved human-AI interaction patterns\n    \\item Documentation standards\n\\end{itemize}\n\n\\section{Conclusion}\nOur investigation demonstrates that while current AI systems show promise in supporting research activities, they fundamentally lack the capability for true judgment and systematic research. The path forward lies in developing better tools that acknowledge these limitations while providing structured support for human-AI collaboration in research contexts.\n\n\\end{document}",
+            "language": "latex",
+            "version_uuid": "503b19d6-f977-479b-9372-e011876396d3"
+          },
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "context": null,
+          "display_content": null,
+          "approval_options": null,
+          "approval_key": null
+        },
+        {
+          "start_timestamp": null,
+          "stop_timestamp": null,
+          "flags": null,
+          "type": "tool_result",
+          "name": "artifacts",
+          "content": [
+            {
+              "type": "text",
+              "text": "OK",
+              "uuid": "37fca1c9-ce78-4ab8-a8ec-d620247c80f7"
+            }
+          ],
+          "is_error": false,
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "display_content": null
+        },
+        {
+          "start_timestamp": "2025-02-14T01:13:25.715449Z",
+          "stop_timestamp": "2025-02-14T01:13:26.087556Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nReady for next input.",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-14T01:13:26.249528Z",
+      "updated_at": "2025-02-14T01:13:26.249528Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "aafd06b7-69cd-471d-86c8-4955b93fcf3f",
+      "text": "My colleague reminds me that we also need to speak about what DR does well. Let's go back to the markdown outline and add a place for \"Mundane Utility, and the successful uses of DR\" there. (I'll record some more tomorrow morning thinking about this)",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T00:40:20.599471Z",
+          "stop_timestamp": "2025-02-14T00:40:20.599471Z",
+          "flags": null,
+          "type": "text",
+          "text": "My colleague reminds me that we also need to speak about what DR does well. Let's go back to the markdown outline and add a place for \"Mundane Utility, and the successful uses of DR\" there. (I'll record some more tomorrow morning thinking about this)",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-14T02:06:43.263120Z",
+      "updated_at": "2025-02-14T02:06:43.263120Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "dd51cb9a-cfa2-4184-bc58-4bf88753c3bd",
+      "text": " <think>\n1. Need to add a section about Deep Research's successful use cases\n2. This fits between the Deep Research Analysis and System Design Requirements sections\n3. Should focus on practical utility and successful applications\n4. Will preserve existing structure while adding new section\n</think>\n\n<antThinking>The outline needs a new major section on practical utility, warranting an update to the existing artifact.</antThinking>\n```\nViewing artifacts created via the Analysis Tool web feature preview isn\u2019t yet supported on mobile.\n```\n\n\n\nReady for your thoughts on the successful applications of Deep Research tomorrow morning.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T02:06:45.313857Z",
+          "stop_timestamp": "2025-02-14T02:06:48.258344Z",
+          "flags": null,
+          "type": "text",
+          "text": " <think>\n1. Need to add a section about Deep Research's successful use cases\n2. This fits between the Deep Research Analysis and System Design Requirements sections\n3. Should focus on practical utility and successful applications\n4. Will preserve existing structure while adding new section\n</think>\n\n<antThinking>The outline needs a new major section on practical utility, warranting an update to the existing artifact.</antThinking>",
+          "citations": []
+        },
+        {
+          "start_timestamp": "2025-02-14T02:06:48.716938Z",
+          "stop_timestamp": "2025-02-14T02:07:01.299828Z",
+          "flags": null,
+          "type": "tool_use",
+          "name": "artifacts",
+          "input": {
+            "id": "paper-outline",
+            "command": "rewrite",
+            "content": "# An Absence of Judgment: On AI's Fundamental Limitations in Research\n\n## 1. Introduction\n- Fundamental incapability of judgment in LLMs despite linguistic mimicry\n- Case study: OpenAI's Deep Research (February 2025)\n- Prerequisites for \"agentic\" tools\n- Core thesis on lack of induction preventing knowledge connections\n\n## 2. Agentic Systems Framework\n### 2.1 Goal-Related Characteristics\n- Distinction between goal-following and goal-setting\n- External input requirements\n- Operational definitions of agency\n\n### 2.2 Core Components of Agency\n- Goal processing capabilities\n- Execution mechanisms\n- Assessment and reporting functions\n\n## 3. Deep Research Analysis\n### 3.1 Observed Limitations\n- Failure case: Newspaper article generation\n- Inability to follow explicit guidelines\n- Surface-level competence without true comprehension\n\n### 3.2 The Uncanny Valley of Research\n- Always produces output without questioning assumptions\n- Lacks systematic approach\n- No self-correction or revision process\n- Takes initial search results as \"gospel\"\n- Absence of winnowing or filtering process\n\n### 3.3 Literature Review Capabilities\n- Can perform descriptive reviews without insight\n- Missing elements:\n  - Purpose-driven source selection\n  - Intentional organization\n  - Generation of novel insights\n  - Inductive reasoning\n\n## 4. Mundane Utility and Successful Applications\n### 4.1 Effective Use Cases\n- [Placeholder for successful applications]\n- [Placeholder for areas of demonstrated competence]\n\n### 4.2 Workflow Integration\n- [Placeholder for effective integration patterns]\n- [Placeholder for productivity improvements]\n\n### 4.3 Value Proposition\n- [Placeholder for cost-benefit analysis]\n- [Placeholder for efficiency gains]\n\n## 5. System Design Requirements\n### 5.1 Context Management\n- Transparent context window visibility\n- Token management strategies\n- Source tracking and documentation\n- Ability to \"forget\" or remove irrelevant content\n- Tombstones for discarded thoughts\n\n### 5.2 Research Process Support\n- Structured todo lists for research steps\n- Clear documentation of considered sources\n- Management of working context windows\n- Integration points for human judgment\n- Outline-driven context switching\n\n### 5.3 Stage-Based Approach\n- Literature finding\n- Literature extraction\n- Outline building\n- First draft creation\n- Revision process\n- Editing and output\n- Documentation requirements for each stage\n\n## 6. Human-AI Collaboration Framework\n### 6.1 Judgment Integration\n- Recognition of AI judgment deficiency\n- Strategic points for human intervention\n- Validation and verification processes\n- Beyond simple confirmation mechanisms\n\n### 6.2 Tool-Centric Approach\n- Treating AI as tool rather than agent\n- Leveraging AI capabilities appropriately\n- Managing limitations and boundaries\n- Integration with human research processes\n\n## 7. Future Development Needs\n### 7.1 Technical Requirements\n- Improved context management\n- Better token efficiency\n- Enhanced source tracking\n- Robust documentation systems\n\n### 7.2 Process Requirements\n- Non-waterfall approach to research\n- Flexible stage management\n- Improved human-AI interaction patterns\n- Documentation standards\n\n## 8. Conclusion\n- Synthesis of key findings\n- Implications for AI research tools\n- Future research directions",
+            "version_uuid": "b0accf0c-0690-4aa0-949e-8bde2edaa5ce"
+          },
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "context": null,
+          "display_content": null,
+          "approval_options": null,
+          "approval_key": null
+        },
+        {
+          "start_timestamp": null,
+          "stop_timestamp": null,
+          "flags": null,
+          "type": "tool_result",
+          "name": "artifacts",
+          "content": [
+            {
+              "type": "text",
+              "text": "OK",
+              "uuid": "feab743c-7632-4007-85c1-1c4ab9dbeec1"
+            }
+          ],
+          "is_error": false,
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "display_content": null
+        },
+        {
+          "start_timestamp": "2025-02-14T02:07:07.422495Z",
+          "stop_timestamp": "2025-02-14T02:07:07.793978Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nReady for your thoughts on the successful applications of Deep Research tomorrow morning.",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-14T02:07:07.900961Z",
+      "updated_at": "2025-02-14T02:07:07.900961Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "b006381e-6fdc-49ac-9032-cc920f25d312",
+      "text": "Ok, here is another transcript.\n\n<Transcript>\n00:10\nI suppose I would speak to The mundane utility section. Yeah, it looks like okay.\n\n00:32\nSo, if you're talking about,\n\n00:40\nIf we're talking about use cases, I suppose the first place you need to be talking about is\n\n01:10\nData collection. Um, So this is this is specifically This is specifically based on the Software apps. Um, run.\n\n01:39\n14th February. And so, so this this the software actually run was The software actually.\n\n02:03\nThe opposite of the infinite archaeology one, right? So\n\n02:13\nUm, The software X run was the opposite of Internet archaeology run software. X has Uh, 30 odd volumes filled with people writing about the software tools. But Very few of them are. Archaeology historical, science and labour. Therefore, my task to it was Go find all of the articles in this journal.\n\n02:49\nThat relate to. Big old tool map. And,\n\n03:05\nAnd to a first approximation, it did that.\n\n03:13\nBut, The interesting thing here is it did that indirectly? Because those articles were not, Trivially visible. Because elsevier blocked open their eyes. Yeah. Router Uh, we needed to do here. To compare against computers. And,\n\n03:51\nIt hits. What seemed like a plausible set of Articles and even hit a plausible set of borderline articles.\n\n04:05\nI am not certain. Um, and quite frankly, this is this is a a to do Sean to to see what Double check. Um, Faster can show, because\n\n04:28\nBecause this is, Um, because this\n\n04:42\nA useful series for other things. Then.\n\n04:57\nIf you had a topic specific,\n\n05:21\nJp's experience, looking for something. Do better and find more. Um,\n\n05:38\nBecause if we present, If we presume this community, Go find me.\n\n06:05\nThe difference between the set and JP sink.\n\n06:15\nThis was binding.\n\n06:42\nWhich means that if somehow, You can help the computer up to limited science. Then we can use.\n\n06:59\n2d reference political biographers. For women. Because the problem.\n\n07:21\nGenerations. Is. Most of\n\n07:39\nMost of them. All right. On the research topic. That we actually care about.\n\n08:04\nOkay, inner position.\n\n08:10\nNot learn. Well, because software accident discoverable. Open their eyes.\n\n08:31\nSo, they are only discovered as the impacts.\n\n08:38\nWhich is stupid because if it's an open access paper,\n\n09:36\nThis is an actual utility. That deep research represents. Sit and make your degree. Down a poetry supervisor. Exploring research salvarians put in a cluster to a 360 class, you should get it.\n\n10:07\nWho is going to? And guys. But also need to do the A3. Definitions gamepl.\n\n10:58\nThank you. This is the first place.\n\n11:19\nApplications.\n\n11:29\nOnce we figured out the effective unit of the context,\n\n11:46\nThere's food back on this.\n\n12:22\nThis sort of section this sort of definite relation. Is useful.\n\n12:50\nUm, although I do know, So, I suspectful\n\n13:33\nFor this sort of system I've given.\n\n13:54\nUm,\n\n14:42\nGo food every Informative ones about this.\n\n15:12\nOur applications. Um, should be not something weird.\n\n15:29\nLike, is it not better?\n\n16:14\nFamous technologies.\n\n16:25\nDude, why are you seeing requirements?\n\n16:32\nWhat amounts, to?\n\n16:40\nAnd especially to the non-employment that is.\n\n16:54\nWe assert therefore.\n\n17:00\nAnd PhD. Supervisor precise. Okay, who is the Botany papers for deep research shows for YouTube?\n\n17:20\nUm,\n\n17:27\nI would prefer.\n\n17:36\nWhat this means is that we can get much greater red.\n\n18:31\nAnd then talking about coins, they just post\n\n18:45\nSo, marginal papers. He was very interesting. For the PhD student to bring the output of models. And then to verify and constructure.\n\n19:16\nActually plot. Okay, can you can you engage with some corrective argumentation here. Now, let's see what the mechanical places.\n\n19:35\nIs sufficient for effective, use cases.\n\n19:46\nLet's see how you just.\n</transcript>",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T03:35:21.525289Z",
+          "stop_timestamp": "2025-02-14T03:35:21.525289Z",
+          "flags": null,
+          "type": "text",
+          "text": "Ok, here is another transcript.\n\n<Transcript>\n00:10\nI suppose I would speak to The mundane utility section. Yeah, it looks like okay.\n\n00:32\nSo, if you're talking about,\n\n00:40\nIf we're talking about use cases, I suppose the first place you need to be talking about is\n\n01:10\nData collection. Um, So this is this is specifically This is specifically based on the Software apps. Um, run.\n\n01:39\n14th February. And so, so this this the software actually run was The software actually.\n\n02:03\nThe opposite of the infinite archaeology one, right? So\n\n02:13\nUm, The software X run was the opposite of Internet archaeology run software. X has Uh, 30 odd volumes filled with people writing about the software tools. But Very few of them are. Archaeology historical, science and labour. Therefore, my task to it was Go find all of the articles in this journal.\n\n02:49\nThat relate to. Big old tool map. And,\n\n03:05\nAnd to a first approximation, it did that.\n\n03:13\nBut, The interesting thing here is it did that indirectly? Because those articles were not, Trivially visible. Because elsevier blocked open their eyes. Yeah. Router Uh, we needed to do here. To compare against computers. And,\n\n03:51\nIt hits. What seemed like a plausible set of Articles and even hit a plausible set of borderline articles.\n\n04:05\nI am not certain. Um, and quite frankly, this is this is a a to do Sean to to see what Double check. Um, Faster can show, because\n\n04:28\nBecause this is, Um, because this\n\n04:42\nA useful series for other things. Then.\n\n04:57\nIf you had a topic specific,\n\n05:21\nJp's experience, looking for something. Do better and find more. Um,\n\n05:38\nBecause if we present, If we presume this community, Go find me.\n\n06:05\nThe difference between the set and JP sink.\n\n06:15\nThis was binding.\n\n06:42\nWhich means that if somehow, You can help the computer up to limited science. Then we can use.\n\n06:59\n2d reference political biographers. For women. Because the problem.\n\n07:21\nGenerations. Is. Most of\n\n07:39\nMost of them. All right. On the research topic. That we actually care about.\n\n08:04\nOkay, inner position.\n\n08:10\nNot learn. Well, because software accident discoverable. Open their eyes.\n\n08:31\nSo, they are only discovered as the impacts.\n\n08:38\nWhich is stupid because if it's an open access paper,\n\n09:36\nThis is an actual utility. That deep research represents. Sit and make your degree. Down a poetry supervisor. Exploring research salvarians put in a cluster to a 360 class, you should get it.\n\n10:07\nWho is going to? And guys. But also need to do the A3. Definitions gamepl.\n\n10:58\nThank you. This is the first place.\n\n11:19\nApplications.\n\n11:29\nOnce we figured out the effective unit of the context,\n\n11:46\nThere's food back on this.\n\n12:22\nThis sort of section this sort of definite relation. Is useful.\n\n12:50\nUm, although I do know, So, I suspectful\n\n13:33\nFor this sort of system I've given.\n\n13:54\nUm,\n\n14:42\nGo food every Informative ones about this.\n\n15:12\nOur applications. Um, should be not something weird.\n\n15:29\nLike, is it not better?\n\n16:14\nFamous technologies.\n\n16:25\nDude, why are you seeing requirements?\n\n16:32\nWhat amounts, to?\n\n16:40\nAnd especially to the non-employment that is.\n\n16:54\nWe assert therefore.\n\n17:00\nAnd PhD. Supervisor precise. Okay, who is the Botany papers for deep research shows for YouTube?\n\n17:20\nUm,\n\n17:27\nI would prefer.\n\n17:36\nWhat this means is that we can get much greater red.\n\n18:31\nAnd then talking about coins, they just post\n\n18:45\nSo, marginal papers. He was very interesting. For the PhD student to bring the output of models. And then to verify and constructure.\n\n19:16\nActually plot. Okay, can you can you engage with some corrective argumentation here. Now, let's see what the mechanical places.\n\n19:35\nIs sufficient for effective, use cases.\n\n19:46\nLet's see how you just.\n</transcript>",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-14T07:40:00.014365Z",
+      "updated_at": "2025-02-14T07:40:00.014365Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "1b60faba-3edc-4a95-a4b8-53da3c2cfa76",
+      "text": " <think>\n1. This transcript discusses successful use cases of Deep Research, focusing on:\n   - Data collection capabilities\n   - Finding articles in journals\n   - Use in academic research\n   - Benefits for PhD students\n2. Key points:\n   - Example of software archaeology research\n   - Ability to find non-obvious connections\n   - Value in exploring research variations\n   - Role in supervision and guidance\n3. Need to update the \"Mundane Utility\" section with these concrete examples\n</think>\n\n<antThinking>The outline needs updating to incorporate these specific examples and use cases in the Mundane Utility section.</antThinking>\n```\nViewing artifacts created via the Analysis Tool web feature preview isn\u2019t yet supported on mobile.\n```\n\n\n\nReady for next transcript input.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T07:40:07.311187Z",
+          "stop_timestamp": "2025-02-14T07:40:10.038136Z",
+          "flags": null,
+          "type": "text",
+          "text": " <think>\n1. This transcript discusses successful use cases of Deep Research, focusing on:\n   - Data collection capabilities\n   - Finding articles in journals\n   - Use in academic research\n   - Benefits for PhD students\n2. Key points:\n   - Example of software archaeology research\n   - Ability to find non-obvious connections\n   - Value in exploring research variations\n   - Role in supervision and guidance\n3. Need to update the \"Mundane Utility\" section with these concrete examples\n</think>\n\n<antThinking>The outline needs updating to incorporate these specific examples and use cases in the Mundane Utility section.</antThinking>",
+          "citations": []
+        },
+        {
+          "start_timestamp": "2025-02-14T07:40:10.338733Z",
+          "stop_timestamp": "2025-02-14T07:40:14.577530Z",
+          "flags": null,
+          "type": "tool_use",
+          "name": "artifacts",
+          "input": {
+            "id": "paper-outline",
+            "command": "update",
+            "new_str": "### 4.1 Effective Use Cases\n- Data Collection and Analysis\n  - Journal article discovery\n  - Non-obvious connection identification\n  - Handling indirect references\n  - Processing open access content\n- Academic Research Support\n  - Literature exploration\n  - Research variation discovery\n  - Marginal paper identification\n  - PhD supervision assistance\n\n### 4.2 Workflow Integration\n- Research Supervision Enhancement\n  - Preliminary paper evaluation\n  - Research direction exploration\n  - Verification and construction guidance\n- Data Processing Capabilities\n  - Large-scale journal analysis\n  - Cross-reference identification\n  - Pattern recognition in academic literature\n\n### 4.3 Value Proposition\n- Enhanced Research Efficiency\n  - Faster initial data collection\n  - Broader literature coverage\n  - Identification of non-obvious connections\n- Academic Supervision Benefits\n  - improved guidance for students\n  - Better research direction exploration\n  - More comprehensive literature review processes",
+            "old_str": "### 4.1 Effective Use Cases\n- [Placeholder for successful applications]\n- [Placeholder for areas of demonstrated competence]\n\n### 4.2 Workflow Integration\n- [Placeholder for effective integration patterns]\n- [Placeholder for productivity improvements]\n\n### 4.3 Value Proposition\n- [Placeholder for cost-benefit analysis]\n- [Placeholder for efficiency gains]",
+            "version_uuid": "e385563d-c2fa-409e-bfd6-df45ed6b1593"
+          },
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "context": null,
+          "display_content": null,
+          "approval_options": null,
+          "approval_key": null
+        },
+        {
+          "start_timestamp": null,
+          "stop_timestamp": null,
+          "flags": null,
+          "type": "tool_result",
+          "name": "artifacts",
+          "content": [
+            {
+              "type": "text",
+              "text": "OK",
+              "uuid": "fb824759-72bb-454e-81dc-a549c6422bd5"
+            }
+          ],
+          "is_error": false,
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "display_content": null
+        },
+        {
+          "start_timestamp": "2025-02-14T07:40:17.521504Z",
+          "stop_timestamp": "2025-02-14T07:40:17.661964Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nReady for next transcript input.",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-14T07:40:17.755890Z",
+      "updated_at": "2025-02-14T07:40:17.755890Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "6f53849d-bd8b-4066-823f-481401b1b716",
+      "text": "[garbled, trying again]",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T03:37:01.496107Z",
+          "stop_timestamp": "2025-02-14T03:37:01.496107Z",
+          "flags": null,
+          "type": "text",
+          "text": "[garbled, trying again]",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-14T07:40:59.440543Z",
+      "updated_at": "2025-02-14T07:40:59.440543Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "e0974d91-4576-4872-a6bb-491287603abc",
+      "text": " I notice you're trying to input something but it came through as garbled. Please try sharing your input again and I'll help integrate it into the outline.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-14T07:41:02.833502Z",
+          "stop_timestamp": "2025-02-14T07:41:03.455190Z",
+          "flags": null,
+          "type": "text",
+          "text": " I notice you're trying to input something but it came through as garbled. Please try sharing your input again and I'll help integrate it into the outline.",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-14T07:41:03.606057Z",
+      "updated_at": "2025-02-14T07:41:03.606057Z",
+      "attachments": [],
+      "files": []
+    }
+  ]
+}

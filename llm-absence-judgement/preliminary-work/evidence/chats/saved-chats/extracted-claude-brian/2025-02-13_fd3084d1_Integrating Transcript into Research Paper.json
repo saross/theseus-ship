@@ -1,0 +1,152 @@
+{
+  "uuid": "fd3084d1-3a66-4145-becc-7aba0dcfe5d6",
+  "name": "Integrating Transcript into Research Paper",
+  "summary": "",
+  "created_at": "2025-02-13T22:08:35.221324Z",
+  "updated_at": "2025-03-02T21:26:33.347771Z",
+  "account": {
+    "uuid": "17538ba7-7aa5-450c-9d3f-69ab346ad799"
+  },
+  "chat_messages": [
+    {
+      "uuid": "559eed59-4939-4001-979b-54f0cd6d0869",
+      "text": "Today's transcript. Please integrate it into the prior transcript and the paper notes.",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T17:00:16.960157Z",
+          "stop_timestamp": "2025-02-13T17:00:16.960157Z",
+          "flags": null,
+          "type": "text",
+          "text": "Today's transcript. Please integrate it into the prior transcript and the paper notes.",
+          "citations": []
+        }
+      ],
+      "sender": "human",
+      "created_at": "2025-02-13T22:08:36.074480Z",
+      "updated_at": "2025-02-13T22:08:36.074480Z",
+      "attachments": [
+        {
+          "file_name": "paste.txt",
+          "file_size": 5590,
+          "file_type": "txt",
+          "extracted_content": "\nUm,\n\nSo the structure of the paper is you have our discussion of why these things are not presented. We have our discussion of human being utility and our experience. These\n\nAnd our experiences are using it for research. And then we have the discussion of what, what do we need? The tool that genuinely does.\n\nHow? Facilitate. What these things are good are how do we interact with these things knowing that there are deficiently And so, the first thing that we need is, A cursor to do this. Right. The, the first thing that we need is.\n\nEach step in the to-do list. So, We can get the user's judgement as. Correctness. Because the thing is, is that for research And this is not. This is not the oh I'm not able to access that we saw in 7th February like This is going to be, oh, this lineup.\n\nOpener is. This output is back. This is not a quick. I should remove this. Because fundamentally, Fundamentally, what we see is that\n\nThey don't consider jud. Put more to the point. They don't have the inductive capacity of the intuition, whatever to know when they should. And therefore, Until we figure out some new technological advance that is we need to Anchor. Um, that\n\nSo, We need to be able to New a brown art todo list, right? It is, it is insufficient Is the current quote, agentic only great things do just take a step, right? Like the idea of a wonderful model of research is laughable. Yes. Uh, we should have that a note towards um the problems of sdlcs and why that's such a problem for us.\n\nUm,\n\nThis to-do list should should first off. Allow us to see what's in the context window. And to see what we're working on, but the the fundamental thing that these large language models don't have is the ability to forget to judge. That a certain line of thinking is bad, then to remove it because We know.\n\nBy virtue of how they work. These large language models. Will anchor. Long text. In their context window. Which means that\n\nAs they anchor on this text, if it's the wrong text. Not only. Not only is it excluding? Um, Content that we want but it's biasing the output in ways. That's not appropriate. And so, therefore, When we build literature for our deep research, We effectively need.\n\nAn indication of What sources? It has considered. What it's using and more to the point, what it's disusing. Um, and so So effectively. Considering that we're playing the game of of, um, Limiting context windows and it's it's hilarious. That 200 000 tokens is limited but what we're talking about.\n\nI've I've easily blown the context window out with trying to drop in nine papers. So Two hundred thousand tokens. Is not sufficient to do researching. Therefore we need a way of managing. Our tokens. And, What this means and we also need introspection. We need to be able to validate this.\n\nWe need ha transparency, not newly in the encoded thoughts. But okay at this step we have a This paper. We are pulling these quotes from it. Here is our summary of and understanding here is where in our document we should be using this paper when we get to this part of our document load the entire paper into the context window for this paragraph.\n\nRight. And so this is why outlines are so useful? Is because they allow us to go up when we get to that part of the outline when we get to that part of the mechanism. Whatever, that's not the right word, but whatever. Go change your context window, your working context window.\n\nTo go. Spin off a line of thought or whatever to apply. That paper to this paragraph, within the context of the section and and the document And so, We need. But, We also need human judgement, right? The first draught is always shit. The first lines of research are seldom the most correct lines, and so therefore, These systems have to leverage human judgement.\n\nAnd and not in the double confirm that deep research does right now, right? Because deep research right now. Takes this takes the entire context window. You push deep research. And then it it crunches down what it thinks its task is. And then you say go or you give it a bit of feedback when it goes.\n\nThat's not what I'm talking about, right? This is not agentic. It is not goal following We cannot treat it as gold following. We must treat it as a tool. It's just a tool. It is a tool that can be useful. It's a tool that can be thoughtful. It's just a tool.\n\nDon't remember if I talked about deleting. But we also need tombstones, we need to have indications of thoughts that we've had that are bad. And we have to be able to remove them durably. From the context window but we need to have proof that we've had this thought and chosen not to have it.\n\nUm, Which is. Ironic. But whatever.\n\nOkay. What time is it?\n\nWe have to outline. We have forgetting.\n\nWe have userjulent.\n\nAnd then we have\n\nAnd then we have different. Stages of interaction, where finding literature. Extracting, the literature and building the outline building, the first draught revising, the draught editing, and then outputting Should all be documented. And so this is why we We can't necessarily follow a waterfall sdlc. When we're producing 10 000 word, research reports.\n\nWe have to consider. Instead. That we have to treat each step in its own step that we need to have different mechanisms for Keep contracted this information. We need to choose which of these parts we're pulling from. And at every stage we have to rely on human judgement. Knowing that the AI's judgements is deficient but more to the point, not only is it deficient, it doesn't know that it's deficiency, doesn't know when to play the judgement.\n\nCool.\n"
+        }
+      ],
+      "files": [
+        {
+          "file_name": "paste.txt"
+        }
+      ]
+    },
+    {
+      "uuid": "96c2bcfa-1518-44b4-95a8-903fb76d4a96",
+      "text": " <think>\nLet me analyze this input step by step:\n1. This is a raw transcript of spoken thoughts about the paper's structure and key arguments\n2. Main themes:\n   - Need for a structured todo list approach\n   - Context window management\n   - Human judgment integration\n   - Stages of research process\n   - \"Tombstones\" for discarded ideas\n3. This expands on the prior discussion about agentic systems and research limitations\n4. Need to reorganize into coherent sections\n</think>\n\nBased on the transcript and existing paper structure, here are the key sections to be integrated:\n\n1. In the \"Practical Applications\" section, add a new subsection:\n\n\\subsection{Requirements for Effective Research Tools}\n\\begin{itemize}\n    \\item Structured task management\n        \\begin{itemize}\n            \\item Transparent todo list functionality\n            \\item Context window visibility\n            \\item Source tracking capabilities\n        \\end{itemize}\n    \\item Memory Management\n        \\begin{itemize}\n            \\item Context window optimization\n            \\item \"Tombstone\" tracking for discarded ideas\n            \\item Ability to durably remove content while maintaining proof of consideration\n        \\end{itemize}\n    \\item Process Documentation\n        \\begin{itemize}\n            \\item Literature identification\n            \\item Content extraction\n            \\item Outline development\n            \\item Draft creation and revision\n            \\item Final editing and output\n        \\end{itemize}\n    \\item Human Judgment Integration\n        \\begin{itemize}\n            \\item Structured points for human validation\n            \\item Recognition of AI judgment deficiency\n            \\item Clear delineation between tool functionality and human oversight\n        \\end{itemize}\n\\end{itemize}\n\n2. Add to the \"Fundamental Limitations\" section:\n\n\\subsection{Context Window Constraints}\nEven with expanded context windows (e.g., 200,000 tokens), current systems face fundamental limitations in managing research-scale content. This necessitates careful consideration of:\n\\begin{itemize}\n    \\item Token management strategies\n    \\item Dynamic context loading based on outline sections\n    \\item Transparent tracking of source utilization and exclusion\n\\end{itemize}\n\n3. Expand the \"Future Development\" section to include:\n\n\\subsection{Required Tool Characteristics}\n\\begin{itemize}\n    \\item Structured workflow management\n    \\item Transparent source tracking\n    \\item Dynamic context window management\n    \\item Integration points for human judgment\n    \\item Documentation of research process stages\n\\end{itemize}\n\n\\subsection{Development Process Considerations}\nThe development of research tools must move beyond traditional SDLC approaches, recognizing that:\n\\begin{itemize}\n    \\item Research documentation requires flexible, non",
+      "content": [
+        {
+          "start_timestamp": "2025-02-13T22:08:38.753890Z",
+          "stop_timestamp": "2025-02-13T22:08:52.201868Z",
+          "flags": null,
+          "type": "text",
+          "text": " <think>\nLet me analyze this input step by step:\n1. This is a raw transcript of spoken thoughts about the paper's structure and key arguments\n2. Main themes:\n   - Need for a structured todo list approach\n   - Context window management\n   - Human judgment integration\n   - Stages of research process\n   - \"Tombstones\" for discarded ideas\n3. This expands on the prior discussion about agentic systems and research limitations\n4. Need to reorganize into coherent sections\n</think>\n\nBased on the transcript and existing paper structure, here are the key sections to be integrated:\n\n1. In the \"Practical Applications\" section, add a new subsection:\n\n\\subsection{Requirements for Effective Research Tools}\n\\begin{itemize}\n    \\item Structured task management\n        \\begin{itemize}\n            \\item Transparent todo list functionality\n            \\item Context window visibility\n            \\item Source tracking capabilities\n        \\end{itemize}\n    \\item Memory Management\n        \\begin{itemize}\n            \\item Context window optimization\n            \\item \"Tombstone\" tracking for discarded ideas\n            \\item Ability to durably remove content while maintaining proof of consideration\n        \\end{itemize}\n    \\item Process Documentation\n        \\begin{itemize}\n            \\item Literature identification\n            \\item Content extraction\n            \\item Outline development\n            \\item Draft creation and revision\n            \\item Final editing and output\n        \\end{itemize}\n    \\item Human Judgment Integration\n        \\begin{itemize}\n            \\item Structured points for human validation\n            \\item Recognition of AI judgment deficiency\n            \\item Clear delineation between tool functionality and human oversight\n        \\end{itemize}\n\\end{itemize}\n\n2. Add to the \"Fundamental Limitations\" section:\n\n\\subsection{Context Window Constraints}\nEven with expanded context windows (e.g., 200,000 tokens), current systems face fundamental limitations in managing research-scale content. This necessitates careful consideration of:\n\\begin{itemize}\n    \\item Token management strategies\n    \\item Dynamic context loading based on outline sections\n    \\item Transparent tracking of source utilization and exclusion\n\\end{itemize}\n\n3. Expand the \"Future Development\" section to include:\n\n\\subsection{Required Tool Characteristics}\n\\begin{itemize}\n    \\item Structured workflow management\n    \\item Transparent source tracking\n    \\item Dynamic context window management\n    \\item Integration points for human judgment\n    \\item Documentation of research process stages\n\\end{itemize}\n\n\\subsection{Development Process Considerations}\nThe development of research tools must move beyond traditional SDLC approaches, recognizing that:\n\\begin{itemize}\n    \\item Research documentation requires flexible, non",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-02-13T22:08:52.720788Z",
+      "updated_at": "2025-02-13T22:08:52.720788Z",
+      "attachments": [],
+      "files": []
+    },
+    {
+      "uuid": "7cd38e06-1663-4d53-b8a6-3d789c82aa5b",
+      "text": "\nAlright, I need to carefully analyze the new transcript (paste.txt) and integrate it with the existing paper notes and prior chat transcript. Let me break down what's in this new transcript:\n\nThe user is dictating thoughts about the structure of an academic paper focused on AI's limitations in research contexts, particularly regarding judgment and agency. The transcript appears to be a stream of consciousness with some garbled sections, but contains important points about:\n\n1. Paper structure:\n   - Discussion of why AI systems are not \"agentic\" (they lack true agency)\n   - Discussion of \"human being utility\" and experiences using AI for research\n   - Discussion of what would be needed for a tool that genuinely facilitates research\n\n2. Key arguments about AI limitations:\n   - AI lacks \"inductive capacity\" and \"intuition\" to know when to make judgments\n   - AI cannot \"forget\" or judge when a line of thinking is bad and remove it\n   - Large language models will \"anchor\" on text in their context window, potentially biasing output\n\n3. Proposed solutions/features for better research tools:\n   - A structured to-do list approach\n   - Allowing users to see what's in the context window\n   - Providing indication of what sources the AI has considered (and what it's not using)\n   - Token management for research (since 200k tokens is still limited)\n   - Transparency about which papers are being used and how\n   - Leveraging human judgment at critical points\n   - \"Tombstones\" - indications of thoughts that were considered but rejected\n\n4. Process stages that need different handling:\n   - Finding literature\n   - Extracting literature\n   - Building the outline\n   - Building the first draft\n   - Revising the draft\n   - Editing\n   - Outputting\n\nNow I need to take this information and integrate it with the existing paper notes, creating a coherent outline in markdown format as an artifact.\n\nFrom the existing paper notes, I see:\n- A focus on AI's lack of judgment despite linguistic capabilities\n- Discussion of \"agentic\" systems vs normal software\n- Analysis of Deep Research and AI capabilities\n- Sections on practical applications and future development\n\nThe new transcript adds more specific ideas about how to design better research tools that acknowledge AI's limitations and incorporate human judgment at key points.\n\nLet me create a comprehensive outline that integrates all this information.\n\nBased on your latest transcript and the existing materials, I'll create an integrated outline for your paper.\n```\nViewing artifacts created via the Analysis Tool web feature preview isn\u2019t yet supported on mobile.\n```\n\n\n\nI've integrated your new transcript with the existing paper notes to create a comprehensive outline. The outline now includes your key points about:\n\n1. The structure you described (discussion of non-agency, human utility, and needed improvements)\n2. The fundamental limitations of current AI systems (inability to forget, lack of induction)\n3. Your proposed solutions (to-do lists, context window visibility, source tracking)\n4. The different stages of the research process that need specialized handling\n\nThe section on \"Designing Better Research Tools\" (Section 6) specifically incorporates your ideas about structured to-do lists, context window management, and the integration of human judgment at critical points. I've also included your point about \"tombstones\" for rejected thoughts and the need for different mechanisms for different stages of the research process.\n\nWould you like me to expand on any particular section or make other adjustments to the outline?",
+      "content": [
+        {
+          "start_timestamp": "2025-03-02T21:25:50.009331Z",
+          "stop_timestamp": "2025-03-02T21:26:01.579344Z",
+          "flags": null,
+          "type": "thinking",
+          "thinking": "\nAlright, I need to carefully analyze the new transcript (paste.txt) and integrate it with the existing paper notes and prior chat transcript. Let me break down what's in this new transcript:\n\nThe user is dictating thoughts about the structure of an academic paper focused on AI's limitations in research contexts, particularly regarding judgment and agency. The transcript appears to be a stream of consciousness with some garbled sections, but contains important points about:\n\n1. Paper structure:\n   - Discussion of why AI systems are not \"agentic\" (they lack true agency)\n   - Discussion of \"human being utility\" and experiences using AI for research\n   - Discussion of what would be needed for a tool that genuinely facilitates research\n\n2. Key arguments about AI limitations:\n   - AI lacks \"inductive capacity\" and \"intuition\" to know when to make judgments\n   - AI cannot \"forget\" or judge when a line of thinking is bad and remove it\n   - Large language models will \"anchor\" on text in their context window, potentially biasing output\n\n3. Proposed solutions/features for better research tools:\n   - A structured to-do list approach\n   - Allowing users to see what's in the context window\n   - Providing indication of what sources the AI has considered (and what it's not using)\n   - Token management for research (since 200k tokens is still limited)\n   - Transparency about which papers are being used and how\n   - Leveraging human judgment at critical points\n   - \"Tombstones\" - indications of thoughts that were considered but rejected\n\n4. Process stages that need different handling:\n   - Finding literature\n   - Extracting literature\n   - Building the outline\n   - Building the first draft\n   - Revising the draft\n   - Editing\n   - Outputting\n\nNow I need to take this information and integrate it with the existing paper notes, creating a coherent outline in markdown format as an artifact.\n\nFrom the existing paper notes, I see:\n- A focus on AI's lack of judgment despite linguistic capabilities\n- Discussion of \"agentic\" systems vs normal software\n- Analysis of Deep Research and AI capabilities\n- Sections on practical applications and future development\n\nThe new transcript adds more specific ideas about how to design better research tools that acknowledge AI's limitations and incorporate human judgment at key points.\n\nLet me create a comprehensive outline that integrates all this information.",
+          "summaries": [
+            {
+              "summary": "Thinking about integrating today's transcript with prior documents"
+            },
+            {
+              "summary": "Analyzing transcript for AI paper structure insights"
+            },
+            {
+              "summary": "Integrating transcript insights into existing paper notes."
+            },
+            {
+              "summary": "Synthesized AI research paper insights and crafted comprehensive outline."
+            }
+          ],
+          "cut_off": false,
+          "alternative_display_type": null
+        },
+        {
+          "start_timestamp": "2025-03-02T21:26:01.823987Z",
+          "stop_timestamp": "2025-03-02T21:26:02.111325Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nBased on your latest transcript and the existing materials, I'll create an integrated outline for your paper.",
+          "citations": []
+        },
+        {
+          "start_timestamp": "2025-03-02T21:26:02.446053Z",
+          "stop_timestamp": "2025-03-02T21:26:28.519283Z",
+          "flags": null,
+          "type": "tool_use",
+          "name": "artifacts",
+          "input": {
+            "id": "paper-outline",
+            "type": "text/markdown",
+            "title": "Integrated Paper Outline",
+            "command": "create",
+            "content": "# An Absence of Judgment: On AI's Fundamental Limitations in Research\n\n## 1. Introduction\n- Large language models' fundamental incapability of judgment despite linguistic mimicry\n- The distinction between linguistic output and concrete actions/outcomes\n- Mundane utility vs. true agency\n- Case study: Deep Research in February 2025\n- The necessary prerequisites for an \"agentic\" tool\n- The lack of induction explaining Dwarkesh's question to Cohen about AI's failure to make novel connections\n- Scope clarification: describing experiences using models for research, not predicting future capabilities\n\n## 2. Agentic Systems vs. Normal Software\n\n### 2.1 Goal-Related Characteristics\n- Goal following vs. goal setting\n- Agentic systems as goal-following systems (contrasted with AGI)\n- Key distinction: Agentic systems require external input for goals\n\n### 2.2 Characteristics of True Agentic Systems\n- Goal processing capabilities\n  - Accept external goals as input\n  - Collaborate with users to operationalize goals\n  - Functionally decompose goals into manageable components\n- Execution capabilities\n  - Create plans for goal completion\n  - Invoke appropriate software and APIs\n  - Monitor and assess progress\n- Assessment and reporting\n  - Make judgments about goal completion\n  - Provide reports to users\n  - Include success/failure evaluation based on system's judgment\n\n## 3. Deep Research and Current AI Capabilities\n\n### 3.1 Current State\n- Implementation of O3 for research purposes\n- Connection to Cohen's repost of DAKISH regarding AI's inability for groundbreaking research\n- System fluency and domain knowledge vs. genuine research capability\n\n### 3.2 Fundamental Limitations\n- Absence of true goal-following behavior\n- Constraint to the Next Token paradigm\n- Limited self-reflexivity\n  - Simple search execution\n  - Information synthesis without true comprehension\n- Inability to genuinely evaluate goal accomplishment\n  - System assumes task completion at each output\n  - Lacks true self-assessment capability\n- The \"uncanny valley of research\"\n  - Never questions its assumptions\n  - Never revises its approach mid-process\n  - No evidence of outline creation or revision\n  - Lacks winnowing or filtering process\n  - Takes initial search results as \"gospel\"\n  - Gets \"bored\" rather than being systematic\n\n### 3.3 Comparative Analysis\n- First-week PhD student as prototypical target\n- Mimicry of goal-following behavior vs. authentic research capabilities\n\n## 4. Literature Reviews and the Problem of Judgment\n\n### 4.1 Descriptive vs. Insightful Literature Reviews\n- Performance of literature review without substance\n- Lack of induction in AI-generated literature reviews\n- The missing \"spark of insight\"\n  - Source selection rationale\n  - Organization principles\n  - Connection to broader scholarly conversations\n\n### 4.2 Surface-Level Competence vs. True Research\n- Coherent, well-formed text production\n- Basic functional decomposition\n- Handling large context windows\n- The absence of critical judgment about relevance and quality\n\n## 5. Practical Experience Using AI for Research\n\n### 5.1 Our Experiences\n- Dataset preparation and collection\n- Improvement over previous superficial methodologies\n- Specific failure cases\n  - Newspaper article generation failure\n  - Issues with staying on task for sustained periods\n  - Context window limitations\n\n### 5.2 The Human Utility Perspective\n- Where current AI tools provide value\n- The contrast between marketing claims and practical utility\n- Treating AI as a tool rather than an agent\n\n## 6. Designing Better Research Tools\n\n### 6.1 Necessary Features for Effective Research AI\n- Structured to-do list approach\n- Context window visibility\n- Source tracking and transparency\n  - What sources have been considered\n  - What is being used vs. disused\n- Token management for research\n- Transparency about paper utilization\n- \"Tombstones\" for rejected thoughts/directions\n\n### 6.2 Integrating Human Judgment\n- Critical points requiring human input\n- Moving beyond \"double confirm\" approaches\n- Leveraging human judgment for quality assessment\n\n### 6.3 Process-Specific Support\n- Different mechanisms for different stages:\n  - Finding literature\n  - Extracting literature\n  - Building the outline\n  - Building the first draft\n  - Revising the draft\n  - Editing\n  - Outputting\n- Non-waterfall approach to research document production\n\n## 7. Future Development\n\n### 7.1 Areas Requiring Further Investigation\n- The Normal Intuitive Pattern concept\n- Connection between mundane utility and tool-using behavior\n- Precise definition of agentic behavior in research contexts\n- Concrete manifestations of judgment absence in research outputs\n\n### 7.2 Technological Advances Needed\n- Inductive capabilities\n- Self-assessment mechanisms\n- Adaptive context management\n\n## 8. Conclusion\n- Restatement of AI's fundamental limitations in judgment\n- The role of human-AI collaboration in research\n- Practical implications for tool design and usage\n- Final reflection on the absence of judgment\n",
+            "version_uuid": "1ee9d717-4922-4e15-81fc-819cba5c0064"
+          },
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "context": null,
+          "display_content": null,
+          "approval_options": null,
+          "approval_key": null
+        },
+        {
+          "start_timestamp": null,
+          "stop_timestamp": null,
+          "flags": null,
+          "type": "tool_result",
+          "name": "artifacts",
+          "content": [
+            {
+              "type": "text",
+              "text": "OK",
+              "uuid": "3ee82204-3688-4435-9d04-cf106f905c5c"
+            }
+          ],
+          "is_error": false,
+          "message": null,
+          "integration_name": null,
+          "integration_icon_url": null,
+          "display_content": null
+        },
+        {
+          "start_timestamp": "2025-03-02T21:26:29.703361Z",
+          "stop_timestamp": "2025-03-02T21:26:33.313919Z",
+          "flags": null,
+          "type": "text",
+          "text": "\n\nI've integrated your new transcript with the existing paper notes to create a comprehensive outline. The outline now includes your key points about:\n\n1. The structure you described (discussion of non-agency, human utility, and needed improvements)\n2. The fundamental limitations of current AI systems (inability to forget, lack of induction)\n3. Your proposed solutions (to-do lists, context window visibility, source tracking)\n4. The different stages of the research process that need specialized handling\n\nThe section on \"Designing Better Research Tools\" (Section 6) specifically incorporates your ideas about structured to-do lists, context window management, and the integration of human judgment at critical points. I've also included your point about \"tombstones\" for rejected thoughts and the need for different mechanisms for different stages of the research process.\n\nWould you like me to expand on any particular section or make other adjustments to the outline?",
+          "citations": []
+        }
+      ],
+      "sender": "assistant",
+      "created_at": "2025-03-02T21:26:33.347771Z",
+      "updated_at": "2025-03-02T21:26:33.347771Z",
+      "attachments": [],
+      "files": []
+    }
+  ]
+}
