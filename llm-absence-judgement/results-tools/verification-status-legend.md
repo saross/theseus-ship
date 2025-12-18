@@ -120,8 +120,8 @@ As of 2025-12-18 (all 350 events fully verified with evidence notes, updated aft
 | Status | Count | % | Description |
 |--------|-------|---|-------------|
 | CONFIRMED | 230 | 65.7% | Genuine research tools meeting definition |
-| MISATTRIBUTED | 71 | 20.3% | Real tools but don't meet definition |
-| CONFABULATION | 49 | 14.0% | Fabrications (tool or source) |
+| MISATTRIBUTED | 70 | 20.0% | Real tools but don't meet definition |
+| CONFABULATION | 50 | 14.3% | Fabrications (tool or source) |
 | UNCLEAR | 0 | 0.0% | Minimal extraction, cannot verify |
 
 ### Outcome Summary

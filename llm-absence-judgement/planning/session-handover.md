@@ -21,12 +21,12 @@
 | Status | Count | % |
 |--------|-------|---|
 | CONFIRMED | 230 | 65.7% |
-| MISATTRIBUTED | 71 | 20.3% |
-| CONFABULATION | 49 | 14.0% |
+| MISATTRIBUTED | 70 | 20.0% |
+| CONFABULATION | 50 | 14.3% |
 
 **Outcome:** 230 successes (65.7%), 120 failures (34.3%)
 
-**Note:** DISCOVERY_ERROR (1 case: Sketchfab source hallucination) merged into CONFABULATION to eliminate singleton category.
+**Note:** DISCOVERY_ERROR merged into CONFABULATION. Sketchfab (2 events for same article) harmonised to CONFABULATION - source hallucination pattern.
 
 ---
 
