@@ -91,10 +91,11 @@ If a paper references another paper that mentions a tool, this is still a valid 
 |------|-------------|---------|
 | `CONFIRMED` | Tool exists, mentioned in source, meets tool definition | OxCal, York System, MODES |
 | `UNCLEAR` | Insufficient detail to verify | Bwigg in FullDetail sample |
-| `DISCOVERY_ERROR` | Tool not found in claimed source | Grid Machine (not in Boldrini article) |
 | `MISATTRIBUTED` | Real tool mentioned but **does not meet tool definition** | Internet Explorer 3, VRML, Twitter API |
-| `CONFABULATION` | Complete fabrication - tool does not exist | PyCoCu, Bwigg (Perplexity fabrication) |
+| `CONFABULATION` | Fabrication - tool does not exist OR tool exists but presence in source was fabricated | PyCoCu, Bwigg (Perplexity), Sketchfab (source hallucination) |
 | (empty) | Not yet verified | Pending verification |
+
+**Note:** DISCOVERY_ERROR (tool not found in claimed source) was merged into CONFABULATION to avoid singleton categories. These "source hallucinations" are distinguished by evidence notes explaining that the tool exists but its presence in the cited article was fabricated.
 
 ### MISATTRIBUTED Subcategories
 
@@ -114,14 +115,13 @@ Tools marked MISATTRIBUTED fail the tool definition for one of these reasons:
 
 ## Verification Summary
 
-As of 2025-12-18 (all 350 events fully verified with evidence notes, updated after metadata cross-reference and manual review):
+As of 2025-12-18 (all 350 events fully verified with evidence notes, updated after metadata cross-reference, manual review, and category merge):
 
 | Status | Count | % | Description |
 |--------|-------|---|-------------|
 | CONFIRMED | 230 | 65.7% | Genuine research tools meeting definition |
 | MISATTRIBUTED | 71 | 20.3% | Real tools but don't meet definition |
-| CONFABULATION | 48 | 13.7% | Complete fabrications |
-| DISCOVERY_ERROR | 1 | 0.3% | Not found in claimed source |
+| CONFABULATION | 49 | 14.0% | Fabrications (tool or source) |
 | UNCLEAR | 0 | 0.0% | Minimal extraction, cannot verify |
 
 ### Outcome Summary
@@ -146,31 +146,24 @@ As of 2025-12-18 (all 350 events fully verified with evidence notes, updated aft
 - WaveSurfer 1.8.8 → matched to WaveSurfer (line 130)
 - Land Survey System → matched to LSS (line 42)
 
-## Discovery Error Types
+## Source Hallucination Cases
 
-### Grid Machine 6.53
+These cases involve real tools where the LLM fabricated their presence in a specific source article. Now merged into CONFABULATION category.
 
-- **LLM**: ChatGPT Deep Research
-- **Run**: IA-run2-success
-- **Claimed source**: Boldrini 2007, Internet Archaeology issue 21
-- **Verification**: Not found in article
-- **Notes**: May be technique confusion or hallucination
-
-### Microware
-
-- **LLM**: ChatGPT Deep Research
-- **Run**: (unknown)
-- **Claimed source**: McLaughlin article
-- **Verification**: Article discusses "microwear" (dental analysis technique), not "Microware" software
-- **Notes**: Technique-to-tool misread
-
-### pnuts
+### Sketchfab (Line 109)
 
 - **LLM**: ChatGPT Deep Research
 - **Run**: IA-run2-success
-- **Claimed source**: Internet Archaeology issue 2
-- **Verification**: Likely extracted from HTML template (`<!-- pnutst -->` comments)
-- **Notes**: Template artifact extraction
+- **Claimed source**: "Visualising the Guild Chapel" (Giles et al., IA issue 32)
+- **Verification**: Article uses Unity WebGL Player (Figure 16, /guild-chapel/index.html), NOT Sketchfab
+- **Notes**: Sketchfab is a real 3D model sharing platform, but its presence in this article was hallucinated
+
+### Historical Cases (Later Corrected to CONFIRMED)
+
+These were initially flagged as source errors but later verified as present in the articles:
+
+- **Grid Machine 6.53**: Found in §3 of Boldrini article - "Extension Grid Machine Version 6.53 was used to convert each of the ADIs into a points theme"
+- **pnuts**: Found in IA issue 2 editorial - described as "Previous, Next, Up, Top and Search" navigation script by John Frank
 
 ## Confabulation Verification Protocol
 

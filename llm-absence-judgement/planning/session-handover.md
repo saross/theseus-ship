@@ -22,10 +22,11 @@
 |--------|-------|---|
 | CONFIRMED | 230 | 65.7% |
 | MISATTRIBUTED | 71 | 20.3% |
-| CONFABULATION | 48 | 13.7% |
-| DISCOVERY_ERROR | 1 | 0.3% |
+| CONFABULATION | 49 | 14.0% |
 
 **Outcome:** 230 successes (65.7%), 120 failures (34.3%)
+
+**Note:** DISCOVERY_ERROR (1 case: Sketchfab source hallucination) merged into CONFABULATION to eliminate singleton category.
 
 ---
 
@@ -68,8 +69,7 @@ Working through entries in batches of 10:
 
 - **CONFIRMED**: Tool exists and is correctly identified as archaeological/research software
 - **MISATTRIBUTED**: Tool exists but is generic software, not research-specific (e.g., Paint Shop Pro, WordPress)
-- **CONFABULATION**: Tool does not exist or name is fabricated
-- **DISCOVERY_ERROR**: Technical error in discovery (e.g., DOI hijacking)
+- **CONFABULATION**: Tool does not exist, name is fabricated, OR tool exists but presence in source was fabricated (source hallucination)
 - **UNCLEAR**: Cannot determine; needs further investigation
 
 ---
