@@ -86,26 +86,40 @@ After reviewing the summary:
 - **Manual check**: User will verify specific events themselves
 - **Exclude events**: Mark specific events as EXCLUDED with reason
 
-## Handling Inaccessible Sources
+## Verification Workflow
 
-### Broken URLs (404 errors)
+**Goal**: Resolve all URLs autonomously, then present unresolvable items to user.
 
-1. Attempt a web search to find if the resource has moved
-2. Check common archives (note: Wayback Machine may not be fetchable)
-3. If found at new location, note the updated URL
-4. If not found, mark as NEEDS_VERIFICATION for user to check
+### Step 1: Attempt All URLs
 
-### Paywalled Sources (403 errors)
+For each evidence event, attempt to verify via WebFetch:
+- Follow redirects (DOIs often redirect to publisher sites)
+- For PDFs, attempt to fetch and search for tool name
+- Record: tool mentioned (yes/no), year matches (yes/no)
 
-For academic journals behind paywalls:
+### Step 2: Handle Failures by Type
 
-1. Extract author(s) and title from the URL/DOI metadata via web search
-2. Present to user for manual verification
-3. User confirms via institutional access, then mark CONFIRMED
+| Failure Type | Action |
+|--------------|--------|
+| **Accessible** | Mark CONFIRMED if tool mentioned, CONFABULATED if not |
+| **404 (broken)** | Web search for moved resource; if not found, pass URL to user |
+| **403 (paywalled)** | Extract author/title via web search; pass citation to user for library lookup |
+| **PDF too large** | Pass URL to user for manual download |
+| **Fetch error** | Retry once; if still failing, pass URL to user |
+
+### Step 3: Present to User
+
+After autonomous verification, present:
+
+1. **Summary table** with all events and their status
+2. **Paywalled citations** (author, title, DOI) for user to verify via institutional access
+3. **Unresolved URLs** for user to check manually
+
+User confirms items, then update CSV accordingly.
 
 ### Zenodo/Repository Errors
 
-If Zenodo or similar repositories fail to fetch, consider setting up API access for batch verification.
+If Zenodo or similar repositories consistently fail, consider setting up API access for batch verification.
 
 ## Handling Collisions
 
@@ -122,8 +136,17 @@ After review, update `tool-evidence-granular.csv` with:
 
 | Column | Values |
 |--------|--------|
-| Review_Status | CONFIRMED, EXCLUDED, NEEDS_VERIFICATION |
+| Review_Status | CONFIRMED, CONFABULATED, EXCLUDED, UNVERIFIED |
 | Review_Notes | Brief note explaining status |
+
+### Status Definitions
+
+| Status | Meaning |
+|--------|---------|
+| CONFIRMED | Source exists and mentions the tool correctly |
+| CONFABULATED | Source exists but tool is NOT mentioned (fabricated reference) |
+| EXCLUDED | Evidence is for a different tool (collision) |
+| UNVERIFIED | Could not verify; awaiting user confirmation |
 
 ## Origin
 
