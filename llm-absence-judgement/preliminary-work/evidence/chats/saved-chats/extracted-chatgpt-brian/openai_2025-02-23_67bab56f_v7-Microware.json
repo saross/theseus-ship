@@ -1,0 +1,691 @@
+{
+  "title": "v7-Microware",
+  "create_time": 1740289391.245005,
+  "update_time": 1740290585.137577,
+  "mapping": {
+    "aaa1a421-4180-4030-964f-e44e7bdf1c95": {
+      "id": "aaa1a421-4180-4030-964f-e44e7bdf1c95",
+      "message": null,
+      "parent": null,
+      "children": [
+        "a8cd737c-1728-44fd-b750-c9f54a19e8b6"
+      ]
+    },
+    "a8cd737c-1728-44fd-b750-c9f54a19e8b6": {
+      "id": "a8cd737c-1728-44fd-b750-c9f54a19e8b6",
+      "message": {
+        "id": "a8cd737c-1728-44fd-b750-c9f54a19e8b6",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1a421-4180-4030-964f-e44e7bdf1c95",
+      "children": [
+        "ae1ea1ca-4aae-4ed2-8821-30f822488297"
+      ]
+    },
+    "ae1ea1ca-4aae-4ed2-8821-30f822488297": {
+      "id": "ae1ea1ca-4aae-4ed2-8821-30f822488297",
+      "message": {
+        "id": "ae1ea1ca-4aae-4ed2-8821-30f822488297",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740289391.247733,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9164e5955cda551b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a8cd737c-1728-44fd-b750-c9f54a19e8b6",
+      "children": [
+        "6e509f6b-0024-468a-ba56-153050248d7b"
+      ]
+    },
+    "6e509f6b-0024-468a-ba56-153050248d7b": {
+      "id": "6e509f6b-0024-468a-ba56-153050248d7b",
+      "message": {
+        "id": "6e509f6b-0024-468a-ba56-153050248d7b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740289394.420938,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. Please provide the name or acronym of the first archaeology or historical studies-related software tool you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ae1ea1ca-4aae-4ed2-8821-30f822488297",
+          "request_id": "9164e5955cda551b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ae1ea1ca-4aae-4ed2-8821-30f822488297",
+      "children": [
+        "74c1e143-6709-4747-8df2-0b1506a8f976"
+      ]
+    },
+    "74c1e143-6709-4747-8df2-0b1506a8f976": {
+      "id": "74c1e143-6709-4747-8df2-0b1506a8f976",
+      "message": {
+        "id": "74c1e143-6709-4747-8df2-0b1506a8f976",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740289394.421083,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "6e509f6b-0024-468a-ba56-153050248d7b",
+          "request_id": "9164e5955cda551b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6e509f6b-0024-468a-ba56-153050248d7b",
+      "children": [
+        "c99fa0d1-a74e-4ad9-9f70-44ad84e16879"
+      ]
+    },
+    "c99fa0d1-a74e-4ad9-9f70-44ad84e16879": {
+      "id": "c99fa0d1-a74e-4ad9-9f70-44ad84e16879",
+      "message": {
+        "id": "c99fa0d1-a74e-4ad9-9f70-44ad84e16879",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740289405.48629,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Microware"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9164e5ee78e8551b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "74c1e143-6709-4747-8df2-0b1506a8f976",
+      "children": [
+        "85862920-bd0d-4847-9a71-a8d24a6288b1"
+      ]
+    },
+    "85862920-bd0d-4847-9a71-a8d24a6288b1": {
+      "id": "85862920-bd0d-4847-9a71-a8d24a6288b1",
+      "message": {
+        "id": "85862920-bd0d-4847-9a71-a8d24a6288b1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740289425.890101,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a systematic and detailed search for mentions of the software tool \"Microware\" in archaeology and historical studies from 1995 onwards. I will collect sources that support its existence and usage, ensuring each source is properly cited with publication year, source title, URL, and any relevant AI notes regarding data provenance or uncertainties.\n\nI will update you with a well-structured CSV containing all mentions of \"Microware\" from valid sources."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "c99fa0d1-a74e-4ad9-9f70-44ad84e16879",
+          "request_id": "9164e5ee78e8551b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c99fa0d1-a74e-4ad9-9f70-44ad84e16879",
+      "children": [
+        "1c197817-e8b4-4d62-bfca-c5c64d8639bc"
+      ]
+    },
+    "1c197817-e8b4-4d62-bfca-c5c64d8639bc": {
+      "id": "1c197817-e8b4-4d62-bfca-c5c64d8639bc",
+      "message": {
+        "id": "1c197817-e8b4-4d62-bfca-c5c64d8639bc",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740289425.890202,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a systematic and detailed search for mentions of the software tool \\\"Microware\\\" in archaeology and historical studies from 1995 onwards. I will collect sources that support its existence and usage, ensuring each source is properly cited with publication year, source title, URL, and any relevant AI notes regarding data provenance or uncertainties.\\n\\nI will update you with a well-structured CSV containing all mentions of \\\"Microware\\\" from valid sources.\",\"title\":\"Evidence Collection for Microware Software Tool\",\"prompt\":\"Conduct a systematic and detailed search for mentions of the software tool \\\"Microware\\\" in archaeology and historical studies from 1995 onwards. Collect sources that support its existence and usage, ensuring each source is properly cited with publication year, source title, URL, and any relevant AI notes regarding data provenance or uncertainties.\\n\\nFor every valid source found, provide the information in a quoted CSV format inside a fenced code block, with the following columns:\\n\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n\\n* Tool: Consistently use the name \\\"Microware\\\" as provided.\\n* Year: The publication year of the source, or \\\"n.d.\\\" if no date is available.\\n* Source: Citation or (Domain + Page Title).\\n* URL: The direct URL of the resource.\\n* AI Notes: Any notes or concerns about data provenance or quality.\\n\\nEnsure that:\\n* Each mention of \\\"Microware\\\" is recorded in the CSV, regardless of the source type (academic literature, blog posts, repositories, etc.).\\n* One line is included per source found.\\n* No dates are extrapolated\u2014only include dates explicitly published in sources.\\n* Systematic exploration of adjacent years (+-1 year) occurs when a date is found.\\n* Every single search result page is visited and assessed to ensure thoroughness.\\n\\nAllowed sources include:\\n* Published version control repositories with commit dates.\\n* Scholarly literature.\\n* Blog posts and about pages.\\n* Any other relevant mentions.\\n\\nProvide results in a structured CSV format within a fenced code block.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "85862920-bd0d-4847-9a71-a8d24a6288b1",
+          "request_id": "9164e5ee78e8551b-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "85862920-bd0d-4847-9a71-a8d24a6288b1",
+      "children": [
+        "eff60cc7-3fea-4463-bcfd-5872c8936d35"
+      ]
+    },
+    "eff60cc7-3fea-4463-bcfd-5872c8936d35": {
+      "id": "eff60cc7-3fea-4463-bcfd-5872c8936d35",
+      "message": {
+        "id": "eff60cc7-3fea-4463-bcfd-5872c8936d35",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740289425.89028,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for Microware Software Tool",
+          "async_task_prompt": "Conduct a systematic and detailed search for mentions of the software tool \"Microware\" in archaeology and historical studies from 1995 onwards. Collect sources that support its existence and usage, ensuring each source is properly cited with publication year, source title, URL, and any relevant AI notes regarding data provenance or uncertainties.\n\nFor every valid source found, provide the information in a quoted CSV format inside a fenced code block, with the following columns:\n\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool: Consistently use the name \"Microware\" as provided.\n* Year: The publication year of the source, or \"n.d.\" if no date is available.\n* Source: Citation or (Domain + Page Title).\n* URL: The direct URL of the resource.\n* AI Notes: Any notes or concerns about data provenance or quality.\n\nEnsure that:\n* Each mention of \"Microware\" is recorded in the CSV, regardless of the source type (academic literature, blog posts, repositories, etc.).\n* One line is included per source found.\n* No dates are extrapolated\u2014only include dates explicitly published in sources.\n* Systematic exploration of adjacent years (+-1 year) occurs when a date is found.\n* Every single search result page is visited and assessed to ensure thoroughness.\n\nAllowed sources include:\n* Published version control repositories with commit dates.\n* Scholarly literature.\n* Blog posts and about pages.\n* Any other relevant mentions.\n\nProvide results in a structured CSV format within a fenced code block.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for Microware Software Tool",
+            "completed_with_time": "Research completed in 6m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "1c197817-e8b4-4d62-bfca-c5c64d8639bc",
+          "request_id": "9164e5ee78e8551b-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67bab591895481918b726a74ebe885d1",
+          "async_task_conversation_id": "67bab591-9a3c-8004-8385-4bdb6dcc893d",
+          "async_task_created_at": "2025-02-23 05:43:45.870763+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1c197817-e8b4-4d62-bfca-c5c64d8639bc",
+      "children": [
+        "ab405c9a-534f-4e23-ab5a-d14ec48d01d1"
+      ]
+    },
+    "ab405c9a-534f-4e23-ab5a-d14ec48d01d1": {
+      "id": "ab405c9a-534f-4e23-ab5a-d14ec48d01d1",
+      "message": {
+        "id": "ab405c9a-534f-4e23-ab5a-d14ec48d01d1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740289765.819103,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Microware\",\"1995\",\"PubMed \u2013 A semiautomated image analysis procedure for the quantification of dental microwear II\",\"https://pubmed.ncbi.nlm.nih.gov/7704317/\",\"Introduces a semiautomated image analysis method for dental microwear quantification\u301013\u2020L294-L302\u3011. This early work by Ungar (1995) underpins the Microware software, although the program\u2019s name is not explicitly stated in the abstract (data provenance: journal abstract).\"\n\"Microware\",\"1999\",\"PubMed \u2013 Incisor microwear, diet, and tooth use in three Amerindian populations\",\"https://pubmed.ncbi.nlm.nih.gov/10407466/\",\"Demonstrates use of Microware 3.0 to quantify dental microwear features in an anthropological study\u301016\u2020L303-L310\u3011. The authors cite \u201cUngar, 1997\u201d as the source of the software, supporting the tool\u2019s existence and usage by this date (reliable scholarly source).\"\n\"Microware\",\"2001\",\"PubMed \u2013 Dental microwear evidence for a dietary shift... Indiana (Schmidt 2001)\",\"https://pubmed.ncbi.nlm.nih.gov/11169903/\",\"Microware 2.2 is used to analyze SEM photomicrographs of tooth wear\u30102\u2020L307-L314\u3011. This archaeological study (Schmidt 2001) explicitly mentions the software, citing Ungar [1995] as reference, which confirms Microware\u2019s application in early 2000s research.\"\n\"Microware\",\"2005\",\"PubMed \u2013 Dietary inferences from dental occlusal microwear at Mission San Luis de Apalachee\",\"https://pubmed.ncbi.nlm.nih.gov/16134151/\",\"Confirms use of Microware 4.02 for processing dental microwear images\u301049\u2020L311-L319\u3011. The authors (Organ et al. 2005) reference Ungar [2002a] for the tool, indicating a version 4.02 release and its adoption in bioarchaeological diet studies (credible peer-reviewed source).\"\n\"Microware\",\"2007\",\"intarch.ac.uk \u2013 Internet Archaeology Issue 22 (Methodology, McLaughlin)\",\"https://intarch.ac.uk/journal/issue22/1/methodology.html\",\"Mentions Microware as \u201ca piece of software which has become the de facto standard among microwear researchers\u201d\u30103\u2020L40-L47\u3011. Published in Internet Archaeology (issue 22, 2007), it cites Ungar 1997 and attests to the tool\u2019s widespread use in archaeological research by the late 2000s.\"\n\"Microware\",\"2018\",\"PMC \u2013 MicroWeaR: A new R package for dental microwear analysis\",\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6065344/\",\"Describes prior tools in dental microwear analysis, noting that apart from Microware (Ungar 1995) no dedicated software existed\u301048\u2020L1-L4\u3011. This 2018 open-access paper (Ecology and Evolution) highlights Microware\u2019s role and limitations, providing provenance for its existence in contrast to newer methods.\"\n\"Microware\",\"2020\",\"software.informer.com \u2013 Microware 4.0 (Software Informer listing)\",\"https://microware1.software.informer.com/\",\"Third-party software listing showing Microware 4.0 (executable \u201cMicroware 4.02.exe\u201d) developed by University of Arkansas\u301033\u2020L73-L81\u3011. Info updated Oct 01, 2020, which, despite being non-official, corroborates the tool\u2019s version and developer (AI note: use with caution as data is user-contributed).\"\n\"Microware\",\"2024\",\"PMC \u2013 Complex dental wear analysis reveals dietary shift in Triassic placodonts\",\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10844150/\",\"Demonstrates ongoing usage: this 2024 study of Triassic reptiles used Microware 4.02 for 2D microwear measurements\u301024\u2020L1-L9\u3011. The paper\u2019s methods and references (Ungar 2002) verify the tool\u2019s continued presence in scientific research (data provenance: peer-reviewed article via PubMed Central).\"\n\"Microware\",\"2025\",\"ungarlab.uark.edu \u2013 Peter S. Ungar CV (Feb 2025)\",\"https://ungarlab.uark.edu/files/2025/02/UNGAR-NEW-CV.pdf\",\"Ungar\u2019s own CV (updated 2025) notes he \u201cdeveloped a semiautomated image analysis procedure for microwear\u2026 (Microware latest Version 4.2)\u201d\u301031\u2020L1-L4\u3011. This self-reported source confirms the software\u2019s existence, naming, and version history, though it is not a formal publication (data provenance: personal academic webpage).\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 292,
+              "end_ix": 306,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "A semiautomated image analysis procedure for the quantification of dental microwear II - PubMed",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/7704317/#:~:text=Paleontologists%20often%20examine%20microscopic%20scratches,files%20for%20subsequent%20data%20analysis",
+                "text": "Paleontologists often examine microscopic scratches and pits that form on teeth for indications of the diets of past animals. Most researchers count and measure scratches and pits from photomicrographs to identify microwear patterns for comparison among samples. This paper describes an affordable, available semiautomated image analysis procedure for microwear quantification. An image is downloaded from a scanning electron microscope frame buffer to a microcomputer, and the user identifies microwear features with a mouse-driven pointer. Microwear feature density, dimensions, and orientations are then computed and stored as ASCII files for subsequent data analysis.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 13,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 294,
+                  "end_line_num": 302
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 726,
+              "end_ix": 740,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Incisor microwear, diet, and tooth use in three Amerindian populations - PubMed",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/10407466/#:~:text=High,amount%20of%20meat%20consumption%2C%20and",
+                "text": "High-resolution replicas were prepared and examined by scanning electron microscopy following conventional procedures. Photomicrographs were taken at consistent locations on the labial surface, and microwear was quantified using Microware 3.0 (Ungar, 1997). Statistical test results revealed significant differences among the groups in microwear feature densities, sizes, and shapes. The Aleut, Arikara, and Illinois Bluff samples showed a gradient of increasing microwear density, increasing linearity in feature shape, and decreasing feature size. These differences evidently correspond to amount of meat consumption, and",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 16,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 303,
+                  "end_line_num": 310
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1103,
+              "end_ix": 1116,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Dental microwear evidence for a dietary shift between two nonmaize-reliant prehistoric human populations from Indiana - PubMed",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/11169903/#:~:text=protoconid%20phase%20II%20wear%20facets,implication%20here%20is%20that%20dental",
+                "text": "protoconid phase II wear facets were viewed via a scanning electron microscope at 500x. Photomicrographs of the microwear features were analyzed with specialized software, Microware 2.2 (Ungar [1995] Scanning 17:57-59). Analysis of variance statistical tests were performed, with one variable requiring rank- transformation. A dietary transition is evidenced by a statistically significant increase in the mean number of pits and concomitant decreases in scratch width and scratch length from the Late Archaic to the Early/Middle Woodland. Overall, the diet became harder and less abrasive. The implication here is that dental",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 2,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 307,
+                  "end_line_num": 314
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1519,
+              "end_ix": 1533,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Dietary inferences from dental occlusal microwear at Mission San Luis de Apalachee - PubMed",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/16134151/#:~:text=sites%20in%20Spanish%20Florida,Various%20dietary",
+                "text": "sites in Spanish Florida. Epoxy casts of molar crushing facets were photographed under 500x magnification, using a scanning electron microscope. Photomicrographs were digitized using Microware 4.02 (Ungar [2002a]) and statistically evaluated using one-way ANOVA and post hoc Tukey's multiple comparisons tests. These analyses reveal that the frequency of pitting on the San Luis molars is significantly greater than for other mission period sites. Consistent with bioarchaeological, historical, and archaeological documentation, these findings suggest that diets were different in the San Luis natives in comparison with the other native populations in Spanish Florida. Various dietary",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 49,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 311,
+                  "end_line_num": 319
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1987,
+              "end_ix": 1998,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n         Internet Archaeol. 22. McLaughlin. Methodology\n      ",
+                "url": "https://intarch.ac.uk/journal/issue22/1/methodology.html#:~:text=Microwear%20features%20were%20marked,the%20unit%20of%20analysis%20required",
+                "text": "Microwear features were marked-out on a computer using the SEM digital photomicrographs and Microware (Ungar 1997), a piece of software which has become the de facto standard among microwear researchers. The resulting lists of co-ordinates of pits and scratches were analyzed further using custom utilities written specially for this project in GNU R, creating summary statistics and for each photomicrograph, individual or site, depending on the unit of analysis required.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 3,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 40,
+                  "end_line_num": 47
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2424,
+              "end_ix": 2434,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n            MicroWeaR: A new R package for dental microwear analysis - PMC\n        ",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6065344/#:~:text=to%20count%20and%20score%20enamel,g",
+                "text": "to count and score enamel marks. Such software, except for Microware (Ungar, 1995), has never been specifically designed for microwear analysis and usually requires a costly license. In the case of Microware, one disadvantage is that it cannot discern between different subtypes of microscopic marks (e.g.,",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 48,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2855,
+              "end_ix": 2867,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Microware Download",
+                "url": "https://microware1.software.informer.com/#:~:text=Microware%20is%20developed%20by%20University,be%20reviewed%20by%20our%20informers",
+                "text": "Microware is developed by University of Arkansas. The most popular version of this product among our users is 4.0. The name of the program executable file is Microware 4.02.exe. The product will soon be reviewed by our informers.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 33,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 73,
+                  "end_line_num": 81
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3304,
+              "end_ix": 3314,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n            Complex dental wear analysis reveals dietary shift in Triassic placodonts (Sauropsida, Sauropterygia) - PMC\n        ",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10844150/#:~:text=using%20the%20Microware%204,%3D%20100%20%C3%97",
+                "text": "using the Microware 4.02 software: (1) number of pits, (2) number of scratches, (3) mean length of pits, (4) mean width of pits, (5) mean length of scratches, (6) mean width of scratches (Ungar, 2002). The counting of the wear features was done exclusively by K.G. Furthermore, the percentage of pits (pit% = 100 \u00d7",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 24,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 9
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3753,
+              "end_ix": 3763,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Ungar CV",
+                "url": "https://ungarlab.uark.edu/files/2025/02/UNGAR-NEW-CV.pdf#:~:text=%28Microware%20latest%20Version%204,2002",
+                "text": "(Microware latest Version 4.2) and participated in development of ToothFrax microwear texture analysis software packages. Paleontological field research 1987-2002",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 31,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301013\u2020L294-L302\u3011",
+              "start_idx": 292,
+              "end_idx": 306,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "A semiautomated image analysis procedure for the quantification of dental microwear II - PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/7704317/#:~:text=Paleontologists%20often%20examine%20microscopic%20scratches,files%20for%20subsequent%20data%20analysis",
+              "pub_date": null,
+              "snippet": "Paleontologists often examine microscopic scratches and pits that form on teeth for indications of the diets of past animals. Most researchers count and measure scratches and pits from photomicrographs to identify microwear patterns for comparison among samples. This paper describes an affordable, available semiautomated image analysis procedure for microwear quantification. An image is downloaded from a scanning electron microscope frame buffer to a microcomputer, and the user identifies microwear features with a mouse-driven pointer. Microwear feature density, dimensions, and orientations are then computed and stored as ASCII files for subsequent data analysis.",
+              "attribution": "pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301016\u2020L303-L310\u3011",
+              "start_idx": 726,
+              "end_idx": 740,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Incisor microwear, diet, and tooth use in three Amerindian populations - PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10407466/#:~:text=High,amount%20of%20meat%20consumption%2C%20and",
+              "pub_date": null,
+              "snippet": "High-resolution replicas were prepared and examined by scanning electron microscopy following conventional procedures. Photomicrographs were taken at consistent locations on the labial surface, and microwear was quantified using Microware 3.0 (Ungar, 1997). Statistical test results revealed significant differences among the groups in microwear feature densities, sizes, and shapes. The Aleut, Arikara, and Illinois Bluff samples showed a gradient of increasing microwear density, increasing linearity in feature shape, and decreasing feature size. These differences evidently correspond to amount of meat consumption, and",
+              "attribution": "pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u30102\u2020L307-L314\u3011",
+              "start_idx": 1103,
+              "end_idx": 1116,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Dental microwear evidence for a dietary shift between two nonmaize-reliant prehistoric human populations from Indiana - PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11169903/#:~:text=protoconid%20phase%20II%20wear%20facets,implication%20here%20is%20that%20dental",
+              "pub_date": null,
+              "snippet": "protoconid phase II wear facets were viewed via a scanning electron microscope at 500x. Photomicrographs of the microwear features were analyzed with specialized software, Microware 2.2 (Ungar [1995] Scanning 17:57-59). Analysis of variance statistical tests were performed, with one variable requiring rank- transformation. A dietary transition is evidenced by a statistically significant increase in the mean number of pits and concomitant decreases in scratch width and scratch length from the Late Archaic to the Early/Middle Woodland. Overall, the diet became harder and less abrasive. The implication here is that dental",
+              "attribution": "pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301049\u2020L311-L319\u3011",
+              "start_idx": 1519,
+              "end_idx": 1533,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Dietary inferences from dental occlusal microwear at Mission San Luis de Apalachee - PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16134151/#:~:text=sites%20in%20Spanish%20Florida,Various%20dietary",
+              "pub_date": null,
+              "snippet": "sites in Spanish Florida. Epoxy casts of molar crushing facets were photographed under 500x magnification, using a scanning electron microscope. Photomicrographs were digitized using Microware 4.02 (Ungar [2002a]) and statistically evaluated using one-way ANOVA and post hoc Tukey's multiple comparisons tests. These analyses reveal that the frequency of pitting on the San Luis molars is significantly greater than for other mission period sites. Consistent with bioarchaeological, historical, and archaeological documentation, these findings suggest that diets were different in the San Luis natives in comparison with the other native populations in Spanish Florida. Various dietary",
+              "attribution": "pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u30103\u2020L40-L47\u3011",
+              "start_idx": 1987,
+              "end_idx": 1998,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n         Internet Archaeol. 22. McLaughlin. Methodology\n      ",
+              "url": "https://intarch.ac.uk/journal/issue22/1/methodology.html#:~:text=Microwear%20features%20were%20marked,the%20unit%20of%20analysis%20required",
+              "pub_date": null,
+              "snippet": "Microwear features were marked-out on a computer using the SEM digital photomicrographs and Microware (Ungar 1997), a piece of software which has become the de facto standard among microwear researchers. The resulting lists of co-ordinates of pits and scratches were analyzed further using custom utilities written specially for this project in GNU R, creating summary statistics and for each photomicrograph, individual or site, depending on the unit of analysis required.",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301048\u2020L1-L4\u3011",
+              "start_idx": 2424,
+              "end_idx": 2434,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n            MicroWeaR: A new R package for dental microwear analysis - PMC\n        ",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6065344/#:~:text=to%20count%20and%20score%20enamel,g",
+              "pub_date": null,
+              "snippet": "to count and score enamel marks. Such software, except for Microware (Ungar, 1995), has never been specifically designed for microwear analysis and usually requires a costly license. In the case of Microware, one disadvantage is that it cannot discern between different subtypes of microscopic marks (e.g.,",
+              "attribution": "pmc.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301033\u2020L73-L81\u3011",
+              "start_idx": 2855,
+              "end_idx": 2867,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Microware Download",
+              "url": "https://microware1.software.informer.com/#:~:text=Microware%20is%20developed%20by%20University,be%20reviewed%20by%20our%20informers",
+              "pub_date": null,
+              "snippet": "Microware is developed by University of Arkansas. The most popular version of this product among our users is 4.0. The name of the program executable file is Microware 4.02.exe. The product will soon be reviewed by our informers.",
+              "attribution": "microware1.software.informer.com"
+            },
+            {
+              "matched_text": "\u301024\u2020L1-L9\u3011",
+              "start_idx": 3304,
+              "end_idx": 3314,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n            Complex dental wear analysis reveals dietary shift in Triassic placodonts (Sauropsida, Sauropterygia) - PMC\n        ",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10844150/#:~:text=using%20the%20Microware%204,%3D%20100%20%C3%97",
+              "pub_date": null,
+              "snippet": "using the Microware 4.02 software: (1) number of pits, (2) number of scratches, (3) mean length of pits, (4) mean width of pits, (5) mean length of scratches, (6) mean width of scratches (Ungar, 2002). The counting of the wear features was done exclusively by K.G. Furthermore, the percentage of pits (pit% = 100 \u00d7",
+              "attribution": "pmc.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301031\u2020L1-L4\u3011",
+              "start_idx": 3753,
+              "end_idx": 3763,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Ungar CV",
+              "url": "https://ungarlab.uark.edu/files/2025/02/UNGAR-NEW-CV.pdf#:~:text=%28Microware%20latest%20Version%204,2002",
+              "pub_date": null,
+              "snippet": "(Microware latest Version 4.2) and participated in development of ToothFrax microwear texture analysis software packages. Paleontological field research 1987-2002",
+              "attribution": "ungarlab.uark.edu"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67bab591895481918b726a74ebe885d1",
+          "async_task_title": "Evidence Collection for Microware Software Tool"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "eff60cc7-3fea-4463-bcfd-5872c8936d35",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "ab405c9a-534f-4e23-ab5a-d14ec48d01d1",
+  "plugin_ids": null,
+  "conversation_id": "67bab56f-1158-8004-b921-ad1877e10298",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/10407466/",
+    "https://microware1.software.informer.com/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6065344/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10844150/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67bab56f-1158-8004-b921-ad1877e10298"
+}

@@ -1,0 +1,406 @@
+{
+  "title": "v7-OxCal",
+  "create_time": 1740292240.697156,
+  "update_time": 1740293086.389215,
+  "mapping": {
+    "aaa18ed5-2e6e-4d4a-8306-a144aac8b63c": {
+      "id": "aaa18ed5-2e6e-4d4a-8306-a144aac8b63c",
+      "message": null,
+      "parent": null,
+      "children": [
+        "e37329da-b004-42cd-9169-4386a03e2b99"
+      ]
+    },
+    "e37329da-b004-42cd-9169-4386a03e2b99": {
+      "id": "e37329da-b004-42cd-9169-4386a03e2b99",
+      "message": {
+        "id": "e37329da-b004-42cd-9169-4386a03e2b99",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa18ed5-2e6e-4d4a-8306-a144aac8b63c",
+      "children": [
+        "41bfbff0-4338-405e-aeed-ecee9e3f77f5"
+      ]
+    },
+    "41bfbff0-4338-405e-aeed-ecee9e3f77f5": {
+      "id": "41bfbff0-4338-405e-aeed-ecee9e3f77f5",
+      "message": {
+        "id": "41bfbff0-4338-405e-aeed-ecee9e3f77f5",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740292240.699597,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91652b25edd4d5df-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e37329da-b004-42cd-9169-4386a03e2b99",
+      "children": [
+        "2a63dbe9-208b-4a65-a32a-69c247bd82e8"
+      ]
+    },
+    "2a63dbe9-208b-4a65-a32a-69c247bd82e8": {
+      "id": "2a63dbe9-208b-4a65-a32a-69c247bd82e8",
+      "message": {
+        "id": "2a63dbe9-208b-4a65-a32a-69c247bd82e8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740292243.698118,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the research methodology and the systematic approach required. Please provide the name or acronym of the first archaeology or historical studies-related software tool you'd like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "41bfbff0-4338-405e-aeed-ecee9e3f77f5",
+          "request_id": "91652b25edd4d5df-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "41bfbff0-4338-405e-aeed-ecee9e3f77f5",
+      "children": [
+        "3a5eb970-57c0-41b1-99a0-ba2781a42307"
+      ]
+    },
+    "3a5eb970-57c0-41b1-99a0-ba2781a42307": {
+      "id": "3a5eb970-57c0-41b1-99a0-ba2781a42307",
+      "message": {
+        "id": "3a5eb970-57c0-41b1-99a0-ba2781a42307",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740292243.698292,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "2a63dbe9-208b-4a65-a32a-69c247bd82e8",
+          "request_id": "91652b25edd4d5df-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2a63dbe9-208b-4a65-a32a-69c247bd82e8",
+      "children": [
+        "f108cb50-2443-4928-bf57-c4e5aec552e6"
+      ]
+    },
+    "f108cb50-2443-4928-bf57-c4e5aec552e6": {
+      "id": "f108cb50-2443-4928-bf57-c4e5aec552e6",
+      "message": {
+        "id": "f108cb50-2443-4928-bf57-c4e5aec552e6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740292254.271203,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "OxCal"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91652b7b4a82d5df-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3a5eb970-57c0-41b1-99a0-ba2781a42307",
+      "children": [
+        "c1ee44aa-21fa-4d16-bacd-a5842b8f247b"
+      ]
+    },
+    "c1ee44aa-21fa-4d16-bacd-a5842b8f247b": {
+      "id": "c1ee44aa-21fa-4d16-bacd-a5842b8f247b",
+      "message": {
+        "id": "c1ee44aa-21fa-4d16-bacd-a5842b8f247b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740292266.82881,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a comprehensive and systematic search for evidence regarding OxCal, an archaeological and historical studies-related software tool, from 1995 onwards. I will collect mentions from scholarly literature, blog posts, repositories, and any other relevant sources while ensuring careful documentation of the provenance and accuracy of each entry.\n\nI will provide the results as a well-formed CSV inside a fenced code block, including details such as the year, source, URL, and any AI notes regarding data quality and reliability.\n\nI will notify you once the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "f108cb50-2443-4928-bf57-c4e5aec552e6",
+          "request_id": "91652b7b4a82d5df-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f108cb50-2443-4928-bf57-c4e5aec552e6",
+      "children": [
+        "352a3313-48c7-43bd-ad6e-e776721c2471"
+      ]
+    },
+    "352a3313-48c7-43bd-ad6e-e776721c2471": {
+      "id": "352a3313-48c7-43bd-ad6e-e776721c2471",
+      "message": {
+        "id": "352a3313-48c7-43bd-ad6e-e776721c2471",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740292266.828984,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a comprehensive and systematic search for evidence regarding OxCal, an archaeological and historical studies-related software tool, from 1995 onwards. I will collect mentions from scholarly literature, blog posts, repositories, and any other relevant sources while ensuring careful documentation of the provenance and accuracy of each entry.\\n\\nI will provide the results as a well-formed CSV inside a fenced code block, including details such as the year, source, URL, and any AI notes regarding data quality and reliability.\\n\\nI will notify you once the research is complete.\",\"title\":\"Comprehensive Evidence Collection for OxCal\",\"prompt\":\"Conduct a comprehensive and systematic search for mentions of the OxCal software tool, used in archaeology and historical sciences, from 1995 onwards.\\n\\n- For each valid mention, record the following details:\\n  - \\\"Tool\\\": OxCal (ensure consistency in the name)\\n  - \\\"Year\\\": The publication year of the source (or \\\"n.d.\\\" if no date is found)\\n  - \\\"Source\\\": Citation or (Domain + Page Title)\\n  - \\\"URL\\\": The direct URL of the source\\n  - \\\"AI Notes\\\": Any concerns or uncertainties regarding the data provenance or quality\\n\\n- Follow these guidelines strictly:\\n  - Search for OxCal across scholarly articles, version control repositories (e.g., GitHub), blog posts, official about pages, and any other relevant sources.\\n  - Ensure one row per unique mention, even if it is from the same tool.\\n  - Avoid making assumptions about dates\u2014only use explicitly mentioned publication years.\\n  - Expand the search by \u00b11 year around any found publication date.\\n  - If no date is available, use \\\"n.d.\\\" and make a note in \\\"AI Notes.\\\"\\n  - Visit every relevant search result to maximize accuracy and thoroughness.\\n\\nReturn the results in a well-formed CSV inside a fenced code block. Do not include AI-generated inline citations.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "c1ee44aa-21fa-4d16-bacd-a5842b8f247b",
+          "request_id": "91652b7b4a82d5df-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "c1ee44aa-21fa-4d16-bacd-a5842b8f247b",
+      "children": [
+        "d152ee3a-a5e7-4c52-b88b-7104c32b43a8"
+      ]
+    },
+    "d152ee3a-a5e7-4c52-b88b-7104c32b43a8": {
+      "id": "d152ee3a-a5e7-4c52-b88b-7104c32b43a8",
+      "message": {
+        "id": "d152ee3a-a5e7-4c52-b88b-7104c32b43a8",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740292287.638032,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Evidence Collection for OxCal",
+          "async_task_prompt": "Conduct a comprehensive and systematic search for mentions of the OxCal software tool, used in archaeology and historical sciences, from 1995 onwards.\n\n- For each valid mention, record the following details:\n  - \"Tool\": OxCal (ensure consistency in the name)\n  - \"Year\": The publication year of the source (or \"n.d.\" if no date is found)\n  - \"Source\": Citation or (Domain + Page Title)\n  - \"URL\": The direct URL of the source\n  - \"AI Notes\": Any concerns or uncertainties regarding the data provenance or quality\n\n- Follow these guidelines strictly:\n  - Search for OxCal across scholarly articles, version control repositories (e.g., GitHub), blog posts, official about pages, and any other relevant sources.\n  - Ensure one row per unique mention, even if it is from the same tool.\n  - Avoid making assumptions about dates\u2014only use explicitly mentioned publication years.\n  - Expand the search by \u00b11 year around any found publication date.\n  - If no date is available, use \"n.d.\" and make a note in \"AI Notes.\"\n  - Visit every relevant search result to maximize accuracy and thoroughness.\n\nReturn the results in a well-formed CSV inside a fenced code block. Do not include AI-generated inline citations.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Evidence Collection for OxCal",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "352a3313-48c7-43bd-ad6e-e776721c2471",
+          "request_id": "91652b7b4a82d5df-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "352a3313-48c7-43bd-ad6e-e776721c2471",
+      "children": [
+        "0d4e76f9-054d-47d3-a781-4328e650ac4c"
+      ]
+    },
+    "0d4e76f9-054d-47d3-a781-4328e650ac4c": {
+      "id": "0d4e76f9-054d-47d3-a781-4328e650ac4c",
+      "message": {
+        "id": "0d4e76f9-054d-47d3-a781-4328e650ac4c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740292684.485936,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\nTool,Year,Source,URL,AI Notes\nOxCal,1995,cambridge.org - Radiocarbon Calibration and Analysis of Stratigraphy: The OxCal Program,https://www.cambridge.org/core/journals/radiocarbon/article/radiocarbon-calibration-and-analysis-of-stratigraphy-the-oxcal-program/0E94507D655A68B308162395C82F08B2,\nOxCal,1998,cambridge.org - Probability and Dating (Radiocarbon Vol 40 Issue 1),https://www.cambridge.org/core/journals/radiocarbon/article/probability-and-dating/04C113AE3357A458B505B19D0AC42289,\nOxCal,2001,cambridge.org - Development of the Radiocarbon Calibration Program,https://www.cambridge.org/core/journals/radiocarbon/article/development-of-the-radiocarbon-calibration-program/34102591BE9755EDD8CF696AFDA4D6E4,\nOxCal,2005,c14.arch.ox.ac.uk - OxCal Program v3.10 Manual (Last updated Feb 2005),https://c14.arch.ox.ac.uk/oxcal3/oxcal.htm,\nOxCal,2006,c14.arch.ox.ac.uk - OxCal4 Released (ORAU News),https://c14.arch.ox.ac.uk/news.html#OxCal4Released,\nOxCal,2008,researchgate.net - Deposition models for chronological records (Quaternary Science Reviews 27(1-2)),https://www.researchgate.net/publication/223387050_Ramsey_C_B_Deposition_models_for_chronological_records_Quat_Sci_Rev_27_42-60,\nOxCal,2009,cambridge.org - Bayesian Analysis of Radiocarbon Dates,https://www.cambridge.org/core/journals/radiocarbon/article/bayesian-analysis-of-radiocarbon-dates/F622173B70F9C1597F2738DEFC597114,\nOxCal,2009,cambridge.org - Dealing with Outliers and Offsets in Radiocarbon Dating,https://www.cambridge.org/core/journals/radiocarbon/article/dealing-with-outliers-and-offsets-in-radiocarbon-dating/500255B3C1ABE8B3FBE4614433C0D1B4,\nOxCal,2009,pubs.usgs.gov - OxCal: Versatile tool for developing paleoearthquake chronologies (Seismological Research Letters 80(3)),https://pubs.usgs.gov/publication/70034894,\nOxCal,2010,c14.arch.ox.ac.uk - Science paper: Radiocarbon-Based Chronology for Dynastic Egypt (ORAU News),https://c14.arch.ox.ac.uk/news.html#EgyptChronology2010,\nOxCal,2012,cambridge.org - Development and Application of the Trapezoidal Model for Archaeological Chronologies,https://www.cambridge.org/core/journals/radiocarbon/article/development-and-application-of-the-trapezoidal-model-for-archaeological-chronologies/9063D563C14D3056D67F3C131DF4E952,\nOxCal,2013,cambridge.org - Recent and Planned Developments of the Program OxCal,https://www.cambridge.org/core/journals/radiocarbon/article/recent-and-planned-developments-of-the-program-oxcal/90F3F3758CA7A96F6A3DC8C3FBE90CB1,\nOxCal,2014,impact.ref.ac.uk - Accurately dating the past \u2013 OxCal: free software for the calibration of radiocarbon dates (REF 2014 case study),https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=14585,\nOxCal,2014,github.com - ropensci/archeology Issue #14: OxCal and other radiocarbon date calibration services,https://github.com/ropensci/archeology/issues/14,\"GitHub issue discussion, user-generated content.\"\nOxCal,2017,cambridge.org - Methods for Summarizing Radiocarbon Datasets,https://doi.org/10.1017/RDC.2017.108,\nOxCal,2020,brentnongbri.com - A New Radiocarbon Calibration Curve and Early Christian Manuscripts,https://brentnongbri.com/2020/08/23/a-new-radiocarbon-calibration-curve-and-early-christian-manuscripts/,\nOxCal,n.d.,github.com - ISAAKiel/oxcAAR (R interface to OxCal),https://github.com/ISAAKiel/oxcAAR,No explicit date available (open-source repository).\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67bac0bf8d4081919f824ac5382e845e",
+          "async_task_title": "Comprehensive Evidence Collection for OxCal"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "d152ee3a-a5e7-4c52-b88b-7104c32b43a8",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "0d4e76f9-054d-47d3-a781-4328e650ac4c",
+  "plugin_ids": null,
+  "conversation_id": "67bac090-6e84-8004-b736-bb08c59ffbd3",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.cambridge.org/core/journals/radiocarbon/article/development-of-the-radiocarbon-calibration-program/34102591BE9755EDD8CF696AFDA4D6E4",
+    "https://www.cambridge.org/core/journals/radiocarbon/article/development-and-application-of-the-trapezoidal-model-for-archaeological-chronologies/9063D563C14D3056D67F3C131DF4E952",
+    "https://brentnongbri.com/2020/08/23/a-new-radiocarbon-calibration-curve-and-early-christian-manuscripts/",
+    "https://www.cambridge.org/core/journals/radiocarbon/article/dealing-with-outliers-and-offsets-in-radiocarbon-dating/500255B3C1ABE8B3FBE4614433C0D1B4",
+    "https://www.cambridge.org/core/journals/radiocarbon/article/bayesian-analysis-of-radiocarbon-dates/F622173B70F9C1597F2738DEFC597114",
+    "https://www.cambridge.org/core/journals/radiocarbon/article/radiocarbon-calibration-and-analysis-of-stratigraphy-the-oxcal-program/0E94507D655A68B308162395C82F08B2",
+    "https://www.cambridge.org/core/journals/radiocarbon/article/recent-and-planned-developments-of-the-program-oxcal/90F3F3758CA7A96F6A3DC8C3FBE90CB1",
+    "https://www.cambridge.org/core/journals/radiocarbon/article/probability-and-dating/04C113AE3357A458B505B19D0AC42289",
+    "https://pubs.usgs.gov/publication/70034894",
+    "https://c14.arch.ox.ac.uk/oxcal3/oxcal.htm",
+    "https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=14585",
+    "https://github.com/ropensci/archeology/issues/14"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67bac090-6e84-8004-b736-bb08c59ffbd3"
+}

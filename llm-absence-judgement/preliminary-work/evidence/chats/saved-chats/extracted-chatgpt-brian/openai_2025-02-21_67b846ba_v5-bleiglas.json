@@ -1,0 +1,686 @@
+{
+  "title": "v5-bleiglas",
+  "create_time": 1740129978.613734,
+  "update_time": 1740130605.193773,
+  "mapping": {
+    "aaa16af7-95e6-4286-990a-8feefb7758d6": {
+      "id": "aaa16af7-95e6-4286-990a-8feefb7758d6",
+      "message": null,
+      "parent": null,
+      "children": [
+        "c78c06cf-beb1-4a4e-935f-aad3526615ac"
+      ]
+    },
+    "c78c06cf-beb1-4a4e-935f-aad3526615ac": {
+      "id": "c78c06cf-beb1-4a4e-935f-aad3526615ac",
+      "message": {
+        "id": "c78c06cf-beb1-4a4e-935f-aad3526615ac",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa16af7-95e6-4286-990a-8feefb7758d6",
+      "children": [
+        "dc1c65b6-2fbd-48f9-9a1b-467c4e94d609"
+      ]
+    },
+    "dc1c65b6-2fbd-48f9-9a1b-467c4e94d609": {
+      "id": "dc1c65b6-2fbd-48f9-9a1b-467c4e94d609",
+      "message": {
+        "id": "dc1c65b6-2fbd-48f9-9a1b-467c4e94d609",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740129978.616687,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9155b1ac09b1a93b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c78c06cf-beb1-4a4e-935f-aad3526615ac",
+      "children": [
+        "13e4c292-11db-4629-964f-8681698507f8"
+      ]
+    },
+    "13e4c292-11db-4629-964f-8681698507f8": {
+      "id": "13e4c292-11db-4629-964f-8681698507f8",
+      "message": {
+        "id": "13e4c292-11db-4629-964f-8681698507f8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740129984.800016,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I understand your requirements clearly. You will provide the name or acronym of an archaeology or historical studies-related software tool, and I will conduct a thorough, systematic search to collect evidence from valid sources. The data will be compiled into a well-formed quoted CSV with the specified columns.\n\nBefore we begin, I\u2019d like to confirm:\n- Should I prioritize peer-reviewed sources over other mentions, or should all valid sources be treated equally?\n- Do you have any preferred citation style for sources in the CSV, or is the domain + page title format sufficient?\n- If a source lists multiple years (e.g., a software repository with multiple commit years), should I include separate rows for each year?\n\nLet me know if there are any additional considerations before we start."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "dc1c65b6-2fbd-48f9-9a1b-467c4e94d609",
+          "request_id": "9155b1ac09b1a93b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dc1c65b6-2fbd-48f9-9a1b-467c4e94d609",
+      "children": [
+        "b2e8ff51-c535-4da5-b60a-e5a129d70dfd"
+      ]
+    },
+    "b2e8ff51-c535-4da5-b60a-e5a129d70dfd": {
+      "id": "b2e8ff51-c535-4da5-b60a-e5a129d70dfd",
+      "message": {
+        "id": "b2e8ff51-c535-4da5-b60a-e5a129d70dfd",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740129984.800166,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "13e4c292-11db-4629-964f-8681698507f8",
+          "request_id": "9155b1ac09b1a93b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "13e4c292-11db-4629-964f-8681698507f8",
+      "children": [
+        "abe71321-9664-46fd-86d9-99849058e411"
+      ]
+    },
+    "abe71321-9664-46fd-86d9-99849058e411": {
+      "id": "abe71321-9664-46fd-86d9-99849058e411",
+      "message": {
+        "id": "abe71321-9664-46fd-86d9-99849058e411",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740129997.621038,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "bleiglas"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9155b2230be6a93b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b2e8ff51-c535-4da5-b60a-e5a129d70dfd",
+      "children": [
+        "b4a76cc8-fe67-4c5c-aaf1-d1d523937133"
+      ]
+    },
+    "b4a76cc8-fe67-4c5c-aaf1-d1d523937133": {
+      "id": "b4a76cc8-fe67-4c5c-aaf1-d1d523937133",
+      "message": {
+        "id": "b4a76cc8-fe67-4c5c-aaf1-d1d523937133",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740130009.697006,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a detailed and systematic search for mentions of the software tool \"Bleiglas\" in archaeology or historical studies contexts. This will include sources such as scholarly literature, blog posts, about pages, and version control repositories.\n\nI will compile the results into a well-formed quoted CSV, ensuring that each source has its own row, with the year, citation or source title, URL, and notes on data quality. I will also explore adjacent years systematically to provide a comprehensive record.\n\nI'll let you know when the results are ready."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "abe71321-9664-46fd-86d9-99849058e411",
+          "request_id": "9155b2230be6a93b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "abe71321-9664-46fd-86d9-99849058e411",
+      "children": [
+        "58ea8e23-e861-4e65-a5e3-f7c87fc2c482"
+      ]
+    },
+    "58ea8e23-e861-4e65-a5e3-f7c87fc2c482": {
+      "id": "58ea8e23-e861-4e65-a5e3-f7c87fc2c482",
+      "message": {
+        "id": "58ea8e23-e861-4e65-a5e3-f7c87fc2c482",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740130009.697136,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a detailed and systematic search for mentions of the software tool \\\"Bleiglas\\\" in archaeology or historical studies contexts. This will include sources such as scholarly literature, blog posts, about pages, and version control repositories.\\n\\nI will compile the results into a well-formed quoted CSV, ensuring that each source has its own row, with the year, citation or source title, URL, and notes on data quality. I will also explore adjacent years systematically to provide a comprehensive record.\\n\\nI'll let you know when the results are ready.\",\"title\":\"Comprehensive Evidence Collection for Bleiglas\",\"prompt\":\"Conduct a systematic and comprehensive search for the software tool \\\"Bleiglas\\\" in archaeology or historical studies.\\n\\nFor every mention of the tool found in a valid source, record the following details in a well-formed quoted CSV:\\n- \\\"Tool\\\": The exact name of the software tool, \\\"Bleiglas\\\".\\n- \\\"Year\\\": The publication or mention year from the source (if undated, use \\\"n.d.\\\").\\n- \\\"Source\\\": Citation or domain + page title.\\n- \\\"URL\\\": The direct URL to the source.\\n- \\\"AI Notes\\\": Any concerns, issues, or uncertainties regarding data provenance or quality.\\n\\nSources to include:\\n- Scholarly literature (each mention in a separate row)\\n- Blog posts and about pages (each mention in a separate row)\\n- Public version control repositories (each mention in a separate row)\\n- Any other valid mentions (each mention in a separate row)\\n\\nEnsure all evidence follows the definitions provided: The software tool must actively process or transform data rather than serving as a static repository. Do not infer dates; only use explicit publication years. Systematically explore adjacent years to ensure completeness.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b4a76cc8-fe67-4c5c-aaf1-d1d523937133",
+          "request_id": "9155b2230be6a93b-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "b4a76cc8-fe67-4c5c-aaf1-d1d523937133",
+      "children": [
+        "426d7352-1eea-46be-956b-3dcdd70ad232"
+      ]
+    },
+    "426d7352-1eea-46be-956b-3dcdd70ad232": {
+      "id": "426d7352-1eea-46be-956b-3dcdd70ad232",
+      "message": {
+        "id": "426d7352-1eea-46be-956b-3dcdd70ad232",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740130013.92011,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Evidence Collection for Bleiglas",
+          "async_task_prompt": "Conduct a systematic and comprehensive search for the software tool \"Bleiglas\" in archaeology or historical studies.\n\nFor every mention of the tool found in a valid source, record the following details in a well-formed quoted CSV:\n- \"Tool\": The exact name of the software tool, \"Bleiglas\".\n- \"Year\": The publication or mention year from the source (if undated, use \"n.d.\").\n- \"Source\": Citation or domain + page title.\n- \"URL\": The direct URL to the source.\n- \"AI Notes\": Any concerns, issues, or uncertainties regarding data provenance or quality.\n\nSources to include:\n- Scholarly literature (each mention in a separate row)\n- Blog posts and about pages (each mention in a separate row)\n- Public version control repositories (each mention in a separate row)\n- Any other valid mentions (each mention in a separate row)\n\nEnsure all evidence follows the definitions provided: The software tool must actively process or transform data rather than serving as a static repository. Do not infer dates; only use explicit publication years. Systematically explore adjacent years to ensure completeness.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Evidence Collection for Bleiglas",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "58ea8e23-e861-4e65-a5e3-f7c87fc2c482",
+          "request_id": "9155b2230be6a93b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "58ea8e23-e861-4e65-a5e3-f7c87fc2c482",
+      "children": [
+        "1f65c996-5c87-4c22-ba64-5911d726d8fe"
+      ]
+    },
+    "1f65c996-5c87-4c22-ba64-5911d726d8fe": {
+      "id": "1f65c996-5c87-4c22-ba64-5911d726d8fe",
+      "message": {
+        "id": "1f65c996-5c87-4c22-ba64-5911d726d8fe",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740130466.487591,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The following table presents each located mention of \"Bleiglas\" in archaeology or historical studies:\n\n```\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Bleiglas\",\"2021\",\"theoj.org - bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation\",\"https://joss.theoj.org/papers/10.21105/joss.03092\",\"Peer-reviewed open source software journal article (JOSS)\u301057\u2020L84-L86\u3011; reliable source.\"\n\"Bleiglas\",\"2021\",\"hal.science - Arch\u00e9ologie : les usages disciplinaires de R, entre recours g\u00e9n\u00e9riques et d\u00e9veloppement de packages sp\u00e9cifiques. Un \u00e9tat des lieux en arch\u00e9ologie\",\"https://hal.science/hal-03287121/file/plutniak2021rconference.pdf\",\"Conference paper (Rencontres R 2021)\u301042\u2020L1-L3\u3011; credible academic source but not formally peer-reviewed.\"\n\"Bleiglas\",\"2022\",\"theoj.org - TessPy: a python package for geographical tessellation\",\"https://joss.theoj.org/papers/10.21105/joss.04620\",\"Peer-reviewed JOSS article (software paper)\u301019\u2020L1-L4\u3011; Bleiglas mentioned as related work\u301018\u2020L1-L4\u3011.\"\n\"Bleiglas\",\"2023\",\"pmc.ncbi.nlm.nih.gov - Genetic adaptation to pathogens and increased risk of inflammatory disorders in post-Neolithic Europe\",\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9932995/\",\"Peer-reviewed research article (Cell Genomics, 2023)\u301060\u2020L69-L77\u3011; Bleiglas used for data interpolation in analysis (figure caption)\u301024\u2020L777-L784\u3011.\"\n\"Bleiglas\",\"n.d.\",\"open-archaeo.info - bleiglas\",\"https://open-archaeo.info/post/bleiglas/\",\"Community-curated open archaeology software listing; no publication date (entry content by maintainers)\u30105\u2020L559-L567\u3011\u30105\u2020L593-L600\u3011.\"\n\"Bleiglas\",\"n.d.\",\"github.com - nevrome/bleiglas: R Package - Spatiotemporal Data Interpolation and Visualisation based on 3D Tessellation\",\"https://github.com/nevrome/bleiglas\",\"Official source code repository; no formal publication date (created ~2020\u20132021)\u301065\u2020L11-L18\u3011; maintained by tool authors.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 392,
+              "end_ix": 404,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
+                "url": "https://www.theoj.org/joss-papers/joss.03092/10.21105.joss.03092.pdf#:~:text=Schmid%20et%20al,03092",
+                "text": "Schmid et al., (2021). bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation. Journal of Open Source Software, 6(60), 3092. https://doi.org/10.21105/joss.03092",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 57,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 84,
+                  "end_line_num": 86
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 709,
+              "end_ix": 719,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "aRch\u00e9ologie : les usages disciplinaires de R, entre recours g\u00e9n\u00e9riques et d\u00e9veloppement de packages sp\u00e9cifiques - Un \u00e9tat des lieux en arch\u00e9ologie",
+                "url": "https://hal.science/hal-03287121/file/plutniak2021rconference.pdf#:~:text=Rencontres%20R%202021%2C%2013%20juillet,2021%2C%20Paris",
+                "text": "Rencontres R 2021, 13 juillet 2021, Paris",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 42,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 3
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 962,
+              "end_ix": 972,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "TessPy: a python package for geographical tessellation",
+                "url": "https://www.theoj.org/joss-papers/joss.04620/10.21105.joss.04620.pdf#:~:text=Published%3A%2026%20August%202022%20License,release%20the%20work%20under%20a",
+                "text": "Published: 26 August 2022 License Authors of papers retain copyright and release the work under a",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 19,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1008,
+              "end_ix": 1018,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "TessPy: a python package for geographical tessellation",
+                "url": "https://www.theoj.org/joss-papers/joss.04620/10.21105.joss.04620.pdf#:~:text=grid%20of%20rectangles%20for%20a,3D%20tessellation%20using%20point%20clouds",
+                "text": "grid of rectangles for a given spatial region. bleiglas (Schmid & Schiffels, 2021) is also an R package that provides tessellation functions. It makes 3D tessellation using point clouds",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 18,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1271,
+              "end_ix": 1283,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n            Genetic adaptation to pathogens and increased risk of inflammatory disorders in post-Neolithic Europe - PMC\n        ",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9932995/#:~:text=Cell%20Genom",
+                "text": "Cell Genom",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 60,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 69,
+                  "end_line_num": 77
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1350,
+              "end_ix": 1364,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n            Genetic adaptation to pathogens and increased risk of inflammatory disorders in post-Neolithic Europe - PMC\n        ",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9932995/#:~:text=,others%20are%20represented%20by%20circles",
+                "text": "(B) Polygenic risk score for CD as a function of the geographic location and age of the samples, obtained with the \u201cbleiglas\u201d package of R version 3.6.2. Individuals with >75% Anatolian ancestry are represented by triangles, and the others are represented by circles.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 24,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 777,
+                  "end_line_num": 784
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1563,
+              "end_ix": 1576,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Packages and libraries \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/categories/packages-and-libraries/#:~:text=bleiglas",
+                "text": "bleiglas",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 559,
+                  "end_line_num": 567
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1576,
+              "end_ix": 1589,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Packages and libraries \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/categories/packages-and-libraries/#:~:text=R%20package%20for%20calculating%20probability,estimates%20for%20calibrated%20radiocarbon%20dates",
+                "text": "R package for calculating probability intervals and point estimates for calibrated radiocarbon dates.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 593,
+                  "end_line_num": 600
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1851,
+              "end_ix": 1863,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Journal of Open Source Software: bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
+                "url": "https://joss.theoj.org/papers/10.21105/joss.03092#:~:text=bleiglas%3A%20An%20R%20package%20for,spatiotemporal%20data%20with%203D%20tessellation",
+                "text": "bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 65,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 11,
+                  "end_line_num": 18
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301057\u2020L84-L86\u3011",
+              "start_idx": 392,
+              "end_idx": 404,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
+              "url": "https://www.theoj.org/joss-papers/joss.03092/10.21105.joss.03092.pdf#:~:text=Schmid%20et%20al,03092",
+              "pub_date": null,
+              "snippet": "Schmid et al., (2021). bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation. Journal of Open Source Software, 6(60), 3092. https://doi.org/10.21105/joss.03092",
+              "attribution": "theoj.org"
+            },
+            {
+              "matched_text": "\u301042\u2020L1-L3\u3011",
+              "start_idx": 709,
+              "end_idx": 719,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "aRch\u00e9ologie : les usages disciplinaires de R, entre recours g\u00e9n\u00e9riques et d\u00e9veloppement de packages sp\u00e9cifiques - Un \u00e9tat des lieux en arch\u00e9ologie",
+              "url": "https://hal.science/hal-03287121/file/plutniak2021rconference.pdf#:~:text=Rencontres%20R%202021%2C%2013%20juillet,2021%2C%20Paris",
+              "pub_date": null,
+              "snippet": "Rencontres R 2021, 13 juillet 2021, Paris",
+              "attribution": "hal.science"
+            },
+            {
+              "matched_text": "\u301019\u2020L1-L4\u3011",
+              "start_idx": 962,
+              "end_idx": 972,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "TessPy: a python package for geographical tessellation",
+              "url": "https://www.theoj.org/joss-papers/joss.04620/10.21105.joss.04620.pdf#:~:text=Published%3A%2026%20August%202022%20License,release%20the%20work%20under%20a",
+              "pub_date": null,
+              "snippet": "Published: 26 August 2022 License Authors of papers retain copyright and release the work under a",
+              "attribution": "theoj.org"
+            },
+            {
+              "matched_text": "\u301018\u2020L1-L4\u3011",
+              "start_idx": 1008,
+              "end_idx": 1018,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "TessPy: a python package for geographical tessellation",
+              "url": "https://www.theoj.org/joss-papers/joss.04620/10.21105.joss.04620.pdf#:~:text=grid%20of%20rectangles%20for%20a,3D%20tessellation%20using%20point%20clouds",
+              "pub_date": null,
+              "snippet": "grid of rectangles for a given spatial region. bleiglas (Schmid & Schiffels, 2021) is also an R package that provides tessellation functions. It makes 3D tessellation using point clouds",
+              "attribution": "theoj.org"
+            },
+            {
+              "matched_text": "\u301060\u2020L69-L77\u3011",
+              "start_idx": 1271,
+              "end_idx": 1283,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n            Genetic adaptation to pathogens and increased risk of inflammatory disorders in post-Neolithic Europe - PMC\n        ",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9932995/#:~:text=Cell%20Genom",
+              "pub_date": null,
+              "snippet": "Cell Genom",
+              "attribution": "pmc.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301024\u2020L777-L784\u3011",
+              "start_idx": 1350,
+              "end_idx": 1364,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n            Genetic adaptation to pathogens and increased risk of inflammatory disorders in post-Neolithic Europe - PMC\n        ",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9932995/#:~:text=,others%20are%20represented%20by%20circles",
+              "pub_date": null,
+              "snippet": "(B) Polygenic risk score for CD as a function of the geographic location and age of the samples, obtained with the \u201cbleiglas\u201d package of R version 3.6.2. Individuals with >75% Anatolian ancestry are represented by triangles, and the others are represented by circles.",
+              "attribution": "pmc.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u30105\u2020L559-L567\u3011",
+              "start_idx": 1563,
+              "end_idx": 1576,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Packages and libraries \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/categories/packages-and-libraries/#:~:text=bleiglas",
+              "pub_date": null,
+              "snippet": "bleiglas",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u30105\u2020L593-L600\u3011",
+              "start_idx": 1576,
+              "end_idx": 1589,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Packages and libraries \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/categories/packages-and-libraries/#:~:text=R%20package%20for%20calculating%20probability,estimates%20for%20calibrated%20radiocarbon%20dates",
+              "pub_date": null,
+              "snippet": "R package for calculating probability intervals and point estimates for calibrated radiocarbon dates.",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u301065\u2020L11-L18\u3011",
+              "start_idx": 1851,
+              "end_idx": 1863,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Journal of Open Source Software: bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
+              "url": "https://joss.theoj.org/papers/10.21105/joss.03092#:~:text=bleiglas%3A%20An%20R%20package%20for,spatiotemporal%20data%20with%203D%20tessellation",
+              "pub_date": null,
+              "snippet": "bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
+              "attribution": "joss.theoj.org"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b846ddd5208191b03b250b481d1854",
+          "async_task_title": "Comprehensive Evidence Collection for Bleiglas"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "426d7352-1eea-46be-956b-3dcdd70ad232",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "1f65c996-5c87-4c22-ba64-5911d726d8fe",
+  "plugin_ids": null,
+  "conversation_id": "67b846ba-659c-8004-a685-94701f2d388b",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9932995/",
+    "https://joss.theoj.org/papers/10.21105/joss.04620"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b846ba-659c-8004-a685-94701f2d388b"
+}

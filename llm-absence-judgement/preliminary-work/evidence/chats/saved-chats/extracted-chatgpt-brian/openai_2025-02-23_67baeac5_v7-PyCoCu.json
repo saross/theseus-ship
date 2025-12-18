@@ -1,0 +1,397 @@
+{
+  "title": "v7-PyCoCu",
+  "create_time": 1740303045.556145,
+  "update_time": 1740303913.225163,
+  "mapping": {
+    "aaa1c44e-8d43-427e-8c54-f50a690d44e6": {
+      "id": "aaa1c44e-8d43-427e-8c54-f50a690d44e6",
+      "message": null,
+      "parent": null,
+      "children": [
+        "1cbeea98-bc28-462d-b22e-7c00af9c81b5"
+      ]
+    },
+    "1cbeea98-bc28-462d-b22e-7c00af9c81b5": {
+      "id": "1cbeea98-bc28-462d-b22e-7c00af9c81b5",
+      "message": {
+        "id": "1cbeea98-bc28-462d-b22e-7c00af9c81b5",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1c44e-8d43-427e-8c54-f50a690d44e6",
+      "children": [
+        "79f6ffaf-50e2-4eed-87cf-682097bc925f"
+      ]
+    },
+    "79f6ffaf-50e2-4eed-87cf-682097bc925f": {
+      "id": "79f6ffaf-50e2-4eed-87cf-682097bc925f",
+      "message": {
+        "id": "79f6ffaf-50e2-4eed-87cf-682097bc925f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303045.558729,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916632efeda3a6d9-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1cbeea98-bc28-462d-b22e-7c00af9c81b5",
+      "children": [
+        "166dfb1c-add6-4651-bb4c-edd21223643a"
+      ]
+    },
+    "166dfb1c-add6-4651-bb4c-edd21223643a": {
+      "id": "166dfb1c-add6-4651-bb4c-edd21223643a",
+      "message": {
+        "id": "166dfb1c-add6-4651-bb4c-edd21223643a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303049.14063,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your requirements clearly. Please provide the name or acronym of the first archaeology or historical studies-related software tool you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "79f6ffaf-50e2-4eed-87cf-682097bc925f",
+          "request_id": "916632efeda3a6d9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "79f6ffaf-50e2-4eed-87cf-682097bc925f",
+      "children": [
+        "72807d39-af71-4398-8a9b-d24a424338d5"
+      ]
+    },
+    "72807d39-af71-4398-8a9b-d24a424338d5": {
+      "id": "72807d39-af71-4398-8a9b-d24a424338d5",
+      "message": {
+        "id": "72807d39-af71-4398-8a9b-d24a424338d5",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740303049.140778,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "166dfb1c-add6-4651-bb4c-edd21223643a",
+          "request_id": "916632efeda3a6d9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "166dfb1c-add6-4651-bb4c-edd21223643a",
+      "children": [
+        "f81395c9-e4da-4d7b-9dab-5028e8fca58b"
+      ]
+    },
+    "f81395c9-e4da-4d7b-9dab-5028e8fca58b": {
+      "id": "f81395c9-e4da-4d7b-9dab-5028e8fca58b",
+      "message": {
+        "id": "f81395c9-e4da-4d7b-9dab-5028e8fca58b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303056.463568,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "PyCoCu"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916633351b8ba6d9-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "72807d39-af71-4398-8a9b-d24a424338d5",
+      "children": [
+        "b2b3514c-2b23-4283-84f3-1bccaccebce7"
+      ]
+    },
+    "b2b3514c-2b23-4283-84f3-1bccaccebce7": {
+      "id": "b2b3514c-2b23-4283-84f3-1bccaccebce7",
+      "message": {
+        "id": "b2b3514c-2b23-4283-84f3-1bccaccebce7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303068.540692,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a comprehensive search for mentions of the archaeology and historical studies-related software tool \"PyCoCu.\" This will include sources such as published version control repositories, scholarly literature, blog posts, about pages, and any other relevant mentions.\n\nI will collect all sources systematically, recording each source with its publication year, source details, and URL. If I find a date, I will also explore adjacent years to ensure completeness. If no date is available, I will mark it as \"n.d.\" in the CSV.\n\nI will let you know once the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "f81395c9-e4da-4d7b-9dab-5028e8fca58b",
+          "request_id": "916633351b8ba6d9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f81395c9-e4da-4d7b-9dab-5028e8fca58b",
+      "children": [
+        "568513e7-17e9-4adb-96ba-8e4929d34b0b"
+      ]
+    },
+    "568513e7-17e9-4adb-96ba-8e4929d34b0b": {
+      "id": "568513e7-17e9-4adb-96ba-8e4929d34b0b",
+      "message": {
+        "id": "568513e7-17e9-4adb-96ba-8e4929d34b0b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303068.540873,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a comprehensive search for mentions of the archaeology and historical studies-related software tool \\\"PyCoCu.\\\" This will include sources such as published version control repositories, scholarly literature, blog posts, about pages, and any other relevant mentions.\\n\\nI will collect all sources systematically, recording each source with its publication year, source details, and URL. If I find a date, I will also explore adjacent years to ensure completeness. If no date is available, I will mark it as \\\"n.d.\\\" in the CSV.\\n\\nI will let you know once the research is complete.\",\"title\":\"Research Mentions of PyCoCu in Archaeology and Historical Studies\",\"prompt\":\"Conduct a thorough search for mentions of the archaeology and historical studies-related software tool \\\"PyCoCu.\\\" This includes:\\n\\n- Searching for published version control repositories (such as GitHub, GitLab, Bitbucket) for public code, as commit dates provide timestamps.\\n- Identifying scholarly literature discussing or referencing PyCoCu.\\n- Finding blog posts, about pages, and any online documentation mentioning the tool.\\n- Checking any other relevant mentions of PyCoCu across academic and industry sources.\\n\\nFor each valid mention, collect the following details in a well-formed quoted CSV format:\\n\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n\\n- \\\"Tool\\\": Ensure the tool name is consistent as \\\"PyCoCu.\\\"\\n- \\\"Year\\\": Extract the year from the publication date of the source. If no date is found, use \\\"n.d.\\\"\\n- \\\"Source\\\": Use a proper citation or provide (Domain + Page Title) as the reference.\\n- \\\"URL\\\": Provide the direct URL to the source.\\n- \\\"AI Notes\\\": Document any concerns, uncertainties, or issues regarding data provenance or quality.\\n\\nExpand the search systematically by +- 1 year from any confirmed date to capture relevant sources. Ensure careful and methodical data collection, visiting all relevant pages in search results. If evidence for PyCoCu is lacking, explicitly indicate that in the AI Notes field.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b2b3514c-2b23-4283-84f3-1bccaccebce7",
+          "request_id": "916633351b8ba6d9-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "b2b3514c-2b23-4283-84f3-1bccaccebce7",
+      "children": [
+        "cda89a2d-9204-4e35-aeb5-13a9035107ad"
+      ]
+    },
+    "cda89a2d-9204-4e35-aeb5-13a9035107ad": {
+      "id": "cda89a2d-9204-4e35-aeb5-13a9035107ad",
+      "message": {
+        "id": "cda89a2d-9204-4e35-aeb5-13a9035107ad",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740303083.269347,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Research Mentions of PyCoCu in Archaeology and Historical Studies",
+          "async_task_prompt": "Conduct a thorough search for mentions of the archaeology and historical studies-related software tool \"PyCoCu.\" This includes:\n\n- Searching for published version control repositories (such as GitHub, GitLab, Bitbucket) for public code, as commit dates provide timestamps.\n- Identifying scholarly literature discussing or referencing PyCoCu.\n- Finding blog posts, about pages, and any online documentation mentioning the tool.\n- Checking any other relevant mentions of PyCoCu across academic and industry sources.\n\nFor each valid mention, collect the following details in a well-formed quoted CSV format:\n\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n- \"Tool\": Ensure the tool name is consistent as \"PyCoCu.\"\n- \"Year\": Extract the year from the publication date of the source. If no date is found, use \"n.d.\"\n- \"Source\": Use a proper citation or provide (Domain + Page Title) as the reference.\n- \"URL\": Provide the direct URL to the source.\n- \"AI Notes\": Document any concerns, uncertainties, or issues regarding data provenance or quality.\n\nExpand the search systematically by +- 1 year from any confirmed date to capture relevant sources. Ensure careful and methodical data collection, visiting all relevant pages in search results. If evidence for PyCoCu is lacking, explicitly indicate that in the AI Notes field.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Research Mentions of PyCoCu in Archaeology and Historical Studies",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "568513e7-17e9-4adb-96ba-8e4929d34b0b",
+          "request_id": "916633351b8ba6d9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "568513e7-17e9-4adb-96ba-8e4929d34b0b",
+      "children": [
+        "dd2cd243-61c7-44d4-a082-8c1749e1592c"
+      ]
+    },
+    "dd2cd243-61c7-44d4-a082-8c1749e1592c": {
+      "id": "dd2cd243-61c7-44d4-a082-8c1749e1592c",
+      "message": {
+        "id": "dd2cd243-61c7-44d4-a082-8c1749e1592c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303401.313295,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"PyCoCu\",\"2020\",\"github.com \u2013 magdantho/pycocu: Application Python pour l'\u00e9tude de Combe-Cullier (Lacave, Lot)\",\"https://github.com/magdantho/pycocu\",\"Public code repository (no formal publication date; last commits ~2020\u20132021). Project-specific tool with minimal documentation.\"\n\"PyCoCu\",\"2023\",\"theoj.org \u2013 archeoViz: an R package for the Visualisation, Exploration, and Web Communication of Archaeological Spatial Data\",\"https://joss.theoj.org/papers/10.21105/joss.05811\",\"Mentioned as a related tool in a JOSS paper (Plutniak 2023) \u2013 only a passing reference, no detailed description of PyCoCu.\"\n\"PyCoCu\",\"2023\",\"prehistoire.org \u2013 Visualiser et explorer la distribution spatiale du mobilier arch\u00e9ologique : l'application archeoViz et son portail web (Correspondance, BSPF 120(1))\",\"https://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2023_1_2e_partie_Correspondance_PLUTNIAK.pdf\",\"French academic correspondence (Plutniak 2023) citing PyCoCu as a Python script by A.\u202fS\u00e9cher for Combe-Cullier; brief mention with GitHub link, no further details.\"\n\"PyCoCu\",\"2023\",\"peercommunityjournal.org \u2013 SEAHORS: Spatial Exploration of ArcHaeological Objects in R Shiny\",\"https://peercommunityjournal.org/item/10.24072/pcjournal.289.pdf\",\"Peer Community Journal article (Royer et al. 2023) references PyCoCu as an existing script (citing an unpublished 2020 report). Mention is cursory and relies on grey literature.\"\n\"PyCoCu\",\"2022\",\"doaj.org \u2013 New Visual Analytics Tool and Spatial Statistics to Explore Archeological Data: The Case of the Paleolithic Sequence of La Roche-\u00e0-Pierrot, Saint-C\u00e9saire, France\",\"https://doaj.org/article/a1fdb5b336724e2097945bb634f3319f\",\"Journal of Computer Applications in Archaeology paper (Couillet et al. 2022) lists PyCoCu among related tools (based on S\u00e9cher et al. 2020). The tool itself is not the focus and lacks dedicated documentation in this source.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67baeaeb361c8191888bc878f4feb265",
+          "async_task_title": "Research Mentions of PyCoCu in Archaeology and Historical Studies"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "cda89a2d-9204-4e35-aeb5-13a9035107ad",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "dd2cd243-61c7-44d4-a082-8c1749e1592c",
+  "plugin_ids": null,
+  "conversation_id": "67baeac5-3a6c-8004-b360-9b4b2983fe9e",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://joss.theoj.org/papers/10.21105/joss.05811",
+    "https://peercommunityjournal.org/item/10.24072/pcjournal.289.pdf",
+    "https://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2023_1_2e_partie_Correspondance_PLUTNIAK.pdf"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67baeac5-3a6c-8004-b360-9b4b2983fe9e"
+}

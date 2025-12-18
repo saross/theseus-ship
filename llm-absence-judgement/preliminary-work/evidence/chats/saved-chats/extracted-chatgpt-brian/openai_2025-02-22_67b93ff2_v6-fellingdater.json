@@ -1,0 +1,403 @@
+{
+  "title": "v6-fellingdater",
+  "create_time": 1740193778.743178,
+  "update_time": 1740196373.330406,
+  "mapping": {
+    "aaa1c15a-9b37-4269-818f-41d408f149ec": {
+      "id": "aaa1c15a-9b37-4269-818f-41d408f149ec",
+      "message": null,
+      "parent": null,
+      "children": [
+        "4eff973d-ec4b-4d9d-91e7-cea8ce93de2d"
+      ]
+    },
+    "4eff973d-ec4b-4d9d-91e7-cea8ce93de2d": {
+      "id": "4eff973d-ec4b-4d9d-91e7-cea8ce93de2d",
+      "message": {
+        "id": "4eff973d-ec4b-4d9d-91e7-cea8ce93de2d",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1c15a-9b37-4269-818f-41d408f149ec",
+      "children": [
+        "d1f07407-7e88-4f08-bb31-e3b8885ac3d9"
+      ]
+    },
+    "d1f07407-7e88-4f08-bb31-e3b8885ac3d9": {
+      "id": "d1f07407-7e88-4f08-bb31-e3b8885ac3d9",
+      "message": {
+        "id": "d1f07407-7e88-4f08-bb31-e3b8885ac3d9",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740193778.748885,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915bc7490cd8c82a-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4eff973d-ec4b-4d9d-91e7-cea8ce93de2d",
+      "children": [
+        "1b11620d-687a-4f3c-b80f-2bf183af2658"
+      ]
+    },
+    "1b11620d-687a-4f3c-b80f-2bf183af2658": {
+      "id": "1b11620d-687a-4f3c-b80f-2bf183af2658",
+      "message": {
+        "id": "1b11620d-687a-4f3c-b80f-2bf183af2658",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740193780.505713,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. Please provide the first tool name for research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d1f07407-7e88-4f08-bb31-e3b8885ac3d9",
+          "request_id": "915bc7490cd8c82a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d1f07407-7e88-4f08-bb31-e3b8885ac3d9",
+      "children": [
+        "8bc36148-368e-4359-99da-9780606a3af4"
+      ]
+    },
+    "8bc36148-368e-4359-99da-9780606a3af4": {
+      "id": "8bc36148-368e-4359-99da-9780606a3af4",
+      "message": {
+        "id": "8bc36148-368e-4359-99da-9780606a3af4",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740193780.5059,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "1b11620d-687a-4f3c-b80f-2bf183af2658",
+          "request_id": "915bc7490cd8c82a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1b11620d-687a-4f3c-b80f-2bf183af2658",
+      "children": [
+        "7a34298f-04dc-41b7-aa1b-744fd1ee5295"
+      ]
+    },
+    "7a34298f-04dc-41b7-aa1b-744fd1ee5295": {
+      "id": "7a34298f-04dc-41b7-aa1b-744fd1ee5295",
+      "message": {
+        "id": "7a34298f-04dc-41b7-aa1b-744fd1ee5295",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740193795.548398,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "fellingdater"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915bc7b32b3ec82a-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8bc36148-368e-4359-99da-9780606a3af4",
+      "children": [
+        "6e96dab0-dac5-4082-9a5c-dcf50999d188"
+      ]
+    },
+    "6e96dab0-dac5-4082-9a5c-dcf50999d188": {
+      "id": "6e96dab0-dac5-4082-9a5c-dcf50999d188",
+      "message": {
+        "id": "6e96dab0-dac5-4082-9a5c-dcf50999d188",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740193811.975514,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a systematic and thorough search for mentions of the archaeology-related software tool 'Fellingdater' from 1995 onwards. \n\nFor each valid mention, I will record:\n- The tool name ('Fellingdater')\n- The year from the source (or 'n.d.' if no date is found)\n- The source (either a citation or the domain and page title)\n- The URL of the resource\n- Any AI notes regarding data quality or provenance concerns\n\nI will carefully check academic literature, published repositories, blogs, and other mentions, ensuring that only explicitly stated years are included. I will explore sources systematically, including adjacent years when dates are found.\n\nI'll report back once the data is collected."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "7a34298f-04dc-41b7-aa1b-744fd1ee5295",
+          "request_id": "915bc7b32b3ec82a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7a34298f-04dc-41b7-aa1b-744fd1ee5295",
+      "children": [
+        "bb263b67-9693-406f-9ab1-11cae4e9fd36"
+      ]
+    },
+    "bb263b67-9693-406f-9ab1-11cae4e9fd36": {
+      "id": "bb263b67-9693-406f-9ab1-11cae4e9fd36",
+      "message": {
+        "id": "bb263b67-9693-406f-9ab1-11cae4e9fd36",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740193811.975623,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a systematic and thorough search for mentions of the archaeology-related software tool 'Fellingdater' from 1995 onwards. \\n\\nFor each valid mention, I will record:\\n- The tool name ('Fellingdater')\\n- The year from the source (or 'n.d.' if no date is found)\\n- The source (either a citation or the domain and page title)\\n- The URL of the resource\\n- Any AI notes regarding data quality or provenance concerns\\n\\nI will carefully check academic literature, published repositories, blogs, and other mentions, ensuring that only explicitly stated years are included. I will explore sources systematically, including adjacent years when dates are found.\\n\\nI'll report back once the data is collected.\",\"title\":\"Evidence Collection for Fellingdater\",\"prompt\":\"Conduct a thorough and systematic search for mentions of the archaeology-related software tool 'Fellingdater' from 1995 onwards. \\n\\nFor each valid mention, record:\\n- Tool name: 'Fellingdater'\\n- Year: Extracted from the publication date of the source or 'n.d.' if no date is available\\n- Source: Citation (if academic) or domain and page title\\n- URL: Direct link to the source\\n- AI Notes: Any concerns or uncertainties about data provenance or quality\\n\\nSources to explore include:\\n- Academic literature databases (Google Scholar, ResearchGate, etc.)\\n- Published version control repositories (GitHub, GitLab, Bitbucket)\\n- Blog posts, project websites, and documentation pages\\n- Any other valid mentions in research contexts\\n\\nEnsure all collected data is precise and well-documented. If uncertainties arise, indicate them in the AI Notes column. \\n\\nFormat the output as a well-formed quoted CSV inside a fenced code block, with one row per source mentioning 'Fellingdater' in any valid year or 'n.d.' if undated.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "6e96dab0-dac5-4082-9a5c-dcf50999d188",
+          "request_id": "915bc7b32b3ec82a-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "6e96dab0-dac5-4082-9a5c-dcf50999d188",
+      "children": [
+        "3568d07d-2989-4335-a8d9-e897692bf96b"
+      ]
+    },
+    "3568d07d-2989-4335-a8d9-e897692bf96b": {
+      "id": "3568d07d-2989-4335-a8d9-e897692bf96b",
+      "message": {
+        "id": "3568d07d-2989-4335-a8d9-e897692bf96b",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740193811.97571,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for Fellingdater",
+          "async_task_prompt": "Conduct a thorough and systematic search for mentions of the archaeology-related software tool 'Fellingdater' from 1995 onwards. \n\nFor each valid mention, record:\n- Tool name: 'Fellingdater'\n- Year: Extracted from the publication date of the source or 'n.d.' if no date is available\n- Source: Citation (if academic) or domain and page title\n- URL: Direct link to the source\n- AI Notes: Any concerns or uncertainties about data provenance or quality\n\nSources to explore include:\n- Academic literature databases (Google Scholar, ResearchGate, etc.)\n- Published version control repositories (GitHub, GitLab, Bitbucket)\n- Blog posts, project websites, and documentation pages\n- Any other valid mentions in research contexts\n\nEnsure all collected data is precise and well-documented. If uncertainties arise, indicate them in the AI Notes column. \n\nFormat the output as a well-formed quoted CSV inside a fenced code block, with one row per source mentioning 'Fellingdater' in any valid year or 'n.d.' if undated.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for Fellingdater",
+            "completed_with_time": "Research completed in 9m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "bb263b67-9693-406f-9ab1-11cae4e9fd36",
+          "request_id": "915bc7b32b3ec82a-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b9401362748191892fdaeb6d0404d7",
+          "async_task_conversation_id": "67b94013-7694-8004-b923-239297cd5024",
+          "async_task_created_at": "2025-02-22 03:10:11.953584+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bb263b67-9693-406f-9ab1-11cae4e9fd36",
+      "children": [
+        "53bebfa1-910a-4d47-925a-e23d9f099996"
+      ]
+    },
+    "53bebfa1-910a-4d47-925a-e23d9f099996": {
+      "id": "53bebfa1-910a-4d47-925a-e23d9f099996",
+      "message": {
+        "id": "53bebfa1-910a-4d47-925a-e23d9f099996",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740194368.626401,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool name\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Fellingdater\",\"2024\",\"Haneca (2024) Journal of Open Source Software\",\"https://doi.org/10.21105/joss.06716\",\"Peer-reviewed publication (JOSS); official source, no concerns\"\n\"Fellingdater\",\"2023\",\"Dom\u00ednguez-Delm\u00e1s et al. (2023) Journal of Cultural Heritage\",\"https://doi.org/10.1016/j.culher.2023.06.023\",\"Peer-reviewed article (includes fellingdater in supplementary methods); reliable\"\n\"Fellingdater\",\"2023\",\"Haneca (2023) TRACE 2023 conference abstract (Coimbra)\",\"https://www.uc.pt/site/assets/files/1067994/abstract_book_trace_2023.pdf\",\"Conference abstract (not peer-reviewed journal); content by tool\u2019s author\"\n\"Fellingdater\",\"2023\",\"onroerenderfgoed.be \u2013 De Oude Steen in Brugge (Onderzoeksrapport 309)\",\"https://doi.org/10.55465/XPLM4901\",\"Official heritage research report (in Dutch); not peer-reviewed but authored by tool creator\"\n\"Fellingdater\",\"2024\",\"onroerenderfgoed.be \u2013 Ieper \u2018De Meersen\u2019 Part\u00a05 (Onderzoeksrapport 330)\",\"https://doi.org/10.55465/CNJU8492\",\"Official heritage research report (in Dutch); references fellingdater; not peer-reviewed\"\n\"Fellingdater\",\"2024\",\"ResearchGate \u2013 JOSS article by Haneca (2024)\",\"https://www.researchgate.net/publication/380812706\",\"ResearchGate listing of JOSS paper (duplicate content); no issues aside from being secondary source\"\n\"Fellingdater\",\"2024\",\"Zenodo \u2013 Software archive (v1.0.2 release)\",\"https://zenodo.org/record/11186275\",\"Official Zenodo archive of the code (2024); trustworthy\"\n\"Fellingdater\",\"2024\",\"NASA ADS \u2013 JOSS article record (Haneca 2024)\",\"https://ui.adsabs.harvard.edu/abs/2024JOSS....9.6716H\",\"Indexing service entry mirroring JOSS reference; no issues\"\n\"Fellingdater\",\"2024\",\"dblp \u2013 Haneca (2024) JOSS article entry\",\"https://dblp.org/rec/journals/jossw/Haneca24\",\"Database listing of JOSS publication; content reliable (metadata only)\"\n\"Fellingdater\",\"2024\",\"OUCI (Ukrainian Citation Index) \u2013 JOSS 2024 article listing\",\"https://ouci.dntb.gov.ua/en/works/7PPE2ZY7/\",\"Citation index entry; mirrors published data (no issues)\"\n\"Fellingdater\",\"n.d.\",\"open-archaeo.info \u2013 fellingDateR (tool listing)\",\"https://open-archaeo.info/post/fellingdater/\",\"Community-maintained archaeology software list; no date provided\"\n\"Fellingdater\",\"n.d.\",\"GitHub (ropensci/fellingdater repository)\",\"https://github.com/ropensci/fellingdater\",\"Official code repository (source code); no single publication date\"\n\"Fellingdater\",\"n.d.\",\"docs.ropensci.org \u2013 Fellingdater package documentation\",\"https://docs.ropensci.org/fellingdater/\",\"Official package documentation; continuously updated (no explicit date)\"\n\"Fellingdater\",\"2024\",\"ropensci.org \u2013 rOpenSci News Digest, January 2024\",\"https://ropensci.org/blog/2024/01/25/news-january-2024/\",\"Official rOpenSci blog (mentions fellingdateR in review stage); no concerns\"\n\"Fellingdater\",\"2024\",\"ropensci.org \u2013 rOpenSci News Digest, April 2024\",\"https://ropensci.org/blog/2024/04/22/ropensci-news-april-2024/\",\"Official rOpenSci blog (package announcement); no concerns\"\n\"Fellingdater\",\"n.d.\",\"ronaldvisser.github.io \u2013 R-packages for dendrochronology page\",\"https://ronaldvisser.github.io/Dendro_R/\",\"Personal blog listing dendrochronology R packages; cites Haneca 2024, content seems reliable\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b9401362748191892fdaeb6d0404d7",
+          "async_task_title": "Evidence Collection for Fellingdater"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "3568d07d-2989-4335-a8d9-e897692bf96b",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "53bebfa1-910a-4d47-925a-e23d9f099996",
+  "plugin_ids": null,
+  "conversation_id": "67b93ff2-4740-8004-8719-56c32a79f9e6",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://ropensci.org/blog/2024/04/22/ropensci-news-april-2024/",
+    "https://ronaldvisser.github.io/Dendro_R/",
+    "https://open-archaeo.info/post/fellingdater/",
+    "https://docs.ropensci.org/fellingdater/",
+    "https://www.uc.pt/site/assets/files/1067994/abstract_book_trace_2023.pdf",
+    "https://ropensci.org/blog/2024/01/25/news-january-2024/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b93ff2-4740-8004-8719-56c32a79f9e6"
+}

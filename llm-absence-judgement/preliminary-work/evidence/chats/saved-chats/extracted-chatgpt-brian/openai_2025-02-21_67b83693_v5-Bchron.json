@@ -1,0 +1,401 @@
+{
+  "title": "v5-Bchron",
+  "create_time": 1740125843.42168,
+  "update_time": 1740130009.003795,
+  "mapping": {
+    "aaa140d3-fb0a-45b8-b09e-c917fda83215": {
+      "id": "aaa140d3-fb0a-45b8-b09e-c917fda83215",
+      "message": null,
+      "parent": null,
+      "children": [
+        "6274d84b-ba9a-4e02-bac5-d8e0d96fde97"
+      ]
+    },
+    "6274d84b-ba9a-4e02-bac5-d8e0d96fde97": {
+      "id": "6274d84b-ba9a-4e02-bac5-d8e0d96fde97",
+      "message": {
+        "id": "6274d84b-ba9a-4e02-bac5-d8e0d96fde97",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa140d3-fb0a-45b8-b09e-c917fda83215",
+      "children": [
+        "e0b0169c-a27b-4ddf-bfc4-aec138563c1c"
+      ]
+    },
+    "e0b0169c-a27b-4ddf-bfc4-aec138563c1c": {
+      "id": "e0b0169c-a27b-4ddf-bfc4-aec138563c1c",
+      "message": {
+        "id": "e0b0169c-a27b-4ddf-bfc4-aec138563c1c",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125843.428751,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91554cb7af20d5e3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6274d84b-ba9a-4e02-bac5-d8e0d96fde97",
+      "children": [
+        "fb3efaef-762e-4300-af05-37dc4196c3d5"
+      ]
+    },
+    "fb3efaef-762e-4300-af05-37dc4196c3d5": {
+      "id": "fb3efaef-762e-4300-af05-37dc4196c3d5",
+      "message": {
+        "id": "fb3efaef-762e-4300-af05-37dc4196c3d5",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125845.522537,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the task. Please provide the name or acronym of the first archaeology or historical studies-related software tool for which you need research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "e0b0169c-a27b-4ddf-bfc4-aec138563c1c",
+          "request_id": "91554cb7af20d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e0b0169c-a27b-4ddf-bfc4-aec138563c1c",
+      "children": [
+        "d9dba2b5-6b93-4800-b28f-2364c7f169f2"
+      ]
+    },
+    "d9dba2b5-6b93-4800-b28f-2364c7f169f2": {
+      "id": "d9dba2b5-6b93-4800-b28f-2364c7f169f2",
+      "message": {
+        "id": "d9dba2b5-6b93-4800-b28f-2364c7f169f2",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740125845.52262,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "fb3efaef-762e-4300-af05-37dc4196c3d5",
+          "request_id": "91554cb7af20d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fb3efaef-762e-4300-af05-37dc4196c3d5",
+      "children": [
+        "8b96df5b-647f-483a-9332-61fb4cdd0727"
+      ]
+    },
+    "8b96df5b-647f-483a-9332-61fb4cdd0727": {
+      "id": "8b96df5b-647f-483a-9332-61fb4cdd0727",
+      "message": {
+        "id": "8b96df5b-647f-483a-9332-61fb4cdd0727",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125850.087675,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Bchron"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91554ce07a40d5e3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d9dba2b5-6b93-4800-b28f-2364c7f169f2",
+      "children": [
+        "c1725ef7-4c5d-4767-a9d2-c1c23464c805"
+      ]
+    },
+    "c1725ef7-4c5d-4767-a9d2-c1c23464c805": {
+      "id": "c1725ef7-4c5d-4767-a9d2-c1c23464c805",
+      "message": {
+        "id": "c1725ef7-4c5d-4767-a9d2-c1c23464c805",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125862.635978,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Got it! I will conduct a systematic and thorough search for mentions of the software tool **Bchron** from 1995 onwards, adhering strictly to your data collection rules. This includes looking for references in scholarly literature, version control repositories, blog posts, about pages, and other valid sources. For each source, I will document the tool name, year, source, URL, and any relevant AI notes about data quality or provenance concerns. \n\nI will carefully review each page of search results and ensure accuracy, taking extra time as needed. I'll update you once I have compiled the comprehensive CSV of evidence."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8b96df5b-647f-483a-9332-61fb4cdd0727",
+          "request_id": "91554ce07a40d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8b96df5b-647f-483a-9332-61fb4cdd0727",
+      "children": [
+        "eef174b6-c103-4d28-b66b-7f36ef8c615d"
+      ]
+    },
+    "eef174b6-c103-4d28-b66b-7f36ef8c615d": {
+      "id": "eef174b6-c103-4d28-b66b-7f36ef8c615d",
+      "message": {
+        "id": "eef174b6-c103-4d28-b66b-7f36ef8c615d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125862.636067,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Got it! I will conduct a systematic and thorough search for mentions of the software tool **Bchron** from 1995 onwards, adhering strictly to your data collection rules. This includes looking for references in scholarly literature, version control repositories, blog posts, about pages, and other valid sources. For each source, I will document the tool name, year, source, URL, and any relevant AI notes about data quality or provenance concerns. \\n\\nI will carefully review each page of search results and ensure accuracy, taking extra time as needed. I'll update you once I have compiled the comprehensive CSV of evidence.\",\"title\":\"Comprehensive Research on Bchron\",\"prompt\":\"Conduct a thorough search for mentions of the software tool **Bchron**, an archaeology and historical studies-related tool, from 1995 onwards. \\n\\nFor each mention found, document the following fields in a well-formatted quoted CSV:\\n- **Tool**: \\\"Bchron\\\"\\n- **Year**: The year associated with the mention (from publication, commit history, or other verifiable source), or \\\"n.d.\\\" if no date is available.\\n- **Source**: Citation or (Domain + Page Title) of the source.\\n- **URL**: The URL of the source.\\n- **AI Notes**: Any concerns or uncertainties about data provenance or quality.\\n\\n**Research Methodology:**\\n1. **Comprehensive Search:** Explore all available sources, including scholarly papers, software repositories, blog posts, and official websites.\\n2. **Yearly Systematic Expansion:** If a year is found, systematically check adjacent years (+/-1 year) for more mentions.\\n3. **No Extrapolation:** Do not infer dates\u2014only document those explicitly stated in sources.\\n4. **Multiple Mentions:** If Bchron appears in multiple sources, include each as a separate entry.\\n\\nEnsure the accuracy of all citations and URLs, reviewing each search page in depth. Provide the final data as a well-formed CSV inside a fenced code block. Take as much time as necessary to ensure the research is methodologically sound and evidence-based.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "c1725ef7-4c5d-4767-a9d2-c1c23464c805",
+          "request_id": "91554ce07a40d5e3-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "c1725ef7-4c5d-4767-a9d2-c1c23464c805",
+      "children": [
+        "e8da7d35-94e4-48de-90a0-748be9b35396"
+      ]
+    },
+    "e8da7d35-94e4-48de-90a0-748be9b35396": {
+      "id": "e8da7d35-94e4-48de-90a0-748be9b35396",
+      "message": {
+        "id": "e8da7d35-94e4-48de-90a0-748be9b35396",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740125888.660847,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on Bchron",
+          "async_task_prompt": "Conduct a thorough search for mentions of the software tool **Bchron**, an archaeology and historical studies-related tool, from 1995 onwards. \n\nFor each mention found, document the following fields in a well-formatted quoted CSV:\n- **Tool**: \"Bchron\"\n- **Year**: The year associated with the mention (from publication, commit history, or other verifiable source), or \"n.d.\" if no date is available.\n- **Source**: Citation or (Domain + Page Title) of the source.\n- **URL**: The URL of the source.\n- **AI Notes**: Any concerns or uncertainties about data provenance or quality.\n\n**Research Methodology:**\n1. **Comprehensive Search:** Explore all available sources, including scholarly papers, software repositories, blog posts, and official websites.\n2. **Yearly Systematic Expansion:** If a year is found, systematically check adjacent years (+/-1 year) for more mentions.\n3. **No Extrapolation:** Do not infer dates\u2014only document those explicitly stated in sources.\n4. **Multiple Mentions:** If Bchron appears in multiple sources, include each as a separate entry.\n\nEnsure the accuracy of all citations and URLs, reviewing each search page in depth. Provide the final data as a well-formed CSV inside a fenced code block. Take as much time as necessary to ensure the research is methodologically sound and evidence-based.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on Bchron",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "eef174b6-c103-4d28-b66b-7f36ef8c615d",
+          "request_id": "91554ce07a40d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eef174b6-c103-4d28-b66b-7f36ef8c615d",
+      "children": [
+        "98c660f6-0379-429a-a2fe-b80b3e383dec"
+      ]
+    },
+    "98c660f6-0379-429a-a2fe-b80b3e383dec": {
+      "id": "98c660f6-0379-429a-a2fe-b80b3e383dec",
+      "message": {
+        "id": "98c660f6-0379-429a-a2fe-b80b3e383dec",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740126319.478436,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Bchron\",\"2008\",\"cran.r-project.org \u2013 Bchron archive (first CRAN release on 2008-02-21)\",\"https://cran.r-project.org/src/contrib/Archive/Bchron/\",\"Initial CRAN package release date (official source; reliable).\"\n\"Bchron\",\"2008\",\"Wiley (JRSS Series C, 57(4), Haslett & Parnell 2008)\",\"https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1467-9876.2008.00623.x\",\"Peer-reviewed journal article introducing Bchron\u2019s methodology (high quality source).\"\n\"Bchron\",\"2008\",\"mural.maynoothuniversity.ie \u2013 A flexible approach to assessing synchroneity... (Parnell et al. 2008, Quat. Sci. Rev.)\",\"https://mural.maynoothuniversity.ie/id/eprint/19125/\",\"Peer-reviewed article in Quaternary Science Reviews (trusted academic source).\"\n\"Bchron\",\"2011\",\"mural.maynoothuniversity.ie \u2013 A review of statistical chronology models... (Parnell, Buck & Doan 2011)\",\"https://mural.maynoothuniversity.ie/id/eprint/19122/\",\"Peer-reviewed article (Quaternary Science Reviews) reviewing chronology models, includes Bchron (reliable source).\"\n\"Bchron\",\"2015\",\"historicengland.org.uk \u2013 Radiocarbon Dating and Chronological Modelling: References (citing Parnell & Gehrels 2015)\",\"https://historicengland.org.uk/images-books/publications/radiocarbon-dating-chronological-modelling/references/\",\"Peer-reviewed book chapter (Handbook of Sea-Level Research, 2015) \u2013 authoritative source, reference verified via Historic England.\"\n\"Bchron\",\"2017\",\"mural.maynoothuniversity.ie \u2013 Reconstructing the accumulation history... (Wright et al. 2017, Quat. Geochronology)\",\"https://mural.maynoothuniversity.ie/id/eprint/10266/\",\"Peer-reviewed journal article comparing age-depth models (high-quality academic source).\"\n\"Bchron\",\"2017\",\"cp.copernicus.org \u2013 Age Models, Chronologies, and Databases Workshop (Grimm et al. 2017 report)\",\"https://cp.copernicus.org/preprints/cp-2017-31/\",\"Workshop report (community-reviewed in Climate of the Past Discussions); credible source, though not a formal journal article.\"\n\"Bchron\",\"2018\",\"dewey.dunnington.ca \u2013 Comparing approaches to age-depth modelling in R (blog post, 2018)\",\"https://dewey.dunnington.ca/post/2018/comparing-approaches-to-age-depth-modelling-in-r/\",\"Personal blog post by an R developer; informative but not peer-reviewed (useful for context, content appears accurate).\"\n\"Bchron\",\"2022\",\"gchron.copernicus.org \u2013 Improving age\u2013depth relationships by using the LANDO model ensemble (Pfalz et al. 2022)\",\"https://gchron.copernicus.org/articles/4/269/2022/\",\"Peer-reviewed open-access article in Geochronology (demonstrates recent use of Bchron; trustworthy source).\"\n\"Bchron\",\"n.d.\",\"open-archaeo.info \u2013 Bchron (archaeological software listing)\",\"https://open-archaeo.info/post/bchron/\",\"Community-maintained listing of archaeological software; no date provided on page (data provenance is community curation).\" \n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b836c07b288191b00b4e3debc8b833",
+          "async_task_title": "Comprehensive Research on Bchron"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "e8da7d35-94e4-48de-90a0-748be9b35396",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "98c660f6-0379-429a-a2fe-b80b3e383dec",
+  "plugin_ids": null,
+  "conversation_id": "67b83693-48d8-8004-a740-8d3ccbe779e4",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://open-archaeo.info/post/bchron/",
+    "https://dewey.dunnington.ca/post/2018/comparing-approaches-to-age-depth-modelling-in-r/",
+    "https://mural.maynoothuniversity.ie/id/eprint/19125/",
+    "https://mural.maynoothuniversity.ie/id/eprint/19122/",
+    "https://historicengland.org.uk/images-books/publications/radiocarbon-dating-chronological-modelling/references/",
+    "https://mural.maynoothuniversity.ie/id/eprint/10266/",
+    "https://gchron.copernicus.org/articles/4/269/2022/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b83693-48d8-8004-a740-8d3ccbe779e4"
+}

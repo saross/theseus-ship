@@ -1,0 +1,884 @@
+{
+  "title": "v5-archeoViz",
+  "create_time": 1740121820.09345,
+  "update_time": 1740122357.069958,
+  "mapping": {
+    "aaa15420-cd11-4cf4-be82-26a151549b16": {
+      "id": "aaa15420-cd11-4cf4-be82-26a151549b16",
+      "message": null,
+      "parent": null,
+      "children": [
+        "f8e98f87-ce46-46fd-a367-b9191d58cb05"
+      ]
+    },
+    "f8e98f87-ce46-46fd-a367-b9191d58cb05": {
+      "id": "f8e98f87-ce46-46fd-a367-b9191d58cb05",
+      "message": {
+        "id": "f8e98f87-ce46-46fd-a367-b9191d58cb05",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa15420-cd11-4cf4-be82-26a151549b16",
+      "children": [
+        "fbfd22aa-87f2-434b-8500-bcde86ab52d6"
+      ]
+    },
+    "fbfd22aa-87f2-434b-8500-bcde86ab52d6": {
+      "id": "fbfd22aa-87f2-434b-8500-bcde86ab52d6",
+      "message": {
+        "id": "fbfd22aa-87f2-434b-8500-bcde86ab52d6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121820.095264,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9154ea7dca7ae7d0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f8e98f87-ce46-46fd-a367-b9191d58cb05",
+      "children": [
+        "742b9eb2-177d-4755-86f0-ef410dae8fba"
+      ]
+    },
+    "742b9eb2-177d-4755-86f0-ef410dae8fba": {
+      "id": "742b9eb2-177d-4755-86f0-ef410dae8fba",
+      "message": {
+        "id": "742b9eb2-177d-4755-86f0-ef410dae8fba",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121822.336588,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and rigor required for this research. Please provide the first archaeology or historical studies-related software tool name or acronym, and I will begin the research systematically."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "fbfd22aa-87f2-434b-8500-bcde86ab52d6",
+          "request_id": "9154ea7dca7ae7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fbfd22aa-87f2-434b-8500-bcde86ab52d6",
+      "children": [
+        "0d15441a-5d88-4541-82a6-1f342245cc10"
+      ]
+    },
+    "0d15441a-5d88-4541-82a6-1f342245cc10": {
+      "id": "0d15441a-5d88-4541-82a6-1f342245cc10",
+      "message": {
+        "id": "0d15441a-5d88-4541-82a6-1f342245cc10",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740121822.33668,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "742b9eb2-177d-4755-86f0-ef410dae8fba",
+          "request_id": "9154ea7dca7ae7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "742b9eb2-177d-4755-86f0-ef410dae8fba",
+      "children": [
+        "aa4d2fb6-23ec-41ab-a026-b2516110f854"
+      ]
+    },
+    "aa4d2fb6-23ec-41ab-a026-b2516110f854": {
+      "id": "aa4d2fb6-23ec-41ab-a026-b2516110f854",
+      "message": {
+        "id": "aa4d2fb6-23ec-41ab-a026-b2516110f854",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121826.4721,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "archeoViz"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9154eaa4ce45e7d0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0d15441a-5d88-4541-82a6-1f342245cc10",
+      "children": [
+        "e97c5018-4245-46d9-8604-0088b5c0c2ee"
+      ]
+    },
+    "e97c5018-4245-46d9-8604-0088b5c0c2ee": {
+      "id": "e97c5018-4245-46d9-8604-0088b5c0c2ee",
+      "message": {
+        "id": "e97c5018-4245-46d9-8604-0088b5c0c2ee",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121838.63484,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a comprehensive search for mentions of the software tool \"archeoViz\" from 1995 onwards. This includes finding publication dates, citations, URLs, and any concerns regarding the data provenance.\n\nI will provide a well-formed CSV containing all sources found, with each source recorded separately per year. I will explore official repositories, scholarly literature, blogs, and other mentions systematically, ensuring accuracy and reliability.\n\nI'll update you once I have gathered the relevant evidence."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "aa4d2fb6-23ec-41ab-a026-b2516110f854",
+          "request_id": "9154eaa4ce45e7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aa4d2fb6-23ec-41ab-a026-b2516110f854",
+      "children": [
+        "6fa4fa6c-dd82-4784-a194-edc2e27fe8a4"
+      ]
+    },
+    "6fa4fa6c-dd82-4784-a194-edc2e27fe8a4": {
+      "id": "6fa4fa6c-dd82-4784-a194-edc2e27fe8a4",
+      "message": {
+        "id": "6fa4fa6c-dd82-4784-a194-edc2e27fe8a4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121838.634976,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a comprehensive search for mentions of the software tool \\\"archeoViz\\\" from 1995 onwards. This includes finding publication dates, citations, URLs, and any concerns regarding the data provenance.\\n\\nI will provide a well-formed CSV containing all sources found, with each source recorded separately per year. I will explore official repositories, scholarly literature, blogs, and other mentions systematically, ensuring accuracy and reliability.\\n\\nI'll update you once I have gathered the relevant evidence.\",\"title\":\"Evidence Collection for archeoViz\",\"prompt\":\"Conduct a thorough and systematic search for the archaeology-related software tool \\\"archeoViz.\\\" Gather and record all mentions of archeoViz from 1995 onwards, ensuring one mention per source found. The results should be formatted as a quoted CSV with the following columns:\\n\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n\\nGuidelines:\\n- Search all available sources, including:\\n  * Scholarly literature\\n  * Published version control repositories (if applicable)\\n  * Blog posts, official pages, and about sections\\n  * Other relevant mentions\\n- Record one line per each found source, ensuring the year is directly from the publication or page (do not infer dates).\\n- Explore years systematically, expanding the search by \u00b11 year for each identified date.\\n- Indicate \\\"n.d.\\\" for undated sources.\\n- Maintain accuracy and integrity, noting any uncertainties or data provenance concerns in \\\"AI Notes.\\\"\\n\\nExpected Output:\\nA CSV listing all identified sources, systematically compiled and formatted, ensuring high reliability and careful verification of data.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "e97c5018-4245-46d9-8604-0088b5c0c2ee",
+          "request_id": "9154eaa4ce45e7d0-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "e97c5018-4245-46d9-8604-0088b5c0c2ee",
+      "children": [
+        "e176d930-0d63-4c78-b49b-f2fbc3851f82"
+      ]
+    },
+    "e176d930-0d63-4c78-b49b-f2fbc3851f82": {
+      "id": "e176d930-0d63-4c78-b49b-f2fbc3851f82",
+      "message": {
+        "id": "e176d930-0d63-4c78-b49b-f2fbc3851f82",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740121843.303039,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for archeoViz",
+          "async_task_prompt": "Conduct a thorough and systematic search for the archaeology-related software tool \"archeoViz.\" Gather and record all mentions of archeoViz from 1995 onwards, ensuring one mention per source found. The results should be formatted as a quoted CSV with the following columns:\n\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\nGuidelines:\n- Search all available sources, including:\n  * Scholarly literature\n  * Published version control repositories (if applicable)\n  * Blog posts, official pages, and about sections\n  * Other relevant mentions\n- Record one line per each found source, ensuring the year is directly from the publication or page (do not infer dates).\n- Explore years systematically, expanding the search by \u00b11 year for each identified date.\n- Indicate \"n.d.\" for undated sources.\n- Maintain accuracy and integrity, noting any uncertainties or data provenance concerns in \"AI Notes.\"\n\nExpected Output:\nA CSV listing all identified sources, systematically compiled and formatted, ensuring high reliability and careful verification of data.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for archeoViz",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "6fa4fa6c-dd82-4784-a194-edc2e27fe8a4",
+          "request_id": "9154eaa4ce45e7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6fa4fa6c-dd82-4784-a194-edc2e27fe8a4",
+      "children": [
+        "aae42bc9-d71c-45af-aca3-4084a14d5516"
+      ]
+    },
+    "aae42bc9-d71c-45af-aca3-4084a14d5516": {
+      "id": "aae42bc9-d71c-45af-aca3-4084a14d5516",
+      "message": {
+        "id": "aae42bc9-d71c-45af-aca3-4084a14d5516",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740122290.650719,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"archeoViz\",\"2023\",\"Journal of Open Source Software\",\"https://doi.org/10.21105/joss.05811\",\"Peer-reviewed article introducing **archeoViz** as an R package for archaeological spatial data visualization\u301028\u2020L32-L40\u3011.\"\n\"archeoViz\",\"2023\",\"Bulletin de la Soci\u00e9t\u00e9 pr\u00e9historique fran\u00e7aise\",\"https://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2023_1_2e_partie_Correspondance_PLUTNIAK.pdf\",\"French-language correspondence in *BSPF* (vol. 120, no.1) presenting **archeoViz** and its web portal\u301029\u2020L5-L12\u3011.\"\n\"archeoViz\",\"2023\",\"HAL Open Science (Portal description)\",\"https://hal.science/hal-04156271\",\"HAL archive record for the **archeoViz Portal**, a web catalogue indexing archeoViz instances\u301010\u2020L7-L9\u3011 (authors: Plutniak, Vignoles, Caron-Laviolette; 2023).\"\n\"archeoViz\",\"2023\",\"Zenodo (v1.0.0 Release)\",\"https://doi.org/10.5281/zenodo.7682227\",\"Zenodo software release **v1.0.0** for archeoViz (published Feb 27, 2023)\u301035\u2020L1-L4\u3011, marking its first public version.\"\n\"archeoViz\",\"2023\",\"Zenodo (v1.3.3 Release)\",\"https://doi.org/10.5281/zenodo.10200892\",\"Zenodo record for **archeoViz v1.3.3** (published Nov 23, 2023)\u301027\u2020L15-L23\u3011, updated release with code archive.\"\n\"archeoViz\",\"2024\",\"Zenodo (v1.3.5 Release)\",\"https://doi.org/10.5281/zenodo.12200494\",\"Zenodo record for **archeoViz v1.3.5** (published June 21, 2024)\u301033\u2020L15-L23\u3011, the latest archived version of the software.\"\n\"archeoViz\",\"2024\",\"CRAN Package Repository\",\"https://cran.r-project.org/package=archeoViz\",\"CRAN listing for **archeoViz** (v1.3.5) showing official publication on 2024-06-17\u301019\u2020L21-L27\u3011 and package details.\"\n\"archeoViz\",\"2023\",\"archeoViz Project Blog (Hypotheses)\",\"https://archeoviz.hypotheses.org/449\",\"Blog post *\u201cAudiences and Uses of the archeoViz web application for Spatial Archaeological Data\u201d* outlining the tool\u2019s target users and purposes\u301023\u2020L103-L108\u3011.\"\n\"archeoViz\",\"2024\",\"archeoViz Project Blog (Hypotheses)\",\"https://archeoviz.hypotheses.org/1605\",\"Announcement post reporting that **archeoViz** received a 2024 Open Science Free Software Award, with 60+ instances deployed worldwide\u301048\u2020L104-L112\u3011.\"\n\"archeoViz\",\"2024\",\"archeoViz Project Blog (Hypotheses)\",\"https://archeoviz.hypotheses.org/1620\",\"Official *\u201cWelcome to archeoViz!\u201d* introduction on the project blog, presenting archeoViz as an R Shiny application for interactive archaeological data visualization\u301049\u2020L1-L4\u3011.\"\n\"archeoViz\",\"n.d.\",\"Open-Archaeo Catalog\",\"https://open-archaeo.info/post/archeoviz/\",\"Entry on the Open-Archaeo website describing **archeoViz** as a packaged R Shiny app for visualizing and exploring archaeological spatial data\u301014\u2020L93-L98\u3011 (no date provided).\"\n\"archeoViz\",\"2024\",\"Ouvrir la Science (French Open Science)\",\"https://www.ouvrirlascience.fr/presentation-of-the-2024-open-science-free-research-software-awards/\",\"News article announcing **archeoViz** as a \u2018Promising\u2019 awardee in the Open Science Software Awards 2024, noting development since 2022 and dozens of instances deployed\u30107\u2020L151-L157\u3011.\"\n\"archeoViz\",\"2024\",\"re3data Registry Entry\",\"https://www.re3data.org/repository/r3d100014515\",\"re3data registry entry for the **archeoViz Portal**, describing it as an \u201cinteractive catalogue\u201d of archeoViz instances (66 datasets indexed as of 2024)\u301012\u2020L50-L58\u3011.\"\n\"archeoViz\",\"n.d.\",\"ASU SHESC Project Page\",\"https://shesc.asu.edu/research/projects/archeoviz\",\"Arizona State University project page highlighting a partnership that connects tDAR GIS datasets with the **archeoViz** visualization tool (developed by S\u00e9bastien Plutniak)\u301036\u2020L21-L28\u3011.\"\n\"archeoViz\",\"2023\",\"Peer Community Journal (SEAHORS paper)\",\"https://doi.org/10.24072/pcjournal.289\",\"Independent research article (*SEAHORS*, 2023) cites **archeoViz** (R package v0.2.1, 2023) as related software for archaeological data visualization\u301042\u2020L1-L4\u3011.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 248,
+              "end_ix": 260,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Journal of Open Source Software: archeoViz: an R package for the Visualisation, Exploration, and Web Communication of Archaeological Spatial Data",
+                "url": "https://joss.theoj.org/papers/10.21105/joss.05811#:~:text=Plutniak%2C%20S,05811",
+                "text": "Plutniak, S., (2023). archeoViz: an R package for the Visualisation, Exploration, and Web Communication of Archaeological Spatial Data. Journal of Open Source Software, 8(92), 5811, https://doi.org/10.21105/joss.05811",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 28,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 32,
+                  "end_line_num": 40
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 541,
+              "end_ix": 552,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2023_1_2e_partie_Correspondance_PLUTNIAK.pdf#:~:text=Visualiser%20et%20explorer%20la%20distribution,de%20cette%20appli%02cation%20r%C3%A9side%2C%20d%E2%80%99une",
+                "text": "Visualiser et explorer la distribution spatiale du mobilier arch\u00e9ologique : l'application archeoViz et son portail web S\u00e9bastien Plutniak Introduction archeoViz est une application permettant l\u2019explora\u0002tion visuelle interactive de donn\u00e9es arch\u00e9ologiques rela\u0002tives au mobilier d\u00e9couvert lors de fouilles, ainsi que leur communication sur le web. La sp\u00e9cificit\u00e9 de cette appli\u0002cation r\u00e9side, d\u2019une",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 29,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 5,
+                  "end_line_num": 12
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 743,
+              "end_ix": 753,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": " The archeoViz Portal: Dissemination of Spatial Archaeological Datasets  - Archive ouverte HAL",
+                "url": "https://hal.science/hal-04156271#:~:text=https%3A%2F%2Fanalytics.huma,related%20to%20specific%20archaeological%20datasets",
+                "text": "https://analytics.huma-num.fr/archeoviz/home/ The archeoViz Portal is a web portal intended to reference the existing instances of the archeoViz application related to specific archaeological datasets.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 10,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 7,
+                  "end_line_num": 9
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 970,
+              "end_ix": 980,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeoViz. Visualisation, Exploration, and Web Communication of Archaeological Excavation Data",
+                "url": "https://zenodo.org/record/7682227#:~:text=Published%20February%2027%2C%202023%20,0",
+                "text": "Published February 27, 2023  | Version v1.0.0",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 35,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1168,
+              "end_ix": 1180,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeoViz: an R package for the Visualisation, Exploration, and Web Communication of Archaeological Spatial Data",
+                "url": "https://doi.org/10.5281/zenodo.10200892#:~:text=There%20is%20a%20newer%20version,of%20the%20record%20available",
+                "text": "There is a newer version of the record available.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 27,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 15,
+                  "end_line_num": 23
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1370,
+              "end_ix": 1382,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeoViz. Visualisation, Exploration, and Web Communication of Archaeological Spatial Data",
+                "url": "https://doi.org/10.5281/zenodo.12200494#:~:text=Published%20June%2021%2C%202024%20,5",
+                "text": "Published June 21, 2024  | Version v1.3.5",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 33,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 15,
+                  "end_line_num": 23
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1605,
+              "end_ix": 1617,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: Package archeoViz",
+                "url": "https://cran.r-project.org/package=archeoViz#:~:text=Published%3A%202024,sebastien.plutniak%20at%20posteo.net",
+                "text": "Published: 2024-06-17 DOI: 10.32614/CRAN.package.archeoViz Author: Sebastien Plutniak [Image 0: ORCID iD] [aut, cre], Renata Araujo [Image 1: ORCID iD] [ctb], Laura Coltofean [Image 2: ORCID iD] [ctb], Nicolas Delsol [Image 3: ORCID iD] [ctb], Sara Giardino [Image 4: ORCID iD] [ctb], Julian Laabs [Image 5: ORCID iD] [ctb] Maintainer: Sebastien Plutniak <sebastien.plutniak at posteo.net>",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 19,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 21,
+                  "end_line_num": 27
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1881,
+              "end_ix": 1895,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Audiences and Uses of the archeoViz web application for Spatial Archaeological Data \u2013 archeoViz. Data visualization in archaeology",
+                "url": "https://archeoviz.hypotheses.org/449#:~:text=The%20archeoViz%20application%20has%20been,public%20on%20the%20other%20hand",
+                "text": "The archeoViz application has been developed for multiple uses and audiences, including the needs of scientists on the one hand, and of the general public on the other hand.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 23,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 103,
+                  "end_line_num": 108
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2130,
+              "end_ix": 2144,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeoViz receives an Open Science Free Software Award by the French Ministry of Research \u2013 archeoViz. Data visualization in archaeology",
+                "url": "https://archeoviz.hypotheses.org/1605#:~:text=On%20November%2C%2026th%2C%202024%2C%20the,open%20science%20practices%20in%20archaeology",
+                "text": "On November, 26th, 2024, the French Committee for Open Science (Ministry of Research) awarded archeoViz with the Open Science Free Software Award (see the anouncement). This prize is intended to award not only a research software, but all its community, including users, developers, maintainers. This is a great achievement for the archeoViz community, and a significant support to our initiative in favor of fostering open science practices in archaeology.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 48,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 104,
+                  "end_line_num": 112
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2410,
+              "end_ix": 2420,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Welcome to archeoViz! \u2013 archeoViz. Data visualization in archaeology",
+                "url": "https://archeoviz.hypotheses.org/1620#:~:text=archeoViz%20is%20an%20R%20Shiny,their%20refitting%20relationships%2C%20computes%20basic",
+                "text": "archeoViz is an R Shiny application for the visualisation, interactive exploration, and web communication of archaeological spatial data. It generates interactive 3D plots, 2D cross sections and 2D maps of archaeological objects and their refitting relationships, computes basic",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 49,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2652,
+              "end_ix": 2664,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeoViz \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/post/archeoviz/#:~:text=diagrams%20and%20visualizations%20%20,76%20site%20mapping",
+                "text": "diagrams and visualizations   76 site mapping",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 14,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 93,
+                  "end_line_num": 98
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3017,
+              "end_ix": 3030,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n        Ouvrir la Science - Presentation of the 2024 Open Science Free Research Software Awards\n    ",
+                "url": "https://www.ouvrirlascience.fr/presentation-of-the-2024-open-science-free-research-software-awards/#:~:text=ArcheoViz%20can%20be%20used%20for,and%20dissemination%20of%20analysis%20results",
+                "text": "ArcheoViz can be used for the representation and spatial analysis of archaeological data and for training archaeology researchers in spatial analysis. It has been in development since 2022 but 61 instances of the platform have already been rolled out. ArcheoViz has been translated into 7 languages which testifies to its wide distribution outside France. Extra features have been integrated to facilitate and promote the reproducibility and dissemination of analysis results.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 7,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 151,
+                  "end_line_num": 157
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3280,
+              "end_ix": 3292,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeoViz Portal | re3data.org",
+                "url": "https://www.re3data.org/repository/r3d100014515#:~:text=Description",
+                "text": "Description",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 12,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 50,
+                  "end_line_num": 58
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3564,
+              "end_ix": 3576,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeoViz | School of Human Evolution and Social Change",
+                "url": "https://shesc.asu.edu/research/projects/archeoviz#:~:text=archeoViz%2C%20developed%20by%20S%C3%A9bastien%20Plutniak%2C,communicate%20it%20on%20the%20web",
+                "text": "archeoViz, developed by S\u00e9bastien Plutniak, is designed for spatial data in archaeology generated during excavations and surveys. It allows to visualize a dataset, interactively explore it, and quickly deploy and communicate it on the web.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 36,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 21,
+                  "end_line_num": 28
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3830,
+              "end_ix": 3840,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n  SEAHORS: Spatial Exploration of ArcHaeological Objects in R Shiny\n",
+                "url": "https://doi.org/10.24072/pcjournal.289#:~:text=,project.org%2Fweb%2Fpackages%2FarcheoViz%2Findex.html.%29%20%7C%20%20DOI",
+                "text": "[14] Plutniak, S. archeoViz. Visualisation, Exploration, and Web Communication of Archaeological Excavation Data, R package v0.2.1, 2023 (https://cran.r- project.org/web/packages/archeoViz/index.html.) |  DOI",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 42,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301028\u2020L32-L40\u3011",
+              "start_idx": 248,
+              "end_idx": 260,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Journal of Open Source Software: archeoViz: an R package for the Visualisation, Exploration, and Web Communication of Archaeological Spatial Data",
+              "url": "https://joss.theoj.org/papers/10.21105/joss.05811#:~:text=Plutniak%2C%20S,05811",
+              "pub_date": null,
+              "snippet": "Plutniak, S., (2023). archeoViz: an R package for the Visualisation, Exploration, and Web Communication of Archaeological Spatial Data. Journal of Open Source Software, 8(92), 5811, https://doi.org/10.21105/joss.05811",
+              "attribution": "joss.theoj.org"
+            },
+            {
+              "matched_text": "\u301029\u2020L5-L12\u3011",
+              "start_idx": 541,
+              "end_idx": 552,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2023_1_2e_partie_Correspondance_PLUTNIAK.pdf#:~:text=Visualiser%20et%20explorer%20la%20distribution,de%20cette%20appli%02cation%20r%C3%A9side%2C%20d%E2%80%99une",
+              "pub_date": null,
+              "snippet": "Visualiser et explorer la distribution spatiale du mobilier arch\u00e9ologique : l'application archeoViz et son portail web S\u00e9bastien Plutniak Introduction archeoViz est une application permettant l\u2019explora\u0002tion visuelle interactive de donn\u00e9es arch\u00e9ologiques rela\u0002tives au mobilier d\u00e9couvert lors de fouilles, ainsi que leur communication sur le web. La sp\u00e9cificit\u00e9 de cette appli\u0002cation r\u00e9side, d\u2019une",
+              "attribution": "prehistoire.org"
+            },
+            {
+              "matched_text": "\u301010\u2020L7-L9\u3011",
+              "start_idx": 743,
+              "end_idx": 753,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": " The archeoViz Portal: Dissemination of Spatial Archaeological Datasets  - Archive ouverte HAL",
+              "url": "https://hal.science/hal-04156271#:~:text=https%3A%2F%2Fanalytics.huma,related%20to%20specific%20archaeological%20datasets",
+              "pub_date": null,
+              "snippet": "https://analytics.huma-num.fr/archeoviz/home/ The archeoViz Portal is a web portal intended to reference the existing instances of the archeoViz application related to specific archaeological datasets.",
+              "attribution": "hal.science"
+            },
+            {
+              "matched_text": "\u301035\u2020L1-L4\u3011",
+              "start_idx": 970,
+              "end_idx": 980,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeoViz. Visualisation, Exploration, and Web Communication of Archaeological Excavation Data",
+              "url": "https://zenodo.org/record/7682227#:~:text=Published%20February%2027%2C%202023%20,0",
+              "pub_date": null,
+              "snippet": "Published February 27, 2023  | Version v1.0.0",
+              "attribution": "zenodo.org"
+            },
+            {
+              "matched_text": "\u301027\u2020L15-L23\u3011",
+              "start_idx": 1168,
+              "end_idx": 1180,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeoViz: an R package for the Visualisation, Exploration, and Web Communication of Archaeological Spatial Data",
+              "url": "https://doi.org/10.5281/zenodo.10200892#:~:text=There%20is%20a%20newer%20version,of%20the%20record%20available",
+              "pub_date": null,
+              "snippet": "There is a newer version of the record available.",
+              "attribution": "doi.org"
+            },
+            {
+              "matched_text": "\u301033\u2020L15-L23\u3011",
+              "start_idx": 1370,
+              "end_idx": 1382,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeoViz. Visualisation, Exploration, and Web Communication of Archaeological Spatial Data",
+              "url": "https://doi.org/10.5281/zenodo.12200494#:~:text=Published%20June%2021%2C%202024%20,5",
+              "pub_date": null,
+              "snippet": "Published June 21, 2024  | Version v1.3.5",
+              "attribution": "doi.org"
+            },
+            {
+              "matched_text": "\u301019\u2020L21-L27\u3011",
+              "start_idx": 1605,
+              "end_idx": 1617,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: Package archeoViz",
+              "url": "https://cran.r-project.org/package=archeoViz#:~:text=Published%3A%202024,sebastien.plutniak%20at%20posteo.net",
+              "pub_date": null,
+              "snippet": "Published: 2024-06-17 DOI: 10.32614/CRAN.package.archeoViz Author: Sebastien Plutniak [Image 0: ORCID iD] [aut, cre], Renata Araujo [Image 1: ORCID iD] [ctb], Laura Coltofean [Image 2: ORCID iD] [ctb], Nicolas Delsol [Image 3: ORCID iD] [ctb], Sara Giardino [Image 4: ORCID iD] [ctb], Julian Laabs [Image 5: ORCID iD] [ctb] Maintainer: Sebastien Plutniak <sebastien.plutniak at posteo.net>",
+              "attribution": "cran.r-project.org"
+            },
+            {
+              "matched_text": "\u301023\u2020L103-L108\u3011",
+              "start_idx": 1881,
+              "end_idx": 1895,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Audiences and Uses of the archeoViz web application for Spatial Archaeological Data \u2013 archeoViz. Data visualization in archaeology",
+              "url": "https://archeoviz.hypotheses.org/449#:~:text=The%20archeoViz%20application%20has%20been,public%20on%20the%20other%20hand",
+              "pub_date": null,
+              "snippet": "The archeoViz application has been developed for multiple uses and audiences, including the needs of scientists on the one hand, and of the general public on the other hand.",
+              "attribution": "archeoviz.hypotheses.org"
+            },
+            {
+              "matched_text": "\u301048\u2020L104-L112\u3011",
+              "start_idx": 2130,
+              "end_idx": 2144,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeoViz receives an Open Science Free Software Award by the French Ministry of Research \u2013 archeoViz. Data visualization in archaeology",
+              "url": "https://archeoviz.hypotheses.org/1605#:~:text=On%20November%2C%2026th%2C%202024%2C%20the,open%20science%20practices%20in%20archaeology",
+              "pub_date": null,
+              "snippet": "On November, 26th, 2024, the French Committee for Open Science (Ministry of Research) awarded archeoViz with the Open Science Free Software Award (see the anouncement). This prize is intended to award not only a research software, but all its community, including users, developers, maintainers. This is a great achievement for the archeoViz community, and a significant support to our initiative in favor of fostering open science practices in archaeology.",
+              "attribution": "archeoviz.hypotheses.org"
+            },
+            {
+              "matched_text": "\u301049\u2020L1-L4\u3011",
+              "start_idx": 2410,
+              "end_idx": 2420,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Welcome to archeoViz! \u2013 archeoViz. Data visualization in archaeology",
+              "url": "https://archeoviz.hypotheses.org/1620#:~:text=archeoViz%20is%20an%20R%20Shiny,their%20refitting%20relationships%2C%20computes%20basic",
+              "pub_date": null,
+              "snippet": "archeoViz is an R Shiny application for the visualisation, interactive exploration, and web communication of archaeological spatial data. It generates interactive 3D plots, 2D cross sections and 2D maps of archaeological objects and their refitting relationships, computes basic",
+              "attribution": "archeoviz.hypotheses.org"
+            },
+            {
+              "matched_text": "\u301014\u2020L93-L98\u3011",
+              "start_idx": 2652,
+              "end_idx": 2664,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeoViz \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/post/archeoviz/#:~:text=diagrams%20and%20visualizations%20%20,76%20site%20mapping",
+              "pub_date": null,
+              "snippet": "diagrams and visualizations   76 site mapping",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u30107\u2020L151-L157\u3011",
+              "start_idx": 3017,
+              "end_idx": 3030,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n        Ouvrir la Science - Presentation of the 2024 Open Science Free Research Software Awards\n    ",
+              "url": "https://www.ouvrirlascience.fr/presentation-of-the-2024-open-science-free-research-software-awards/#:~:text=ArcheoViz%20can%20be%20used%20for,and%20dissemination%20of%20analysis%20results",
+              "pub_date": null,
+              "snippet": "ArcheoViz can be used for the representation and spatial analysis of archaeological data and for training archaeology researchers in spatial analysis. It has been in development since 2022 but 61 instances of the platform have already been rolled out. ArcheoViz has been translated into 7 languages which testifies to its wide distribution outside France. Extra features have been integrated to facilitate and promote the reproducibility and dissemination of analysis results.",
+              "attribution": "ouvrirlascience.fr"
+            },
+            {
+              "matched_text": "\u301012\u2020L50-L58\u3011",
+              "start_idx": 3280,
+              "end_idx": 3292,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeoViz Portal | re3data.org",
+              "url": "https://www.re3data.org/repository/r3d100014515#:~:text=Description",
+              "pub_date": null,
+              "snippet": "Description",
+              "attribution": "re3data.org"
+            },
+            {
+              "matched_text": "\u301036\u2020L21-L28\u3011",
+              "start_idx": 3564,
+              "end_idx": 3576,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeoViz | School of Human Evolution and Social Change",
+              "url": "https://shesc.asu.edu/research/projects/archeoviz#:~:text=archeoViz%2C%20developed%20by%20S%C3%A9bastien%20Plutniak%2C,communicate%20it%20on%20the%20web",
+              "pub_date": null,
+              "snippet": "archeoViz, developed by S\u00e9bastien Plutniak, is designed for spatial data in archaeology generated during excavations and surveys. It allows to visualize a dataset, interactively explore it, and quickly deploy and communicate it on the web.",
+              "attribution": "shesc.asu.edu"
+            },
+            {
+              "matched_text": "\u301042\u2020L1-L4\u3011",
+              "start_idx": 3830,
+              "end_idx": 3840,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n  SEAHORS: Spatial Exploration of ArcHaeological Objects in R Shiny\n",
+              "url": "https://doi.org/10.24072/pcjournal.289#:~:text=,project.org%2Fweb%2Fpackages%2FarcheoViz%2Findex.html.%29%20%7C%20%20DOI",
+              "pub_date": null,
+              "snippet": "[14] Plutniak, S. archeoViz. Visualisation, Exploration, and Web Communication of Archaeological Excavation Data, R package v0.2.1, 2023 (https://cran.r- project.org/web/packages/archeoViz/index.html.) |  DOI",
+              "attribution": "doi.org"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b826f326ec8191924ff601ad76a1d3",
+          "async_task_title": "Evidence Collection for archeoViz"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "e176d930-0d63-4c78-b49b-f2fbc3851f82",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "aae42bc9-d71c-45af-aca3-4084a14d5516",
+  "plugin_ids": null,
+  "conversation_id": "67b826db-eff8-8004-9e4e-95d07093d2bf",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://archeoviz.hypotheses.org/1620",
+    "https://open-archaeo.info/post/archeoviz/",
+    "https://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2023_1_2e_partie_Correspondance_PLUTNIAK.pdf",
+    "https://archeoviz.hypotheses.org/1605",
+    "https://shesc.asu.edu/research/projects/archeoviz",
+    "https://www.re3data.org/repository/r3d100014515",
+    "https://archeoviz.hypotheses.org/449",
+    "https://www.ouvrirlascience.fr/presentation-of-the-2024-open-science-free-research-software-awards/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b826db-eff8-8004-9e4e-95d07093d2bf"
+}

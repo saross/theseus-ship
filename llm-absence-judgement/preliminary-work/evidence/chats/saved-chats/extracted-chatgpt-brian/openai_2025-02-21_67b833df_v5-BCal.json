@@ -1,0 +1,945 @@
+{
+  "title": "v5-BCal",
+  "create_time": 1740125152.082277,
+  "update_time": 1740125826.713527,
+  "mapping": {
+    "aaa1de67-e734-4baf-9cb6-7c2925252a76": {
+      "id": "aaa1de67-e734-4baf-9cb6-7c2925252a76",
+      "message": null,
+      "parent": null,
+      "children": [
+        "14ebf09c-f5fc-42cb-9a32-62d2aa1df44d"
+      ]
+    },
+    "14ebf09c-f5fc-42cb-9a32-62d2aa1df44d": {
+      "id": "14ebf09c-f5fc-42cb-9a32-62d2aa1df44d",
+      "message": {
+        "id": "14ebf09c-f5fc-42cb-9a32-62d2aa1df44d",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1de67-e734-4baf-9cb6-7c2925252a76",
+      "children": [
+        "9528f5ed-62f7-495e-b167-4d52bd4abeaf"
+      ]
+    },
+    "9528f5ed-62f7-495e-b167-4d52bd4abeaf": {
+      "id": "9528f5ed-62f7-495e-b167-4d52bd4abeaf",
+      "message": {
+        "id": "9528f5ed-62f7-495e-b167-4d52bd4abeaf",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125152.088818,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91553bd68f13d5e3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "14ebf09c-f5fc-42cb-9a32-62d2aa1df44d",
+      "children": [
+        "cafa89ff-95f0-4e00-90c4-9ac94072bd40"
+      ]
+    },
+    "cafa89ff-95f0-4e00-90c4-9ac94072bd40": {
+      "id": "cafa89ff-95f0-4e00-90c4-9ac94072bd40",
+      "message": {
+        "id": "cafa89ff-95f0-4e00-90c4-9ac94072bd40",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125154.526843,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the requirements clearly. Please provide the first tool name, and I will begin the systematic research following the guidelines you outlined."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "9528f5ed-62f7-495e-b167-4d52bd4abeaf",
+          "request_id": "91553bd68f13d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9528f5ed-62f7-495e-b167-4d52bd4abeaf",
+      "children": [
+        "ef4b3c52-cdf3-4227-ba54-f49d71122bf0"
+      ]
+    },
+    "ef4b3c52-cdf3-4227-ba54-f49d71122bf0": {
+      "id": "ef4b3c52-cdf3-4227-ba54-f49d71122bf0",
+      "message": {
+        "id": "ef4b3c52-cdf3-4227-ba54-f49d71122bf0",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740125154.526943,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "cafa89ff-95f0-4e00-90c4-9ac94072bd40",
+          "request_id": "91553bd68f13d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cafa89ff-95f0-4e00-90c4-9ac94072bd40",
+      "children": [
+        "16309471-1464-46c7-8df4-b7172f0eef1b"
+      ]
+    },
+    "16309471-1464-46c7-8df4-b7172f0eef1b": {
+      "id": "16309471-1464-46c7-8df4-b7172f0eef1b",
+      "message": {
+        "id": "16309471-1464-46c7-8df4-b7172f0eef1b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125159.00913,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "BCal"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91553c0179add5e3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ef4b3c52-cdf3-4227-ba54-f49d71122bf0",
+      "children": [
+        "3b2bf3f8-1d06-4447-bf44-422e1579107f"
+      ]
+    },
+    "3b2bf3f8-1d06-4447-bf44-422e1579107f": {
+      "id": "3b2bf3f8-1d06-4447-bf44-422e1579107f",
+      "message": {
+        "id": "3b2bf3f8-1d06-4447-bf44-422e1579107f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125171.155654,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a thorough and systematic search for mentions of the archaeology and historical studies-related software tool \"BCal\" from 1995 onwards. \n\nFor each valid source I find, I will document:\n- The tool name as \"BCal\"\n- The year from the source (or \"n.d.\" if no date is available)\n- The source citation or domain with page title\n- The URL of the resource\n- Any relevant AI notes concerning the provenance or quality of the data.\n\nI will ensure accuracy and include a CSV-formatted result upon completion. I will let you know when my research is ready for your review."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "16309471-1464-46c7-8df4-b7172f0eef1b",
+          "request_id": "91553c0179add5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "16309471-1464-46c7-8df4-b7172f0eef1b",
+      "children": [
+        "456c8c9a-316b-4b0e-bd6d-33a209251075"
+      ]
+    },
+    "456c8c9a-316b-4b0e-bd6d-33a209251075": {
+      "id": "456c8c9a-316b-4b0e-bd6d-33a209251075",
+      "message": {
+        "id": "456c8c9a-316b-4b0e-bd6d-33a209251075",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125171.155747,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a thorough and systematic search for mentions of the archaeology and historical studies-related software tool \\\"BCal\\\" from 1995 onwards. \\n\\nFor each valid source I find, I will document:\\n- The tool name as \\\"BCal\\\"\\n- The year from the source (or \\\"n.d.\\\" if no date is available)\\n- The source citation or domain with page title\\n- The URL of the resource\\n- Any relevant AI notes concerning the provenance or quality of the data.\\n\\nI will ensure accuracy and include a CSV-formatted result upon completion. I will let you know when my research is ready for your review.\",\"title\":\"Comprehensive Research on BCal Software Tool\",\"prompt\":\"Conduct a systematic search for the archaeology and historical studies-related software tool \\\"BCal\\\" from 1995 onwards.\\n\\nFor each valid source mentioning BCal, document:\\n- \\\"Tool\\\": BCal\\n- \\\"Year\\\": The year of the source publication (or \\\"n.d.\\\" if no date is available)\\n- \\\"Source\\\": Citation or domain with page title\\n- \\\"URL\\\": The URL of the resource\\n- \\\"AI Notes\\\": Any relevant notes on data provenance or quality\\n\\nSources should include:\\n- Published version control repositories (if available)\\n- Scholarly literature (each source to one row)\\n- Blog posts and about pages (each source to one row)\\n- Other mentions of the tool (each source to one row)\\n\\nEnsure one line per source found and avoid extrapolating dates. Record only explicitly stated publication years. Expand searches by \u00b11 year when a source is found.\\n\\nDeliver the results in a quoted CSV format within a fenced code block.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "3b2bf3f8-1d06-4447-bf44-422e1579107f",
+          "request_id": "91553c0179add5e3-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "3b2bf3f8-1d06-4447-bf44-422e1579107f",
+      "children": [
+        "9a20211b-455e-49f0-a49d-bb5dfb4ebe65"
+      ]
+    },
+    "9a20211b-455e-49f0-a49d-bb5dfb4ebe65": {
+      "id": "9a20211b-455e-49f0-a49d-bb5dfb4ebe65",
+      "message": {
+        "id": "9a20211b-455e-49f0-a49d-bb5dfb4ebe65",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740125178.828843,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on BCal Software Tool",
+          "async_task_prompt": "Conduct a systematic search for the archaeology and historical studies-related software tool \"BCal\" from 1995 onwards.\n\nFor each valid source mentioning BCal, document:\n- \"Tool\": BCal\n- \"Year\": The year of the source publication (or \"n.d.\" if no date is available)\n- \"Source\": Citation or domain with page title\n- \"URL\": The URL of the resource\n- \"AI Notes\": Any relevant notes on data provenance or quality\n\nSources should include:\n- Published version control repositories (if available)\n- Scholarly literature (each source to one row)\n- Blog posts and about pages (each source to one row)\n- Other mentions of the tool (each source to one row)\n\nEnsure one line per source found and avoid extrapolating dates. Record only explicitly stated publication years. Expand searches by \u00b11 year when a source is found.\n\nDeliver the results in a quoted CSV format within a fenced code block.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on BCal Software Tool",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "456c8c9a-316b-4b0e-bd6d-33a209251075",
+          "request_id": "91553c0179add5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "456c8c9a-316b-4b0e-bd6d-33a209251075",
+      "children": [
+        "e01ea005-7269-4d7c-a5ac-633c04ce0bcc"
+      ]
+    },
+    "e01ea005-7269-4d7c-a5ac-633c04ce0bcc": {
+      "id": "e01ea005-7269-4d7c-a5ac-633c04ce0bcc",
+      "message": {
+        "id": "e01ea005-7269-4d7c-a5ac-633c04ce0bcc",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740125648.401499,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"BCal\",\"n.d.\",\"bcal.shef.ac.uk \u2013 BCal: an introduction for new users\",\"https://bcal.shef.ac.uk/info/index.html\",\"Official University of Sheffield site for BCal; no publication date provided (user guide and software info).\"\n\"BCal\",\"1999\",\"Internet Archaeology 7 \u2013 BCal: an on-line Bayesian radiocarbon calibration tool\u30108\u2020L19-L22\u3011\",\"http://intarch.ac.uk/journal/issue7/buck_index.html\",\"Peer-reviewed article (Buck, Christen & James 1999) introducing BCal as a new online calibration tool.\"\n\"BCal\",\"1999\",\"SAS Bulletin Vol.\u00a022(3-4) Winter 1999 \u2013 Conference report (CAA99) mentioning BCal\u301023\u2020L1-L4\u3011\u301020\u2020L1351-L1354\u3011\",\"https://socarchsci.org/images/bulletin/SAS2234.pdf\",\"Society for Archaeological Sciences newsletter noting a 1999 conference presentation of BCal; community news source.\"\n\"BCal\",\"2008\",\"Bayesian Analysis 3(2) \u2013 Estimating radiocarbon calibration curves\u301038\u2020L1-L8\u3011\u301036\u2020L1-L4\u3011\",\"https://projecteuclid.org/journals/bayesian-analysis/volume-3/issue-2/Estimating-radiocarbon-calibration-curves/10.1214/08-BA309\",\"Scholarly article (Blackwell & Buck 2008) noting BCal as routinely used by archaeologists\u301036\u2020L1-L4\u3011; published in a statistics journal.\"\n\"BCal\",\"2009\",\"CIfA \u2013 The Archaeologist Issue\u00a071 (Spring 2009)\u301058\u2020L1-L8\u3011\u301056\u2020L1373-L1381\u3011\",\"https://cifa-uat.opencloudcrm.co.uk/sites/default/files/ta71.pdf\",\"Professional archaeology magazine article describing use of BCal and OxCal together in building chronologies\u301056\u2020L1373-L1381\u3011.\"\n\"BCal\",\"2017\",\"arXiv.org \u2013 Bayesian radiocarbon modelling for beginners (preprint)\u301030\u2020L11-L14\u3011\",\"https://arxiv.org/abs/1704.07141\",\"Preprint by Buck & Ju\u00e1rez (submitted 2017) discussing Bayesian chronological modeling; includes BCal as a cited tool.\"\n\"BCal\",\"2018\",\"American Antiquity 83(2) \u2013 Myths and Realities of Bayesian Chronological Modeling\u301066\u2020L1-L4\u3011\u301064\u2020L1-L4\u3011\",\"https://doi.org/10.1017/aaq.2017.57\",\"Peer-reviewed research (Hamilton & Krus 2018) highlighting BCal as one of the most widely used chronology tools\u301064\u2020L1-L4\u3011.\"\n\"BCal\",\"2022\",\"Historic England \u2013 Radiocarbon Dating and Chronological Modelling: Guidelines and Best Practice\u301051\u2020L399-L407\u3011\u301025\u2020L1-L4\u3011\",\"https://historicengland.org.uk/images-books/publications/radiocarbon-dating-chronological-modelling/\",\"Official guidance (Bayliss & Marshall 2022) noting BCal as an available online calibration program.\"\n\"BCal\",\"2022\",\"iosacal.readthedocs.io \u2013 C14 and calibration resources (IOSACal documentation)\u301054\u2020L61-L69\u3011\u301055\u2020L1-L4\u3011\",\"https://iosacal.readthedocs.io/en/latest/resources.html\",\"Developer documentation (Stefano Costa, 2022) listing BCal among radiocarbon calibration tools.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 361,
+              "end_ix": 372,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Internet Archaeol. 7. Buck et al.",
+                "url": "http://intarch.ac.uk/journal/issue7/buck_index.html#:~:text=Cite%20this%20as%3A%20Buck%2C%20C,1",
+                "text": "Cite this as: Buck, C.E. et al. 1999 BCal:\u00a0 an on-line Bayesian radiocarbon calibration tool, Internet Archaeology 7. https://doi.org/10.11141/ia.7.1",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 19,
+                  "end_line_num": 22
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 629,
+              "end_ix": 639,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "SAS22-34.pm6",
+                "url": "https://socarchsci.org/images/bulletin/SAS2234.pdf#:~:text=SAS%20Bulletin%20Society%20for%20Archaeological,Winter%201999%20SAA%201999%20Awards",
+                "text": "SAS Bulletin Society for Archaeological Sciences Volume 22 numbers 3-4 Winter 1999 SAA 1999 Awards",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 23,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 639,
+              "end_ix": 655,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "SAS22-34.pm6",
+                "url": "https://socarchsci.org/images/bulletin/SAS2234.pdf#:~:text=Architecture%3A%20the%20Probability%20of%20Matching,Bayesian%20Model%20Selection%20for",
+                "text": "Architecture: the Probability of Matching Column Drums (Seppo Mustonen and Jari Pakkanen); BCal: an On-Line Radiocarbon Calibration Package (Caitlin E. Buck, J. Andres Christen and Gary James); Bayesian Model Selection for",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 20,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1351,
+                  "end_line_num": 1354
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 910,
+              "end_ix": 920,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://projecteuclid.org/journals/bayesian-analysis/volume-3/issue-2/Estimating-radiocarbon-calibration-curves/10.1214/08-BA309.pdf#:~:text=Bayesian%20Analysis%20,Buck",
+                "text": "Bayesian Analysis (2008) 3, Number 2, pp. 225\u2013248 Estimating radiocarbon calibration curves P. G. Blackwell\u2217 and C. E. Buck",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 38,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 8
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 920,
+              "end_ix": 930,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://projecteuclid.org/journals/bayesian-analysis/volume-3/issue-2/Estimating-radiocarbon-calibration-curves/10.1214/08-BA309.pdf#:~:text=calibration%20packages%20,Indeed%2C%20the%20use%20of%20Bayesian",
+                "text": "calibration packages (BCal and OxCal) are now routinely used by archaeologists in their research (Buck et al. 1999; Bronk Ramsey 1995, 2001). Indeed, the use of Bayesian",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 36,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1153,
+              "end_ix": 1163,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://projecteuclid.org/journals/bayesian-analysis/volume-3/issue-2/Estimating-radiocarbon-calibration-curves/10.1214/08-BA309.pdf#:~:text=calibration%20packages%20,Indeed%2C%20the%20use%20of%20Bayesian",
+                "text": "calibration packages (BCal and OxCal) are now routinely used by archaeologists in their research (Buck et al. 1999; Bronk Ramsey 1995, 2001). Indeed, the use of Bayesian",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 36,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1263,
+              "end_ix": 1273,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "untitled",
+                "url": "https://cifa-uat.opencloudcrm.co.uk/sites/default/files/ta71.pdf#:~:text=Spring%202009%20Number%2071%20This,issue%20NEW",
+                "text": "Spring 2009 Number 71 This issue NEW",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 58,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 8
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1273,
+              "end_ix": 1289,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "untitled",
+                "url": "https://cifa-uat.opencloudcrm.co.uk/sites/default/files/ta71.pdf#:~:text=DATING%20FOR%20NEOLITHIC%20CLAISH%20Incorporation,building%20was%20built%20and%20occupied",
+                "text": "DATING FOR NEOLITHIC CLAISH Incorporation of Bayesian statistics and Markov Chain Monte Carlo (MCMC) methods into statistical packages such as OxCal and BCal together with information from archaeology now permit a robust approach to the construction of chronologies. For example, in dating a Neolithic building at Claish, Callander, our \u2018prior beliefs\u2019 are that at an unknown time in the past, the building was built and occupied",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 56,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1373,
+                  "end_line_num": 1381
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1467,
+              "end_ix": 1483,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "untitled",
+                "url": "https://cifa-uat.opencloudcrm.co.uk/sites/default/files/ta71.pdf#:~:text=DATING%20FOR%20NEOLITHIC%20CLAISH%20Incorporation,building%20was%20built%20and%20occupied",
+                "text": "DATING FOR NEOLITHIC CLAISH Incorporation of Bayesian statistics and Markov Chain Monte Carlo (MCMC) methods into statistical packages such as OxCal and BCal together with information from archaeology now permit a robust approach to the construction of chronologies. For example, in dating a Neolithic building at Claish, Callander, our \u2018prior beliefs\u2019 are that at an unknown time in the past, the building was built and occupied",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 56,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1373,
+                  "end_line_num": 1381
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1568,
+              "end_ix": 1580,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) Bayesian radiocarbon modelling for beginners - ResearchGate",
+                "url": "https://www.researchgate.net/publication/316452074_Bayesian_radiocarbon_modelling_for_beginners#:~:text=ResearchGate%20www,Due%20to%20freely%20available%2C",
+                "text": "ResearchGate www.researchgate.net  Bayesian radiocarbon modelling for beginners. April 2017. Caitlin E Buck \u00b7 Miguel Juarez. Due to freely available, ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 30,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 11,
+                  "end_line_num": 14
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1833,
+              "end_ix": 1843,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://tsdye.online/sha/hamilton-krus-2018.pdf#:~:text=American%20Antiquity%2083%282%29%2C%202018%2C%20pp,57%20187",
+                "text": "American Antiquity 83(2), 2018, pp. 187\u2013203 Copyright \u00a9 2017 by the Society for American Archaeology doi:10.1017/aaq.2017.57 187",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 66,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1843,
+              "end_ix": 1853,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://tsdye.online/sha/hamilton-krus-2018.pdf#:~:text=are%20BCal%20%28Buck%20et%20al,Bayliss%202015",
+                "text": "are BCal (Buck et al. 1999) and OxCal (Bronk Ramsey 1998, 2001, 2008, 2009a), and while the majority of applications are done in OxCal (Bayliss 2015),",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 64,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2005,
+              "end_ix": 2015,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://tsdye.online/sha/hamilton-krus-2018.pdf#:~:text=are%20BCal%20%28Buck%20et%20al,Bayliss%202015",
+                "text": "are BCal (Buck et al. 1999) and OxCal (Bronk Ramsey 1998, 2001, 2008, 2009a), and while the majority of applications are done in OxCal (Bayliss 2015),",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 64,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2128,
+              "end_ix": 2142,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Radiocarbon Dating and Chronological Modelling | Historic England",
+                "url": "https://historicengland.org.uk/images-books/publications/radiocarbon-dating-chronological-modelling/#:~:text=Radiocarbon%20Dating%20and%20Chronological%20Modelling",
+                "text": "Radiocarbon Dating and Chronological Modelling",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 51,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 399,
+                  "end_line_num": 407
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2142,
+              "end_ix": 2152,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) Radiocarbon Dating and Chronological Modelling: Guidelines ...",
+                "url": "https://www.researchgate.net/publication/364039675_Radiocarbon_Dating_and_Chronological_Modelling_Guidelines_and_Best_Practice#:~:text=,uk%2F%20%E2%80%94%20described%20in",
+                "text": "... www.researchgate.net  Radiocarbon Dating and Chronological Modelling: Guidelines and Best Practice ... BCal \u2014 on-line program available at http://bcal. shef.ac.uk/ \u2014 described in ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 25,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2452,
+              "end_ix": 2464,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "C14 and calibration resources - IOSACal 0.6.0 documentation",
+                "url": "https://iosacal.readthedocs.io/en/latest/resources.html#:~:text=line%20Linux%20version%20is%20available,free%20software%2C%20but%20works%20well",
+                "text": "line Linux version is available (non-free software, but works well)",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 54,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 61,
+                  "end_line_num": 69
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2464,
+              "end_ix": 2474,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "C14 and calibration resources - IOSACal 0.6.0 documentation",
+                "url": "https://iosacal.readthedocs.io/en/latest/resources.html#:~:text=Copyright%20%C2%A9%202022%2C%20Stefano%20Costa,and%20contributors",
+                "text": "Copyright \u00a9 2022, Stefano Costa and contributors",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 55,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u30108\u2020L19-L22\u3011",
+              "start_idx": 361,
+              "end_idx": 372,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Internet Archaeol. 7. Buck et al.",
+              "url": "http://intarch.ac.uk/journal/issue7/buck_index.html#:~:text=Cite%20this%20as%3A%20Buck%2C%20C,1",
+              "pub_date": null,
+              "snippet": "Cite this as: Buck, C.E. et al. 1999 BCal:\u00a0 an on-line Bayesian radiocarbon calibration tool, Internet Archaeology 7. https://doi.org/10.11141/ia.7.1",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301023\u2020L1-L4\u3011",
+              "start_idx": 629,
+              "end_idx": 639,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "SAS22-34.pm6",
+              "url": "https://socarchsci.org/images/bulletin/SAS2234.pdf#:~:text=SAS%20Bulletin%20Society%20for%20Archaeological,Winter%201999%20SAA%201999%20Awards",
+              "pub_date": null,
+              "snippet": "SAS Bulletin Society for Archaeological Sciences Volume 22 numbers 3-4 Winter 1999 SAA 1999 Awards",
+              "attribution": "socarchsci.org"
+            },
+            {
+              "matched_text": "\u301020\u2020L1351-L1354\u3011",
+              "start_idx": 639,
+              "end_idx": 655,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "SAS22-34.pm6",
+              "url": "https://socarchsci.org/images/bulletin/SAS2234.pdf#:~:text=Architecture%3A%20the%20Probability%20of%20Matching,Bayesian%20Model%20Selection%20for",
+              "pub_date": null,
+              "snippet": "Architecture: the Probability of Matching Column Drums (Seppo Mustonen and Jari Pakkanen); BCal: an On-Line Radiocarbon Calibration Package (Caitlin E. Buck, J. Andres Christen and Gary James); Bayesian Model Selection for",
+              "attribution": "socarchsci.org"
+            },
+            {
+              "matched_text": "\u301038\u2020L1-L8\u3011",
+              "start_idx": 910,
+              "end_idx": 920,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://projecteuclid.org/journals/bayesian-analysis/volume-3/issue-2/Estimating-radiocarbon-calibration-curves/10.1214/08-BA309.pdf#:~:text=Bayesian%20Analysis%20,Buck",
+              "pub_date": null,
+              "snippet": "Bayesian Analysis (2008) 3, Number 2, pp. 225\u2013248 Estimating radiocarbon calibration curves P. G. Blackwell\u2217 and C. E. Buck",
+              "attribution": "projecteuclid.org"
+            },
+            {
+              "matched_text": "\u301036\u2020L1-L4\u3011",
+              "start_idx": 920,
+              "end_idx": 930,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://projecteuclid.org/journals/bayesian-analysis/volume-3/issue-2/Estimating-radiocarbon-calibration-curves/10.1214/08-BA309.pdf#:~:text=calibration%20packages%20,Indeed%2C%20the%20use%20of%20Bayesian",
+              "pub_date": null,
+              "snippet": "calibration packages (BCal and OxCal) are now routinely used by archaeologists in their research (Buck et al. 1999; Bronk Ramsey 1995, 2001). Indeed, the use of Bayesian",
+              "attribution": "projecteuclid.org"
+            },
+            {
+              "matched_text": "\u301036\u2020L1-L4\u3011",
+              "start_idx": 1153,
+              "end_idx": 1163,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://projecteuclid.org/journals/bayesian-analysis/volume-3/issue-2/Estimating-radiocarbon-calibration-curves/10.1214/08-BA309.pdf#:~:text=calibration%20packages%20,Indeed%2C%20the%20use%20of%20Bayesian",
+              "pub_date": null,
+              "snippet": "calibration packages (BCal and OxCal) are now routinely used by archaeologists in their research (Buck et al. 1999; Bronk Ramsey 1995, 2001). Indeed, the use of Bayesian",
+              "attribution": "projecteuclid.org"
+            },
+            {
+              "matched_text": "\u301058\u2020L1-L8\u3011",
+              "start_idx": 1263,
+              "end_idx": 1273,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "untitled",
+              "url": "https://cifa-uat.opencloudcrm.co.uk/sites/default/files/ta71.pdf#:~:text=Spring%202009%20Number%2071%20This,issue%20NEW",
+              "pub_date": null,
+              "snippet": "Spring 2009 Number 71 This issue NEW",
+              "attribution": "cifa-uat.opencloudcrm.co.uk"
+            },
+            {
+              "matched_text": "\u301056\u2020L1373-L1381\u3011",
+              "start_idx": 1273,
+              "end_idx": 1289,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "untitled",
+              "url": "https://cifa-uat.opencloudcrm.co.uk/sites/default/files/ta71.pdf#:~:text=DATING%20FOR%20NEOLITHIC%20CLAISH%20Incorporation,building%20was%20built%20and%20occupied",
+              "pub_date": null,
+              "snippet": "DATING FOR NEOLITHIC CLAISH Incorporation of Bayesian statistics and Markov Chain Monte Carlo (MCMC) methods into statistical packages such as OxCal and BCal together with information from archaeology now permit a robust approach to the construction of chronologies. For example, in dating a Neolithic building at Claish, Callander, our \u2018prior beliefs\u2019 are that at an unknown time in the past, the building was built and occupied",
+              "attribution": "cifa-uat.opencloudcrm.co.uk"
+            },
+            {
+              "matched_text": "\u301056\u2020L1373-L1381\u3011",
+              "start_idx": 1467,
+              "end_idx": 1483,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "untitled",
+              "url": "https://cifa-uat.opencloudcrm.co.uk/sites/default/files/ta71.pdf#:~:text=DATING%20FOR%20NEOLITHIC%20CLAISH%20Incorporation,building%20was%20built%20and%20occupied",
+              "pub_date": null,
+              "snippet": "DATING FOR NEOLITHIC CLAISH Incorporation of Bayesian statistics and Markov Chain Monte Carlo (MCMC) methods into statistical packages such as OxCal and BCal together with information from archaeology now permit a robust approach to the construction of chronologies. For example, in dating a Neolithic building at Claish, Callander, our \u2018prior beliefs\u2019 are that at an unknown time in the past, the building was built and occupied",
+              "attribution": "cifa-uat.opencloudcrm.co.uk"
+            },
+            {
+              "matched_text": "\u301030\u2020L11-L14\u3011",
+              "start_idx": 1568,
+              "end_idx": 1580,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) Bayesian radiocarbon modelling for beginners - ResearchGate",
+              "url": "https://www.researchgate.net/publication/316452074_Bayesian_radiocarbon_modelling_for_beginners#:~:text=ResearchGate%20www,Due%20to%20freely%20available%2C",
+              "pub_date": null,
+              "snippet": "ResearchGate www.researchgate.net  Bayesian radiocarbon modelling for beginners. April 2017. Caitlin E Buck \u00b7 Miguel Juarez. Due to freely available, ...",
+              "attribution": "researchgate.net"
+            },
+            {
+              "matched_text": "\u301066\u2020L1-L4\u3011",
+              "start_idx": 1833,
+              "end_idx": 1843,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://tsdye.online/sha/hamilton-krus-2018.pdf#:~:text=American%20Antiquity%2083%282%29%2C%202018%2C%20pp,57%20187",
+              "pub_date": null,
+              "snippet": "American Antiquity 83(2), 2018, pp. 187\u2013203 Copyright \u00a9 2017 by the Society for American Archaeology doi:10.1017/aaq.2017.57 187",
+              "attribution": "tsdye.online"
+            },
+            {
+              "matched_text": "\u301064\u2020L1-L4\u3011",
+              "start_idx": 1843,
+              "end_idx": 1853,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://tsdye.online/sha/hamilton-krus-2018.pdf#:~:text=are%20BCal%20%28Buck%20et%20al,Bayliss%202015",
+              "pub_date": null,
+              "snippet": "are BCal (Buck et al. 1999) and OxCal (Bronk Ramsey 1998, 2001, 2008, 2009a), and while the majority of applications are done in OxCal (Bayliss 2015),",
+              "attribution": "tsdye.online"
+            },
+            {
+              "matched_text": "\u301064\u2020L1-L4\u3011",
+              "start_idx": 2005,
+              "end_idx": 2015,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://tsdye.online/sha/hamilton-krus-2018.pdf#:~:text=are%20BCal%20%28Buck%20et%20al,Bayliss%202015",
+              "pub_date": null,
+              "snippet": "are BCal (Buck et al. 1999) and OxCal (Bronk Ramsey 1998, 2001, 2008, 2009a), and while the majority of applications are done in OxCal (Bayliss 2015),",
+              "attribution": "tsdye.online"
+            },
+            {
+              "matched_text": "\u301051\u2020L399-L407\u3011",
+              "start_idx": 2128,
+              "end_idx": 2142,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Radiocarbon Dating and Chronological Modelling | Historic England",
+              "url": "https://historicengland.org.uk/images-books/publications/radiocarbon-dating-chronological-modelling/#:~:text=Radiocarbon%20Dating%20and%20Chronological%20Modelling",
+              "pub_date": null,
+              "snippet": "Radiocarbon Dating and Chronological Modelling",
+              "attribution": "historicengland.org.uk"
+            },
+            {
+              "matched_text": "\u301025\u2020L1-L4\u3011",
+              "start_idx": 2142,
+              "end_idx": 2152,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) Radiocarbon Dating and Chronological Modelling: Guidelines ...",
+              "url": "https://www.researchgate.net/publication/364039675_Radiocarbon_Dating_and_Chronological_Modelling_Guidelines_and_Best_Practice#:~:text=,uk%2F%20%E2%80%94%20described%20in",
+              "pub_date": null,
+              "snippet": "... www.researchgate.net  Radiocarbon Dating and Chronological Modelling: Guidelines and Best Practice ... BCal \u2014 on-line program available at http://bcal. shef.ac.uk/ \u2014 described in ...",
+              "attribution": "researchgate.net"
+            },
+            {
+              "matched_text": "\u301054\u2020L61-L69\u3011",
+              "start_idx": 2452,
+              "end_idx": 2464,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "C14 and calibration resources - IOSACal 0.6.0 documentation",
+              "url": "https://iosacal.readthedocs.io/en/latest/resources.html#:~:text=line%20Linux%20version%20is%20available,free%20software%2C%20but%20works%20well",
+              "pub_date": null,
+              "snippet": "line Linux version is available (non-free software, but works well)",
+              "attribution": "iosacal.readthedocs.io"
+            },
+            {
+              "matched_text": "\u301055\u2020L1-L4\u3011",
+              "start_idx": 2464,
+              "end_idx": 2474,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "C14 and calibration resources - IOSACal 0.6.0 documentation",
+              "url": "https://iosacal.readthedocs.io/en/latest/resources.html#:~:text=Copyright%20%C2%A9%202022%2C%20Stefano%20Costa,and%20contributors",
+              "pub_date": null,
+              "snippet": "Copyright \u00a9 2022, Stefano Costa and contributors",
+              "attribution": "iosacal.readthedocs.io"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b833faa6b88191b931bbdf0bdb75ef",
+          "async_task_title": "Comprehensive Research on BCal Software Tool"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "9a20211b-455e-49f0-a49d-bb5dfb4ebe65",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "e01ea005-7269-4d7c-a5ac-633c04ce0bcc",
+  "plugin_ids": null,
+  "conversation_id": "67b833df-e744-8004-8294-fb099dfe088a",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://historicengland.org.uk/images-books/publications/radiocarbon-dating-chronological-modelling/",
+    "https://doi.org/10.1017/aaq.2017.57",
+    "https://socarchsci.org/images/bulletin/SAS2234.pdf",
+    "https://iosacal.readthedocs.io/en/latest/resources.html",
+    "https://bcal.shef.ac.uk/info/index.html"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b833df-e744-8004-8294-fb099dfe088a"
+}

@@ -1,0 +1,395 @@
+{
+  "title": "v7-tweet-edits-to-archaeology-articles.R",
+  "create_time": 1740648852.090567,
+  "update_time": 1740650009.650263,
+  "mapping": {
+    "aaa1cfb8-2e30-4f29-80b6-37125de7b706": {
+      "id": "aaa1cfb8-2e30-4f29-80b6-37125de7b706",
+      "message": null,
+      "parent": null,
+      "children": [
+        "cd565e74-9da6-4ef1-b5e8-ada15b05c257"
+      ]
+    },
+    "cd565e74-9da6-4ef1-b5e8-ada15b05c257": {
+      "id": "cd565e74-9da6-4ef1-b5e8-ada15b05c257",
+      "message": {
+        "id": "cd565e74-9da6-4ef1-b5e8-ada15b05c257",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1cfb8-2e30-4f29-80b6-37125de7b706",
+      "children": [
+        "631dca4c-ccf2-4a21-97ac-8a02c62e8dc1"
+      ]
+    },
+    "631dca4c-ccf2-4a21-97ac-8a02c62e8dc1": {
+      "id": "631dca4c-ccf2-4a21-97ac-8a02c62e8dc1",
+      "message": {
+        "id": "631dca4c-ccf2-4a21-97ac-8a02c62e8dc1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740648852.095113,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi DR. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record tool, year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91872d7b9aa2571a-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "cd565e74-9da6-4ef1-b5e8-ada15b05c257",
+      "children": [
+        "a2ea69d4-e787-4f0c-bf1a-b85a98f482fe"
+      ]
+    },
+    "a2ea69d4-e787-4f0c-bf1a-b85a98f482fe": {
+      "id": "a2ea69d4-e787-4f0c-bf1a-b85a98f482fe",
+      "message": {
+        "id": "a2ea69d4-e787-4f0c-bf1a-b85a98f482fe",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740648854.495259,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your requirements clearly. Please provide the name or acronym of the first archaeology and historical studies-related software tool you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "631dca4c-ccf2-4a21-97ac-8a02c62e8dc1",
+          "request_id": "91872d7b9aa2571a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "631dca4c-ccf2-4a21-97ac-8a02c62e8dc1",
+      "children": [
+        "b47d3d6d-1f98-44fd-b096-f07500899414"
+      ]
+    },
+    "b47d3d6d-1f98-44fd-b096-f07500899414": {
+      "id": "b47d3d6d-1f98-44fd-b096-f07500899414",
+      "message": {
+        "id": "b47d3d6d-1f98-44fd-b096-f07500899414",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740648854.495401,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "a2ea69d4-e787-4f0c-bf1a-b85a98f482fe",
+          "request_id": "91872d7b9aa2571a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a2ea69d4-e787-4f0c-bf1a-b85a98f482fe",
+      "children": [
+        "521cad97-c603-4370-b0f3-2dd15b9c391a"
+      ]
+    },
+    "521cad97-c603-4370-b0f3-2dd15b9c391a": {
+      "id": "521cad97-c603-4370-b0f3-2dd15b9c391a",
+      "message": {
+        "id": "521cad97-c603-4370-b0f3-2dd15b9c391a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740648867.51685,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "tweet-edits-to-archaeology-articles.R"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91872ddb3ee0571a-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b47d3d6d-1f98-44fd-b096-f07500899414",
+      "children": [
+        "89e2e158-77f4-4345-9393-92cd53902f90"
+      ]
+    },
+    "89e2e158-77f4-4345-9393-92cd53902f90": {
+      "id": "89e2e158-77f4-4345-9393-92cd53902f90",
+      "message": {
+        "id": "89e2e158-77f4-4345-9393-92cd53902f90",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740648881.618669,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a thorough and systematic search for any mentions of the tool **tweet-edits-to-archaeology-articles.R**, starting from 1995 onward. I will carefully document every source that mentions the tool, ensuring accuracy in the CSV output. Each source will be logged with its corresponding year, citation, URL, and any notes regarding data quality or uncertainties.\n\nI will return with the compiled evidence once the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "521cad97-c603-4370-b0f3-2dd15b9c391a",
+          "request_id": "91872ddb3ee0571a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "521cad97-c603-4370-b0f3-2dd15b9c391a",
+      "children": [
+        "214eb373-f044-4179-82fc-c158ea96f056"
+      ]
+    },
+    "214eb373-f044-4179-82fc-c158ea96f056": {
+      "id": "214eb373-f044-4179-82fc-c158ea96f056",
+      "message": {
+        "id": "214eb373-f044-4179-82fc-c158ea96f056",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740648881.618762,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a thorough and systematic search for any mentions of the tool **tweet-edits-to-archaeology-articles.R**, starting from 1995 onward. I will carefully document every source that mentions the tool, ensuring accuracy in the CSV output. Each source will be logged with its corresponding year, citation, URL, and any notes regarding data quality or uncertainties.\\n\\nI will return with the compiled evidence once the research is complete.\",\"title\":\"Evidence Collection for tweet-edits-to-archaeology-articles.R\",\"prompt\":\"Conduct a systematic and thorough search for any mentions of the software tool **tweet-edits-to-archaeology-articles.R** in archaeology and historical sciences-related sources, beginning from 1995 onwards. \\n\\nFor every mention found, document the following in a quoted CSV format:\\n- \\\"Tool\\\": The exact name **tweet-edits-to-archaeology-articles.R**\\n- \\\"Year\\\": The publication year of the source (use 'n.d.' if no date is available)\\n- \\\"Source\\\": Citation or (Domain + Page Title)\\n- \\\"URL\\\": Direct URL to the source\\n- \\\"AI Notes\\\": Any uncertainties, concerns, or relevant observations about the data provenance or quality\\n\\n**Guidelines:**\\n- Perform a comprehensive and exhaustive search, ensuring every search result page is reviewed.\\n- Record **one line per mention**, even if multiple mentions exist in different years.\\n- Prioritize scholarly literature, blog posts, about pages, version control repositories, and other reliable sources.\\n- **Do not extrapolate dates**\u2014only include explicitly stated publication dates.\\n- If no valid sources are found or if the tool does not meet the defined criteria, indicate it in AI Notes.\\n\\nReturn the results in a **fenced code block CSV format** following the structured requirements above.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "89e2e158-77f4-4345-9393-92cd53902f90",
+          "request_id": "91872ddb3ee0571a-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "89e2e158-77f4-4345-9393-92cd53902f90",
+      "children": [
+        "d7f7a84e-6058-435f-b2db-ecf7bc03aa68"
+      ]
+    },
+    "d7f7a84e-6058-435f-b2db-ecf7bc03aa68": {
+      "id": "d7f7a84e-6058-435f-b2db-ecf7bc03aa68",
+      "message": {
+        "id": "d7f7a84e-6058-435f-b2db-ecf7bc03aa68",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740648907.71042,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for tweet-edits-to-archaeology-articles.R",
+          "async_task_prompt": "Conduct a systematic and thorough search for any mentions of the software tool **tweet-edits-to-archaeology-articles.R** in archaeology and historical sciences-related sources, beginning from 1995 onwards. \n\nFor every mention found, document the following in a quoted CSV format:\n- \"Tool\": The exact name **tweet-edits-to-archaeology-articles.R**\n- \"Year\": The publication year of the source (use 'n.d.' if no date is available)\n- \"Source\": Citation or (Domain + Page Title)\n- \"URL\": Direct URL to the source\n- \"AI Notes\": Any uncertainties, concerns, or relevant observations about the data provenance or quality\n\n**Guidelines:**\n- Perform a comprehensive and exhaustive search, ensuring every search result page is reviewed.\n- Record **one line per mention**, even if multiple mentions exist in different years.\n- Prioritize scholarly literature, blog posts, about pages, version control repositories, and other reliable sources.\n- **Do not extrapolate dates**\u2014only include explicitly stated publication dates.\n- If no valid sources are found or if the tool does not meet the defined criteria, indicate it in AI Notes.\n\nReturn the results in a **fenced code block CSV format** following the structured requirements above.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for tweet-edits-to-archaeology-articles.R",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "214eb373-f044-4179-82fc-c158ea96f056",
+          "request_id": "91872ddb3ee0571a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "214eb373-f044-4179-82fc-c158ea96f056",
+      "children": [
+        "43c9e04e-f370-4f59-bee0-aa152e798581"
+      ]
+    },
+    "43c9e04e-f370-4f59-bee0-aa152e798581": {
+      "id": "43c9e04e-f370-4f59-bee0-aa152e798581",
+      "message": {
+        "id": "43c9e04e-f370-4f59-bee0-aa152e798581",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740649319.363482,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"tweet-edits-to-archaeology-articles.R\",\"n.d.\",\"open-archaeo.info \u2013 tweet-edits-to-archaeology-articles.R\",\"https://open-archaeo.info/post/tweet-edits-to-archaeology-articles/\",\"No publication date provided; entry in open-archaeo (community-curated archaeology software list)\"\n\"tweet-edits-to-archaeology-articles.R\",\"n.d.\",\"GitHub.com \u2013 A list of open source archaeological software and resources (open-archaeo)\",\"https://github.com/zackbatist/open-archaeo\",\"No explicit date; listed in the open-archaeo repository on GitHub (crowd-sourced archaeology tools list)\"\n\"tweet-edits-to-archaeology-articles.R\",\"2023\",\"gist.github.com \u2013 Using R with Wikipedia for various things (GitHub Gist)\",\"https://gist.github.com/benmarwick/ac394fd61f481393b0ae\",\"No formal publication date; original code snippet by archaeologist Ben Marwick (gist last updated Apr 3, 2023)\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67c031cb905c8191913cc424b3dd1ba2",
+          "async_task_title": "Evidence Collection for tweet-edits-to-archaeology-articles.R"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "d7f7a84e-6058-435f-b2db-ecf7bc03aa68",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "43c9e04e-f370-4f59-bee0-aa152e798581",
+  "plugin_ids": null,
+  "conversation_id": "67c03193-ec20-8004-b8fe-3d35dd10c964",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://github.com/zackbatist/open-archaeo"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67c03193-ec20-8004-b8fe-3d35dd10c964"
+}

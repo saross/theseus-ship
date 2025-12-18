@@ -1,0 +1,397 @@
+{
+  "title": "v7-Perseus Project",
+  "create_time": 1740293712.443992,
+  "update_time": 1740294125.371661,
+  "mapping": {
+    "aaa10330-dd70-4270-989f-d25e91c12f22": {
+      "id": "aaa10330-dd70-4270-989f-d25e91c12f22",
+      "message": null,
+      "parent": null,
+      "children": [
+        "6a052d7c-6260-481f-88fb-0c2ad3e76932"
+      ]
+    },
+    "6a052d7c-6260-481f-88fb-0c2ad3e76932": {
+      "id": "6a052d7c-6260-481f-88fb-0c2ad3e76932",
+      "message": {
+        "id": "6a052d7c-6260-481f-88fb-0c2ad3e76932",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa10330-dd70-4270-989f-d25e91c12f22",
+      "children": [
+        "4df83048-e711-4321-a3fe-18ea5a029a52"
+      ]
+    },
+    "4df83048-e711-4321-a3fe-18ea5a029a52": {
+      "id": "4df83048-e711-4321-a3fe-18ea5a029a52",
+      "message": {
+        "id": "4df83048-e711-4321-a3fe-18ea5a029a52",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740293712.446543,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91654f140f015c05-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6a052d7c-6260-481f-88fb-0c2ad3e76932",
+      "children": [
+        "8584b6d0-bb91-48d8-981e-33c8e8bd10cf"
+      ]
+    },
+    "8584b6d0-bb91-48d8-981e-33c8e8bd10cf": {
+      "id": "8584b6d0-bb91-48d8-981e-33c8e8bd10cf",
+      "message": {
+        "id": "8584b6d0-bb91-48d8-981e-33c8e8bd10cf",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740293714.968937,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your research requirements and approach. Please provide the name or acronym of the first archaeology or historical studies-related software tool you'd like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "4df83048-e711-4321-a3fe-18ea5a029a52",
+          "request_id": "91654f140f015c05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "4df83048-e711-4321-a3fe-18ea5a029a52",
+      "children": [
+        "96148e43-3ab1-4115-9809-d403f55ab346"
+      ]
+    },
+    "96148e43-3ab1-4115-9809-d403f55ab346": {
+      "id": "96148e43-3ab1-4115-9809-d403f55ab346",
+      "message": {
+        "id": "96148e43-3ab1-4115-9809-d403f55ab346",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740293714.96911,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8584b6d0-bb91-48d8-981e-33c8e8bd10cf",
+          "request_id": "91654f140f015c05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8584b6d0-bb91-48d8-981e-33c8e8bd10cf",
+      "children": [
+        "5867a56a-a275-4ad5-a971-2c1cf311bc94"
+      ]
+    },
+    "5867a56a-a275-4ad5-a971-2c1cf311bc94": {
+      "id": "5867a56a-a275-4ad5-a971-2c1cf311bc94",
+      "message": {
+        "id": "5867a56a-a275-4ad5-a971-2c1cf311bc94",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740293735.904487,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Perseus Project"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91654fa76d715c05-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "96148e43-3ab1-4115-9809-d403f55ab346",
+      "children": [
+        "bace5821-71a0-4809-950f-0229a6f57fab"
+      ]
+    },
+    "bace5821-71a0-4809-950f-0229a6f57fab": {
+      "id": "bace5821-71a0-4809-950f-0229a6f57fab",
+      "message": {
+        "id": "bace5821-71a0-4809-950f-0229a6f57fab",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740293747.029916,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a comprehensive and systematic search for the Perseus Project, documenting all mentions from 1995 onwards. This includes scholarly literature, blog posts, about pages, published version control repositories (if available), and other sources.\n\nI will provide a well-formed quoted CSV within a fenced code block, ensuring each row includes:\n- The tool name (\"Perseus Project\")\n- The year of publication from the source\n- The citation or domain + page title\n- The URL of the source\n- Any notes regarding data provenance or uncertainties\n\nI will let you know once I have gathered the evidence."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "5867a56a-a275-4ad5-a971-2c1cf311bc94",
+          "request_id": "91654fa76d715c05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5867a56a-a275-4ad5-a971-2c1cf311bc94",
+      "children": [
+        "ffe22d09-f211-4c46-b20d-73985fe7a992"
+      ]
+    },
+    "ffe22d09-f211-4c46-b20d-73985fe7a992": {
+      "id": "ffe22d09-f211-4c46-b20d-73985fe7a992",
+      "message": {
+        "id": "ffe22d09-f211-4c46-b20d-73985fe7a992",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740293747.030045,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a comprehensive and systematic search for the Perseus Project, documenting all mentions from 1995 onwards. This includes scholarly literature, blog posts, about pages, published version control repositories (if available), and other sources.\\n\\nI will provide a well-formed quoted CSV within a fenced code block, ensuring each row includes:\\n- The tool name (\\\"Perseus Project\\\")\\n- The year of publication from the source\\n- The citation or domain + page title\\n- The URL of the source\\n- Any notes regarding data provenance or uncertainties\\n\\nI will let you know once I have gathered the evidence.\",\"title\":\"Perseus Project Research Data Collection\",\"prompt\":\"Conduct a systematic and thorough search for the Perseus Project, an archaeology and historical studies-related software tool, from 1995 onwards.\\n\\nFor each mention found, document the following in a well-formed quoted CSV:\\n- \\\"Tool\\\": Always use \\\"Perseus Project\\\"\\n- \\\"Year\\\": The publication year from the source (or \\\"n.d.\\\" if no date is available)\\n- \\\"Source\\\": Citation or (Domain + Page Title)\\n- \\\"URL\\\": The link to the source\\n- \\\"AI Notes\\\": Any concerns or uncertainties regarding the data provenance or quality\\n\\nSearch systematically across:\\n- Scholarly literature (journal articles, conference proceedings, research papers)\\n- Blog posts, about pages, and project descriptions\\n- Published version control repositories (if applicable, recording commit dates)\\n- Any other relevant mentions in academic or technology sources\\n\\nInclude one line per valid source found, ensuring precision and avoiding extrapolation. If no direct evidence is available for a given year, do not infer or assume data. Report all findings systematically, including sources from adjacent years when possible.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "bace5821-71a0-4809-950f-0229a6f57fab",
+          "request_id": "91654fa76d715c05-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "bace5821-71a0-4809-950f-0229a6f57fab",
+      "children": [
+        "e2daff09-15dd-458e-a4b9-4f6afaf0de01"
+      ]
+    },
+    "e2daff09-15dd-458e-a4b9-4f6afaf0de01": {
+      "id": "e2daff09-15dd-458e-a4b9-4f6afaf0de01",
+      "message": {
+        "id": "e2daff09-15dd-458e-a4b9-4f6afaf0de01",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740293747.030146,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Perseus Project Research Data Collection",
+          "async_task_prompt": "Conduct a systematic and thorough search for the Perseus Project, an archaeology and historical studies-related software tool, from 1995 onwards.\n\nFor each mention found, document the following in a well-formed quoted CSV:\n- \"Tool\": Always use \"Perseus Project\"\n- \"Year\": The publication year from the source (or \"n.d.\" if no date is available)\n- \"Source\": Citation or (Domain + Page Title)\n- \"URL\": The link to the source\n- \"AI Notes\": Any concerns or uncertainties regarding the data provenance or quality\n\nSearch systematically across:\n- Scholarly literature (journal articles, conference proceedings, research papers)\n- Blog posts, about pages, and project descriptions\n- Published version control repositories (if applicable, recording commit dates)\n- Any other relevant mentions in academic or technology sources\n\nInclude one line per valid source found, ensuring precision and avoiding extrapolation. If no direct evidence is available for a given year, do not infer or assume data. Report all findings systematically, including sources from adjacent years when possible.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Perseus Project Research Data Collection",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ffe22d09-f211-4c46-b20d-73985fe7a992",
+          "request_id": "91654fa76d715c05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ffe22d09-f211-4c46-b20d-73985fe7a992",
+      "children": [
+        "c15ce751-7608-44a8-87ec-c9b4e0cf12be"
+      ]
+    },
+    "c15ce751-7608-44a8-87ec-c9b4e0cf12be": {
+      "id": "c15ce751-7608-44a8-87ec-c9b4e0cf12be",
+      "message": {
+        "id": "c15ce751-7608-44a8-87ec-c9b4e0cf12be",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740294124.659388,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\"Perseus Project\",\"1996\",\"Tufts Digital Library: Building a Digital Library \u2013 The Perseus Project as a Case Study in the Humanities\",\"http://hdl.handle.net/10427/57005\",\"None (official project paper)\"\n\"Perseus Project\",\"1998\",\"D-Lib Magazine: The Perseus Project and Beyond\",\"https://www.dlib.org/dlib/january98/01crane.html\",\"None\"\n\"Perseus Project\",\"2007\",\"wordtrade.com: Perseus Project (overview/review)\",\"http://www.wordtrade.com/religion/worldreligion/greekperseusprojectR.htm\",\"Third-party summary, factual but secondary\"\n\"Perseus Project\",\"2016\",\"Theological Librarianship 9(1): Web Review \u2013 Perseus Digital Library\",\"https://doi.org/10.31046/tl.v9i1.423\",\"None\"\n\"Perseus Project\",\"2017\",\"daranzolin.github.io: Exploring the Perseus Digital Library with R\",\"http://daranzolin.github.io/2017-02-07-perseus/\",\"Personal blog (informal use case)\"\n\"Perseus Project\",\"2018\",\"RIDE Issue 8: Review of Perseus Digital Library (Sarah Lang)\",\"https://ride.i-d-e.de/issues/issue-8/perseus/\",\"None\"\n\"Perseus Project\",\"2020\",\"degruyter.com (U. Toronto Press): Perseus Digital Library as a Case Study\",\"https://doi.org/10.3138/9781487531881-012\",\"None\"\n\"Perseus Project\",\"n.d.\",\"tei-c.org: Perseus Project (project description)\",\"https://tei-c.org/activities/projects/perseus-project/\",\"No date (archival description, likely early 2000s)\""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67bac672f6d88191ae906c23104dd0e3",
+          "async_task_title": "Perseus Project Research Data Collection"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "e2daff09-15dd-458e-a4b9-4f6afaf0de01",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c15ce751-7608-44a8-87ec-c9b4e0cf12be",
+  "plugin_ids": null,
+  "conversation_id": "67bac650-211c-8004-a5c4-ca57b50cc86e",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.dlib.org/dlib/january98/01crane.html",
+    "https://tei-c.org/activities/projects/perseus-project/",
+    "https://ride.i-d-e.de/issues/issue-8/perseus/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67bac650-211c-8004-a5c4-ca57b50cc86e"
+}

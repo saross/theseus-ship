@@ -1,0 +1,186 @@
+{
+  "title": "BI Jobs Australia Research",
+  "create_time": 1740693675.118595,
+  "update_time": 1740693689.762021,
+  "mapping": {
+    "bbb23f86-146b-4ad8-94c5-dd3fe7ee14a3": {
+      "id": "bbb23f86-146b-4ad8-94c5-dd3fe7ee14a3",
+      "message": null,
+      "parent": null,
+      "children": [
+        "9691a1ae-225f-4d92-a7c7-f463864b7115"
+      ]
+    },
+    "9691a1ae-225f-4d92-a7c7-f463864b7115": {
+      "id": "9691a1ae-225f-4d92-a7c7-f463864b7115",
+      "message": {
+        "id": "9691a1ae-225f-4d92-a7c7-f463864b7115",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bbb23f86-146b-4ad8-94c5-dd3fe7ee14a3",
+      "children": [
+        "bbb21d79-0ac2-4f9f-9500-1e1a72199616"
+      ]
+    },
+    "bbb21d79-0ac2-4f9f-9500-1e1a72199616": {
+      "id": "bbb21d79-0ac2-4f9f-9500-1e1a72199616",
+      "message": {
+        "id": "bbb21d79-0ac2-4f9f-9500-1e1a72199616",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740693675.122151,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "In Australia, can you build me a CSV of a set of jobs relating to \"business intelligence\" understood broadly, in Australia.\n\nFirst break down all of the specific skills that would be related to business intelligence, then look at available job sites to see what jobs have skills that they are looking for which correspond. We are going to do this deep research run in two steps. The first one is a thorough and well cited understanding of \"business intelligence\"."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "content_references": [],
+          "search_result_groups": [],
+          "image_results": [],
+          "real_time_audio_has_video": false,
+          "dictation": false,
+          "system_hints": [
+            "research"
+          ],
+          "request_id": "918b73ca6ed2a6d9-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9691a1ae-225f-4d92-a7c7-f463864b7115",
+      "children": [
+        "e141cbbf-3749-4d26-af74-c30ca8e94128"
+      ]
+    },
+    "e141cbbf-3749-4d26-af74-c30ca8e94128": {
+      "id": "e141cbbf-3749-4d26-af74-c30ca8e94128",
+      "message": {
+        "id": "e141cbbf-3749-4d26-af74-c30ca8e94128",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740693687.608246,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "To ensure a thorough and well-cited understanding of 'business intelligence,' could you specify the depth and format you\u2019d like? For example:\n\n- Should I cover historical context, current trends, and future directions?\n- Do you want a breakdown of key technologies, methodologies, and tools?\n- Should I include industry-specific applications (e.g., finance, healthcare, retail)?\n- Would you like academic and industry sources cited?\n- Should I prioritize Australian market-specific insights or keep it global?\n\nLet me know how detailed you\u2019d like this first step to be!"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "bbb21d79-0ac2-4f9f-9500-1e1a72199616",
+          "request_id": "918b73ca6ed2a6d9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bbb21d79-0ac2-4f9f-9500-1e1a72199616",
+      "children": [
+        "bfe166d8-df65-4ad4-9527-72927b6c6369"
+      ]
+    },
+    "bfe166d8-df65-4ad4-9527-72927b6c6369": {
+      "id": "bfe166d8-df65-4ad4-9527-72927b6c6369",
+      "message": {
+        "id": "bfe166d8-df65-4ad4-9527-72927b6c6369",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740693687.759818,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "gpt-4o",
+          "parent_id": "e141cbbf-3749-4d26-af74-c30ca8e94128",
+          "request_id": "918b73ca6ed2a6d9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e141cbbf-3749-4d26-af74-c30ca8e94128",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "bfe166d8-df65-4ad4-9527-72927b6c6369",
+  "plugin_ids": null,
+  "conversation_id": "67c0e0aa-c2ec-8004-a995-299d35c06e98",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67c0e0aa-c2ec-8004-a995-299d35c06e98"
+}

@@ -1,0 +1,851 @@
+{
+  "title": "v5-ArcGIS skeletal templates",
+  "create_time": 1740114419.227163,
+  "update_time": 1740117344.776177,
+  "mapping": {
+    "aaa1b87a-cdd3-46d4-8c99-f836cf7ad8b4": {
+      "id": "aaa1b87a-cdd3-46d4-8c99-f836cf7ad8b4",
+      "message": null,
+      "parent": null,
+      "children": [
+        "8196d4a9-f6b6-416e-81b1-7a472f6c6239"
+      ]
+    },
+    "8196d4a9-f6b6-416e-81b1-7a472f6c6239": {
+      "id": "8196d4a9-f6b6-416e-81b1-7a472f6c6239",
+      "message": {
+        "id": "8196d4a9-f6b6-416e-81b1-7a472f6c6239",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1b87a-cdd3-46d4-8c99-f836cf7ad8b4",
+      "children": [
+        "aa6d795f-989c-430e-be7f-8bb6f93794e9"
+      ]
+    },
+    "aa6d795f-989c-430e-be7f-8bb6f93794e9": {
+      "id": "aa6d795f-989c-430e-be7f-8bb6f93794e9",
+      "message": {
+        "id": "aa6d795f-989c-430e-be7f-8bb6f93794e9",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740114419.230296,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915435ce1a26e7cc-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8196d4a9-f6b6-416e-81b1-7a472f6c6239",
+      "children": [
+        "d0c2bbd7-35d8-4e7b-9545-35030571b780"
+      ]
+    },
+    "d0c2bbd7-35d8-4e7b-9545-35030571b780": {
+      "id": "d0c2bbd7-35d8-4e7b-9545-35030571b780",
+      "message": {
+        "id": "d0c2bbd7-35d8-4e7b-9545-35030571b780",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740114423.290714,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. I will conduct thorough research following your structured methodology, ensuring every source is verified and all data is recorded systematically in the quoted CSV format you specified.\n\nPlease provide the first archaeology or historical studies-related software tool for investigation."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "aa6d795f-989c-430e-be7f-8bb6f93794e9",
+          "request_id": "915435ce1a26e7cc-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aa6d795f-989c-430e-be7f-8bb6f93794e9",
+      "children": [
+        "3dfb0031-e3ad-4896-9262-c0b0bd3a3f12"
+      ]
+    },
+    "3dfb0031-e3ad-4896-9262-c0b0bd3a3f12": {
+      "id": "3dfb0031-e3ad-4896-9262-c0b0bd3a3f12",
+      "message": {
+        "id": "3dfb0031-e3ad-4896-9262-c0b0bd3a3f12",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740114423.290816,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d0c2bbd7-35d8-4e7b-9545-35030571b780",
+          "request_id": "915435ce1a26e7cc-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d0c2bbd7-35d8-4e7b-9545-35030571b780",
+      "children": [
+        "08ab7899-22bd-4979-8df0-1a624e3ea281"
+      ]
+    },
+    "08ab7899-22bd-4979-8df0-1a624e3ea281": {
+      "id": "08ab7899-22bd-4979-8df0-1a624e3ea281",
+      "message": {
+        "id": "08ab7899-22bd-4979-8df0-1a624e3ea281",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740114425.291537,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "ArcGIS skeletal templates"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915435f3cf4ae7cc-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3dfb0031-e3ad-4896-9262-c0b0bd3a3f12",
+      "children": [
+        "b94f2c6d-7042-4ee7-a99d-9fe29fb67b91"
+      ]
+    },
+    "b94f2c6d-7042-4ee7-a99d-9fe29fb67b91": {
+      "id": "b94f2c6d-7042-4ee7-a99d-9fe29fb67b91",
+      "message": {
+        "id": "b94f2c6d-7042-4ee7-a99d-9fe29fb67b91",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740114437.461711,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a systematic and thorough search for any mention of \"ArcGIS skeletal templates\" from 1995 onwards, ensuring all data is accurately recorded in the required CSV format. This includes scholarly literature, blogs, about pages, source code repositories, and any other relevant sources. I will let you know once the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "08ab7899-22bd-4979-8df0-1a624e3ea281",
+          "request_id": "915435f3cf4ae7cc-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "08ab7899-22bd-4979-8df0-1a624e3ea281",
+      "children": [
+        "37917405-4ac4-43ca-89c9-e2d932114719"
+      ]
+    },
+    "37917405-4ac4-43ca-89c9-e2d932114719": {
+      "id": "37917405-4ac4-43ca-89c9-e2d932114719",
+      "message": {
+        "id": "37917405-4ac4-43ca-89c9-e2d932114719",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740114437.461798,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a systematic and thorough search for any mention of \\\"ArcGIS skeletal templates\\\" from 1995 onwards, ensuring all data is accurately recorded in the required CSV format. This includes scholarly literature, blogs, about pages, source code repositories, and any other relevant sources. I will let you know once the research is complete.\",\"title\":\"Evidence Collection for ArcGIS Skeletal Templates\",\"prompt\":\"Conduct a thorough investigation into \\\"ArcGIS skeletal templates\\\" and collect evidence of its mentions from 1995 onwards. The research should be systematic, covering scholarly literature, blogs, about pages, version control repositories, and any other reliable sources.\\n\\nFor each valid source found, extract the following details:\\n- \\\"Tool\\\": Use the exact name \\\"ArcGIS skeletal templates\\\"\\n- \\\"Year\\\": The publication year of the source, or \\\"n.d.\\\" if no date is available\\n- \\\"Source\\\": Citation or (Domain + Page Title)\\n- \\\"URL\\\": The direct link to the source\\n- \\\"AI Notes\\\": Any concerns, uncertainties, or provenance issues\\n\\nEach mention of the tool should be recorded in a quoted CSV format, with one line per source. Systematically explore adjacent years around any discovered dates to ensure a comprehensive dataset. Only include dates from explicit sources\u2014do not infer dates.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b94f2c6d-7042-4ee7-a99d-9fe29fb67b91",
+          "request_id": "915435f3cf4ae7cc-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "b94f2c6d-7042-4ee7-a99d-9fe29fb67b91",
+      "children": [
+        "07e2cb63-7a8e-4d23-99d6-5a7d5ebe97e6"
+      ]
+    },
+    "07e2cb63-7a8e-4d23-99d6-5a7d5ebe97e6": {
+      "id": "07e2cb63-7a8e-4d23-99d6-5a7d5ebe97e6",
+      "message": {
+        "id": "07e2cb63-7a8e-4d23-99d6-5a7d5ebe97e6",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740114441.929056,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for ArcGIS Skeletal Templates",
+          "async_task_prompt": "Conduct a thorough investigation into \"ArcGIS skeletal templates\" and collect evidence of its mentions from 1995 onwards. The research should be systematic, covering scholarly literature, blogs, about pages, version control repositories, and any other reliable sources.\n\nFor each valid source found, extract the following details:\n- \"Tool\": Use the exact name \"ArcGIS skeletal templates\"\n- \"Year\": The publication year of the source, or \"n.d.\" if no date is available\n- \"Source\": Citation or (Domain + Page Title)\n- \"URL\": The direct link to the source\n- \"AI Notes\": Any concerns, uncertainties, or provenance issues\n\nEach mention of the tool should be recorded in a quoted CSV format, with one line per source. Systematically explore adjacent years around any discovered dates to ensure a comprehensive dataset. Only include dates from explicit sources\u2014do not infer dates.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for ArcGIS Skeletal Templates",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "37917405-4ac4-43ca-89c9-e2d932114719",
+          "request_id": "915435f3cf4ae7cc-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "37917405-4ac4-43ca-89c9-e2d932114719",
+      "children": [
+        "ec7edf08-7c00-4ac2-a613-5215620bac9d"
+      ]
+    },
+    "ec7edf08-7c00-4ac2-a613-5215620bac9d": {
+      "id": "ec7edf08-7c00-4ac2-a613-5215620bac9d",
+      "message": {
+        "id": "ec7edf08-7c00-4ac2-a613-5215620bac9d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740114746.194959,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "# Investigation of \"ArcGIS skeletal templates\"\n\nThe term **\"ArcGIS skeletal templates\"** appears in zooarchaeological literature and resources starting around 2010. Below is a chronological collection of sources mentioning this tool, including academic publications and relevant web pages. Each entry is formatted as a quoted CSV line with the fields: **Tool**, **Year**, **Source**, **URL**, **AI Notes**. (Years are taken from the source or left as \"n.d.\" if no date is given on the source.)\n\n```csv\n\"ArcGIS skeletal templates\",\"2010\",\"Orton, D.C. (2010) *Internet Archaeology* 28\u30101\u2020L18-L24\u3011\",\"https://intarch.ac.uk/journal/issue28/orton_index.html\",\"Original article introducing ArcGIS skeletal templates (explicitly dated 2010)\"\n\"ArcGIS skeletal templates\",\"2010\",\"LaMPEA-Doc 2010 (CNRS, France) \u2013 Acquisitions Biblioth\u00e8que\u301040\u2020L124-L130\u3011\",\"https://lampea.cnrs.fr/IMG/pdf/LaMPEA-Doc_201022.pdf\",\"Newsletter listing Orton\u2019s 2010 article (explicit date 2010 in source)\"\n\"ArcGIS skeletal templates\",\"2010\",\"Cambridge Archaeology Annual Report 2009\u20132010\u301012\u2020L5312-L5317\u3011\",\"https://www.arch.cam.ac.uk/files/miar-report-2010.pdf\",\"University of Cambridge report listing Orton\u2019s 2010 publication (explicitly dated 2010)\"\n\"ArcGIS skeletal templates\",\"n.d.\",\"arch.cam.ac.uk \u2013 Research Examples (G. Clark Lab projects)\u301050\u2020L439-L442\u3011\",\"https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_projects\",\"Cambridge Department page citing Orton 2010 (no page date provided; context suggests ~2011)\"\n\"ArcGIS skeletal templates\",\"n.d.\",\"arch.cam.ac.uk \u2013 \u201cLinks of Interest to Zooarchaeologists\u201d\u30105\u2020L292-L299\u3011\",\"https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_links\",\"Cambridge resource page linking to ArcGIS Skeletal Templates (no date on page)\"\n\"ArcGIS skeletal templates\",\"2010\",\"University of York Research Database \u2013 Orton (2010) record\u301052\u2020L35-L43\u3011\u301052\u2020L48-L51\u3011\",\"https://pure.york.ac.uk/portal/en/publications/a-new-tool-for-zooarchaeological-analysis-arcgis-skeletal-templat\",\"Institutional repository entry with abstract (explicitly notes Published 2010)\"\n\"ArcGIS skeletal templates\",\"2015\",\"Dibble, W.F. (2015) *Ethnobiology Letters* 6(2)\u301035\u2020L423-L430\u3011\u301033\u2020L63-L66\u3011\",\"https://ojs.ethnobiology.org/index.php/ebl/article/view/393\",\"Mentions Orton\u2019s ArcGIS skeletal templates as a data-recording aid (published 2015, reference to Orton 2010)\"\n\"ArcGIS skeletal templates\",\"2021\",\"Discamps et al. (2021) *Peer Community Journal* 1:e67\u301028\u2020L195-L202\u3011\u301026\u2020L529-L532\u3011\",\"https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf\",\"Cites ArcGIS skeletal templates as inspiration for automated skeletal figures in TIPZOO (explicitly dated 2021)\"\n``` \n\n**AI Notes:** The above sources show the term **\"ArcGIS skeletal templates\"** first appearing in **2010** with David Orton\u2019s article\u30101\u2020L18-L24\u3011. Subsequent mentions are mostly references to Orton\u2019s work in later research (e.g. Dibble 2015\u301035\u2020L423-L430\u3011, Discamps et al. 2021\u301028\u2020L195-L202\u3011). The Cambridge University pages are undated but likely created in the early 2010s, so they are marked **\"n.d.\"** for year. All dates are taken directly from the sources and no dates have been inferred. Each citation in the **Source** field is provided in the original wording or with a reference snippet to ensure traceability to the mention of *ArcGIS skeletal templates*."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 582,
+              "end_ix": 593,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n         Internet Archaeol. 28. Orton. A new tool for zooarchaeological analysis      ",
+                "url": "https://intarch.ac.uk/journal/issue28/orton_index.html#:~:text=Zooarchaeological%20results%20are%20often%20best,using%20a%20conventional%20graphics%20package",
+                "text": "Zooarchaeological results are often best presented in the form of anatomical diagrams, but these can be very time-consuming to produce. This article presents ArcGIS format skeletal templates for six common mammalian species, allowing faunal analysts to link their data directly into a representation of the relevant species. The symbology tools within ArcMap can then be used to view data and produce output diagrams much more rapidly than is possible using a conventional graphics package.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 1,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 18,
+                  "end_line_num": 24
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 827,
+              "end_ix": 841,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Microsoft Word - LaMPEA-Doc_201022.rtf",
+                "url": "https://lampea.cnrs.fr/IMG/pdf/LaMPEA-Doc_201022.pdf#:~:text=Tir%C3%A9s,http%3A%2F%2Fintarch.ac.uk%2Fjournal%2Fissue28%2Forton_index.html",
+                "text": "Tir\u00e9s-\u00e0-part Orton D.C., 2010, A New Tool for Zooarchaeological Analysis: ArcGIS Skeletal Templates for Some Common Mammalian Species, Internet Archaeology, t. 28 [SUJETS = arch\u00e9ozoologie, S.I.G., base de donn\u00e9es, mammif\u00e8re, squelette, anatomie, m\u00e9thodologie] >>> http://intarch.ac.uk/journal/issue28/orton_index.html",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 40,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 124,
+                  "end_line_num": 130
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1052,
+              "end_ix": 1068,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Annual Report 2010.indd",
+                "url": "https://www.arch.cam.ac.uk/files/miar-report-2010.pdf#:~:text=inalienability%20and%20sentient%20property%20in,Internet%20Archaeology%2028",
+                "text": "inalienability and sentient property in prehistory. World Archaeology 42, 188\u2013200. 2010 A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species. Internet Archaeology 28.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 12,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 5312,
+                  "end_line_num": 5317
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1310,
+              "end_ix": 1324,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Research Examples | Department of Archaeology",
+                "url": "https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_projects#:~:text=Orton%2C%20D,Internet%20Archaeology%C2%A028",
+                "text": "Orton, D.C. 2010. A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species. Internet Archaeology\u00a028.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 50,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 439,
+                  "end_line_num": 442
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1583,
+              "end_ix": 1596,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Resources | Department of Archaeology",
+                "url": "https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_links#:~:text=,Digimorph",
+                "text": "* Animal Palaeopathology Working Group * ArcGIS Skeletal Templates * Arch\u00e9ozoo * Association for Environmental Archaeology * British Association for Biological Anthropology and Osteoarchaeology (BABAO) * Digimorph",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 292,
+                  "end_line_num": 299
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1840,
+              "end_ix": 1852,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n        A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species\n      -  York Research Database",
+                "url": "https://pure.york.ac.uk/portal/en/publications/a-new-tool-for-zooarchaeological-analysis-arcgis-skeletal-templat#:~:text=Zooarchaeological%20results%20are%20often%20best,using%20a%20conventional%20graphics%20package",
+                "text": "Zooarchaeological results are often best presented in the form of anatomical diagrams, but these can be very time-consuming to produce. This article presents ArcGIS format skeletal templates for six common mammalian species, allowing faunal analysts to link their data directly into a representation of the relevant species. The symbology tools within ArcMap can then be used to view data and produce output diagrams much more rapidly than is possible using a conventional graphics package.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 52,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 35,
+                  "end_line_num": 43
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1852,
+              "end_ix": 1864,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n        A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species\n      -  York Research Database",
+                "url": "https://pure.york.ac.uk/portal/en/publications/a-new-tool-for-zooarchaeological-analysis-arcgis-skeletal-templat#:~:text=",
+                "text": "* https://doi.org/10.11141/ia.28.4",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 52,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 48,
+                  "end_line_num": 51
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2145,
+              "end_ix": 2159,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Data Collection in Zooarchaeology: Incorporating Touch-Screen, Speech-Recognition, Barcodes, and GIS ",
+                "url": "https://ojs.ethnobiology.org/index.php/ebl/article/download/393/257/#:~:text=elements%20utilized%20for%20cutmark%20recording,are%20saved%20in%20a%20standardized",
+                "text": "elements utilized for cutmark recording following anatomical templates provided by Popkin (2005) and zones defined by Dobney and Rielly (1988) (also see Orton 2010). These buttons and linkages can be adjusted depending on the focal species and elimi\u0002nates the need to memorize, look-up, or mistype an arcane zone value. The buttons work with touch\u0002screen or mouse. Since the zones are saved in a standardized",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 35,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 423,
+                  "end_line_num": 430
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2159,
+              "end_ix": 2171,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Data Collection in Zooarchaeology: Incorporating Touch-Screen, Speech-Recognition, Barcodes, and GIS ",
+                "url": "https://ojs.ethnobiology.org/index.php/ebl/article/download/393/257/#:~:text=Email%3A%20dibblewf%40mail,observations%20on%20specimens%2C%20zooarchaeologists%20typically",
+                "text": "Email: dibblewf@mail.uc.edu Received: April 14, 2015 Volume: 6(2):249-257 Published: December 16, 2015 \u00a9 2015 Society of Ethnobiology Abstract: When recording observations on specimens, zooarchaeologists typically",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 33,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 63,
+                  "end_line_num": 66
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2435,
+              "end_ix": 2449,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "TIPZOO: a Touchscreen Interface for Palaeolithic Zooarchaeology. Towards making data entry and analysis easier, faster, and more reliable",
+                "url": "https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf#:~:text=,basic%20information%20on%20a",
+                "text": "- TIPZOO-QGIS: QGIS project and shapefiles designed for quick and easy representation of skeletal-part profiles on skeleton outlines, using preformatted data exported by TIPZOO-R (inspired by comparable efforts by Orton, 2010 using ESRI ArcGIS). Many different types of information can be recorded or imported into TIPZOO: general site information, field data (XYZ coordinates, layers, etc.), basic information on a",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 28,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 195,
+                  "end_line_num": 202
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2449,
+              "end_ix": 2463,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "TIPZOO: a Touchscreen Interface for Palaeolithic Zooarchaeology. Towards making data entry and analysis easier, faster, and more reliable",
+                "url": "https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf#:~:text=Emmanuel%20Discamps%207%20Peer%20Community,61",
+                "text": "Emmanuel Discamps 7 Peer Community Journal, Vol. 1 (2021), article e67 https://doi.org/10.24072/pcjournal.61",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 26,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 529,
+                  "end_line_num": 532
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2783,
+              "end_ix": 2794,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n         Internet Archaeol. 28. Orton. A new tool for zooarchaeological analysis      ",
+                "url": "https://intarch.ac.uk/journal/issue28/orton_index.html#:~:text=Zooarchaeological%20results%20are%20often%20best,using%20a%20conventional%20graphics%20package",
+                "text": "Zooarchaeological results are often best presented in the form of anatomical diagrams, but these can be very time-consuming to produce. This article presents ArcGIS format skeletal templates for six common mammalian species, allowing faunal analysts to link their data directly into a representation of the relevant species. The symbology tools within ArcMap can then be used to view data and produce output diagrams much more rapidly than is possible using a conventional graphics package.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 1,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 18,
+                  "end_line_num": 24
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2889,
+              "end_ix": 2903,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Data Collection in Zooarchaeology: Incorporating Touch-Screen, Speech-Recognition, Barcodes, and GIS ",
+                "url": "https://ojs.ethnobiology.org/index.php/ebl/article/download/393/257/#:~:text=elements%20utilized%20for%20cutmark%20recording,are%20saved%20in%20a%20standardized",
+                "text": "elements utilized for cutmark recording following anatomical templates provided by Popkin (2005) and zones defined by Dobney and Rielly (1988) (also see Orton 2010). These buttons and linkages can be adjusted depending on the focal species and elimi\u0002nates the need to memorize, look-up, or mistype an arcane zone value. The buttons work with touch\u0002screen or mouse. Since the zones are saved in a standardized",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 35,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 423,
+                  "end_line_num": 430
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2925,
+              "end_ix": 2939,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "TIPZOO: a Touchscreen Interface for Palaeolithic Zooarchaeology. Towards making data entry and analysis easier, faster, and more reliable",
+                "url": "https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf#:~:text=,basic%20information%20on%20a",
+                "text": "- TIPZOO-QGIS: QGIS project and shapefiles designed for quick and easy representation of skeletal-part profiles on skeleton outlines, using preformatted data exported by TIPZOO-R (inspired by comparable efforts by Orton, 2010 using ESRI ArcGIS). Many different types of information can be recorded or imported into TIPZOO: general site information, field data (XYZ coordinates, layers, etc.), basic information on a",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 28,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 195,
+                  "end_line_num": 202
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u30101\u2020L18-L24\u3011",
+              "start_idx": 582,
+              "end_idx": 593,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n         Internet Archaeol. 28. Orton. A new tool for zooarchaeological analysis      ",
+              "url": "https://intarch.ac.uk/journal/issue28/orton_index.html#:~:text=Zooarchaeological%20results%20are%20often%20best,using%20a%20conventional%20graphics%20package",
+              "pub_date": null,
+              "snippet": "Zooarchaeological results are often best presented in the form of anatomical diagrams, but these can be very time-consuming to produce. This article presents ArcGIS format skeletal templates for six common mammalian species, allowing faunal analysts to link their data directly into a representation of the relevant species. The symbology tools within ArcMap can then be used to view data and produce output diagrams much more rapidly than is possible using a conventional graphics package.",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301040\u2020L124-L130\u3011",
+              "start_idx": 827,
+              "end_idx": 841,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Microsoft Word - LaMPEA-Doc_201022.rtf",
+              "url": "https://lampea.cnrs.fr/IMG/pdf/LaMPEA-Doc_201022.pdf#:~:text=Tir%C3%A9s,http%3A%2F%2Fintarch.ac.uk%2Fjournal%2Fissue28%2Forton_index.html",
+              "pub_date": null,
+              "snippet": "Tir\u00e9s-\u00e0-part Orton D.C., 2010, A New Tool for Zooarchaeological Analysis: ArcGIS Skeletal Templates for Some Common Mammalian Species, Internet Archaeology, t. 28 [SUJETS = arch\u00e9ozoologie, S.I.G., base de donn\u00e9es, mammif\u00e8re, squelette, anatomie, m\u00e9thodologie] >>> http://intarch.ac.uk/journal/issue28/orton_index.html",
+              "attribution": "lampea.cnrs.fr"
+            },
+            {
+              "matched_text": "\u301012\u2020L5312-L5317\u3011",
+              "start_idx": 1052,
+              "end_idx": 1068,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Annual Report 2010.indd",
+              "url": "https://www.arch.cam.ac.uk/files/miar-report-2010.pdf#:~:text=inalienability%20and%20sentient%20property%20in,Internet%20Archaeology%2028",
+              "pub_date": null,
+              "snippet": "inalienability and sentient property in prehistory. World Archaeology 42, 188\u2013200. 2010 A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species. Internet Archaeology 28.",
+              "attribution": "arch.cam.ac.uk"
+            },
+            {
+              "matched_text": "\u301050\u2020L439-L442\u3011",
+              "start_idx": 1310,
+              "end_idx": 1324,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Research Examples | Department of Archaeology",
+              "url": "https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_projects#:~:text=Orton%2C%20D,Internet%20Archaeology%C2%A028",
+              "pub_date": null,
+              "snippet": "Orton, D.C. 2010. A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species. Internet Archaeology\u00a028.",
+              "attribution": "arch.cam.ac.uk"
+            },
+            {
+              "matched_text": "\u30105\u2020L292-L299\u3011",
+              "start_idx": 1583,
+              "end_idx": 1596,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Resources | Department of Archaeology",
+              "url": "https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_links#:~:text=,Digimorph",
+              "pub_date": null,
+              "snippet": "* Animal Palaeopathology Working Group * ArcGIS Skeletal Templates * Arch\u00e9ozoo * Association for Environmental Archaeology * British Association for Biological Anthropology and Osteoarchaeology (BABAO) * Digimorph",
+              "attribution": "arch.cam.ac.uk"
+            },
+            {
+              "matched_text": "\u301052\u2020L35-L43\u3011",
+              "start_idx": 1840,
+              "end_idx": 1852,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n        A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species\n      -  York Research Database",
+              "url": "https://pure.york.ac.uk/portal/en/publications/a-new-tool-for-zooarchaeological-analysis-arcgis-skeletal-templat#:~:text=Zooarchaeological%20results%20are%20often%20best,using%20a%20conventional%20graphics%20package",
+              "pub_date": null,
+              "snippet": "Zooarchaeological results are often best presented in the form of anatomical diagrams, but these can be very time-consuming to produce. This article presents ArcGIS format skeletal templates for six common mammalian species, allowing faunal analysts to link their data directly into a representation of the relevant species. The symbology tools within ArcMap can then be used to view data and produce output diagrams much more rapidly than is possible using a conventional graphics package.",
+              "attribution": "pure.york.ac.uk"
+            },
+            {
+              "matched_text": "\u301052\u2020L48-L51\u3011",
+              "start_idx": 1852,
+              "end_idx": 1864,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n        A new tool for zooarchaeological analysis: ArcGIS skeletal templates for some common mammalian species\n      -  York Research Database",
+              "url": "https://pure.york.ac.uk/portal/en/publications/a-new-tool-for-zooarchaeological-analysis-arcgis-skeletal-templat#:~:text=",
+              "pub_date": null,
+              "snippet": "* https://doi.org/10.11141/ia.28.4",
+              "attribution": "pure.york.ac.uk"
+            },
+            {
+              "matched_text": "\u301035\u2020L423-L430\u3011",
+              "start_idx": 2145,
+              "end_idx": 2159,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Data Collection in Zooarchaeology: Incorporating Touch-Screen, Speech-Recognition, Barcodes, and GIS ",
+              "url": "https://ojs.ethnobiology.org/index.php/ebl/article/download/393/257/#:~:text=elements%20utilized%20for%20cutmark%20recording,are%20saved%20in%20a%20standardized",
+              "pub_date": null,
+              "snippet": "elements utilized for cutmark recording following anatomical templates provided by Popkin (2005) and zones defined by Dobney and Rielly (1988) (also see Orton 2010). These buttons and linkages can be adjusted depending on the focal species and elimi\u0002nates the need to memorize, look-up, or mistype an arcane zone value. The buttons work with touch\u0002screen or mouse. Since the zones are saved in a standardized",
+              "attribution": "ojs.ethnobiology.org"
+            },
+            {
+              "matched_text": "\u301033\u2020L63-L66\u3011",
+              "start_idx": 2159,
+              "end_idx": 2171,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Data Collection in Zooarchaeology: Incorporating Touch-Screen, Speech-Recognition, Barcodes, and GIS ",
+              "url": "https://ojs.ethnobiology.org/index.php/ebl/article/download/393/257/#:~:text=Email%3A%20dibblewf%40mail,observations%20on%20specimens%2C%20zooarchaeologists%20typically",
+              "pub_date": null,
+              "snippet": "Email: dibblewf@mail.uc.edu Received: April 14, 2015 Volume: 6(2):249-257 Published: December 16, 2015 \u00a9 2015 Society of Ethnobiology Abstract: When recording observations on specimens, zooarchaeologists typically",
+              "attribution": "ojs.ethnobiology.org"
+            },
+            {
+              "matched_text": "\u301028\u2020L195-L202\u3011",
+              "start_idx": 2435,
+              "end_idx": 2449,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "TIPZOO: a Touchscreen Interface for Palaeolithic Zooarchaeology. Towards making data entry and analysis easier, faster, and more reliable",
+              "url": "https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf#:~:text=,basic%20information%20on%20a",
+              "pub_date": null,
+              "snippet": "- TIPZOO-QGIS: QGIS project and shapefiles designed for quick and easy representation of skeletal-part profiles on skeleton outlines, using preformatted data exported by TIPZOO-R (inspired by comparable efforts by Orton, 2010 using ESRI ArcGIS). Many different types of information can be recorded or imported into TIPZOO: general site information, field data (XYZ coordinates, layers, etc.), basic information on a",
+              "attribution": "peercommunityjournal.org"
+            },
+            {
+              "matched_text": "\u301026\u2020L529-L532\u3011",
+              "start_idx": 2449,
+              "end_idx": 2463,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "TIPZOO: a Touchscreen Interface for Palaeolithic Zooarchaeology. Towards making data entry and analysis easier, faster, and more reliable",
+              "url": "https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf#:~:text=Emmanuel%20Discamps%207%20Peer%20Community,61",
+              "pub_date": null,
+              "snippet": "Emmanuel Discamps 7 Peer Community Journal, Vol. 1 (2021), article e67 https://doi.org/10.24072/pcjournal.61",
+              "attribution": "peercommunityjournal.org"
+            },
+            {
+              "matched_text": "\u30101\u2020L18-L24\u3011",
+              "start_idx": 2783,
+              "end_idx": 2794,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n         Internet Archaeol. 28. Orton. A new tool for zooarchaeological analysis      ",
+              "url": "https://intarch.ac.uk/journal/issue28/orton_index.html#:~:text=Zooarchaeological%20results%20are%20often%20best,using%20a%20conventional%20graphics%20package",
+              "pub_date": null,
+              "snippet": "Zooarchaeological results are often best presented in the form of anatomical diagrams, but these can be very time-consuming to produce. This article presents ArcGIS format skeletal templates for six common mammalian species, allowing faunal analysts to link their data directly into a representation of the relevant species. The symbology tools within ArcMap can then be used to view data and produce output diagrams much more rapidly than is possible using a conventional graphics package.",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301035\u2020L423-L430\u3011",
+              "start_idx": 2889,
+              "end_idx": 2903,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Data Collection in Zooarchaeology: Incorporating Touch-Screen, Speech-Recognition, Barcodes, and GIS ",
+              "url": "https://ojs.ethnobiology.org/index.php/ebl/article/download/393/257/#:~:text=elements%20utilized%20for%20cutmark%20recording,are%20saved%20in%20a%20standardized",
+              "pub_date": null,
+              "snippet": "elements utilized for cutmark recording following anatomical templates provided by Popkin (2005) and zones defined by Dobney and Rielly (1988) (also see Orton 2010). These buttons and linkages can be adjusted depending on the focal species and elimi\u0002nates the need to memorize, look-up, or mistype an arcane zone value. The buttons work with touch\u0002screen or mouse. Since the zones are saved in a standardized",
+              "attribution": "ojs.ethnobiology.org"
+            },
+            {
+              "matched_text": "\u301028\u2020L195-L202\u3011",
+              "start_idx": 2925,
+              "end_idx": 2939,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "TIPZOO: a Touchscreen Interface for Palaeolithic Zooarchaeology. Towards making data entry and analysis easier, faster, and more reliable",
+              "url": "https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf#:~:text=,basic%20information%20on%20a",
+              "pub_date": null,
+              "snippet": "- TIPZOO-QGIS: QGIS project and shapefiles designed for quick and easy representation of skeletal-part profiles on skeleton outlines, using preformatted data exported by TIPZOO-R (inspired by comparable efforts by Orton, 2010 using ESRI ArcGIS). Many different types of information can be recorded or imported into TIPZOO: general site information, field data (XYZ coordinates, layers, etc.), basic information on a",
+              "attribution": "peercommunityjournal.org"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b80a09c5f481918ed8f59c0025c57a",
+          "async_task_title": "Evidence Collection for ArcGIS Skeletal Templates"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "07e2cb63-7a8e-4d23-99d6-5a7d5ebe97e6",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "ec7edf08-7c00-4ac2-a613-5215620bac9d",
+  "plugin_ids": null,
+  "conversation_id": "67b809f3-0dc4-8004-a6ce-b70a568225ac",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_links",
+    "https://www.arch.cam.ac.uk/research/laboratories/clark/gcl_projects",
+    "https://pure.york.ac.uk/portal/en/publications/a-new-tool-for-zooarchaeological-analysis-arcgis-skeletal-templat",
+    "https://ojs.ethnobiology.org/index.php/ebl/article/view/393",
+    "https://intarch.ac.uk/journal/issue28/orton_index.html",
+    "https://peercommunityjournal.org/item/10.24072/pcjournal.61.pdf",
+    "https://www.arch.cam.ac.uk/files/miar-report-2010.pdf"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b809f3-0dc4-8004-a6ce-b70a568225ac"
+}

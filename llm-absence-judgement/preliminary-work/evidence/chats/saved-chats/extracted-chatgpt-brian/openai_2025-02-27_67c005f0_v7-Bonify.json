@@ -1,0 +1,398 @@
+{
+  "title": "v7-Bonify",
+  "create_time": 1740637680.601482,
+  "update_time": 1740646918.368966,
+  "mapping": {
+    "aaa10496-465c-46b3-bfc9-22f82bee0f8a": {
+      "id": "aaa10496-465c-46b3-bfc9-22f82bee0f8a",
+      "message": null,
+      "parent": null,
+      "children": [
+        "3b4691b3-dc25-4f6e-82ab-af3f2d3dd00a"
+      ]
+    },
+    "3b4691b3-dc25-4f6e-82ab-af3f2d3dd00a": {
+      "id": "3b4691b3-dc25-4f6e-82ab-af3f2d3dd00a",
+      "message": {
+        "id": "3b4691b3-dc25-4f6e-82ab-af3f2d3dd00a",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa10496-465c-46b3-bfc9-22f82bee0f8a",
+      "children": [
+        "6a53eb2d-12ba-4241-9f1a-ebfd0cfc587c"
+      ]
+    },
+    "6a53eb2d-12ba-4241-9f1a-ebfd0cfc587c": {
+      "id": "6a53eb2d-12ba-4241-9f1a-ebfd0cfc587c",
+      "message": {
+        "id": "6a53eb2d-12ba-4241-9f1a-ebfd0cfc587c",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740637680.604252,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi DR. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record tool, year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91861cbce8b3e7c9-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3b4691b3-dc25-4f6e-82ab-af3f2d3dd00a",
+      "children": [
+        "37be2a37-b2c6-4ab7-88df-b0568eea944d"
+      ]
+    },
+    "37be2a37-b2c6-4ab7-88df-b0568eea944d": {
+      "id": "37be2a37-b2c6-4ab7-88df-b0568eea944d",
+      "message": {
+        "id": "37be2a37-b2c6-4ab7-88df-b0568eea944d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740637681.777796,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your methodology and requirements for systematically collecting evidence. Please provide the first tool name so I can begin the research process."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "6a53eb2d-12ba-4241-9f1a-ebfd0cfc587c",
+          "request_id": "91861cbce8b3e7c9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6a53eb2d-12ba-4241-9f1a-ebfd0cfc587c",
+      "children": [
+        "bee6203d-8fae-44e7-a3d4-ae090951284b"
+      ]
+    },
+    "bee6203d-8fae-44e7-a3d4-ae090951284b": {
+      "id": "bee6203d-8fae-44e7-a3d4-ae090951284b",
+      "message": {
+        "id": "bee6203d-8fae-44e7-a3d4-ae090951284b",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740637681.777912,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "37be2a37-b2c6-4ab7-88df-b0568eea944d",
+          "request_id": "91861cbce8b3e7c9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "37be2a37-b2c6-4ab7-88df-b0568eea944d",
+      "children": [
+        "741d3841-57d9-4211-864b-756d47d11a1a"
+      ]
+    },
+    "741d3841-57d9-4211-864b-756d47d11a1a": {
+      "id": "741d3841-57d9-4211-864b-756d47d11a1a",
+      "message": {
+        "id": "741d3841-57d9-4211-864b-756d47d11a1a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740637688.788543,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Bonify"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91861cf13990e7c9-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bee6203d-8fae-44e7-a3d4-ae090951284b",
+      "children": [
+        "22d330fd-6b94-4667-8778-2d7d6b3082ea"
+      ]
+    },
+    "22d330fd-6b94-4667-8778-2d7d6b3082ea": {
+      "id": "22d330fd-6b94-4667-8778-2d7d6b3082ea",
+      "message": {
+        "id": "22d330fd-6b94-4667-8778-2d7d6b3082ea",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740637697.571107,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will systematically collect evidence for the archaeology and historical studies-related software tool \"Bonify.\" I will ensure that each valid source is documented with the tool name, year, source, URL, and any relevant AI notes. I will take the time to thoroughly investigate and verify the information, following the methodology you outlined. I will return with the results in a well-formed CSV format."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "741d3841-57d9-4211-864b-756d47d11a1a",
+          "request_id": "91861cf13990e7c9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "741d3841-57d9-4211-864b-756d47d11a1a",
+      "children": [
+        "669dde47-d872-41d2-83b4-d6c00c020427"
+      ]
+    },
+    "669dde47-d872-41d2-83b4-d6c00c020427": {
+      "id": "669dde47-d872-41d2-83b4-d6c00c020427",
+      "message": {
+        "id": "669dde47-d872-41d2-83b4-d6c00c020427",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740637697.571238,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will systematically collect evidence for the archaeology and historical studies-related software tool \\\"Bonify.\\\" I will ensure that each valid source is documented with the tool name, year, source, URL, and any relevant AI notes. I will take the time to thoroughly investigate and verify the information, following the methodology you outlined. I will return with the results in a well-formed CSV format.\",\"title\":\"Evidence Collection for Bonify Archaeology Software\",\"prompt\":\"Conduct a systematic and comprehensive search for the archaeology and historical studies-related software tool \\\"Bonify.\\\" For each valid mention of this tool in a given year (from 1995 onwards), record the following details in a quoted CSV format:\\n\\n- \\\"Tool\\\": The tool name, which must be recorded consistently as \\\"Bonify.\\\"\\n- \\\"Year\\\": The publication year of the source; if no date is available, use \\\"n.d.\\\"\\n- \\\"Source\\\": The citation or (Domain + Page Title) of the source.\\n- \\\"URL\\\": The direct URL of the resource.\\n- \\\"AI Notes\\\": Any uncertainties, concerns, or notes about the data provenance.\\n\\n### Research Approach:\\n- Explore every single search result page systematically.\\n- Include all types of sources: scholarly literature, blogs, official pages, repositories, and mentions.\\n- If you find a source with a specific year, explore adjacent years (+-1 year) for additional references.\\n- Do not extrapolate or infer dates\u2014record only explicitly stated publication years.\\n- If no date is found, indicate \\\"n.d.\\\"\\n\\n### Allowed Sources:\\n- Published version control repositories (document commit history dates if available).\\n- Scholarly articles mentioning Bonify.\\n- Blog posts, about pages, or web mentions.\\n- Any other valid sources discussing Bonify.\\n\\nReturn results in a **fenced CSV block** with each row corresponding to a separate mention of \\\"Bonify.\\\"\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "22d330fd-6b94-4667-8778-2d7d6b3082ea",
+          "request_id": "91861cf13990e7c9-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "22d330fd-6b94-4667-8778-2d7d6b3082ea",
+      "children": [
+        "5cc0b875-ca9b-41c7-b36c-9933593cd2d2"
+      ]
+    },
+    "5cc0b875-ca9b-41c7-b36c-9933593cd2d2": {
+      "id": "5cc0b875-ca9b-41c7-b36c-9933593cd2d2",
+      "message": {
+        "id": "5cc0b875-ca9b-41c7-b36c-9933593cd2d2",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740637697.571321,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for Bonify Archaeology Software",
+          "async_task_prompt": "Conduct a systematic and comprehensive search for the archaeology and historical studies-related software tool \"Bonify.\" For each valid mention of this tool in a given year (from 1995 onwards), record the following details in a quoted CSV format:\n\n- \"Tool\": The tool name, which must be recorded consistently as \"Bonify.\"\n- \"Year\": The publication year of the source; if no date is available, use \"n.d.\"\n- \"Source\": The citation or (Domain + Page Title) of the source.\n- \"URL\": The direct URL of the resource.\n- \"AI Notes\": Any uncertainties, concerns, or notes about the data provenance.\n\n### Research Approach:\n- Explore every single search result page systematically.\n- Include all types of sources: scholarly literature, blogs, official pages, repositories, and mentions.\n- If you find a source with a specific year, explore adjacent years (+-1 year) for additional references.\n- Do not extrapolate or infer dates\u2014record only explicitly stated publication years.\n- If no date is found, indicate \"n.d.\"\n\n### Allowed Sources:\n- Published version control repositories (document commit history dates if available).\n- Scholarly articles mentioning Bonify.\n- Blog posts, about pages, or web mentions.\n- Any other valid sources discussing Bonify.\n\nReturn results in a **fenced CSV block** with each row corresponding to a separate mention of \"Bonify.\"",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for Bonify Archaeology Software",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "669dde47-d872-41d2-83b4-d6c00c020427",
+          "request_id": "91861cf13990e7c9-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "669dde47-d872-41d2-83b4-d6c00c020427",
+      "children": [
+        "a087528b-7af8-462b-aaf2-60ca55938625"
+      ]
+    },
+    "a087528b-7af8-462b-aaf2-60ca55938625": {
+      "id": "a087528b-7af8-462b-aaf2-60ca55938625",
+      "message": {
+        "id": "a087528b-7af8-462b-aaf2-60ca55938625",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740638175.441669,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Bonify\",\"2018\",\"caa-minions.github.io (List of Minions \u2013 Little Minions of the CAA)\",\"https://caa-minions.github.io/minions/\",\"Year indicates initial presentation as a CAA 2018 project (demo listing)\"\n\"Bonify\",\"2019\",\"link.springer.com (Bonify 1.0: evaluating virtual reference collections in teaching and research)\",\"https://doi.org/10.1007/s12520-019-00898-1\",\"Published as an open-access journal article (Nobles et al., 2019)\"\n\"Bonify\",\"2021\",\"degruyter.com (Dynamic Collections: A 3D Web Infrastructure for Artifact Engagement)\",\"https://doi.org/10.1515/opar-2020-0139\",\"Mentions Bonify as an example in an Open Archaeology journal paper (Ekengren et al., 2021)\"\n\"Bonify\",\"2022\",\"ScienceDirect (Digital Zooarchaeology: State of the art, challenges, prospects and synergies)\",\"https://doi.org/10.1016/j.jasrep.2022.103588\",\"Discusses Bonify in a review of digital zooarchaeology (Spyrou et al., 2022)\"\n\"Bonify\",\"n.d.\",\"rug.nl (Zooarchaeology | GIA Laboratories \u2013 Bonify project description)\",\"https://www.rug.nl/research/groningen-institute-of-archaeology/research/archeozoologie?lang=en\",\"University of Groningen lab page describing the Bonify project (no date listed)\"\n\"Bonify\",\"n.d.\",\"open-archaeo.info (Standalone software listing: Bonify)\",\"https://open-archaeo.info/categories/standalone-software/\",\"Community-curated open-source software list entry for Bonify (no specific publication date)\"\n\"Bonify\",\"n.d.\",\"3dhop.net (3DHOP Gallery \u2013 Bonify project example)\",\"https://3dhop.net/demo.php\",\"3DHOP project gallery featuring Bonify (no date provided on page)\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67c00601824c8191a0b4b09089540b75",
+          "async_task_title": "Evidence Collection for Bonify Archaeology Software"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "5cc0b875-ca9b-41c7-b36c-9933593cd2d2",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "a087528b-7af8-462b-aaf2-60ca55938625",
+  "plugin_ids": null,
+  "conversation_id": "67c005f0-469c-8004-92ce-b5a62962b5df",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.rug.nl/research/groningen-institute-of-archaeology/research/archeozoologie?lang=en",
+    "https://3dhop.net/demo.php",
+    "https://open-archaeo.info/categories/standalone-software/",
+    "https://caa-minions.github.io/minions/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67c005f0-469c-8004-92ce-b5a62962b5df"
+}

@@ -1,0 +1,592 @@
+{
+  "title": "v6-FieldWorker Advanced  FieldWorker Pro ",
+  "create_time": 1740196405.406349,
+  "update_time": 1740197753.671252,
+  "mapping": {
+    "aaa13879-7b64-4490-b871-2c755b765217": {
+      "id": "aaa13879-7b64-4490-b871-2c755b765217",
+      "message": null,
+      "parent": null,
+      "children": [
+        "ad2ac389-139c-4176-b0bf-85d6cf3e8ad3"
+      ]
+    },
+    "ad2ac389-139c-4176-b0bf-85d6cf3e8ad3": {
+      "id": "ad2ac389-139c-4176-b0bf-85d6cf3e8ad3",
+      "message": {
+        "id": "ad2ac389-139c-4176-b0bf-85d6cf3e8ad3",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa13879-7b64-4490-b871-2c755b765217",
+      "children": [
+        "db9eb7e9-4cb7-4303-96ca-ba476411e350"
+      ]
+    },
+    "db9eb7e9-4cb7-4303-96ca-ba476411e350": {
+      "id": "db9eb7e9-4cb7-4303-96ca-ba476411e350",
+      "message": {
+        "id": "db9eb7e9-4cb7-4303-96ca-ba476411e350",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740196405.409835,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915c076a4d0dd5df-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ad2ac389-139c-4176-b0bf-85d6cf3e8ad3",
+      "children": [
+        "78140c4a-b53c-4c6c-94fa-71f20eb5dcaa"
+      ]
+    },
+    "78140c4a-b53c-4c6c-94fa-71f20eb5dcaa": {
+      "id": "78140c4a-b53c-4c6c-94fa-71f20eb5dcaa",
+      "message": {
+        "id": "78140c4a-b53c-4c6c-94fa-71f20eb5dcaa",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740196410.447889,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your research methodology and the need for accuracy, transparency, and systematic collection of evidence. \n\nTo proceed, please provide the name or acronym of the first archaeology or historical studies-related software tool you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "db9eb7e9-4cb7-4303-96ca-ba476411e350",
+          "request_id": "915c076a4d0dd5df-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "db9eb7e9-4cb7-4303-96ca-ba476411e350",
+      "children": [
+        "5a73f7e2-1dd0-43ad-8fd2-b42aefb2acc3"
+      ]
+    },
+    "5a73f7e2-1dd0-43ad-8fd2-b42aefb2acc3": {
+      "id": "5a73f7e2-1dd0-43ad-8fd2-b42aefb2acc3",
+      "message": {
+        "id": "5a73f7e2-1dd0-43ad-8fd2-b42aefb2acc3",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740196410.44801,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "78140c4a-b53c-4c6c-94fa-71f20eb5dcaa",
+          "request_id": "915c076a4d0dd5df-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "78140c4a-b53c-4c6c-94fa-71f20eb5dcaa",
+      "children": [
+        "d7cfd234-f826-40e8-a4b5-1caad58ae629"
+      ]
+    },
+    "d7cfd234-f826-40e8-a4b5-1caad58ae629": {
+      "id": "d7cfd234-f826-40e8-a4b5-1caad58ae629",
+      "message": {
+        "id": "d7cfd234-f826-40e8-a4b5-1caad58ae629",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740196437.414423,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "FieldWorker Advanced \nFieldWorker Pro "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915c083378c3d5df-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5a73f7e2-1dd0-43ad-8fd2-b42aefb2acc3",
+      "children": [
+        "aa6cb1d7-2240-4a78-9424-eebeba2c857b"
+      ]
+    },
+    "aa6cb1d7-2240-4a78-9424-eebeba2c857b": {
+      "id": "aa6cb1d7-2240-4a78-9424-eebeba2c857b",
+      "message": {
+        "id": "aa6cb1d7-2240-4a78-9424-eebeba2c857b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740196451.856452,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a systematic and comprehensive search for mentions of \"FieldWorker Advanced\" and \"FieldWorker Pro\" in archaeology and historical studies-related sources. \n\nI will document each mention in a well-formed CSV with columns for Tool, Year, Source, URL, and AI Notes. I will ensure that all sources meet the defined criteria and will indicate any uncertainties in the AI Notes column. This process will take some time, and I will update you once I have gathered the relevant data."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d7cfd234-f826-40e8-a4b5-1caad58ae629",
+          "request_id": "915c083378c3d5df-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d7cfd234-f826-40e8-a4b5-1caad58ae629",
+      "children": [
+        "346bb778-4a5e-4c85-b3c1-7e96afd1346c"
+      ]
+    },
+    "346bb778-4a5e-4c85-b3c1-7e96afd1346c": {
+      "id": "346bb778-4a5e-4c85-b3c1-7e96afd1346c",
+      "message": {
+        "id": "346bb778-4a5e-4c85-b3c1-7e96afd1346c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740196451.856562,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a systematic and comprehensive search for mentions of \\\"FieldWorker Advanced\\\" and \\\"FieldWorker Pro\\\" in archaeology and historical studies-related sources. \\n\\nI will document each mention in a well-formed CSV with columns for Tool, Year, Source, URL, and AI Notes. I will ensure that all sources meet the defined criteria and will indicate any uncertainties in the AI Notes column. This process will take some time, and I will update you once I have gathered the relevant data.\",\"title\":\"FieldWorker Advanced and FieldWorker Pro Research\",\"prompt\":\"Conduct a thorough and systematic search for mentions of \\\"FieldWorker Advanced\\\" and \\\"FieldWorker Pro\\\" in archaeology and historical sciences-related sources. \\n\\nFor each mention, document the following details in a well-formed quoted CSV format:\\n\\n- **Tool**: Consistently use \\\"FieldWorker Advanced\\\" or \\\"FieldWorker Pro\\\" based on the exact name found in the source.\\n- **Year**: The year of publication of the source (n.d. if no date is available).\\n- **Source**: Citation or (Domain + Page Title) from where the mention was found.\\n- **URL**: The direct URL of the source.\\n- **AI Notes**: Any uncertainties, concerns, or contextual notes about the provenance or quality of the data.\\n\\nGuidelines:\\n1. **Comprehensiveness**: Search for mentions from 1995 onwards, with +-1 year exploration around identified years.\\n2. **Allowed sources**: Include scholarly literature, software repositories, blog posts, about pages, and any valid mention.\\n3. **Exclusion**: Do not infer dates. Only include explicitly stated publication years.\\n4. **Methodology**: Carefully inspect all pages of search results for exhaustive data collection.\\n\\nDeliver the results in a CSV format inside a markdown fenced code block for structured reporting.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "aa6cb1d7-2240-4a78-9424-eebeba2c857b",
+          "request_id": "915c083378c3d5df-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "aa6cb1d7-2240-4a78-9424-eebeba2c857b",
+      "children": [
+        "97d9ca18-6810-45dc-be2f-64d56c9783dd"
+      ]
+    },
+    "97d9ca18-6810-45dc-be2f-64d56c9783dd": {
+      "id": "97d9ca18-6810-45dc-be2f-64d56c9783dd",
+      "message": {
+        "id": "97d9ca18-6810-45dc-be2f-64d56c9783dd",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740196451.856651,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "FieldWorker Advanced and FieldWorker Pro Research",
+          "async_task_prompt": "Conduct a thorough and systematic search for mentions of \"FieldWorker Advanced\" and \"FieldWorker Pro\" in archaeology and historical sciences-related sources. \n\nFor each mention, document the following details in a well-formed quoted CSV format:\n\n- **Tool**: Consistently use \"FieldWorker Advanced\" or \"FieldWorker Pro\" based on the exact name found in the source.\n- **Year**: The year of publication of the source (n.d. if no date is available).\n- **Source**: Citation or (Domain + Page Title) from where the mention was found.\n- **URL**: The direct URL of the source.\n- **AI Notes**: Any uncertainties, concerns, or contextual notes about the provenance or quality of the data.\n\nGuidelines:\n1. **Comprehensiveness**: Search for mentions from 1995 onwards, with +-1 year exploration around identified years.\n2. **Allowed sources**: Include scholarly literature, software repositories, blog posts, about pages, and any valid mention.\n3. **Exclusion**: Do not infer dates. Only include explicitly stated publication years.\n4. **Methodology**: Carefully inspect all pages of search results for exhaustive data collection.\n\nDeliver the results in a CSV format inside a markdown fenced code block for structured reporting.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "FieldWorker Advanced and FieldWorker Pro Research",
+            "completed_with_time": "Research completed in 7m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "346bb778-4a5e-4c85-b3c1-7e96afd1346c",
+          "request_id": "915c083378c3d5df-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b94a634e908191a53582a7e3baf162",
+          "async_task_conversation_id": "67b94a63-5fb4-8004-a22c-3699e8112066",
+          "async_task_created_at": "2025-02-22 03:54:11.836023+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "346bb778-4a5e-4c85-b3c1-7e96afd1346c",
+      "children": [
+        "2fd16ef2-a4e3-49f5-9dca-9f8006d510c7"
+      ]
+    },
+    "2fd16ef2-a4e3-49f5-9dca-9f8006d510c7": {
+      "id": "2fd16ef2-a4e3-49f5-9dca-9f8006d510c7",
+      "message": {
+        "id": "2fd16ef2-a4e3-49f5-9dca-9f8006d510c7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740196866.635987,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"FieldWorker Advanced\",\"1997\",\"intarch.ac.uk \u2013 Internet Archaeology, Issue\u00a03 (Review by Ryan et al.)\",\"https://intarch.ac.uk/journal/issue3/reviews/ryan.html\",\"Peer-reviewed review article in an archaeology journal\u30103\u2020L14-L16\u3011. Confirms 1997 as publication year; discusses FieldWorker Advanced on the Apple Newton for archaeological field data collection.\"\n\"FieldWorker Pro\",\"1997\",\"intarch.ac.uk \u2013 Internet Archaeology, Issue\u00a03 (Review by Ryan et al.)\",\"https://intarch.ac.uk/journal/issue3/reviews/ryan.html\",\"Same Internet Archaeology review\u30103\u2020L14-L16\u3011 covering the pre-release FieldWorker Pro (v0.91). Published 1997; provides context that Pro was an upcoming enhanced version for advanced GPS/data logging features.\"\n\"FieldWorker Advanced\",\"1997\",\"archaeologydataservice.ac.uk \u2013 ADS Library Record (Ryan, Pascoe & Morse 1997)\",\"https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898\",\"Bibliographic record on Archaeology Data Service\u301017\u2020L21-L29\u3011\u301017\u2020L45-L52\u3011. Confirms 1997 publication and notes FieldWorker came in Basic, Advanced, Pro forms; the Advanced 2.3.5 was the version reviewed.\"\n\"FieldWorker Pro\",\"1997\",\"archaeologydataservice.ac.uk \u2013 ADS Library Record (Ryan, Pascoe & Morse 1997)\",\"https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898\",\"Same ADS entry\u301017\u2020L21-L29\u3011\u301017\u2020L45-L52\u3011 also references FieldWorker Pro (v0.91 pre-release) as reviewed. Trusted archival source; explicitly dated 1997 in record.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 261,
+              "end_ix": 272,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n         Internet Archaeol. 3. Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91\n\n      ",
+                "url": "https://intarch.ac.uk/journal/issue3/reviews/ryan.html#:~:text=Cite%20this%20as%3A%20Ryan%2C%20N,4",
+                "text": "Cite this as: Ryan, N., Pascoe, J. and Morse, D. 1997 FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software, Internet Archaeology 3. https://doi.org/10.11141/ia.3.4",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 3,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 14,
+                  "end_line_num": 16
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 590,
+              "end_ix": 601,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n         Internet Archaeol. 3. Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91\n\n      ",
+                "url": "https://intarch.ac.uk/journal/issue3/reviews/ryan.html#:~:text=Cite%20this%20as%3A%20Ryan%2C%20N,4",
+                "text": "Cite this as: Ryan, N., Pascoe, J. and Morse, D. 1997 FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software, Internet Archaeology 3. https://doi.org/10.11141/ia.3.4",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 3,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 14,
+                  "end_line_num": 16
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1012,
+              "end_ix": 1024,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+                "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=Ryan%2C%20N,4",
+                "text": "Ryan, N., Pascoe, J. and Morse, D. (1997). Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software. Internet Archaeology 3. Vol 3, York: Internet Archaeology. https://doi.org/10.11141/ia.3.4.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 17,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 21,
+                  "end_line_num": 29
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1024,
+              "end_ix": 1036,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+                "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=forms%20and%20GPS%20data%20logging,14%20David%20Morse",
+                "text": "forms and GPS data logging on the Newton MessagePad range of hand--held computers. FieldWorker is produced in three forms, Basic, Advanced and Pro. The reviewers tested the current release (2.3.5) of the Advanced version, and also examined a pre--release (0.91) of the Pro version. Author: Nick Ryan   14 David Morse",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 17,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 45,
+                  "end_line_num": 52
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1373,
+              "end_ix": 1385,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+                "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=Ryan%2C%20N,4",
+                "text": "Ryan, N., Pascoe, J. and Morse, D. (1997). Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software. Internet Archaeology 3. Vol 3, York: Internet Archaeology. https://doi.org/10.11141/ia.3.4.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 17,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 21,
+                  "end_line_num": 29
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1385,
+              "end_ix": 1397,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+                "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=forms%20and%20GPS%20data%20logging,14%20David%20Morse",
+                "text": "forms and GPS data logging on the Newton MessagePad range of hand--held computers. FieldWorker is produced in three forms, Basic, Advanced and Pro. The reviewers tested the current release (2.3.5) of the Advanced version, and also examined a pre--release (0.91) of the Pro version. Author: Nick Ryan   14 David Morse",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 17,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 45,
+                  "end_line_num": 52
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u30103\u2020L14-L16\u3011",
+              "start_idx": 261,
+              "end_idx": 272,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n         Internet Archaeol. 3. Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91\n\n      ",
+              "url": "https://intarch.ac.uk/journal/issue3/reviews/ryan.html#:~:text=Cite%20this%20as%3A%20Ryan%2C%20N,4",
+              "pub_date": null,
+              "snippet": "Cite this as: Ryan, N., Pascoe, J. and Morse, D. 1997 FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software, Internet Archaeology 3. https://doi.org/10.11141/ia.3.4",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u30103\u2020L14-L16\u3011",
+              "start_idx": 590,
+              "end_idx": 601,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n         Internet Archaeol. 3. Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91\n\n      ",
+              "url": "https://intarch.ac.uk/journal/issue3/reviews/ryan.html#:~:text=Cite%20this%20as%3A%20Ryan%2C%20N,4",
+              "pub_date": null,
+              "snippet": "Cite this as: Ryan, N., Pascoe, J. and Morse, D. 1997 FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software, Internet Archaeology 3. https://doi.org/10.11141/ia.3.4",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301017\u2020L21-L29\u3011",
+              "start_idx": 1012,
+              "end_idx": 1024,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+              "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=Ryan%2C%20N,4",
+              "pub_date": null,
+              "snippet": "Ryan, N., Pascoe, J. and Morse, D. (1997). Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software. Internet Archaeology 3. Vol 3, York: Internet Archaeology. https://doi.org/10.11141/ia.3.4.",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301017\u2020L45-L52\u3011",
+              "start_idx": 1024,
+              "end_idx": 1036,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+              "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=forms%20and%20GPS%20data%20logging,14%20David%20Morse",
+              "pub_date": null,
+              "snippet": "forms and GPS data logging on the Newton MessagePad range of hand--held computers. FieldWorker is produced in three forms, Basic, Advanced and Pro. The reviewers tested the current release (2.3.5) of the Advanced version, and also examined a pre--release (0.91) of the Pro version. Author: Nick Ryan   14 David Morse",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301017\u2020L21-L29\u3011",
+              "start_idx": 1373,
+              "end_idx": 1385,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+              "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=Ryan%2C%20N,4",
+              "pub_date": null,
+              "snippet": "Ryan, N., Pascoe, J. and Morse, D. (1997). Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software. Internet Archaeology 3. Vol 3, York: Internet Archaeology. https://doi.org/10.11141/ia.3.4.",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301017\u2020L45-L52\u3011",
+              "start_idx": 1385,
+              "end_idx": 1397,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n                Review of FieldWorker Advanced 2.3.5 and FieldWorker Pro 0.91 GPS software\n            \n        ",
+              "url": "https://archaeologydataservice.ac.uk/library/browse/details.xhtml?recordId=3013898&recordType=Journal#:~:text=forms%20and%20GPS%20data%20logging,14%20David%20Morse",
+              "pub_date": null,
+              "snippet": "forms and GPS data logging on the Newton MessagePad range of hand--held computers. FieldWorker is produced in three forms, Basic, Advanced and Pro. The reviewers tested the current release (2.3.5) of the Advanced version, and also examined a pre--release (0.91) of the Pro version. Author: Nick Ryan   14 David Morse",
+              "attribution": "archaeologydataservice.ac.uk"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b94a634e908191a53582a7e3baf162",
+          "async_task_title": "FieldWorker Advanced and FieldWorker Pro Research"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "97d9ca18-6810-45dc-be2f-64d56c9783dd",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "2fd16ef2-a4e3-49f5-9dca-9f8006d510c7",
+  "plugin_ids": null,
+  "conversation_id": "67b94a34-ff18-8004-8fbf-e0c128ef1149",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://intarch.ac.uk/journal/issue3/reviews/ryan.html"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b94a34-ff18-8004-8fbf-e0c128ef1149"
+}

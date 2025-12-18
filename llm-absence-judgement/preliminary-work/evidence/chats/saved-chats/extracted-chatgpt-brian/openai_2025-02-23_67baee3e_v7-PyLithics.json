@@ -1,0 +1,399 @@
+{
+  "title": "v7-PyLithics",
+  "create_time": 1740303934.825912,
+  "update_time": 1740347596.699877,
+  "mapping": {
+    "aaa1a02a-e0d4-490e-a5c0-60e6442c035b": {
+      "id": "aaa1a02a-e0d4-490e-a5c0-60e6442c035b",
+      "message": null,
+      "parent": null,
+      "children": [
+        "f3086e9c-e1ae-446f-8588-72558f6794e0"
+      ]
+    },
+    "f3086e9c-e1ae-446f-8588-72558f6794e0": {
+      "id": "f3086e9c-e1ae-446f-8588-72558f6794e0",
+      "message": {
+        "id": "f3086e9c-e1ae-446f-8588-72558f6794e0",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1a02a-e0d4-490e-a5c0-60e6442c035b",
+      "children": [
+        "9aae7122-3b72-4f89-b7de-25350a02693f"
+      ]
+    },
+    "9aae7122-3b72-4f89-b7de-25350a02693f": {
+      "id": "9aae7122-3b72-4f89-b7de-25350a02693f",
+      "message": {
+        "id": "9aae7122-3b72-4f89-b7de-25350a02693f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303934.829002,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916648a70839ab05-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f3086e9c-e1ae-446f-8588-72558f6794e0",
+      "children": [
+        "19cd5903-ad6e-4dc1-8dca-8af23636b60a"
+      ]
+    },
+    "19cd5903-ad6e-4dc1-8dca-8af23636b60a": {
+      "id": "19cd5903-ad6e-4dc1-8dca-8af23636b60a",
+      "message": {
+        "id": "19cd5903-ad6e-4dc1-8dca-8af23636b60a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303936.334219,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your research requirements thoroughly. Please provide the name or acronym of the first archaeology or historical studies-related software tool you'd like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "9aae7122-3b72-4f89-b7de-25350a02693f",
+          "request_id": "916648a70839ab05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9aae7122-3b72-4f89-b7de-25350a02693f",
+      "children": [
+        "b11355b1-e2a0-448e-b0b1-a97c11ffd426"
+      ]
+    },
+    "b11355b1-e2a0-448e-b0b1-a97c11ffd426": {
+      "id": "b11355b1-e2a0-448e-b0b1-a97c11ffd426",
+      "message": {
+        "id": "b11355b1-e2a0-448e-b0b1-a97c11ffd426",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740303936.334337,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "19cd5903-ad6e-4dc1-8dca-8af23636b60a",
+          "request_id": "916648a70839ab05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "19cd5903-ad6e-4dc1-8dca-8af23636b60a",
+      "children": [
+        "b6718023-496b-46cb-92bf-0f1a2573d22d"
+      ]
+    },
+    "b6718023-496b-46cb-92bf-0f1a2573d22d": {
+      "id": "b6718023-496b-46cb-92bf-0f1a2573d22d",
+      "message": {
+        "id": "b6718023-496b-46cb-92bf-0f1a2573d22d",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303948.512367,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "PyLithics"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916648fb7d21ab05-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b11355b1-e2a0-448e-b0b1-a97c11ffd426",
+      "children": [
+        "8e1acfab-0501-45b2-afe4-657476e0fdf3"
+      ]
+    },
+    "8e1acfab-0501-45b2-afe4-657476e0fdf3": {
+      "id": "8e1acfab-0501-45b2-afe4-657476e0fdf3",
+      "message": {
+        "id": "8e1acfab-0501-45b2-afe4-657476e0fdf3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303960.591401,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a thorough and systematic search for mentions of the software tool \"PyLithics\" from 1995 onward. \n\nI will identify all available sources, including scholarly literature, blog posts, version control repositories, and other mentions, ensuring that each source is represented as a single row in a CSV format with the required columns: Tool, Year, Source, URL, and AI Notes. I will take special care to verify the provenance and quality of each source, and I will indicate any uncertainties in the AI Notes column. \n\nI will notify you when I have compiled the results."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b6718023-496b-46cb-92bf-0f1a2573d22d",
+          "request_id": "916648fb7d21ab05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b6718023-496b-46cb-92bf-0f1a2573d22d",
+      "children": [
+        "64a5c742-a17a-475f-8b86-e80341f1f225"
+      ]
+    },
+    "64a5c742-a17a-475f-8b86-e80341f1f225": {
+      "id": "64a5c742-a17a-475f-8b86-e80341f1f225",
+      "message": {
+        "id": "64a5c742-a17a-475f-8b86-e80341f1f225",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740303960.591595,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a thorough and systematic search for mentions of the software tool \\\"PyLithics\\\" from 1995 onward. \\n\\nI will identify all available sources, including scholarly literature, blog posts, version control repositories, and other mentions, ensuring that each source is represented as a single row in a CSV format with the required columns: Tool, Year, Source, URL, and AI Notes. I will take special care to verify the provenance and quality of each source, and I will indicate any uncertainties in the AI Notes column. \\n\\nI will notify you when I have compiled the results.\",\"title\":\"Comprehensive Evidence Collection for PyLithics\",\"prompt\":\"Conduct a comprehensive and systematic search for mentions of the software tool \\\"PyLithics\\\" from 1995 onward. Identify all available sources, including:\\n- Scholarly literature\\n- Blog posts and about pages\\n- Version control repositories (e.g., GitHub, GitLab, Bitbucket)\\n- Any other mentions (e.g., news articles, conference proceedings, forum discussions)\\n\\nFor each source found, extract and record:\\n- Tool: PyLithics (exactly as provided)\\n- Year: The year of publication from the source (if unavailable, mark as \\\"n.d.\\\")\\n- Source: Citation or (Domain + Page Title)\\n- URL: Direct URL of the source\\n- AI Notes: Any concerns or uncertainties regarding the data provenance or quality\\n\\nFor each year from 1995 onward, include one row per source mentioning PyLithics. If a date is found, expand the search to adjacent years (+/-1 year) to ensure comprehensive coverage.\\n\\nEnsure accuracy, epistemological rigor, and careful attention to detail. Do not extrapolate or infer dates\u2014only include dates explicitly stated in sources. Use a fenced code block to output the CSV format in markdown.\\n\\nProceed methodically and report back with the compiled results.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8e1acfab-0501-45b2-afe4-657476e0fdf3",
+          "request_id": "916648fb7d21ab05-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "8e1acfab-0501-45b2-afe4-657476e0fdf3",
+      "children": [
+        "6c3e0422-c556-4745-b490-4ffc4fccf998"
+      ]
+    },
+    "6c3e0422-c556-4745-b490-4ffc4fccf998": {
+      "id": "6c3e0422-c556-4745-b490-4ffc4fccf998",
+      "message": {
+        "id": "6c3e0422-c556-4745-b490-4ffc4fccf998",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740303967.725133,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Evidence Collection for PyLithics",
+          "async_task_prompt": "Conduct a comprehensive and systematic search for mentions of the software tool \"PyLithics\" from 1995 onward. Identify all available sources, including:\n- Scholarly literature\n- Blog posts and about pages\n- Version control repositories (e.g., GitHub, GitLab, Bitbucket)\n- Any other mentions (e.g., news articles, conference proceedings, forum discussions)\n\nFor each source found, extract and record:\n- Tool: PyLithics (exactly as provided)\n- Year: The year of publication from the source (if unavailable, mark as \"n.d.\")\n- Source: Citation or (Domain + Page Title)\n- URL: Direct URL of the source\n- AI Notes: Any concerns or uncertainties regarding the data provenance or quality\n\nFor each year from 1995 onward, include one row per source mentioning PyLithics. If a date is found, expand the search to adjacent years (+/-1 year) to ensure comprehensive coverage.\n\nEnsure accuracy, epistemological rigor, and careful attention to detail. Do not extrapolate or infer dates\u2014only include dates explicitly stated in sources. Use a fenced code block to output the CSV format in markdown.\n\nProceed methodically and report back with the compiled results.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Evidence Collection for PyLithics",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "64a5c742-a17a-475f-8b86-e80341f1f225",
+          "request_id": "916648fb7d21ab05-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "64a5c742-a17a-475f-8b86-e80341f1f225",
+      "children": [
+        "631e4c9d-8c55-40c7-9c4d-5d1f334434f1"
+      ]
+    },
+    "631e4c9d-8c55-40c7-9c4d-5d1f334434f1": {
+      "id": "631e4c9d-8c55-40c7-9c4d-5d1f334434f1",
+      "message": {
+        "id": "631e4c9d-8c55-40c7-9c4d-5d1f334434f1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740304339.632106,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"PyLithics\",\"2021\",\"github.com - [PRE REVIEW] PyLithics: A Python package for stone tool analysis (JOSS submission)\",\"https://github.com/openjournals/joss-reviews/issues/3715\",\"JOSS pre-review issue (submission thread; not a formal publication)\"\n\"PyLithics\",\"2021\",\"github.com - [REVIEW] PyLithics: A Python package for stone tool analysis (JOSS review)\",\"https://github.com/openjournals/joss-reviews/issues/3738\",\"JOSS peer-review discussion thread on GitHub (not a formal publication)\"\n\"PyLithics\",\"2021\",\"researchgate.net - PyLithics: A Python package for stone tool analysis (preprint)\",\"https://www.researchgate.net/publication/355145408_PyLithics_A_Python_package_for_stone_tool_analysis_Evolutionary_Studies_Software\",\"Draft preprint uploaded by author (pre-publication, not peer-reviewed)\"\n\"PyLithics\",\"2022\",\"joss.theoj.org - PyLithics: A Python package for stone tool analysis\",\"https://joss.theoj.org/papers/10.21105/joss.03738\",\"Peer-reviewed journal article (Journal of Open Source Software)\"\n\"PyLithics\",\"2022\",\"zenodo.org - PyLithics: A Python package for stone tool analysis (v1.0.0)\",\"https://doi.org/10.5281/zenodo.5898149\",\"Zenodo software archive (v1.0.0 code release, January 2022)\"\n\"PyLithics\",\"2022\",\"arch.cam.ac.uk - PyLithics: New software for stone tool analysis\",\"https://www.arch.cam.ac.uk/news/pylithics-new-software-stone-tool-analysis\",\"University of Cambridge news article (press release style)\"\n\"PyLithics\",\"2022\",\"researchgate.net - PyLithics: A Python package for stone tool analysis\",\"https://www.researchgate.net/publication/358213351_PyLithics_A_Python_package_for_stone_tool_analysis\",\"Published article uploaded on ResearchGate (duplicate of JOSS paper)\"\n\"PyLithics\",\"2022\",\"paleoanthropology.org - PaleoAnthropology 2022:1 Meeting Abstracts (PyLithics abstract)\",\"https://paleoanthropology.org/ojs/index.php/paleo/article/download/109/94/323\",\"Conference proceedings (abstract for Paleoanthropology Society meeting, not peer-reviewed)\"\n\"PyLithics\",\"2022\",\"languagesciences.cam.ac.uk - The Leverhulme Centre for Human Evolutionary Studies (publications list)\",\"https://www.languagesciences.cam.ac.uk/departments/Leverhulme\",\"Cambridge departmental site listing publications (secondary reference to JOSS article)\"\n\"PyLithics\",\"2022\",\"github.com - alan-turing-institute/Palaeoanalytics (PyLithics repository)\",\"https://github.com/alan-turing-institute/Palaeoanalytics\",\"Source code repository on GitHub (open-source codebase; release v1.0.0 dated 2022)\"\n\"PyLithics\",\"2023\",\"archaeo.peercommunityin.org - Linking Scars: Topology-based Scar Detection and Graph Modeling of Paleolithic Artifacts in 3D\",\"https://archaeo.peercommunityin.org/PCIArchaeology/articles/rec?articleId=374\",\"Preprint article (Peer Community In Archaeology) referencing PyLithics (not yet formally published)\"\n\"PyLithics\",\"2024\",\"tandfonline.com - Time, the Middle Stone Age and lithic analyses following the Third Science Revolution\",\"https://doi.org/10.1080/0067270X.2023.2285167\",\"Peer-reviewed journal article (Azania, 2024) citing PyLithics\"\n\"PyLithics\",\"n.d.\",\"arch.cam.ac.uk - Jason Gellis | Department of Archaeology (staff profile)\",\"https://www.arch.cam.ac.uk/staff/jason-gellis\",\"Researcher profile page listing PyLithics publications (no specific publication date on page)\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67baee5fa8088191bb0564cf6507ec2d",
+          "async_task_title": "Comprehensive Evidence Collection for PyLithics"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "6c3e0422-c556-4745-b490-4ffc4fccf998",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "631e4c9d-8c55-40c7-9c4d-5d1f334434f1",
+  "plugin_ids": null,
+  "conversation_id": "67baee3e-aa44-8004-a8f8-18130988e6bc",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://joss.theoj.org/papers/10.21105/joss.03738",
+    "https://www.languagesciences.cam.ac.uk/departments/Leverhulme",
+    "https://www.arch.cam.ac.uk/staff/jason-gellis",
+    "https://www.arch.cam.ac.uk/news/pylithics-new-software-stone-tool-analysis",
+    "https://paleoanthropology.org/ojs/index.php/paleo/article/download/109/94/323"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67baee3e-aa44-8004-a8f8-18130988e6bc"
+}

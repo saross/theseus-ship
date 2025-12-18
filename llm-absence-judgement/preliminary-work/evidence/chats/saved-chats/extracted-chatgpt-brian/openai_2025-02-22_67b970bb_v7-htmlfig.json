@@ -1,0 +1,395 @@
+{
+  "title": "v7-htmlfig",
+  "create_time": 1740206267.616104,
+  "update_time": 1740206827.46485,
+  "mapping": {
+    "aaa1fe82-bedb-48c0-8ac3-add657b17334": {
+      "id": "aaa1fe82-bedb-48c0-8ac3-add657b17334",
+      "message": null,
+      "parent": null,
+      "children": [
+        "56e9e898-6d79-4868-ab58-9e996d5b9c8d"
+      ]
+    },
+    "56e9e898-6d79-4868-ab58-9e996d5b9c8d": {
+      "id": "56e9e898-6d79-4868-ab58-9e996d5b9c8d",
+      "message": {
+        "id": "56e9e898-6d79-4868-ab58-9e996d5b9c8d",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1fe82-bedb-48c0-8ac3-add657b17334",
+      "children": [
+        "b3d6f629-d8f3-4a32-8f67-447ccfba6b5e"
+      ]
+    },
+    "b3d6f629-d8f3-4a32-8f67-447ccfba6b5e": {
+      "id": "b3d6f629-d8f3-4a32-8f67-447ccfba6b5e",
+      "message": {
+        "id": "b3d6f629-d8f3-4a32-8f67-447ccfba6b5e",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740206267.62009,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915cf8322ff5e7c0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "56e9e898-6d79-4868-ab58-9e996d5b9c8d",
+      "children": [
+        "6143ea30-ee48-40f8-b731-3139d746cd44"
+      ]
+    },
+    "6143ea30-ee48-40f8-b731-3139d746cd44": {
+      "id": "6143ea30-ee48-40f8-b731-3139d746cd44",
+      "message": {
+        "id": "6143ea30-ee48-40f8-b731-3139d746cd44",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740206268.854583,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the requirements. Please provide the first tool name or acronym, and I will begin the systematic research process following the specified guidelines."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b3d6f629-d8f3-4a32-8f67-447ccfba6b5e",
+          "request_id": "915cf8322ff5e7c0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b3d6f629-d8f3-4a32-8f67-447ccfba6b5e",
+      "children": [
+        "34b716ff-24f8-4d25-869b-9a3c33776cdc"
+      ]
+    },
+    "34b716ff-24f8-4d25-869b-9a3c33776cdc": {
+      "id": "34b716ff-24f8-4d25-869b-9a3c33776cdc",
+      "message": {
+        "id": "34b716ff-24f8-4d25-869b-9a3c33776cdc",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740206268.854712,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "6143ea30-ee48-40f8-b731-3139d746cd44",
+          "request_id": "915cf8322ff5e7c0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6143ea30-ee48-40f8-b731-3139d746cd44",
+      "children": [
+        "8e4a9a65-85c0-43dc-84a1-8b0ecb74f984"
+      ]
+    },
+    "8e4a9a65-85c0-43dc-84a1-8b0ecb74f984": {
+      "id": "8e4a9a65-85c0-43dc-84a1-8b0ecb74f984",
+      "message": {
+        "id": "8e4a9a65-85c0-43dc-84a1-8b0ecb74f984",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740206278.898581,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "htmlfig"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915cf878eddbe7c0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "34b716ff-24f8-4d25-869b-9a3c33776cdc",
+      "children": [
+        "3cdbb0c4-4d3f-4c94-9920-31f22640bbc2"
+      ]
+    },
+    "3cdbb0c4-4d3f-4c94-9920-31f22640bbc2": {
+      "id": "3cdbb0c4-4d3f-4c94-9920-31f22640bbc2",
+      "message": {
+        "id": "3cdbb0c4-4d3f-4c94-9920-31f22640bbc2",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740206289.908847,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a thorough and systematic search for mentions of the tool \"htmlfig\" in sources from 1995 onwards. This will include academic literature, version control repositories, blog posts, official project pages, and any other valid sources. I will document every source found in a CSV format following the provided structure, ensuring accuracy and noting any uncertainties in the AI Notes column. I'll return with the data once the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8e4a9a65-85c0-43dc-84a1-8b0ecb74f984",
+          "request_id": "915cf878eddbe7c0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8e4a9a65-85c0-43dc-84a1-8b0ecb74f984",
+      "children": [
+        "c7d7685c-943e-44ce-8531-79b81761046f"
+      ]
+    },
+    "c7d7685c-943e-44ce-8531-79b81761046f": {
+      "id": "c7d7685c-943e-44ce-8531-79b81761046f",
+      "message": {
+        "id": "c7d7685c-943e-44ce-8531-79b81761046f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740206289.908969,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a thorough and systematic search for mentions of the tool \\\"htmlfig\\\" in sources from 1995 onwards. This will include academic literature, version control repositories, blog posts, official project pages, and any other valid sources. I will document every source found in a CSV format following the provided structure, ensuring accuracy and noting any uncertainties in the AI Notes column. I'll return with the data once the research is complete.\",\"title\":\"Comprehensive Evidence Collection for htmlfig\",\"prompt\":\"Conduct a thorough and systematic search for mentions of the software tool \\\"htmlfig\\\" in sources from 1995 onwards. \\n\\nFor each valid mention found, record the following details in a well-formed quoted CSV format:\\n- \\\"Tool\\\": Use the exact input name \\\"htmlfig\\\" consistently.\\n- \\\"Year\\\": The publication year from the source (or \\\"n.d.\\\" if no date is available).\\n- \\\"Source\\\": Citation or domain + page title.\\n- \\\"URL\\\": The direct URL to the source.\\n- \\\"AI Notes\\\": Any concerns or uncertainties regarding data provenance or quality.\\n\\nFollow these research guidelines:\\n- Search systematically, reviewing every available search result page.\\n- Explore sources such as:\\n  - Scholarly literature databases (Google Scholar, ResearchGate, etc.)\\n  - Version control repositories (GitHub, GitLab, etc.)\\n  - Official tool websites and documentation pages\\n  - Blog posts, forum discussions, and software directories\\n  - Any other valid mentions of \\\"htmlfig\\\" relevant to archaeology or historical sciences.\\n- If an exact year is found, also search for sources within \u00b11 year.\\n- Do not infer dates\u2014only document those explicitly mentioned in sources.\\n- Ensure each source is documented in a separate CSV row.\\n- Do not include any AI-generated or system-injected references.\\n\\nFormat all results as a CSV inside a fenced code block. Prioritize accuracy and transparency in reporting. If uncertain about any detail, indicate it in the \\\"AI Notes\\\" column. \\n\\nProceed carefully and methodically.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "3cdbb0c4-4d3f-4c94-9920-31f22640bbc2",
+          "request_id": "915cf878eddbe7c0-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "3cdbb0c4-4d3f-4c94-9920-31f22640bbc2",
+      "children": [
+        "5e276dc7-9f3c-4693-94c7-f0965c0da1df"
+      ]
+    },
+    "5e276dc7-9f3c-4693-94c7-f0965c0da1df": {
+      "id": "5e276dc7-9f3c-4693-94c7-f0965c0da1df",
+      "message": {
+        "id": "5e276dc7-9f3c-4693-94c7-f0965c0da1df",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740206289.909084,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Evidence Collection for htmlfig",
+          "async_task_prompt": "Conduct a thorough and systematic search for mentions of the software tool \"htmlfig\" in sources from 1995 onwards. \n\nFor each valid mention found, record the following details in a well-formed quoted CSV format:\n- \"Tool\": Use the exact input name \"htmlfig\" consistently.\n- \"Year\": The publication year from the source (or \"n.d.\" if no date is available).\n- \"Source\": Citation or domain + page title.\n- \"URL\": The direct URL to the source.\n- \"AI Notes\": Any concerns or uncertainties regarding data provenance or quality.\n\nFollow these research guidelines:\n- Search systematically, reviewing every available search result page.\n- Explore sources such as:\n  - Scholarly literature databases (Google Scholar, ResearchGate, etc.)\n  - Version control repositories (GitHub, GitLab, etc.)\n  - Official tool websites and documentation pages\n  - Blog posts, forum discussions, and software directories\n  - Any other valid mentions of \"htmlfig\" relevant to archaeology or historical sciences.\n- If an exact year is found, also search for sources within \u00b11 year.\n- Do not infer dates\u2014only document those explicitly mentioned in sources.\n- Ensure each source is documented in a separate CSV row.\n- Do not include any AI-generated or system-injected references.\n\nFormat all results as a CSV inside a fenced code block. Prioritize accuracy and transparency in reporting. If uncertain about any detail, indicate it in the \"AI Notes\" column. \n\nProceed carefully and methodically.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Evidence Collection for htmlfig",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "c7d7685c-943e-44ce-8531-79b81761046f",
+          "request_id": "915cf878eddbe7c0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c7d7685c-943e-44ce-8531-79b81761046f",
+      "children": [
+        "42720442-d550-41ba-b0a3-bd71caf7f598"
+      ]
+    },
+    "42720442-d550-41ba-b0a3-bd71caf7f598": {
+      "id": "42720442-d550-41ba-b0a3-bd71caf7f598",
+      "message": {
+        "id": "42720442-d550-41ba-b0a3-bd71caf7f598",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740206627.765085,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"htmlfig\",\"1997\",\"intarch.ac.uk \u2013 Internet Archaeology Issue 2 Editorial\",\"https://intarch.ac.uk/journal/issue2/edit2.html\",\"None\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b970d1da348191bbd908bc6c6f6fcb",
+          "async_task_title": "Comprehensive Evidence Collection for htmlfig"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "5e276dc7-9f3c-4693-94c7-f0965c0da1df",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "42720442-d550-41ba-b0a3-bd71caf7f598",
+  "plugin_ids": null,
+  "conversation_id": "67b970bb-6188-8004-93ef-dadf89fb5877",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://intarch.ac.uk/journal/issue2/edit2.html"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b970bb-6188-8004-93ef-dadf89fb5877"
+}

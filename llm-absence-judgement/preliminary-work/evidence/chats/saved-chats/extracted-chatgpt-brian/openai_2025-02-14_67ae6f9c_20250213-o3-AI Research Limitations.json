@@ -1,0 +1,312 @@
+{
+  "title": "20250213-o3-AI Research Limitations",
+  "create_time": 1739485084.825847,
+  "update_time": 1739498887.353378,
+  "mapping": {
+    "aaa11ff7-1578-4bde-abcf-bbe073d29f32": {
+      "id": "aaa11ff7-1578-4bde-abcf-bbe073d29f32",
+      "message": null,
+      "parent": null,
+      "children": [
+        "e969b332-58f7-4c54-85bf-cd44494078f6"
+      ]
+    },
+    "e969b332-58f7-4c54-85bf-cd44494078f6": {
+      "id": "e969b332-58f7-4c54-85bf-cd44494078f6",
+      "message": {
+        "id": "e969b332-58f7-4c54-85bf-cd44494078f6",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa11ff7-1578-4bde-abcf-bbe073d29f32",
+      "children": [
+        "c676070f-699a-4f98-b02e-324d1c806b19"
+      ]
+    },
+    "c676070f-699a-4f98-b02e-324d1c806b19": {
+      "id": "c676070f-699a-4f98-b02e-324d1c806b19",
+      "message": {
+        "id": "c676070f-699a-4f98-b02e-324d1c806b19",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739485084.827871,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "# Instructions\n\nThink step by step on the inputs that I give you. This project is to take user inputs which have been transcribed from audio, and are intended to build out the user's notes.\n\nDo not ask questions unless prompted, instead have a <think/> zone before your responses, then process user input in the form a transcript, and help to integrate it into the outline for the draft document.\n\nYour feedback or praise in this process is not wanted, instead, transform user inputs. Ask questions if there are elements which are unclear.\n\nAny outlines that you work on should be in markdown in an artefact.\n\n# Task 1\nTo begin, please synthesise yesterday's chat into the paper notes. We're getting ready to integrate another transcript.\n\n<chat1>\nI'll help you develop your academic paper through dictation. From your notes, I can see you're working on a thoughtful analysis of AI's limitations in research contexts, particularly focusing on the distinction between linguistic capability and true judgment/agency. Would you like to start dictating your thoughts? I can help organize them and suggest ways to develop the arguments further.\nI notice a few interesting threads in your current draft that could be expanded:\n\nThe connection between \"mundane utility\" and the absence of true agency\nYour comparison to first-week PhD students as a benchmark\nThe role of judgment in making novel connections across domains\n\nWhere would you like to begin? I can also ask clarifying questions about specific sections if that would be helpful for your dictation process.\u00a0CopyRetryBBMessage garbled, trying againEdit2 / 2I see your message was cut off. Would you like to try dictating your thoughts again? I'm ready to help organize and capture your ideas for the academic paper based on the draft you shared earlier.\u00a0CopyRetryBBOkay. So Thinking about the failure of deep research yesterday, generating a newspaper article. We can absolutely assert That'd be detail here is not of judgment. And and, of course, the necessary induction which maps to judge It does notEditI notice you're dictating thoughts about deep research's failure specifically regarding newspaper article generation, and touching on concepts of judgment and induction. However, some parts were unclear - could you try rephrasing the key point about judgment and induction again?\nFrom what I understood, you're suggesting that:\n\nThere was a specific failure case with deep research generating a newspaper article\nThis demonstrates a lack of judgment\nThere's a connection between judgment and induction\n\nWould you like to elaborate on any of these points? I'm particularly interested in the specific failure case you observed, as it could serve as a concrete example in your paper.\u00a0CopyRetryBBSo insofar as it produced a newspaper article that looked like a newspaper article. But Didn't follow the guidelines. I've quite literally the 2 elements that we, provided before. Like, we we made an article, and Claude We made an article in o one pro without search. And so deep research, even though it demonstrated no. Deep research, even though it purports to have agentic behavior, Doesn't. And so, therefore, here's where we need to to define Here's where we need to define what it means to be agentic. Because if we are to treat this like anything If we are to treat this like anything beyond a marketing term, We have to have very clear definitions. And so Edgentic machine. As a precursor to whatever we call AGI, is something that is goal following. For something to be goal following, it must be able to both Figure out when it is appropriate No. It must be able to figure out if it solved the problem. At the end of the day, I A goal following machine is a machine that Not only performs functional decomposition on any given task. Right? And so so that that functional decomposition is fine. But iOS machine that can judge. There's that word again. It's a machine that can judge if it has accomplished the task and moreover, if it has accomplished the task well, I e Has it not has it produced words, that vaguely mapped the vibes of the input, but has it generalized from the, specific data of the input. The actual problem that is trying to be solved and can it judge if it has solved that prob? And so deep research isn't agenic. And it's not agentic because it cannot take a goal as input and help to achieve that goal. Now to be clear, they're not particularly saying that it can, and and we can we can narrow Right? We can say, okay. This is narrowly scoped. This is Only for lit reviews, quote, unquote. Pausing here to reset.EditLet me help organize these key points about agency and judgment that you're dictating. I'll structure them to potentially fit into your paper's section on \"Agentic Systems\":\nThe core argument you're developing seems to be:\n\nDeep Research's failure case with the newspaper article demonstrates a fundamental issue:\n\nIt can produce content that superficially resembles the target format\nBut it failed to follow explicit guidelines, showing lack of true goal-following behavior\n\n\nThis leads to a necessary refinement of what \"agentic\" means in AI systems:\n\nAn agentic machine (as a precursor to AGI) must be fundamentally goal-following\nTrue goal-following requires:\na. Functional decomposition of tasks (which current systems can do)\nb. Ability to judge task completion\nc. Ability to judge task completion quality\nd. Capacity to generalize from specific inputs to understand the underlying problem\n\n\nThe key distinction:\n\nCurrent systems can \"produce words that vaguely map the vibes of the input\"\nBut they cannot generalize from specific data to understand and evaluate if they've solved the actual underlying problem\n\n\nTherefore, Deep Research isn't truly agentic because:\n\nIt cannot meaningfully take a goal as input\nIt cannot effectively help achieve that goal\nEven in its narrowly scoped domain of literature reviews\n\n\n\nWould you like to continue developing any of these points further? I notice this builds particularly well on your paper's existing section about goal-related characteristics of agentic systems.\u00a0CopyRetryBBAnd so even if they say even if this is narrowly scoped, even if this is only for lit reviews, and and we we also have to to say that this is a descriptive lit review, which lacks the spark of insight that makes a literature review useful. As in, why did you so a literature, for it to be useful, to go why did you choose these sources? What message are you trying to communicate? If you're merely regurgitating source That is That is the performance of literature review. Without any of the real substance of literature review. Because you are describing. You are not producing insight. Again, it's the lack of insight. It's the lack of induction because a literature review by virtue of how a thing is grouped, a literature review by virtue of what is selected and what is not selected. And a literature review by virtue of its organization supports a broader Claude. It supports the story. Or it supports research or whatever you wanna say there. And so because literature reviewEditLet me help develop this crucial point about the nature of meaningful literature reviews and how it relates to your broader argument about AI limitations. You're articulating an important distinction between superficial performance and genuine insight in literature reviews:\n\nThe Nature of Meaningful Literature Reviews:\n\nNot merely a collection of sources\nDefined by intentional choices in:\n\nSource selection and exclusion\nOrganization and grouping\nSupporting a broader narrative or research agenda\n\n\n\n\nDeep Research's Fundamental Limitation:\n\nCan perform \"descriptive\" literature reviews\nBut lacks the crucial elements that make reviews useful:\n\nPurpose-driven source selection\nIntentional organization\nGeneration of novel insights\nInductive reasoning to support broader claims\n\n\n\n\nThe \"Spark of Insight\" Problem:\n\nCurrent AI systems can regurgitate and reorganize\nBut cannot provide the critical \"why\" behind:\n\nSource selection\nOrganization choices\nConnection to broader scholarly conversations\n\n\n\n\n\nThis seems to connect strongly to your earlier points about judgment and induction. Would you like to continue developing how this specific limitation in literature reviews exemplifies the broader problem of AI's lack of true agency?\u00a0CopyRetryBBAnd so because literature review As produced by deep research, it uses words adequately. Like, it's not it's not an interesting literature review, but all the words are there, and they're in the right order, and it's long enough to be orders of magnitude better than prior models. It is a useful tool. It is something that will take in a prompt, Decompose decompose that prompt into a series of searches. These fairly large context fairly large context in the in the vibe of a to to synthesize and stitch together points. But It is the negative space where the problem lies. Is we don't see it being systematic. So so in our observations, we see it running some searches, and then effectively getting bored. And we never see it questioning if its present attempt is appropriate. And so what we see, therefore, Is when we tell deep research to do something, It will and this is this is the common failure mode of LMS, and this is the common failure mode of deep research. That it will always produce an output. Right? It will it will always produce an output, and it will never go, oh, wait. I like, it it will never question the assumptions. And it will never go, oh, I just did all of this research, just did all of this research onto the wrong thing. Did you mean this, that, or the other? And so because it cannot forget, because it cannot judge the appropriateness, of its models. Yay. Not models. Choking to the context window. It is something that Takes as gospel It's first search results. And so it quote, knows, end quote, how to search. It runs a bunch of searches. It dithers about in the thinking, we never see it making an outline. We never see it revising an outline. We never see it Cutting Right? Like, the fact that The fact that it didn't includes by default everything that it searches for and never has a winnowing pass of, oh, this wasn't right. Is the uncanny valley of research for deep research. Oh, I like that quote. The uncanny valley of Let's make sure that that gets into the paper.EditLet me help organize this significant observation about Deep Research's behavior and the \"uncanny valley of research\" concept you've identified. This builds on your earlier points about agency while adding specific behavioral observations:\n\nSurface-Level Competence:\n\nProduces coherent, well-formed text\nCan perform basic functional decomposition\nHandles large context windows\nRepresents significant improvement over prior models\n\n\nThe \"Uncanny Valley of Research\" (excellent phrase):\n\nKey behavioral limitations observed:\n\nNever questions its assumptions\nNever revises its approach mid-process\nNo evidence of outline creation or revision\nLacks winnowing or filtering process\nTakes initial search results as \"gospel\"\n\"Gets bored\" rather than being systematic\nAlways produces output regardless of appropriateness\n\n\n\n\nCritical Missing Elements:\n\nNo self-questioning\nNo mid-process correction\nNo adaptation based on intermediate results\nNo recognition of potential misalignment with intended goals\n\n\n\nThis observation about Deep Research always producing output without questioning assumptions seems to connect strongly to your earlier points about judgment and agency. Would you like to develop the \"uncanny valley of research\" concept further? It could serve as a powerful central metaphor for your paper's argument about the gap between superficial competence and true research capability.\u00a0CopyRetryBBOkay. Eastern Archaeology. I've never used to before to do your bike That is turned off at So far. But then Issue for iOS There's 64 issues. The correct change 2 would have been starting issue 1, and just if you buy this, I wanna have to do that. I'm sorry. Oh, that's so put that down as a 2 day. I need to rerun the IP search. Maybe, like, walks at 5. Because now that I'm thinking about it, it never actually Well, best thing is it either never So Update or it never said Is that Because the increase goes by the 5th of instruction we give and not the instructions we give, It's actually not paid That construction site. Okay. Because might not This is the operation. Oh, It's not usually operationalized at school, and So so if it I'll start it at 1. It would be better if we didn't answer that. That's fine. It would be aware of its inefficient size. As a researcher, The reason why we haven't done this research previously. Is because it's boring before. Right. Just dial in. Cuba. But because it cannot stay on task for a sustained period, It is not agenda. It is an it is in the unhanded balance.EditI'm having some trouble following parts of your dictation clearly - it seems there might have been some garbling or background noise. Let me focus on the key points I could understand:\n\nThere seems to be an issue about search scope or parameters:\n\nSomething about 64 issues\nA suggestion that starting from issue 1 would have been better\nA need to rerun some searches\n\n\nAn important observation about operational limitations:\n\nThe system follows instructions but not necessarily in the most efficient way\nThere's something about it not being properly \"operationalized\"\n\n\nA key point about sustained attention:\n\nThe system cannot \"stay on task for a sustained period\"\nThis relates to your earlier points about it not being truly agentic\nYou mentioned something about it being \"in the unhanded balance\"\n\n\n\nWould you mind clarifying some of these points, particularly about the operational aspects and what specific search issue you encountered? This seems like it could be another concrete example of the system's limitations.\nAlso, you mentioned something about why this research hasn't been done previously - could you elaborate on that point?\n</chat1>"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91183131fcb55575-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e969b332-58f7-4c54-85bf-cd44494078f6",
+      "children": [
+        "393ef20e-5739-4a43-97ad-4dbd750d4721"
+      ]
+    },
+    "393ef20e-5739-4a43-97ad-4dbd750d4721": {
+      "id": "393ef20e-5739-4a43-97ad-4dbd750d4721",
+      "message": {
+        "id": "393ef20e-5739-4a43-97ad-4dbd750d4721",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1739485100.654901,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Clarifying task instructions**  \nOkay, the directive clearly says not to ask questions unless prompted, but then I also need to think step-by-step. It also refers to a <think/> zone where I shouldn\u2019t ask questions upfront. Additionally, I should focus on synthesizing yesterday\u2019s chat into paper notes and later integrate a transcript (Chat1) into that outline. I need to work in markdown format for any outlines, and ensure I follow those instructions carefully. I'll make sure to stay on task with these clarifications in mind.\n\n**Synthesizing conversation into outline**\n\nThe job is to synthesize yesterday\u2019s chat into a markdown outline, focusing on key points from the transcript. I'm supposed to include a \u201cthink\u201d zone before delivering my answer. I\u2019ll carefully extract relevant discussion details from the text:\n\n- Discussion on AI\u2019s limitations, particularly in generating a newspaper article that failed to follow guidelines.\n- The idea that true machine \u201cagency\u201d requires goal-following capabilities, quality assessment, and the ability to solve problems.\n- The claim that even limited research (such as literature reviews) should offer insight, rather than vague output.\n\nNow, I\u2019ll structure this into a clear markdown outline as instructed.\n\n**Synthesizing chat into outline**\n\nThe discussion centers around AI\u2019s limitations in literature reviews:\n\n- If the AI just describes literature without adding insight, it misses the spark that makes a review valuable.\n- Distinction between descriptive reviews and those that involve intentional selection, organization, and induction.\n- AI\u2019s limitations in providing true research capability, resulting in the \"uncanny valley of research\" where it lacks self-questioning, assumptions revision, and deep analysis.\n- Operational issues include AI\u2019s inability to stay on task for sustained periods, missing goal-based adjustments or coherent work.\n\nI'll turn this into a structured markdown outline."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Reasoned for 8 seconds",
+          "initial_text": "Reasoning",
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "c676070f-699a-4f98-b02e-324d1c806b19",
+          "request_id": "91183131fcb55575-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c676070f-699a-4f98-b02e-324d1c806b19",
+      "children": [
+        "60b1b869-ab0e-4dfa-8174-5d68d661ebc4"
+      ]
+    },
+    "60b1b869-ab0e-4dfa-8174-5d68d661ebc4": {
+      "id": "60b1b869-ab0e-4dfa-8174-5d68d661ebc4",
+      "message": {
+        "id": "60b1b869-ab0e-4dfa-8174-5d68d661ebc4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739485100.655064,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "<think>\nSynthesizing the chat transcript into a structured outline, I'll extract and organize the key points mentioned:\n\n1. **Introduction & Context:**  \n   - Focus on the limitations of current AI systems in research contexts, emphasizing the difference between linguistic production and genuine judgment/agency.\n   - The need for clear definitions around \"agentic\" behavior, especially as a precursor to AGI.\n\n2. **Agentic Systems and Goal-Following:**  \n   - An \"agentic machine\" must be able to follow a goal by decomposing tasks, assessing completion, and judging quality.  \n   - Deep Research\u2019s failure (e.g., generating a newspaper article that looks correct but fails guidelines) exemplifies a lack of true agency and judgment.\n\n3. **Literature Review Capabilities:**  \n   - Superficial (descriptive) literature reviews vs. meaningful literature reviews that provide insight.  \n   - Current AI tools can synthesize text and organize sources but fail to provide the \u201cspark of insight\u201d that comes from intentional source selection and inductive reasoning.\n\n4. **The \"Uncanny Valley of Research\":**  \n   - Despite producing well-formed outputs, the AI does not self-question, revise, or evaluate its assumptions.  \n   - It lacks systematic winnowing of information, accepting initial search results without critical re-assessment.\n\n5. **Operational and Sustained Research Limitations:**  \n   - Specific operational issues (e.g., search parameters starting from the wrong issue number, inefficiencies in handling context) further highlight the AI's inability to remain on task.  \n   - These limitations contribute to the AI\u2019s failure to engage in a sustained, goal-oriented research process.\n\n6. **Conclusion and Future Directions:**  \n   - Recap the need for AI systems to integrate judgment, self-correction, and purposeful insight generation to be truly agentic.\n   - Consider future improvements that allow for self-assessment and iterative refinement.\n\nI will now provide the integrated outline in Markdown.\n</think>\n\n```markdown\n# Paper Outline: AI Limitations in Research Contexts\n\n## 1. Introduction\n- **Context & Motivation:**\n  - Examination of AI's limitations in research, focusing on the gap between linguistic production and genuine judgment.\n  - Importance of distinguishing between mere text generation and true agency.\n- **Defining Key Concepts:**\n  - What constitutes an \"agentic machine\" (goal-following, self-assessment, and judgment).\n\n## 2. Agentic Systems and Goal-Following\n- **Agentic Machine Characteristics:**\n  - Ability to perform functional decomposition of tasks.\n  - Competence in judging if a task has been completed and evaluating the quality of completion.\n- **Case Study: Deep Research's Newspaper Article**\n  - **Observation:** Produced an article that superficially resembled a newspaper article.\n  - **Failure:** Did not follow the provided guidelines, demonstrating a lack of true goal-directed behavior.\n- **Implication:**\n  - Current systems can mimic output but fail to generalize or inductively reason to truly solve problems.\n\n## 3. Literature Reviews: Superficial vs. Insightful\n- **Descriptive Literature Reviews:**\n  - Regurgitation and reorganization of text.\n  - Lacks intentional source selection and meaningful insight.\n- **Meaningful Literature Reviews:**\n  - Should involve purposeful selection of sources, organization, and the generation of novel insights.\n  - Requires inductive reasoning to support broader research narratives.\n- **Deep Research\u2019s Limitation:**\n  - Produces a text that meets superficial criteria (coherence, structure) without the deeper evaluative \u201cspark.\u201d\n\n## 4. The \"Uncanny Valley of Research\"\n- **Defining the Concept:**\n  - AI systems produce outputs that appear competent yet miss critical self-evaluation.\n- **Behavioral Observations:**\n  - Never questions its assumptions or revises its outline.\n  - Accepts initial search results as gospel without iterative refinement.\n  - Lacks systematic winnowing or filtering of information.\n- **Consequences:**\n  - Reveals a fundamental gap between superficial performance and true research capability.\n\n## 5. Operational and Sustained Research Limitations\n- **Operational Issues:**\n  - Example: Improper handling of search parameters (e.g., starting issue numbering from 1 vs. 64).\n  - Inefficient management of large context windows and search parameters.\n- **Sustained Attention & Efficiency:**\n  - Inability to maintain a goal-oriented process over time.\n  - Tendency to \u201cget bored\u201d or remain stuck without self-correction.\n- **Broader Implication:**\n  - The system's operational inefficiencies further highlight its lack of genuine agency.\n\n## 6. Conclusion and Future Directions\n- **Summary:**\n  - Reiterate the limitations of current AI systems in achieving true agentic behavior.\n  - Emphasize the necessity for incorporating judgment, self-assessment, and inductive reasoning.\n- **Future Directions:**\n  - Propose avenues for developing AI that can critically evaluate its outputs and adjust processes iteratively.\n  - Importance of clear definitions and benchmarks for what constitutes genuine research insight.\n```\n\n"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "393ef20e-5739-4a43-97ad-4dbd750d4721",
+          "request_id": "91183131fcb55575-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "393ef20e-5739-4a43-97ad-4dbd750d4721",
+      "children": [
+        "bf983463-06aa-4818-85a4-9dc3da2899c2"
+      ]
+    },
+    "bf983463-06aa-4818-85a4-9dc3da2899c2": {
+      "id": "bf983463-06aa-4818-85a4-9dc3da2899c2",
+      "message": {
+        "id": "bf983463-06aa-4818-85a4-9dc3da2899c2",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739485170.253598,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "<chat2>\n\nUm,\n\nSo the structure of the paper is you have our discussion of why these things are not presented. We have our discussion of human being utility and our experience. These\n\nAnd our experiences are using it for research. And then we have the discussion of what, what do we need? The tool that genuinely does.\n\nHow? Facilitate. What these things are good are how do we interact with these things knowing that there are deficiently And so, the first thing that we need is, A cursor to do this. Right. The, the first thing that we need is.\n\nEach step in the to-do list. So, We can get the user's judgement as. Correctness. Because the thing is, is that for research And this is not. This is not the oh I'm not able to access that we saw in 7th February like This is going to be, oh, this lineup.\n\nOpener is. This output is back. This is not a quick. I should remove this. Because fundamentally, Fundamentally, what we see is that\n\nThey don't consider jud. Put more to the point. They don't have the inductive capacity of the intuition, whatever to know when they should. And therefore, Until we figure out some new technological advance that is we need to Anchor. Um, that\n\nSo, We need to be able to New a brown art todo list, right? It is, it is insufficient Is the current quote, agentic only great things do just take a step, right? Like the idea of a wonderful model of research is laughable. Yes. Uh, we should have that a note towards um the problems of sdlcs and why that's such a problem for us.\n\nUm,\n\nThis to-do list should should first off. Allow us to see what's in the context window. And to see what we're working on, but the the fundamental thing that these large language models don't have is the ability to forget to judge. That a certain line of thinking is bad, then to remove it because We know.\n\nBy virtue of how they work. These large language models. Will anchor. Long text. In their context window. Which means that\n\nAs they anchor on this text, if it's the wrong text. Not only. Not only is it excluding? Um, Content that we want but it's biasing the output in ways. That's not appropriate. And so, therefore, When we build literature for our deep research, We effectively need.\n\nAn indication of What sources? It has considered. What it's using and more to the point, what it's disusing. Um, and so So effectively. Considering that we're playing the game of of, um, Limiting context windows and it's it's hilarious. That 200 000 tokens is limited but what we're talking about.\n\nI've I've easily blown the context window out with trying to drop in nine papers. So Two hundred thousand tokens. Is not sufficient to do researching. Therefore we need a way of managing. Our tokens. And, What this means and we also need introspection. We need to be able to validate this.\n\nWe need ha transparency, not newly in the encoded thoughts. But okay at this step we have a This paper. We are pulling these quotes from it. Here is our summary of and understanding here is where in our document we should be using this paper when we get to this part of our document load the entire paper into the context window for this paragraph.\n\nRight. And so this is why outlines are so useful? Is because they allow us to go up when we get to that part of the outline when we get to that part of the mechanism. Whatever, that's not the right word, but whatever. Go change your context window, your working context window.\n\nTo go. Spin off a line of thought or whatever to apply. That paper to this paragraph, within the context of the section and and the document And so, We need. But, We also need human judgement, right? The first draught is always shit. The first lines of research are seldom the most correct lines, and so therefore, These systems have to leverage human judgement.\n\nAnd and not in the double confirm that deep research does right now, right? Because deep research right now. Takes this takes the entire context window. You push deep research. And then it it crunches down what it thinks its task is. And then you say go or you give it a bit of feedback when it goes.\n\nThat's not what I'm talking about, right? This is not agentic. It is not goal following We cannot treat it as gold following. We must treat it as a tool. It's just a tool. It is a tool that can be useful. It's a tool that can be thoughtful. It's just a tool.\n\nDon't remember if I talked about deleting. But we also need tombstones, we need to have indications of thoughts that we've had that are bad. And we have to be able to remove them durably. From the context window but we need to have proof that we've had this thought and chosen not to have it.\n\nUm, Which is. Ironic. But whatever.\n\nOkay. What time is it?\n\nWe have to outline. We have forgetting.\n\nWe have userjulent.\n\nAnd then we have\n\nAnd then we have different. Stages of interaction, where finding literature. Extracting, the literature and building the outline building, the first draught revising, the draught editing, and then outputting Should all be documented. And so this is why we We can't necessarily follow a waterfall sdlc. When we're producing 10 000 word, research reports.\n\nWe have to consider. Instead. That we have to treat each step in its own step that we need to have different mechanisms for Keep contracted this information. We need to choose which of these parts we're pulling from. And at every stage we have to rely on human judgement. Knowing that the AI's judgements is deficient but more to the point, not only is it deficient, it doesn't know that it's deficiency, doesn't know when to play the judgement.\n\nCool.\n</chat2>"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91183347bf5f5575-IAD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "60b1b869-ab0e-4dfa-8174-5d68d661ebc4",
+      "children": [
+        "6c1193a7-7b9c-403a-b5ee-b055782ddfa1"
+      ]
+    },
+    "6c1193a7-7b9c-403a-b5ee-b055782ddfa1": {
+      "id": "6c1193a7-7b9c-403a-b5ee-b055782ddfa1",
+      "message": {
+        "id": "6c1193a7-7b9c-403a-b5ee-b055782ddfa1",
+        "author": {
+          "role": "tool",
+          "name": "a8km123",
+          "metadata": {}
+        },
+        "create_time": 1739485185.505893,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Integrating chat2 notes**\n\nThe task is to integrate chat2's message into the outline of a paper. The structure involves discussing why certain things aren't presented, followed by the utility of humans, before exploring what is needed to create a tool that truly meets the problem. Chat2 discusses the need for an agentic research tool with an interactive mechanism for human judgment. I\u2019ll take these thoughts from chat2 and organize them into markdown, building on the previous outline smoothly.\n\n**Organizing paper outline**\n\nCurrently, systems are deficient in judgment and induction, so we need a step-by-step to-do list, a \"cursor\" for every step. This list should include use cases and the tool that truly addresses our needs\u2014something capable of judgment and considering context. The AI needs to \u201cforget\u201d inappropriate thoughts and remove biases, as long context windows can anchor bad text. For literature reviews, it\u2019s important to note which sources were considered and, more importantly, which were discarded.\n\n**Creating a new outline section**\n\nBecause the context window is limited, we need better token management and introspection for research, with a way to load a paper\u2019s entire paragraph into the context when necessary. Outlines serve as a way to manage context and maintain transparency. We need human judgment since initial drafts are often insufficient. The system should have \"tombstones\" marking discarded thoughts. Break the research process into stages that rely on human judgment\u2014literature search, drafting, etc. I'll create a new section to focus on \u201cRequirements for a Genuinely Agentic Research Tool.\u201d"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 0.0,
+        "metadata": {
+          "finished_text": "Reasoned for 9 seconds",
+          "initial_text": "Reasoning",
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "bf983463-06aa-4818-85a4-9dc3da2899c2",
+          "request_id": "91183347bf5f5575-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bf983463-06aa-4818-85a4-9dc3da2899c2",
+      "children": [
+        "14e17c8a-a51f-4e38-82cd-53a6d2531776"
+      ]
+    },
+    "14e17c8a-a51f-4e38-82cd-53a6d2531776": {
+      "id": "14e17c8a-a51f-4e38-82cd-53a6d2531776",
+      "message": {
+        "id": "14e17c8a-a51f-4e38-82cd-53a6d2531776",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1739485185.505987,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "<think>\nI'll integrate the ideas from chat2 into our existing outline. The new section will address the requirements for an enhanced research tool that compensates for current AI limitations. I'll focus on:\n\n- The need for an interactive, step-by-step mechanism (a \"cursor\" or to-do list) to allow human judgment at each stage.\n- Limitations of current systems (e.g., inability to \"forget\" or discard unhelpful context, anchoring to long texts).\n- The necessity for transparency and introspection (knowing which sources or lines of thought are being used and discarded).\n- Different stages of interaction in the research process (literature search, extraction, outlining, drafting, revising, and final output).\n- The need for integration of human judgment since initial outputs are typically poor.\n\nI'll now produce the integrated outline in Markdown.\n</think>\n\n```markdown\n# Paper Outline: AI Limitations in Research Contexts\n\n## 1. Introduction\n- **Context & Motivation:**\n  - Examination of AI\u2019s limitations in research, focusing on the gap between linguistic production and genuine judgment/agency.\n  - Importance of distinguishing between mere text generation and true goal-directed behavior.\n- **Defining Key Concepts:**\n  - What constitutes an \"agentic machine\": goal-following, self-assessment, and evaluative judgment.\n\n## 2. Agentic Systems and Goal-Following\n- **Agentic Machine Characteristics:**\n  - Functional decomposition of tasks.\n  - Ability to judge task completion and assess output quality.\n- **Case Study: Deep Research\u2019s Newspaper Article**\n  - **Observation:** Produced an output resembling a newspaper article.\n  - **Failure:** Did not adhere to specific guidelines, indicating a lack of true goal orientation.\n- **Implication:**\n  - Current systems mimic competence but fall short in generalizing and inductively reasoning to solve problems.\n\n## 3. Literature Reviews: Superficial vs. Insightful\n- **Descriptive Literature Reviews:**\n  - Regurgitation and reorganization of text.\n  - Lacks intentional source selection and deeper insight.\n- **Meaningful Literature Reviews:**\n  - Involves purposeful source selection, organization, and the generation of novel insights.\n  - Requires inductive reasoning to support broader scholarly narratives.\n- **Limitation in Practice:**\n  - Deep Research produces texts that meet structural criteria yet lack the evaluative spark needed for insightful literature reviews.\n\n## 4. The \"Uncanny Valley of Research\"\n- **Defining the Concept:**\n  - AI outputs appear competent but fail to self-question or revise assumptions.\n- **Behavioral Observations:**\n  - Absence of mid-process outline creation or revision.\n  - Reliance on initial search results without iterative refinement.\n  - No systematic winnowing of irrelevant or incorrect information.\n- **Consequences:**\n  - Reveals a fundamental gap between superficial performance and genuine research capability.\n\n## 5. Operational and Sustained Research Limitations\n- **Operational Challenges:**\n  - Issues with search parameters (e.g., misnumbering issues, inefficient token management).\n  - Problems with anchoring long texts in the context window.\n- **Sustained Attention and Efficiency:**\n  - Inability to maintain a goal-oriented process over extended research tasks.\n  - Tendency to \u201cget stuck\u201d or persist with unproductive lines of thought.\n\n## 6. Requirements for Enhanced Research Tools\n- **Interactive, Step-by-Step Mechanisms:**\n  - **Cursor/To-Do List Approach:** \n    - Break research tasks into discrete steps.\n    - Allow human judgment at each stage for evaluating correctness.\n- **Context Window Management & Forgetting:**\n  - **Challenge:** Current models anchor excessively on long texts, even if they contain unhelpful or erroneous content.\n  - **Solution:** Mechanisms for \"forgetting\" or discarding lines of thought that are determined to be unproductive.\n- **Transparency and Introspection:**\n  - Clear indication of which sources and ideas have been considered or discarded.\n  - Ability to load and isolate specific papers or sections into the context window when needed.\n- **Integration of Human Judgment:**\n  - Acknowledgment that first drafts and initial research outputs are often flawed.\n  - Systems must facilitate iterative refinement, relying on human feedback to prune or redirect output.\n- **Stage-Specific Mechanisms:**\n  - **Literature Search & Extraction:** Manage and document sources, ensuring relevant content is highlighted.\n  - **Outline Building & Drafting:** Enable dynamic adjustment of the context window for focused analysis.\n  - **Revision & Editing:** Provide tools for marking \u201ctombstones\u201d or flagging ideas that should be permanently removed.\n- **Beyond a Waterfall Model:**\n  - Recognize that producing a 10,000-word research report requires iterative, stage-specific interventions rather than a single, linear process.\n\n## 7. Conclusion and Future Directions\n- **Summary:**\n  - Reiterate the limitations of current AI systems in achieving true agentic behavior.\n  - Emphasize the necessity for incorporating judgment, self-assessment, and inductive reasoning.\n- **Future Directions:**\n  - Propose development of interactive tools that enable transparency, effective context management, and iterative refinement.\n  - Suggest research into mechanisms that allow AI systems to know when to \"forget\" or discard erroneous lines of thought.\n```\n\n"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200002
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "o3-mini-high",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "6c1193a7-7b9c-403a-b5ee-b055782ddfa1",
+          "request_id": "91183347bf5f5575-IAD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6c1193a7-7b9c-403a-b5ee-b055782ddfa1",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "14e17c8a-a51f-4e38-82cd-53a6d2531776",
+  "plugin_ids": null,
+  "conversation_id": "67ae6f9c-a678-8004-b2c0-f1a2edbbd3f1",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "o3-mini-high",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67ae6f9c-a678-8004-b2c0-f1a2edbbd3f1"
+}

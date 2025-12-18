@@ -1,0 +1,403 @@
+{
+  "title": "v7-MapReader",
+  "create_time": 1740282716.408546,
+  "update_time": 1740283212.892135,
+  "mapping": {
+    "aaa1c82e-aab7-440b-9c5c-19a0d256af16": {
+      "id": "aaa1c82e-aab7-440b-9c5c-19a0d256af16",
+      "message": null,
+      "parent": null,
+      "children": [
+        "9be1599d-aab1-48e9-857f-988d2a0baee4"
+      ]
+    },
+    "9be1599d-aab1-48e9-857f-988d2a0baee4": {
+      "id": "9be1599d-aab1-48e9-857f-988d2a0baee4",
+      "message": {
+        "id": "9be1599d-aab1-48e9-857f-988d2a0baee4",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1c82e-aab7-440b-9c5c-19a0d256af16",
+      "children": [
+        "505d059e-6b85-468a-8b03-fc1d7be5b4b6"
+      ]
+    },
+    "505d059e-6b85-468a-8b03-fc1d7be5b4b6": {
+      "id": "505d059e-6b85-468a-8b03-fc1d7be5b4b6",
+      "message": {
+        "id": "505d059e-6b85-468a-8b03-fc1d7be5b4b6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740282716.411205,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9164429f8845a7f3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9be1599d-aab1-48e9-857f-988d2a0baee4",
+      "children": [
+        "e25e3878-d44b-4126-af13-7c81517bceb8"
+      ]
+    },
+    "e25e3878-d44b-4126-af13-7c81517bceb8": {
+      "id": "e25e3878-d44b-4126-af13-7c81517bceb8",
+      "message": {
+        "id": "e25e3878-d44b-4126-af13-7c81517bceb8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740282721.420629,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your requirements completely. Please provide the first tool name or acronym for me to begin the research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "505d059e-6b85-468a-8b03-fc1d7be5b4b6",
+          "request_id": "9164429f8845a7f3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "505d059e-6b85-468a-8b03-fc1d7be5b4b6",
+      "children": [
+        "867c38dd-d365-4037-93b5-cf298f768361"
+      ]
+    },
+    "867c38dd-d365-4037-93b5-cf298f768361": {
+      "id": "867c38dd-d365-4037-93b5-cf298f768361",
+      "message": {
+        "id": "867c38dd-d365-4037-93b5-cf298f768361",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740282721.420761,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "e25e3878-d44b-4126-af13-7c81517bceb8",
+          "request_id": "9164429f8845a7f3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e25e3878-d44b-4126-af13-7c81517bceb8",
+      "children": [
+        "c7659ab8-b732-49c2-8833-8521faf31fef"
+      ]
+    },
+    "c7659ab8-b732-49c2-8833-8521faf31fef": {
+      "id": "c7659ab8-b732-49c2-8833-8521faf31fef",
+      "message": {
+        "id": "c7659ab8-b732-49c2-8833-8521faf31fef",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740282738.376055,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "MapReader"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916443296935a7f3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "867c38dd-d365-4037-93b5-cf298f768361",
+      "children": [
+        "b323a6ef-a0d2-4737-9aff-6d866a674ec0"
+      ]
+    },
+    "b323a6ef-a0d2-4737-9aff-6d866a674ec0": {
+      "id": "b323a6ef-a0d2-4737-9aff-6d866a674ec0",
+      "message": {
+        "id": "b323a6ef-a0d2-4737-9aff-6d866a674ec0",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740282771.548259,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a comprehensive and systematic search for all mentions of the software tool \"MapReader\" from 1995 onward. This includes scholarly literature, blog posts, source code repositories, and any other references. Each valid mention will be documented in a well-formed CSV with the required fields: Tool, Year, Source, URL, and AI Notes.\n\nI will let you know when I have gathered the evidence."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "c7659ab8-b732-49c2-8833-8521faf31fef",
+          "request_id": "916443296935a7f3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c7659ab8-b732-49c2-8833-8521faf31fef",
+      "children": [
+        "fcf4ce29-f775-4f17-9a76-f4596a66305d"
+      ]
+    },
+    "fcf4ce29-f775-4f17-9a76-f4596a66305d": {
+      "id": "fcf4ce29-f775-4f17-9a76-f4596a66305d",
+      "message": {
+        "id": "fcf4ce29-f775-4f17-9a76-f4596a66305d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740282771.548379,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a comprehensive and systematic search for all mentions of the software tool \\\"MapReader\\\" from 1995 onward. This includes scholarly literature, blog posts, source code repositories, and any other references. Each valid mention will be documented in a well-formed CSV with the required fields: Tool, Year, Source, URL, and AI Notes.\\n\\nI will let you know when I have gathered the evidence.\",\"title\":\"Comprehensive Evidence Collection for MapReader\",\"prompt\":\"Conduct a systematic search for all mentions of the software tool \\\"MapReader\\\" from 1995 onward. Identify sources including:\\n- Scholarly literature (journals, conference proceedings, research papers)\\n- Blog posts and about pages\\n- Source code repositories with public commits\\n- Any other relevant mentions of the tool\\n\\nFor each source, extract the following information:\\n- \\\"Tool\\\": The tool name exactly as given (\\\"MapReader\\\").\\n- \\\"Year\\\": The year of publication, or \\\"n.d.\\\" if no date is found.\\n- \\\"Source\\\": Citation or (Domain + Page Title).\\n- \\\"URL\\\": The URL of the resource.\\n- \\\"AI Notes\\\": Any notes, concerns, or uncertainties regarding data provenance or quality.\\n\\nEnsure that each unique mention of \\\"MapReader\\\" appears as a separate row in the CSV. Avoid extrapolating dates\u2014only include those explicitly stated in sources. Expand searches by \u00b11 year from any discovered date. Systematically explore all pages of search results for a thorough data collection. Return results as a well-formed quoted CSV in a fenced code block.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "b323a6ef-a0d2-4737-9aff-6d866a674ec0",
+          "request_id": "916443296935a7f3-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "b323a6ef-a0d2-4737-9aff-6d866a674ec0",
+      "children": [
+        "0e0b99d6-dfbe-4e5d-9b12-c3692e4e2745"
+      ]
+    },
+    "0e0b99d6-dfbe-4e5d-9b12-c3692e4e2745": {
+      "id": "0e0b99d6-dfbe-4e5d-9b12-c3692e4e2745",
+      "message": {
+        "id": "0e0b99d6-dfbe-4e5d-9b12-c3692e4e2745",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740282771.548456,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Evidence Collection for MapReader",
+          "async_task_prompt": "Conduct a systematic search for all mentions of the software tool \"MapReader\" from 1995 onward. Identify sources including:\n- Scholarly literature (journals, conference proceedings, research papers)\n- Blog posts and about pages\n- Source code repositories with public commits\n- Any other relevant mentions of the tool\n\nFor each source, extract the following information:\n- \"Tool\": The tool name exactly as given (\"MapReader\").\n- \"Year\": The year of publication, or \"n.d.\" if no date is found.\n- \"Source\": Citation or (Domain + Page Title).\n- \"URL\": The URL of the resource.\n- \"AI Notes\": Any notes, concerns, or uncertainties regarding data provenance or quality.\n\nEnsure that each unique mention of \"MapReader\" appears as a separate row in the CSV. Avoid extrapolating dates\u2014only include those explicitly stated in sources. Expand searches by \u00b11 year from any discovered date. Systematically explore all pages of search results for a thorough data collection. Return results as a well-formed quoted CSV in a fenced code block.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Evidence Collection for MapReader",
+            "completed_with_time": "Research completed in 7m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "fcf4ce29-f775-4f17-9a76-f4596a66305d",
+          "request_id": "916443296935a7f3-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67ba9b930cf48191913871fcc4c0ac66",
+          "async_task_conversation_id": "67ba9b93-1ddc-8004-bb7a-08bd93d51494",
+          "async_task_created_at": "2025-02-23 03:52:51.525275+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "fcf4ce29-f775-4f17-9a76-f4596a66305d",
+      "children": [
+        "a254c492-9f74-43a6-988a-4917452afd41"
+      ]
+    },
+    "a254c492-9f74-43a6-988a-4917452afd41": {
+      "id": "a254c492-9f74-43a6-988a-4917452afd41",
+      "message": {
+        "id": "a254c492-9f74-43a6-988a-4917452afd41",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740283200.652535,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"MapReader\",\"2021\",\"arxiv.org \u2013 MapReader: A Computer Vision Pipeline for the Semantic Exploration of Maps at Scale\",\"https://arxiv.org/abs/2111.15592\",\"Preprint (arXiv), not peer-reviewed.\"\n\"MapReader\",\"2022\",\"dl.acm.org \u2013 MapReader: a computer vision pipeline for the semantic exploration of maps at scale (GeoHumanities \u201822)\",\"https://doi.org/10.1145/3557919.3565812\",\"Peer-reviewed conference paper.\"\n\"MapReader\",\"2023\",\"zenodo.org \u2013 Living-with-machines/MapReader: End of LwM (v1.0.5 software release)\",\"https://doi.org/10.5281/zenodo.8189653\",\"Official software release on Zenodo.\"\n\"MapReader\",\"2024\",\"theoj.org \u2013 MapReader: Open software for the visual analysis of maps (JOSS)\",\"https://doi.org/10.21105/joss.06434\",\"Peer-reviewed journal article (JOSS).\"\n\"MapReader\",\"2023\",\"Springer CCIS \u2013 Research and Education in Urban History in the Age of Digital Libraries (Hecht et al. 2023)\",\"https://doi.org/10.1007/978-3-031-38871-2_9\",\"Book chapter mentioning MapReader.\"\n\"MapReader\",\"2023\",\"Springer LNCS \u2013 Document Analysis and Recognition (ICDAR 2023) (Smith & Pillatt 2023)\",\"https://doi.org/10.1007/978-3-031-41734-4_14\",\"Conference paper referencing MapReader.\"\n\"MapReader\",\"2025\",\"Elsevier \u2013 Pervasive and Mobile Computing (Lim et al. 2025)\",\"https://doi.org/10.1016/j.pmcj.2025.102017\",\"Journal article citing MapReader (early 2025).\"\n\"MapReader\",\"2024\",\"Taylor & Francis \u2013 Cartography and Geographic Information Science (Kang et al. 2024)\",\"https://doi.org/10.1080/15230406.2023.2295943\",\"Journal article mentioning MapReader.\"\n\"MapReader\",\"2024\",\"Springer Nature \u2013 Humanities and Social Sciences Communications (Petitpierre et al. 2024)\",\"https://doi.org/10.1057/s41599-024-02840-w\",\"Journal article referencing MapReader.\"\n\"MapReader\",\"2024\",\"Taylor & Francis \u2013 Historical Methods (Litvine et al. 2024)\",\"https://doi.org/10.1080/01615440.2024.2324163\",\"Journal article citing MapReader.\"\n\"MapReader\",\"n.d.\",\"turing.ac.uk \u2013 How AI can see the natural world in ways humans can't (Turing blog)\",\"https://www.turing.ac.uk/blog/how-ai-can-see-natural-world-ways-humans-cant\",\"Blog post; mentions MapReader's origin in digitising maps (date not available).\"\n\"MapReader\",\"2024\",\"pretalx.com \u2013 Spatial Humanities 2024: MapReader Workshop (conference session)\",\"https://pretalx.com/spathum24/talk/FYVZZG/\",\"Workshop description (Sept 2024).\"\n\"MapReader\",\"2023\",\"clariahvl.hypotheses.org \u2013 Reading historical maps in a Digital Era (CLARIAH-VL blog)\",\"https://clariahvl.hypotheses.org/1137\",\"Workshop report featuring MapReader (Nov 2023).\"\n\"MapReader\",\"2024\",\"oculi-mundi.com \u2013 Maps Are Too Exciting! Digital innovations in mapping\",\"https://oculi-mundi.com/maps-are-too-exciting-digital-innovations-in-mapping\",\"Symposium page mentioning MapReader (Oct 2024).\"\n\"MapReader\",\"2024\",\"rics.org \u2013 OS enhances data to help manage natural landscape (Land Journal)\",\"https://ww3.rics.org/uk/en/journals/land-journal/ordnance-survey-biodiversity.html\",\"Industry article quoting use of MapReader (July 2024).\"\n\"MapReader\",\"2024\",\"dhdebates.gc.cuny.edu \u2013 \u201cMaps as Data\u201d in *Computational Humanities* (Debates in DH)\",\"https://dhdebates.gc.cuny.edu/read/computational-humanities/section/992f5fc5-9a0d-4e9a-863a-adc1de9a678e\",\"Scholarly essay mentioning MapReader (2024).\"\n\"MapReader\",\"2024\",\"storymaps.arcgis.com \u2013 Mapping the Past Against the Present (ArcGIS StoryMap)\",\"https://storymaps.arcgis.com/stories/5c8951be32ee42a1831eeed5ce952c3c\",\"Online GIS story using MapReader (c. 2024, no formal publication date).\"\n\"MapReader\",\"2023\",\"zirk.us \u2013 Living with Machines project post (Mastodon)\",\"https://zirk.us/@LivingWithMachines/109282230336592165\",\"Social media announcement of MapReader winning a prize (Nov 2023).\"\n\"MapReader\",\"2023\",\"mastodonapp.uk \u2013 Katherine McDonough post (MapReader launch event)\",\"https://mastodonapp.uk/@kmcdono/109431311508410777\",\"Social media invite to MapReader launch (June 2023).\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67ba9b930cf48191913871fcc4c0ac66",
+          "async_task_title": "Comprehensive Evidence Collection for MapReader"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "0e0b99d6-dfbe-4e5d-9b12-c3692e4e2745",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "a254c492-9f74-43a6-988a-4917452afd41",
+  "plugin_ids": null,
+  "conversation_id": "67ba9b5c-3550-8004-8548-a6f95baacbcc",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.turing.ac.uk/blog/how-ai-can-see-natural-world-ways-humans-cant",
+    "https://storymaps.arcgis.com/stories/5c8951be32ee42a1831eeed5ce952c3c",
+    "https://clariahvl.hypotheses.org/1137",
+    "https://oculi-mundi.com/maps-are-too-exciting-digital-innovations-in-mapping",
+    "https://ww3.rics.org/uk/en/journals/land-journal/ordnance-survey-biodiversity.html",
+    "https://pretalx.com/spathum24/talk/FYVZZG/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67ba9b5c-3550-8004-8548-a6f95baacbcc"
+}

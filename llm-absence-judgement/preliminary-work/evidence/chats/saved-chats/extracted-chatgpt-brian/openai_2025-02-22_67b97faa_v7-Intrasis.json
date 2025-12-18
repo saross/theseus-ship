@@ -1,0 +1,408 @@
+{
+  "title": "v7-Intrasis",
+  "create_time": 1740210090.890558,
+  "update_time": 1740211256.079807,
+  "mapping": {
+    "aaa13d17-d8fd-4a89-9524-bc181df943c9": {
+      "id": "aaa13d17-d8fd-4a89-9524-bc181df943c9",
+      "message": null,
+      "parent": null,
+      "children": [
+        "9d2813fc-23f0-45aa-b06f-f468e2ccf20b"
+      ]
+    },
+    "9d2813fc-23f0-45aa-b06f-f468e2ccf20b": {
+      "id": "9d2813fc-23f0-45aa-b06f-f468e2ccf20b",
+      "message": {
+        "id": "9d2813fc-23f0-45aa-b06f-f468e2ccf20b",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa13d17-d8fd-4a89-9524-bc181df943c9",
+      "children": [
+        "dec80eda-7544-41b3-a548-f663091c9a06"
+      ]
+    },
+    "dec80eda-7544-41b3-a548-f663091c9a06": {
+      "id": "dec80eda-7544-41b3-a548-f663091c9a06",
+      "message": {
+        "id": "dec80eda-7544-41b3-a548-f663091c9a06",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740210090.893135,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915d55896cf3a832-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9d2813fc-23f0-45aa-b06f-f468e2ccf20b",
+      "children": [
+        "d6f6ecd9-d41f-4f27-8847-3f91867d824a"
+      ]
+    },
+    "d6f6ecd9-d41f-4f27-8847-3f91867d824a": {
+      "id": "d6f6ecd9-d41f-4f27-8847-3f91867d824a",
+      "message": {
+        "id": "d6f6ecd9-d41f-4f27-8847-3f91867d824a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740210092.650251,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and strict evidence-based approach you require. Please provide the first tool name or acronym, and I will begin a systematic search following your outlined ground rules."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "dec80eda-7544-41b3-a548-f663091c9a06",
+          "request_id": "915d55896cf3a832-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "dec80eda-7544-41b3-a548-f663091c9a06",
+      "children": [
+        "2c545fd5-0afe-458e-ab9c-cd1e4ad587bc"
+      ]
+    },
+    "2c545fd5-0afe-458e-ab9c-cd1e4ad587bc": {
+      "id": "2c545fd5-0afe-458e-ab9c-cd1e4ad587bc",
+      "message": {
+        "id": "2c545fd5-0afe-458e-ab9c-cd1e4ad587bc",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740210092.650369,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d6f6ecd9-d41f-4f27-8847-3f91867d824a",
+          "request_id": "915d55896cf3a832-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d6f6ecd9-d41f-4f27-8847-3f91867d824a",
+      "children": [
+        "96a8e385-3b9e-4fd7-a902-145cb267dd31"
+      ]
+    },
+    "96a8e385-3b9e-4fd7-a902-145cb267dd31": {
+      "id": "96a8e385-3b9e-4fd7-a902-145cb267dd31",
+      "message": {
+        "id": "96a8e385-3b9e-4fd7-a902-145cb267dd31",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740210097.564455,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Intrasis"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915d55b3be9fa832-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2c545fd5-0afe-458e-ab9c-cd1e4ad587bc",
+      "children": [
+        "5074abfd-42ce-4b6b-96fd-d8b52d57e312"
+      ]
+    },
+    "5074abfd-42ce-4b6b-96fd-d8b52d57e312": {
+      "id": "5074abfd-42ce-4b6b-96fd-d8b52d57e312",
+      "message": {
+        "id": "5074abfd-42ce-4b6b-96fd-d8b52d57e312",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740210107.224486,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will systematically research mentions of the archaeological and historical research software tool \"Intrasis.\" I will gather evidence from various sources, including scholarly literature, blog posts, about pages, software repositories, and other mentions. Each mention will be recorded in a well-formatted quoted CSV with the year, source, URL, and AI notes. I will explore sources comprehensively for each year from 1995 onward and ensure accurate provenance tracking. I'll update you once I have compiled the data."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "96a8e385-3b9e-4fd7-a902-145cb267dd31",
+          "request_id": "915d55b3be9fa832-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "96a8e385-3b9e-4fd7-a902-145cb267dd31",
+      "children": [
+        "63b140f1-8dc5-4847-bf50-0a2e13ede032"
+      ]
+    },
+    "63b140f1-8dc5-4847-bf50-0a2e13ede032": {
+      "id": "63b140f1-8dc5-4847-bf50-0a2e13ede032",
+      "message": {
+        "id": "63b140f1-8dc5-4847-bf50-0a2e13ede032",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740210107.224581,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will systematically research mentions of the archaeological and historical research software tool \\\"Intrasis.\\\" I will gather evidence from various sources, including scholarly literature, blog posts, about pages, software repositories, and other mentions. Each mention will be recorded in a well-formatted quoted CSV with the year, source, URL, and AI notes. I will explore sources comprehensively for each year from 1995 onward and ensure accurate provenance tracking. I'll update you once I have compiled the data.\",\"title\":\"Comprehensive Research on Intrasis\",\"prompt\":\"Conduct a systematic and thorough search for the archaeological and historical research software tool \\\"Intrasis.\\\" Identify all sources mentioning this tool from 1995 onwards. For each source found, extract the following details:\\n\\n- **Tool**: Ensure consistency by always referring to the tool as \\\"Intrasis.\\\"\\n- **Year**: Extract the publication year of the source. If no date is available, mark as \\\"n.d.\\\"\\n- **Source**: Provide a citation or use the domain and page title.\\n- **URL**: Include the URL of the resource.\\n- **AI Notes**: Add any concerns or uncertainties regarding the data provenance or quality.\\n\\n### Guidelines:\\n- Search comprehensively across academic papers, software repositories, blog posts, and other references.\\n- If you find a mention of the tool, systematically explore adjacent years (+-1 year) to ensure comprehensive coverage.\\n- Do not extrapolate dates; only include explicitly stated publication years.\\n- Record every unique mention as a separate entry in a CSV format within a fenced code block.\\n- Avoid AI-generated citations or references; use direct sources only.\\n- Review every search results page methodically for thorough data collection.\\n\\nReturn the collected data in a well-formatted quoted CSV within a fenced code block. Ensure accuracy and epistemological rigor in tracking sources.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "5074abfd-42ce-4b6b-96fd-d8b52d57e312",
+          "request_id": "915d55b3be9fa832-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "5074abfd-42ce-4b6b-96fd-d8b52d57e312",
+      "children": [
+        "92b90bec-b7a2-4dea-a55c-c8b05740f1d7"
+      ]
+    },
+    "92b90bec-b7a2-4dea-a55c-c8b05740f1d7": {
+      "id": "92b90bec-b7a2-4dea-a55c-c8b05740f1d7",
+      "message": {
+        "id": "92b90bec-b7a2-4dea-a55c-c8b05740f1d7",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740210107.224651,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on Intrasis",
+          "async_task_prompt": "Conduct a systematic and thorough search for the archaeological and historical research software tool \"Intrasis.\" Identify all sources mentioning this tool from 1995 onwards. For each source found, extract the following details:\n\n- **Tool**: Ensure consistency by always referring to the tool as \"Intrasis.\"\n- **Year**: Extract the publication year of the source. If no date is available, mark as \"n.d.\"\n- **Source**: Provide a citation or use the domain and page title.\n- **URL**: Include the URL of the resource.\n- **AI Notes**: Add any concerns or uncertainties regarding the data provenance or quality.\n\n### Guidelines:\n- Search comprehensively across academic papers, software repositories, blog posts, and other references.\n- If you find a mention of the tool, systematically explore adjacent years (+-1 year) to ensure comprehensive coverage.\n- Do not extrapolate dates; only include explicitly stated publication years.\n- Record every unique mention as a separate entry in a CSV format within a fenced code block.\n- Avoid AI-generated citations or references; use direct sources only.\n- Review every search results page methodically for thorough data collection.\n\nReturn the collected data in a well-formatted quoted CSV within a fenced code block. Ensure accuracy and epistemological rigor in tracking sources.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on Intrasis",
+            "completed_with_time": "Research completed in 7m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "63b140f1-8dc5-4847-bf50-0a2e13ede032",
+          "request_id": "915d55b3be9fa832-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b97fbaded8819193f709504ad7e4fb",
+          "async_task_conversation_id": "67b97fba-ef00-8004-807e-73ba27c2e7d2",
+          "async_task_created_at": "2025-02-22 07:41:47.208153+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "63b140f1-8dc5-4847-bf50-0a2e13ede032",
+      "children": [
+        "6c9cbf82-8de8-40c7-9d26-6f41469fee08"
+      ]
+    },
+    "6c9cbf82-8de8-40c7-9d26-6f41469fee08": {
+      "id": "6c9cbf82-8de8-40c7-9d26-6f41469fee08",
+      "message": {
+        "id": "6c9cbf82-8de8-40c7-9d26-6f41469fee08",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740210532.970015,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Intrasis\",\"n.d.\",\"intrasis.com \u2013 \"\"This is Intrasis\"\" (official site page)\",\"https://www.intrasis.com/what-is-intrasis/\",\"Official product website; promotional content.\"\n\"Intrasis\",\"n.d.\",\"sas.sav.sk \u2013 \"\"IT resources\"\" (Slovak Archaeological Society)\",\"https://sas.sav.sk/en/links/it-resources/\",\"Resource list on society website; no publication date.\"\n\"Intrasis\",\"2017\",\"intarch.ac.uk \u2013 Internet Archaeology Issue\u00a044 (Jensen)\",\"https://intarch.ac.uk/journal/issue44/8/3-6.html\",\"Peer-reviewed journal article (Internet Archaeology, 2017).\"\n\"Intrasis\",\"n.d.\",\"historicengland.org.uk \u2013 \"\"Excavation Techniques\"\" (Projects Team)\",\"https://historicengland.org.uk/research/methods/archaeology/excavation/\",\"Official Historic England page; no explicit date (content as of ~2010s).\"\n\"Intrasis\",\"n.d.\",\"historicengland.org.uk \u2013 \"\"Computers & Archaeology\"\" overview\",\"https://historicengland.org.uk/research/methods/archaeology/computers-and-archaeology/\",\"Official Historic England overview; undated.\"\n\"Intrasis\",\"2008\",\"whatdotheyknow.com \u2013 FOI request: \"\"Archaeological Projects team use of Intrasis\"\"\",\"https://www.whatdotheyknow.com/request/archaeological_projects_team_use\",\"Public FOI request content (user query; data provenance is user-submitted).\"\n\"Intrasis\",\"2012\",\"sweco.se \u2013 \"\"Sweco hj\u00e4lper arkeologer med dokumenthantering\"\" (press release)\",\"https://www.sweco.se/aktuellt/pressmeddelanden/sweco-hjalper-arkeologer-med-dokumenthantering-3/\",\"Company press release (development contract for Intrasis upgrade).\"\n\"Intrasis\",\"2016\",\"informationr.net \u2013 \"\"If we just knew who should do it\"\" (I. Huvila)\",\"https://informationr.net/ir/21-2/paper713.html\",\"Peer-reviewed study (Information Research 21(2), 2016; interview-based).\"\n\"Intrasis\",\"2016\",\"lup.lub.lu.se \u2013 Master's thesis: \"\"Exploring the use of 3D GIS...\"\" (S. van Riel)\",\"https://lup.lub.lu.se/student-papers/search/publication/8876753\",\"Academic thesis (Lund University, 2016; not peer-reviewed but scholarly).\"\n\"Intrasis\",\"2020\",\"diva-portal.org \u2013 \"\"The digital future of the past\"\" (\u00c5. Larsson & D. L\u00f6wenborg)\",\"https://www.diva-portal.org/smash/get/diva2:1512596/FULLTEXT01.pdf\",\"Chapter in edited volume (2020; scholarly source, discusses FAIR data).\"\n\"Intrasis\",\"2020\",\"mdpi.com \u2013 \"\"One Archaeology: A Manifesto...\"\" (Information 11(4))\",\"https://www.mdpi.com/2078-2489/11/4/222\",\"Peer-reviewed journal article (open access, MDPI Information, 2020).\"\n\"Intrasis\",\"2021\",\"intarch.ac.uk \u2013 \"\"A Turn Towards the Digital\"\" (Internet Archaeology 58)\",\"https://intarch.ac.uk/journal/issue58/19/full-text.html\",\"Peer-reviewed article (Internet Archaeology 58, 2021; overview of Swedish data).\"\n\"Intrasis\",\"n.d.\",\"diva-portal.org \u2013 \"\"About Swedish Archaeology\"\" (NHB Archaeological Excavations Dept)\",\"https://www.diva-portal.org/smash/get/diva2:1295370/FULLTEXT01.pdf\",\"Official NHB brochure (circa 2004; no explicit date in text).\"\n\"Intrasis\",\"n.d.\",\"raa.se \u2013 Projekt Urdar (RA\u00c4 project page)\",\"https://www.raa.se/kulturarv/arkeologi-fornlamningar-och-fynd/projekt-urdar/\",\"Official RA\u00c4 project info page (2020\u20132023 project; content about legacy data).\"\n\"Intrasis\",\"2018\",\"archaeopress.com \u2013 CAA2016: Oceans of Data (Proceedings, Archaeopress)\",\"https://www.archaeopress.com/ArchaeopressShop/Public/download.asp?id={8E5EA51E-8FC9-4CF4-A4AA-62D20DEB1D33}\",\"Peer-reviewed conference paper (CAA 2016 proceedings, 2018; mentions Intrasis as standard).\"\n\"Intrasis\",\"2022\",\"kula.uvic.ca \u2013 \"\"Re-purposing Excavation Database Content as Paradata\"\" (Huvila et al.)\",\"https://kula.uvic.ca/index.php/kula/article/view/221/389\",\"Peer-reviewed open-access article (KULA journal, 2022; data reusability study).\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b97fbaded8819193f709504ad7e4fb",
+          "async_task_title": "Comprehensive Research on Intrasis"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "92b90bec-b7a2-4dea-a55c-c8b05740f1d7",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "6c9cbf82-8de8-40c7-9d26-6f41469fee08",
+  "plugin_ids": null,
+  "conversation_id": "67b97faa-9814-8004-8ad5-2b56a45ae2cc",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.intrasis.com/what-is-intrasis/",
+    "https://lup.lub.lu.se/student-papers/search/publication/8876753",
+    "https://sas.sav.sk/en/links/it-resources/",
+    "https://www.raa.se/kulturarv/arkeologi-fornlamningar-och-fynd/projekt-urdar/",
+    "https://www.sweco.se/aktuellt/pressmeddelanden/sweco-hjalper-arkeologer-med-dokumenthantering-3/",
+    "https://intarch.ac.uk/journal/issue58/19/full-text.html",
+    "https://historicengland.org.uk/research/methods/archaeology/computers-and-archaeology/",
+    "https://www.mdpi.com/2078-2489/11/4/222",
+    "https://informationr.net/ir/21-2/paper713.html",
+    "https://historicengland.org.uk/research/methods/archaeology/excavation/",
+    "https://intarch.ac.uk/journal/issue44/8/3-6.html"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b97faa-9814-8004-8ad5-2b56a45ae2cc"
+}

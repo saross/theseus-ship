@@ -1,0 +1,1550 @@
+{
+  "title": "CV Text Detection Tools",
+  "create_time": 1740714126.137518,
+  "update_time": 1740715025.005768,
+  "mapping": {
+    "aaa1bd95-04bf-41d2-ab99-ab064fc118c7": {
+      "id": "aaa1bd95-04bf-41d2-ab99-ab064fc118c7",
+      "message": null,
+      "parent": null,
+      "children": [
+        "3c55335d-6979-4b05-8698-08a211c40fbb"
+      ]
+    },
+    "3c55335d-6979-4b05-8698-08a211c40fbb": {
+      "id": "3c55335d-6979-4b05-8698-08a211c40fbb",
+      "message": {
+        "id": "3c55335d-6979-4b05-8698-08a211c40fbb",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1bd95-04bf-41d2-ab99-ab064fc118c7",
+      "children": [
+        "566ac50b-9811-4498-80e0-20aa46fe3ada"
+      ]
+    },
+    "566ac50b-9811-4498-80e0-20aa46fe3ada": {
+      "id": "566ac50b-9811-4498-80e0-20aa46fe3ada",
+      "message": {
+        "id": "566ac50b-9811-4498-80e0-20aa46fe3ada",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740714126.13993,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. I'm looking for computer vision libraries which can, if given an image, identify bounding boxes of text regions within the image. Images here may have zero or more text regions, and we want topleft_X, topleft_y, bottomright_x, bottomright_y. We're looking for python libraries which use CV techniques and pytorch to perform this. \n\nPlease give me a csv in a fenced code block with \"Tool\", \"url\", \"notes\", \"software requirements\"\n\nHere, I would like you to be my research assistant, so that we may have a COMPLETE inventory of all CV products (open source only) which may allow us to do this image inference. Take EXTRA TIME and be certain about your recommendations. \n\nPlease functionally decompose my request and repeat it back to me before we continue."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "918d67167f95ab0b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3c55335d-6979-4b05-8698-08a211c40fbb",
+      "children": [
+        "f21f2dfc-b0f2-4a24-af6d-2e8854ba1fe9"
+      ]
+    },
+    "f21f2dfc-b0f2-4a24-af6d-2e8854ba1fe9": {
+      "id": "f21f2dfc-b0f2-4a24-af6d-2e8854ba1fe9",
+      "message": {
+        "id": "f21f2dfc-b0f2-4a24-af6d-2e8854ba1fe9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740714136.428457,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I understand that you are looking for Python-based computer vision libraries that can detect text regions in images using bounding boxes. You specifically want:\n\n- Open-source tools (no proprietary software)\n- Bounding box output format: (top-left X, top-left Y, bottom-right X, bottom-right Y)\n- Implemented using computer vision techniques and PyTorch\n- CSV format output with the following columns: Tool, URL, Notes, Software Requirements\n\nBefore proceeding with the research, let me clarify a few points to ensure a comprehensive and accurate inventory:\n\n1. **Scope of Models**: Are you specifically looking for tools that leverage deep learning (e.g., pretrained PyTorch models like CRAFT, EAST) or are you also open to traditional CV-based techniques (e.g., OpenCV contour detection)?\n2. **Output Preferences**: Do you require a tool that provides structured text output (OCR) along with bounding boxes, or is it sufficient if it only provides bounding boxes of detected text regions?\n3. **Performance Considerations**: Do you have any constraints regarding inference speed, accuracy, or model size?\n4. **Additional Features**: Would you like to prioritize tools that support multilingual text detection or work well in noisy/complex backgrounds?\n\nLet me know your preferences, and I\u2019ll ensure that the research is as thorough and relevant as possible."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "566ac50b-9811-4498-80e0-20aa46fe3ada",
+          "request_id": "918d67167f95ab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "566ac50b-9811-4498-80e0-20aa46fe3ada",
+      "children": [
+        "c6f48886-5bd5-449b-b91d-bcde00723c11"
+      ]
+    },
+    "c6f48886-5bd5-449b-b91d-bcde00723c11": {
+      "id": "c6f48886-5bd5-449b-b91d-bcde00723c11",
+      "message": {
+        "id": "c6f48886-5bd5-449b-b91d-bcde00723c11",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740714136.428549,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "f21f2dfc-b0f2-4a24-af6d-2e8854ba1fe9",
+          "request_id": "918d67167f95ab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f21f2dfc-b0f2-4a24-af6d-2e8854ba1fe9",
+      "children": [
+        "44457890-8307-4602-abbc-79057274a109"
+      ]
+    },
+    "44457890-8307-4602-abbc-79057274a109": {
+      "id": "44457890-8307-4602-abbc-79057274a109",
+      "message": {
+        "id": "44457890-8307-4602-abbc-79057274a109",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740714365.886078,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Please enumerate ALL techniques both current ones using ML and traditional CV approaches. We can do a secondary OCR step with a mask, so let's not worry about it as a fundamental component of our requirements.\nNo performance considerations.\nEnglish is the only required language, but we will be running against video game screen captures."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "918d6cef6c5dab0b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c6f48886-5bd5-449b-b91d-bcde00723c11",
+      "children": [
+        "7478f3d4-627f-445a-b819-9d4ba10221c6"
+      ]
+    },
+    "7478f3d4-627f-445a-b819-9d4ba10221c6": {
+      "id": "7478f3d4-627f-445a-b819-9d4ba10221c6",
+      "message": {
+        "id": "7478f3d4-627f-445a-b819-9d4ba10221c6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740714385.793278,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Got it! I'll compile a comprehensive list of open-source Python libraries that can identify bounding boxes around text regions in images, including both deep learning (PyTorch-based) and traditional computer vision (CV) techniques.\n\nThe final output will be a CSV file with the following columns:\n- **Tool**: Name of the library or model\n- **URL**: Link to its repository or official documentation\n- **Notes**: Brief description of its approach (ML-based, traditional CV, strengths, weaknesses, etc.)\n- **Software Requirements**: Dependencies, required frameworks, or specific installation details\n\nI'll take extra time to ensure completeness and will prioritize tools that work well with video game screen captures. I'll notify you when the research is ready."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "44457890-8307-4602-abbc-79057274a109",
+          "request_id": "918d6cef6c5dab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "44457890-8307-4602-abbc-79057274a109",
+      "children": [
+        "d3c7dec4-30d0-4f92-b1c4-310f8ceaf37a"
+      ]
+    },
+    "d3c7dec4-30d0-4f92-b1c4-310f8ceaf37a": {
+      "id": "d3c7dec4-30d0-4f92-b1c4-310f8ceaf37a",
+      "message": {
+        "id": "d3c7dec4-30d0-4f92-b1c4-310f8ceaf37a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740714385.793389,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Got it! I'll compile a comprehensive list of open-source Python libraries that can identify bounding boxes around text regions in images, including both deep learning (PyTorch-based) and traditional computer vision (CV) techniques.\\n\\nThe final output will be a CSV file with the following columns:\\n- **Tool**: Name of the library or model\\n- **URL**: Link to its repository or official documentation\\n- **Notes**: Brief description of its approach (ML-based, traditional CV, strengths, weaknesses, etc.)\\n- **Software Requirements**: Dependencies, required frameworks, or specific installation details\\n\\nI'll take extra time to ensure completeness and will prioritize tools that work well with video game screen captures. I'll notify you when the research is ready.\",\"title\":\"Computer Vision Libraries for Text Region Detection\",\"prompt\":\"Identify all open-source Python libraries that can detect text regions in images and return bounding boxes in the format (top-left X, top-left Y, bottom-right X, bottom-right Y). The research should include both deep learning-based (PyTorch-based) and traditional computer vision (CV) approaches.\\n\\nEach tool should be documented with the following details in CSV format:\\n- **Tool**: Name of the library or model\\n- **URL**: Link to its repository or official documentation\\n- **Notes**: Explanation of its approach (ML-based, traditional CV, strengths, weaknesses, suitability for video game screenshots, etc.)\\n- **Software Requirements**: Dependencies, required frameworks, or specific installation details\\n\\nAdditional details:\\n- OCR is not a fundamental requirement; focus only on detecting text regions and bounding boxes.\\n- No performance constraints; prioritize completeness.\\n- English text detection is the only requirement.\\n- The tools should be suitable for analyzing video game screen captures.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "7478f3d4-627f-445a-b819-9d4ba10221c6",
+          "request_id": "918d6cef6c5dab0b-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "7478f3d4-627f-445a-b819-9d4ba10221c6",
+      "children": [
+        "a3679df2-6e11-4e20-bbd5-1a4d1ded3230"
+      ]
+    },
+    "a3679df2-6e11-4e20-bbd5-1a4d1ded3230": {
+      "id": "a3679df2-6e11-4e20-bbd5-1a4d1ded3230",
+      "message": {
+        "id": "a3679df2-6e11-4e20-bbd5-1a4d1ded3230",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740714385.79348,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Computer Vision Libraries for Text Region Detection",
+          "async_task_prompt": "Identify all open-source Python libraries that can detect text regions in images and return bounding boxes in the format (top-left X, top-left Y, bottom-right X, bottom-right Y). The research should include both deep learning-based (PyTorch-based) and traditional computer vision (CV) approaches.\n\nEach tool should be documented with the following details in CSV format:\n- **Tool**: Name of the library or model\n- **URL**: Link to its repository or official documentation\n- **Notes**: Explanation of its approach (ML-based, traditional CV, strengths, weaknesses, suitability for video game screenshots, etc.)\n- **Software Requirements**: Dependencies, required frameworks, or specific installation details\n\nAdditional details:\n- OCR is not a fundamental requirement; focus only on detecting text regions and bounding boxes.\n- No performance constraints; prioritize completeness.\n- English text detection is the only requirement.\n- The tools should be suitable for analyzing video game screen captures.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Computer Vision Libraries for Text Region Detection",
+            "completed_with_time": "Research completed in 7m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d3c7dec4-30d0-4f92-b1c4-310f8ceaf37a",
+          "request_id": "918d6cef6c5dab0b-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67c13190e06481919907ca91bfaee3f5",
+          "async_task_conversation_id": "67c13190-ef98-8004-9163-785efe05b3ee",
+          "async_task_created_at": "2025-02-28 03:46:25.776239+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d3c7dec4-30d0-4f92-b1c4-310f8ceaf37a",
+      "children": [
+        "0bf7a396-da0e-488f-bbcc-5ae5b73bd042"
+      ]
+    },
+    "0bf7a396-da0e-488f-bbcc-5ae5b73bd042": {
+      "id": "0bf7a396-da0e-488f-bbcc-5ae5b73bd042",
+      "message": {
+        "id": "0bf7a396-da0e-488f-bbcc-5ae5b73bd042",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740714791.017805,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "**Tool** | **URL** | **Notes** | **Software Requirements**  \n---|---|---|---  \n**OpenCV (Text Detection)** | [OpenCV Text Detection Module Docs\u3011\u301013\u2020L88-L96\u3011 | Traditional CV and DNN-based text detection. OpenCV\u2019s `cv2.text` module offers classical **MSER/ER** (Extremal Region) detectors that find letter candidates via multi-stage clustering and classifiers\u301013\u2020L47-L56\u3011, then group them into text lines\u301013\u2020L63-L69\u3011. It also supports deep models (E.g. the **EAST** or **TextBoxes** detector) via DNN; OpenCV can load a pre-trained scene text model to get horizontal or rotated word boxes\u301013\u2020L89-L97\u3011. Strengths: No training needed; works on straightforward cases and can run on CPU. The deep model option is reasonably fast (EAST ~13 FPS on 720p images\u301034\u2020L81-L89\u3011) and handles oriented text. Weaknesses: The MSER/ER method may struggle on complex, noisy backgrounds, and deep models like EAST handle only oriented rectangular text (not curved). **Suitable for game UIs** if text has clear contrast; the DNN-based approach is recommended for robust results on scene-like game screenshots. | Requires the **OpenCV** library (with *opencv-contrib* for the text module). For DNN text detectors, OpenCV \u22653.4.3 is needed\u301034\u2020L89-L91\u3011 and you must load pre-trained model weights (e.g. EAST\u2019s `.pb` or Caffe model for TextBoxes). No external frameworks required (OpenCV DNN runs standalone).  \n**Tesseract OCR (via PyTesseract)** | [PyTesseract GitHub\u3011\u301061\u2020L93-L100\u3011 | An open-source OCR engine that can **detect and OCR text in one step**\u301036\u2020L1-L4\u3011. Tesseract\u2019s layout analysis finds text regions (bounding boxes) and then recognizes the text. Approach: Combines traditional techniques (connected-component analysis for text layout) with an LSTM-based recognizer (not PyTorch). Strengths: Mature OCR solution, good for clearly rendered text (designed for scanned documents but can work on images). It can return word or line bounding boxes (e.g. via `pytesseract.image_to_data`, which yields text box coordinates)\u301037\u2020L7-L16\u3011. Weaknesses: Struggles with complex backgrounds, stylized or low-contrast text \u2013 common in scene images \u2013 where modern deep models excel. **Suitable for game screenshots** if text is high-contrast and relatively standard fonts (e.g. menu text), but less so for highly decorative or blended-in text. | **Tesseract OCR 4+** must be installed (the engine is a separate C++ program). In Python, use **PyTesseract** or **Tesserocr** to call it\u301061\u2020L109-L117\u3011\u301061\u2020L112-L120\u3011. Requires Python imaging (Pillow/Leptonica) support. No GPU needed. Install Tesseract binary (and add to PATH), then `pip install pytesseract`.  \n**EasyOCR** | [EasyOCR GitHub\u3011\u301042\u2020L406-L413\u3011 | A **PyTorch-based** OCR library that detects text regions and reads text in one package. Uses a deep learning detector (the **CRAFT** algorithm for text region detection\u301042\u2020L408-L416\u3011) and a CRNN for recognition. Strengths: Very easy to use \u2013 just initialize a reader and call `readtext()` \u2013 and supports English and ~80+ languages out-of-the-box\u301042\u2020L408-L416\u3011. The CRAFT detector handles multi-oriented scene text by finding character regions and linking them, so it works on a variety of backgrounds/fonts. Good for game screenshots since it\u2019s trained on diverse scene text, thus likely to detect HUD or interface text reliably. Weaknesses: The model is heavy and can be slow on CPU (GPU recommended for speed). Also returns rotated box coordinates (4 corners) \u2013 you\u2019d need to derive top-left/bottom-right from them. | Requires **PyTorch** (all deep learning is on the PyTorch backend\u301042\u2020L406-L413\u3011). Install via pip (`easyocr`) \u2013 on Windows, install torch first\u301011\u2020L310-L318\u3011. It will download ~MBs of model weights on first use. Also needs standard Python imaging libraries (Pillow, OpenCV, etc., installed via pip).  \n**Mindee docTR** | [docTR GitHub\u3011\u30108\u2020L481-L489\u3011 | An open-source OCR toolkit for documents, with both **TensorFlow 2 and PyTorch** support\u30106\u2020L296-L304\u3011. It uses a two-stage deep learning approach: text detection (localizing words) followed by text recognition\u30106\u2020L311-L319\u3011. For detection, docTR provides state-of-the-art models like **DBNet** (segmentation-based differentiable binarization) and **LinkNet/FAST** for arbitrary-shaped text\u30108\u2020L481-L489\u3011. Strengths: High accuracy on printed text; the segmentation-based detector can handle curved or rotated text by producing tight mask-based bounding boxes. It\u2019s a well-documented, ready-to-use library (ideal for document images, but also applicable to game screenshots with English text). Weaknesses: Geared toward document layouts \u2013 primarily detects word-level boxes in horizontal text lines \u2013 so it may need fine-tuning for very stylized game text or unusual layouts. Also, it\u2019s a larger framework (overkill if you only need detection). **Suitable for game screenshots** if you want a reliable deep detector; it should detect interface text, though primarily designed for clear fonts. | Requires **Python 3.10+** and either **TensorFlow 2.x or PyTorch** (at least one must be installed)\u301044\u2020L5-L12\u3011. Install via pip (`python-doctr`); choose either the TensorFlow or Torch version. Also depends on OpenCV, PyMuPDF (for PDFs), etc., which pip will install. Pre-trained model weights download automatically.  \n**MMOCR (OpenMMLab)** | [MMOCR GitHub\u3011\u301019\u2020L434-L442\u3011 | A comprehensive PyTorch toolkit offering many **deep learning text detectors** (and recognizers). Detection models include **DBNet/DBNet++**, **Mask R-CNN**, **PANet**, **PSENet**, **TextSnake**, **FCENet**, etc., covering oriented and curved text\u301019\u2020L434-L442\u3011. Strengths: Highly modular and **state-of-the-art** \u2013 you can choose from numerous algorithms for different scenarios (e.g., Mask R-CNN for text treats words as objects, PSENet/FCENet handle arbitrary shapes). This flexibility can tackle game screenshots: for instance, DBNet or Mask R-CNN will find UI text regions even if rotated or stylized. Weaknesses: The framework is complex; using it may require writing config files or code to load models. It\u2019s research-oriented, so setup and runtime are heavier (not as plug-and-play as others). **Suitable for game text**, but best if you need to experiment with different detection models or require cutting-edge accuracy. | Requires **PyTorch (\u22651.6)** and the OpenMMLab ecosystem (MMCv, MMEngine, etc.)\u301017\u2020L371-L378\u3011. Installation via pip (`mmocr`) or OpenMIM is supported. Needs CUDA for heavy models and significant dependencies (though pre-built packages exist). Ensure **MMCV** is installed with matching CUDA version.  \n**PaddleOCR** | [PaddleOCR GitHub\u3011\u301051\u2020L1-L9\u3011 | A **PaddlePaddle deep learning** toolkit for OCR with a focus on practical deployment. Uses the **PP-OCR** pipeline: a lightweight text detector (based on **Differentiable Binarization, DB**) and recognizer, optimized for speed. Strengths: Very fast and lightweight models (appropriate for real-time or mobile use) while still achieving good accuracy. The DB text detector is segmentation-based\u301029\u2020L258-L266\u3011, allowing detection of curved or rotated text by generating tight polygonal boxes \u2013 useful if game text has stylized shapes or curves. Also supports 80+ languages and comes with easy Python API and scripts. Weaknesses: Requires the PaddlePaddle framework \u2013 less common outside the Paddle ecosystem. The model zoo is extensive, but mostly oriented to standard scene text and documents; if game text has extremely unique art-style, some detectors might need finetuning. **Suitable for game screenshots** due to its efficiency and robustness; the default English detector (DB) should catch UI text reliably, and there are also heavier models for higher accuracy if needed. | Requires **PaddlePaddle** deep learning framework (install `paddlepaddle` or `paddlepaddle-gpu` via pip, matching your CUDA version\u301053\u2020L27-L35\u3011). Then install **PaddleOCR** (`pip install paddleocr`), which brings OCR utilities. No PyTorch/TF needed (Paddle is its own framework). Supports CPU and GPU. Additional tools (for layout, etc.) are optional.  \n**Keras-OCR** | [Keras-OCR GitHub\u3011\u301022\u2020L275-L283\u3011 | A high-level **TensorFlow/Keras** library that bundles a text detector and recognizer. It implements the **CRAFT** text detection model (in Keras) and a CRNN for recognition\u301022\u2020L275-L283\u3011. Strengths: Simple pipeline API \u2013 you can detect text by calling the pipeline, which returns bounding boxes and text. CRAFT is a robust detector for multi-oriented text, so it works on scene images; game screenshot text (which may be at angles or varied fonts) can be detected as it would in natural images. The library also allows training custom models if needed. Weaknesses: Being based on TensorFlow, it might be slightly slower on CPU compared to PyTorch implementations; and it\u2019s somewhat less maintained nowadays than alternatives. It\u2019s focused on Latin scripts (English, etc.) similar to the original CRAFT. **Suitable for game text** detection thanks to CRAFT\u2019s capability to detect characters on complex backgrounds, but ensure you have a compatible environment for TF. | Requires **TensorFlow 2.x** (uses tf.keras). Supports Python \u22653.6 and TF \u22652.0\u301022\u2020L285-L293\u3011. Installable via pip (`keras-ocr`). The first run downloads pre-trained weights for CRAFT and CRNN automatically\u301022\u2020L301-L309\u3011. Aside from TensorFlow, it uses common image libraries (e.g., OpenCV, matplotlib for visualization). GPU support depends on your TensorFlow installation.  \n**CRAFT-text Detector** | [CRAFT PyTorch Repo\u3011\u301057\u2020L249-L257\u3011 | The **Character Region Awareness for Text (CRAFT)** model is available as an open-source PyTorch implementation (packaged as `craft-text-detector`). It\u2019s a neural network that **detects each character and links characters into words**, producing bounding boxes by thresholding an affinity heatmap\u301057\u2020L254-L262\u3011. Strengths: Excellent at detecting text in arbitrary orientations and layouts \u2013 CRAFT can handle curved or stylized title text as well as standard horizontal text\u301057\u2020L254-L262\u3011. It often produces very tight bounding polygons around text regions, which you can convert to axis-aligned boxes (top-left, bottom-right). This makes it suitable for complex game visuals where text might have effects or rotations. The packaged version is easy to use (one-call detection). Weaknesses: As a deep model, it\u2019s computationally heavy; and it will detect text at a character level, which can sometimes produce multiple small boxes if not merged properly (though the library outputs merged regions by default). No OCR \u2013 it only localizes text. **Great for game screenshots** where text might be non-standard; it\u2019s robust across fonts and backgrounds. | Requires **PyTorch \u22651.6** and **Torchvision \u22650.7**\u301059\u2020L1-L4\u3011. Install via `pip install craft-text-detector`. Also depends on OpenCV and SciPy for image processing\u301060\u2020L1-L4\u3011. The package will download the pre-trained CRAFT weights on first use. A GPU is recommended for speed, but the model can run on CPU (with reduced performance)."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 144,
+              "end_ix": 156,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OpenCV: Scene Text Detection",
+                "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=class%20%C2%A0cv%3A%3Atext%3A%3ATextDetectorCNN%20%20%2013,More",
+                "text": "class \u00a0cv::text::TextDetectorCNN   13 class provides the functionallity of text bounding box detection. This class is representing to find bounding boxes of text words given an input image. This class uses OpenCV dnn module to load pre-trained model described in [166]. The original repository with the modified SSD Caffe version: https://github.com/MhLiao/TextBoxes. Model can be downloaded from DropBox. Modified .prototxt file with the model description can be found in `opencv_contrib/modules/text/samples/textbox.prototxt`. More...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 13,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 88,
+                  "end_line_num": 96
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 358,
+              "end_ix": 370,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OpenCV: Scene Text Detection",
+                "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=In%20the%20first%20stage%20incrementally,greater%20than%20a%20delta_min%20value",
+                "text": "In the first stage incrementally computable descriptors (area, perimeter, bounding box, and Euler's number) are computed (in O(1)) for each region r and used as features for a classifier which estimates the class-conditional probability p(r|character). Only the ERs which correspond to local maximum of the probability p(r|character) are selected (if their probability is above a global limit p_min and the difference between local maximum and local minimum is greater than a delta_min value).",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 13,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 47,
+                  "end_line_num": 56
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 403,
+              "end_ix": 415,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OpenCV: Scene Text Detection",
+                "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=After%20the%20ER%20filtering%20is,see%20erGrouping",
+                "text": "After the ER filtering is done on each input channel, character candidates must be grouped in high-level text blocks (i.e. words, text lines, paragraphs, ...). The opencv_text module implements two different grouping algorithms: the Exhaustive Search algorithm proposed in [205]  for grouping horizontally aligned text, and the method proposed by Lluis Gomez and Dimosthenis Karatzas in  4 [133] for grouping arbitrary oriented text (see erGrouping).",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 13,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 63,
+                  "end_line_num": 69
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 587,
+              "end_ix": 599,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OpenCV: Scene Text Detection",
+                "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=TextDetectorCNN%20%20class%20provides%20the,More",
+                "text": "TextDetectorCNN  class provides the functionallity of text bounding box detection. This class is representing to find bounding boxes of text words given an input image. This class uses OpenCV dnn module to load pre-trained model described in  14. The original repository with the modified SSD Caffe version: https://github.com/MhLiao/TextBoxes. Model can be downloaded from DropBox. Modified .prototxt file with the model description can be found in `opencv_contrib/modules/text/samples/textbox.prototxt`. More...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 13,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 89,
+                  "end_line_num": 97
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 752,
+              "end_ix": 764,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Deep Learning Based Text Detection Using OpenCV (C++/Python)",
+                "url": "https://learnopencv.com/deep-learning-based-text-detection-using-opencv-c-python/#:~:text=A%20tensorflow%20re,source",
+                "text": "A tensorflow re-implementation of the paper reported the following speed on 720p (resolution of 1280\u00d7720) images (source):",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 34,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 81,
+                  "end_line_num": 89
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1215,
+              "end_ix": 1227,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Deep Learning Based Text Detection Using OpenCV (C++/Python)",
+                "url": "https://learnopencv.com/deep-learning-based-text-detection-using-opencv-c-python/#:~:text=The%20TensorFlow%20model%20has%20been,detect%20some%20text%20in%20images",
+                "text": "The TensorFlow model has been ported to be used with OpenCV, and they have also provided a sample code. We will discuss how it works step by step. You will need OpenCV >= 3.4.3 to run the code. Let\u2019s detect some text in images!",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 34,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 89,
+                  "end_line_num": 91
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1444,
+              "end_ix": 1457,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "pytesseract \u00b7 PyPI",
+                "url": "https://pypi.org/project/pytesseract/#:~:text=Python,writing%20it%20to%20a%20file",
+                "text": "Python-tesseract is a wrapper for Google\u2019s Tesseract-OCR Engine. It is also useful as a stand-alone invocation script to tesseract, as it can read all image types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others. Additionally, if used as a script, Python-tesseract will print the recognized text instead of writing it to a file.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 61,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 93,
+                  "end_line_num": 100
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1530,
+              "end_ix": 1540,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Tesseract OCR: Text localization and detection - PyImageSearch",
+                "url": "https://pyimagesearch.com/2020/05/25/tesseract-ocr-text-localization-and-detection/#:~:text=You%E2%80%99re%20in%20luck%2C%20Bryan,it%E2%80%99s%20quite%20easy%20to%20do",
+                "text": "You\u2019re in luck, Bryan. Tesseract does have the ability to perform text detection and OCR in a single function call \u2014 and as you\u2019ll find out, it\u2019s quite easy to do!",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 36,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2005,
+              "end_ix": 2016,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Tesseract OCR: Text localization and detection - PyImageSearch",
+                "url": "https://pyimagesearch.com/2020/05/25/tesseract-ocr-text-localization-and-detection/#:~:text=Then%20we%20detect%20and%20localize,process",
+                "text": "Then we detect and localize text using Tesseract and the `image_to_data` function (Line 19). This function returns `results`, which we\u2019ll now post- process:",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 37,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 7,
+                  "end_line_num": 16
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2455,
+              "end_ix": 2469,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "pytesseract \u00b7 PyPI",
+                "url": "https://pypi.org/project/pytesseract/#:~:text=import%20pytesseract",
+                "text": "import pytesseract",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 61,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 109,
+                  "end_line_num": 117
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2469,
+              "end_ix": 2483,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "pytesseract \u00b7 PyPI",
+                "url": "https://pypi.org/project/pytesseract/#:~:text=,OCR%5Ctesseract",
+                "text": "# If you don't have tesseract executable in your PATH, include the following: pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>' # Example tesseract_cmd = r'C:\\Program Files (x86)\\Tesseract-OCR\\tesseract'",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 61,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 112,
+                  "end_line_num": 120
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2660,
+              "end_ix": 2674,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+                "url": "https://github.com/JaidedAI/EasyOCR#:~:text=All%20deep%20learning%20execution%20is,%E2%9D%A4%EF%B8%8F",
+                "text": "All deep learning execution is based on Pytorch. \u2764\ufe0f",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 42,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 406,
+                  "end_line_num": 413
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2846,
+              "end_ix": 2860,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+                "url": "https://github.com/JaidedAI/EasyOCR#:~:text=Detection%20execution%20uses%20the%20CRAFT,is%20provided%20by%20%2093",
+                "text": "Detection execution uses the CRAFT algorithm from this official repository and their paper (Thanks @YoungminBaek from @clovaai ). We also use their pretrained model. Training script is provided by  93.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 42,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 408,
+                  "end_line_num": 416
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3023,
+              "end_ix": 3037,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+                "url": "https://github.com/JaidedAI/EasyOCR#:~:text=Detection%20execution%20uses%20the%20CRAFT,is%20provided%20by%20%2093",
+                "text": "Detection execution uses the CRAFT algorithm from this official repository and their paper (Thanks @YoungminBaek from @clovaai ). We also use their pretrained model. Training script is provided by  93.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 42,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 408,
+                  "end_line_num": 416
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3563,
+              "end_ix": 3577,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+                "url": "https://github.com/JaidedAI/EasyOCR#:~:text=All%20deep%20learning%20execution%20is,%E2%9D%A4%EF%B8%8F",
+                "text": "All deep learning execution is based on Pytorch. \u2764\ufe0f",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 42,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 406,
+                  "end_line_num": 413
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3641,
+              "end_ix": 3655,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+                "url": "https://github.com/JaidedAI/EasyOCR#:~:text=Note%201%3A%20For%20Windows%2C%20please,CUDA%20%3D%20None",
+                "text": "Note 1: For Windows, please install torch and torchvision first by following the official instructions here https://pytorch.org. On the pytorch website, be sure to select the right CUDA version you have. If you intend to run on CPU mode only, select `CUDA = None`.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 11,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 310,
+                  "end_line_num": 318
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3833,
+              "end_ix": 3846,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+                "url": "https://github.com/mindee/doctr#:~:text=Text%20Detection",
+                "text": "Text Detection",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 481,
+                  "end_line_num": 489
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3937,
+              "end_ix": 3950,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+                "url": "https://github.com/mindee/doctr#:~:text=Optical%20Character%20Recognition%20made%20seamless,by%20TensorFlow%202%20%26%20PyTorch",
+                "text": "Optical Character Recognition made seamless & accessible to anyone, powered by TensorFlow 2 & PyTorch",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 6,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 296,
+                  "end_line_num": 304
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 4058,
+              "end_ix": 4071,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+                "url": "https://github.com/mindee/doctr#:~:text=End,the%20list%20of%20available%20implementations",
+                "text": "End-to-End OCR is achieved in docTR using a two-stage approach: text detection (localizing words), then text recognition (identify all characters in the word). As such, you can select the architecture used for text detection, and the one for text recognition from the list of available implementations.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 6,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 311,
+                  "end_line_num": 319
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 4237,
+              "end_ix": 4250,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+                "url": "https://github.com/mindee/doctr#:~:text=Text%20Detection",
+                "text": "Text Detection",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 481,
+                  "end_line_num": 489
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 5039,
+              "end_ix": 5050,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Installation - docTR documentation - GitHub Pages",
+                "url": "https://mindee.github.io/doctr/getting_started/installing.html#:~:text=This%20library%20requires%20Python%203,at%20least%20TensorFlow%20or%20PyTorch",
+                "text": "This library requires Python 3.10 or higher. Prerequisites: Whichever OS you are running, you will need to install at least TensorFlow or PyTorch.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 44,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 5,
+                  "end_line_num": 12
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 5297,
+              "end_ix": 5311,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - open-mmlab/mmocr: OpenMMLab Text Detection, Recognition and Understanding Toolbox",
+                "url": "https://github.com/open-mmlab/mmocr#:~:text=Text%20Detection",
+                "text": "Text Detection",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 19,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 434,
+                  "end_line_num": 442
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 5561,
+              "end_ix": 5575,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - open-mmlab/mmocr: OpenMMLab Text Detection, Recognition and Understanding Toolbox",
+                "url": "https://github.com/open-mmlab/mmocr#:~:text=Text%20Detection",
+                "text": "Text Detection",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 19,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 434,
+                  "end_line_num": 442
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 6325,
+              "end_ix": 6339,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - open-mmlab/mmocr: OpenMMLab Text Detection, Recognition and Understanding Toolbox",
+                "url": "https://github.com/open-mmlab/mmocr#:~:text=MMOCR%20is%20an%20open,part%20of%20the%20OpenMMLab%20project",
+                "text": "MMOCR is an open-source toolbox based on PyTorch and mmdetection for text detection, text recognition, and the corresponding downstream tasks including key information extraction. It is part of the OpenMMLab project.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 17,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 371,
+                  "end_line_num": 378
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 6582,
+              "end_ix": 6592,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - PaddlePaddle/PaddleOCR: Awesome multilingual OCR toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)",
+                "url": "https://github.com/PaddlePaddle/PaddleOCR#:~:text=lightweight%20OCR%20system%2C%20support%2080%2B,mobile%2C%20embedded%20and%20IoT%20devices",
+                "text": "lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 51,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 9
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 6989,
+              "end_ix": 7003,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "PaddleOCR-headless/doc/doc_en/models_en.md at release/2.6 \u00b7 catalyst-cooperative/PaddleOCR-headless \u00b7 GitHub",
+                "url": "https://github.com/catalyst-cooperative/PaddleOCR-headless/blob/release/2.6/doc/doc_en/models_en.md#:~:text=1,DB%2C%20PSENet%20and%20other%20methods",
+                "text": "1. Method based on target detection. Generally, after the text box is predicted, the final text box is filtered through NMS, which is mostly four- point text box, which is not ideal for curved text scenes. Typical algorithms are methods such as EAST and Text Box. 2. Method based on text segmentation. The text line is regarded as the segmentation target, and then the external text box is constructed through the segmentation result, which can handle curved text, and the effect is not ideal for the text cross scene problem. Typical algorithms are DB, PSENet and other methods.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 29,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 258,
+                  "end_line_num": 266
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 7807,
+              "end_ix": 7819,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "paddlepaddle - PyPI",
+                "url": "https://pypi.org/project/paddlepaddle/#:~:text=paddlepaddle%20,On",
+                "text": "paddlepaddle - PyPI Installation. We provide users with four installation methods ,which are pip, conda, docker and install with source code. PIP Installation. PREQUISTIES. On ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 53,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 27,
+                  "end_line_num": 35
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 8064,
+              "end_ix": 8078,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+                "url": "https://github.com/faustomorales/keras-ocr#:~:text=This%20is%20a%20slightly%20polished,text%20detection%20and%20OCR%20pipeline",
+                "text": "This is a slightly polished and packaged version of the Keras CRNN implementation  and the published  85. It provides a high level API for training a text detection and OCR pipeline.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 275,
+                  "end_line_num": 283
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 8254,
+              "end_ix": 8268,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+                "url": "https://github.com/faustomorales/keras-ocr#:~:text=This%20is%20a%20slightly%20polished,text%20detection%20and%20OCR%20pipeline",
+                "text": "This is a slightly polished and packaged version of the Keras CRNN implementation  and the published  85. It provides a high level API for training a text detection and OCR pipeline.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 275,
+                  "end_line_num": 283
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 9128,
+              "end_ix": 9142,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+                "url": "https://github.com/faustomorales/keras-ocr#:~:text=Installation",
+                "text": "Installation",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 285,
+                  "end_line_num": 293
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 9255,
+              "end_ix": 9269,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+                "url": "https://github.com/faustomorales/keras-ocr#:~:text=import%20matplotlib",
+                "text": "import matplotlib.pyplot as plt",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 301,
+                  "end_line_num": 309
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 9472,
+              "end_ix": 9486,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - fcakyon/craft-text-detector: Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector",
+                "url": "https://github.com/fcakyon/craft-text-detector#:~:text=Packaged%2C%20Pytorch,Paper",
+                "text": "Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector | Paper |",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 57,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 249,
+                  "end_line_num": 257
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 9785,
+              "end_ix": 9799,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - fcakyon/craft-text-detector: Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector",
+                "url": "https://github.com/fcakyon/craft-text-detector#:~:text=PyTorch%20implementation%20for%20CRAFT%20text,character%20region%20and%20affinity%20scores",
+                "text": "PyTorch implementation for CRAFT text detector that effectively detect text area by exploring each character region and affinity between characters. The bounding box of texts are obtained by simply finding minimum bounding rectangles on binary map after thresholding character region and affinity scores.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 57,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 254,
+                  "end_line_num": 262
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 9962,
+              "end_ix": 9976,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - fcakyon/craft-text-detector: Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector",
+                "url": "https://github.com/fcakyon/craft-text-detector#:~:text=PyTorch%20implementation%20for%20CRAFT%20text,character%20region%20and%20affinity%20scores",
+                "text": "PyTorch implementation for CRAFT text detector that effectively detect text area by exploring each character region and affinity between characters. The bounding box of texts are obtained by simply finding minimum bounding rectangles on binary map after thresholding character region and affinity scores.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 57,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 254,
+                  "end_line_num": 262
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 10689,
+              "end_ix": 10699,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "craft-text-detector/requirements.txt at master \u00b7 fcakyon/craft-text-detector \u00b7 GitHub",
+                "url": "https://github.com/fcakyon/craft-text-detector/blob/master/requirements.txt#:~:text=torch",
+                "text": "torch>=1.6.0",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 59,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 10801,
+              "end_ix": 10811,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "craft-text-detector/requirements.txt at master \u00b7 fcakyon/craft-text-detector \u00b7 GitHub",
+                "url": "https://github.com/fcakyon/craft-text-detector/blob/master/requirements.txt#:~:text=opencv",
+                "text": "opencv-python>=3.4.8.29,<4.5.4.62",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 60,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301013\u2020L88-L96\u3011",
+              "start_idx": 144,
+              "end_idx": 156,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OpenCV: Scene Text Detection",
+              "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=class%20%C2%A0cv%3A%3Atext%3A%3ATextDetectorCNN%20%20%2013,More",
+              "pub_date": null,
+              "snippet": "class \u00a0cv::text::TextDetectorCNN   13 class provides the functionallity of text bounding box detection. This class is representing to find bounding boxes of text words given an input image. This class uses OpenCV dnn module to load pre-trained model described in [166]. The original repository with the modified SSD Caffe version: https://github.com/MhLiao/TextBoxes. Model can be downloaded from DropBox. Modified .prototxt file with the model description can be found in `opencv_contrib/modules/text/samples/textbox.prototxt`. More...",
+              "attribution": "docs.opencv.org"
+            },
+            {
+              "matched_text": "\u301013\u2020L47-L56\u3011",
+              "start_idx": 358,
+              "end_idx": 370,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OpenCV: Scene Text Detection",
+              "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=In%20the%20first%20stage%20incrementally,greater%20than%20a%20delta_min%20value",
+              "pub_date": null,
+              "snippet": "In the first stage incrementally computable descriptors (area, perimeter, bounding box, and Euler's number) are computed (in O(1)) for each region r and used as features for a classifier which estimates the class-conditional probability p(r|character). Only the ERs which correspond to local maximum of the probability p(r|character) are selected (if their probability is above a global limit p_min and the difference between local maximum and local minimum is greater than a delta_min value).",
+              "attribution": "docs.opencv.org"
+            },
+            {
+              "matched_text": "\u301013\u2020L63-L69\u3011",
+              "start_idx": 403,
+              "end_idx": 415,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OpenCV: Scene Text Detection",
+              "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=After%20the%20ER%20filtering%20is,see%20erGrouping",
+              "pub_date": null,
+              "snippet": "After the ER filtering is done on each input channel, character candidates must be grouped in high-level text blocks (i.e. words, text lines, paragraphs, ...). The opencv_text module implements two different grouping algorithms: the Exhaustive Search algorithm proposed in [205]  for grouping horizontally aligned text, and the method proposed by Lluis Gomez and Dimosthenis Karatzas in  4 [133] for grouping arbitrary oriented text (see erGrouping).",
+              "attribution": "docs.opencv.org"
+            },
+            {
+              "matched_text": "\u301013\u2020L89-L97\u3011",
+              "start_idx": 587,
+              "end_idx": 599,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OpenCV: Scene Text Detection",
+              "url": "https://docs.opencv.org/4.x/da/d56/group__text__detect.html#:~:text=TextDetectorCNN%20%20class%20provides%20the,More",
+              "pub_date": null,
+              "snippet": "TextDetectorCNN  class provides the functionallity of text bounding box detection. This class is representing to find bounding boxes of text words given an input image. This class uses OpenCV dnn module to load pre-trained model described in  14. The original repository with the modified SSD Caffe version: https://github.com/MhLiao/TextBoxes. Model can be downloaded from DropBox. Modified .prototxt file with the model description can be found in `opencv_contrib/modules/text/samples/textbox.prototxt`. More...",
+              "attribution": "docs.opencv.org"
+            },
+            {
+              "matched_text": "\u301034\u2020L81-L89\u3011",
+              "start_idx": 752,
+              "end_idx": 764,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Deep Learning Based Text Detection Using OpenCV (C++/Python)",
+              "url": "https://learnopencv.com/deep-learning-based-text-detection-using-opencv-c-python/#:~:text=A%20tensorflow%20re,source",
+              "pub_date": null,
+              "snippet": "A tensorflow re-implementation of the paper reported the following speed on 720p (resolution of 1280\u00d7720) images (source):",
+              "attribution": "learnopencv.com"
+            },
+            {
+              "matched_text": "\u301034\u2020L89-L91\u3011",
+              "start_idx": 1215,
+              "end_idx": 1227,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Deep Learning Based Text Detection Using OpenCV (C++/Python)",
+              "url": "https://learnopencv.com/deep-learning-based-text-detection-using-opencv-c-python/#:~:text=The%20TensorFlow%20model%20has%20been,detect%20some%20text%20in%20images",
+              "pub_date": null,
+              "snippet": "The TensorFlow model has been ported to be used with OpenCV, and they have also provided a sample code. We will discuss how it works step by step. You will need OpenCV >= 3.4.3 to run the code. Let\u2019s detect some text in images!",
+              "attribution": "learnopencv.com"
+            },
+            {
+              "matched_text": "\u301061\u2020L93-L100\u3011",
+              "start_idx": 1444,
+              "end_idx": 1457,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "pytesseract \u00b7 PyPI",
+              "url": "https://pypi.org/project/pytesseract/#:~:text=Python,writing%20it%20to%20a%20file",
+              "pub_date": null,
+              "snippet": "Python-tesseract is a wrapper for Google\u2019s Tesseract-OCR Engine. It is also useful as a stand-alone invocation script to tesseract, as it can read all image types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others. Additionally, if used as a script, Python-tesseract will print the recognized text instead of writing it to a file.",
+              "attribution": "pypi.org"
+            },
+            {
+              "matched_text": "\u301036\u2020L1-L4\u3011",
+              "start_idx": 1530,
+              "end_idx": 1540,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Tesseract OCR: Text localization and detection - PyImageSearch",
+              "url": "https://pyimagesearch.com/2020/05/25/tesseract-ocr-text-localization-and-detection/#:~:text=You%E2%80%99re%20in%20luck%2C%20Bryan,it%E2%80%99s%20quite%20easy%20to%20do",
+              "pub_date": null,
+              "snippet": "You\u2019re in luck, Bryan. Tesseract does have the ability to perform text detection and OCR in a single function call \u2014 and as you\u2019ll find out, it\u2019s quite easy to do!",
+              "attribution": "pyimagesearch.com"
+            },
+            {
+              "matched_text": "\u301037\u2020L7-L16\u3011",
+              "start_idx": 2005,
+              "end_idx": 2016,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Tesseract OCR: Text localization and detection - PyImageSearch",
+              "url": "https://pyimagesearch.com/2020/05/25/tesseract-ocr-text-localization-and-detection/#:~:text=Then%20we%20detect%20and%20localize,process",
+              "pub_date": null,
+              "snippet": "Then we detect and localize text using Tesseract and the `image_to_data` function (Line 19). This function returns `results`, which we\u2019ll now post- process:",
+              "attribution": "pyimagesearch.com"
+            },
+            {
+              "matched_text": "\u301061\u2020L109-L117\u3011",
+              "start_idx": 2455,
+              "end_idx": 2469,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "pytesseract \u00b7 PyPI",
+              "url": "https://pypi.org/project/pytesseract/#:~:text=import%20pytesseract",
+              "pub_date": null,
+              "snippet": "import pytesseract",
+              "attribution": "pypi.org"
+            },
+            {
+              "matched_text": "\u301061\u2020L112-L120\u3011",
+              "start_idx": 2469,
+              "end_idx": 2483,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "pytesseract \u00b7 PyPI",
+              "url": "https://pypi.org/project/pytesseract/#:~:text=,OCR%5Ctesseract",
+              "pub_date": null,
+              "snippet": "# If you don't have tesseract executable in your PATH, include the following: pytesseract.pytesseract.tesseract_cmd = r'<full_path_to_your_tesseract_executable>' # Example tesseract_cmd = r'C:\\Program Files (x86)\\Tesseract-OCR\\tesseract'",
+              "attribution": "pypi.org"
+            },
+            {
+              "matched_text": "\u301042\u2020L406-L413\u3011",
+              "start_idx": 2660,
+              "end_idx": 2674,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+              "url": "https://github.com/JaidedAI/EasyOCR#:~:text=All%20deep%20learning%20execution%20is,%E2%9D%A4%EF%B8%8F",
+              "pub_date": null,
+              "snippet": "All deep learning execution is based on Pytorch. \u2764\ufe0f",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301042\u2020L408-L416\u3011",
+              "start_idx": 2846,
+              "end_idx": 2860,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+              "url": "https://github.com/JaidedAI/EasyOCR#:~:text=Detection%20execution%20uses%20the%20CRAFT,is%20provided%20by%20%2093",
+              "pub_date": null,
+              "snippet": "Detection execution uses the CRAFT algorithm from this official repository and their paper (Thanks @YoungminBaek from @clovaai ). We also use their pretrained model. Training script is provided by  93.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301042\u2020L408-L416\u3011",
+              "start_idx": 3023,
+              "end_idx": 3037,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+              "url": "https://github.com/JaidedAI/EasyOCR#:~:text=Detection%20execution%20uses%20the%20CRAFT,is%20provided%20by%20%2093",
+              "pub_date": null,
+              "snippet": "Detection execution uses the CRAFT algorithm from this official repository and their paper (Thanks @YoungminBaek from @clovaai ). We also use their pretrained model. Training script is provided by  93.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301042\u2020L406-L413\u3011",
+              "start_idx": 3563,
+              "end_idx": 3577,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+              "url": "https://github.com/JaidedAI/EasyOCR#:~:text=All%20deep%20learning%20execution%20is,%E2%9D%A4%EF%B8%8F",
+              "pub_date": null,
+              "snippet": "All deep learning execution is based on Pytorch. \u2764\ufe0f",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301011\u2020L310-L318\u3011",
+              "start_idx": 3641,
+              "end_idx": 3655,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.",
+              "url": "https://github.com/JaidedAI/EasyOCR#:~:text=Note%201%3A%20For%20Windows%2C%20please,CUDA%20%3D%20None",
+              "pub_date": null,
+              "snippet": "Note 1: For Windows, please install torch and torchvision first by following the official instructions here https://pytorch.org. On the pytorch website, be sure to select the right CUDA version you have. If you intend to run on CPU mode only, select `CUDA = None`.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u30108\u2020L481-L489\u3011",
+              "start_idx": 3833,
+              "end_idx": 3846,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+              "url": "https://github.com/mindee/doctr#:~:text=Text%20Detection",
+              "pub_date": null,
+              "snippet": "Text Detection",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u30106\u2020L296-L304\u3011",
+              "start_idx": 3937,
+              "end_idx": 3950,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+              "url": "https://github.com/mindee/doctr#:~:text=Optical%20Character%20Recognition%20made%20seamless,by%20TensorFlow%202%20%26%20PyTorch",
+              "pub_date": null,
+              "snippet": "Optical Character Recognition made seamless & accessible to anyone, powered by TensorFlow 2 & PyTorch",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u30106\u2020L311-L319\u3011",
+              "start_idx": 4058,
+              "end_idx": 4071,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+              "url": "https://github.com/mindee/doctr#:~:text=End,the%20list%20of%20available%20implementations",
+              "pub_date": null,
+              "snippet": "End-to-End OCR is achieved in docTR using a two-stage approach: text detection (localizing words), then text recognition (identify all characters in the word). As such, you can select the architecture used for text detection, and the one for text recognition from the list of available implementations.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u30108\u2020L481-L489\u3011",
+              "start_idx": 4237,
+              "end_idx": 4250,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - mindee/doctr: docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning.",
+              "url": "https://github.com/mindee/doctr#:~:text=Text%20Detection",
+              "pub_date": null,
+              "snippet": "Text Detection",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301044\u2020L5-L12\u3011",
+              "start_idx": 5039,
+              "end_idx": 5050,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Installation - docTR documentation - GitHub Pages",
+              "url": "https://mindee.github.io/doctr/getting_started/installing.html#:~:text=This%20library%20requires%20Python%203,at%20least%20TensorFlow%20or%20PyTorch",
+              "pub_date": null,
+              "snippet": "This library requires Python 3.10 or higher. Prerequisites: Whichever OS you are running, you will need to install at least TensorFlow or PyTorch.",
+              "attribution": "mindee.github.io"
+            },
+            {
+              "matched_text": "\u301019\u2020L434-L442\u3011",
+              "start_idx": 5297,
+              "end_idx": 5311,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - open-mmlab/mmocr: OpenMMLab Text Detection, Recognition and Understanding Toolbox",
+              "url": "https://github.com/open-mmlab/mmocr#:~:text=Text%20Detection",
+              "pub_date": null,
+              "snippet": "Text Detection",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301019\u2020L434-L442\u3011",
+              "start_idx": 5561,
+              "end_idx": 5575,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - open-mmlab/mmocr: OpenMMLab Text Detection, Recognition and Understanding Toolbox",
+              "url": "https://github.com/open-mmlab/mmocr#:~:text=Text%20Detection",
+              "pub_date": null,
+              "snippet": "Text Detection",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301017\u2020L371-L378\u3011",
+              "start_idx": 6325,
+              "end_idx": 6339,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - open-mmlab/mmocr: OpenMMLab Text Detection, Recognition and Understanding Toolbox",
+              "url": "https://github.com/open-mmlab/mmocr#:~:text=MMOCR%20is%20an%20open,part%20of%20the%20OpenMMLab%20project",
+              "pub_date": null,
+              "snippet": "MMOCR is an open-source toolbox based on PyTorch and mmdetection for text detection, text recognition, and the corresponding downstream tasks including key information extraction. It is part of the OpenMMLab project.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301051\u2020L1-L9\u3011",
+              "start_idx": 6582,
+              "end_idx": 6592,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - PaddlePaddle/PaddleOCR: Awesome multilingual OCR toolkits based on PaddlePaddle (practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR#:~:text=lightweight%20OCR%20system%2C%20support%2080%2B,mobile%2C%20embedded%20and%20IoT%20devices",
+              "pub_date": null,
+              "snippet": "lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and deployment among server, mobile, embedded and IoT devices)",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301029\u2020L258-L266\u3011",
+              "start_idx": 6989,
+              "end_idx": 7003,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "PaddleOCR-headless/doc/doc_en/models_en.md at release/2.6 \u00b7 catalyst-cooperative/PaddleOCR-headless \u00b7 GitHub",
+              "url": "https://github.com/catalyst-cooperative/PaddleOCR-headless/blob/release/2.6/doc/doc_en/models_en.md#:~:text=1,DB%2C%20PSENet%20and%20other%20methods",
+              "pub_date": null,
+              "snippet": "1. Method based on target detection. Generally, after the text box is predicted, the final text box is filtered through NMS, which is mostly four- point text box, which is not ideal for curved text scenes. Typical algorithms are methods such as EAST and Text Box. 2. Method based on text segmentation. The text line is regarded as the segmentation target, and then the external text box is constructed through the segmentation result, which can handle curved text, and the effect is not ideal for the text cross scene problem. Typical algorithms are DB, PSENet and other methods.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301053\u2020L27-L35\u3011",
+              "start_idx": 7807,
+              "end_idx": 7819,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "paddlepaddle - PyPI",
+              "url": "https://pypi.org/project/paddlepaddle/#:~:text=paddlepaddle%20,On",
+              "pub_date": null,
+              "snippet": "paddlepaddle - PyPI Installation. We provide users with four installation methods ,which are pip, conda, docker and install with source code. PIP Installation. PREQUISTIES. On ...",
+              "attribution": "pypi.org"
+            },
+            {
+              "matched_text": "\u301022\u2020L275-L283\u3011",
+              "start_idx": 8064,
+              "end_idx": 8078,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+              "url": "https://github.com/faustomorales/keras-ocr#:~:text=This%20is%20a%20slightly%20polished,text%20detection%20and%20OCR%20pipeline",
+              "pub_date": null,
+              "snippet": "This is a slightly polished and packaged version of the Keras CRNN implementation  and the published  85. It provides a high level API for training a text detection and OCR pipeline.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301022\u2020L275-L283\u3011",
+              "start_idx": 8254,
+              "end_idx": 8268,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+              "url": "https://github.com/faustomorales/keras-ocr#:~:text=This%20is%20a%20slightly%20polished,text%20detection%20and%20OCR%20pipeline",
+              "pub_date": null,
+              "snippet": "This is a slightly polished and packaged version of the Keras CRNN implementation  and the published  85. It provides a high level API for training a text detection and OCR pipeline.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301022\u2020L285-L293\u3011",
+              "start_idx": 9128,
+              "end_idx": 9142,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+              "url": "https://github.com/faustomorales/keras-ocr#:~:text=Installation",
+              "pub_date": null,
+              "snippet": "Installation",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301022\u2020L301-L309\u3011",
+              "start_idx": 9255,
+              "end_idx": 9269,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - faustomorales/keras-ocr: A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.",
+              "url": "https://github.com/faustomorales/keras-ocr#:~:text=import%20matplotlib",
+              "pub_date": null,
+              "snippet": "import matplotlib.pyplot as plt",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301057\u2020L249-L257\u3011",
+              "start_idx": 9472,
+              "end_idx": 9486,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - fcakyon/craft-text-detector: Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector",
+              "url": "https://github.com/fcakyon/craft-text-detector#:~:text=Packaged%2C%20Pytorch,Paper",
+              "pub_date": null,
+              "snippet": "Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector | Paper |",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301057\u2020L254-L262\u3011",
+              "start_idx": 9785,
+              "end_idx": 9799,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - fcakyon/craft-text-detector: Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector",
+              "url": "https://github.com/fcakyon/craft-text-detector#:~:text=PyTorch%20implementation%20for%20CRAFT%20text,character%20region%20and%20affinity%20scores",
+              "pub_date": null,
+              "snippet": "PyTorch implementation for CRAFT text detector that effectively detect text area by exploring each character region and affinity between characters. The bounding box of texts are obtained by simply finding minimum bounding rectangles on binary map after thresholding character region and affinity scores.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301057\u2020L254-L262\u3011",
+              "start_idx": 9962,
+              "end_idx": 9976,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - fcakyon/craft-text-detector: Packaged, Pytorch-based, easy to use, cross-platform version of the CRAFT text detector",
+              "url": "https://github.com/fcakyon/craft-text-detector#:~:text=PyTorch%20implementation%20for%20CRAFT%20text,character%20region%20and%20affinity%20scores",
+              "pub_date": null,
+              "snippet": "PyTorch implementation for CRAFT text detector that effectively detect text area by exploring each character region and affinity between characters. The bounding box of texts are obtained by simply finding minimum bounding rectangles on binary map after thresholding character region and affinity scores.",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301059\u2020L1-L4\u3011",
+              "start_idx": 10689,
+              "end_idx": 10699,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "craft-text-detector/requirements.txt at master \u00b7 fcakyon/craft-text-detector \u00b7 GitHub",
+              "url": "https://github.com/fcakyon/craft-text-detector/blob/master/requirements.txt#:~:text=torch",
+              "pub_date": null,
+              "snippet": "torch>=1.6.0",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301060\u2020L1-L4\u3011",
+              "start_idx": 10801,
+              "end_idx": 10811,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "craft-text-detector/requirements.txt at master \u00b7 fcakyon/craft-text-detector \u00b7 GitHub",
+              "url": "https://github.com/fcakyon/craft-text-detector/blob/master/requirements.txt#:~:text=opencv",
+              "pub_date": null,
+              "snippet": "opencv-python>=3.4.8.29,<4.5.4.62",
+              "attribution": "github.com"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67c13190e06481919907ca91bfaee3f5",
+          "async_task_title": "Computer Vision Libraries for Text Region Detection"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "a3679df2-6e11-4e20-bbd5-1a4d1ded3230",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "0bf7a396-da0e-488f-bbcc-5ae5b73bd042",
+  "plugin_ids": null,
+  "conversation_id": "67c1308d-fdfc-8004-aab9-fed348753d3a",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67c1308d-fdfc-8004-aab9-fed348753d3a"
+}

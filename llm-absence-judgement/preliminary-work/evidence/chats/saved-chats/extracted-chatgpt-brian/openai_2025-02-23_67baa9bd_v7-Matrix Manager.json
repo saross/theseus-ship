@@ -1,0 +1,398 @@
+{
+  "title": "v7-Matrix Manager",
+  "create_time": 1740286397.60423,
+  "update_time": 1740288836.34986,
+  "mapping": {
+    "aaa1ec05-ecca-4830-ac4b-f83742645021": {
+      "id": "aaa1ec05-ecca-4830-ac4b-f83742645021",
+      "message": null,
+      "parent": null,
+      "children": [
+        "9a2e6ac1-7851-4e5d-bbc6-316e0dd6ea2e"
+      ]
+    },
+    "9a2e6ac1-7851-4e5d-bbc6-316e0dd6ea2e": {
+      "id": "9a2e6ac1-7851-4e5d-bbc6-316e0dd6ea2e",
+      "message": {
+        "id": "9a2e6ac1-7851-4e5d-bbc6-316e0dd6ea2e",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1ec05-ecca-4830-ac4b-f83742645021",
+      "children": [
+        "7206c5cb-4326-49a8-b6b4-d1747512f765"
+      ]
+    },
+    "7206c5cb-4326-49a8-b6b4-d1747512f765": {
+      "id": "7206c5cb-4326-49a8-b6b4-d1747512f765",
+      "message": {
+        "id": "7206c5cb-4326-49a8-b6b4-d1747512f765",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740286397.609407,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91649c7e4866e7e0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9a2e6ac1-7851-4e5d-bbc6-316e0dd6ea2e",
+      "children": [
+        "77035849-692e-4086-8f12-11608b9540e3"
+      ]
+    },
+    "77035849-692e-4086-8f12-11608b9540e3": {
+      "id": "77035849-692e-4086-8f12-11608b9540e3",
+      "message": {
+        "id": "77035849-692e-4086-8f12-11608b9540e3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740286399.262783,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. Please provide the name or acronym of the first archaeology or historical studies-related software tool you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "7206c5cb-4326-49a8-b6b4-d1747512f765",
+          "request_id": "91649c7e4866e7e0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7206c5cb-4326-49a8-b6b4-d1747512f765",
+      "children": [
+        "be0459a0-c612-42bf-aa21-239d5d32f032"
+      ]
+    },
+    "be0459a0-c612-42bf-aa21-239d5d32f032": {
+      "id": "be0459a0-c612-42bf-aa21-239d5d32f032",
+      "message": {
+        "id": "be0459a0-c612-42bf-aa21-239d5d32f032",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740286399.262931,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "77035849-692e-4086-8f12-11608b9540e3",
+          "request_id": "91649c7e4866e7e0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "77035849-692e-4086-8f12-11608b9540e3",
+      "children": [
+        "d0d607a1-2c7b-415c-a546-5ae836acb9b6"
+      ]
+    },
+    "d0d607a1-2c7b-415c-a546-5ae836acb9b6": {
+      "id": "d0d607a1-2c7b-415c-a546-5ae836acb9b6",
+      "message": {
+        "id": "d0d607a1-2c7b-415c-a546-5ae836acb9b6",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740286416.82199,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Matrix Manager"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91649cf7bf77e7e0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "be0459a0-c612-42bf-aa21-239d5d32f032",
+      "children": [
+        "b7789c12-7772-481f-8216-0ad62456a182"
+      ]
+    },
+    "b7789c12-7772-481f-8216-0ad62456a182": {
+      "id": "b7789c12-7772-481f-8216-0ad62456a182",
+      "message": {
+        "id": "b7789c12-7772-481f-8216-0ad62456a182",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740286428.889558,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a systematic and thorough search for mentions of the software tool **Matrix Manager** from 1995 onwards. This will include academic papers, blog posts, about pages, version control repositories, and any other relevant sources. \n\nEach valid mention will be recorded in a CSV format with columns for Tool Name, Year, Source, URL, and AI Notes. If I find multiple sources spanning different years, each will have its own row. If there are any uncertainties or issues with data provenance, I will clearly indicate them in the AI Notes column.\n\nI will report back once I have completed the research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d0d607a1-2c7b-415c-a546-5ae836acb9b6",
+          "request_id": "91649cf7bf77e7e0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d0d607a1-2c7b-415c-a546-5ae836acb9b6",
+      "children": [
+        "602f10e6-cfe4-4eb5-b094-ad9bb6783993"
+      ]
+    },
+    "602f10e6-cfe4-4eb5-b094-ad9bb6783993": {
+      "id": "602f10e6-cfe4-4eb5-b094-ad9bb6783993",
+      "message": {
+        "id": "602f10e6-cfe4-4eb5-b094-ad9bb6783993",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740286428.889698,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a systematic and thorough search for mentions of the software tool **Matrix Manager** from 1995 onwards. This will include academic papers, blog posts, about pages, version control repositories, and any other relevant sources. \\n\\nEach valid mention will be recorded in a CSV format with columns for Tool Name, Year, Source, URL, and AI Notes. If I find multiple sources spanning different years, each will have its own row. If there are any uncertainties or issues with data provenance, I will clearly indicate them in the AI Notes column.\\n\\nI will report back once I have completed the research.\",\"title\":\"Evidence Collection for Matrix Manager Software\",\"prompt\":\"Conduct a comprehensive and systematic search for the software tool **Matrix Manager** in archaeology or historical studies from 1995 onwards. The goal is to collect valid mentions of this tool in academic papers, version control repositories, blog posts, about pages, or any other reliable sources.\\n\\nFor each source found, return the data in the following CSV format:\\n```\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n```\\n* **Tool**: Ensure consistency in naming, using \\\"Matrix Manager.\\\"\\n* **Year**: The publication year of the source or \\\"n.d.\\\" if no date is available.\\n* **Source**: A citation or the domain + page title.\\n* **URL**: The web link to the resource.\\n* **AI Notes**: Indicate any concerns about data provenance or quality.\\n\\nIf a source provides a year, expand the search to include adjacent years (+/-1 year). Do not infer dates; only use those explicitly stated in the source. \\n\\nVisit all search result pages systematically to ensure comprehensive coverage. Return findings in a markdown fenced CSV block.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b7789c12-7772-481f-8216-0ad62456a182",
+          "request_id": "91649cf7bf77e7e0-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "b7789c12-7772-481f-8216-0ad62456a182",
+      "children": [
+        "628fbd67-a0b7-44d9-86d9-f913ce869ef6"
+      ]
+    },
+    "628fbd67-a0b7-44d9-86d9-f913ce869ef6": {
+      "id": "628fbd67-a0b7-44d9-86d9-f913ce869ef6",
+      "message": {
+        "id": "628fbd67-a0b7-44d9-86d9-f913ce869ef6",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740286432.482447,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for Matrix Manager Software",
+          "async_task_prompt": "Conduct a comprehensive and systematic search for the software tool **Matrix Manager** in archaeology or historical studies from 1995 onwards. The goal is to collect valid mentions of this tool in academic papers, version control repositories, blog posts, about pages, or any other reliable sources.\n\nFor each source found, return the data in the following CSV format:\n```\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n```\n* **Tool**: Ensure consistency in naming, using \"Matrix Manager.\"\n* **Year**: The publication year of the source or \"n.d.\" if no date is available.\n* **Source**: A citation or the domain + page title.\n* **URL**: The web link to the resource.\n* **AI Notes**: Indicate any concerns about data provenance or quality.\n\nIf a source provides a year, expand the search to include adjacent years (+/-1 year). Do not infer dates; only use those explicitly stated in the source. \n\nVisit all search result pages systematically to ensure comprehensive coverage. Return findings in a markdown fenced CSV block.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for Matrix Manager Software",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "602f10e6-cfe4-4eb5-b094-ad9bb6783993",
+          "request_id": "91649cf7bf77e7e0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "602f10e6-cfe4-4eb5-b094-ad9bb6783993",
+      "children": [
+        "52bfd74a-01d7-4bda-92d1-ec791a478067"
+      ]
+    },
+    "52bfd74a-01d7-4bda-92d1-ec791a478067": {
+      "id": "52bfd74a-01d7-4bda-92d1-ec791a478067",
+      "message": {
+        "id": "52bfd74a-01d7-4bda-92d1-ec791a478067",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740286734.318689,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Matrix Manager\",\"2010\",\"Internet Archaeology 27 (Powlesland & May) \u2013 '5.4 The Matrix Manager'\",\"https://intarch.ac.uk/journal/issue27/2/5.4.html\",\"Peer-reviewed article; introduced the LRC Matrix Manager.\"\n\"Matrix Manager\",\"2020\",\"Internet Archaeology 55 (Keith May) \u2013 'The Matrix: Connecting Time and Space...'\",\"https://intarch.ac.uk/journal/issue55/8/full-text.html\",\"Peer-reviewed article; references Matrix Manager within LRC's GIS system (Gsys).\"\n\"Matrix Manager\",\"2023\",\"Internet Archaeology 61 (May, Taylor & Binding) \u2013 'Stratigraphic Analysis and The Matrix...'\",\"https://intarch.ac.uk/journal/issue61/2/full-text.html\",\"Peer-reviewed article; discusses Matrix Manager (GSYS) as a tool for stratigraphic analysis.\"\n\"Matrix Manager\",\"2024\",\"Archeologia e Calcolatori 35(2) \u2013 'Extended Matrix Manager: an open tool for EM based knowledge graphs management'\",\"https://www.archcalc.cnr.it/journal/articles/1338\",\"Peer-reviewed conference proceedings; introduces EM Manager (Extended Matrix Manager) as an update to Matrix Manager concept.\"\n\"Matrix Manager\",\"n.d.\",\"GitHub \u2013 enzococca/EM-Manager repository\",\"https://github.com/enzococca/EM-Manager\",\"Official code repository for Extended Matrix Manager; updated continuously (no single publication date).\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67baa9e06cec81919bea5fdb53613169",
+          "async_task_title": "Evidence Collection for Matrix Manager Software"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "628fbd67-a0b7-44d9-86d9-f913ce869ef6",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "52bfd74a-01d7-4bda-92d1-ec791a478067",
+  "plugin_ids": null,
+  "conversation_id": "67baa9bd-4ba8-8004-a0b1-46812c6f2cd4",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://intarch.ac.uk/journal/issue55/8/full-text.html",
+    "https://www.archcalc.cnr.it/journal/articles/1338",
+    "https://intarch.ac.uk/journal/issue61/2/full-text.html",
+    "https://intarch.ac.uk/journal/issue27/2/5.4.html"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67baa9bd-4ba8-8004-a0b1-46812c6f2cd4"
+}

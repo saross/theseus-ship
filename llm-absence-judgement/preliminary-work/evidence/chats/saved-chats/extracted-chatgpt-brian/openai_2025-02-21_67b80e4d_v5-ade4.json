@@ -1,0 +1,723 @@
+{
+  "title": "v5-ade4",
+  "create_time": 1740115533.979355,
+  "update_time": 1740117357.50825,
+  "mapping": {
+    "aaa1fb41-56dc-425f-9ca2-94909f315f3e": {
+      "id": "aaa1fb41-56dc-425f-9ca2-94909f315f3e",
+      "message": null,
+      "parent": null,
+      "children": [
+        "5ba1da06-d8ba-4d32-80e0-42dff77f2c99"
+      ]
+    },
+    "5ba1da06-d8ba-4d32-80e0-42dff77f2c99": {
+      "id": "5ba1da06-d8ba-4d32-80e0-42dff77f2c99",
+      "message": {
+        "id": "5ba1da06-d8ba-4d32-80e0-42dff77f2c99",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1fb41-56dc-425f-9ca2-94909f315f3e",
+      "children": [
+        "58b37ccd-5b79-4ad8-9a5d-ee8e278b7859"
+      ]
+    },
+    "58b37ccd-5b79-4ad8-9a5d-ee8e278b7859": {
+      "id": "58b37ccd-5b79-4ad8-9a5d-ee8e278b7859",
+      "message": {
+        "id": "58b37ccd-5b79-4ad8-9a5d-ee8e278b7859",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740115533.984403,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91545105a8f9c82a-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5ba1da06-d8ba-4d32-80e0-42dff77f2c99",
+      "children": [
+        "b5e2bd3e-e888-48c2-ba68-b3bbe101d966"
+      ]
+    },
+    "b5e2bd3e-e888-48c2-ba68-b3bbe101d966": {
+      "id": "b5e2bd3e-e888-48c2-ba68-b3bbe101d966",
+      "message": {
+        "id": "b5e2bd3e-e888-48c2-ba68-b3bbe101d966",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740115538.677796,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and rigorous approach required for this research task. Please provide the first tool name or acronym, and I will begin the systematic search following the guidelines you have provided."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "58b37ccd-5b79-4ad8-9a5d-ee8e278b7859",
+          "request_id": "91545105a8f9c82a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "58b37ccd-5b79-4ad8-9a5d-ee8e278b7859",
+      "children": [
+        "7d9f257d-e516-4562-b53b-49e1284ff4b0"
+      ]
+    },
+    "7d9f257d-e516-4562-b53b-49e1284ff4b0": {
+      "id": "7d9f257d-e516-4562-b53b-49e1284ff4b0",
+      "message": {
+        "id": "7d9f257d-e516-4562-b53b-49e1284ff4b0",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740115538.677896,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b5e2bd3e-e888-48c2-ba68-b3bbe101d966",
+          "request_id": "91545105a8f9c82a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b5e2bd3e-e888-48c2-ba68-b3bbe101d966",
+      "children": [
+        "eb1b3c3b-1065-4022-8376-f2bcd564c56d"
+      ]
+    },
+    "eb1b3c3b-1065-4022-8376-f2bcd564c56d": {
+      "id": "eb1b3c3b-1065-4022-8376-f2bcd564c56d",
+      "message": {
+        "id": "eb1b3c3b-1065-4022-8376-f2bcd564c56d",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740115549.560711,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "ade4"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915451668e4dc82a-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7d9f257d-e516-4562-b53b-49e1284ff4b0",
+      "children": [
+        "e851c4e7-8985-454e-af4b-c2e3c6a0b30a"
+      ]
+    },
+    "e851c4e7-8985-454e-af4b-c2e3c6a0b30a": {
+      "id": "e851c4e7-8985-454e-af4b-c2e3c6a0b30a",
+      "message": {
+        "id": "e851c4e7-8985-454e-af4b-c2e3c6a0b30a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740115587.125295,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will now systematically search for mentions of the software tool \"ade4\" in archaeology and historical studies-related research, starting from 1995 onwards. I will collect all valid sources, including scholarly literature, blog posts, version control repositories, and other mentions, and present the results in a well-structured CSV format following your guidelines.\n\nI will notify you once the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "eb1b3c3b-1065-4022-8376-f2bcd564c56d",
+          "request_id": "915451668e4dc82a-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "eb1b3c3b-1065-4022-8376-f2bcd564c56d",
+      "children": [
+        "3dc5a3fc-af81-49a8-afe2-0c6f18bfce64"
+      ]
+    },
+    "3dc5a3fc-af81-49a8-afe2-0c6f18bfce64": {
+      "id": "3dc5a3fc-af81-49a8-afe2-0c6f18bfce64",
+      "message": {
+        "id": "3dc5a3fc-af81-49a8-afe2-0c6f18bfce64",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740115587.125404,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will now systematically search for mentions of the software tool \\\"ade4\\\" in archaeology and historical studies-related research, starting from 1995 onwards. I will collect all valid sources, including scholarly literature, blog posts, version control repositories, and other mentions, and present the results in a well-structured CSV format following your guidelines.\\n\\nI will notify you once the research is complete.\",\"title\":\"Systematic Evidence Collection for ade4\",\"prompt\":\"Conduct a thorough and systematic search for the software tool \\\"ade4\\\" in archaeology and historical studies-related research, ensuring compliance with the following criteria:\\n\\n- Identify and collect every mention of \\\"ade4\\\" in scholarly literature, version control repositories, blog posts, about pages, and any other relevant sources from 1995 onwards.\\n- Each valid mention should be recorded in a CSV format with the following columns: \\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", and \\\"AI Notes\\\".\\n- The \\\"Year\\\" must only be recorded if explicitly stated in the source. If no year is found, mark it as \\\"n.d.\\\".\\n- The \\\"Source\\\" should be a citation or a combination of the domain and page title.\\n- The \\\"URL\\\" should be a direct link to the relevant source.\\n- The \\\"AI Notes\\\" should highlight any concerns, uncertainties, or potential issues with the provenance or quality of the data.\\n\\nThe research should be methodical, requiring extensive exploration of available sources and systematic documentation of all findings. Perform searches for each year following any discovered publication, extending by \u00b11 year when relevant. Prioritize accuracy, clarity, and epistemological rigor in data collection.\\n\\nReturn the results as a quoted CSV inside a fenced code block.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "e851c4e7-8985-454e-af4b-c2e3c6a0b30a",
+          "request_id": "915451668e4dc82a-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "e851c4e7-8985-454e-af4b-c2e3c6a0b30a",
+      "children": [
+        "720b5792-2e34-438c-b0e6-98d68227c343"
+      ]
+    },
+    "720b5792-2e34-438c-b0e6-98d68227c343": {
+      "id": "720b5792-2e34-438c-b0e6-98d68227c343",
+      "message": {
+        "id": "720b5792-2e34-438c-b0e6-98d68227c343",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740115587.125479,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Systematic Evidence Collection for ade4",
+          "async_task_prompt": "Conduct a thorough and systematic search for the software tool \"ade4\" in archaeology and historical studies-related research, ensuring compliance with the following criteria:\n\n- Identify and collect every mention of \"ade4\" in scholarly literature, version control repositories, blog posts, about pages, and any other relevant sources from 1995 onwards.\n- Each valid mention should be recorded in a CSV format with the following columns: \"Tool\", \"Year\", \"Source\", \"URL\", and \"AI Notes\".\n- The \"Year\" must only be recorded if explicitly stated in the source. If no year is found, mark it as \"n.d.\".\n- The \"Source\" should be a citation or a combination of the domain and page title.\n- The \"URL\" should be a direct link to the relevant source.\n- The \"AI Notes\" should highlight any concerns, uncertainties, or potential issues with the provenance or quality of the data.\n\nThe research should be methodical, requiring extensive exploration of available sources and systematic documentation of all findings. Perform searches for each year following any discovered publication, extending by \u00b11 year when relevant. Prioritize accuracy, clarity, and epistemological rigor in data collection.\n\nReturn the results as a quoted CSV inside a fenced code block.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Systematic Evidence Collection for ade4",
+            "completed_with_time": "Research completed in 5m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "3dc5a3fc-af81-49a8-afe2-0c6f18bfce64",
+          "request_id": "915451668e4dc82a-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b80e78645881918f90f43814d465ff",
+          "async_task_conversation_id": "67b80e82-a294-8004-a32f-c2c291da8a5d",
+          "async_task_created_at": "2025-02-21 05:26:27.109821+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3dc5a3fc-af81-49a8-afe2-0c6f18bfce64",
+      "children": [
+        "abb8fa72-9389-4483-8784-9eb986a79c1f"
+      ]
+    },
+    "abb8fa72-9389-4483-8784-9eb986a79c1f": {
+      "id": "abb8fa72-9389-4483-8784-9eb986a79c1f",
+      "message": {
+        "id": "abb8fa72-9389-4483-8784-9eb986a79c1f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740115885.229442,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"ade4\",\"2004\",\"archcalc.cnr.it - Point pattern analysis revisited\",\"https://www.archcalc.cnr.it/journal/articles/386\",\"ADE-4 mentioned as affordable ecological software used for spatial point pattern analysis in archaeology\u301031\u2020L53-L61\u3011; year 2004 given in source.\"\n\"ade4\",\"2010\",\"archcalc.cnr.it - Correspondence Analysis in R for archaeologists: an educational account\",\"https://www.archcalc.cnr.it/journal/articles/573\",\"Used in an instructional context for correspondence analysis (Baxter & Cool 2010) with explicit mention of the ade4 package\u30104\u2020L1-L4\u3011; year 2010 stated.\"\n\"ade4\",\"2013\",\"archcalc.cnr.it - An R script to facilitate Correspondence Analysis. A guide to the use and the interpretation of results from an archaeological perspective\",\"https://www.archcalc.cnr.it/journal/articles/661\",\"Alberti (2013) mentions ade4 among R packages for CA in archaeology\u301027\u2020L39-L47\u3011\u301027\u2020L42-L45\u3011; peer-reviewed source, year confirmed as 2013.\"\n\"ade4\",\"n.d.\",\"cainarchaeology.weebly.com - CA in R (Correspondence Analysis in Archaeology)\",\"http://cainarchaeology.weebly.com/ca-in-r.html\",\"Personal tutorial site (no date visible) noting ade4 as one of several R tools used for CA in archaeology\u301016\u2020L68-L72\u3011; not a formal publication, date uncertain (likely ~2013).\"\n\"ade4\",\"2018\",\"intarch.ac.uk - Multivariate and Spatial Visualisation of Archaeological Assemblages\",\"https://intarch.ac.uk/journal/issue50/15/1.html\",\"Sterry (2018) uses the 'multispati' function of the ade4 package for spatial correspondence analysis\u301011\u2020L291-L299\u3011; reputable peer-reviewed e-journal, year explicitly given.\"\n\"ade4\",\"2019\",\"hal.science - tabula: An R Package for Analysis, Seriation, and Visualization of Archaeological Count Data\",\"https://hal.science/hal-02389249/document\",\"Frerebeau (2019) cites ade4 (Dray & Dufour 2007) as an example of an ecological-oriented package for ordination\u301037\u2020L91-L99\u3011; JOSS paper (open-source software), year 2019 clearly indicated.\"\n\"ade4\",\"n.d.\",\"github.com - CRAN Task View: Archaeological Science\",\"https://github.com/benmarwick/ctv-archaeology\",\"Community-maintained list of archaeology-related R packages; includes ade4 for ordination methods\u301040\u2020L536-L544\u3011\u301040\u2020L558-L562\u3011. No explicit publication year (online repository, updated periodically).\"\n\"ade4\",\"2025\",\"cran.r-project.org - SPARTAAS: Statistical Pattern Recognition and daTing using Archaeological Artefacts assemblageS\",\"https://cran.r-project.org/web/packages/SPARTAAS/SPARTAAS.pdf\",\"CRAN package manual (dated 2025-01-20) for an archaeology toolkit listing ade4 as a dependency\u301053\u2020L25-L30\u3011; indicates current use of ade4 in archaeological data analysis software.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 270,
+              "end_ix": 282,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Point pattern analysis revisited | Archeologia e Calcolatori",
+                "url": "https://www.archcalc.cnr.it/journal/articles/386#:~:text=developments%2C%20assessing%20their%20strengths%20and,archaeological%20spatial%20analysis%20is%20assessed",
+                "text": "developments, assessing their strengths and weaknesses. A statistical advance was made in the 1970s with the development of the K function approach. This has become embodied in the ecological statistical software package ADE-4 as the Ripley and Intertype programs. These programs were found in a search for suitable affordable software for teaching spatial analysis at post-graduate level, and have been used in this role for three years, taking as a test-bed the Danish mesolithic site of Barmose I. The outcome of this work is presented as a case study and compared with earlier analyses of this dataset. The value of ADE-4 for archaeological spatial analysis is assessed.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 31,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 53,
+                  "end_line_num": 61
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 593,
+              "end_ix": 602,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Baxter2.indd",
+                "url": "https://www.archcalc.cnr.it/indice/PDF21/11_Baxter_Cool.pdf#:~:text=and%20select%20the%20package%20of,The%20quality%20of%20documentation%20and",
+                "text": "and select the package of choice. Here we select ade4. Once the package is downloaded type library(ade4) to access the functions within it. The quality of documentation and",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 4,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 915,
+              "end_ix": 927,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "AC24.indb",
+                "url": "https://www.archcalc.cnr.it/indice/PDF24/02_Alberti.pdf#:~:text=many%20packages%20that%20perform%20CA,appropriate%20for%20his%20analytical%20tasks",
+                "text": "many packages that perform CA are freely available in R, each with different features as far as graphical output and analytical tools are concerned: see, e.g., the \u201canacor\u201d (de Leeuw, Mair 2009), \u201cca\u201d (Nenadic, Greenacre 2007), and \u201cFactoMineR\u201d packages (L\u00ea et al. 2008; Husson et al. 2011), or those (namely, \u201cMASS\u201d, \u201cade4\u201d, and \u201cvegan\u201d) used by Baxter and Cool (2010, references therein). The availability of many different tools offers to the user the possibility to choose the one(s) he considers more appropriate for his analytical tasks.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 27,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 39,
+                  "end_line_num": 47
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 927,
+              "end_ix": 939,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "AC24.indb",
+                "url": "https://www.archcalc.cnr.it/indice/PDF24/02_Alberti.pdf#:~:text=the%20%E2%80%9Canacor%E2%80%9D%20,offers%20to%20the%20user%20the",
+                "text": "the \u201canacor\u201d (de Leeuw, Mair 2009), \u201cca\u201d (Nenadic, Greenacre 2007), and \u201cFactoMineR\u201d packages (L\u00ea et al. 2008; Husson et al. 2011), or those (namely, \u201cMASS\u201d, \u201cade4\u201d, and \u201cvegan\u201d) used by Baxter and Cool (2010, references therein). The availability of many different tools offers to the user the",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 27,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 42,
+                  "end_line_num": 45
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1237,
+              "end_ix": 1249,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Correspondence Analysis in R - Correspondence Analysis in Archaeology",
+                "url": "http://cainarchaeology.weebly.com/ca-in-r.html#:~:text=concerned,consider%20more%20appropriate%20for%20his",
+                "text": "concerned. See, e.g., the \u2018anacor\u2019 (de Leeuw, Mair 2009), \u2018ca\u2019 (Nenadic, Greenacre 2007), and \u2018FactoMineR\u2019 packages (L\u00ea et al. 2008; Husson et al. 2011), or those (namely, \u2018MASS\u2019, \u2018ade4\u2019, and \u2018vegan\u2019) used by Baxter and Cool (2010, references therein). The availability of many different tools offers to the user the possibility to choose the one(s) he consider more appropriate for his",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 16,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 68,
+                  "end_line_num": 72
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1561,
+              "end_ix": 1575,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Multivariate and Spatial Visualisation of Archaeological Assemblages. Sterry. Internet Archaeol. 50. \n",
+                "url": "https://intarch.ac.uk/journal/issue50/15/1.html#:~:text=tendency%20of%20correspondence%20analysis%20to,plot",
+                "text": "tendency of correspondence analysis to overemphasise the importance of small assemblages and rare fabrics/forms. A resolution to this can be found in the use of the 'multispati' function of the ade4 package in R (Chessel et al. 2004 ; Dray and Dufour  38) to run a spatial correspondence analysis (SCA). Multispati uses a spatial weights matrix of the locations of the samples (in this case the x and y coordinates of the trench centres) to weight a multivariate analysis by the Moran's I scores of the eigenvalues. This effectively selects combinations of variables that maximise the variance explained by spatial descriptors (Dray et al. 2008). The resulting bi-plot",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 11,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 291,
+                  "end_line_num": 299
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1915,
+              "end_ix": 1927,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "tabula: An R Package for Analysis, Seriation, and Visualization of Archaeological Count Data",
+                "url": "https://hal.science/hal-02389249/document#:~:text=archaeological%20count%20data%2C%20such%20as,The",
+                "text": "archaeological count data, such as artifacts and faunal remains. Several R packages, e.g. ade4 (Dray & Dufour, 2007), SpadeR (Chao, Ma, Hsieh, & Chiu, 2016) or vegan (Oksanen et al., 2019), allow for the estimation of diversity indices and imple\u0002ment seriation/ordination methods, but these packages are mainly oriented towards ecological issues. tabula provides archaeologically-orientated implementations that allow for the inte\u0002gration of specific data (dates, stratigraphy, etc.) and offers a consistent framework. The",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 37,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 91,
+                  "end_line_num": 99
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2208,
+              "end_ix": 2222,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - benmarwick/ctv-archaeology: CRAN Task View: Archaeological Science",
+                "url": "https://github.com/benmarwick/ctv-archaeology#:~:text=,in%20both",
+                "text": "* Principal Components (PCA) is available via the `prcomp()` function (based on svd), `rda()` (in package vegan), `pca()` (in package labdsv) and `dudi.pca()` (in package ade4), provide more ecologically-orientated implementations. Plotting of PCA output is available in ggbiplot  and  131. * Redundancy Analysis (RDA) is available via `rda()` in vegan and `pcaiv()` in ade4. * Canonical Correspondence Analysis (CCA) is implemented in `cca()` in both",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 40,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 536,
+                  "end_line_num": 544
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2222,
+              "end_ix": 2236,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - benmarwick/ctv-archaeology: CRAN Task View: Archaeological Science",
+                "url": "https://github.com/benmarwick/ctv-archaeology#:~:text=,Further%20functionality%20is%20also",
+                "text": "* `corresp()` and `mca()` in MASS provide simple and multiple correspondence analysis respectively. ca also provides single, multiple and joint correspondence analysis. `ca()` and `mca()` in ade4 provide correspondence and multiple correspondence analysis respectively, as well as adding homogeneous table analysis with `hta()`. Further functionality is also",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 40,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 558,
+                  "end_line_num": 562
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2603,
+              "end_ix": 2615,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "SPARTAAS: Statistical Pattern Recognition and daTing using Archaeological Artefacts assemblageS",
+                "url": "https://cran.r-project.org/web/packages/SPARTAAS/SPARTAAS.pdf#:~:text=Imports%20FactoMineR%2C%20grDevices%2Cdplyr%2Ctidyr%2Cggplot2%2Cplotly%2Cstringr%2Ccolorspace%2C%20shiny%2Cshinydashboard%2Cshinyjs%2Cshinyjqui%2Cfpc%2Cggdendro%2Chtmltools%2C%20rstudioapi%2Chtmlwidgets%2Cshinythemes%2Cexplor%2CshinyWidgets%2CscatterD3%2C,ks%2Cforeign%2Cgrid%2Ccluster%2Cleaflet%2Cape%2C%20MASS%2Cade4%2Clmtest%2Cnor1mix%2Cshinycssloaders%2Cscales%2Cfastcluster",
+                "text": "Imports FactoMineR, grDevices,dplyr,tidyr,ggplot2,plotly,stringr,colorspace, shiny,shinydashboard,shinyjs,shinyjqui,fpc,ggdendro,htmltools, rstudioapi,htmlwidgets,shinythemes,explor,shinyWidgets,scatterD3, ks,foreign,grid,cluster,leaflet,ape, MASS,ade4,lmtest,nor1mix,shinycssloaders,scales,fastcluster",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 53,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 25,
+                  "end_line_num": 30
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301031\u2020L53-L61\u3011",
+              "start_idx": 270,
+              "end_idx": 282,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Point pattern analysis revisited | Archeologia e Calcolatori",
+              "url": "https://www.archcalc.cnr.it/journal/articles/386#:~:text=developments%2C%20assessing%20their%20strengths%20and,archaeological%20spatial%20analysis%20is%20assessed",
+              "pub_date": null,
+              "snippet": "developments, assessing their strengths and weaknesses. A statistical advance was made in the 1970s with the development of the K function approach. This has become embodied in the ecological statistical software package ADE-4 as the Ripley and Intertype programs. These programs were found in a search for suitable affordable software for teaching spatial analysis at post-graduate level, and have been used in this role for three years, taking as a test-bed the Danish mesolithic site of Barmose I. The outcome of this work is presented as a case study and compared with earlier analyses of this dataset. The value of ADE-4 for archaeological spatial analysis is assessed.",
+              "attribution": "archcalc.cnr.it"
+            },
+            {
+              "matched_text": "\u30104\u2020L1-L4\u3011",
+              "start_idx": 593,
+              "end_idx": 602,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Baxter2.indd",
+              "url": "https://www.archcalc.cnr.it/indice/PDF21/11_Baxter_Cool.pdf#:~:text=and%20select%20the%20package%20of,The%20quality%20of%20documentation%20and",
+              "pub_date": null,
+              "snippet": "and select the package of choice. Here we select ade4. Once the package is downloaded type library(ade4) to access the functions within it. The quality of documentation and",
+              "attribution": "archcalc.cnr.it"
+            },
+            {
+              "matched_text": "\u301027\u2020L39-L47\u3011",
+              "start_idx": 915,
+              "end_idx": 927,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "AC24.indb",
+              "url": "https://www.archcalc.cnr.it/indice/PDF24/02_Alberti.pdf#:~:text=many%20packages%20that%20perform%20CA,appropriate%20for%20his%20analytical%20tasks",
+              "pub_date": null,
+              "snippet": "many packages that perform CA are freely available in R, each with different features as far as graphical output and analytical tools are concerned: see, e.g., the \u201canacor\u201d (de Leeuw, Mair 2009), \u201cca\u201d (Nenadic, Greenacre 2007), and \u201cFactoMineR\u201d packages (L\u00ea et al. 2008; Husson et al. 2011), or those (namely, \u201cMASS\u201d, \u201cade4\u201d, and \u201cvegan\u201d) used by Baxter and Cool (2010, references therein). The availability of many different tools offers to the user the possibility to choose the one(s) he considers more appropriate for his analytical tasks.",
+              "attribution": "archcalc.cnr.it"
+            },
+            {
+              "matched_text": "\u301027\u2020L42-L45\u3011",
+              "start_idx": 927,
+              "end_idx": 939,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "AC24.indb",
+              "url": "https://www.archcalc.cnr.it/indice/PDF24/02_Alberti.pdf#:~:text=the%20%E2%80%9Canacor%E2%80%9D%20,offers%20to%20the%20user%20the",
+              "pub_date": null,
+              "snippet": "the \u201canacor\u201d (de Leeuw, Mair 2009), \u201cca\u201d (Nenadic, Greenacre 2007), and \u201cFactoMineR\u201d packages (L\u00ea et al. 2008; Husson et al. 2011), or those (namely, \u201cMASS\u201d, \u201cade4\u201d, and \u201cvegan\u201d) used by Baxter and Cool (2010, references therein). The availability of many different tools offers to the user the",
+              "attribution": "archcalc.cnr.it"
+            },
+            {
+              "matched_text": "\u301016\u2020L68-L72\u3011",
+              "start_idx": 1237,
+              "end_idx": 1249,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Correspondence Analysis in R - Correspondence Analysis in Archaeology",
+              "url": "http://cainarchaeology.weebly.com/ca-in-r.html#:~:text=concerned,consider%20more%20appropriate%20for%20his",
+              "pub_date": null,
+              "snippet": "concerned. See, e.g., the \u2018anacor\u2019 (de Leeuw, Mair 2009), \u2018ca\u2019 (Nenadic, Greenacre 2007), and \u2018FactoMineR\u2019 packages (L\u00ea et al. 2008; Husson et al. 2011), or those (namely, \u2018MASS\u2019, \u2018ade4\u2019, and \u2018vegan\u2019) used by Baxter and Cool (2010, references therein). The availability of many different tools offers to the user the possibility to choose the one(s) he consider more appropriate for his",
+              "attribution": "cainarchaeology.weebly.com"
+            },
+            {
+              "matched_text": "\u301011\u2020L291-L299\u3011",
+              "start_idx": 1561,
+              "end_idx": 1575,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Multivariate and Spatial Visualisation of Archaeological Assemblages. Sterry. Internet Archaeol. 50. \n",
+              "url": "https://intarch.ac.uk/journal/issue50/15/1.html#:~:text=tendency%20of%20correspondence%20analysis%20to,plot",
+              "pub_date": null,
+              "snippet": "tendency of correspondence analysis to overemphasise the importance of small assemblages and rare fabrics/forms. A resolution to this can be found in the use of the 'multispati' function of the ade4 package in R (Chessel et al. 2004 ; Dray and Dufour  38) to run a spatial correspondence analysis (SCA). Multispati uses a spatial weights matrix of the locations of the samples (in this case the x and y coordinates of the trench centres) to weight a multivariate analysis by the Moran's I scores of the eigenvalues. This effectively selects combinations of variables that maximise the variance explained by spatial descriptors (Dray et al. 2008). The resulting bi-plot",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301037\u2020L91-L99\u3011",
+              "start_idx": 1915,
+              "end_idx": 1927,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "tabula: An R Package for Analysis, Seriation, and Visualization of Archaeological Count Data",
+              "url": "https://hal.science/hal-02389249/document#:~:text=archaeological%20count%20data%2C%20such%20as,The",
+              "pub_date": null,
+              "snippet": "archaeological count data, such as artifacts and faunal remains. Several R packages, e.g. ade4 (Dray & Dufour, 2007), SpadeR (Chao, Ma, Hsieh, & Chiu, 2016) or vegan (Oksanen et al., 2019), allow for the estimation of diversity indices and imple\u0002ment seriation/ordination methods, but these packages are mainly oriented towards ecological issues. tabula provides archaeologically-orientated implementations that allow for the inte\u0002gration of specific data (dates, stratigraphy, etc.) and offers a consistent framework. The",
+              "attribution": "hal.science"
+            },
+            {
+              "matched_text": "\u301040\u2020L536-L544\u3011",
+              "start_idx": 2208,
+              "end_idx": 2222,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - benmarwick/ctv-archaeology: CRAN Task View: Archaeological Science",
+              "url": "https://github.com/benmarwick/ctv-archaeology#:~:text=,in%20both",
+              "pub_date": null,
+              "snippet": "* Principal Components (PCA) is available via the `prcomp()` function (based on svd), `rda()` (in package vegan), `pca()` (in package labdsv) and `dudi.pca()` (in package ade4), provide more ecologically-orientated implementations. Plotting of PCA output is available in ggbiplot  and  131. * Redundancy Analysis (RDA) is available via `rda()` in vegan and `pcaiv()` in ade4. * Canonical Correspondence Analysis (CCA) is implemented in `cca()` in both",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301040\u2020L558-L562\u3011",
+              "start_idx": 2222,
+              "end_idx": 2236,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - benmarwick/ctv-archaeology: CRAN Task View: Archaeological Science",
+              "url": "https://github.com/benmarwick/ctv-archaeology#:~:text=,Further%20functionality%20is%20also",
+              "pub_date": null,
+              "snippet": "* `corresp()` and `mca()` in MASS provide simple and multiple correspondence analysis respectively. ca also provides single, multiple and joint correspondence analysis. `ca()` and `mca()` in ade4 provide correspondence and multiple correspondence analysis respectively, as well as adding homogeneous table analysis with `hta()`. Further functionality is also",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301053\u2020L25-L30\u3011",
+              "start_idx": 2603,
+              "end_idx": 2615,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "SPARTAAS: Statistical Pattern Recognition and daTing using Archaeological Artefacts assemblageS",
+              "url": "https://cran.r-project.org/web/packages/SPARTAAS/SPARTAAS.pdf#:~:text=Imports%20FactoMineR%2C%20grDevices%2Cdplyr%2Ctidyr%2Cggplot2%2Cplotly%2Cstringr%2Ccolorspace%2C%20shiny%2Cshinydashboard%2Cshinyjs%2Cshinyjqui%2Cfpc%2Cggdendro%2Chtmltools%2C%20rstudioapi%2Chtmlwidgets%2Cshinythemes%2Cexplor%2CshinyWidgets%2CscatterD3%2C,ks%2Cforeign%2Cgrid%2Ccluster%2Cleaflet%2Cape%2C%20MASS%2Cade4%2Clmtest%2Cnor1mix%2Cshinycssloaders%2Cscales%2Cfastcluster",
+              "pub_date": null,
+              "snippet": "Imports FactoMineR, grDevices,dplyr,tidyr,ggplot2,plotly,stringr,colorspace, shiny,shinydashboard,shinyjs,shinyjqui,fpc,ggdendro,htmltools, rstudioapi,htmlwidgets,shinythemes,explor,shinyWidgets,scatterD3, ks,foreign,grid,cluster,leaflet,ape, MASS,ade4,lmtest,nor1mix,shinycssloaders,scales,fastcluster",
+              "attribution": "cran.r-project.org"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b80e78645881918f90f43814d465ff",
+          "async_task_title": "Systematic Evidence Collection for ade4"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "720b5792-2e34-438c-b0e6-98d68227c343",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "abb8fa72-9389-4483-8784-9eb986a79c1f",
+  "plugin_ids": null,
+  "conversation_id": "67b80e4d-d65c-8004-8031-9b2ac5494b2e",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://github.com/benmarwick/ctv-archaeology",
+    "https://www.archcalc.cnr.it/journal/articles/386",
+    "https://intarch.ac.uk/journal/issue50/15/1.html",
+    "https://www.archcalc.cnr.it/journal/articles/661"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b80e4d-d65c-8004-8031-9b2ac5494b2e"
+}

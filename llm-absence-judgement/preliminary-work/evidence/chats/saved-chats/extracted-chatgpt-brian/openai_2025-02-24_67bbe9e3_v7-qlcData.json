@@ -1,0 +1,396 @@
+{
+  "title": "v7-qlcData",
+  "create_time": 1740368356.504431,
+  "update_time": 1740368855.693397,
+  "mapping": {
+    "aaa192fe-cf79-4947-b2d7-d740dcb31127": {
+      "id": "aaa192fe-cf79-4947-b2d7-d740dcb31127",
+      "message": null,
+      "parent": null,
+      "children": [
+        "2b9ead7b-27d0-4fb2-98df-2410894a4f0b"
+      ]
+    },
+    "2b9ead7b-27d0-4fb2-98df-2410894a4f0b": {
+      "id": "2b9ead7b-27d0-4fb2-98df-2410894a4f0b",
+      "message": {
+        "id": "2b9ead7b-27d0-4fb2-98df-2410894a4f0b",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa192fe-cf79-4947-b2d7-d740dcb31127",
+      "children": [
+        "7d61dbd1-f85b-4613-b4ca-3aa7571262bb"
+      ]
+    },
+    "7d61dbd1-f85b-4613-b4ca-3aa7571262bb": {
+      "id": "7d61dbd1-f85b-4613-b4ca-3aa7571262bb",
+      "message": {
+        "id": "7d61dbd1-f85b-4613-b4ca-3aa7571262bb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740368356.507094,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916c6d6f1ef457dd-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2b9ead7b-27d0-4fb2-98df-2410894a4f0b",
+      "children": [
+        "99f39712-ace5-49b7-8f1d-774ddce6bf3f"
+      ]
+    },
+    "99f39712-ace5-49b7-8f1d-774ddce6bf3f": {
+      "id": "99f39712-ace5-49b7-8f1d-774ddce6bf3f",
+      "message": {
+        "id": "99f39712-ace5-49b7-8f1d-774ddce6bf3f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740368357.589524,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. Please provide the name or acronym of the first archaeology and historical studies-related software tool you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "7d61dbd1-f85b-4613-b4ca-3aa7571262bb",
+          "request_id": "916c6d6f1ef457dd-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7d61dbd1-f85b-4613-b4ca-3aa7571262bb",
+      "children": [
+        "5c3e7389-218a-492d-8416-3aaac606bc9e"
+      ]
+    },
+    "5c3e7389-218a-492d-8416-3aaac606bc9e": {
+      "id": "5c3e7389-218a-492d-8416-3aaac606bc9e",
+      "message": {
+        "id": "5c3e7389-218a-492d-8416-3aaac606bc9e",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740368357.589657,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "99f39712-ace5-49b7-8f1d-774ddce6bf3f",
+          "request_id": "916c6d6f1ef457dd-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "99f39712-ace5-49b7-8f1d-774ddce6bf3f",
+      "children": [
+        "848b252c-5cfc-4b80-a000-1221cf19424c"
+      ]
+    },
+    "848b252c-5cfc-4b80-a000-1221cf19424c": {
+      "id": "848b252c-5cfc-4b80-a000-1221cf19424c",
+      "message": {
+        "id": "848b252c-5cfc-4b80-a000-1221cf19424c",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740368364.963324,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "qlcData"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916c6da6a97d57dd-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5c3e7389-218a-492d-8416-3aaac606bc9e",
+      "children": [
+        "81f60a9b-f72a-4b0b-a8f5-8652e9df00ed"
+      ]
+    },
+    "81f60a9b-f72a-4b0b-a8f5-8652e9df00ed": {
+      "id": "81f60a9b-f72a-4b0b-a8f5-8652e9df00ed",
+      "message": {
+        "id": "81f60a9b-f72a-4b0b-a8f5-8652e9df00ed",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740368377.124029,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Got it. I will conduct a thorough search for all mentions of \"qlcData\" from 1995 onwards, following your structured methodology. I will carefully verify sources, capture publication years, and document them systematically in a CSV format. This will include repositories, scholarly literature, blogs, about pages, and any valid mentions.\n\nI\u2019ll report back with the collected data once I complete the deep research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "848b252c-5cfc-4b80-a000-1221cf19424c",
+          "request_id": "916c6da6a97d57dd-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "848b252c-5cfc-4b80-a000-1221cf19424c",
+      "children": [
+        "ac2ebb19-cab4-414c-9bdf-8b16dbf07e02"
+      ]
+    },
+    "ac2ebb19-cab4-414c-9bdf-8b16dbf07e02": {
+      "id": "ac2ebb19-cab4-414c-9bdf-8b16dbf07e02",
+      "message": {
+        "id": "ac2ebb19-cab4-414c-9bdf-8b16dbf07e02",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740368377.124236,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Got it. I will conduct a thorough search for all mentions of \\\"qlcData\\\" from 1995 onwards, following your structured methodology. I will carefully verify sources, capture publication years, and document them systematically in a CSV format. This will include repositories, scholarly literature, blogs, about pages, and any valid mentions.\\n\\nI\u2019ll report back with the collected data once I complete the deep research.\",\"title\":\"Comprehensive Research on qlcData\",\"prompt\":\"Conduct a systematic and thorough search for mentions of the archaeology and historical studies-related software tool \\\"qlcData\\\" from 1995 onwards. \\n\\n### Data Collection Methodology:\\n- Gather every mention of \\\"qlcData\\\" from valid sources such as:\\n  - Source code repositories (e.g., GitHub, GitLab, Bitbucket, institutional repositories)\\n  - Scholarly literature (journal articles, conference papers, research reports)\\n  - Blog posts and about pages\\n  - Other relevant mentions (institutional pages, software directories, etc.)\\n\\n### Data Output Format:\\nFor each valid source found, record the following details in a **quoted CSV format**:\\n\\n- **Tool:** \\\"qlcData\\\" (ensure consistency in naming)\\n- **Year:** The publication year of the source, or \\\"n.d.\\\" if no date is available\\n- **Source:** Citation or formatted as (Domain + Page Title)\\n- **URL:** Direct link to the resource\\n- **AI Notes:** Any concerns, uncertainties, or data provenance notes\\n\\n### Research Approach:\\n- Do NOT extrapolate dates. Only include years explicitly stated in sources.\\n- For every source, systematically explore adjacent years to ensure comprehensive coverage.\\n- Carefully validate each entry before inclusion.\\n- If any issues arise regarding the validity of \\\"qlcData\\\" as a tool under the provided definition, flag them in the notes.\\n\\nDeliver findings in a **CSV format inside a fenced code block** without additional AI-generated citations.\\n\\nProceed with methodical, detailed research and return with results.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "81f60a9b-f72a-4b0b-a8f5-8652e9df00ed",
+          "request_id": "916c6da6a97d57dd-SEA",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "81f60a9b-f72a-4b0b-a8f5-8652e9df00ed",
+      "children": [
+        "31f6fcc0-de44-49b8-a4af-650522094ccd"
+      ]
+    },
+    "31f6fcc0-de44-49b8-a4af-650522094ccd": {
+      "id": "31f6fcc0-de44-49b8-a4af-650522094ccd",
+      "message": {
+        "id": "31f6fcc0-de44-49b8-a4af-650522094ccd",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740368377.425949,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on qlcData",
+          "async_task_prompt": "Conduct a systematic and thorough search for mentions of the archaeology and historical studies-related software tool \"qlcData\" from 1995 onwards. \n\n### Data Collection Methodology:\n- Gather every mention of \"qlcData\" from valid sources such as:\n  - Source code repositories (e.g., GitHub, GitLab, Bitbucket, institutional repositories)\n  - Scholarly literature (journal articles, conference papers, research reports)\n  - Blog posts and about pages\n  - Other relevant mentions (institutional pages, software directories, etc.)\n\n### Data Output Format:\nFor each valid source found, record the following details in a **quoted CSV format**:\n\n- **Tool:** \"qlcData\" (ensure consistency in naming)\n- **Year:** The publication year of the source, or \"n.d.\" if no date is available\n- **Source:** Citation or formatted as (Domain + Page Title)\n- **URL:** Direct link to the resource\n- **AI Notes:** Any concerns, uncertainties, or data provenance notes\n\n### Research Approach:\n- Do NOT extrapolate dates. Only include years explicitly stated in sources.\n- For every source, systematically explore adjacent years to ensure comprehensive coverage.\n- Carefully validate each entry before inclusion.\n- If any issues arise regarding the validity of \"qlcData\" as a tool under the provided definition, flag them in the notes.\n\nDeliver findings in a **CSV format inside a fenced code block** without additional AI-generated citations.\n\nProceed with methodical, detailed research and return with results.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on qlcData",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ac2ebb19-cab4-414c-9bdf-8b16dbf07e02",
+          "request_id": "916c6da6a97d57dd-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ac2ebb19-cab4-414c-9bdf-8b16dbf07e02",
+      "children": [
+        "d9b94502-c230-4284-9596-7aff68ceac9f"
+      ]
+    },
+    "d9b94502-c230-4284-9596-7aff68ceac9f": {
+      "id": "d9b94502-c230-4284-9596-7aff68ceac9f",
+      "message": {
+        "id": "d9b94502-c230-4284-9596-7aff68ceac9f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740368849.809087,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"qlcData\",\"2015\",\"GitHub (cysouw/qlcData repository)\",\"https://github.com/cysouw/qlcData\",\"Repository for qlcData (initial commit in Oct 2015 confirms launch year)\"\n\"qlcData\",\"2015\",\"Zenodo (qlcData v0.1.1 release)\",\"https://zenodo.org/record/33175\",\"Zenodo archive of the initial public release (v0.1.1), published Nov 4, 2015\"\n\"qlcData\",\"2018\",\"Zenodo (qlcData v0.2.1.0 release)\",\"https://zenodo.org/record/1137278\",\"Zenodo archive of the updated release (v0.2.1.0), published Jan 8, 2018\"\n\"qlcData\",\"2018\",\"Language Science Press (The Unicode Cookbook for Linguists)\",\"https://langsci-press.org/catalog/book/176\",\"Book by Moran & Cysouw (2018) introducing orthography profiles; cites qlcData as the accompanying R package\"\n\"qlcData\",\"2023\",\"enggano.ling-phil.ox.ac.uk (EnoLEX preprint)\",\"https://enggano.ling-phil.ox.ac.uk/static/papers/EnoLEX%20-%20A%20Diachronic%20Lexical%20Database%20for%20the%20Enggano%20language%20[Preprint].pdf\",\"Research preprint (late 2023) on Enggano language; uses qlcData for orthography profiling (cites Moran & Cysouw 2018)\"\n\"qlcData\",\"2024\",\"GitHub (Enggano Flora and Fauna Lexicon repository)\",\"https://github.com/engganolang/flora-fauna-lexicon\",\"University of Oxford project dataset (2024) \u2013 documentation references qlcData (cited as Cysouw 2018) for processing orthography and tokenization\"\n\"qlcData\",\"2024\",\"CRAN (Package qlcData)\",\"https://cran.r-project.org/package=qlcData\",\"Official R package listing on CRAN; v0.3 re-released June 10, 2024 (after earlier CRAN archival) \u2013 shows tool description and references\"\n\"qlcData\",\"2024\",\"Zenodo (qlcData v0.3 release)\",\"https://zenodo.org/record/11560642\",\"Zenodo record for the latest version (v0.3), published Jun 11, 2024, corresponding to the CRAN re-release\"\n\"qlcData\",\"2024\",\"R Weekly (2024 Week\u00a025)\",\"https://rweekly.org/2024-W25.html\",\"Community newsletter (June 2024) noting the update of qlcData to version 0.3 on CRAN\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67bbe9f94c8c8191a513c8435aa3b5bd",
+          "async_task_title": "Comprehensive Research on qlcData"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "31f6fcc0-de44-49b8-a4af-650522094ccd",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "d9b94502-c230-4284-9596-7aff68ceac9f",
+  "plugin_ids": null,
+  "conversation_id": "67bbe9e3-d378-8004-af35-3e8384bbbbd9",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://rweekly.org/2024-W25.html",
+    "https://langsci-press.org/catalog/book/176"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67bbe9e3-d378-8004-af35-3e8384bbbbd9"
+}

@@ -1,0 +1,849 @@
+{
+  "title": "v5-ArchaeoPhases",
+  "create_time": 1740119683.981512,
+  "update_time": 1740120078.70213,
+  "mapping": {
+    "aaa1ba58-83e2-4517-bb12-f12a412a3923": {
+      "id": "aaa1ba58-83e2-4517-bb12-f12a412a3923",
+      "message": null,
+      "parent": null,
+      "children": [
+        "f203764e-6af1-4820-8a86-de5d8741a5fe"
+      ]
+    },
+    "f203764e-6af1-4820-8a86-de5d8741a5fe": {
+      "id": "f203764e-6af1-4820-8a86-de5d8741a5fe",
+      "message": {
+        "id": "f203764e-6af1-4820-8a86-de5d8741a5fe",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1ba58-83e2-4517-bb12-f12a412a3923",
+      "children": [
+        "d775590c-8737-4a2f-98b9-1a3d9560ac4b"
+      ]
+    },
+    "d775590c-8737-4a2f-98b9-1a3d9560ac4b": {
+      "id": "d775590c-8737-4a2f-98b9-1a3d9560ac4b",
+      "message": {
+        "id": "d775590c-8737-4a2f-98b9-1a3d9560ac4b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740119683.985734,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9154b6570ef2d5e3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f203764e-6af1-4820-8a86-de5d8741a5fe",
+      "children": [
+        "2c675d12-16d4-4059-88cf-8ff817db1fe7"
+      ]
+    },
+    "2c675d12-16d4-4059-88cf-8ff817db1fe7": {
+      "id": "2c675d12-16d4-4059-88cf-8ff817db1fe7",
+      "message": {
+        "id": "2c675d12-16d4-4059-88cf-8ff817db1fe7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740119687.553158,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and criteria for the research. Please provide the first software tool name or acronym you'd like me to investigate."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d775590c-8737-4a2f-98b9-1a3d9560ac4b",
+          "request_id": "9154b6570ef2d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d775590c-8737-4a2f-98b9-1a3d9560ac4b",
+      "children": [
+        "25e64f5b-4f30-4c58-88c4-05fe05863004"
+      ]
+    },
+    "25e64f5b-4f30-4c58-88c4-05fe05863004": {
+      "id": "25e64f5b-4f30-4c58-88c4-05fe05863004",
+      "message": {
+        "id": "25e64f5b-4f30-4c58-88c4-05fe05863004",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740119687.553251,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "2c675d12-16d4-4059-88cf-8ff817db1fe7",
+          "request_id": "9154b6570ef2d5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "2c675d12-16d4-4059-88cf-8ff817db1fe7",
+      "children": [
+        "19673174-3944-4000-82ef-c5f032caaa08"
+      ]
+    },
+    "19673174-3944-4000-82ef-c5f032caaa08": {
+      "id": "19673174-3944-4000-82ef-c5f032caaa08",
+      "message": {
+        "id": "19673174-3944-4000-82ef-c5f032caaa08",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740119689.936774,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "ArchaeoPhases"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9154b67b8a2cd5e3-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "25e64f5b-4f30-4c58-88c4-05fe05863004",
+      "children": [
+        "f7aa38ea-3890-40c2-baff-6dc42caaf3f6"
+      ]
+    },
+    "f7aa38ea-3890-40c2-baff-6dc42caaf3f6": {
+      "id": "f7aa38ea-3890-40c2-baff-6dc42caaf3f6",
+      "message": {
+        "id": "f7aa38ea-3890-40c2-baff-6dc42caaf3f6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740119702.101147,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will now conduct a thorough and systematic search for all mentions of the software tool *ArchaeoPhases*, ensuring that I collect multiple sources spanning different years, with proper citations and URLs. I will document each valid mention in a quoted CSV format, carefully verifying dates from sources without extrapolation.\n\nThis will take some time as I will be meticulous in gathering accurate data. I will update you once I have compiled a detailed CSV with all findings."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "19673174-3944-4000-82ef-c5f032caaa08",
+          "request_id": "9154b67b8a2cd5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "19673174-3944-4000-82ef-c5f032caaa08",
+      "children": [
+        "17da9120-47ca-4625-b0ea-c1f3150ee253"
+      ]
+    },
+    "17da9120-47ca-4625-b0ea-c1f3150ee253": {
+      "id": "17da9120-47ca-4625-b0ea-c1f3150ee253",
+      "message": {
+        "id": "17da9120-47ca-4625-b0ea-c1f3150ee253",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740119702.101292,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will now conduct a thorough and systematic search for all mentions of the software tool *ArchaeoPhases*, ensuring that I collect multiple sources spanning different years, with proper citations and URLs. I will document each valid mention in a quoted CSV format, carefully verifying dates from sources without extrapolation.\\n\\nThis will take some time as I will be meticulous in gathering accurate data. I will update you once I have compiled a detailed CSV with all findings.\",\"title\":\"Comprehensive Research on ArchaeoPhases\",\"prompt\":\"Conduct a comprehensive and systematic search for the software tool *ArchaeoPhases*, ensuring that it meets the defined criteria as a research software tool in archaeology or historical sciences. \\n\\nFor each valid source mentioning *ArchaeoPhases*, extract:\\n- The year of publication (or 'n.d.' if no date is found)\\n- The source (citation or domain + page title)\\n- The URL of the source\\n- Any relevant AI notes regarding data provenance or quality concerns\\n\\nDocument each mention of *ArchaeoPhases* in a quoted CSV format with columns:\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n\\nEnsure that each mention of the tool in different sources results in a separate row. Investigate and verify sources carefully, including:\\n- Scholarly literature\\n- Blog posts and about pages\\n- Mentions in repositories with code commits\\n- Any other mentions of the tool\\n\\nAvoid extrapolating dates and only document years explicitly mentioned in the sources. If no date is found, mark it as 'n.d.'\\n\\nSystematically explore adjacent years to any confirmed mention to ensure completeness. Prioritize accuracy over speed, and report any uncertainties in the AI Notes column.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "f7aa38ea-3890-40c2-baff-6dc42caaf3f6",
+          "request_id": "9154b67b8a2cd5e3-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "f7aa38ea-3890-40c2-baff-6dc42caaf3f6",
+      "children": [
+        "63d29452-723e-4aff-a394-60fd6f445e59"
+      ]
+    },
+    "63d29452-723e-4aff-a394-60fd6f445e59": {
+      "id": "63d29452-723e-4aff-a394-60fd6f445e59",
+      "message": {
+        "id": "63d29452-723e-4aff-a394-60fd6f445e59",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740119704.532729,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on ArchaeoPhases",
+          "async_task_prompt": "Conduct a comprehensive and systematic search for the software tool *ArchaeoPhases*, ensuring that it meets the defined criteria as a research software tool in archaeology or historical sciences. \n\nFor each valid source mentioning *ArchaeoPhases*, extract:\n- The year of publication (or 'n.d.' if no date is found)\n- The source (citation or domain + page title)\n- The URL of the source\n- Any relevant AI notes regarding data provenance or quality concerns\n\nDocument each mention of *ArchaeoPhases* in a quoted CSV format with columns:\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\nEnsure that each mention of the tool in different sources results in a separate row. Investigate and verify sources carefully, including:\n- Scholarly literature\n- Blog posts and about pages\n- Mentions in repositories with code commits\n- Any other mentions of the tool\n\nAvoid extrapolating dates and only document years explicitly mentioned in the sources. If no date is found, mark it as 'n.d.'\n\nSystematically explore adjacent years to any confirmed mention to ensure completeness. Prioritize accuracy over speed, and report any uncertainties in the AI Notes column.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on ArchaeoPhases",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "17da9120-47ca-4625-b0ea-c1f3150ee253",
+          "request_id": "9154b67b8a2cd5e3-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "17da9120-47ca-4625-b0ea-c1f3150ee253",
+      "children": [
+        "7ad5fdb0-0fdc-4a2e-a8dd-c98d3c94bfa7"
+      ]
+    },
+    "7ad5fdb0-0fdc-4a2e-a8dd-c98d3c94bfa7": {
+      "id": "7ad5fdb0-0fdc-4a2e-a8dd-c98d3c94bfa7",
+      "message": {
+        "id": "7ad5fdb0-0fdc-4a2e-a8dd-c98d3c94bfa7",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740120073.114318,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"ArchaeoPhases\",\"n.d.\",\"archaeostat.github.io (Official ArchaeoPhases site)\",\"https://archaeostat.github.io/ArchaeoPhases/\",\"Official project page with tool overview; no publication date provided\u30101\u2020L25-L33\u3011\"\n\"ArchaeoPhases\",\"n.d.\",\"philippe-a.github.io (Bayesian stats in Archaeology page)\",\"https://philippe-a.github.io/website/archaeology.html\",\"Personal site of developer; provides tool description but no date given\u301060\u2020L19-L27\u3011\"\n\"ArchaeoPhases\",\"2024\",\"CRAN Package Page\",\"https://cran.r-project.org/package=ArchaeoPhases\",\"CRAN official package listing; shows version 2.0 published in 2024\u30108\u2020L21-L24\u3011\"\n\"ArchaeoPhases\",\"2024\",\"CRAN 'Introduction to ArchaeoPhases' vignette\",\"https://cran.r-project.org/web/packages/ArchaeoPhases/vignettes/ArchaeoPhases.html\",\"Package vignette by A. Philippe & M.-A. Vibet; dated 2024-03-04\u301019\u2020L5-L8\u3011\"\n\"ArchaeoPhases\",\"n.d.\",\"GitHub (ArchaeoStat/ArchaeoPhases repository)\",\"https://github.com/ArchaeoStat/ArchaeoPhases\",\"Source code repository; no explicit date (active development, references up to 2023)\u301020\u2020L310-L317\u3011\"\n\"ArchaeoPhases\",\"2020\",\"Journal of Statistical Software (Code Snippets)\",\"https://www.jstatsoft.org/article/view/v093c01\",\"Peer-reviewed article describing the package; published May 29, 2020\u301023\u2020L81-L84\u3011\"\n\"ArchaeoPhases\",\"2018\",\"HAL Archive (preprint)\",\"https://hal.science/hal-01347895\",\"Preprint of the ArchaeoPhases paper (version 5); dated 2018 on HAL open archive\u301043\u2020L291-L299\u3011\"\n\"ArchaeoPhases\",\"2023\",\"Zenodo (R Package v2.0 Release)\",\"https://doi.org/10.5281/zenodo.8087121\",\"Zenodo record for ArchaeoPhases v2.0; authors listed, year 2023\u301057\u2020L29-L37\u3011\"\n\"ArchaeoPhases\",\"2018\",\"T.S. Dye Blog \u2013 \\\"ArchaeoPhases\\\"\",\"https://tsdye.online/tsdye/posts/post-two/\",\"Blog post by co-author (T.S. Dye) discussing the tool; last modified Nov 1, 2018\u301037\u2020L8-L12\u3011\"\n\"ArchaeoPhases\",\"2020\",\"T.S. Dye Blog \u2013 \\\"ArchaeoPhases 1.5 Released\\\"\",\"https://tsdye.online/tsdye/posts/archaeophases__1__5/\",\"Blog post announcing version 1.5; last modified Dec 14, 2020\u301035\u2020L8-L12\u3011\"\n\"ArchaeoPhases\",\"n.d.\",\"open-archaeo.info (Tool listing)\",\"https://open-archaeo.info/post/archaeophases/\",\"Community-curated listing of the tool; no date provided on page\u301031\u2020L88-L93\u3011\"\n\"ArchaeoPhases\",\"2024\",\"PLOS ONE (Cochrane et al. 2024)\",\"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0304850\",\"Research article citing ArchaeoPhases in methods; published June 20, 2024\u301047\u2020L1-L8\u3011\"\n\"ArchaeoPhases\",\"2022\",\"PLOS ONE (Ben Arous et al. 2022)\",\"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0261282\",\"Research article (El Mnasra cave) referencing ArchaeoPhases; published Feb 11, 2022\u301052\u2020L1-L8\u3011\"\n\"ArchaeoPhases\",\"2023\",\"Antiquity (Quintus et al. 2023)\",\"https://doi.org/10.15184/aqy.2023.102\",\"Research article (Cambridge) referencing ArchaeoPhases; published online Aug 23, 2023\u301055\u2020L1-L4\u3011\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 242,
+              "end_ix": 253,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Post-Processing of Markov Chain Monte Carlo Simulations for Chronological Modelling \u2022 ArchaeoPhases",
+                "url": "https://archaeostat.github.io/ArchaeoPhases/#:~:text=Statistical%20analysis%20of%20archaeological%20dates,and%20hiatus%20between%20successive%20phases",
+                "text": "Statistical analysis of archaeological dates and groups of dates. ArchaeoPhases allows to post-process Markov Chain Monte Carlo (MCMC) simulations from ChronoModel (Lanos et al. 2020), Oxcal (Bronk Ramsey 2009) or BCal (Buck, Christen, and James 1999). This package provides functions for the study of rhythms of the long term from the posterior distribution of a series of dates (tempo and activity plot). It also allows the estimation and visualization of time ranges from the posterior distribution of groups of dates (e.g.\u00a0duration, transition and hiatus between successive phases).",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 1,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 25,
+                  "end_line_num": 33
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 466,
+              "end_ix": 478,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Website - Bayesian statistics applied to Archaeology",
+                "url": "https://philippe-a.github.io/website/archaeology.html#:~:text=ArchaeoPhases%3A%20Bayesian%20Modeling%20of%20Archaeological,Bcal%2C%20ChronModel%20and%20Oxcal",
+                "text": "ArchaeoPhases: Bayesian Modeling of Archaeological Chronologies The package ArchaeoPhases provides a list of functions for the statistical analysis and the post-processing of the Markov Chains simulated for instance by Bcal, ChronModel and Oxcal :",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 60,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 19,
+                  "end_line_num": 27
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 641,
+              "end_ix": 652,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: Package ArchaeoPhases",
+                "url": "https://cran.r-project.org/package=ArchaeoPhases#:~:text=svglite%20%2C%20%2011%2C%20tinytest,Anne%20Vibet%20%5BImage%201",
+                "text": "svglite ,  11, tinytest Published: 2024-06-16 DOI: 10.32614/CRAN.package.ArchaeoPhases Author: Anne Philippe [Image 0: ORCID iD] [aut, cre], Marie-Anne Vibet [Image 1:",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 21,
+                  "end_line_num": 24
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 874,
+              "end_ix": 884,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Introduction to ArchaeoPhases",
+                "url": "https://cran.r-project.org/web/packages/ArchaeoPhases/vignettes/ArchaeoPhases.html#:~:text=%23%20A.%20Philippe%2C%20M.",
+                "text": "# A. Philippe, M.-A. Vibet",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 19,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 5,
+                  "end_line_num": 8
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1089,
+              "end_ix": 1103,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - ArchaeoStat/ArchaeoPhases: Post-processing MCMC Simulations for Chronological Modelling",
+                "url": "https://github.com/ArchaeoStat/ArchaeoPhases#:~:text=Statistical%20analysis%20of%20archaeological%20dates,duration",
+                "text": "Statistical analysis of archaeological dates and groups of dates. ArchaeoPhases allows to post-process Markov Chain Monte Carlo (MCMC) simulations from ChronoModel (Lanos et al. 2020), Oxcal (Bronk Ramsey 2009) or BCal (Buck, Christen, and James 1999). This package provides functions for the study of rhythms of the long term from the posterior distribution of a series of dates (tempo and activity plot). It also allows the estimation and visualization of time ranges from the posterior distribution of groups of dates (e.g.\u00a0duration,",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 20,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 310,
+                  "end_line_num": 317
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1296,
+              "end_ix": 1308,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n\t\tAnalysis of Archaeological Phases Using the R Package ArchaeoPhases\n\t\t\t\t\t\t\t| Journal of Statistical Software\n\t\t\t",
+                "url": "https://www.jstatsoft.org/article/view/v093c01#:~:text=Philippe%2C%20A.%2C%20%26%20Vibet%2C%20M.,c01",
+                "text": "Philippe, A., & Vibet, M.-A. (2020). Analysis of Archaeological Phases Using the R Package ArchaeoPhases. Journal of Statistical Software, Code Snippets, 93(1), 1\u201325. https://doi.org/10.18637/jss.v093.c01",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 23,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 81,
+                  "end_line_num": 84
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1473,
+              "end_ix": 1487,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": " Analysis of Archaeological Phases using the CRAN Package ArchaeoPhases  - Archive ouverte HAL",
+                "url": "https://hal.archives-ouvertes.fr/hal-01347895#:~:text=Cite",
+                "text": "Cite",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 43,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 291,
+                  "end_line_num": 299
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1651,
+              "end_ix": 1663,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: ArchaeoPhases citation info",
+                "url": "https://cran.r-project.org/web/packages/ArchaeoPhases/citation.html#:~:text=author%20%3D%20,10.5281%2Fzenodo.8087121",
+                "text": "author = {Anne Philippe and Marie-Anne Vibet and Thomas S. Dye and Nicolas Frerebeau}, title = {{{ArchaeoPhases: Post-Processing of Markov Chain Monte Carlo Simulations for Chronological Modelling}}}, year = {2023}, organization = {Universit\u00e9 de Nantes}, address = {Nantes, France}, note = {R package version 2.0}, doi = {10.5281/zenodo.8087121},",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 57,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 29,
+                  "end_line_num": 37
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1850,
+              "end_ix": 1861,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Thomas S. Dye",
+                "url": "https://tsdye.online/tsdye/posts/post-two/#:~:text=ArchaeoPhases",
+                "text": "ArchaeoPhases",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 37,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 8,
+                  "end_line_num": 12
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2052,
+              "end_ix": 2063,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Thomas S. Dye",
+                "url": "https://tsdye.online/tsdye/posts/archaeophases__1__5/#:~:text=ArchaeoPhases%201",
+                "text": "ArchaeoPhases 1.5 Released",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 35,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 8,
+                  "end_line_num": 12
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2235,
+              "end_ix": 2247,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "ArchaeoPhases \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/post/archaeophases/#:~:text=by%20philippe,8087121%20chronological%20modelling",
+                "text": "by philippe-a, marieannevibet, tsdye, nfrerebeau in PACKAGES AND LIBRARIES cran github publication website 10.5281/zenodo.8087121 chronological modelling",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 31,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 88,
+                  "end_line_num": 93
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2456,
+              "end_ix": 2466,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Collective action problems led to the cultural transformation of S\u0101moa 800 years ago | PLOS ONE",
+                "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0304850#:~:text=,0304850",
+                "text": "* Published: June 20, 2024 *  https://doi.org/10.1371/journal.pone.0304850 *",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 47,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 8
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2686,
+              "end_ix": 2696,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "An improved chronology for the Middle Stone Age at El Mnasra cave, Morocco | PLOS ONE",
+                "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0261282#:~:text=,0261282",
+                "text": "* Published: February 11, 2022 *  https://doi.org/10.1371/journal.pone.0261282 *",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 52,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 8
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2881,
+              "end_ix": 2891,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Ideal distribution models and the tempo of agricultural development in a windward valley of Hawai\u02bbi | Antiquity | Cambridge Core",
+                "url": "https://www.cambridge.org/core/journals/antiquity/article/ideal-distribution-models-and-the-tempo-of-agricultural-development-in-a-windward-valley-of-hawaii/B0979DAA7A9DBA94BDD6D733F267CE95#:~:text=Published%20online%20by%20Cambridge%20University,Press%3A%C2%A0%2023%20August%202023",
+                "text": "Published online by Cambridge University Press:\u00a0 23 August 2023",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 55,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u30101\u2020L25-L33\u3011",
+              "start_idx": 242,
+              "end_idx": 253,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Post-Processing of Markov Chain Monte Carlo Simulations for Chronological Modelling \u2022 ArchaeoPhases",
+              "url": "https://archaeostat.github.io/ArchaeoPhases/#:~:text=Statistical%20analysis%20of%20archaeological%20dates,and%20hiatus%20between%20successive%20phases",
+              "pub_date": null,
+              "snippet": "Statistical analysis of archaeological dates and groups of dates. ArchaeoPhases allows to post-process Markov Chain Monte Carlo (MCMC) simulations from ChronoModel (Lanos et al. 2020), Oxcal (Bronk Ramsey 2009) or BCal (Buck, Christen, and James 1999). This package provides functions for the study of rhythms of the long term from the posterior distribution of a series of dates (tempo and activity plot). It also allows the estimation and visualization of time ranges from the posterior distribution of groups of dates (e.g.\u00a0duration, transition and hiatus between successive phases).",
+              "attribution": "archaeostat.github.io"
+            },
+            {
+              "matched_text": "\u301060\u2020L19-L27\u3011",
+              "start_idx": 466,
+              "end_idx": 478,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Website - Bayesian statistics applied to Archaeology",
+              "url": "https://philippe-a.github.io/website/archaeology.html#:~:text=ArchaeoPhases%3A%20Bayesian%20Modeling%20of%20Archaeological,Bcal%2C%20ChronModel%20and%20Oxcal",
+              "pub_date": null,
+              "snippet": "ArchaeoPhases: Bayesian Modeling of Archaeological Chronologies The package ArchaeoPhases provides a list of functions for the statistical analysis and the post-processing of the Markov Chains simulated for instance by Bcal, ChronModel and Oxcal :",
+              "attribution": "philippe-a.github.io"
+            },
+            {
+              "matched_text": "\u30108\u2020L21-L24\u3011",
+              "start_idx": 641,
+              "end_idx": 652,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: Package ArchaeoPhases",
+              "url": "https://cran.r-project.org/package=ArchaeoPhases#:~:text=svglite%20%2C%20%2011%2C%20tinytest,Anne%20Vibet%20%5BImage%201",
+              "pub_date": null,
+              "snippet": "svglite ,  11, tinytest Published: 2024-06-16 DOI: 10.32614/CRAN.package.ArchaeoPhases Author: Anne Philippe [Image 0: ORCID iD] [aut, cre], Marie-Anne Vibet [Image 1:",
+              "attribution": "cran.r-project.org"
+            },
+            {
+              "matched_text": "\u301019\u2020L5-L8\u3011",
+              "start_idx": 874,
+              "end_idx": 884,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Introduction to ArchaeoPhases",
+              "url": "https://cran.r-project.org/web/packages/ArchaeoPhases/vignettes/ArchaeoPhases.html#:~:text=%23%20A.%20Philippe%2C%20M.",
+              "pub_date": null,
+              "snippet": "# A. Philippe, M.-A. Vibet",
+              "attribution": "cran.r-project.org"
+            },
+            {
+              "matched_text": "\u301020\u2020L310-L317\u3011",
+              "start_idx": 1089,
+              "end_idx": 1103,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - ArchaeoStat/ArchaeoPhases: Post-processing MCMC Simulations for Chronological Modelling",
+              "url": "https://github.com/ArchaeoStat/ArchaeoPhases#:~:text=Statistical%20analysis%20of%20archaeological%20dates,duration",
+              "pub_date": null,
+              "snippet": "Statistical analysis of archaeological dates and groups of dates. ArchaeoPhases allows to post-process Markov Chain Monte Carlo (MCMC) simulations from ChronoModel (Lanos et al. 2020), Oxcal (Bronk Ramsey 2009) or BCal (Buck, Christen, and James 1999). This package provides functions for the study of rhythms of the long term from the posterior distribution of a series of dates (tempo and activity plot). It also allows the estimation and visualization of time ranges from the posterior distribution of groups of dates (e.g.\u00a0duration,",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301023\u2020L81-L84\u3011",
+              "start_idx": 1296,
+              "end_idx": 1308,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n\t\tAnalysis of Archaeological Phases Using the R Package ArchaeoPhases\n\t\t\t\t\t\t\t| Journal of Statistical Software\n\t\t\t",
+              "url": "https://www.jstatsoft.org/article/view/v093c01#:~:text=Philippe%2C%20A.%2C%20%26%20Vibet%2C%20M.,c01",
+              "pub_date": null,
+              "snippet": "Philippe, A., & Vibet, M.-A. (2020). Analysis of Archaeological Phases Using the R Package ArchaeoPhases. Journal of Statistical Software, Code Snippets, 93(1), 1\u201325. https://doi.org/10.18637/jss.v093.c01",
+              "attribution": "jstatsoft.org"
+            },
+            {
+              "matched_text": "\u301043\u2020L291-L299\u3011",
+              "start_idx": 1473,
+              "end_idx": 1487,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": " Analysis of Archaeological Phases using the CRAN Package ArchaeoPhases  - Archive ouverte HAL",
+              "url": "https://hal.archives-ouvertes.fr/hal-01347895#:~:text=Cite",
+              "pub_date": null,
+              "snippet": "Cite",
+              "attribution": "hal.archives-ouvertes.fr"
+            },
+            {
+              "matched_text": "\u301057\u2020L29-L37\u3011",
+              "start_idx": 1651,
+              "end_idx": 1663,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: ArchaeoPhases citation info",
+              "url": "https://cran.r-project.org/web/packages/ArchaeoPhases/citation.html#:~:text=author%20%3D%20,10.5281%2Fzenodo.8087121",
+              "pub_date": null,
+              "snippet": "author = {Anne Philippe and Marie-Anne Vibet and Thomas S. Dye and Nicolas Frerebeau}, title = {{{ArchaeoPhases: Post-Processing of Markov Chain Monte Carlo Simulations for Chronological Modelling}}}, year = {2023}, organization = {Universit\u00e9 de Nantes}, address = {Nantes, France}, note = {R package version 2.0}, doi = {10.5281/zenodo.8087121},",
+              "attribution": "cran.r-project.org"
+            },
+            {
+              "matched_text": "\u301037\u2020L8-L12\u3011",
+              "start_idx": 1850,
+              "end_idx": 1861,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Thomas S. Dye",
+              "url": "https://tsdye.online/tsdye/posts/post-two/#:~:text=ArchaeoPhases",
+              "pub_date": null,
+              "snippet": "ArchaeoPhases",
+              "attribution": "tsdye.online"
+            },
+            {
+              "matched_text": "\u301035\u2020L8-L12\u3011",
+              "start_idx": 2052,
+              "end_idx": 2063,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Thomas S. Dye",
+              "url": "https://tsdye.online/tsdye/posts/archaeophases__1__5/#:~:text=ArchaeoPhases%201",
+              "pub_date": null,
+              "snippet": "ArchaeoPhases 1.5 Released",
+              "attribution": "tsdye.online"
+            },
+            {
+              "matched_text": "\u301031\u2020L88-L93\u3011",
+              "start_idx": 2235,
+              "end_idx": 2247,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "ArchaeoPhases \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/post/archaeophases/#:~:text=by%20philippe,8087121%20chronological%20modelling",
+              "pub_date": null,
+              "snippet": "by philippe-a, marieannevibet, tsdye, nfrerebeau in PACKAGES AND LIBRARIES cran github publication website 10.5281/zenodo.8087121 chronological modelling",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u301047\u2020L1-L8\u3011",
+              "start_idx": 2456,
+              "end_idx": 2466,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Collective action problems led to the cultural transformation of S\u0101moa 800 years ago | PLOS ONE",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0304850#:~:text=,0304850",
+              "pub_date": null,
+              "snippet": "* Published: June 20, 2024 *  https://doi.org/10.1371/journal.pone.0304850 *",
+              "attribution": "journals.plos.org"
+            },
+            {
+              "matched_text": "\u301052\u2020L1-L8\u3011",
+              "start_idx": 2686,
+              "end_idx": 2696,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "An improved chronology for the Middle Stone Age at El Mnasra cave, Morocco | PLOS ONE",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0261282#:~:text=,0261282",
+              "pub_date": null,
+              "snippet": "* Published: February 11, 2022 *  https://doi.org/10.1371/journal.pone.0261282 *",
+              "attribution": "journals.plos.org"
+            },
+            {
+              "matched_text": "\u301055\u2020L1-L4\u3011",
+              "start_idx": 2881,
+              "end_idx": 2891,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Ideal distribution models and the tempo of agricultural development in a windward valley of Hawai\u02bbi | Antiquity | Cambridge Core",
+              "url": "https://www.cambridge.org/core/journals/antiquity/article/ideal-distribution-models-and-the-tempo-of-agricultural-development-in-a-windward-valley-of-hawaii/B0979DAA7A9DBA94BDD6D733F267CE95#:~:text=Published%20online%20by%20Cambridge%20University,Press%3A%C2%A0%2023%20August%202023",
+              "pub_date": null,
+              "snippet": "Published online by Cambridge University Press:\u00a0 23 August 2023",
+              "attribution": "cambridge.org"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b81e98633c8191a8d8274fe21b9a11",
+          "async_task_title": "Comprehensive Research on ArchaeoPhases"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "63d29452-723e-4aff-a394-60fd6f445e59",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "7ad5fdb0-0fdc-4a2e-a8dd-c98d3c94bfa7",
+  "plugin_ids": null,
+  "conversation_id": "67b81e83-d498-8004-b439-eb9410a69701",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://archaeostat.github.io/ArchaeoPhases/",
+    "https://tsdye.online/tsdye/posts/post-two/",
+    "https://tsdye.online/tsdye/posts/archaeophases__1__5/",
+    "https://philippe-a.github.io/website/archaeology.html",
+    "https://www.jstatsoft.org/article/view/v093c01"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b81e83-d498-8004-b439-eb9410a69701"
+}

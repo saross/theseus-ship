@@ -1,0 +1,396 @@
+{
+  "title": "v7-SEAHORS ",
+  "create_time": 1740375136.623444,
+  "update_time": 1740375588.69663,
+  "mapping": {
+    "aaa1543e-9d9f-4105-b0d8-d94b1e2a17f3": {
+      "id": "aaa1543e-9d9f-4105-b0d8-d94b1e2a17f3",
+      "message": null,
+      "parent": null,
+      "children": [
+        "82ec3678-4873-45f7-a82a-0b57e6233252"
+      ]
+    },
+    "82ec3678-4873-45f7-a82a-0b57e6233252": {
+      "id": "82ec3678-4873-45f7-a82a-0b57e6233252",
+      "message": {
+        "id": "82ec3678-4873-45f7-a82a-0b57e6233252",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1543e-9d9f-4105-b0d8-d94b1e2a17f3",
+      "children": [
+        "d134153a-c19e-4c69-9218-a26167ad8ff5"
+      ]
+    },
+    "d134153a-c19e-4c69-9218-a26167ad8ff5": {
+      "id": "d134153a-c19e-4c69-9218-a26167ad8ff5",
+      "message": {
+        "id": "d134153a-c19e-4c69-9218-a26167ad8ff5",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740375136.625801,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916d12fa689af215-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "82ec3678-4873-45f7-a82a-0b57e6233252",
+      "children": [
+        "f5868e37-cb78-4f59-8f94-7a0f033b6914"
+      ]
+    },
+    "f5868e37-cb78-4f59-8f94-7a0f033b6914": {
+      "id": "f5868e37-cb78-4f59-8f94-7a0f033b6914",
+      "message": {
+        "id": "f5868e37-cb78-4f59-8f94-7a0f033b6914",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740375137.801177,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and expectations. Please provide the first tool name or acronym you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d134153a-c19e-4c69-9218-a26167ad8ff5",
+          "request_id": "916d12fa689af215-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d134153a-c19e-4c69-9218-a26167ad8ff5",
+      "children": [
+        "f8469087-05d7-4a34-8cd3-e9dfb74f77c7"
+      ]
+    },
+    "f8469087-05d7-4a34-8cd3-e9dfb74f77c7": {
+      "id": "f8469087-05d7-4a34-8cd3-e9dfb74f77c7",
+      "message": {
+        "id": "f8469087-05d7-4a34-8cd3-e9dfb74f77c7",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740375137.801301,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "f5868e37-cb78-4f59-8f94-7a0f033b6914",
+          "request_id": "916d12fa689af215-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f5868e37-cb78-4f59-8f94-7a0f033b6914",
+      "children": [
+        "3a8434db-683c-4ad7-9b25-f69ea1793f10"
+      ]
+    },
+    "3a8434db-683c-4ad7-9b25-f69ea1793f10": {
+      "id": "3a8434db-683c-4ad7-9b25-f69ea1793f10",
+      "message": {
+        "id": "3a8434db-683c-4ad7-9b25-f69ea1793f10",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740375144.662307,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "SEAHORS "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916d132bbf72f215-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f8469087-05d7-4a34-8cd3-e9dfb74f77c7",
+      "children": [
+        "26a048d2-5ab3-4c14-a948-49961c651990"
+      ]
+    },
+    "26a048d2-5ab3-4c14-a948-49961c651990": {
+      "id": "26a048d2-5ab3-4c14-a948-49961c651990",
+      "message": {
+        "id": "26a048d2-5ab3-4c14-a948-49961c651990",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740375156.802093,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a detailed search on SEAHORS, an archaeology and historical studies-related software tool, ensuring that I systematically examine sources from 1995 onward.\n\nI will compile a well-formed quoted CSV with the following columns: \"Tool\", \"Year\", \"Source\", \"URL\", and \"AI Notes\"\u2014including any concerns or uncertainties about data provenance. I will ensure that each valid source I find is included in the CSV, with adjacent years explored systematically.\n\nI'll let you know once I have gathered and structured the evidence."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "3a8434db-683c-4ad7-9b25-f69ea1793f10",
+          "request_id": "916d132bbf72f215-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3a8434db-683c-4ad7-9b25-f69ea1793f10",
+      "children": [
+        "d6a8dd3c-d13b-4ac5-995a-5e87468f8a86"
+      ]
+    },
+    "d6a8dd3c-d13b-4ac5-995a-5e87468f8a86": {
+      "id": "d6a8dd3c-d13b-4ac5-995a-5e87468f8a86",
+      "message": {
+        "id": "d6a8dd3c-d13b-4ac5-995a-5e87468f8a86",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740375156.802267,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a detailed search on SEAHORS, an archaeology and historical studies-related software tool, ensuring that I systematically examine sources from 1995 onward.\\n\\nI will compile a well-formed quoted CSV with the following columns: \\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", and \\\"AI Notes\\\"\u2014including any concerns or uncertainties about data provenance. I will ensure that each valid source I find is included in the CSV, with adjacent years explored systematically.\\n\\nI'll let you know once I have gathered and structured the evidence.\",\"title\":\"Evidence Collection for SEAHORS Archaeology Software\",\"prompt\":\"Conduct a comprehensive and systematic search on SEAHORS, an archaeology and historical studies-related software tool, ensuring that sources are examined from 1995 onward. \\n\\nFor each valid mention of SEAHORS in a given year or as an undated reference (n.d.), construct a well-formed quoted CSV with the following columns:\\n- \\\"Tool\\\": SEAHORS (consistent name as given by the user)\\n- \\\"Year\\\": The publication year of the source (or \\\"n.d.\\\" if no date is available)\\n- \\\"Source\\\": Citation or (Domain + Page Title)\\n- \\\"URL\\\": Direct URL to the source\\n- \\\"AI Notes\\\": Any uncertainties, concerns, or comments regarding data provenance\\n\\nMethodology:\\n- Systematically search for mentions of SEAHORS in academic literature, blog posts, project websites, software repositories, and any other relevant sources.\\n- Ensure that every valid source mentioning SEAHORS, regardless of its publication year, is included in the CSV.\\n- If a source provides a public version control repository with timestamps (e.g., GitHub commits), include this as a row.\\n- If SEAHORS is undated in a source, mark it as \\\"n.d.\\\" while ensuring the source is still documented.\\n- Expand the search by \u00b11 year from any discovered date.\\n- Review every page of search results methodically to maximize accuracy and completeness.\\n\\nReturn results as a markdown **fenced code block** CSV, ensuring clarity and consistency in formatting. Exclude any system-generated citations (e.g., \u3010deep research\u3011 references).\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "26a048d2-5ab3-4c14-a948-49961c651990",
+          "request_id": "916d132bbf72f215-SEA",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "26a048d2-5ab3-4c14-a948-49961c651990",
+      "children": [
+        "5363f88f-f154-4620-ab51-67ae99c470cd"
+      ]
+    },
+    "5363f88f-f154-4620-ab51-67ae99c470cd": {
+      "id": "5363f88f-f154-4620-ab51-67ae99c470cd",
+      "message": {
+        "id": "5363f88f-f154-4620-ab51-67ae99c470cd",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740375158.534742,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for SEAHORS Archaeology Software",
+          "async_task_prompt": "Conduct a comprehensive and systematic search on SEAHORS, an archaeology and historical studies-related software tool, ensuring that sources are examined from 1995 onward. \n\nFor each valid mention of SEAHORS in a given year or as an undated reference (n.d.), construct a well-formed quoted CSV with the following columns:\n- \"Tool\": SEAHORS (consistent name as given by the user)\n- \"Year\": The publication year of the source (or \"n.d.\" if no date is available)\n- \"Source\": Citation or (Domain + Page Title)\n- \"URL\": Direct URL to the source\n- \"AI Notes\": Any uncertainties, concerns, or comments regarding data provenance\n\nMethodology:\n- Systematically search for mentions of SEAHORS in academic literature, blog posts, project websites, software repositories, and any other relevant sources.\n- Ensure that every valid source mentioning SEAHORS, regardless of its publication year, is included in the CSV.\n- If a source provides a public version control repository with timestamps (e.g., GitHub commits), include this as a row.\n- If SEAHORS is undated in a source, mark it as \"n.d.\" while ensuring the source is still documented.\n- Expand the search by \u00b11 year from any discovered date.\n- Review every page of search results methodically to maximize accuracy and completeness.\n\nReturn results as a markdown **fenced code block** CSV, ensuring clarity and consistency in formatting. Exclude any system-generated citations (e.g., \u3010deep research\u3011 references).",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for SEAHORS Archaeology Software",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d6a8dd3c-d13b-4ac5-995a-5e87468f8a86",
+          "request_id": "916d132bbf72f215-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d6a8dd3c-d13b-4ac5-995a-5e87468f8a86",
+      "children": [
+        "4d31cb62-e27e-41d9-95b6-63bbf8ae2420"
+      ]
+    },
+    "4d31cb62-e27e-41d9-95b6-63bbf8ae2420": {
+      "id": "4d31cb62-e27e-41d9-95b6-63bbf8ae2420",
+      "message": {
+        "id": "4d31cb62-e27e-41d9-95b6-63bbf8ae2420",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740375583.079224,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"SEAHORS\",\"2023\",\"Zenodo (Preprint \u2013 SEAHORS: Spatial Exploration of ArcHaeological Objects in R Shiny)\",\"https://doi.org/10.5281/zenodo.7674698\",\"Preprint of the SEAHORS paper (Royer et al. 2023) \u2013 not peer-reviewed at time of posting; Zenodo record with versioned files (v1/v2) in 2023.\"\n\"SEAHORS\",\"2023\",\"Peer Community in Archaeology (Recommendation: \u201cAnalyzing piece-plotted artifacts just got simpler: A good solution to the wrong problem?\u201d)\",\"https://archaeo.peercommunityin.org/articles/rec?id=320\",\"Recommendation article (June 2023) by Reuven Yeshurun, reviewing and endorsing the SEAHORS preprint; provides context and peer-review commentary.\"\n\"SEAHORS\",\"2023\",\"Peer Community Journal 3 (2023) e55 \u2013 \u201cSEAHORS: Spatial Exploration of ArcHaeological Objects in R Shiny\u201d\",\"https://peercommunityjournal.org/item/10_24072_pcjournal_289/\",\"Final peer-reviewed publication of the SEAHORS tool (Royer, Discamps, Plutniak, Thomas, 2023) in Peer Community Journal; open-access article recommended by PCI Archaeology.\"\n\"SEAHORS\",\"2023\",\"CRAN (Package SEAHORS \u2013 Spatial Exploration of ArcHaeological Objects in R Shiny)\",\"https://cran.r-project.org/package=SEAHORS\",\"Official R package listing on CRAN (v1.8.0 published 23 June 2023); provides software documentation and links to the companion paper (Royer et al. 2023).\"\n\"SEAHORS\",\"2023\",\"Journal of Paleolithic Archaeology (Discamps et al. 2023 \u2013 \u201cBreaking Free from Field Layers: The Interest of Post-excavation Stratigraphies (PES) \u2026\u201d)\",\"https://doi.org/10.1007/s41982-023-00155-x\",\"Academic article (Oct 2023) that cites the SEAHORS tool (Royer et al. 2023) in its text and references; demonstrates early adoption of SEAHORS in archaeological research (stratigraphy study).\"\n\"SEAHORS\",\"n.d.\",\"GitHub (AurelienRoyer/SEAHORS repository \u2013 Spatial Exploration of ArcHaeological Objects in R Shiny)\",\"https://github.com/AurelienRoyer/SEAHORS\",\"Source code repository for the SEAHORS tool; no singular publication date (active development). Initial commits likely in 2022\u20132023, but the repository itself is undated on its homepage.\"\n\"SEAHORS\",\"n.d.\",\"GitHub (AurelienRoyer/SEAHORS-raw-script repository)\",\"https://github.com/AurelienRoyer/SEAHORS-raw-script\",\"Public code repository containing the original R Shiny script (v1.5 as of April 2023) prior to packaging SEAHORS as an R package; provided for transparency but not timestamped with a formal publication date.\"\n\"SEAHORS\",\"n.d.\",\"open-archaeo.info (Listing: SEAHORS \u2013 R Shiny application for archaeological spatial data)\",\"https://open-archaeo.info/post/seahors/\",\"Community-maintained index of open-source archaeological tools. The SEAHORS entry (by A. Royer) provides a brief description and link to the GitHub, but the listing itself is undated (updated as tools are added).\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67bc047665d481919edd90174070bc1f",
+          "async_task_title": "Evidence Collection for SEAHORS Archaeology Software"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "5363f88f-f154-4620-ab51-67ae99c470cd",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "4d31cb62-e27e-41d9-95b6-63bbf8ae2420",
+  "plugin_ids": null,
+  "conversation_id": "67bc0460-7f2c-8004-8910-fc1d85bbeb1a",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://archaeo.peercommunityin.org/articles/rec?id=320",
+    "https://peercommunityjournal.org/item/10_24072_pcjournal_289/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67bc0460-7f2c-8004-8910-fc1d85bbeb1a"
+}

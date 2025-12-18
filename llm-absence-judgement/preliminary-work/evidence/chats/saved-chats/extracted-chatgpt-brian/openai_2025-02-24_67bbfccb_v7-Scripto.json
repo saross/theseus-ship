@@ -1,0 +1,408 @@
+{
+  "title": "v7-Scripto",
+  "create_time": 1740373195.419452,
+  "update_time": 1740375125.370364,
+  "mapping": {
+    "aaa1f9cf-f1b7-44af-adcd-deee706f2a79": {
+      "id": "aaa1f9cf-f1b7-44af-adcd-deee706f2a79",
+      "message": null,
+      "parent": null,
+      "children": [
+        "58154129-9008-41d8-b359-cf5b167f4aa4"
+      ]
+    },
+    "58154129-9008-41d8-b359-cf5b167f4aa4": {
+      "id": "58154129-9008-41d8-b359-cf5b167f4aa4",
+      "message": {
+        "id": "58154129-9008-41d8-b359-cf5b167f4aa4",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1f9cf-f1b7-44af-adcd-deee706f2a79",
+      "children": [
+        "08e0cd9d-8e48-4ba6-b31c-a99141ae61e2"
+      ]
+    },
+    "08e0cd9d-8e48-4ba6-b31c-a99141ae61e2": {
+      "id": "08e0cd9d-8e48-4ba6-b31c-a99141ae61e2",
+      "message": {
+        "id": "08e0cd9d-8e48-4ba6-b31c-a99141ae61e2",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740373195.42353,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916ce3956820a838-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "58154129-9008-41d8-b359-cf5b167f4aa4",
+      "children": [
+        "66ecdf5e-49cc-4ae5-a18b-84df57563878"
+      ]
+    },
+    "66ecdf5e-49cc-4ae5-a18b-84df57563878": {
+      "id": "66ecdf5e-49cc-4ae5-a18b-84df57563878",
+      "message": {
+        "id": "66ecdf5e-49cc-4ae5-a18b-84df57563878",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740373198.476397,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. Please provide the name or acronym of the first archaeology or historical studies-related software tool you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "08e0cd9d-8e48-4ba6-b31c-a99141ae61e2",
+          "request_id": "916ce3956820a838-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "08e0cd9d-8e48-4ba6-b31c-a99141ae61e2",
+      "children": [
+        "5f8395c2-ddb8-496c-ba35-c7569ee543d5"
+      ]
+    },
+    "5f8395c2-ddb8-496c-ba35-c7569ee543d5": {
+      "id": "5f8395c2-ddb8-496c-ba35-c7569ee543d5",
+      "message": {
+        "id": "5f8395c2-ddb8-496c-ba35-c7569ee543d5",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740373198.476549,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "66ecdf5e-49cc-4ae5-a18b-84df57563878",
+          "request_id": "916ce3956820a838-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "66ecdf5e-49cc-4ae5-a18b-84df57563878",
+      "children": [
+        "d6ee71e9-b96a-46c7-823e-4d84c01d2cef"
+      ]
+    },
+    "d6ee71e9-b96a-46c7-823e-4d84c01d2cef": {
+      "id": "d6ee71e9-b96a-46c7-823e-4d84c01d2cef",
+      "message": {
+        "id": "d6ee71e9-b96a-46c7-823e-4d84c01d2cef",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740374618.467321,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Scripto"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "916d06522a34a6d9-SEA",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5f8395c2-ddb8-496c-ba35-c7569ee543d5",
+      "children": [
+        "ec3dac04-58ee-4f0d-b012-4f9a05380585"
+      ]
+    },
+    "ec3dac04-58ee-4f0d-b012-4f9a05380585": {
+      "id": "ec3dac04-58ee-4f0d-b012-4f9a05380585",
+      "message": {
+        "id": "ec3dac04-58ee-4f0d-b012-4f9a05380585",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740374630.74695,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a comprehensive and systematic search for any mentions of the software tool **Scripto** from 1995 onwards. I will collect and document evidence from various sources, including scholarly literature, blog posts, version control repositories, and any other relevant mentions. Each valid source will be included in a well-formed quoted CSV format as per your instructions.\n\nI will take my time to ensure accuracy and provide well-documented results. I will update you as soon as the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d6ee71e9-b96a-46c7-823e-4d84c01d2cef",
+          "request_id": "916d06522a34a6d9-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d6ee71e9-b96a-46c7-823e-4d84c01d2cef",
+      "children": [
+        "46022e8c-bd7f-4912-ad0d-7becdc99314d"
+      ]
+    },
+    "46022e8c-bd7f-4912-ad0d-7becdc99314d": {
+      "id": "46022e8c-bd7f-4912-ad0d-7becdc99314d",
+      "message": {
+        "id": "46022e8c-bd7f-4912-ad0d-7becdc99314d",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740374630.74711,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a comprehensive and systematic search for any mentions of the software tool **Scripto** from 1995 onwards. I will collect and document evidence from various sources, including scholarly literature, blog posts, version control repositories, and any other relevant mentions. Each valid source will be included in a well-formed quoted CSV format as per your instructions.\\n\\nI will take my time to ensure accuracy and provide well-documented results. I will update you as soon as the research is complete.\",\"title\":\"Comprehensive Research on Scripto Software\",\"prompt\":\"Conduct a thorough search for mentions of the archaeology and historical studies-related software tool **Scripto** from 1995 onwards. \\n\\nFor each valid source found, construct a CSV with the following columns:\\n- **Tool**: Use the exact input name \\\"Scripto.\\\"\\n- **Year**: The year the source was published. Use \\\"n.d.\\\" if no date is available.\\n- **Source**: Citation or \\\"(Domain + Page Title)\\\" format.\\n- **URL**: The source's URL.\\n- **AI Notes**: Any concerns, uncertainties, or notes about data provenance or quality.\\n\\n**Guidelines:**\\n- Conduct a systematic, methodical search. Explore **all** search results, iterating through each page.\\n- If a valid source is found, expand the search to adjacent years (+-1 year).\\n- **Do not infer dates**\u2014only document the publication year if explicitly stated.\\n- Allowed sources:\\n  - Version control repositories (commits with dates)\\n  - Scholarly literature (each mention gets a separate row)\\n  - Blog posts and about pages (each mention gets a separate row)\\n  - Other mentions (each mention gets a separate row)\\n- If there is any doubt about the tool's validity or date, explicitly note it in \\\"AI Notes.\\\"\\n\\nReturn results in a well-formatted **fenced code block** CSV, ensuring each mention of \\\"Scripto\\\" is recorded properly. **Do not include system-injected references or auto-generated citations.**\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ec3dac04-58ee-4f0d-b012-4f9a05380585",
+          "request_id": "916d06522a34a6d9-SEA",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "ec3dac04-58ee-4f0d-b012-4f9a05380585",
+      "children": [
+        "02bf1b18-d41a-45a8-b57f-4b34d8a0991e"
+      ]
+    },
+    "02bf1b18-d41a-45a8-b57f-4b34d8a0991e": {
+      "id": "02bf1b18-d41a-45a8-b57f-4b34d8a0991e",
+      "message": {
+        "id": "02bf1b18-d41a-45a8-b57f-4b34d8a0991e",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740374638.534828,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on Scripto Software",
+          "async_task_prompt": "Conduct a thorough search for mentions of the archaeology and historical studies-related software tool **Scripto** from 1995 onwards. \n\nFor each valid source found, construct a CSV with the following columns:\n- **Tool**: Use the exact input name \"Scripto.\"\n- **Year**: The year the source was published. Use \"n.d.\" if no date is available.\n- **Source**: Citation or \"(Domain + Page Title)\" format.\n- **URL**: The source's URL.\n- **AI Notes**: Any concerns, uncertainties, or notes about data provenance or quality.\n\n**Guidelines:**\n- Conduct a systematic, methodical search. Explore **all** search results, iterating through each page.\n- If a valid source is found, expand the search to adjacent years (+-1 year).\n- **Do not infer dates**\u2014only document the publication year if explicitly stated.\n- Allowed sources:\n  - Version control repositories (commits with dates)\n  - Scholarly literature (each mention gets a separate row)\n  - Blog posts and about pages (each mention gets a separate row)\n  - Other mentions (each mention gets a separate row)\n- If there is any doubt about the tool's validity or date, explicitly note it in \"AI Notes.\"\n\nReturn results in a well-formatted **fenced code block** CSV, ensuring each mention of \"Scripto\" is recorded properly. **Do not include system-injected references or auto-generated citations.**",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on Scripto Software",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "46022e8c-bd7f-4912-ad0d-7becdc99314d",
+          "request_id": "916d06522a34a6d9-SEA",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "46022e8c-bd7f-4912-ad0d-7becdc99314d",
+      "children": [
+        "99513b68-a79a-4d9e-accb-4bc87dc6b9f0"
+      ]
+    },
+    "99513b68-a79a-4d9e-accb-4bc87dc6b9f0": {
+      "id": "99513b68-a79a-4d9e-accb-4bc87dc6b9f0",
+      "message": {
+        "id": "99513b68-a79a-4d9e-accb-4bc87dc6b9f0",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740375043.805971,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```\nTool,Year,Source,URL,AI Notes\nScripto,n.d.,scripto.org (Official Scripto website),https://scripto.org/,Official project site; no publication date listed (content updated through 2019).\nScripto,2011,neh.gov (The Scripto Transcription Tool),https://www.neh.gov/divisions/odh/featured-project/the-scripto-transcription-tool,\"NEH ODH blog post (Jason Rhody) announcing first Scripto implementation; dated September 6, 2011.\"\nScripto,2012,neh.gov (Scripto Transcription Tool Now Available),https://www.neh.gov/divisions/odh/grant-news/scripto-transcription-tool-now-available,\"NEH ODH blog post (Jason Rhody) announcing Scripto's official launch; dated July 31, 2012.\"\nScripto,2011,rrchnm.org (Scripto Alpha Launches with the Papers of the War Department),https://rrchnm.org/news/scripto-alpha-launches-with-the-papers-of-the-war-department/,\"RRCHNM news post (Mills Kelly) about Scripto alpha release with War Dept. Papers project; dated March 17, 2011.\"\nScripto,2012,rrchnm.org (Introducing Scripto: a Tool for Community Transcription),https://rrchnm.org/news/introducing-scripto-a-tool-for-community-transcription/,\"RRCHNM news post announcing Scripto release; dated July 31, 2012.\"\nScripto,2012,ncph.org (Public History News \u2013 Introducing Scripto: A Tool for Community Transcription),https://ncph.org/wp-content/uploads/PHN-2012-September1.pdf,NCPH Public History News newsletter (Sept 2012) reprints Scripto release announcement; dated 2012.\nScripto,2012,\"miriamsweeney.net (Scripto, the community transcription tool)\",https://miriamsweeney.net/2012/08/11/scripto-the-community-transcription-tool/,\"Personal blog post introducing Scripto (with excerpt from official site); dated August 11, 2012.\"\nScripto,2011,journal.code4lib.org (Using Amazon Mechanical Turk to Transcribe Historical Handwritten Documents),https://journal.code4lib.org/articles/6004,\"Code4Lib Journal article (Issue 15) referencing Scripto as an example crowdsourcing tool; published October 31, 2011.\"\nScripto,2013,\"thebritishacademy.ac.uk (British Academy Review, Issue 21: 'Transcribe Bentham!')\",https://www.thebritishacademy.ac.uk/documents/669/BAR21-11-Bentham.pdf,\"British Academy Review article on Transcribe Bentham mentions Scripto among transcription tools; Issue 21, January 2013.\"\nScripto,2016,\"discovery.ucl.ac.uk (Crowdsourcing in the Digital Humanities \u2013 Terras, 2016)\",https://discovery.ucl.ac.uk/id/eprint/1447269/,\"Scholarly book chapter (A New Companion to DH, 2016) noting Scripto (developed in 2011 by RRCHNM) as first crowdsourcing transcription tool.\"\nScripto,2012,dhdebates.gc.cuny.edu (The Digital Humanities and Its Users \u2013 Debates in DH),https://dhdebates.gc.cuny.edu/read/untitled/section/ed4a1145-7044-42e9-a898-5ff8691b6628,\"Essay in *Debates in the Digital Humanities* (U. Minnesota Press, 2012) referencing the \"\"newly announced Scripto\"\" alongside Zotero and Omeka.\"\nScripto,2018,omeka.org (An Alpha of Scripto for Omeka S),https://omeka.org/news/2018/08/02/scripto/,\"Omeka news post (by Megan Brett) announcing an alpha version of Scripto for Omeka\u00a0S; dated August 2, 2018.\"\nScripto,2018,omeka.org (An update on Scripto),https://omeka.org/news/2018/10/02/scripto-update/,\"Omeka news post (Oct 2, 2018) updating on Scripto for Omeka\u00a0S development and upcoming beta; dated 2018.\"\nScripto,2019,omeka.org (Scripto for Omeka S: now in beta!),https://omeka.org/news/2019/05/23/scipto-for-s-beta/,\"Omeka news post (by Megan Brett) announcing Scripto for Omeka\u00a0S beta release and features; dated May 23, 2019.\"\nScripto,2020,omeka.org (Announcing Scripto for Omeka S),https://omeka.org/news/2020/01/15/scripto-for-s/,\"Omeka news post announcing the official release of Scripto for Omeka\u00a0S (multiple projects support); dated January 15, 2020.\"\nScripto,2020,\"omeka.org (New Year, New Releases)\",https://omeka.org/news/2020/01/28/new-year-new-releases/,\"Omeka blog post (Jan 28, 2020 by Sharon Leon) listing new releases, including the Scripto module for Omeka\u00a0S; dated 2020.\"\nScripto,2020,digitalhumanities.org (DHQ 14:4 \u2013 'The Digital Archive Nahuatl/Nawat in Central America'),https://www.digitalhumanities.org/dhq/vol/14/4/000491/000491.html,\"Digital Humanities Quarterly article (Vol. 14 No. 4, 2020) describing a project using Scripto for transcription; notes Scripto usage and adoption issues.\"\nScripto,2022,rrchnm.org (Scripto \u2013 RRCHNM Project Portfolio page),https://rrchnm.org/portfolio-item/scripto/,\"RRCHNM project listing page for Scripto (with summary and link to scripto.org); last updated May 17, 2022.\"\nScripto,2024,\"theoj.org (DataScribe JOSS paper \u2013 Otis et al., 2024)\",https://doi.org/10.21105/joss.05661,\"Journal of Open Source Software paper (2024) cites Scripto (Hamner et al., 2010) as an existing open-source transcription tool in humanities projects.\"\nScripto,n.d.,omeka.org (Scripto - Omeka Classic User Manual),https://omeka.org/classic/docs/Plugins/Scripto/,Omeka Classic documentation page for the Scripto plugin; no publication date (living documentation).\nScripto,n.d.,omeka.org (Set up Scripto - Omeka S User Manual),https://omeka.org/s/docs/user-manual/modules/scripto/,Omeka S documentation for Scripto module (setup and usage); undated resource.\nScripto,n.d.,tapor.ca (TAPoR tool listing for Scripto),https://tapor.ca/tools?tag_values=436,Entry in TAPoR digital tools registry describing Scripto; no date provided.\nScripto,2010,github.com (chnm/Scripto repository),https://github.com/chnm/Scripto,Initial source code repository for Scripto (CHNM); repository README shows \u00a92010\u20132012. Earliest development began 2010 (NEH Start-Up Grant).\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67bc026e6198819197a8471da5ec6c08",
+          "async_task_title": "Comprehensive Research on Scripto Software"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "02bf1b18-d41a-45a8-b57f-4b34d8a0991e",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "99513b68-a79a-4d9e-accb-4bc87dc6b9f0",
+  "plugin_ids": null,
+  "conversation_id": "67bbfccb-3cf0-8004-8697-c200a001a7da",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://dhdebates.gc.cuny.edu/read/untitled/section/ed4a1145-7044-42e9-a898-5ff8691b6628",
+    "https://www.digitalhumanities.org/dhq/vol/14/4/000491/000491.html",
+    "https://omeka.org/news/2018/08/02/scripto/",
+    "https://www.neh.gov/divisions/odh/featured-project/the-scripto-transcription-tool",
+    "https://www.thebritishacademy.ac.uk/documents/669/BAR21-11-Bentham.pdf",
+    "https://journal.code4lib.org/articles/6004",
+    "https://omeka.org/news/2020/01/15/scripto-for-s/",
+    "https://omeka.org/news/2018/10/02/scripto-update/",
+    "https://miriamsweeney.net/2012/08/11/scripto-the-community-transcription-tool/",
+    "https://www.neh.gov/divisions/odh/grant-news/scripto-transcription-tool-now-available",
+    "https://rrchnm.org/portfolio-item/scripto/",
+    "https://omeka.org/news/2019/05/23/scipto-for-s-beta/",
+    "https://omeka.org/news/2020/01/28/new-year-new-releases/",
+    "https://rrchnm.org/news/introducing-scripto-a-tool-for-community-transcription/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67bbfccb-3cf0-8004-8697-c200a001a7da"
+}

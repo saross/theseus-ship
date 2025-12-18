@@ -1,0 +1,815 @@
+{
+  "title": "v5-c14bazAAR",
+  "create_time": 1740131378.364722,
+  "update_time": 1740131768.728826,
+  "mapping": {
+    "aaa1f5e9-580e-42ed-8bb0-185f25f52d7b": {
+      "id": "aaa1f5e9-580e-42ed-8bb0-185f25f52d7b",
+      "message": null,
+      "parent": null,
+      "children": [
+        "bba8bb93-9a98-477f-ba6e-59a490850a7a"
+      ]
+    },
+    "bba8bb93-9a98-477f-ba6e-59a490850a7a": {
+      "id": "bba8bb93-9a98-477f-ba6e-59a490850a7a",
+      "message": {
+        "id": "bba8bb93-9a98-477f-ba6e-59a490850a7a",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1f5e9-580e-42ed-8bb0-185f25f52d7b",
+      "children": [
+        "12b90cfc-b1f2-43d3-b9c1-7a509ac76371"
+      ]
+    },
+    "12b90cfc-b1f2-43d3-b9c1-7a509ac76371": {
+      "id": "12b90cfc-b1f2-43d3-b9c1-7a509ac76371",
+      "message": {
+        "id": "12b90cfc-b1f2-43d3-b9c1-7a509ac76371",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740131378.368914,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9155d3d80862a980-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bba8bb93-9a98-477f-ba6e-59a490850a7a",
+      "children": [
+        "6c041b6c-b4f1-4689-b882-6de6f37b4670"
+      ]
+    },
+    "6c041b6c-b4f1-4689-b882-6de6f37b4670": {
+      "id": "6c041b6c-b4f1-4689-b882-6de6f37b4670",
+      "message": {
+        "id": "6c041b6c-b4f1-4689-b882-6de6f37b4670",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740131380.814384,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I understand the requirements and methodology for this research task. Please provide the first software tool name or acronym, and I will begin the systematic search according to your guidelines."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "12b90cfc-b1f2-43d3-b9c1-7a509ac76371",
+          "request_id": "9155d3d80862a980-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "12b90cfc-b1f2-43d3-b9c1-7a509ac76371",
+      "children": [
+        "711c1b0a-e1ad-4503-b7f7-470d8f0ad9c2"
+      ]
+    },
+    "711c1b0a-e1ad-4503-b7f7-470d8f0ad9c2": {
+      "id": "711c1b0a-e1ad-4503-b7f7-470d8f0ad9c2",
+      "message": {
+        "id": "711c1b0a-e1ad-4503-b7f7-470d8f0ad9c2",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740131380.814516,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "6c041b6c-b4f1-4689-b882-6de6f37b4670",
+          "request_id": "9155d3d80862a980-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6c041b6c-b4f1-4689-b882-6de6f37b4670",
+      "children": [
+        "1c7f1260-b3b0-451c-b413-ddffbdfe6b5a"
+      ]
+    },
+    "1c7f1260-b3b0-451c-b413-ddffbdfe6b5a": {
+      "id": "1c7f1260-b3b0-451c-b413-ddffbdfe6b5a",
+      "message": {
+        "id": "1c7f1260-b3b0-451c-b413-ddffbdfe6b5a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740131391.769877,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "c14bazAAR"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9155d42c3a59a980-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "711c1b0a-e1ad-4503-b7f7-470d8f0ad9c2",
+      "children": [
+        "0c57f532-622d-4a4e-bf3a-5cb6181ebe91"
+      ]
+    },
+    "0c57f532-622d-4a4e-bf3a-5cb6181ebe91": {
+      "id": "0c57f532-622d-4a4e-bf3a-5cb6181ebe91",
+      "message": {
+        "id": "0c57f532-622d-4a4e-bf3a-5cb6181ebe91",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740131403.860764,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will now systematically collect evidence for the archaeology-related software tool **c14bazAAR** by searching for mentions in scholarly literature, blog posts, about pages, source code repositories, and any other valid sources. I will document each mention with the year, source, citation, URL, and any concerns about provenance or data quality. I will also search adjacent years to ensure comprehensive coverage. \n\nI will return with a CSV containing all gathered evidence."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "1c7f1260-b3b0-451c-b413-ddffbdfe6b5a",
+          "request_id": "9155d42c3a59a980-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1c7f1260-b3b0-451c-b413-ddffbdfe6b5a",
+      "children": [
+        "0d85b01b-71ab-4735-8786-84810307abbb"
+      ]
+    },
+    "0d85b01b-71ab-4735-8786-84810307abbb": {
+      "id": "0d85b01b-71ab-4735-8786-84810307abbb",
+      "message": {
+        "id": "0d85b01b-71ab-4735-8786-84810307abbb",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740131403.860938,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will now systematically collect evidence for the archaeology-related software tool **c14bazAAR** by searching for mentions in scholarly literature, blog posts, about pages, source code repositories, and any other valid sources. I will document each mention with the year, source, citation, URL, and any concerns about provenance or data quality. I will also search adjacent years to ensure comprehensive coverage. \\n\\nI will return with a CSV containing all gathered evidence.\",\"title\":\"Evidence Collection for c14bazAAR\",\"prompt\":\"Conduct a systematic and comprehensive search for the archaeology-related software tool **c14bazAAR**. Gather mentions of this tool from 1995 onwards, ensuring that each mention is recorded in a well-formed quoted CSV format with the following columns:\\n\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n\\n- **Tool:** Use the exact input name provided (c14bazAAR) consistently.\\n- **Year:** Extract the year from the source, or use \\\"n.d.\\\" if no date is available.\\n- **Source:** Cite the reference, using a proper citation or the domain and page title.\\n- **URL:** Provide the exact link to the reference.\\n- **AI Notes:** Highlight any concerns about data provenance or quality.\\n\\nGuidelines:\\n1. Search across **scholarly literature, blogs, about pages, repositories, and any mentions**.\\n2. **Each source found should have a unique row** in the CSV.\\n3. **If a date is found, expand searches to adjacent years (+-1 year).**\\n4. Do **not** extrapolate dates\u2014only include explicitly mentioned publication years.\\n5. If code repositories are found, include commit history as dated sources.\\n\\nPrioritize sources such as:\\n- Version-controlled public code repositories\\n- Peer-reviewed journal articles\\n- Conference papers\\n- Blog posts\\n- Tool about pages\\n- Any other online mentions of the tool\\n\\nDeliver the results as a CSV inside a fenced code block. **One row per mention.**\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "0c57f532-622d-4a4e-bf3a-5cb6181ebe91",
+          "request_id": "9155d42c3a59a980-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "0c57f532-622d-4a4e-bf3a-5cb6181ebe91",
+      "children": [
+        "c0cf74e0-a2bb-4b69-88ad-e655f9ceeadf"
+      ]
+    },
+    "c0cf74e0-a2bb-4b69-88ad-e655f9ceeadf": {
+      "id": "c0cf74e0-a2bb-4b69-88ad-e655f9ceeadf",
+      "message": {
+        "id": "c0cf74e0-a2bb-4b69-88ad-e655f9ceeadf",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740131403.99104,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Evidence Collection for c14bazAAR",
+          "async_task_prompt": "Conduct a systematic and comprehensive search for the archaeology-related software tool **c14bazAAR**. Gather mentions of this tool from 1995 onwards, ensuring that each mention is recorded in a well-formed quoted CSV format with the following columns:\n\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n- **Tool:** Use the exact input name provided (c14bazAAR) consistently.\n- **Year:** Extract the year from the source, or use \"n.d.\" if no date is available.\n- **Source:** Cite the reference, using a proper citation or the domain and page title.\n- **URL:** Provide the exact link to the reference.\n- **AI Notes:** Highlight any concerns about data provenance or quality.\n\nGuidelines:\n1. Search across **scholarly literature, blogs, about pages, repositories, and any mentions**.\n2. **Each source found should have a unique row** in the CSV.\n3. **If a date is found, expand searches to adjacent years (+-1 year).**\n4. Do **not** extrapolate dates\u2014only include explicitly mentioned publication years.\n5. If code repositories are found, include commit history as dated sources.\n\nPrioritize sources such as:\n- Version-controlled public code repositories\n- Peer-reviewed journal articles\n- Conference papers\n- Blog posts\n- Tool about pages\n- Any other online mentions of the tool\n\nDeliver the results as a CSV inside a fenced code block. **One row per mention.**",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Evidence Collection for c14bazAAR",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "0d85b01b-71ab-4735-8786-84810307abbb",
+          "request_id": "9155d42c3a59a980-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0d85b01b-71ab-4735-8786-84810307abbb",
+      "children": [
+        "076ebb91-41ad-46ed-9526-92798bc7492b"
+      ]
+    },
+    "076ebb91-41ad-46ed-9526-92798bc7492b": {
+      "id": "076ebb91-41ad-46ed-9526-92798bc7492b",
+      "message": {
+        "id": "076ebb91-41ad-46ed-9526-92798bc7492b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740131720.278416,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"c14bazAAR\",\"2018\",\"BORIS (Bern Open Repository)\u301046\u2020L19-L27\u3011\",\"https://boris.unibe.ch/127056/\",\"Repository record by authors (2018 release) \u2013 official deposit, high provenance.\"\n\"c14bazAAR\",\"2018\",\"GitHub (CRAN mirror commit 2018)\u301035\u2020L1-L4\u3011\",\"https://github.com/cran/c14bazAAR/commit/f7530e3ee49e2784f59db038df8568a61d65d61b\",\"CRAN repository commit for v1.0.2 (Oct 2018) \u2013 shows tool\u2019s initial release; automated entry.\"\n\"c14bazAAR\",\"2019\",\"Journal of Open Source Software\u30103\u2020L32-L39\u3011\",\"https://doi.org/10.21105/joss.01914\",\"Peer-reviewed article (Schmid et al. 2019) \u2013 reliable publication describing the tool.\"\n\"c14bazAAR\",\"2019\",\"GitHub (CRAN mirror commit 2019)\u301037\u2020L1-L4\u3011\",\"https://github.com/cran/c14bazAAR/commit/2906f095c8144ad5b25686874e32fa5b0a857e18\",\"CRAN repository commit for v1.0.3 (Aug 2019) \u2013 confirms continued development; minimal context (version update).\"\n\"c14bazAAR\",\"2020\",\"GitHub (CRAN mirror commit 2020)\u301039\u2020L1-L4\u3011\",\"https://github.com/cran/c14bazAAR/commit/1469d50e425ef53a6de1d0d4cd0c3107cb937d1b\",\"CRAN repository commit for v1.2.0 (Jan 2020) \u2013 shows latest CRAN version; data from automated mirror.\"\n\"c14bazAAR\",\"2020\",\"CRAN Package Archive Notice\u301018\u2020L5-L10\u3011\",\"https://cran.r-project.org/package=c14bazAAR\",\"Official CRAN notice (Aug 2020) \u2013 package archived in 2020 due to unresolved check issues; authoritative but indicates removal.\"\n\"c14bazAAR\",\"2020\",\"RDocumentation entry\u301044\u2020L7-L10\u3011\",\"https://www.rdocumentation.org/packages/c14bazAAR/versions/1.2.0\",\"Documentation aggregator (snapshot as of Jan 2020) \u2013 shows last CRAN publish date; content auto-sourced from CRAN (high quality, but static).\"\n\"c14bazAAR\",\"2020\",\"rOpenSci Blog (May\u00a019\u00a02020)\u301021\u2020L55-L63\u3011\",\"https://ropensci.org/blog/2020/05/19/covid-19-open-data/\",\"Official rOpenSci blog post \u2013 mentions using c14bazAAR during COVID-19; credible source, informal context.\"\n\"c14bazAAR\",\"n.d.\",\"open-archaeo software list\u30102\u2020L86-L94\u3011\",\"https://open-archaeo.info/post/c14bazaar/\",\"Community-maintained list entry (no date provided) \u2013 describes the tool; likely reliable but undated (provenance unclear without timestamp).\"\n\"c14bazAAR\",\"2022\",\"Journal of Open Archaeology Data\u301029\u2020L19-L25\u3011\u301028\u2020L79-L81\u3011\",\"https://doi.org/10.5334/joad.87\",\"Data paper (Huet\u00a0et\u00a0al. 2022) \u2013 mentions c14bazAAR\u2019s \u2018get_neonet\u2019 function; peer-reviewed source, high credibility.\"\n\"c14bazAAR\",\"2023\",\"Scientific Reports (Kondor\u00a0et\u00a0al.\u00a02023)\u301056\u2020L255-L263\u3011\u301051\u2020L1-L4\u3011\",\"https://www.nature.com/articles/s41598-023-35920-z\",\"Research article (2023) \u2013 used c14bazAAR to compile radiocarbon data; authoritative source demonstrating tool\u2019s application (high-quality, peer-reviewed).\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 95,
+              "end_ix": 107,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "BORIS",
+                "url": "https://boris.unibe.ch/127056/#:~:text=Schmid%2C%20Clemens%3B%20Seidensticker%2C%20Dirk%3B%20Knitter%2C,Software%20%26%20Other%20Digital%20Items",
+                "text": "Schmid, Clemens; Seidensticker, Dirk; Knitter, Daniel; Hinz, Martin; Matzig, David; Hamer, Wolfgang; Schm\u00fctz, Kay (2018).  c14bazAAR: Download and Prepare C14 Dates from Different Source Databases.  [Software & Other Digital Items]",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 46,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 19,
+                  "end_line_num": 27
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 277,
+              "end_ix": 287,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "version 1.0.2 \u00b7 cran/c14bazAAR@f7530e3 \u00b7 GitHub",
+                "url": "https://github.com/cran/c14bazAAR/commit/f7530e3ee49e2784f59db038df8568a61d65d61b#:~:text=nevrome%20authored%20and%20cran,Oct%2028%2C%202018",
+                "text": "nevrome authored and cran-robot committed Oct 28, 2018",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 35,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 520,
+              "end_ix": 531,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Journal of Open Source Software: c14bazAAR: An R package for downloading and preparing C14 dates from different source databases",
+                "url": "https://doi.org/10.21105/joss.01914#:~:text=Schmid%20et%20al,01914",
+                "text": "Schmid et al., (2019). c14bazAAR: An R package for downloading and preparing C14 dates from different source databases. Journal of Open Source Software, 4(43), 1914, https://doi.org/10.21105/joss.01914",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 3,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 32,
+                  "end_line_num": 39
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 712,
+              "end_ix": 722,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "version 1.0.3 \u00b7 cran/c14bazAAR@2906f09 \u00b7 GitHub",
+                "url": "https://github.com/cran/c14bazAAR/commit/2906f095c8144ad5b25686874e32fa5b0a857e18#:~:text=nevrome%20authored%20and%20cran,Aug%202%2C%202019",
+                "text": "nevrome authored and cran-robot committed Aug 2, 2019",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 37,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 975,
+              "end_ix": 985,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "version 1.2.0 \u00b7 cran/c14bazAAR@1469d50 \u00b7 GitHub",
+                "url": "https://github.com/cran/c14bazAAR/commit/1469d50e425ef53a6de1d0d4cd0c3107cb937d1b#:~:text=nevrome%20authored%20and%20cran,Jan%2012%2C%202020",
+                "text": "nevrome authored and cran-robot committed Jan 12, 2020",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 39,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1222,
+              "end_ix": 1233,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: Package c14bazAAR",
+                "url": "https://cran.r-project.org/package=c14bazAAR#:~:text=archive",
+                "text": "archive.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 18,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 5,
+                  "end_line_num": 10
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1452,
+              "end_ix": 1463,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "c14bazAAR package - RDocumentation",
+                "url": "https://www.rdocumentation.org/packages/c14bazAAR/versions/1.2.0#:~:text=",
+                "text": "# Last Published",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 44,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 7,
+                  "end_line_num": 10
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1723,
+              "end_ix": 1735,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "rOpenSci | When Field or Lab Work is not an Option - Leveraging Open Data Resources for Remote Research",
+                "url": "https://ropensci.org/blog/2020/05/19/covid-19-open-data/#:~:text=Tuesday%2C%20May%2019%2C%202020%20From,BY%20license",
+                "text": "Tuesday, May 19, 2020 From rOpenSci (https://ropensci.org/blog/2020/05/19/covid-19-open-data/). Except where otherwise noted, content on this site is licensed under the CC-BY license.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 21,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 55,
+                  "end_line_num": 63
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1951,
+              "end_ix": 1962,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "c14bazAAR \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/post/c14bazaar/#:~:text=c14bazAAR",
+                "text": "c14bazAAR",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 2,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 86,
+                  "end_line_num": 94
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2203,
+              "end_ix": 2215,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) NeoNet Dataset. Radiocarbon Dates for the Late Mesolithic/Early Neolithic Transition in the North Central-Western Mediterranean Basin",
+                "url": "https://www.researchgate.net/publication/358849119_NeoNet_Dataset_Radiocarbon_Dates_for_the_Late_MesolithicEarly_Neolithic_Transition_in_the_North_Central-Western_Mediterranean_Basin#:~:text=Huet%20T%2C%20Cubas%20M%2C%20Gibaja,the%20Late%20Mesolithic%2FE%20arly%20Neolithic",
+                "text": "Huet T, Cubas M, Gibaja JF, Oms FX, Mazzucco N 2022 NeoNet Dataset. Radiocarbon Dates for the Late Mesolithic/E arly Neolithic",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 29,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 19,
+                  "end_line_num": 25
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2215,
+              "end_ix": 2227,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) NeoNet Dataset. Radiocarbon Dates for the Late Mesolithic/Early Neolithic Transition in the North Central-Western Mediterranean Basin",
+                "url": "https://www.researchgate.net/publication/358849119_NeoNet_Dataset_Radiocarbon_Dates_for_the_Late_MesolithicEarly_Neolithic_Transition_in_the_North_Central-Western_Mediterranean_Basin#:~:text=Indeed%2C%20the%20dataset%20is%20linked,package%20c14bazAAr%2C%20R%20function%20get_neonet",
+                "text": "Indeed, the dataset is linked to an opensource R Shiny interactive web app (NeoNet app), and a getter function (R package c14bazAAr, R function get_neonet).",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 28,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 79,
+                  "end_line_num": 81
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2440,
+              "end_ix": 2454,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Explaining population booms and busts in Mid-Holocene Europe - PubMed",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/37291136/#:~:text=Explaining%20population%20booms%20and%20busts,Holocene%20Europe",
+                "text": "Explaining population booms and busts in Mid-Holocene Europe",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 56,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 255,
+                  "end_line_num": 263
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2454,
+              "end_ix": 2464,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n            Explaining population booms and busts in Mid-Holocene Europe - PMC\n        ",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10250413/#:~:text=We%20used%20a%20database%20of,In%20order",
+                "text": "We used a database of curated radiocarbon dates provided by the c14bazAAR R package75 (version from 2021-09-08; data sets included are listed in Table\u00a01). These are supplemented by a series of published and yet unpublished dates from regional studies in western central Europe76\u201378. In order",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 51,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301046\u2020L19-L27\u3011",
+              "start_idx": 95,
+              "end_idx": 107,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "BORIS",
+              "url": "https://boris.unibe.ch/127056/#:~:text=Schmid%2C%20Clemens%3B%20Seidensticker%2C%20Dirk%3B%20Knitter%2C,Software%20%26%20Other%20Digital%20Items",
+              "pub_date": null,
+              "snippet": "Schmid, Clemens; Seidensticker, Dirk; Knitter, Daniel; Hinz, Martin; Matzig, David; Hamer, Wolfgang; Schm\u00fctz, Kay (2018).  c14bazAAR: Download and Prepare C14 Dates from Different Source Databases.  [Software & Other Digital Items]",
+              "attribution": "boris.unibe.ch"
+            },
+            {
+              "matched_text": "\u301035\u2020L1-L4\u3011",
+              "start_idx": 277,
+              "end_idx": 287,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "version 1.0.2 \u00b7 cran/c14bazAAR@f7530e3 \u00b7 GitHub",
+              "url": "https://github.com/cran/c14bazAAR/commit/f7530e3ee49e2784f59db038df8568a61d65d61b#:~:text=nevrome%20authored%20and%20cran,Oct%2028%2C%202018",
+              "pub_date": null,
+              "snippet": "nevrome authored and cran-robot committed Oct 28, 2018",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u30103\u2020L32-L39\u3011",
+              "start_idx": 520,
+              "end_idx": 531,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Journal of Open Source Software: c14bazAAR: An R package for downloading and preparing C14 dates from different source databases",
+              "url": "https://doi.org/10.21105/joss.01914#:~:text=Schmid%20et%20al,01914",
+              "pub_date": null,
+              "snippet": "Schmid et al., (2019). c14bazAAR: An R package for downloading and preparing C14 dates from different source databases. Journal of Open Source Software, 4(43), 1914, https://doi.org/10.21105/joss.01914",
+              "attribution": "doi.org"
+            },
+            {
+              "matched_text": "\u301037\u2020L1-L4\u3011",
+              "start_idx": 712,
+              "end_idx": 722,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "version 1.0.3 \u00b7 cran/c14bazAAR@2906f09 \u00b7 GitHub",
+              "url": "https://github.com/cran/c14bazAAR/commit/2906f095c8144ad5b25686874e32fa5b0a857e18#:~:text=nevrome%20authored%20and%20cran,Aug%202%2C%202019",
+              "pub_date": null,
+              "snippet": "nevrome authored and cran-robot committed Aug 2, 2019",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301039\u2020L1-L4\u3011",
+              "start_idx": 975,
+              "end_idx": 985,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "version 1.2.0 \u00b7 cran/c14bazAAR@1469d50 \u00b7 GitHub",
+              "url": "https://github.com/cran/c14bazAAR/commit/1469d50e425ef53a6de1d0d4cd0c3107cb937d1b#:~:text=nevrome%20authored%20and%20cran,Jan%2012%2C%202020",
+              "pub_date": null,
+              "snippet": "nevrome authored and cran-robot committed Jan 12, 2020",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301018\u2020L5-L10\u3011",
+              "start_idx": 1222,
+              "end_idx": 1233,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: Package c14bazAAR",
+              "url": "https://cran.r-project.org/package=c14bazAAR#:~:text=archive",
+              "pub_date": null,
+              "snippet": "archive.",
+              "attribution": "cran.r-project.org"
+            },
+            {
+              "matched_text": "\u301044\u2020L7-L10\u3011",
+              "start_idx": 1452,
+              "end_idx": 1463,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "c14bazAAR package - RDocumentation",
+              "url": "https://www.rdocumentation.org/packages/c14bazAAR/versions/1.2.0#:~:text=",
+              "pub_date": null,
+              "snippet": "# Last Published",
+              "attribution": "rdocumentation.org"
+            },
+            {
+              "matched_text": "\u301021\u2020L55-L63\u3011",
+              "start_idx": 1723,
+              "end_idx": 1735,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "rOpenSci | When Field or Lab Work is not an Option - Leveraging Open Data Resources for Remote Research",
+              "url": "https://ropensci.org/blog/2020/05/19/covid-19-open-data/#:~:text=Tuesday%2C%20May%2019%2C%202020%20From,BY%20license",
+              "pub_date": null,
+              "snippet": "Tuesday, May 19, 2020 From rOpenSci (https://ropensci.org/blog/2020/05/19/covid-19-open-data/). Except where otherwise noted, content on this site is licensed under the CC-BY license.",
+              "attribution": "ropensci.org"
+            },
+            {
+              "matched_text": "\u30102\u2020L86-L94\u3011",
+              "start_idx": 1951,
+              "end_idx": 1962,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "c14bazAAR \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/post/c14bazaar/#:~:text=c14bazAAR",
+              "pub_date": null,
+              "snippet": "c14bazAAR",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u301029\u2020L19-L25\u3011",
+              "start_idx": 2203,
+              "end_idx": 2215,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) NeoNet Dataset. Radiocarbon Dates for the Late Mesolithic/Early Neolithic Transition in the North Central-Western Mediterranean Basin",
+              "url": "https://www.researchgate.net/publication/358849119_NeoNet_Dataset_Radiocarbon_Dates_for_the_Late_MesolithicEarly_Neolithic_Transition_in_the_North_Central-Western_Mediterranean_Basin#:~:text=Huet%20T%2C%20Cubas%20M%2C%20Gibaja,the%20Late%20Mesolithic%2FE%20arly%20Neolithic",
+              "pub_date": null,
+              "snippet": "Huet T, Cubas M, Gibaja JF, Oms FX, Mazzucco N 2022 NeoNet Dataset. Radiocarbon Dates for the Late Mesolithic/E arly Neolithic",
+              "attribution": "researchgate.net"
+            },
+            {
+              "matched_text": "\u301028\u2020L79-L81\u3011",
+              "start_idx": 2215,
+              "end_idx": 2227,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) NeoNet Dataset. Radiocarbon Dates for the Late Mesolithic/Early Neolithic Transition in the North Central-Western Mediterranean Basin",
+              "url": "https://www.researchgate.net/publication/358849119_NeoNet_Dataset_Radiocarbon_Dates_for_the_Late_MesolithicEarly_Neolithic_Transition_in_the_North_Central-Western_Mediterranean_Basin#:~:text=Indeed%2C%20the%20dataset%20is%20linked,package%20c14bazAAr%2C%20R%20function%20get_neonet",
+              "pub_date": null,
+              "snippet": "Indeed, the dataset is linked to an opensource R Shiny interactive web app (NeoNet app), and a getter function (R package c14bazAAr, R function get_neonet).",
+              "attribution": "researchgate.net"
+            },
+            {
+              "matched_text": "\u301056\u2020L255-L263\u3011",
+              "start_idx": 2440,
+              "end_idx": 2454,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Explaining population booms and busts in Mid-Holocene Europe - PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/37291136/#:~:text=Explaining%20population%20booms%20and%20busts,Holocene%20Europe",
+              "pub_date": null,
+              "snippet": "Explaining population booms and busts in Mid-Holocene Europe",
+              "attribution": "pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301051\u2020L1-L4\u3011",
+              "start_idx": 2454,
+              "end_idx": 2464,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n            Explaining population booms and busts in Mid-Holocene Europe - PMC\n        ",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10250413/#:~:text=We%20used%20a%20database%20of,In%20order",
+              "pub_date": null,
+              "snippet": "We used a database of curated radiocarbon dates provided by the c14bazAAR R package75 (version from 2021-09-08; data sets included are listed in Table\u00a01). These are supplemented by a series of published and yet unpublished dates from regional studies in western central Europe76\u201378. In order",
+              "attribution": "pmc.ncbi.nlm.nih.gov"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b84c4be67c81919c56bb1a4cf47c73",
+          "async_task_title": "Evidence Collection for c14bazAAR"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "c0cf74e0-a2bb-4b69-88ad-e655f9ceeadf",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "076ebb91-41ad-46ed-9526-92798bc7492b",
+  "plugin_ids": null,
+  "conversation_id": "67b84c32-14b0-8004-bbfd-4c46db05bee6",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://ropensci.org/blog/2020/05/19/covid-19-open-data/",
+    "https://www.nature.com/articles/s41598-023-35920-z",
+    "https://www.rdocumentation.org/packages/c14bazAAR/versions/1.2.0"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b84c32-14b0-8004-bbfd-4c46db05bee6"
+}

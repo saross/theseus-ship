@@ -1,0 +1,1687 @@
+{
+  "title": "Impulse of Inquiry Bibliography",
+  "create_time": 1745049247.379237,
+  "update_time": 1745107757.75207,
+  "mapping": {
+    "client-created-root": {
+      "id": "client-created-root",
+      "message": null,
+      "parent": null,
+      "children": [
+        "469702c6-98f9-4459-8421-8d6de4eb0cc6"
+      ]
+    },
+    "469702c6-98f9-4459-8421-8d6de4eb0cc6": {
+      "id": "469702c6-98f9-4459-8421-8d6de4eb0cc6",
+      "message": {
+        "id": "469702c6-98f9-4459-8421-8d6de4eb0cc6",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "client-created-root",
+      "children": [
+        "b1bd1d4c-c88e-4994-b2f5-1a149d7b5ab7"
+      ]
+    },
+    "b1bd1d4c-c88e-4994-b2f5-1a149d7b5ab7": {
+      "id": "b1bd1d4c-c88e-4994-b2f5-1a149d7b5ab7",
+      "message": {
+        "id": "b1bd1d4c-c88e-4994-b2f5-1a149d7b5ab7",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745049247.117,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I'm researching the concept of \"impulse of inquiry\" in scientific and philosophical literature - that moment when a researcher notices something unexpected or anomalous and pauses to investigate. This is related to concepts like abductive reasoning, serendipitous discovery, and anomaly detection, but specifically focuses on the initial recognition that \"something's wrong\" with existing patterns or explanations.\n\nPlease provide a comprehensive annotated bibliography of:\n1. Philosophical works on inductive and abductive reasoning, especially those discussing the initial moment of pattern deviation recognition\n2. Scientific studies or historical accounts of breakthrough moments where scientists noticed unexpected patterns\n3. Cognitive science research on insight, \"aha moments,\" and pattern recognition/disruption\n4. Technical papers discussing limitations of statistical/probabilistic models (including machine learning) in detecting meaningful anomalies\n5. Literature on the epistemology of scientific discovery vs. justification\n6. Contemporary philosophy papers on AI systems' limitations in genuine inductive reasoning\n\nFor each source, please provide:\n- Full citation in APA format\n- Brief summary of key concepts relevant to \"impulse of inquiry\"\n- Specific quotes or passages that might be useful\n- Assessment of how it relates to limitations in AI systems' capacity for inductive reasoning\n\nPlease focus on peer-reviewed academic sources, with particular emphasis on widely-cited or foundational works in these fields."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_github_repos": [],
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "932ad5028e585673-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "469702c6-98f9-4459-8421-8d6de4eb0cc6",
+      "children": [
+        "98fbf950-b02e-4195-8abb-bb69c15ccee4"
+      ]
+    },
+    "98fbf950-b02e-4195-8abb-bb69c15ccee4": {
+      "id": "98fbf950-b02e-4195-8abb-bb69c15ccee4",
+      "message": {
+        "id": "98fbf950-b02e-4195-8abb-bb69c15ccee4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745049253.561144,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "This is a rich and interdisciplinary request\u2014thank you for laying it out so clearly! To make sure I focus the research effectively, could you please clarify a few points:\n\n1. Time range: Are you looking only for contemporary sources (e.g., post-2000), or should I include foundational older works (e.g., Peirce, Kuhn, Popper)?\n2. Disciplinary focus: Would you prefer more emphasis on philosophy, history of science, or cognitive science, or should all six categories be weighted equally?\n3. Application to AI: Do you want a separate section that draws out implications for AI from each domain, or is the overall goal to inform AI research on inductive reasoning?\n\nOnce I have that clarified, I\u2019ll start pulling together a comprehensive annotated bibliography as requested."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3",
+          "parent_id": "b1bd1d4c-c88e-4994-b2f5-1a149d7b5ab7",
+          "request_id": "932ad5028e585673-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b1bd1d4c-c88e-4994-b2f5-1a149d7b5ab7",
+      "children": [
+        "8ab30047-9103-4651-91eb-be473e6d3f2b"
+      ]
+    },
+    "8ab30047-9103-4651-91eb-be473e6d3f2b": {
+      "id": "8ab30047-9103-4651-91eb-be473e6d3f2b",
+      "message": {
+        "id": "8ab30047-9103-4651-91eb-be473e6d3f2b",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1745049253.561228,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3",
+          "parent_id": "98fbf950-b02e-4195-8abb-bb69c15ccee4",
+          "request_id": "932ad5028e585673-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "98fbf950-b02e-4195-8abb-bb69c15ccee4",
+      "children": [
+        "9bb2b946-9b6f-4c96-8ca2-8289a86ea8be"
+      ]
+    },
+    "9bb2b946-9b6f-4c96-8ca2-8289a86ea8be": {
+      "id": "9bb2b946-9b6f-4c96-8ca2-8289a86ea8be",
+      "message": {
+        "id": "9bb2b946-9b6f-4c96-8ca2-8289a86ea8be",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745049291.486,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Both. I want recent works, especially as relating to AI, and foundational ones. HPS construed broadly.\nDiscuss the implications to AI for each source, but it is not required."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "selected_github_repos": [],
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "932ad617d8115673-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8ab30047-9103-4651-91eb-be473e6d3f2b",
+      "children": [
+        "29293bbf-de1b-402e-80b7-9557148b00cb"
+      ]
+    },
+    "29293bbf-de1b-402e-80b7-9557148b00cb": {
+      "id": "29293bbf-de1b-402e-80b7-9557148b00cb",
+      "message": {
+        "id": "29293bbf-de1b-402e-80b7-9557148b00cb",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745049300.263384,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Great, I\u2019ll compile a comprehensive annotated bibliography covering foundational and recent peer-reviewed academic works across philosophy, history of science, cognitive science, and technical literature. Each source will highlight how it relates to the concept of the \"impulse of inquiry\"\u2014the initial recognition of anomalies\u2014and where relevant, assess implications for AI's limitations in inductive reasoning.\n\nI\u2019ll let you know as soon as it\u2019s ready for review."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3",
+          "parent_id": "9bb2b946-9b6f-4c96-8ca2-8289a86ea8be",
+          "request_id": "932ad617d8115673-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9bb2b946-9b6f-4c96-8ca2-8289a86ea8be",
+      "children": [
+        "19885a7e-46cf-4316-bcdb-a78c5c514176"
+      ]
+    },
+    "19885a7e-46cf-4316-bcdb-a78c5c514176": {
+      "id": "19885a7e-46cf-4316-bcdb-a78c5c514176",
+      "message": {
+        "id": "19885a7e-46cf-4316-bcdb-a78c5c514176",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745049291.769127,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "{\n  \"task_violates_safety_guidelines\": false,\n  \"user_def_doesnt_want_research\": false,\n  \"response\": \"Great, I\u2019ll compile a comprehensive annotated bibliography covering foundational and recent peer-reviewed academic works across philosophy, history of science, cognitive science, and technical literature. Each source will highlight how it relates to the concept of the \\\"impulse of inquiry\\\"\u2014the initial recognition of anomalies\u2014and where relevant, assess implications for AI's limitations in inductive reasoning.\\n\\nI\u2019ll let you know as soon as it\u2019s ready for review.\",\n  \"title\": \"Annotated Bibliography on the Impulse of Inquiry and Its Relevance to AI\",\n  \"prompt\": \"Create a comprehensive annotated bibliography of peer-reviewed academic sources\u2014both foundational and recent\u2014focused on the concept of the \\\"impulse of inquiry\\\": the moment when a researcher recognizes an unexpected anomaly that disrupts existing patterns or explanations. Organize the bibliography into six sections:\\n\\n1. Philosophical works on inductive and abductive reasoning, with emphasis on the recognition of pattern deviation or anomalies.\\n2. Historical and scientific accounts of breakthrough moments when researchers noticed unexpected patterns.\\n3. Cognitive science literature on insight, \\\"aha moments,\\\" pattern recognition, and disruption.\\n4. Technical papers on limitations of statistical/probabilistic models, including machine learning, in detecting meaningful anomalies.\\n5. Literature on the epistemology of scientific discovery vs. justification.\\n6. Contemporary philosophy of AI and its limits in performing genuine inductive reasoning.\\n\\nFor each source, provide:\\n- Full APA citation\\n- Summary of key ideas as they relate to \\\"impulse of inquiry\\\"\\n- Direct quote(s) where available, useful for analyzing anomaly recognition\\n- Assessment of implications for AI systems\u2019 capacity for inductive reasoning, where relevant\\n\\nInclude both foundational figures (e.g., Peirce, Kuhn, Popper) and contemporary thinkers. Prioritize widely-cited or influential works. Format the bibliography with clear section headers, and ensure clarity and depth throughout. The output should be in English.\"\n}"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3",
+          "parent_id": "29293bbf-de1b-402e-80b7-9557148b00cb",
+          "request_id": "932ad617d8115673-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "29293bbf-de1b-402e-80b7-9557148b00cb",
+      "children": [
+        "d58de6d8-f67d-46eb-96d5-ef5d52244532"
+      ]
+    },
+    "d58de6d8-f67d-46eb-96d5-ef5d52244532": {
+      "id": "d58de6d8-f67d-46eb-96d5-ef5d52244532",
+      "message": {
+        "id": "d58de6d8-f67d-46eb-96d5-ef5d52244532",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1745049300.263507,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Annotated Bibliography on the Impulse of Inquiry and Its Relevance to AI",
+          "async_task_prompt": "Create a comprehensive annotated bibliography of peer-reviewed academic sources\u2014both foundational and recent\u2014focused on the concept of the \"impulse of inquiry\": the moment when a researcher recognizes an unexpected anomaly that disrupts existing patterns or explanations. Organize the bibliography into six sections:\n\n1. Philosophical works on inductive and abductive reasoning, with emphasis on the recognition of pattern deviation or anomalies.\n2. Historical and scientific accounts of breakthrough moments when researchers noticed unexpected patterns.\n3. Cognitive science literature on insight, \"aha moments,\" pattern recognition, and disruption.\n4. Technical papers on limitations of statistical/probabilistic models, including machine learning, in detecting meaningful anomalies.\n5. Literature on the epistemology of scientific discovery vs. justification.\n6. Contemporary philosophy of AI and its limits in performing genuine inductive reasoning.\n\nFor each source, provide:\n- Full APA citation\n- Summary of key ideas as they relate to \"impulse of inquiry\"\n- Direct quote(s) where available, useful for analyzing anomaly recognition\n- Assessment of implications for AI systems\u2019 capacity for inductive reasoning, where relevant\n\nInclude both foundational figures (e.g., Peirce, Kuhn, Popper) and contemporary thinkers. Prioritize widely-cited or influential works. Format the bibliography with clear section headers, and ensure clarity and depth throughout. The output should be in English.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Annotated Bibliography on the Impulse of Inquiry and Its Relevance to AI",
+            "completed_with_time": "Research completed in 19m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3",
+          "parent_id": "19885a7e-46cf-4316-bcdb-a78c5c514176",
+          "request_id": "932ad617d8115673-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_680356d45b708191bcc5c0fa89b83a3b",
+          "async_task_conversation_id": "680356d4-6140-8004-8c0e-5fac83d04810",
+          "async_task_created_at": "2025-04-19 07:55:00.624545+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "19885a7e-46cf-4316-bcdb-a78c5c514176",
+      "children": [
+        "7f95850b-7641-434a-9f77-e3efaf61af28"
+      ]
+    },
+    "7f95850b-7641-434a-9f77-e3efaf61af28": {
+      "id": "7f95850b-7641-434a-9f77-e3efaf61af28",
+      "message": {
+        "id": "7f95850b-7641-434a-9f77-e3efaf61af28",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1745050450.732592,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "# The Impulse of Inquiry: An Annotated Bibliography\n\n## 1. Philosophical Foundations: Induction, Abduction, and Anomalies\n\n- **Peirce, C. S. (1903/1934).** *Collected Papers of Charles Sanders Peirce* (Vol. 5). Cambridge, MA: Harvard University Press. \u2013 *Peirce introduced **abductive reasoning** as the logical process sparked by surprise*. In Peirce\u2019s view, scientific inquiry often **begins with an unexpected observation** that current theories cannot explain. He famously schematized abduction as: *\u201cThe surprising fact, C, is observed. But if A were true, C would be a matter of course. Hence, there is reason to suspect that A is true\u201d*\u30105\u2020L82-L89\u3011. This captures the **impulse of inquiry**: the moment an anomaly (\u201csurprising fact\u201d) compels a researcher to hypothesize a new explanatory idea. Peirce emphasized that abduction \u2013 unlike deduction or induction \u2013 is the only logical operation that **introduces new ideas**\u30105\u2020L59-L67\u3011. *Implication for AI:* Abduction requires creativity and context; purely algorithmic systems struggle to replicate this leap from anomaly to hypothesis, underscoring AI\u2019s limitations in generating genuinely new explanatory theories.\n\n- **Hanson, N. R. (1958).** *Patterns of Discovery: An Inquiry into the Conceptual Foundations of Science*. Cambridge University Press. \u2013 *Hanson argued that what scientists **observe** and how they generate hypotheses are heavily theory-laden*. He challenged the notion that hypothesis-formation is a mysterious flash of genius, suggesting instead that it is often a **reasonable, guided process**\u30108\u2020L23-L30\u3011. Crucially, Hanson noted that a **good theory organizes data such that previously surprising or anomalous phenomena become expected**: *\u201cA theory is an intelligible, systematic, conceptual pattern for the observed data. The value of this pattern lies in its capacity to unite phenomena which, without the theory, are either surprising, anomalies, or wholly unnoticed\u201d*\u30108\u2020L43-L46\u3011. In other words, recognizing an anomaly can be the first step toward a new conceptual framework that **makes the anomaly intelligible**. *Implication for AI:* Hanson\u2019s view implies that **contextual knowledge** guides anomaly recognition. AI systems lacking rich conceptual frameworks may fail to notice subtle anomalies or, conversely, might not realize an \u201coutlier\u201d is actually meaningful, since they lack the theory-laden intuition that experts use to see pattern deviations as significant.\n\n- **Popper, K. (1959).** *The Logic of Scientific Discovery*. London: Hutchinson. \u2013 *Popper\u2019s philosophy centers on how science progresses by identifying and testing anomalies (potential falsifications) rather than by mere pattern accumulation*. He contended that **science begins with problems**, often arising from contradictions or unexpected findings, not just with observations\u301024\u2020L288-L292\u3011. A single reproducible anomaly \u2013 a **counter-example to a prevailing theory** \u2013 is, in principle, enough to refute the theory. However, Popper acknowledged that in practice scientists do not jettison a theory at the first odd result; they often scrutinize the anomaly for error or treat it as an anomaly to be explained later\u301024\u2020L308-L316\u3011. This underscores the *tentative* role of anomalies: they **inspire new conjectures** to solve the \u201cproblem\u201d they pose. Popper famously maintained that the *generation* of new hypotheses is not governed by logic (it may be a creative leap), but the **justification** of hypotheses must be rigorous. *Implication for AI:* Traditional AI and machine learning, which generalize from data, align more with induction than Popper\u2019s falsification. They may not actively seek out \u201cproblems\u201d or surprises to refute their own models. Popper\u2019s emphasis on bold conjectures and refutations suggests that an AI lacking an inbuilt drive to **find counterexamples** or novel anomalies will have limited capacity for the kind of radical theory-change seen in human science.\n\n- **Harman, G. H. (1965).** *The Inference to the Best Explanation*. *Philosophical Review, 74*(1), 88-95. \u2013 *Harman introduced the term \u201c**inference to the best explanation**\u201d (IBE), clarifying the reasoning process scientists use when confronted with puzzling data*. IBE is closely related to Peirce\u2019s abduction: from a set of potential explanations for an anomaly, one infers the truth of the **hypothesis that best explains the evidence**. Harman explicitly linked this to earlier notions of abduction, noting that *\u201cthe inference to the best explanation corresponds approximately to what others have called \u2018abduction\u2019 or \u2018hypothetical inference\u2019\u201d*\u301031\u2020L584-L592\u3011. For example, astronomers in the 19th century faced an anomaly in Mercury\u2019s orbit and ultimately inferred that Einstein\u2019s theory (curved spacetime) was a better explanation than ad hoc tweaks to Newtonian gravity. Harman\u2019s work solidified a normative account of how recognizing an anomaly leads to choosing a **plausible explanatory theory** over competitors\u301031\u2020L592-L599\u3011. *Implication for AI:* Most AI systems do not perform true IBE \u2013 they do not propose *explanations* for anomalies, but rather adjust parameters to better fit data. Harman\u2019s framework suggests that to emulate human-like inquiry, AI would need the ability to generate and compare **alternative explanatory models** when faced with anomalous inputs, rather than just labeling them as outliers.\n\n## 2. Historical and Scientific Breakthroughs: Recognizing the Unexpected\n\n- **Kuhn, T. S. (1962).** *The Structure of Scientific Revolutions*. University of Chicago Press. \u2013 *Kuhn\u2019s influential analysis of scientific history highlights the central role of **anomalies** in triggering breakthroughs*. In periods of \u201cnormal science,\u201d researchers work within a paradigm and often **set aside anomalous results** as errors or minor puzzles. But when certain anomalies persist and resist all normal explanations, they can provoke a crisis. Kuhn observed that *\u201cdiscovery commences with the awareness of anomaly, i.e., with the recognition that nature has somehow violated the paradigm-induced expectations that govern normal science\u201d*\u301018\u2020L2630-L2637\u3011. He describes how scientists may then enter an exploratory phase, examining the anomaly more deeply, and ultimately **adjust or replace the paradigm** so that the once-anomalous result is now expected\u301018\u2020L2630-L2637\u3011. For instance, the discovery of X-rays and the orbit of Uranus\u2019s irregularities were surprises that eventually led to new theoretical frameworks (electromagnetic theory for X-rays; Neptune\u2019s prediction for Uranus\u2019s orbit). Kuhn\u2019s historical case studies show that **noticing an unexpected pattern** (like a spectral line that doesn\u2019t fit, or a planet\u2019s orbit deviation) was often the first step in a revolution\u301017\u2020L2618-L2625\u3011\u301018\u2020L2630-L2637\u3011. *Implication for AI:* Kuhn\u2019s work suggests that genuinely creative science requires not only pattern recognition but the daring to treat anomalies as **potentially meaningful** rather than noise. An AI scientist would need to determine when an outlier is telling it \u201cnature\u2019s paradigm has shifted.\u201d Currently, most AI lack the meta-theoretical judgment to decide when an anomaly calls for a wholesale change in model versus a minor tweak.\n\n- **Merton, R. K. (1948).** *The bearing of empirical research on the development of social theory*. *American Sociological Review, 13*(5), 505-515. \u2013 *Sociologist Robert Merton coined the term \u201c**serendipity pattern**\u201d to describe how unexpected observations can spur new theories*. He noted that scientific discovery is often facilitated by a prepared mind recognizing something unusual. Merton defined the *serendipity pattern* as *\u201cthe fairly common experience of observing an unanticipated, anomalous, and strategic datum which becomes the occasion for developing a new theory or for extending an existing theory\u201d*\u301049\u2020L198-L204\u3011. Classic examples include the discovery of penicillin: Alexander Fleming noticed an odd mold killing bacteria on a petri dish he hadn\u2019t intended to cultivate. Rather than discard this as a contaminant, Fleming recognized the anomaly\u2019s significance. Merton\u2019s analysis emphasizes **three components**: the observation is *unanticipated* (not predicted by current ideas), *anomalous* (appears inconsistent with existing explanations), and *strategic* (potentially important to investigate)\u301049\u2020L198-L204\u3011. When these conditions are met, the anomaly often leads to a fruitful line of inquiry. *Implication for AI:* This highlights the importance of **contextual judgment** \u2013 distinguishing a strategic anomaly from a trivial outlier. A challenge for AI is developing an analog of the \u201cprepared mind\u201d to know which unexpected data point is worth pursuing as a breakthrough versus which to ignore. Without this, AI risk missing the serendipitous discoveries that a human scientist might catch.\n\n- **Copeland, S. M. (2018).** \u201cFleming Leapt on the Unusual like a Weasel on a Vole\u201d: *Challenging the Paradigms of Discovery in Science*. *Perspectives on Science, 26*(6), 694\u2013721. \u2013 *Copeland re-examines the famous case of Alexander Fleming\u2019s discovery of penicillin to challenge simplistic views of scientific serendipity*. The traditional story portrays Fleming\u2019s finding as pure chance. Copeland argues instead that **Fleming\u2019s attentiveness and mindset were crucial**. Fleming had a habit of **noticing \u201codd observations\u201d** in his lab \u2013 for example, he once intentionally let his nasal mucus drip onto a culture plate, which led him to discover the antibacterial enzyme lysozyme\u301039\u2020L162-L170\u3011. When he observed a mold killing bacteria on an accidentally contaminated plate in 1928, he didn\u2019t dismiss it; as one colorful description puts it, *\u201cFleming leapt on the unusual like a weasel on a vole,\u201d* discovering what others might have tossed out as an error\u301039\u2020L169-L177\u3011. Copeland\u2019s analysis shows that **actively embracing anomalies** (rather than tidying them away) was key to Fleming\u2019s success. She uses this and similar cases to argue that discovery often requires breaking from the standard \u201cjustification\u201d paradigm \u2013 it requires curiosity and courage to pursue anomalies. *Implication for AI:* An AI in Fleming\u2019s position might have flagged the moldy Petri dish as bad data and discarded it. Copeland\u2019s study implies that enabling AI to emulate this human-like curiosity \u2013 effectively **treating anomalies as opportunities** rather than nuisances \u2013 is crucial if we want AI systems to make groundbreaking discoveries on their own.\n\n- **Neptune\u2019s Prediction (1846) \u2013 historical case.** *No single author (primary sources: Leverrier, J. & Adams, J.; see Kuhn 1957)*. \u2013 *The discovery of Neptune is a classic example of an anomaly leading to a new entity rather than a new theory*. By the 1840s, astronomers had mapped Uranus\u2019s orbit and noticed **discrepancies**: Uranus did not move exactly as Newton\u2019s laws predicted. Instead of dismissing these deviations, mathematicians Urbain Le Verrier in France and John Couch Adams in England independently treated them as a **clue to an unseen cause**. They hypothesized another planet\u2019s gravity was perturbing Uranus. Le Verrier famously computed the new planet\u2019s likely position from the anomaly, and Neptune was observed in 1846 exactly where predicted\u301032\u2020L13-L22\u3011. This episode illustrates a form of the impulse of inquiry: the anomaly in Uranus\u2019s orbit was small but persistent, and recognizing it as *\u201cnot a mistake but a message\u201d* led to the discovery of Neptune. It reinforced scientists\u2019 confidence that **well-entrenched theories (Newtonian gravity)** could be trusted to predict new phenomena if one was alert to anomalies. *Implication for AI:* Modern AI systems excel at pattern-fitting, but this case is about **deviations from a pattern signaling something new**. An AI astronomer might need to recognize when residual errors in orbital data are not just noise but indicate a new object. This requires a form of reasoning beyond curve-fitting \u2013 connecting deviations to novel hypotheses (in this case, postulating a new planet). The Neptune story shows the value of incorporating anomaly-driven hypothesis generation into AI scientific assistants.\n\n## 3. Cognitive Science: Insight, \u201cAha!\u201d Moments, and Pattern Disruption\n\n- **Dunbar, K. (1995).** *How Scientists Really Reason: Scientific Reasoning in Real-World Laboratories*. In R. J. Sternberg & J. E. Davidson (Eds.), *The Nature of Insight* (pp. 365\u2013395). MIT Press. \u2013 *Cognitive psychologist Kevin Dunbar conducted **in vivo studies** observing molecular biology labs to see how scientists handle unexpected findings*. He found that anomalies in experimental data are common, but scientists do not always recognize their significance immediately. Often, an anomalous result is first attributed to a **methodological error** or noise \u2013 researchers will repeat the experiment or check equipment\u301055\u2020L31-L34\u3011. Dunbar observed that only when an anomaly **persists across repeated tests** (what he calls *\u201cconsistent anomalous results\u201d*) do scientists begin to consider revising their hypotheses or models\u301055\u2020L31-L34\u3011. He documented strategies like bringing in analogies (comparing the anomaly to known phenomena in other contexts) and distributed reasoning in groups to make sense of surprises. One key finding is that a **series of anomalies** is much more likely to trigger a conceptual change than a single odd data point\u301055\u2020L29-L37\u3011\u301055\u2020L31-L34\u3011. This aligns with the idea of an \u201cimpulse of inquiry\u201d: the first surprise raises a flag, and repeated surprises drive the point home that something genuinely new is happening. *Implication for AI:* Human scientists exercise judgment about whether an anomaly merits rethinking a theory. An AI may need similar heuristics \u2013 for example, *if the same anomaly recurs, consider a new hypothesis*. Dunbar\u2019s work also suggests incorporating collaborative and analogical reasoning in AI, so that an AI encountering an anomaly can draw on broader knowledge (as humans do) to hypothesize an explanation rather than simply flagging an outlier.\n\n- **Jung-Beeman, M., Bowden, E. M., et al. (2004).** *Neural Activity When People Solve Verbal Problems with Insight*. *PLoS Biology, 2*(4), e97. \u2013 *This study used brain imaging to reveal what happens in the moment of **insight**, the sudden \u201cAha!\u201d that often follows a mental impasse*. Participants solved word puzzles, sometimes by methodical trial-and-error and sometimes by a flash of insight. Jung-Beeman and colleagues discovered a distinct neural signature for insight solutions: about a third of a second before the subject consciously arrives at the answer, there is a burst of high-frequency (gamma) activity in the brain\u2019s right anterior temporal lobe\u301058\u2020L193-L202\u3011. This region is associated with making distant connections between ideas. The authors describe the insight moment as one where the person *\u201cengage[s] distinct neural and cognitive processes that allow them to see connections that previously eluded them\u201d*\u301058\u2020L193-L202\u3011. In cognitive terms, an insight often occurs when an **anomalous cue or impasse** forces a person to restructure their mental representation of the problem. The \u201cAha!\u201d feeling is the conscious awareness of a new pattern or solution emerging \u2013 effectively, the mind accommodating an anomaly in understanding by **reorganizing the pattern**. *Implication for AI:* Current AI problem-solving (e.g., in chess or optimization) doesn\u2019t experience an \u201caha\u201d \u2013 it grinds through possibilities. The neuroscience of insight suggests that human-like AI might require mechanisms to **restructure representations and form novel associations** when routine processing fails. In other words, enabling an AI to simulate that burst of connection-forming which lets it reinterpret an anomaly in a new light could move it closer to human creative problem solving.\n\n- **Kounios, J., & Beeman, M. (2014).** *The Cognitive Neuroscience of Insight*. *Annual Review of Psychology, 65*(1), 71-93. \u2013 *Kounios and Beeman review a decade of research on the \u201caha\u201d phenomenon, defining insight as the process by which a person **suddenly reinterprets a situation or stimulus to yield a non-obvious solution or understanding***\u301059\u2020L297-L305\u3011. This encompasses solving riddles, getting a joke, or recognizing an ambiguous image \u2013 all involve a moment where **old patterns are disrupted and a new pattern is seen**. Key findings highlighted include: (1) **Preparation states** \u2013 people who solve a problem by insight show a different resting-state brain activity and tend to reduce visual input right before the insight (as if focusing inward); (2) **Right-hemisphere involvement** \u2013 as noted in Jung-Beeman et al., the right hemisphere plays a role in weakly activating remote associations, which is useful when the obvious patterns fail; (3) **Emotional \u201cEureka\u201d** \u2013 the burst of joy or relief at an insight likely reinforces the memory of the new discovery. The authors note that insight solutions often feel subjectively sudden, but there is usually an unconscious period of restructuring leading up to them\u301059\u2020L297-L304\u3011\u301058\u2020L193-L202\u3011. In pattern-recognition terms, the brain sometimes must **break out of an entrenched way of seeing** to notice a pattern deviation that leads to the answer. *Implication for AI:* This work implies that an AI might benefit from analogous processes: for instance, stepping back from a problem (reducing certain inputs), randomly combining distant ideas, and even having a form of \u201cmeta-cognition\u201d that monitors impasses and triggers a strategy shift. While today\u2019s AI lacks the spontaneous spark of insight, understanding the cognitive stages of insight can inform designs for AI that, for example, detect when their current model is stuck in a rut and then deliberately explore odd or peripheral connections (akin to how humans ultimately leverage anomalies to gain new insight).\n\n- **Metcalfe, J., & Wiebe, D. (1987).** *\u201cFeeling of Knowing\u201d in Insight and Noninsight Problems*. *Memory & Cognition, 15*(3), 238-246. \u2013 *This classic experiment contrasted how people solve puzzles that require insight versus those solved by analysis, by tracking their subjective sense of progress*. Participants tackled some problems that typically evoke insight (e.g. riddles) and others that are incremental (e.g. math problems), and periodically rated how \u201cwarm\u201d (close to solution) they felt. Metcalfe and Wiebe found that for insight problems, people\u2019s feeling-of-warmth remained low and then **spiked suddenly only when the solution was found**, whereas for analytic problems, the warmth ratings rose gradually. This suggests that insight often comes without conscious forewarning \u2013 the problem may seem impossible (anomalous) until the very moment it is solved. The authors infer that **insight involves a restructuring**: solvers often confront an apparent **impasse (a cognitive anomaly)** and then experience a sudden reorganization of the problem representation, yielding the answer in a flash. This behavioral evidence complements the neurological evidence above. *Implication for AI:* Most AI systems do not have a notion of \u201cfeeling of knowing\u201d \u2013 they cannot report on their confidence in an incomplete solution. These findings hint that an AI capable of insight-like behavior might need to simulate an impasse and restructuring process. For example, an AI could detect when its normal problem-solving heuristics fail (no increase in \u201cwarmth\u201d) and then switch to a different mode that might involve random recombination or relaxation of constraints, potentially leading to a sudden solution. Essentially, enabling an AI to recognize an internal anomaly (like a dead-end in reasoning) and treat that as a cue to **try a new approach** could mimic the human insight pattern.\n\n## 4. Limits of Statistical Models and Machine Learning in Detecting Anomalies\n\n- **Pearl, J. (2018).** *Theoretical Impediments to Machine Learning* (Technical Report R-475). UCLA. \u2013 *Renowned computer scientist Judea Pearl argues that modern AI\u2019s reliance on pure statistical correlation limits its ability to handle novelty and true understanding*. **Current machine learning operates in an \u201cassociational\u201d mode**, mapping inputs to outputs based on patterns seen in training data\u301062\u2020L51-L59\u3011. Pearl contends this entails *\u201csevere theoretical limits on their power and performance\u201d*\u301062\u2020L51-L59\u3011 because such systems **lack a model of the world** and cannot reason about *\u201cinterventions and retrospection\u201d*\u301062\u2020L51-L59\u3011. In practical terms, a statistical learner might flag an extreme outlier (novel input) as low-probability, but it cannot ask *\u201cwhat if\u201d questions* about that anomaly or infer causal structure behind it. Pearl showcases tasks beyond current ML \u2013 like imagining unseen scenarios or explaining an unexpected outcome \u2013 which require **causal and counterfactual reasoning** absent in today\u2019s algorithms\u301062\u2020L53-L59\u3011. An anomaly that doesn\u2019t fit the learned pattern will often simply be ignored or mispredicted by a model, whereas a human scientist would investigate its cause. Pearl\u2019s work (and his book *The Book of Why*) advocates for a **causal inference approach** in AI so that machines can understand *why* a pattern holds and thus notice when an outcome deviates for meaningful reasons. *Implication:* For AI to have an \u201cimpulse of inquiry,\u201d it must go beyond statistical fit. Pearl\u2019s perspective suggests giving AI systems a **causal model of their domain**, enabling them to interpret anomalies as indicators of model deficiencies or new causal factors, rather than just noise.\n\n- **Marcus, G. (2018).** *Deep Learning: A Critical Appraisal*. arXiv preprint arXiv:1801.00631. \u2013 *Psychologist Gary Marcus provides a pointed critique of deep learning systems, highlighting their brittleness and lack of true inference when encountering the unexpected*. Among the *\u201cten concerns\u201d* Marcus raises, several relate directly to anomaly recognition: **data-hungriness and brittleness** mean that if a situation strays even slightly from the training distribution, the AI often fails to cope\u301063\u2020L23-L31\u3011. For example, a deep neural network for image recognition can be **fooled by adversarial examples** \u2013 inputs with tiny perturbations that are meaningless to humans but cause the network to confidently misclassify. This reveals that the network isn\u2019t truly *noticing* an anomaly; rather, it is overly tuned to superficial patterns. Marcus argues that without incorporating symbolic reasoning or prior knowledge, AI systems have *\u201cno understanding of causality, time, or basic physical truths\u201d*, and thus they **cannot discern which novelties matter**. He cites instances where a self-driving car\u2019s vision system failed to recognize an unusual obstacle or where translation algorithms produced nonsensical output for sentences with novel structure. The overarching point is that **probabilistic pattern-matching alone can miss the significance of rare events** \u2013 an AI might lack the conceptual tools to say \u201cthis outcome is weird, let me explore it.\u201d *Implication:* Marcus\u2019s critique underscores the need for **hybrid AI** that combines learning with explicit reasoning. An AI should ideally have mechanisms to flag when it\u2019s extrapolating far outside its training data and to invoke rule-based reasoning or seek additional information. Without this, AI will remain prone to either ignoring meaningful anomalies or being baffled by them, whereas a human scientist would pause and investigate.\n\n- **Szegedy, C., et al. (2014).** *Intriguing properties of neural networks*. In *ICLR 2014* (arXiv:1312.6199). \u2013 *This paper was one of the first to demonstrate \u201c**adversarial examples**,\u201d highlighting a fundamental blind spot in how AI perceives anomalies.* Szegedy and colleagues found that one can take an image that a neural network correctly recognizes (say, a photo of a panda) and add an imperceptibly small perturbation to it such that the network now **misclassifies the image with high confidence** (e.g., as a gibbon). To a human, the modified image looks identical to a panda \u2013 nothing anomalous \u2013 but to the AI it has become something entirely different. Conversely, one can generate images that to humans look like meaningless static but the network confidently \u201csees\u201d as a familiar object. These results reveal that neural nets often rely on very **high-dimensional statistical correlations** that don\u2019t correspond to human-recognizable features. The AI fails to notice that an input is *fundamentally unlike anything it was trained on* \u2013 the concept of \u201cmeaningful anomaly\u201d is absent. As the authors note, these adversarial inputs *\u201creveal a severe limitation\u201d* of current models\u301064\u2020L1-L9\u3011 in that the detectors can be easily subverted and do not align with human judgments of novelty. *Implication:* In the context of inquiry, a system that is so easily fooled clearly lacks the robust notion of reality needed to treat anomalies properly. For AI to engage in scientific-style inquiry, it must have **robust anomaly detection** aligned with human perception \u2013 understanding, for instance, that a panda with subtle pixel-level noise is *still a panda*, whereas a truly anomalous observation (e.g., a panda with six legs) is worth flagging. Adversarial example research pushes AI toward models that **recognize when they are out of their depth**.\n\n- **Chandola, V., Banerjee, A., & Kumar, V. (2009).** *Anomaly Detection: A Survey*. *ACM Computing Surveys, 41*(3), 15. \u2013 *This comprehensive survey of anomaly-detection algorithms in computer science inadvertently underscores the gap between statistical outlier detection and the notion of anomalies as seeds of discovery*. It categorizes techniques (distance-based, density-based, one-class SVMs, etc.) used to detect data points that deviate from a learned model. A key insight is that **what counts as an \u201canomaly\u201d is domain- and context-dependent** \u2013 an outlier in one context may be normal in another. The authors note that many methods struggle with the **\u201csemantic meaningfulness\u201d** of anomalies: *\u201cAnomalies can be defined in numerous ways, and the challenge is that detecting an anomaly that is truly interesting (and not a benign outlier) often requires incorporating domain knowledge\u201d*\u301045\u2020L31-L39\u3011. In other words, a purely statistical method might flag 5% of points as anomalies by some math criterion, but perhaps only one of those is a truly novel, important deviation; the rest might be noise or measurement error. The survey also highlights the issue of **high dimensionality** (where almost every point can seem anomalous on some combination of features) and **evolution over time** (a pattern might be anomalous now but later become common). *Implication:* For an AI, simply having an anomaly detector isn\u2019t enough \u2013 it needs the judgment to ask, *\u201cIs this anomaly meaningful?\u201d*. This often requires background knowledge about which deviations could signal new phenomena. The survey suggests that integrating expert knowledge or adaptive definitions of normality is crucial. In the context of the impulse of inquiry, this means an AI would need a dynamic understanding of its model\u2019s limits \u2013 knowing when an outlier is just noise versus when it\u2019s **evidence that \u201csomething is up\u201d** requiring hypothesis revision.\n\n## 5. Discovery vs. Justification: Epistemological Perspectives\n\n- **Reichenbach, H. (1938).** *Experience and Prediction*. University of Chicago Press. \u2013 *Hans Reichenbach drew a famous distinction between the **context of discovery** and the **context of justification***, shaping mid-20th-century philosophy of science. He argued that how a scientist **arrives at an idea** \u2013 through intuition, accident, or anomaly \u2013 is a psychological/historical matter, not subject to logical analysis. By contrast, how a theory is **tested and justified** can be made rigorous. In Reichenbach\u2019s words, the philosopher of science *\u201cis not interested in the context of discovery, but in the context of justification\u201d*\u301067\u2020L5-L12\u3011. This view implied that the **impulse of inquiry** (the spark from noticing an anomaly) lay outside the scope of philosophy proper \u2013 it was considered an unpredictable leap. The prevailing attitude became that discovery was *irrational or non-logical*, whereas justification followed rules of evidence and logic\u301071\u2020L119-L128\u3011. Reichenbach\u2019s stance effectively sidelined anomalies to the periphery: they might trigger discovery, but the philosophy of science focused on how the resulting hypothesis could be confirmed or refuted. *Impact:* This distinction led philosophers for a time to pay little formal attention to the processes of noticing anomalies or generating hypotheses. It wasn\u2019t until later (with thinkers like Hanson and Kuhn) that the *discovery process* \u2013 and with it, the role of anomaly recognition \u2013 was re-integrated into philosophy of science discussions.\n\n- **Popper, K. (1959).** *The Logic of Scientific Discovery*. \u2013 (See above in Section 1 for full citation and context.) *Popper\u2019s work is also central to the discovery-justification debate.* He famously claimed there is **no logical method for having new ideas**: the act of conceiving a hypothesis is creative and not derivable from rules. However, once a hypothesis is proposed, science advances by subjecting it to rigorous tests (justification through attempted falsification). Popper explicitly separated the **psychology of discovery** from the **logic of justification**. He admired scientists like Einstein for being bold in conjecturing theories that *could* be falsified by anomalies, even though he did not offer a formula for how to generate such conjectures. *Quote:* *\u201cThere is no logical path to [new scientific laws]; only intuition, aided by a sympathetic understanding of experience, can reach them\u201d* (quoting Einstein, in Popper\u2019s discussion\u301024\u2020L280-L288\u3011). Popper thus acknowledged the role of insight or anomaly-driven intuition, but he positioned it outside the realm of methodology. *Impact:* In terms of AI and inductive reasoning, Popper\u2019s view suggests that programming an AI to *generate* discoveries might require non-logical (perhaps evolutionary or heuristic) processes, whereas testing those discoveries can be codified. Modern computational approaches to scientific discovery in AI (e.g., genetic algorithms that \u201cevolve\u201d equations from data) echo this separation \u2013 they rely on quasi-random generation of hypotheses (discovery) combined with selection pressure via fitness tests (justification).\n\n- **Hanson, N. R. (1958).** *Patterns of Discovery*. \u2013 (See Section 1 for citation.) *Hanson directly challenged the rigid discovery/justification split.* He argued that the process of coming up with hypotheses (**context of discovery**) is not as inscrutable as Reichenbach suggested. Hanson pointed out that scientists use informed intuition, analogies, and **recognition of anomalies** in systematic ways to generate new ideas. He introduced the concept that **observation is theory-laden**: what a scientist notices as anomalous depends on their conceptual framework. For example, Tycho Brahe and Johannes Kepler both observed the orbit of Mars, but Kepler \u2013 armed with Copernican ideas \u2013 recognized irregularities that Tycho didn\u2019t interpret the same way. Hanson\u2019s work implies that the **impulse of inquiry** can itself be analyzed and understood to some extent (e.g. via the role of background theories and heuristic strategies). He famously stated that hypothesis generation is often *\u201ca reasonable affair\u201d not just a mystical intuition*\u30108\u2020L23-L30\u3011. *Impact:* Hanson helped open the door for studying discovery within philosophy. For AI, his perspective suggests that to replicate scientific discovery, one must encode not just logic for testing hypotheses but also **heuristics for generating them** \u2013 potentially including anomaly detection as a heuristic trigger. Hanson\u2019s influence can be seen in later AI systems that attempt automated discovery by using expert-informed patterns (like assuming continuity, symmetry, etc.) to constrain the search space of hypotheses.\n\n- **Nickles, T. (1980).** \u201cScientific Discovery and the Future of Philosophy of Science.\u201d In *Scientific Discovery, Logic, and Rationality* (edited by T. Nickles). Reidel. \u2013 *Philosopher Thomas Nickles revisited the discovery/justification dichotomy, arguing that the separation is too sharp and that discovery can be studied rationally.* He introduced the idea of **\u201cheuristic appraisal\u201d** \u2013 evaluating the promise of a new hypothesis \u2013 which blurs into justification. Nickles noted that while the final acceptance of a theory must be rigorously justified, the *methods scientists use to find and develop new hypotheses* (such as **following up on anomalies, using analogies, brainstorming variations**) can be critically assessed and improved. He and others in the 1980s demonstrated that aspects of discovery can be **systematized**: for example, computational models (like Herbert Simon\u2019s work on automated discovery of scientific laws) showed algorithms finding Kepler\u2019s third law or chemical periodicity. Nickles argued that the *\u201ccontext of discovery\u201d is indeed relevant to epistemology* because a well-structured discovery process increases the likelihood that the theories we end up testing are plausible\u301070\u2020L29-L37\u3011. *Impact:* By rehabilitating the study of discovery, Nickles and colleagues set the stage for viewing the **impulse of inquiry** as an object of study in its own right. This has influenced fields like machine learning and cognitive science to consider how **novel hypotheses generation** could be guided. For instance, today\u2019s research into AI creativity and automated scientific discovery owes a debt to the idea that discovery is not magic \u2013 there are strategies that can be encoded, many of which center on how anomalies are used to guide the search for new theories.\n\n- **Feyerabend, P. (1975).** *Against Method*. London: Verso. \u2013 *Paul Feyerabend took an even more radical stance by arguing that **strict methodological rules can hinder scientific progress**, especially the discovery of new ideas.* He examined historical cases (like Galileo\u2019s arguments for heliocentrism) and claimed that **scientists often had to violate prevailing methodological norms to make breakthroughs**. Feyerabend is famous for the slogan *\u201canything goes\u201d*, by which he meant there is no single system of logic or method that guarantees scientific advances. Anomalies sometimes were ignored by conservative method, and only a maverick willingness to deviate led to discovery. For example, Galileo relied on persuasive rhetoric and imagination to support the Copernican view before there was decisive empirical proof \u2013 a move that strict justification-focused method would frown upon. Feyerabend noted that **clinging too rigidly to justification can cause one to dismiss anomalies too quickly**. Instead, **pluralism and open-mindedness** \u2013 even to the point of entertaining seemingly absurd hypotheses \u2013 can be necessary to conceptualize what an anomaly is hinting at. *Impact:* Feyerabend\u2019s provocative stance pushed philosophers to acknowledge the messy, creative side of science. For AI, his work is a reminder that **successful discovery may require flexibility** beyond any fixed algorithm: an AI might need the ability to **occasionally override its own standard evaluation metrics** to follow a wild hunch (analogous to \u201canything goes\u201d) when confronted with a perplexing anomaly. While not a recipe for everyday science, this flexibility could be crucial for major innovations.\n\n## 6. AI and the Limits of Inductive Reasoning: Contemporary Philosophical Insights\n\n- **Dreyfus, H. L. (1972/1992).** *What Computers (Still) Can\u2019t Do: A Critique of Artificial Reason*. MIT Press. \u2013 *Hubert Dreyfus, a philosopher, critiqued early AI programs for relying on formal rules and logic, arguing that human intelligence \u2013 especially our **intuitive leaps** \u2013 depends on things no algorithmic system had achieved.* Dreyfus drew on Heidegger and Merleau-Ponty to say that humans have **embodied know-how** and contextual understanding that let them navigate anomalies effortlessly, whereas computers lack a sense of relevance. In skilled behavior (like a chess master or a doctor diagnosing an unusual case), humans do not mentally calculate all possibilities; rather, they **immediately perceive patterns and outliers** based on experience. Dreyfus noted that AI programs struggled with novelty: a slight change in a problem statement could stump them, while humans flexibly adapted. He famously pointed out that because computers have *\u201cno body, no childhood, and no cultural practice,\u201d* they cannot acquire the kind of background understanding that allows humans to see an unexpected event as meaningful\u301072\u2020L5-L13\u3011. In terms of inductive reasoning, Dreyfus would say machines do statistical induction but lack the holistic grasp that lets humans zero-in on a surprising fact and redefine a problem around it. *Implication:* Dreyfus\u2019s critique implies that to approach human-like inquiry, AI might need more than improved algorithms \u2013 it may require **embodied learning or simulation of human experiences** to ground its understanding. Modern AI research in robotics and embodied agents is, in a sense, a response to this: by giving AI a body or a life-like learning environment, we inch closer to an AI that can develop the kind of intuition that flags a true anomaly and pursues it.\n\n- **Searle, J. (1980).** \u201cMinds, Brains, and Programs.\u201d *Behavioral and Brain Sciences, 3*(3), 417-457. \u2013 *John Searle\u2019s famous \u201cChinese Room\u201d argument addresses whether a computer following rules can truly understand or learn. While it\u2019s primarily about semantics, it has implications for **inductive reasoning and insight**.* Searle imagines a computer that perfectly simulates understanding Chinese by matching inputs to outputs (like a chatbot); he argues that *syntax alone is not sufficient for semantics or true understanding*. Translated to the domain of inquiry: an AI might manipulate symbols (data patterns) to produce correct predictions, yet **have no grasp of why** those patterns hold. Searle would say such an AI, lacking any understanding, also lacks intentionality \u2013 it doesn\u2019t genuinely *care* or *know* that an anomaly is surprising. It has no mental state of puzzlement as a human would. *Quote:* *\u201cThe computer does not understand the stories; it only shuffles symbols\u201d* (paraphrased) \u2013 thus it cannot on its own infer *new* meanings or questions from them. For genuine inductive leap, some form of understanding is required to recognize that normal explanations fail. Searle\u2019s argument implies that as long as AI operates on formal symbol manipulation without conscious awareness or semantics, it **will remain fundamentally limited** in doing what scientists do when they, say, confront an anomaly and *decide* it warrants a new hypothesis. *Implication:* This provokes ongoing debate: do advanced AI systems need some form of semantic understanding or embodied cognition to truly replicate the human impulse of inquiry? Searle would lean yes \u2013 without intentionality, AI can mimic reasoning but not originate it. Current efforts in AI explainability and common-sense reasoning attempt to bridge this gap, but Searle\u2019s critique reminds us that there may be a qualitative difference between **simulated inquiry** and the real, conscious curiosity that drives human discovery.\n\n- **Boden, M. A. (1990).** *The Creative Mind: Myths and Mechanisms*. Routledge. \u2013 *Margaret Boden, a cognitive scientist, explores whether computers can ever achieve human-level creativity, offering frameworks that clarify AI\u2019s limitations and potential in **inductive creativity**.* She distinguishes **combinatorial creativity** (rearranging known elements), **exploratory creativity** (searching within a given space of possibilities), and **transformational creativity** (altering the rules to open up a new space). Human scientific discovery often involves transformational creativity \u2013 we don\u2019t just find new answers, we sometimes **change the questions**. For instance, encountering an anomaly might cause a scientist to invent a new experimental technique or even a new conceptual category. Boden notes that AI to date has been mostly combinatorial or exploratory: for example, programs that generate hypotheses use fixed rules of chemistry or physics. They **struggle with transformational creativity** because that means breaking the very framework they were given. This maps to the inductive reasoning limits: an AI can inductively generalize within a framework (like curve-fitting a law), but noticing an anomaly that demands *a new kind of variable or a new law entirely* is harder. Boden is optimistic that at least some aspects of creativity can be mechanized, but she acknowledges that **evaluation** of novel ideas \u2013 deciding an unexpected idea is valuable \u2013 is tricky for AI. Humans use aesthetic and intuitive criteria here. *Implication:* To push AI into truly creative inductive leaps, researchers might need to simulate forms of **meta-reasoning** so the AI can consider altering its own rules. This is an area of ongoing work (such as meta-learning). Boden\u2019s framework helps articulate what an \u201cimpulse of inquiry\u201d in AI would entail: not just generating a hypothesis when encountering an anomaly, but potentially **redefining its own representational space** to accommodate the anomaly \u2013 a capacity only nascent in today\u2019s AI.\n\n- **Lombrozo, T. (2012).** \u201cExplanation and Abductive Inference.\u201d *Oxford Handbook of Thinking and Reasoning*. \u2013 *Tania Lombrozo, a cognitive scientist, examines how humans favor certain explanations and how that guides our inductive inferences. Her work sheds light on why certain anomalies grab our attention.* Humans have biases for explanations that are **simple, broad, and coherent** with prior knowledge. When a surprising observation occurs, we tend to seek an explanation that doesn\u2019t complicate our worldview more than necessary (akin to Occam\u2019s razor). Lombrozo suggests that this bias can be rational: simpler explanations are more likely true, and focusing on them helps us learn effectively. However, it also means sometimes we **overlook anomalies or explain them away too hastily** to preserve simplicity. She also discusses how providing or seeking explanations can enhance learning \u2013 when people try to explain an anomaly (even to themselves), they often discover new patterns. In experiments, participants prompted to explain \u201cwhy is this odd case happening?\u201d learn the underlying rule better. *Implication:* For AI, Lombrozo\u2019s insights could be useful in designing systems that **generate and evaluate explanations** for anomalies, not just detect them. If an AI were equipped with a mechanism to prefer simpler and more unified explanations, it might emulate human-like hypothesis selection. However, it would also need a check against oversimplifying away real anomalies. This balance is something humans navigate (sometimes poorly, as history shows when anomalies were ignored too long). Lombrozo\u2019s work points toward an AI that, upon finding an unexpected data point, engages in a process of explaining (\u201cperhaps there is a hidden feature X causing this\u201d) and uses explanation quality to decide if the anomaly reveals something new or can be subsumed under existing knowledge. In essence, building an **explanation-driven AI** could cultivate an artificial \u201cimpulse of inquiry,\u201d echoing how humans turn surprise into understanding.\n\n"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 643,
+              "end_ix": 654,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\nAbduction > Peirce on Abduction (Stanford Encyclopedia of Philosophy)\n",
+                "url": "https://plato.stanford.edu/entries/abduction/peirce.html#:~:text=,suspect%20that%20A%20is%20true",
+                "text": "> The surprising fact, C, is observed. >  But if A were true, C would be a matter of course. >  Hence, there is reason to suspect that A is true.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 82,
+                  "end_line_num": 89
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 926,
+              "end_ix": 937,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\nAbduction > Peirce on Abduction (Stanford Encyclopedia of Philosophy)\n",
+                "url": "https://plato.stanford.edu/entries/abduction/peirce.html#:~:text=As%20he%20says%2C%20%E2%80%9C,it%20is%20to%20be%20noted",
+                "text": "As he says, \u201c[a]bduction is the process of forming explanatory hypotheses. It is the only logical operation which introduces any new idea\u201d (CP 5.172); elsewhere he says that abduction encompasses \u201call the operations by which theories and conceptions are engendered\u201d (CP 5.590). Deduction and induction, then, come into play at the later stage of theory assessment: deduction helps to derive testable consequences from the explanatory hypotheses that abduction has helped us to conceive, and induction finally helps us to reach a verdict on the hypotheses, where the nature of the verdict is dependent on the number of testable consequences that have been verified. (As an aside, it is to be noted",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 59,
+                  "end_line_num": 67
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1570,
+              "end_ix": 1581,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Dave's Book Blog: \"Patterns of Discovery\" by Norwood Russell Hanson",
+                "url": "https://davesbookblog-daja.blogspot.com/2016/05/patterns-of-discovery-by-norwood.html?m=0#:~:text=,%28p%2071",
+                "text": "\"The initial suggestion of an hypothesis is very often a reasonable affair. It is not so often affected by intuition, insight, hunches, or other imponderables as biographers or scientists suggest.\" (p 71)",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 23,
+                  "end_line_num": 30
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1950,
+              "end_ix": 1961,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Dave's Book Blog: \"Patterns of Discovery\" by Norwood Russell Hanson",
+                "url": "https://davesbookblog-daja.blogspot.com/2016/05/patterns-of-discovery-by-norwood.html?m=0#:~:text=He%20suggests%20that%20a%20theory,%28p%20121",
+                "text": "He suggests that a theory is \"an intelligible, systematic, conceptual pattern for the observed data. The value of this pattern lies in its capacity to unite phenomena which, without the theory, are either surprising, anomalies, or wholly unnoticed.\" (p 121)",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 43,
+                  "end_line_num": 46
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2839,
+              "end_ix": 2853,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+                "url": "https://plato.stanford.edu/entries/popper/#:~:text=Science%2C%20in%20Popper%E2%80%99s%20view%2C%20starts,solution%20to%20a%20given%20problem",
+                "text": "Science, in Popper\u2019s view, starts with problems rather than with observations\u2014it is, indeed, precisely in the context of grappling with a problem that the scientist makes observations in the first instance: his observations are selectively designed to test the extent to which a given theory functions as a satisfactory solution to a given problem.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 24,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 288,
+                  "end_line_num": 292
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3179,
+              "end_ix": 3193,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+                "url": "https://plato.stanford.edu/entries/popper/#:~:text=Thus%2C%20while%20advocating%20falsifiability%20as,anomalous%20with%20respect%20to%20them",
+                "text": "Thus, while advocating falsifiability as the criterion of demarcation for science, Popper explicitly allows for the fact that in practice a single conflicting or counter-instance is never sufficient methodologically for falsification, and that scientific theories are often retained even though much of the available evidence conflicts with them, or is anomalous with respect to them.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 24,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 308,
+                  "end_line_num": 316
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 4606,
+              "end_ix": 4620,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Inference to the Best Explanation",
+                "url": "https://www.informationphilosopher.com/knowledge/best_explanation.html#:~:text=%3E%20,fact%20that%20a%20certain%20hypothesis",
+                "text": "> \"The inference to the best explanation\" corresponds approximately to what others have called \"abduction,\" the method of hypothesis,\" \"hypothetic inference,\" \"the method of elimination,\" \"eliminative induction,\" and \"theoretical inference.\" > > I prefer my own terminology because I believe that it avoids most of the misleading suggestions of the alternative terminologies. > > In making this inference one infers, from the fact that a certain hypothesis",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 31,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 584,
+                  "end_line_num": 592
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 4979,
+              "end_ix": 4993,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Inference to the Best Explanation",
+                "url": "https://www.informationphilosopher.com/knowledge/best_explanation.html#:~:text=,the%20given%20hypothesis%20is%20true",
+                "text": "> In making this inference one infers, from the fact that a certain hypothesis would explain the evidence, to the truth of that hypothesis. In general, there will be several hypotheses which might explain the evidence, so one must be able to reject all such alternative hypotheses before one is warranted in making the inference. Thus one infers, from the premise that a given hypothesis would provide a \"better\" explanation for the evidence than would any other hypothesis, to the conclusion that the given hypothesis is true.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 31,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 592,
+                  "end_line_num": 599
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 6116,
+              "end_ix": 6132,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Microsoft Word - Kuhn_2.docx",
+                "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=expectations%20that%20govern%20normal%20science,theoretical%20novelty%20are%20intertwined%20in",
+                "text": "expectations that govern normal science. It then continues with a more or less extended exploration of the area of anomaly. And it closes only when the paradigm theory has been adjusted so that the anomalous has become the expected. Assimilating a new sort of fact demands a more than additive adjustment of theory, and until that adjustment is completed\u2014until the scientist has learned to see nature in a different way\u2014the new fact is not quite a scientific fact at all. To see how closely factual and theoretical novelty are intertwined in",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 18,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 2630,
+                  "end_line_num": 2637
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 6333,
+              "end_ix": 6349,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Microsoft Word - Kuhn_2.docx",
+                "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=expectations%20that%20govern%20normal%20science,theoretical%20novelty%20are%20intertwined%20in",
+                "text": "expectations that govern normal science. It then continues with a more or less extended exploration of the area of anomaly. And it closes only when the paradigm theory has been adjusted so that the anomalous has become the expected. Assimilating a new sort of fact demands a more than additive adjustment of theory, and until that adjustment is completed\u2014until the scientist has learned to see nature in a different way\u2014the new fact is not quite a scientific fact at all. To see how closely factual and theoretical novelty are intertwined in",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 18,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 2630,
+                  "end_line_num": 2637
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 6760,
+              "end_ix": 6776,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Microsoft Word - Kuhn_2.docx",
+                "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=we%20shall%20quickly%20find%20that,2%2052",
+                "text": "we shall quickly find that they are not isolated events but extended episodes with a regularly recurrent structure. Discovery commences with the awareness of anomaly, i.e., with the recognition that nature has somehow violated the paradigm-induced Vol. II, No. 2 52",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 17,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 2618,
+                  "end_line_num": 2625
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 6776,
+              "end_ix": 6792,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Microsoft Word - Kuhn_2.docx",
+                "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=expectations%20that%20govern%20normal%20science,theoretical%20novelty%20are%20intertwined%20in",
+                "text": "expectations that govern normal science. It then continues with a more or less extended exploration of the area of anomaly. And it closes only when the paradigm theory has been adjusted so that the anomalous has become the expected. Assimilating a new sort of fact demands a more than additive adjustment of theory, and until that adjustment is completed\u2014until the scientist has learned to see nature in a different way\u2014the new fact is not quite a scientific fact at all. To see how closely factual and theoretical novelty are intertwined in",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 18,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 2630,
+                  "end_line_num": 2637
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 7853,
+              "end_ix": 7867,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://papers.academic-conferences.org/index.php/ecie/article/download/2563/2484/10278#:~:text=research%20finding%20gives%20rise%20to,he%20wrote%20that%20%E2%80%9CSerendipity%20is",
+                "text": "research finding gives rise to social theory. He said that the \u201cserendipity pattern refers to the fairly common experience of observing an unanticipated, anomalous and strategic datum which becomes the occasion for developing a new theory or for extending an existing theory\u201d (1948a, p. 506, italics in original). Each element of the pattern is explained by Merton (1948a), and he wrote that \u201cSerendipity is",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 49,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 198,
+                  "end_line_num": 204
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 8354,
+              "end_ix": 8368,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "https://papers.academic-conferences.org/index.php/ecie/article/download/2563/2484/10278#:~:text=research%20finding%20gives%20rise%20to,he%20wrote%20that%20%E2%80%9CSerendipity%20is",
+                "text": "research finding gives rise to social theory. He said that the \u201cserendipity pattern refers to the fairly common experience of observing an unanticipated, anomalous and strategic datum which becomes the occasion for developing a new theory or for extending an existing theory\u201d (1948a, p. 506, italics in original). Each element of the pattern is explained by Merton (1948a), and he wrote that \u201cSerendipity is",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 49,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 198,
+                  "end_line_num": 204
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 9540,
+              "end_ix": 9554,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Painting With Penicillin: Alexander Fleming's Germ Art",
+                "url": "https://www.smithsonianmag.com/science-nature/painting-with-penicillin-alexander-flemings-germ-art-1761496/#:~:text=Nor%20was%20his%20discovery%20of,thrown%2C%20disgusted%2C%20into%20the%20trash",
+                "text": "Nor was his discovery of penicillin an exception. His other discoveries accumulated as he collected other odd observations. Fleming one day hung his nose over a petri dish so to allow his mucus to drip on to the plate. He wanted to see what would happen, what observation would grow out of that strange planting. A new color? A new life form? What he found instead was that his mucus killed bacteria. He had discovered, or he would go on to anyway, lysozyme, a common natural antibiotic that most bodies produce in great quantities. Fleming leapt on the unusual like a weasel on a vole and in doing so discovered what others had walked right past or even thrown, disgusted, into the trash.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 39,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 162,
+                  "end_line_num": 170
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 9818,
+              "end_ix": 9832,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Painting With Penicillin: Alexander Fleming's Germ Art",
+                "url": "https://www.smithsonianmag.com/science-nature/painting-with-penicillin-alexander-flemings-germ-art-1761496/#:~:text=leapt%20on%20the%20unusual%20like,thrown%2C%20disgusted%2C%20into%20the%20trash",
+                "text": "leapt on the unusual like a weasel on a vole and in doing so discovered what others had walked right past or even thrown, disgusted, into the trash.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 39,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 169,
+                  "end_line_num": 177
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 11264,
+              "end_ix": 11276,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+                "url": "https://plato.stanford.edu/entries/popper/#:~:text=Leverrier%2C%20of%20the%20problem%20which,if%20the%20existence%20of%20a",
+                "text": "Leverrier, of the problem which the anomalous orbit of Uranus posed for nineteenth century astronomers. They independently came to the conclusion that, assuming Newtonian mechanics to be precisely correct, the observed divergence in the elliptical orbit of Uranus could be explained if the existence of a",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 32,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 13,
+                  "end_line_num": 22
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 12873,
+              "end_ix": 12885,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+                "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=of%20anomalous%20data%2C%20and%20may,",
+                "text": "of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 55,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 31,
+                  "end_line_num": 34
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 13080,
+              "end_ix": 13092,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+                "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=of%20anomalous%20data%2C%20and%20may,",
+                "text": "of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 55,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 31,
+                  "end_line_num": 34
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 13400,
+              "end_ix": 13412,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+                "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=match%20at%20L1442%20of%20anomalous,",
+                "text": "match at L1442 of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 55,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 29,
+                  "end_line_num": 37
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 13412,
+              "end_ix": 13424,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+                "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=of%20anomalous%20data%2C%20and%20may,",
+                "text": "of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 55,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 31,
+                  "end_line_num": 34
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 14722,
+              "end_ix": 14736,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Neural Activity When People Solve Verbal Problems with Insight | PLOS Biology",
+                "url": "https://journals.plos.org/plosbiology/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0020097#:~:text=Functional%20magnetic%20resonance%20imaging%20,to%20see%20connections%20that%20previously",
+                "text": "Functional magnetic resonance imaging (Experiment 1) revealed increased activity in the right hemisphere anterior superior temporal gyrus for insight relative to noninsight solutions. The same region was active during initial solving efforts. Scalp electroencephalogram recordings (Experiment 2) revealed a sudden burst of high-frequency (gamma-band) neural activity in the same area beginning 0.3 s prior to insight solutions. This right anterior temporal area is associated with making connections across distantly related information during comprehension. Although all problem solving relies on a largely shared cortical network, the sudden flash of insight occurs when solvers engage distinct neural and cognitive processes that allow them to see connections that previously",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 58,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 193,
+                  "end_line_num": 202
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 14991,
+              "end_ix": 15005,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Neural Activity When People Solve Verbal Problems with Insight | PLOS Biology",
+                "url": "https://journals.plos.org/plosbiology/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0020097#:~:text=Functional%20magnetic%20resonance%20imaging%20,to%20see%20connections%20that%20previously",
+                "text": "Functional magnetic resonance imaging (Experiment 1) revealed increased activity in the right hemisphere anterior superior temporal gyrus for insight relative to noninsight solutions. The same region was active during initial solving efforts. Scalp electroencephalogram recordings (Experiment 2) revealed a sudden burst of high-frequency (gamma-band) neural activity in the same area beginning 0.3 s prior to insight solutions. This right anterior temporal area is associated with making connections across distantly related information during comprehension. Although all problem solving relies on a largely shared cortical network, the sudden flash of insight occurs when solvers engage distinct neural and cognitive processes that allow them to see connections that previously",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 58,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 193,
+                  "end_line_num": 202
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 16201,
+              "end_ix": 16215,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "The cognitive neuroscience of insight - PubMed",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/24405359/#:~:text=Insight%20occurs%20when%20a%20person,rather%20than%20in%20a%20deliberate",
+                "text": "Insight occurs when a person suddenly reinterprets a stimulus, situation, or event to produce a nonobvious, nondominant interpretation. This can take the form of a solution to a problem (an \"aha moment\"), comprehension of a joke or metaphor, or recognition of an ambiguous percept. Insight research began a century ago, but neuroimaging and electrophysiological techniques have been applied to its study only during the past decade. Recent work has revealed insight-related coarse semantic coding in the right hemisphere and internally focused attention preceding and during problem solving. Individual differences in the tendency to solve problems insightfully rather than in a deliberate,",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 59,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 297,
+                  "end_line_num": 305
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 17083,
+              "end_ix": 17097,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "The cognitive neuroscience of insight - PubMed",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/24405359/#:~:text=Insight%20occurs%20when%20a%20person,Individual%20differences",
+                "text": "Insight occurs when a person suddenly reinterprets a stimulus, situation, or event to produce a nonobvious, nondominant interpretation. This can take the form of a solution to a problem (an \"aha moment\"), comprehension of a joke or metaphor, or recognition of an ambiguous percept. Insight research began a century ago, but neuroimaging and electrophysiological techniques have been applied to its study only during the past decade. Recent work has revealed insight-related coarse semantic coding in the right hemisphere and internally focused attention preceding and during problem solving. Individual differences",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 59,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 297,
+                  "end_line_num": 304
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 17097,
+              "end_ix": 17111,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Neural Activity When People Solve Verbal Problems with Insight | PLOS Biology",
+                "url": "https://journals.plos.org/plosbiology/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0020097#:~:text=Functional%20magnetic%20resonance%20imaging%20,to%20see%20connections%20that%20previously",
+                "text": "Functional magnetic resonance imaging (Experiment 1) revealed increased activity in the right hemisphere anterior superior temporal gyrus for insight relative to noninsight solutions. The same region was active during initial solving efforts. Scalp electroencephalogram recordings (Experiment 2) revealed a sudden burst of high-frequency (gamma-band) neural activity in the same area beginning 0.3 s prior to insight solutions. This right anterior temporal area is associated with making connections across distantly related information during comprehension. Although all problem solving relies on a largely shared cortical network, the sudden flash of insight occurs when solvers engage distinct neural and cognitive processes that allow them to see connections that previously",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 58,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 193,
+                  "end_line_num": 202
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 20267,
+              "end_ix": 20279,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+                "url": "https://arxiv.org/abs/1801.04016#:~:text=,the%20tools%20of%20causal%20modeling",
+                "text": "> Abstract:Current machine learning systems operate, almost exclusively, in a statistical, or model-free mode, which entails severe theoretical limits on their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 62,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 51,
+                  "end_line_num": 59
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 20369,
+              "end_ix": 20381,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+                "url": "https://arxiv.org/abs/1801.04016#:~:text=,the%20tools%20of%20causal%20modeling",
+                "text": "> Abstract:Current machine learning systems operate, almost exclusively, in a statistical, or model-free mode, which entails severe theoretical limits on their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 62,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 51,
+                  "end_line_num": 59
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 20492,
+              "end_ix": 20504,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+                "url": "https://arxiv.org/abs/1801.04016#:~:text=,the%20tools%20of%20causal%20modeling",
+                "text": "> Abstract:Current machine learning systems operate, almost exclusively, in a statistical, or model-free mode, which entails severe theoretical limits on their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 62,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 51,
+                  "end_line_num": 59
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 20902,
+              "end_ix": 20914,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+                "url": "https://arxiv.org/abs/1801.04016#:~:text=their%20power%20and%20performance,the%20tools%20of%20causal%20modeling",
+                "text": "their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 62,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 53,
+                  "end_line_num": 59
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 22089,
+              "end_ix": 22101,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "What are the fundamental flaws of the transformer model that deep ...",
+                "url": "https://www.quora.com/What-are-the-fundamental-flaws-of-the-transformer-model-that-deep-learning-scientists-hope-to-solve-quickly#:~:text=,pointing%20out%20Deep%20Learning%27s%20flaws",
+                "text": "... www.quora.com  Is Deep Learning fundamentally flawed and hitting a wall? Was Gary Marcus correct in pointing out Deep Learning's flaws?",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 63,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 23,
+                  "end_line_num": 31
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 24691,
+              "end_ix": 24701,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "DECIPHERING THE DEFINITION OF ADVERSARIAL ... - arXiv",
+                "url": "https://arxiv.org/html/2406.15104v3#:~:text=Many%20OOD%20detectors%20can%20be,severe%20limitation%20of%20current",
+                "text": "Many OOD detectors can be easily evaded by slightly perturbing benign OOD inputs, creating OOD adversarial examples that reveal a severe limitation of current ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 64,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 9
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 26257,
+              "end_ix": 26269,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) Pattern of accidental discoveries in science | Thomas Heinze ...",
+                "url": "https://www.academia.edu/72464249/Pattern_of_accidental_discoveries_in_science?uc-g-sw=40430736#:~:text=,becomes%20the%20occasion%20for",
+                "text": "(PDF) Pattern of accidental discoveries in science | Thomas Heinze ... ... serendipity pattern refers to the fairly common experience of observing an unanticipated, anomalous, and strategic datum which becomes the occasion for ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 45,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 31,
+                  "end_line_num": 39
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 28000,
+              "end_ix": 28011,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Hans Reichenbach - 8 Science Quotes",
+                "url": "https://todayinsci.com/R/Reichenbach_Hans/ReichenbachHans-Quotations.htm#:~:text=That%20is%2C%20he%20is%20not,Philosophical%20Significance%20of%20the",
+                "text": "That is, he is not interested in the context of discovery, but in the context of justification. \u2014 Hans Reichenbach. 'The Philosophical Significance of the ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 67,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 5,
+                  "end_line_num": 12
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 28323,
+              "end_ix": 28337,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\nScientific Discovery (Stanford Encyclopedia of Philosophy)\n",
+                "url": "https://plato.stanford.edu/entries/scientific-discovery/#:~:text=Much%20of%20the%20discussion%20about,Discovery%2C%20by%20contrast%2C%20can%20only",
+                "text": "Much of the discussion about scientific discovery in the 20^{th} century revolved around this distinction It was argued that conceiving a new idea is a non-rational process, a leap of insight that cannot be captured in specific instructions. Justification, by contrast, is a systematic process of applying evaluative criteria to knowledge claims. Advocates of the context distinction argued that philosophy of science is exclusively concerned with the context of justification. The assumption underlying this argument is that philosophy is a normative project; it determines norms for scientific practice. Given this assumption, only the justification of ideas, not their generation, can be the subject of philosophical (normative) analysis. Discovery, by contrast, can only",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 71,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 119,
+                  "end_line_num": 128
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 29848,
+              "end_ix": 29862,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+                "url": "https://plato.stanford.edu/entries/popper/#:~:text=Popper%20stresses%20in%20particular%20that,cites%20Einstein%20on%20that%20point",
+                "text": "Popper stresses in particular that there is no unique way, no single method such as induction, which functions as the route to scientific theory, and approvingly cites Einstein on that point:",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 24,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 280,
+                  "end_line_num": 288
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 31563,
+              "end_ix": 31574,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Dave's Book Blog: \"Patterns of Discovery\" by Norwood Russell Hanson",
+                "url": "https://davesbookblog-daja.blogspot.com/2016/05/patterns-of-discovery-by-norwood.html?m=0#:~:text=,%28p%2071",
+                "text": "\"The initial suggestion of an hypothesis is very often a reasonable affair. It is not so often affected by intuition, insight, hunches, or other imponderables as biographers or scientists suggest.\" (p 71)",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 23,
+                  "end_line_num": 30
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 33313,
+              "end_ix": 33325,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Is It Justifiable to Abandon All Search for a Logic of Discovery?",
+                "url": "https://www.tandfonline.com/doi/abs/10.1080/02698590701589544#:~:text=Is%20It%20Justifiable%20to%20Abandon,for%20the%20context%20of",
+                "text": "Is It Justifiable to Abandon All Search for a Logic of Discovery? Nickles (Citation2000, 91) also argues that the context of discovery is necessary to epistemology because it provides the material for the context of ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 70,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 29,
+                  "end_line_num": 37
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 36813,
+              "end_ix": 36824,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Hubert Dreyfus, who argued that computers, w... - Hacker News",
+                "url": "https://news.ycombinator.com/item?id=23797472#:~:text=Hubert%20Dreyfus%2C%20who%20argued%20that,One%20of%20Dreyfus%27",
+                "text": "Hubert Dreyfus, who argued that computers, w... - Hacker News \"Hubert Dreyfus, who argued that computers, who have no body, no childhood and no cultural practice, could not acquire intelligence at all. One of Dreyfus' ...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 72,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 5,
+                  "end_line_num": 13
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u30105\u2020L82-L89\u3011",
+              "start_idx": 643,
+              "end_idx": 654,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\nAbduction > Peirce on Abduction (Stanford Encyclopedia of Philosophy)\n",
+              "url": "https://plato.stanford.edu/entries/abduction/peirce.html#:~:text=,suspect%20that%20A%20is%20true",
+              "pub_date": null,
+              "snippet": "> The surprising fact, C, is observed. >  But if A were true, C would be a matter of course. >  Hence, there is reason to suspect that A is true.",
+              "attribution": "plato.stanford.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u30105\u2020L59-L67\u3011",
+              "start_idx": 926,
+              "end_idx": 937,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\nAbduction > Peirce on Abduction (Stanford Encyclopedia of Philosophy)\n",
+              "url": "https://plato.stanford.edu/entries/abduction/peirce.html#:~:text=As%20he%20says%2C%20%E2%80%9C,it%20is%20to%20be%20noted",
+              "pub_date": null,
+              "snippet": "As he says, \u201c[a]bduction is the process of forming explanatory hypotheses. It is the only logical operation which introduces any new idea\u201d (CP 5.172); elsewhere he says that abduction encompasses \u201call the operations by which theories and conceptions are engendered\u201d (CP 5.590). Deduction and induction, then, come into play at the later stage of theory assessment: deduction helps to derive testable consequences from the explanatory hypotheses that abduction has helped us to conceive, and induction finally helps us to reach a verdict on the hypotheses, where the nature of the verdict is dependent on the number of testable consequences that have been verified. (As an aside, it is to be noted",
+              "attribution": "plato.stanford.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u30108\u2020L23-L30\u3011",
+              "start_idx": 1570,
+              "end_idx": 1581,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Dave's Book Blog: \"Patterns of Discovery\" by Norwood Russell Hanson",
+              "url": "https://davesbookblog-daja.blogspot.com/2016/05/patterns-of-discovery-by-norwood.html?m=0#:~:text=,%28p%2071",
+              "pub_date": null,
+              "snippet": "\"The initial suggestion of an hypothesis is very often a reasonable affair. It is not so often affected by intuition, insight, hunches, or other imponderables as biographers or scientists suggest.\" (p 71)",
+              "attribution": "davesbookblog-daja.blogspot.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u30108\u2020L43-L46\u3011",
+              "start_idx": 1950,
+              "end_idx": 1961,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Dave's Book Blog: \"Patterns of Discovery\" by Norwood Russell Hanson",
+              "url": "https://davesbookblog-daja.blogspot.com/2016/05/patterns-of-discovery-by-norwood.html?m=0#:~:text=He%20suggests%20that%20a%20theory,%28p%20121",
+              "pub_date": null,
+              "snippet": "He suggests that a theory is \"an intelligible, systematic, conceptual pattern for the observed data. The value of this pattern lies in its capacity to unite phenomena which, without the theory, are either surprising, anomalies, or wholly unnoticed.\" (p 121)",
+              "attribution": "davesbookblog-daja.blogspot.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301024\u2020L288-L292\u3011",
+              "start_idx": 2839,
+              "end_idx": 2853,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+              "url": "https://plato.stanford.edu/entries/popper/#:~:text=Science%2C%20in%20Popper%E2%80%99s%20view%2C%20starts,solution%20to%20a%20given%20problem",
+              "pub_date": null,
+              "snippet": "Science, in Popper\u2019s view, starts with problems rather than with observations\u2014it is, indeed, precisely in the context of grappling with a problem that the scientist makes observations in the first instance: his observations are selectively designed to test the extent to which a given theory functions as a satisfactory solution to a given problem.",
+              "attribution": "plato.stanford.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301024\u2020L308-L316\u3011",
+              "start_idx": 3179,
+              "end_idx": 3193,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+              "url": "https://plato.stanford.edu/entries/popper/#:~:text=Thus%2C%20while%20advocating%20falsifiability%20as,anomalous%20with%20respect%20to%20them",
+              "pub_date": null,
+              "snippet": "Thus, while advocating falsifiability as the criterion of demarcation for science, Popper explicitly allows for the fact that in practice a single conflicting or counter-instance is never sufficient methodologically for falsification, and that scientific theories are often retained even though much of the available evidence conflicts with them, or is anomalous with respect to them.",
+              "attribution": "plato.stanford.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301031\u2020L584-L592\u3011",
+              "start_idx": 4606,
+              "end_idx": 4620,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Inference to the Best Explanation",
+              "url": "https://www.informationphilosopher.com/knowledge/best_explanation.html#:~:text=%3E%20,fact%20that%20a%20certain%20hypothesis",
+              "pub_date": null,
+              "snippet": "> \"The inference to the best explanation\" corresponds approximately to what others have called \"abduction,\" the method of hypothesis,\" \"hypothetic inference,\" \"the method of elimination,\" \"eliminative induction,\" and \"theoretical inference.\" > > I prefer my own terminology because I believe that it avoids most of the misleading suggestions of the alternative terminologies. > > In making this inference one infers, from the fact that a certain hypothesis",
+              "attribution": "informationphilosopher.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301031\u2020L592-L599\u3011",
+              "start_idx": 4979,
+              "end_idx": 4993,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Inference to the Best Explanation",
+              "url": "https://www.informationphilosopher.com/knowledge/best_explanation.html#:~:text=,the%20given%20hypothesis%20is%20true",
+              "pub_date": null,
+              "snippet": "> In making this inference one infers, from the fact that a certain hypothesis would explain the evidence, to the truth of that hypothesis. In general, there will be several hypotheses which might explain the evidence, so one must be able to reject all such alternative hypotheses before one is warranted in making the inference. Thus one infers, from the premise that a given hypothesis would provide a \"better\" explanation for the evidence than would any other hypothesis, to the conclusion that the given hypothesis is true.",
+              "attribution": "informationphilosopher.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301018\u2020L2630-L2637\u3011",
+              "start_idx": 6116,
+              "end_idx": 6132,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Microsoft Word - Kuhn_2.docx",
+              "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=expectations%20that%20govern%20normal%20science,theoretical%20novelty%20are%20intertwined%20in",
+              "pub_date": null,
+              "snippet": "expectations that govern normal science. It then continues with a more or less extended exploration of the area of anomaly. And it closes only when the paradigm theory has been adjusted so that the anomalous has become the expected. Assimilating a new sort of fact demands a more than additive adjustment of theory, and until that adjustment is completed\u2014until the scientist has learned to see nature in a different way\u2014the new fact is not quite a scientific fact at all. To see how closely factual and theoretical novelty are intertwined in",
+              "attribution": "lri.fr",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301018\u2020L2630-L2637\u3011",
+              "start_idx": 6333,
+              "end_idx": 6349,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Microsoft Word - Kuhn_2.docx",
+              "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=expectations%20that%20govern%20normal%20science,theoretical%20novelty%20are%20intertwined%20in",
+              "pub_date": null,
+              "snippet": "expectations that govern normal science. It then continues with a more or less extended exploration of the area of anomaly. And it closes only when the paradigm theory has been adjusted so that the anomalous has become the expected. Assimilating a new sort of fact demands a more than additive adjustment of theory, and until that adjustment is completed\u2014until the scientist has learned to see nature in a different way\u2014the new fact is not quite a scientific fact at all. To see how closely factual and theoretical novelty are intertwined in",
+              "attribution": "lri.fr",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301017\u2020L2618-L2625\u3011",
+              "start_idx": 6760,
+              "end_idx": 6776,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Microsoft Word - Kuhn_2.docx",
+              "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=we%20shall%20quickly%20find%20that,2%2052",
+              "pub_date": null,
+              "snippet": "we shall quickly find that they are not isolated events but extended episodes with a regularly recurrent structure. Discovery commences with the awareness of anomaly, i.e., with the recognition that nature has somehow violated the paradigm-induced Vol. II, No. 2 52",
+              "attribution": "lri.fr",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301018\u2020L2630-L2637\u3011",
+              "start_idx": 6776,
+              "end_idx": 6792,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Microsoft Word - Kuhn_2.docx",
+              "url": "https://www.lri.fr/~mbl/Stanford/CS477/papers/Kuhn-SSR-2ndEd.pdf#:~:text=expectations%20that%20govern%20normal%20science,theoretical%20novelty%20are%20intertwined%20in",
+              "pub_date": null,
+              "snippet": "expectations that govern normal science. It then continues with a more or less extended exploration of the area of anomaly. And it closes only when the paradigm theory has been adjusted so that the anomalous has become the expected. Assimilating a new sort of fact demands a more than additive adjustment of theory, and until that adjustment is completed\u2014until the scientist has learned to see nature in a different way\u2014the new fact is not quite a scientific fact at all. To see how closely factual and theoretical novelty are intertwined in",
+              "attribution": "lri.fr",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301049\u2020L198-L204\u3011",
+              "start_idx": 7853,
+              "end_idx": 7867,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://papers.academic-conferences.org/index.php/ecie/article/download/2563/2484/10278#:~:text=research%20finding%20gives%20rise%20to,he%20wrote%20that%20%E2%80%9CSerendipity%20is",
+              "pub_date": null,
+              "snippet": "research finding gives rise to social theory. He said that the \u201cserendipity pattern refers to the fairly common experience of observing an unanticipated, anomalous and strategic datum which becomes the occasion for developing a new theory or for extending an existing theory\u201d (1948a, p. 506, italics in original). Each element of the pattern is explained by Merton (1948a), and he wrote that \u201cSerendipity is",
+              "attribution": "papers.academic-conferences.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301049\u2020L198-L204\u3011",
+              "start_idx": 8354,
+              "end_idx": 8368,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "https://papers.academic-conferences.org/index.php/ecie/article/download/2563/2484/10278#:~:text=research%20finding%20gives%20rise%20to,he%20wrote%20that%20%E2%80%9CSerendipity%20is",
+              "pub_date": null,
+              "snippet": "research finding gives rise to social theory. He said that the \u201cserendipity pattern refers to the fairly common experience of observing an unanticipated, anomalous and strategic datum which becomes the occasion for developing a new theory or for extending an existing theory\u201d (1948a, p. 506, italics in original). Each element of the pattern is explained by Merton (1948a), and he wrote that \u201cSerendipity is",
+              "attribution": "papers.academic-conferences.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301039\u2020L162-L170\u3011",
+              "start_idx": 9540,
+              "end_idx": 9554,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Painting With Penicillin: Alexander Fleming's Germ Art",
+              "url": "https://www.smithsonianmag.com/science-nature/painting-with-penicillin-alexander-flemings-germ-art-1761496/#:~:text=Nor%20was%20his%20discovery%20of,thrown%2C%20disgusted%2C%20into%20the%20trash",
+              "pub_date": null,
+              "snippet": "Nor was his discovery of penicillin an exception. His other discoveries accumulated as he collected other odd observations. Fleming one day hung his nose over a petri dish so to allow his mucus to drip on to the plate. He wanted to see what would happen, what observation would grow out of that strange planting. A new color? A new life form? What he found instead was that his mucus killed bacteria. He had discovered, or he would go on to anyway, lysozyme, a common natural antibiotic that most bodies produce in great quantities. Fleming leapt on the unusual like a weasel on a vole and in doing so discovered what others had walked right past or even thrown, disgusted, into the trash.",
+              "attribution": "smithsonianmag.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301039\u2020L169-L177\u3011",
+              "start_idx": 9818,
+              "end_idx": 9832,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Painting With Penicillin: Alexander Fleming's Germ Art",
+              "url": "https://www.smithsonianmag.com/science-nature/painting-with-penicillin-alexander-flemings-germ-art-1761496/#:~:text=leapt%20on%20the%20unusual%20like,thrown%2C%20disgusted%2C%20into%20the%20trash",
+              "pub_date": null,
+              "snippet": "leapt on the unusual like a weasel on a vole and in doing so discovered what others had walked right past or even thrown, disgusted, into the trash.",
+              "attribution": "smithsonianmag.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301032\u2020L13-L22\u3011",
+              "start_idx": 11264,
+              "end_idx": 11276,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+              "url": "https://plato.stanford.edu/entries/popper/#:~:text=Leverrier%2C%20of%20the%20problem%20which,if%20the%20existence%20of%20a",
+              "pub_date": null,
+              "snippet": "Leverrier, of the problem which the anomalous orbit of Uranus posed for nineteenth century astronomers. They independently came to the conclusion that, assuming Newtonian mechanics to be precisely correct, the observed divergence in the elliptical orbit of Uranus could be explained if the existence of a",
+              "attribution": "plato.stanford.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301055\u2020L31-L34\u3011",
+              "start_idx": 12873,
+              "end_idx": 12885,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+              "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=of%20anomalous%20data%2C%20and%20may,",
+              "pub_date": null,
+              "snippet": "of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+              "attribution": "researchgate.net",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301055\u2020L31-L34\u3011",
+              "start_idx": 13080,
+              "end_idx": 13092,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+              "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=of%20anomalous%20data%2C%20and%20may,",
+              "pub_date": null,
+              "snippet": "of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+              "attribution": "researchgate.net",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301055\u2020L29-L37\u3011",
+              "start_idx": 13400,
+              "end_idx": 13412,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+              "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=match%20at%20L1442%20of%20anomalous,",
+              "pub_date": null,
+              "snippet": "match at L1442 of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+              "attribution": "researchgate.net",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301055\u2020L31-L34\u3011",
+              "start_idx": 13412,
+              "end_idx": 13424,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) How Scientists Build Models: InVivo Science as a Window on the Scientific Mind",
+              "url": "https://www.researchgate.net/publication/246392197_How_Scientists_Build_Models_InVivo_Science_as_a_Window_on_the_Scientific_Mind#:~:text=of%20anomalous%20data%2C%20and%20may,",
+              "pub_date": null,
+              "snippet": "of anomalous data, and may modify their models if the anomaly is not due to a technical or procedural error (Dunbar, 1999). Dunbar also noted that having a series of unexpected results was more likely to lead to model revision. ...",
+              "attribution": "researchgate.net",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301058\u2020L193-L202\u3011",
+              "start_idx": 14722,
+              "end_idx": 14736,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Neural Activity When People Solve Verbal Problems with Insight | PLOS Biology",
+              "url": "https://journals.plos.org/plosbiology/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0020097#:~:text=Functional%20magnetic%20resonance%20imaging%20,to%20see%20connections%20that%20previously",
+              "pub_date": null,
+              "snippet": "Functional magnetic resonance imaging (Experiment 1) revealed increased activity in the right hemisphere anterior superior temporal gyrus for insight relative to noninsight solutions. The same region was active during initial solving efforts. Scalp electroencephalogram recordings (Experiment 2) revealed a sudden burst of high-frequency (gamma-band) neural activity in the same area beginning 0.3 s prior to insight solutions. This right anterior temporal area is associated with making connections across distantly related information during comprehension. Although all problem solving relies on a largely shared cortical network, the sudden flash of insight occurs when solvers engage distinct neural and cognitive processes that allow them to see connections that previously",
+              "attribution": "journals.plos.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301058\u2020L193-L202\u3011",
+              "start_idx": 14991,
+              "end_idx": 15005,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Neural Activity When People Solve Verbal Problems with Insight | PLOS Biology",
+              "url": "https://journals.plos.org/plosbiology/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0020097#:~:text=Functional%20magnetic%20resonance%20imaging%20,to%20see%20connections%20that%20previously",
+              "pub_date": null,
+              "snippet": "Functional magnetic resonance imaging (Experiment 1) revealed increased activity in the right hemisphere anterior superior temporal gyrus for insight relative to noninsight solutions. The same region was active during initial solving efforts. Scalp electroencephalogram recordings (Experiment 2) revealed a sudden burst of high-frequency (gamma-band) neural activity in the same area beginning 0.3 s prior to insight solutions. This right anterior temporal area is associated with making connections across distantly related information during comprehension. Although all problem solving relies on a largely shared cortical network, the sudden flash of insight occurs when solvers engage distinct neural and cognitive processes that allow them to see connections that previously",
+              "attribution": "journals.plos.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301059\u2020L297-L305\u3011",
+              "start_idx": 16201,
+              "end_idx": 16215,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "The cognitive neuroscience of insight - PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24405359/#:~:text=Insight%20occurs%20when%20a%20person,rather%20than%20in%20a%20deliberate",
+              "pub_date": null,
+              "snippet": "Insight occurs when a person suddenly reinterprets a stimulus, situation, or event to produce a nonobvious, nondominant interpretation. This can take the form of a solution to a problem (an \"aha moment\"), comprehension of a joke or metaphor, or recognition of an ambiguous percept. Insight research began a century ago, but neuroimaging and electrophysiological techniques have been applied to its study only during the past decade. Recent work has revealed insight-related coarse semantic coding in the right hemisphere and internally focused attention preceding and during problem solving. Individual differences in the tendency to solve problems insightfully rather than in a deliberate,",
+              "attribution": "pubmed.ncbi.nlm.nih.gov",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301059\u2020L297-L304\u3011",
+              "start_idx": 17083,
+              "end_idx": 17097,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "The cognitive neuroscience of insight - PubMed",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24405359/#:~:text=Insight%20occurs%20when%20a%20person,Individual%20differences",
+              "pub_date": null,
+              "snippet": "Insight occurs when a person suddenly reinterprets a stimulus, situation, or event to produce a nonobvious, nondominant interpretation. This can take the form of a solution to a problem (an \"aha moment\"), comprehension of a joke or metaphor, or recognition of an ambiguous percept. Insight research began a century ago, but neuroimaging and electrophysiological techniques have been applied to its study only during the past decade. Recent work has revealed insight-related coarse semantic coding in the right hemisphere and internally focused attention preceding and during problem solving. Individual differences",
+              "attribution": "pubmed.ncbi.nlm.nih.gov",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301058\u2020L193-L202\u3011",
+              "start_idx": 17097,
+              "end_idx": 17111,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Neural Activity When People Solve Verbal Problems with Insight | PLOS Biology",
+              "url": "https://journals.plos.org/plosbiology/article/info%3Adoi%2F10.1371%2Fjournal.pbio.0020097#:~:text=Functional%20magnetic%20resonance%20imaging%20,to%20see%20connections%20that%20previously",
+              "pub_date": null,
+              "snippet": "Functional magnetic resonance imaging (Experiment 1) revealed increased activity in the right hemisphere anterior superior temporal gyrus for insight relative to noninsight solutions. The same region was active during initial solving efforts. Scalp electroencephalogram recordings (Experiment 2) revealed a sudden burst of high-frequency (gamma-band) neural activity in the same area beginning 0.3 s prior to insight solutions. This right anterior temporal area is associated with making connections across distantly related information during comprehension. Although all problem solving relies on a largely shared cortical network, the sudden flash of insight occurs when solvers engage distinct neural and cognitive processes that allow them to see connections that previously",
+              "attribution": "journals.plos.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301062\u2020L51-L59\u3011",
+              "start_idx": 20267,
+              "end_idx": 20279,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+              "url": "https://arxiv.org/abs/1801.04016#:~:text=,the%20tools%20of%20causal%20modeling",
+              "pub_date": null,
+              "snippet": "> Abstract:Current machine learning systems operate, almost exclusively, in a statistical, or model-free mode, which entails severe theoretical limits on their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+              "attribution": "arxiv.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301062\u2020L51-L59\u3011",
+              "start_idx": 20369,
+              "end_idx": 20381,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+              "url": "https://arxiv.org/abs/1801.04016#:~:text=,the%20tools%20of%20causal%20modeling",
+              "pub_date": null,
+              "snippet": "> Abstract:Current machine learning systems operate, almost exclusively, in a statistical, or model-free mode, which entails severe theoretical limits on their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+              "attribution": "arxiv.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301062\u2020L51-L59\u3011",
+              "start_idx": 20492,
+              "end_idx": 20504,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+              "url": "https://arxiv.org/abs/1801.04016#:~:text=,the%20tools%20of%20causal%20modeling",
+              "pub_date": null,
+              "snippet": "> Abstract:Current machine learning systems operate, almost exclusively, in a statistical, or model-free mode, which entails severe theoretical limits on their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+              "attribution": "arxiv.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301062\u2020L53-L59\u3011",
+              "start_idx": 20902,
+              "end_idx": 20914,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "[1801.04016] Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution",
+              "url": "https://arxiv.org/abs/1801.04016#:~:text=their%20power%20and%20performance,the%20tools%20of%20causal%20modeling",
+              "pub_date": null,
+              "snippet": "their power and performance. Such systems cannot reason about interventions and retrospection and, therefore, cannot serve as the basis for strong AI. To achieve human level intelligence, learning machines need the guidance of a model of reality, similar to the ones used in causal inference tasks. To demonstrate the essential role of such models, I will present a summary of seven tasks which are beyond reach of current machine learning systems and which have been accomplished using the tools of causal modeling.",
+              "attribution": "arxiv.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301063\u2020L23-L31\u3011",
+              "start_idx": 22089,
+              "end_idx": 22101,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "What are the fundamental flaws of the transformer model that deep ...",
+              "url": "https://www.quora.com/What-are-the-fundamental-flaws-of-the-transformer-model-that-deep-learning-scientists-hope-to-solve-quickly#:~:text=,pointing%20out%20Deep%20Learning%27s%20flaws",
+              "pub_date": null,
+              "snippet": "... www.quora.com  Is Deep Learning fundamentally flawed and hitting a wall? Was Gary Marcus correct in pointing out Deep Learning's flaws?",
+              "attribution": "quora.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301064\u2020L1-L9\u3011",
+              "start_idx": 24691,
+              "end_idx": 24701,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "DECIPHERING THE DEFINITION OF ADVERSARIAL ... - arXiv",
+              "url": "https://arxiv.org/html/2406.15104v3#:~:text=Many%20OOD%20detectors%20can%20be,severe%20limitation%20of%20current",
+              "pub_date": null,
+              "snippet": "Many OOD detectors can be easily evaded by slightly perturbing benign OOD inputs, creating OOD adversarial examples that reveal a severe limitation of current ...",
+              "attribution": "arxiv.org",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301045\u2020L31-L39\u3011",
+              "start_idx": 26257,
+              "end_idx": 26269,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) Pattern of accidental discoveries in science | Thomas Heinze ...",
+              "url": "https://www.academia.edu/72464249/Pattern_of_accidental_discoveries_in_science?uc-g-sw=40430736#:~:text=,becomes%20the%20occasion%20for",
+              "pub_date": null,
+              "snippet": "(PDF) Pattern of accidental discoveries in science | Thomas Heinze ... ... serendipity pattern refers to the fairly common experience of observing an unanticipated, anomalous, and strategic datum which becomes the occasion for ...",
+              "attribution": "academia.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301067\u2020L5-L12\u3011",
+              "start_idx": 28000,
+              "end_idx": 28011,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Hans Reichenbach - 8 Science Quotes",
+              "url": "https://todayinsci.com/R/Reichenbach_Hans/ReichenbachHans-Quotations.htm#:~:text=That%20is%2C%20he%20is%20not,Philosophical%20Significance%20of%20the",
+              "pub_date": null,
+              "snippet": "That is, he is not interested in the context of discovery, but in the context of justification. \u2014 Hans Reichenbach. 'The Philosophical Significance of the ...",
+              "attribution": "todayinsci.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301071\u2020L119-L128\u3011",
+              "start_idx": 28323,
+              "end_idx": 28337,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\nScientific Discovery (Stanford Encyclopedia of Philosophy)\n",
+              "url": "https://plato.stanford.edu/entries/scientific-discovery/#:~:text=Much%20of%20the%20discussion%20about,Discovery%2C%20by%20contrast%2C%20can%20only",
+              "pub_date": null,
+              "snippet": "Much of the discussion about scientific discovery in the 20^{th} century revolved around this distinction It was argued that conceiving a new idea is a non-rational process, a leap of insight that cannot be captured in specific instructions. Justification, by contrast, is a systematic process of applying evaluative criteria to knowledge claims. Advocates of the context distinction argued that philosophy of science is exclusively concerned with the context of justification. The assumption underlying this argument is that philosophy is a normative project; it determines norms for scientific practice. Given this assumption, only the justification of ideas, not their generation, can be the subject of philosophical (normative) analysis. Discovery, by contrast, can only",
+              "attribution": "plato.stanford.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301024\u2020L280-L288\u3011",
+              "start_idx": 29848,
+              "end_idx": 29862,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\nKarl Popper (Stanford Encyclopedia of Philosophy)\n",
+              "url": "https://plato.stanford.edu/entries/popper/#:~:text=Popper%20stresses%20in%20particular%20that,cites%20Einstein%20on%20that%20point",
+              "pub_date": null,
+              "snippet": "Popper stresses in particular that there is no unique way, no single method such as induction, which functions as the route to scientific theory, and approvingly cites Einstein on that point:",
+              "attribution": "plato.stanford.edu",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u30108\u2020L23-L30\u3011",
+              "start_idx": 31563,
+              "end_idx": 31574,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Dave's Book Blog: \"Patterns of Discovery\" by Norwood Russell Hanson",
+              "url": "https://davesbookblog-daja.blogspot.com/2016/05/patterns-of-discovery-by-norwood.html?m=0#:~:text=,%28p%2071",
+              "pub_date": null,
+              "snippet": "\"The initial suggestion of an hypothesis is very often a reasonable affair. It is not so often affected by intuition, insight, hunches, or other imponderables as biographers or scientists suggest.\" (p 71)",
+              "attribution": "davesbookblog-daja.blogspot.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301070\u2020L29-L37\u3011",
+              "start_idx": 33313,
+              "end_idx": 33325,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Is It Justifiable to Abandon All Search for a Logic of Discovery?",
+              "url": "https://www.tandfonline.com/doi/abs/10.1080/02698590701589544#:~:text=Is%20It%20Justifiable%20to%20Abandon,for%20the%20context%20of",
+              "pub_date": null,
+              "snippet": "Is It Justifiable to Abandon All Search for a Logic of Discovery? Nickles (Citation2000, 91) also argues that the context of discovery is necessary to epistemology because it provides the material for the context of ...",
+              "attribution": "tandfonline.com",
+              "icon_type": null
+            },
+            {
+              "matched_text": "\u301072\u2020L5-L13\u3011",
+              "start_idx": 36813,
+              "end_idx": 36824,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Hubert Dreyfus, who argued that computers, w... - Hacker News",
+              "url": "https://news.ycombinator.com/item?id=23797472#:~:text=Hubert%20Dreyfus%2C%20who%20argued%20that,One%20of%20Dreyfus%27",
+              "pub_date": null,
+              "snippet": "Hubert Dreyfus, who argued that computers, w... - Hacker News \"Hubert Dreyfus, who argued that computers, who have no body, no childhood and no cultural practice, could not acquire intelligence at all. One of Dreyfus' ...",
+              "attribution": "news.ycombinator.com",
+              "icon_type": null
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_680356d45b708191bcc5c0fa89b83a3b",
+          "async_task_title": "Annotated Bibliography on the Impulse of Inquiry and Its Relevance to AI"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "d58de6d8-f67d-46eb-96d5-ef5d52244532",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "7f95850b-7641-434a-9f77-e3efaf61af28",
+  "plugin_ids": null,
+  "conversation_id": "6803569f-4008-8004-937a-81b1e5de0c50",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "6803569f-4008-8004-937a-81b1e5de0c50"
+}

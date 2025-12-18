@@ -1,0 +1,1079 @@
+{
+  "title": "v7-OASIS",
+  "create_time": 1740290605.443284,
+  "update_time": 1740291155.970606,
+  "mapping": {
+    "aaa18632-faac-497f-807d-66356028645e": {
+      "id": "aaa18632-faac-497f-807d-66356028645e",
+      "message": null,
+      "parent": null,
+      "children": [
+        "df0a7034-364d-4690-958a-e83434ee9d56"
+      ]
+    },
+    "df0a7034-364d-4690-958a-e83434ee9d56": {
+      "id": "df0a7034-364d-4690-958a-e83434ee9d56",
+      "message": {
+        "id": "df0a7034-364d-4690-958a-e83434ee9d56",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa18632-faac-497f-807d-66356028645e",
+      "children": [
+        "5935f68c-2a52-4268-8e8b-19e6401899e9"
+      ]
+    },
+    "5935f68c-2a52-4268-8e8b-19e6401899e9": {
+      "id": "5935f68c-2a52-4268-8e8b-19e6401899e9",
+      "message": {
+        "id": "5935f68c-2a52-4268-8e8b-19e6401899e9",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290605.445734,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91650339bd86e7e4-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "df0a7034-364d-4690-958a-e83434ee9d56",
+      "children": [
+        "64029322-6b44-46a5-82a5-30c679b52b23"
+      ]
+    },
+    "64029322-6b44-46a5-82a5-30c679b52b23": {
+      "id": "64029322-6b44-46a5-82a5-30c679b52b23",
+      "message": {
+        "id": "64029322-6b44-46a5-82a5-30c679b52b23",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290607.70127,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. Please provide the name or acronym of the first archaeology and historical studies-related software tool you'd like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "5935f68c-2a52-4268-8e8b-19e6401899e9",
+          "request_id": "91650339bd86e7e4-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "5935f68c-2a52-4268-8e8b-19e6401899e9",
+      "children": [
+        "570e2e5d-33fa-4a2c-98ce-473787fac553"
+      ]
+    },
+    "570e2e5d-33fa-4a2c-98ce-473787fac553": {
+      "id": "570e2e5d-33fa-4a2c-98ce-473787fac553",
+      "message": {
+        "id": "570e2e5d-33fa-4a2c-98ce-473787fac553",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740290607.701388,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "64029322-6b44-46a5-82a5-30c679b52b23",
+          "request_id": "91650339bd86e7e4-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "64029322-6b44-46a5-82a5-30c679b52b23",
+      "children": [
+        "f0431ea6-ef7f-4393-accd-2e9f801b784e"
+      ]
+    },
+    "f0431ea6-ef7f-4393-accd-2e9f801b784e": {
+      "id": "f0431ea6-ef7f-4393-accd-2e9f801b784e",
+      "message": {
+        "id": "f0431ea6-ef7f-4393-accd-2e9f801b784e",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290618.739153,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "OASIS"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9165038d4c9be7e4-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "570e2e5d-33fa-4a2c-98ce-473787fac553",
+      "children": [
+        "ecfd6a1e-5511-4c64-9994-7d636ce4623e"
+      ]
+    },
+    "ecfd6a1e-5511-4c64-9994-7d636ce4623e": {
+      "id": "ecfd6a1e-5511-4c64-9994-7d636ce4623e",
+      "message": {
+        "id": "ecfd6a1e-5511-4c64-9994-7d636ce4623e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290630.813318,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will systematically search for mentions of the software tool **OASIS** related to archaeology and historical studies from 1995 onwards. I will record each valid source found in a well-formed CSV with the required fields: \"Tool\", \"Year\", \"Source\", \"URL\", and \"AI Notes.\" \n\nThis will include academic papers, blog posts, software repositories, and any other valid references. If I find any uncertainties or issues with the data, I will document them in the \"AI Notes\" column.\n\nI will let you know once I have gathered the relevant information."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "f0431ea6-ef7f-4393-accd-2e9f801b784e",
+          "request_id": "9165038d4c9be7e4-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f0431ea6-ef7f-4393-accd-2e9f801b784e",
+      "children": [
+        "bf674722-ce8b-4357-8ca3-c1327cd08622"
+      ]
+    },
+    "bf674722-ce8b-4357-8ca3-c1327cd08622": {
+      "id": "bf674722-ce8b-4357-8ca3-c1327cd08622",
+      "message": {
+        "id": "bf674722-ce8b-4357-8ca3-c1327cd08622",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290630.813461,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will systematically search for mentions of the software tool **OASIS** related to archaeology and historical studies from 1995 onwards. I will record each valid source found in a well-formed CSV with the required fields: \\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", and \\\"AI Notes.\\\" \\n\\nThis will include academic papers, blog posts, software repositories, and any other valid references. If I find any uncertainties or issues with the data, I will document them in the \\\"AI Notes\\\" column.\\n\\nI will let you know once I have gathered the relevant information.\",\"title\":\"OASIS Archaeology Software Mentions\",\"prompt\":\"Conduct a systematic search for mentions of the archaeology and historical studies-related software tool **OASIS** from 1995 onwards.\\n\\nFor each valid source found, construct a well-formed quoted CSV including the following fields:\\n- **Tool**: \\\"OASIS\\\" (Ensure name consistency)\\n- **Year**: The publication year of the source, if available (use \\\"n.d.\\\" if no date is given)\\n- **Source**: Citation or (Domain + Page Title)\\n- **URL**: Direct link to the source\\n- **AI Notes**: Any concerns, issues, or uncertainties regarding data provenance or quality\\n\\nEnsure to include one row per mention, including sources from:\\n- Academic publications\\n- Blog posts and about pages\\n- Mentions on software repositories\\n- Any other valid references\\n\\nDo NOT infer dates\u2014only include explicitly stated publication years. Systematically explore adjacent years (+-1 year) when a valid source is found. Carefully review all search result pages to ensure comprehensive data collection. Prioritize accuracy and epistemological rigor.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ecfd6a1e-5511-4c64-9994-7d636ce4623e",
+          "request_id": "9165038d4c9be7e4-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "ecfd6a1e-5511-4c64-9994-7d636ce4623e",
+      "children": [
+        "4e424ad8-7492-4d3f-9b65-dc8b88f4af55"
+      ]
+    },
+    "4e424ad8-7492-4d3f-9b65-dc8b88f4af55": {
+      "id": "4e424ad8-7492-4d3f-9b65-dc8b88f4af55",
+      "message": {
+        "id": "4e424ad8-7492-4d3f-9b65-dc8b88f4af55",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740290635.007158,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "OASIS Archaeology Software Mentions",
+          "async_task_prompt": "Conduct a systematic search for mentions of the archaeology and historical studies-related software tool **OASIS** from 1995 onwards.\n\nFor each valid source found, construct a well-formed quoted CSV including the following fields:\n- **Tool**: \"OASIS\" (Ensure name consistency)\n- **Year**: The publication year of the source, if available (use \"n.d.\" if no date is given)\n- **Source**: Citation or (Domain + Page Title)\n- **URL**: Direct link to the source\n- **AI Notes**: Any concerns, issues, or uncertainties regarding data provenance or quality\n\nEnsure to include one row per mention, including sources from:\n- Academic publications\n- Blog posts and about pages\n- Mentions on software repositories\n- Any other valid references\n\nDo NOT infer dates\u2014only include explicitly stated publication years. Systematically explore adjacent years (+-1 year) when a valid source is found. Carefully review all search result pages to ensure comprehensive data collection. Prioritize accuracy and epistemological rigor.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "OASIS Archaeology Software Mentions",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "bf674722-ce8b-4357-8ca3-c1327cd08622",
+          "request_id": "9165038d4c9be7e4-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "bf674722-ce8b-4357-8ca3-c1327cd08622",
+      "children": [
+        "39881ade-a064-408f-9452-d47ee730f438"
+      ]
+    },
+    "39881ade-a064-408f-9452-d47ee730f438": {
+      "id": "39881ade-a064-408f-9452-d47ee730f438",
+      "message": {
+        "id": "39881ade-a064-408f-9452-d47ee730f438",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290969.448909,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"OASIS\",\"2003\",\"csanet.org \u2013 *CSA Newsletter* XV(3) Winter 2003: \u201cComprehensiveness for All: The OASIS Project and Research Values in the Digital Age\u201d\u30105\u2020L28-L32\u3011\",\"http://csanet.org/newsletter/winter03/nlw0305.html\",\"Authored by OASIS project leads; credible newsletter article summarizing OASIS's goals\"\n\"OASIS\",\"2004\",\"intarch.ac.uk \u2013 *Internet Archaeology* Issue 17 (2004), Falkingham: \u201cA whiter shade of grey: a new approach to archaeological grey literature\u201d\u30107\u2020L57-L65\u3011\",\"https://intarch.ac.uk/journal/issue17/5/gf2-1-2.html\",\"Peer-reviewed journal article; establishes context and purpose of OASIS in managing grey literature\"\n\"OASIS\",\"2006\",\"historicengland.org.uk \u2013 *Conservation Bulletin* 51: \u201cOASIS: sharing information across the profession\u201d (Hardman 2006)\u301025\u2020L159-L163\u3011\",\"https://historicengland.org.uk/images-books/publications/conservation-bulletin-51/\",\"Short article in English Heritage bulletin (p.26); authoritative but original text not readily available online\"\n\"OASIS\",\"2009\",\"The Grey Journal 5(2) \u2013 \u201cThe OASIS Project: Facilitating Access to Archaeological Grey Literature in England and Scotland\u201d (Hardman 2009)\u301056\u2020L13-L21\u3011\",\"https://www.greynet.org/images/Contents_TGJ.V5.N2.pdf\",\"Academic journal focused on grey literature; content peer-reviewed (availability limited to subscribers, using GreyNet resource)\"\n\"OASIS\",\"2015\",\"archaeologydataservice.ac.uk \u2013 ADS Blog: \u201cAll change at ADS\u201d (Mar\u00a017\u00a02015)\u301014\u2020L19-L27\u3011\u301014\u2020L29-L38\u3011\",\"https://archaeologydataservice.ac.uk/blog/all-change-at-ads/\",\"Official ADS blog post noting OASIS\u2019s development and impact; informal but from a reputable institutional source\"\n\"OASIS\",\"2019\",\"archaeologydataservice.ac.uk \u2013 OASIS Blog: \u201cConnecting OASIS and DES with Regional Research Frameworks in Scotland\u201d (Sep\u00a018\u00a02019)\u301064\u2020L37-L45\u3011\",\"https://archaeologydataservice.ac.uk/blog/oasis/?p=639\",\"Project blog post by a national heritage agency collaborator; describes integration of OASIS with Scottish reporting (credible, but blog format)\"\n\"OASIS\",\"2020\",\"archaeologydataservice.ac.uk \u2013 OASIS Blog: \u201cOASIS V is here\u201d (Oct\u00a029\u00a02020)\u301022\u2020L23-L30\u3011\u301022\u2020L35-L43\u3011\",\"https://archaeologydataservice.ac.uk/blog/oasis/?p=742\",\"Official announcement of OASIS version 5; details version history (pilot in 2001, rollout in 2004)\u301022\u2020L23-L30\u3011\u301022\u2020L35-L43\u3011, reflecting authoritative insider knowledge\"\n\"OASIS\",\"n.d.\",\"oasis.ac.uk \u2013 *About OASIS* page (Online Access to the Index of Archaeological Investigations)\u301070\u2020L26-L34\u3011\",\"http://oasis.ac.uk/about.xhtml\",\"Official project about-page with background and scope; no publication date provided (content maintained by OASIS project team)\""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 190,
+              "end_ix": 201,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CSA Newsletter, Winter '03: Comprehensiveness for All:  The OASIS Project and Research Values in the Digital Age",
+                "url": "https://www.csanet.org/newsletter/winter03/nlw0305.html#:~:text=There%20is%20one%20area%20where,may%20have%20such%20an%20impact",
+                "text": "There is one area where the rapid expansion of information technology may have a profound impact: the ability to make research to be up-to-date and comprehensive. One ongoing project at the Archaeology Data Service (ADS) - the \"Online Access to the Index of Archaeological Investigations\" (OASIS) project - is precisely the sort of project that may have such an impact.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 28,
+                  "end_line_num": 32
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 503,
+              "end_ix": 514,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n         Internet Archaeol 17. Falkingham. \n      ",
+                "url": "https://intarch.ac.uk/journal/issue17/5/gf2-1-2.html#:~:text=The%20%20OASIS%20Project%20is,and%20English%20Heritage%20%2016",
+                "text": "The  OASIS Project is a collaborative venture between the ADS, the English Heritage NMR and AIP. These projects and the work of the national network of HERs currently overlap to a large extent, and it has been recognised that there is duplication of effort in recording data about archaeological events. Streamlining this process is essential within a discipline of limited resources such as archaeology. The OASIS Project aims to provide a single unified index to archaeological investigations, a means of accessing the associated grey literature, and an online method by which the index can be maintained (Hardman and Richards 2003 ; ADS and English Heritage  16).",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 7,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 57,
+                  "end_line_num": 65
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 807,
+              "end_ix": 821,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "2000-2009 \u2013 Archaeology Data Service",
+                "url": "https://archaeologydataservice.ac.uk/about/ads-publications/2000-2009/#:~:text=Hardman%2C%20C,Bulletin%C2%A051%20English%20Heritage%2C%202006%2C%2026",
+                "text": "Hardman, C.S. (2006) \u2018OASIS: Sharing information across the profession\u2019, Conservation Bulletin\u00a051 English Heritage, 2006, 26.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 25,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 159,
+                  "end_line_num": 163
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1175,
+              "end_ix": 1187,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "TGJ V5N2.pdf",
+                "url": "https://www.greynet.org/images/Contents_TGJ.V5.N2.pdf#:~:text=A%20Case%20Study%20From%20Tasmania,Scholarship%20Considerations%20for%20the%20Archaeological",
+                "text": "A Case Study From Tasmania 72 Angela McGowan (Australia) The Online Access to the Index of Archaeological Investigations (OASIS) Project: Facilitating Access to Archaeological Grey Literature in England and Scotland 76 Catherine Hardman (United Kingdom) Archaeology\u2019s Grey Literature and Professional Review 83 Mark E. Harlan (United States) Special Ethical and Scholarship Considerations for the Archaeological",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 56,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 13,
+                  "end_line_num": 21
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1466,
+              "end_ix": 1478,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "All change at ADS \u2013 Archaeology Data Service",
+                "url": "https://archaeologydataservice.ac.uk/blog/all-change-at-ads/#:~:text=It%E2%80%99s%20with%20great%20regret%20that,the%20OASIS%20online%20recording%20form",
+                "text": "It\u2019s with great regret that at the end of February 2015 we said goodbye to Catherine Hardman, ADS Deputy Director and Collections Development Manager. Catherine had been with us for over 13 years, having joined ADS from working on the Extensive Urban Survey project for Cumbria County Council. A lot has changed during that period, but some things are still the same. One of Catherine\u2019s first duties was to give a presentation on OASIS at the 2002 Computer Applications in Archaeology conference in Heraklion in Crete. One of her last roles has been to oversee the HERALD User Needs survey, which will inform the future development of the OASIS online recording form.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 14,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 19,
+                  "end_line_num": 27
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1478,
+              "end_ix": 1490,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "All change at ADS \u2013 Archaeology Data Service",
+                "url": "https://archaeologydataservice.ac.uk/blog/all-change-at-ads/#:~:text=During%20that%20period%20OASIS%20has,of%20OASIS%2C%20and%20Collections%20Development",
+                "text": "During that period OASIS has become the cornerstone of heritage information strategy in England, and it has played a key role in creating a key online resource for British Archaeology. When Catherine joined ADS there were no unpublished fieldwork reports in the grey literature library; as she leaves us the library has just exceeded the 30,000 report threshold, each with a permanent Digital Object Identifier, and excellent metadata. We wish Catherine good luck in her new job with the Parliamentary Archives, and hope she is as successful sorting out the Government\u2019s digital data as she has been with Archaeology. In the meantime we are pleased to welcome Louisa Matthews, who takes over oversight of OASIS, and Collections Development.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 14,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 29,
+                  "end_line_num": 38
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1815,
+              "end_ix": 1827,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OASIS Blog | Page 2",
+                "url": "https://archaeologydataservice.ac.uk/blog/oasis/?paged=2#:~:text=Connecting%20OASIS%20and%20DES%20with,Regional%20Research%20Frameworks%20in%20Scotland",
+                "text": "Connecting OASIS and DES with Regional Research Frameworks in Scotland",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 64,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 37,
+                  "end_line_num": 45
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2123,
+              "end_ix": 2135,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OASIS V is here | OASIS Blog",
+                "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=This%20is%20the%20fifth%20iteration,in%20England%2C%20%209%20Scotland%E2%80%99s",
+                "text": "This is the fifth iteration of the OASIS form; it began life as a pilot/concept in 2001 and was last updated in 2007 when OASIS was expanded to cover Scotland and a further module to record fine detail of geophysical surveys (OASIS IV). The latest redevelopment introduces a myriad of improvements and features requested by all the user community and which we sincerely hope will make it easier to use. As a component of HIAS in England,  9 Scotland\u2019s",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 23,
+                  "end_line_num": 30
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2135,
+              "end_ix": 2147,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OASIS V is here | OASIS Blog",
+                "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=Since%20its%20formal%20rollout%20in,Training%20and%20Guidance%20as%20possible",
+                "text": "Since its formal rollout in England in Spring 2004 OASIS has collected the details of over 90,000 records from England, Scotland, and the maritime region of Wales, and made the unpublished reports of 50,000 of these freely available in the Library of the ADS. It\u2019s also an intensively used system, with over 1400 registered organisations, and hundreds of edits and new records made every week. Managing the move over to the new system is thus an intensive and careful piece of work. As OASIS V is also very new, users will also need to be supported with as much Training and Guidance as possible.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 35,
+                  "end_line_num": 43
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2305,
+              "end_ix": 2317,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OASIS V is here | OASIS Blog",
+                "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=This%20is%20the%20fifth%20iteration,in%20England%2C%20%209%20Scotland%E2%80%99s",
+                "text": "This is the fifth iteration of the OASIS form; it began life as a pilot/concept in 2001 and was last updated in 2007 when OASIS was expanded to cover Scotland and a further module to record fine detail of geophysical surveys (OASIS IV). The latest redevelopment introduces a myriad of improvements and features requested by all the user community and which we sincerely hope will make it easier to use. As a component of HIAS in England,  9 Scotland\u2019s",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 23,
+                  "end_line_num": 30
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2317,
+              "end_ix": 2329,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OASIS V is here | OASIS Blog",
+                "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=Since%20its%20formal%20rollout%20in,Training%20and%20Guidance%20as%20possible",
+                "text": "Since its formal rollout in England in Spring 2004 OASIS has collected the details of over 90,000 records from England, Scotland, and the maritime region of Wales, and made the unpublished reports of 50,000 of these freely available in the Library of the ADS. It\u2019s also an intensively used system, with over 1400 registered organisations, and hundreds of edits and new records made every week. Managing the move over to the new system is thus an intensive and careful piece of work. As OASIS V is also very new, users will also need to be supported with as much Training and Guidance as possible.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 35,
+                  "end_line_num": 43
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2485,
+              "end_ix": 2497,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OASIS: About",
+                "url": "http://oasis.ac.uk/about.xhtml#:~:text=About%20OASIS",
+                "text": "About OASIS",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 70,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 26,
+                  "end_line_num": 34
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u30105\u2020L28-L32\u3011",
+              "start_idx": 190,
+              "end_idx": 201,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CSA Newsletter, Winter '03: Comprehensiveness for All:  The OASIS Project and Research Values in the Digital Age",
+              "url": "https://www.csanet.org/newsletter/winter03/nlw0305.html#:~:text=There%20is%20one%20area%20where,may%20have%20such%20an%20impact",
+              "pub_date": null,
+              "snippet": "There is one area where the rapid expansion of information technology may have a profound impact: the ability to make research to be up-to-date and comprehensive. One ongoing project at the Archaeology Data Service (ADS) - the \"Online Access to the Index of Archaeological Investigations\" (OASIS) project - is precisely the sort of project that may have such an impact.",
+              "attribution": "csanet.org"
+            },
+            {
+              "matched_text": "\u30107\u2020L57-L65\u3011",
+              "start_idx": 503,
+              "end_idx": 514,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n         Internet Archaeol 17. Falkingham. \n      ",
+              "url": "https://intarch.ac.uk/journal/issue17/5/gf2-1-2.html#:~:text=The%20%20OASIS%20Project%20is,and%20English%20Heritage%20%2016",
+              "pub_date": null,
+              "snippet": "The  OASIS Project is a collaborative venture between the ADS, the English Heritage NMR and AIP. These projects and the work of the national network of HERs currently overlap to a large extent, and it has been recognised that there is duplication of effort in recording data about archaeological events. Streamlining this process is essential within a discipline of limited resources such as archaeology. The OASIS Project aims to provide a single unified index to archaeological investigations, a means of accessing the associated grey literature, and an online method by which the index can be maintained (Hardman and Richards 2003 ; ADS and English Heritage  16).",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301025\u2020L159-L163\u3011",
+              "start_idx": 807,
+              "end_idx": 821,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "2000-2009 \u2013 Archaeology Data Service",
+              "url": "https://archaeologydataservice.ac.uk/about/ads-publications/2000-2009/#:~:text=Hardman%2C%20C,Bulletin%C2%A051%20English%20Heritage%2C%202006%2C%2026",
+              "pub_date": null,
+              "snippet": "Hardman, C.S. (2006) \u2018OASIS: Sharing information across the profession\u2019, Conservation Bulletin\u00a051 English Heritage, 2006, 26.",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301056\u2020L13-L21\u3011",
+              "start_idx": 1175,
+              "end_idx": 1187,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "TGJ V5N2.pdf",
+              "url": "https://www.greynet.org/images/Contents_TGJ.V5.N2.pdf#:~:text=A%20Case%20Study%20From%20Tasmania,Scholarship%20Considerations%20for%20the%20Archaeological",
+              "pub_date": null,
+              "snippet": "A Case Study From Tasmania 72 Angela McGowan (Australia) The Online Access to the Index of Archaeological Investigations (OASIS) Project: Facilitating Access to Archaeological Grey Literature in England and Scotland 76 Catherine Hardman (United Kingdom) Archaeology\u2019s Grey Literature and Professional Review 83 Mark E. Harlan (United States) Special Ethical and Scholarship Considerations for the Archaeological",
+              "attribution": "greynet.org"
+            },
+            {
+              "matched_text": "\u301014\u2020L19-L27\u3011",
+              "start_idx": 1466,
+              "end_idx": 1478,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "All change at ADS \u2013 Archaeology Data Service",
+              "url": "https://archaeologydataservice.ac.uk/blog/all-change-at-ads/#:~:text=It%E2%80%99s%20with%20great%20regret%20that,the%20OASIS%20online%20recording%20form",
+              "pub_date": null,
+              "snippet": "It\u2019s with great regret that at the end of February 2015 we said goodbye to Catherine Hardman, ADS Deputy Director and Collections Development Manager. Catherine had been with us for over 13 years, having joined ADS from working on the Extensive Urban Survey project for Cumbria County Council. A lot has changed during that period, but some things are still the same. One of Catherine\u2019s first duties was to give a presentation on OASIS at the 2002 Computer Applications in Archaeology conference in Heraklion in Crete. One of her last roles has been to oversee the HERALD User Needs survey, which will inform the future development of the OASIS online recording form.",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301014\u2020L29-L38\u3011",
+              "start_idx": 1478,
+              "end_idx": 1490,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "All change at ADS \u2013 Archaeology Data Service",
+              "url": "https://archaeologydataservice.ac.uk/blog/all-change-at-ads/#:~:text=During%20that%20period%20OASIS%20has,of%20OASIS%2C%20and%20Collections%20Development",
+              "pub_date": null,
+              "snippet": "During that period OASIS has become the cornerstone of heritage information strategy in England, and it has played a key role in creating a key online resource for British Archaeology. When Catherine joined ADS there were no unpublished fieldwork reports in the grey literature library; as she leaves us the library has just exceeded the 30,000 report threshold, each with a permanent Digital Object Identifier, and excellent metadata. We wish Catherine good luck in her new job with the Parliamentary Archives, and hope she is as successful sorting out the Government\u2019s digital data as she has been with Archaeology. In the meantime we are pleased to welcome Louisa Matthews, who takes over oversight of OASIS, and Collections Development.",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301064\u2020L37-L45\u3011",
+              "start_idx": 1815,
+              "end_idx": 1827,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OASIS Blog | Page 2",
+              "url": "https://archaeologydataservice.ac.uk/blog/oasis/?paged=2#:~:text=Connecting%20OASIS%20and%20DES%20with,Regional%20Research%20Frameworks%20in%20Scotland",
+              "pub_date": null,
+              "snippet": "Connecting OASIS and DES with Regional Research Frameworks in Scotland",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301022\u2020L23-L30\u3011",
+              "start_idx": 2123,
+              "end_idx": 2135,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OASIS V is here | OASIS Blog",
+              "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=This%20is%20the%20fifth%20iteration,in%20England%2C%20%209%20Scotland%E2%80%99s",
+              "pub_date": null,
+              "snippet": "This is the fifth iteration of the OASIS form; it began life as a pilot/concept in 2001 and was last updated in 2007 when OASIS was expanded to cover Scotland and a further module to record fine detail of geophysical surveys (OASIS IV). The latest redevelopment introduces a myriad of improvements and features requested by all the user community and which we sincerely hope will make it easier to use. As a component of HIAS in England,  9 Scotland\u2019s",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301022\u2020L35-L43\u3011",
+              "start_idx": 2135,
+              "end_idx": 2147,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OASIS V is here | OASIS Blog",
+              "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=Since%20its%20formal%20rollout%20in,Training%20and%20Guidance%20as%20possible",
+              "pub_date": null,
+              "snippet": "Since its formal rollout in England in Spring 2004 OASIS has collected the details of over 90,000 records from England, Scotland, and the maritime region of Wales, and made the unpublished reports of 50,000 of these freely available in the Library of the ADS. It\u2019s also an intensively used system, with over 1400 registered organisations, and hundreds of edits and new records made every week. Managing the move over to the new system is thus an intensive and careful piece of work. As OASIS V is also very new, users will also need to be supported with as much Training and Guidance as possible.",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301022\u2020L23-L30\u3011",
+              "start_idx": 2305,
+              "end_idx": 2317,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OASIS V is here | OASIS Blog",
+              "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=This%20is%20the%20fifth%20iteration,in%20England%2C%20%209%20Scotland%E2%80%99s",
+              "pub_date": null,
+              "snippet": "This is the fifth iteration of the OASIS form; it began life as a pilot/concept in 2001 and was last updated in 2007 when OASIS was expanded to cover Scotland and a further module to record fine detail of geophysical surveys (OASIS IV). The latest redevelopment introduces a myriad of improvements and features requested by all the user community and which we sincerely hope will make it easier to use. As a component of HIAS in England,  9 Scotland\u2019s",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301022\u2020L35-L43\u3011",
+              "start_idx": 2317,
+              "end_idx": 2329,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OASIS V is here | OASIS Blog",
+              "url": "https://archaeologydataservice.ac.uk/blog/oasis/?p=742#:~:text=Since%20its%20formal%20rollout%20in,Training%20and%20Guidance%20as%20possible",
+              "pub_date": null,
+              "snippet": "Since its formal rollout in England in Spring 2004 OASIS has collected the details of over 90,000 records from England, Scotland, and the maritime region of Wales, and made the unpublished reports of 50,000 of these freely available in the Library of the ADS. It\u2019s also an intensively used system, with over 1400 registered organisations, and hundreds of edits and new records made every week. Managing the move over to the new system is thus an intensive and careful piece of work. As OASIS V is also very new, users will also need to be supported with as much Training and Guidance as possible.",
+              "attribution": "archaeologydataservice.ac.uk"
+            },
+            {
+              "matched_text": "\u301070\u2020L26-L34\u3011",
+              "start_idx": 2485,
+              "end_idx": 2497,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OASIS: About",
+              "url": "http://oasis.ac.uk/about.xhtml#:~:text=About%20OASIS",
+              "pub_date": null,
+              "snippet": "About OASIS",
+              "attribution": "oasis.ac.uk"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67baba4aec24819194cd7c46e68f8a99",
+          "async_task_title": "OASIS Archaeology Software Mentions"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "4e424ad8-7492-4d3f-9b65-dc8b88f4af55",
+      "children": [
+        "8d9cd40c-f2ba-4a65-ab96-e55d412829da",
+        "84ef6757-e50c-482a-9e57-515f77a78cc1"
+      ]
+    },
+    "8d9cd40c-f2ba-4a65-ab96-e55d412829da": {
+      "id": "8d9cd40c-f2ba-4a65-ab96-e55d412829da",
+      "message": {
+        "id": "8d9cd40c-f2ba-4a65-ab96-e55d412829da",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290986.735354,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "please make this a fenced code block csv"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91650c891e6de7e4-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "39881ade-a064-408f-9452-d47ee730f438",
+      "children": [
+        "813a1a0b-ac6b-41c0-9cf6-594da791adef"
+      ]
+    },
+    "84ef6757-e50c-482a-9e57-515f77a78cc1": {
+      "id": "84ef6757-e50c-482a-9e57-515f77a78cc1",
+      "message": {
+        "id": "84ef6757-e50c-482a-9e57-515f77a78cc1",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740291047.336386,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "please make this a fenced code block csv"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "request_id": "91650da5ff19e7e4-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "39881ade-a064-408f-9452-d47ee730f438",
+      "children": [
+        "111aeabf-2cf6-4e77-9500-91cb69dc281b"
+      ]
+    },
+    "813a1a0b-ac6b-41c0-9cf6-594da791adef": {
+      "id": "813a1a0b-ac6b-41c0-9cf6-594da791adef",
+      "message": {
+        "id": "813a1a0b-ac6b-41c0-9cf6-594da791adef",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290998.767706,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "rebase_system_message": true,
+          "message_type": null,
+          "model_slug": "o1-pro",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8d9cd40c-f2ba-4a65-ab96-e55d412829da",
+          "request_id": "91650c891e6de7e4-SYD",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8d9cd40c-f2ba-4a65-ab96-e55d412829da",
+      "children": [
+        "e5cee00f-5ac6-453d-a5df-7b950605234c"
+      ]
+    },
+    "111aeabf-2cf6-4e77-9500-91cb69dc281b": {
+      "id": "111aeabf-2cf6-4e77-9500-91cb69dc281b",
+      "message": {
+        "id": "111aeabf-2cf6-4e77-9500-91cb69dc281b",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740291059.368108,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "rebase_system_message": true,
+          "message_type": null,
+          "model_slug": "o1-pro",
+          "default_model_slug": "o1-pro",
+          "parent_id": "84ef6757-e50c-482a-9e57-515f77a78cc1",
+          "request_id": "91650da5ff19e7e4-SYD",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "84ef6757-e50c-482a-9e57-515f77a78cc1",
+      "children": [
+        "0dd71dea-bcb0-4b9f-ba74-a97c0e6596b4"
+      ]
+    },
+    "e5cee00f-5ac6-453d-a5df-7b950605234c": {
+      "id": "e5cee00f-5ac6-453d-a5df-7b950605234c",
+      "message": {
+        "id": "e5cee00f-5ac6-453d-a5df-7b950605234c",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740290998.768127,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "rebase_developer_message": true,
+          "message_type": null,
+          "model_slug": "o1-pro",
+          "default_model_slug": "o1-pro",
+          "parent_id": "813a1a0b-ac6b-41c0-9cf6-594da791adef",
+          "request_id": "91650c891e6de7e4-SYD",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "813a1a0b-ac6b-41c0-9cf6-594da791adef",
+      "children": [
+        "4b6bc00c-9a67-47db-bd15-2a8adae807b6"
+      ]
+    },
+    "0dd71dea-bcb0-4b9f-ba74-a97c0e6596b4": {
+      "id": "0dd71dea-bcb0-4b9f-ba74-a97c0e6596b4",
+      "message": {
+        "id": "0dd71dea-bcb0-4b9f-ba74-a97c0e6596b4",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740291059.368256,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "rebase_developer_message": true,
+          "message_type": null,
+          "model_slug": "o1-pro",
+          "default_model_slug": "o1-pro",
+          "parent_id": "111aeabf-2cf6-4e77-9500-91cb69dc281b",
+          "request_id": "91650da5ff19e7e4-SYD",
+          "timestamp_": "absolute",
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "111aeabf-2cf6-4e77-9500-91cb69dc281b",
+      "children": [
+        "760abada-dc03-4bdc-a9ba-a77df9af9c74"
+      ]
+    },
+    "4b6bc00c-9a67-47db-bd15-2a8adae807b6": {
+      "id": "4b6bc00c-9a67-47db-bd15-2a8adae807b6",
+      "message": {
+        "id": "4b6bc00c-9a67-47db-bd15-2a8adae807b6",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740291140.385709,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"OASIS\",\"2003\",\"csanet.org \u2013 CSA Newsletter XV(3) Winter 2003: \u201cComprehensiveness for All: The OASIS Project and Research Values in the Digital Age\u201d\",\"http://csanet.org/newsletter/winter03/nlw0305.html\",\"Mention of OASIS project aims and digital resource strategies. No direct evidence of active data processing capabilities. Potentially reputable.\"\n\"OASIS\",\"2004\",\"intarch.ac.uk \u2013 Internet Archaeology Issue 17: \u201cA whiter shade of grey: a new approach to archaeological grey literature\u201d\",\"https://intarch.ac.uk/journal/issue17/5/gf2-1-2.html\",\"Reference to OASIS\u2019s role in managing archaeological grey literature. Peer-reviewed. Appears valid.\"\n\"OASIS\",\"2006\",\"historicengland.org.uk \u2013 Conservation Bulletin 51: \u201cOASIS: sharing information across the profession\u201d (Hardman 2006)\",\"https://historicengland.org.uk/images-books/publications/conservation-bulletin-51/\",\"Brief note on OASIS in official English Heritage document. Credible, though full text not freely available online.\"\n\"OASIS\",\"2009\",\"The Grey Journal 5(2): \u201cThe OASIS Project: Facilitating Access to Archaeological Grey Literature in England and Scotland\u201d (Hardman 2009)\",\"https://www.greynet.org/images/Contents_TGJ.V5.N2.pdf\",\"Academic journal focusing on grey literature. Possibly peer-reviewed. Partial paywall. Appears relevant.\"\n\"OASIS\",\"2015\",\"archaeologydataservice.ac.uk \u2013 ADS Blog: \u201cAll change at ADS\u201d (Mar 17 2015)\",\"https://archaeologydataservice.ac.uk/blog/all-change-at-ads/\",\"Institutional blog article acknowledging OASIS\u2019s ongoing development. Informal but from a reputable source.\"\n\"OASIS\",\"2019\",\"archaeologydataservice.ac.uk \u2013 OASIS Blog: \u201cConnecting OASIS and DES with Regional Research Frameworks in Scotland\u201d (Sep 18 2019)\",\"https://archaeologydataservice.ac.uk/blog/oasis/?p=639\",\"Blog post by a credible agency detailing new features and integrations with OASIS.\"\n\"OASIS\",\"2020\",\"archaeologydataservice.ac.uk \u2013 OASIS Blog: \u201cOASIS V is here\u201d (Oct 29 2020)\",\"https://archaeologydataservice.ac.uk/blog/oasis/?p=742\",\"Announcement on OASIS version updates. Insider info. Blog format, but official.\"\n\"OASIS\",\"n.d.\",\"oasis.ac.uk \u2013 About page\",\"http://oasis.ac.uk/about.xhtml\",\"No publication date. Brief info about the project. Source is official project site.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "o1-pro",
+          "default_model_slug": "o1-pro",
+          "parent_id": "e5cee00f-5ac6-453d-a5df-7b950605234c",
+          "request_id": "91650c891e6de7e4-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e5cee00f-5ac6-453d-a5df-7b950605234c",
+      "children": []
+    },
+    "760abada-dc03-4bdc-a9ba-a77df9af9c74": {
+      "id": "760abada-dc03-4bdc-a9ba-a77df9af9c74",
+      "message": {
+        "id": "760abada-dc03-4bdc-a9ba-a77df9af9c74",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740291154.814447,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"OASIS\",\"2003\",\"csanet.org \u2013 CSA Newsletter XV(3) Winter 2003: \u201cComprehensiveness for All: The OASIS Project and Research Values in the Digital Age\u201d\",\"http://csanet.org/newsletter/winter03/nlw0305.html\",\"Authored by OASIS project leads; summary of OASIS goals. Original text presumably credible.\"\n\"OASIS\",\"2004\",\"intarch.ac.uk \u2013 Internet Archaeology Issue 17 (2004), Falkingham: \u201cA whiter shade of grey: a new approach to archaeological grey literature\u201d\",\"https://intarch.ac.uk/journal/issue17/5/gf2-1-2.html\",\"Peer-reviewed journal article discussing OASIS role in managing grey literature.\"\n\"OASIS\",\"2006\",\"historicengland.org.uk \u2013 Conservation Bulletin 51: \u201cOASIS: sharing information across the profession\u201d (Hardman 2006)\",\"https://historicengland.org.uk/images-books/publications/conservation-bulletin-51/\",\"Short article in English Heritage bulletin; references OASIS developments. Original text partially behind archived references.\"\n\"OASIS\",\"2009\",\"The Grey Journal 5(2) \u2013 \u201cThe OASIS Project: Facilitating Access to Archaeological Grey Literature in England and Scotland\u201d (Hardman 2009)\",\"https://www.greynet.org/images/Contents_TGJ.V5.N2.pdf\",\"Academic journal on grey literature. Full text may require subscription or request from GreyNet.\"\n\"OASIS\",\"2015\",\"archaeologydataservice.ac.uk \u2013 ADS Blog (Mar 17, 2015): \u201cAll change at ADS\u201d\",\"https://archaeologydataservice.ac.uk/blog/all-change-at-ads/\",\"Official ADS blog post noting ongoing development and background of OASIS.\"\n\"OASIS\",\"2019\",\"archaeologydataservice.ac.uk \u2013 OASIS Blog (Sep 18, 2019): \u201cConnecting OASIS and DES with Regional Research Frameworks in Scotland\u201d\",\"https://archaeologydataservice.ac.uk/blog/oasis/?p=639\",\"Project blog post describing integration of OASIS with DES in Scotland. Informal but authoritative.\"\n\"OASIS\",\"2020\",\"archaeologydataservice.ac.uk \u2013 OASIS Blog (Oct 29, 2020): \u201cOASIS V is here\u201d\",\"https://archaeologydataservice.ac.uk/blog/oasis/?p=742\",\"Official announcement of OASIS version 5; describes version history. Reputable institutional source.\"\n\"OASIS\",\"n.d.\",\"oasis.ac.uk \u2013 About OASIS page\",\"http://oasis.ac.uk/about.xhtml\",\"Official project page providing general background on the OASIS platform. No publication date indicated.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "o1-pro",
+          "default_model_slug": "o1-pro",
+          "parent_id": "0dd71dea-bcb0-4b9f-ba74-a97c0e6596b4",
+          "request_id": "91650da5ff19e7e4-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "0dd71dea-bcb0-4b9f-ba74-a97c0e6596b4",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "760abada-dc03-4bdc-a9ba-a77df9af9c74",
+  "plugin_ids": null,
+  "conversation_id": "67baba2d-2608-8004-9cfb-4aa27c5a9891",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://intarch.ac.uk/journal/issue17/5/gf2-1-2.html",
+    "https://historicengland.org.uk/images-books/publications/conservation-bulletin-51/",
+    "https://www.greynet.org/images/Contents_TGJ.V5.N2.pdf",
+    "https://archaeologydataservice.ac.uk/blog/all-change-at-ads/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "o1-pro",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67baba2d-2608-8004-9cfb-4aa27c5a9891"
+}

@@ -1,0 +1,811 @@
+{
+  "title": "v5-Archeofrag",
+  "create_time": 1740121304.318736,
+  "update_time": 1740121777.513224,
+  "mapping": {
+    "aaa1ca9a-3e05-40ac-9282-9197c39503e0": {
+      "id": "aaa1ca9a-3e05-40ac-9282-9197c39503e0",
+      "message": null,
+      "parent": null,
+      "children": [
+        "a5537a64-d57e-4369-b0c2-e9c3104d8f72"
+      ]
+    },
+    "a5537a64-d57e-4369-b0c2-e9c3104d8f72": {
+      "id": "a5537a64-d57e-4369-b0c2-e9c3104d8f72",
+      "message": {
+        "id": "a5537a64-d57e-4369-b0c2-e9c3104d8f72",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1ca9a-3e05-40ac-9282-9197c39503e0",
+      "children": [
+        "b5210985-4f4a-4d53-8d86-3f094766cb1e"
+      ]
+    },
+    "b5210985-4f4a-4d53-8d86-3f094766cb1e": {
+      "id": "b5210985-4f4a-4d53-8d86-3f094766cb1e",
+      "message": {
+        "id": "b5210985-4f4a-4d53-8d86-3f094766cb1e",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121304.32108,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9154dde66a4be7d0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a5537a64-d57e-4369-b0c2-e9c3104d8f72",
+      "children": [
+        "f66f1142-77d3-4dd5-9c6e-0ff855b91f49"
+      ]
+    },
+    "f66f1142-77d3-4dd5-9c6e-0ff855b91f49": {
+      "id": "f66f1142-77d3-4dd5-9c6e-0ff855b91f49",
+      "message": {
+        "id": "f66f1142-77d3-4dd5-9c6e-0ff855b91f49",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121309.022856,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and precision required for this research. Please provide the first software tool you would like me to investigate."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b5210985-4f4a-4d53-8d86-3f094766cb1e",
+          "request_id": "9154dde66a4be7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b5210985-4f4a-4d53-8d86-3f094766cb1e",
+      "children": [
+        "f916ed1a-1cf7-44fa-97a9-dee82e7b65d9"
+      ]
+    },
+    "f916ed1a-1cf7-44fa-97a9-dee82e7b65d9": {
+      "id": "f916ed1a-1cf7-44fa-97a9-dee82e7b65d9",
+      "message": {
+        "id": "f916ed1a-1cf7-44fa-97a9-dee82e7b65d9",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740121309.022952,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "f66f1142-77d3-4dd5-9c6e-0ff855b91f49",
+          "request_id": "9154dde66a4be7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f66f1142-77d3-4dd5-9c6e-0ff855b91f49",
+      "children": [
+        "8dbc98f1-9e55-4397-a215-e3ebe24b1c6f"
+      ]
+    },
+    "8dbc98f1-9e55-4397-a215-e3ebe24b1c6f": {
+      "id": "8dbc98f1-9e55-4397-a215-e3ebe24b1c6f",
+      "message": {
+        "id": "8dbc98f1-9e55-4397-a215-e3ebe24b1c6f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121310.847289,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Archeofrag"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9154de0e2fd7e7d0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f916ed1a-1cf7-44fa-97a9-dee82e7b65d9",
+      "children": [
+        "732e7094-89b5-4f58-bae6-75ac8ecbb586"
+      ]
+    },
+    "732e7094-89b5-4f58-bae6-75ac8ecbb586": {
+      "id": "732e7094-89b5-4f58-bae6-75ac8ecbb586",
+      "message": {
+        "id": "732e7094-89b5-4f58-bae6-75ac8ecbb586",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121323.01226,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a comprehensive search for all mentions of the software tool \"Archeofrag\" from 1995 onwards. This includes:\n- Checking version control repositories for code with commit dates.\n- Reviewing scholarly literature for published references.\n- Searching blog posts, about pages, and any other web mentions.\n- Ensuring each source is recorded in the CSV format as per your specifications, with one row per mention.\n\nI'll let you know once I have gathered the data."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8dbc98f1-9e55-4397-a215-e3ebe24b1c6f",
+          "request_id": "9154de0e2fd7e7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8dbc98f1-9e55-4397-a215-e3ebe24b1c6f",
+      "children": [
+        "a750d0ef-92a0-4155-bdaa-b7e021adcc68"
+      ]
+    },
+    "a750d0ef-92a0-4155-bdaa-b7e021adcc68": {
+      "id": "a750d0ef-92a0-4155-bdaa-b7e021adcc68",
+      "message": {
+        "id": "a750d0ef-92a0-4155-bdaa-b7e021adcc68",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121323.012355,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a comprehensive search for all mentions of the software tool \\\"Archeofrag\\\" from 1995 onwards. This includes:\\n- Checking version control repositories for code with commit dates.\\n- Reviewing scholarly literature for published references.\\n- Searching blog posts, about pages, and any other web mentions.\\n- Ensuring each source is recorded in the CSV format as per your specifications, with one row per mention.\\n\\nI'll let you know once I have gathered the data.\",\"title\":\"Comprehensive Evidence Collection for Archeofrag\",\"prompt\":\"Conduct a thorough search for all mentions of the archaeology-related software tool \\\"Archeofrag\\\" from 1995 onwards. Collect data systematically by:\\n\\n- Searching for published version control repositories with commit dates.\\n- Identifying scholarly literature that references Archeofrag.\\n- Reviewing blog posts, project pages, and other web mentions.\\n- Ensuring that every mention is recorded in the CSV format as follows:\\n\\n```\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n```\\n\\nEach valid source should be recorded in a separate row, ensuring precision in data collection. If the date is unavailable, mark it as \\\"n.d.\\\". Any uncertainties regarding provenance or data quality should be noted under \\\"AI Notes.\\\" Explore adjacent years systematically if a date is found.\\n\\nProvide a detailed CSV with all the data you collect.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "732e7094-89b5-4f58-bae6-75ac8ecbb586",
+          "request_id": "9154de0e2fd7e7d0-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "732e7094-89b5-4f58-bae6-75ac8ecbb586",
+      "children": [
+        "eaabc65f-3acd-4590-a874-2cd7ad8fbcf7"
+      ]
+    },
+    "eaabc65f-3acd-4590-a874-2cd7ad8fbcf7": {
+      "id": "eaabc65f-3acd-4590-a874-2cd7ad8fbcf7",
+      "message": {
+        "id": "eaabc65f-3acd-4590-a874-2cd7ad8fbcf7",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740121336.24841,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Evidence Collection for Archeofrag",
+          "async_task_prompt": "Conduct a thorough search for all mentions of the archaeology-related software tool \"Archeofrag\" from 1995 onwards. Collect data systematically by:\n\n- Searching for published version control repositories with commit dates.\n- Identifying scholarly literature that references Archeofrag.\n- Reviewing blog posts, project pages, and other web mentions.\n- Ensuring that every mention is recorded in the CSV format as follows:\n\n```\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n```\n\nEach valid source should be recorded in a separate row, ensuring precision in data collection. If the date is unavailable, mark it as \"n.d.\". Any uncertainties regarding provenance or data quality should be noted under \"AI Notes.\" Explore adjacent years systematically if a date is found.\n\nProvide a detailed CSV with all the data you collect.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Evidence Collection for Archeofrag",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "a750d0ef-92a0-4155-bdaa-b7e021adcc68",
+          "request_id": "9154de0e2fd7e7d0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a750d0ef-92a0-4155-bdaa-b7e021adcc68",
+      "children": [
+        "c387bc9b-97fe-4a3b-bd85-5f856e264b71"
+      ]
+    },
+    "c387bc9b-97fe-4a3b-bd85-5f856e264b71": {
+      "id": "c387bc9b-97fe-4a3b-bd85-5f856e264b71",
+      "message": {
+        "id": "c387bc9b-97fe-4a3b-bd85-5f856e264b71",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740121722.531523,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"Archeofrag\",\"2020\",\"Zenodo Software Archive (v0.6.1)\",\"https://doi.org/10.5281/zenodo.4294066\",\"Initial archived release of Archeofrag (version 0.6.1) on Zenodo, published November 27, 2020\u301039\u2020L15-L23\u3011\"\n\"Archeofrag\",\"n.d.\",\"Open-Archaeo Software List\",\"https://open-archaeo.info/post/archeofrag/\",\"Listing on the Open-Archaeo site for open-source archaeological software (undated; entry captured in an archive dated Nov 30, 2020)\u30106\u2020L86-L94\u3011\"\n\"Archeofrag\",\"2021\",\"Journal of Archaeological Science (JAS)\",\"https://doi.org/10.1016/j.jas.2021.105501\",\"Peer-reviewed article introducing the TSAR method; the Archeofrag R package is mentioned as the implementation of this method\u301046\u2020L313-L321\u3011\u301046\u2020L323-L324\u3011\"\n\"Archeofrag\",\"2022\",\"Bulletin de la Soci\u00e9t\u00e9 pr\u00e9historique fran\u00e7aise\",\"http://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2022_1_2e_partie_Correspondance_PLUTNIAK.pdf\",\"Short correspondence (in French) on the TSAR method and the Archeofrag package, published in BSPF vol. 119(1) pages\u00a0110\u2013113\u301015\u2020L3-L7\u3011\"\n\"Archeofrag\",\"2022\",\"Journal of Open Source Software (JOSS)\",\"https://doi.org/10.21105/joss.04335\",\"Open-source software paper describing Archeofrag (submitted Feb 17, 2022; published Jul 31, 2022)\u30102\u2020L13-L16\u3011\u30102\u2020L30-L37\u3011\"\n\"Archeofrag\",\"2022\",\"Rzine (R community e-zine)\",\"https://rzine.fr/ressources/20220811_archeofrag_joss/\",\"French-language article in Rzine announcing the JOSS publication of Archeofrag\u301063\u2020L153-L161\u3011\u301063\u2020L155-L158\u3011\"\n\"Archeofrag\",\"2023\",\"Advances in Archaeological Practice (ArchaeoSRP article)\",\"https://doi.org/10.1017/aap.2023.22\",\"Paper introducing the ArchaeoSRP package (vol. 11, issue 4) cites Archeofrag (Plutniak 2022) as an example of an archaeological spatial analysis tool\u301065\u2020L463-L470\u3011\u301067\u2020L1-L4\u3011\"\n\"Archeofrag\",\"2023\",\"Edited Volume Chapter (Routledge)\",\"https://doi.org/10.4324/9781003350026-10\",\"Book chapter \u201cFour Problems for Archaeological Fragmentation Studies...\u201d (Routledge, 2023) applies the TSAR method using Archeofrag (Neolithic pottery case study)\u30109\u2020L332-L339\u3011\"\n\"Archeofrag\",\"2024\",\"Comprehensive R Archive Network (CRAN)\",\"https://cran.r-project.org/package=archeofrag\",\"Official CRAN release of Archeofrag version 1.0.0 (publication date 2024-12-17)\u30101\u2020L23-L30\u3011\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 237,
+              "end_ix": 249,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "sebastien-plutniak/archeofrag: Archeofrag: an R package for refitting and stratigraphic analysis in archaeology",
+                "url": "https://doi.org/10.5281/zenodo.4294066#:~:text=There%20is%20a%20newer%20version,of%20the%20record%20available",
+                "text": "There is a newer version of the record available.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 39,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 15,
+                  "end_line_num": 23
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 477,
+              "end_ix": 488,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "archeofrag \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/post/archeofrag/#:~:text=archeofrag",
+                "text": "archeofrag",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 6,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 86,
+                  "end_line_num": 94
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 722,
+              "end_ix": 736,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": " The strength of parthood ties. Modelling spatial units and fragmented objects with the TSAR method \u2013 Topological Study of Archaeological Refitting  - HAL-SHS - Sciences de l'Homme et de la Soci\u00e9t\u00e9",
+                "url": "https://shs.hal.science/hal-03274075/#:~:text=%3E%20%3E%20,4271900",
+                "text": "> > ####  Cites  10.5281/zenodo.4271900  Archeofrag: an R package for refitting and stratigraphic analysis in archaeology, https://doi.org/10.5281/zenodo.4271900",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 46,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 313,
+                  "end_line_num": 321
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 736,
+              "end_ix": 750,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": " The strength of parthood ties. Modelling spatial units and fragmented objects with the TSAR method \u2013 Topological Study of Archaeological Refitting  - HAL-SHS - Sciences de l'Homme et de la Soci\u00e9t\u00e9",
+                "url": "https://shs.hal.science/hal-03274075/#:~:text=Journal%20of%20Archaeological%20Science%2C%202021%2C,03419952%E2%9F%A9",
+                "text": "Journal of Archaeological Science, 2021, 136, pp.105501. \u27e810.1016/j.jas.2021.105501\u27e9. \u27e8hal-03419952\u27e9",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 46,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 323,
+                  "end_line_num": 324
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1052,
+              "end_ix": 1062,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "",
+                "url": "http://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2022_1_2e_partie_Correspondance_PLUTNIAK.pdf#:~:text=110%20Bulletin%20de%20la%20Soci%C3%A9t%C3%A9,package%20R%20Archeofrag%20S%C3%A9bastien%20Plutniak",
+                "text": "110 Bulletin de la Soci\u00e9t\u00e9 pr\u00e9historique fran\u00e7aise CORRESPONDANCE L\u2019analyse topologique des remontages arch\u00e9ologiques : la m\u00e9thode TSAR et le package R Archeofrag S\u00e9bastien Plutniak",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 15,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 3,
+                  "end_line_num": 7
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1261,
+              "end_ix": 1272,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Journal of Open Source Software: Archeofrag: an R package for Refitting and Spatial Analysis in Archaeology",
+                "url": "https://joss.theoj.org/papers/10.21105/joss.04335#:~:text=R%20Submitted%2017%20February%202022,%E2%80%A2%20Published%2031%20July%202022",
+                "text": "R Submitted 17 February 2022 \u2022 Published 31 July 2022",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 2,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 13,
+                  "end_line_num": 16
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1272,
+              "end_ix": 1283,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Journal of Open Source Software: Archeofrag: an R package for Refitting and Spatial Analysis in Archaeology",
+                "url": "https://joss.theoj.org/papers/10.21105/joss.04335#:~:text=Plutniak%2C%20S,04335",
+                "text": "Plutniak, S., (2022). Archeofrag: an R package for Refitting and Spatial Analysis in Archaeology. Journal of Open Source Software, 7(75), 4335, https://doi.org/10.21105/joss.04335",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 2,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 30,
+                  "end_line_num": 37
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1469,
+              "end_ix": 1483,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archeofrag \u2014 Cat OPIDoR",
+                "url": "https://cat.opidor.fr/index.php/Archeofrag#:~:text=Analysis%20in%20Archaeology%E2%80%9D%2C%20Journal%20of,%E2%80%9CFour%20Problems%20for%20Archaeological",
+                "text": "Analysis in Archaeology\u201d, Journal of Open Source Software, 7 (75), p. 4335. DOI: https://doi.org/10.21105/joss.04335. * Plutniak, S. 2022. \u201cArcheofrag: un package R pour les remontages et l'analyse spatiale en arch\u00e9ologie\u201d, Rzine, https://rzine.fr/ressources/20220811_archeofrag_joss/ * Plutniak, S. 2022. \u201cL'analyse topologique des remontages arch\u00e9ologiques\u00a0: la m\u00e9thode TSAR et le package R archeofrag\u201d, Bulletin de la Soci\u00e9t\u00e9 pr\u00e9historique fran\u00e7aise, 119 (1), p. 110\u2013113. * Plutniak, S., J. Caro, C. Manen 2023. \u201cFour Problems for Archaeological",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 63,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 153,
+                  "end_line_num": 161
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1483,
+              "end_ix": 1497,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archeofrag \u2014 Cat OPIDoR",
+                "url": "https://cat.opidor.fr/index.php/Archeofrag#:~:text=,topologique%20des%20remontages%20arch%C3%A9ologiques%C2%A0%3A%20la",
+                "text": "* Plutniak, S. 2022. \u201cArcheofrag: un package R pour les remontages et l'analyse spatiale en arch\u00e9ologie\u201d, Rzine, https://rzine.fr/ressources/20220811_archeofrag_joss/ * Plutniak, S. 2022. \u201cL'analyse topologique des remontages arch\u00e9ologiques\u00a0: la",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 63,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 155,
+                  "end_line_num": 158
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1766,
+              "end_ix": 1780,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) ArchaeoSRP: An R Package for Extracting and Synthesizing Federal Cultural Resources Data for Research and Management",
+                "url": "https://www.researchgate.net/publication/375012739_ArchaeoSRP_An_R_Package_for_Extracting_and_Synthesizing_Federal_Cultural_Resources_Data_for_Research_and_Management#:~:text=on%20topics%20such%20as%20dating,artifa%20ct",
+                "text": "on topics such as dating (e.g., Dosseto and Ma rwick 2022), artifa ct",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 65,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 463,
+                  "end_line_num": 470
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1780,
+              "end_ix": 1790,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "(PDF) ArchaeoSRP: An R Package for Extracting and Synthesizing Federal Cultural Resources Data for Research and Management",
+                "url": "https://www.researchgate.net/publication/375012739_ArchaeoSRP_An_R_Package_for_Extracting_and_Synthesizing_Federal_Cultural_Resources_Data_for_Research_and_Management#:~:text=Plutniak%2C%20S%C3%A9bastien,Re%20%EF%AC%81%20tting%20and%20Spatial",
+                "text": "Plutniak, S\u00e9bastien. 2022. Archeofrag: An R Package for Re \ufb01 tting and Spatial",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 67,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2054,
+              "end_ix": 2067,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - sebastien-plutniak/archeofrag: R package for Refitting and Spatial Analysis in Archaeology",
+                "url": "https://github.com/sebastien-plutniak/archeofrag#:~:text=,Archaeological%20Refitting%E2%80%9D%20Journal%20of%20Archaeological",
+                "text": "* Plutniak, S., J. Caro, C. Manen 2023. \u201cFour Problems for Archaeological Fragmentation Studies. Discussion and Application to the Ta\u00ef Cave\u2019s Neolithic Pottery Material (France)\u201d, in A. S\u00f6rman et al., Broken Bodies, Places and Objects. New Perspectives on Fragmentation in Archaeology, London: Routledge, DOI: 10.4324/9781003350026-10. * Plutniak, S. 2021. \u201cThe Strength of Parthood Ties. Modelling Spatial Units and Fragmented Objects with the TSAR Method \u2013 Topological Study of Archaeological Refitting\u201d Journal of Archaeological",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 9,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 332,
+                  "end_line_num": 339
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2258,
+              "end_ix": 2269,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: Package archeofrag",
+                "url": "https://cran.r-project.org/package=archeofrag#:~:text=markdown%20%2C%20%209%20,3",
+                "text": "markdown ,  9 (\u2265 3.0.0) Published: 2024-12-17 DOI: 10.32614/CRAN.package.archeofrag Author: Sebastien Plutniak [Image 0: ORCID iD] [aut, cre] Maintainer: Sebastien Plutniak <sebastien.plutniak at posteo.net> BugReports: https://github.com/sebastien- plutniak/archeofrag/issues License: GPL-3",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 1,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 23,
+                  "end_line_num": 30
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301039\u2020L15-L23\u3011",
+              "start_idx": 237,
+              "end_idx": 249,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "sebastien-plutniak/archeofrag: Archeofrag: an R package for refitting and stratigraphic analysis in archaeology",
+              "url": "https://doi.org/10.5281/zenodo.4294066#:~:text=There%20is%20a%20newer%20version,of%20the%20record%20available",
+              "pub_date": null,
+              "snippet": "There is a newer version of the record available.",
+              "attribution": "doi.org"
+            },
+            {
+              "matched_text": "\u30106\u2020L86-L94\u3011",
+              "start_idx": 477,
+              "end_idx": 488,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "archeofrag \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/post/archeofrag/#:~:text=archeofrag",
+              "pub_date": null,
+              "snippet": "archeofrag",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u301046\u2020L313-L321\u3011",
+              "start_idx": 722,
+              "end_idx": 736,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": " The strength of parthood ties. Modelling spatial units and fragmented objects with the TSAR method \u2013 Topological Study of Archaeological Refitting  - HAL-SHS - Sciences de l'Homme et de la Soci\u00e9t\u00e9",
+              "url": "https://shs.hal.science/hal-03274075/#:~:text=%3E%20%3E%20,4271900",
+              "pub_date": null,
+              "snippet": "> > ####  Cites  10.5281/zenodo.4271900  Archeofrag: an R package for refitting and stratigraphic analysis in archaeology, https://doi.org/10.5281/zenodo.4271900",
+              "attribution": "shs.hal.science"
+            },
+            {
+              "matched_text": "\u301046\u2020L323-L324\u3011",
+              "start_idx": 736,
+              "end_idx": 750,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": " The strength of parthood ties. Modelling spatial units and fragmented objects with the TSAR method \u2013 Topological Study of Archaeological Refitting  - HAL-SHS - Sciences de l'Homme et de la Soci\u00e9t\u00e9",
+              "url": "https://shs.hal.science/hal-03274075/#:~:text=Journal%20of%20Archaeological%20Science%2C%202021%2C,03419952%E2%9F%A9",
+              "pub_date": null,
+              "snippet": "Journal of Archaeological Science, 2021, 136, pp.105501. \u27e810.1016/j.jas.2021.105501\u27e9. \u27e8hal-03419952\u27e9",
+              "attribution": "shs.hal.science"
+            },
+            {
+              "matched_text": "\u301015\u2020L3-L7\u3011",
+              "start_idx": 1052,
+              "end_idx": 1062,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "",
+              "url": "http://www.prehistoire.org/offres/doc_inline_src/515/0-BSPF_2022_1_2e_partie_Correspondance_PLUTNIAK.pdf#:~:text=110%20Bulletin%20de%20la%20Soci%C3%A9t%C3%A9,package%20R%20Archeofrag%20S%C3%A9bastien%20Plutniak",
+              "pub_date": null,
+              "snippet": "110 Bulletin de la Soci\u00e9t\u00e9 pr\u00e9historique fran\u00e7aise CORRESPONDANCE L\u2019analyse topologique des remontages arch\u00e9ologiques : la m\u00e9thode TSAR et le package R Archeofrag S\u00e9bastien Plutniak",
+              "attribution": "prehistoire.org"
+            },
+            {
+              "matched_text": "\u30102\u2020L13-L16\u3011",
+              "start_idx": 1261,
+              "end_idx": 1272,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Journal of Open Source Software: Archeofrag: an R package for Refitting and Spatial Analysis in Archaeology",
+              "url": "https://joss.theoj.org/papers/10.21105/joss.04335#:~:text=R%20Submitted%2017%20February%202022,%E2%80%A2%20Published%2031%20July%202022",
+              "pub_date": null,
+              "snippet": "R Submitted 17 February 2022 \u2022 Published 31 July 2022",
+              "attribution": "joss.theoj.org"
+            },
+            {
+              "matched_text": "\u30102\u2020L30-L37\u3011",
+              "start_idx": 1272,
+              "end_idx": 1283,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Journal of Open Source Software: Archeofrag: an R package for Refitting and Spatial Analysis in Archaeology",
+              "url": "https://joss.theoj.org/papers/10.21105/joss.04335#:~:text=Plutniak%2C%20S,04335",
+              "pub_date": null,
+              "snippet": "Plutniak, S., (2022). Archeofrag: an R package for Refitting and Spatial Analysis in Archaeology. Journal of Open Source Software, 7(75), 4335, https://doi.org/10.21105/joss.04335",
+              "attribution": "joss.theoj.org"
+            },
+            {
+              "matched_text": "\u301063\u2020L153-L161\u3011",
+              "start_idx": 1469,
+              "end_idx": 1483,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archeofrag \u2014 Cat OPIDoR",
+              "url": "https://cat.opidor.fr/index.php/Archeofrag#:~:text=Analysis%20in%20Archaeology%E2%80%9D%2C%20Journal%20of,%E2%80%9CFour%20Problems%20for%20Archaeological",
+              "pub_date": null,
+              "snippet": "Analysis in Archaeology\u201d, Journal of Open Source Software, 7 (75), p. 4335. DOI: https://doi.org/10.21105/joss.04335. * Plutniak, S. 2022. \u201cArcheofrag: un package R pour les remontages et l'analyse spatiale en arch\u00e9ologie\u201d, Rzine, https://rzine.fr/ressources/20220811_archeofrag_joss/ * Plutniak, S. 2022. \u201cL'analyse topologique des remontages arch\u00e9ologiques\u00a0: la m\u00e9thode TSAR et le package R archeofrag\u201d, Bulletin de la Soci\u00e9t\u00e9 pr\u00e9historique fran\u00e7aise, 119 (1), p. 110\u2013113. * Plutniak, S., J. Caro, C. Manen 2023. \u201cFour Problems for Archaeological",
+              "attribution": "cat.opidor.fr"
+            },
+            {
+              "matched_text": "\u301063\u2020L155-L158\u3011",
+              "start_idx": 1483,
+              "end_idx": 1497,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archeofrag \u2014 Cat OPIDoR",
+              "url": "https://cat.opidor.fr/index.php/Archeofrag#:~:text=,topologique%20des%20remontages%20arch%C3%A9ologiques%C2%A0%3A%20la",
+              "pub_date": null,
+              "snippet": "* Plutniak, S. 2022. \u201cArcheofrag: un package R pour les remontages et l'analyse spatiale en arch\u00e9ologie\u201d, Rzine, https://rzine.fr/ressources/20220811_archeofrag_joss/ * Plutniak, S. 2022. \u201cL'analyse topologique des remontages arch\u00e9ologiques\u00a0: la",
+              "attribution": "cat.opidor.fr"
+            },
+            {
+              "matched_text": "\u301065\u2020L463-L470\u3011",
+              "start_idx": 1766,
+              "end_idx": 1780,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) ArchaeoSRP: An R Package for Extracting and Synthesizing Federal Cultural Resources Data for Research and Management",
+              "url": "https://www.researchgate.net/publication/375012739_ArchaeoSRP_An_R_Package_for_Extracting_and_Synthesizing_Federal_Cultural_Resources_Data_for_Research_and_Management#:~:text=on%20topics%20such%20as%20dating,artifa%20ct",
+              "pub_date": null,
+              "snippet": "on topics such as dating (e.g., Dosseto and Ma rwick 2022), artifa ct",
+              "attribution": "researchgate.net"
+            },
+            {
+              "matched_text": "\u301067\u2020L1-L4\u3011",
+              "start_idx": 1780,
+              "end_idx": 1790,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "(PDF) ArchaeoSRP: An R Package for Extracting and Synthesizing Federal Cultural Resources Data for Research and Management",
+              "url": "https://www.researchgate.net/publication/375012739_ArchaeoSRP_An_R_Package_for_Extracting_and_Synthesizing_Federal_Cultural_Resources_Data_for_Research_and_Management#:~:text=Plutniak%2C%20S%C3%A9bastien,Re%20%EF%AC%81%20tting%20and%20Spatial",
+              "pub_date": null,
+              "snippet": "Plutniak, S\u00e9bastien. 2022. Archeofrag: An R Package for Re \ufb01 tting and Spatial",
+              "attribution": "researchgate.net"
+            },
+            {
+              "matched_text": "\u30109\u2020L332-L339\u3011",
+              "start_idx": 2054,
+              "end_idx": 2067,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - sebastien-plutniak/archeofrag: R package for Refitting and Spatial Analysis in Archaeology",
+              "url": "https://github.com/sebastien-plutniak/archeofrag#:~:text=,Archaeological%20Refitting%E2%80%9D%20Journal%20of%20Archaeological",
+              "pub_date": null,
+              "snippet": "* Plutniak, S., J. Caro, C. Manen 2023. \u201cFour Problems for Archaeological Fragmentation Studies. Discussion and Application to the Ta\u00ef Cave\u2019s Neolithic Pottery Material (France)\u201d, in A. S\u00f6rman et al., Broken Bodies, Places and Objects. New Perspectives on Fragmentation in Archaeology, London: Routledge, DOI: 10.4324/9781003350026-10. * Plutniak, S. 2021. \u201cThe Strength of Parthood Ties. Modelling Spatial Units and Fragmented Objects with the TSAR Method \u2013 Topological Study of Archaeological Refitting\u201d Journal of Archaeological",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u30101\u2020L23-L30\u3011",
+              "start_idx": 2258,
+              "end_idx": 2269,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: Package archeofrag",
+              "url": "https://cran.r-project.org/package=archeofrag#:~:text=markdown%20%2C%20%209%20,3",
+              "pub_date": null,
+              "snippet": "markdown ,  9 (\u2265 3.0.0) Published: 2024-12-17 DOI: 10.32614/CRAN.package.archeofrag Author: Sebastien Plutniak [Image 0: ORCID iD] [aut, cre] Maintainer: Sebastien Plutniak <sebastien.plutniak at posteo.net> BugReports: https://github.com/sebastien- plutniak/archeofrag/issues License: GPL-3",
+              "attribution": "cran.r-project.org"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b824f81bc881919c2ebf64fd511522",
+          "async_task_title": "Comprehensive Evidence Collection for Archeofrag"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "eaabc65f-3acd-4590-a874-2cd7ad8fbcf7",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "c387bc9b-97fe-4a3b-bd85-5f856e264b71",
+  "plugin_ids": null,
+  "conversation_id": "67b824d8-33f0-8004-9d80-52c7447ba64d",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b824d8-33f0-8004-9d80-52c7447ba64d"
+}

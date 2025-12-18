@@ -1,0 +1,915 @@
+{
+  "title": "v5-aion",
+  "create_time": 1740117249.603136,
+  "update_time": 1740117723.584847,
+  "mapping": {
+    "aaa10d16-93ed-4816-a154-38156bb9c984": {
+      "id": "aaa10d16-93ed-4816-a154-38156bb9c984",
+      "message": null,
+      "parent": null,
+      "children": [
+        "edf204b3-b158-4351-b7fb-f565acd1147a"
+      ]
+    },
+    "edf204b3-b158-4351-b7fb-f565acd1147a": {
+      "id": "edf204b3-b158-4351-b7fb-f565acd1147a",
+      "message": {
+        "id": "edf204b3-b158-4351-b7fb-f565acd1147a",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa10d16-93ed-4816-a154-38156bb9c984",
+      "children": [
+        "450b35d9-46c4-4043-a21a-ff291a1f064d"
+      ]
+    },
+    "450b35d9-46c4-4043-a21a-ff291a1f064d": {
+      "id": "450b35d9-46c4-4043-a21a-ff291a1f064d",
+      "message": {
+        "id": "450b35d9-46c4-4043-a21a-ff291a1f064d",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740117249.607087,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build the CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91547ae87bed79d2-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "edf204b3-b158-4351-b7fb-f565acd1147a",
+      "children": [
+        "1a06a2de-04eb-4147-8d5b-0c035cf5430c"
+      ]
+    },
+    "1a06a2de-04eb-4147-8d5b-0c035cf5430c": {
+      "id": "1a06a2de-04eb-4147-8d5b-0c035cf5430c",
+      "message": {
+        "id": "1a06a2de-04eb-4147-8d5b-0c035cf5430c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740117254.734574,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your requirements fully. Please provide the first tool name or acronym, and I will begin the systematic research process as outlined."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "450b35d9-46c4-4043-a21a-ff291a1f064d",
+          "request_id": "91547ae87bed79d2-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "450b35d9-46c4-4043-a21a-ff291a1f064d",
+      "children": [
+        "f54ec4e4-efe7-4840-8819-b1f697f0b8e5"
+      ]
+    },
+    "f54ec4e4-efe7-4840-8819-b1f697f0b8e5": {
+      "id": "f54ec4e4-efe7-4840-8819-b1f697f0b8e5",
+      "message": {
+        "id": "f54ec4e4-efe7-4840-8819-b1f697f0b8e5",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740117254.734686,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "1a06a2de-04eb-4147-8d5b-0c035cf5430c",
+          "request_id": "91547ae87bed79d2-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1a06a2de-04eb-4147-8d5b-0c035cf5430c",
+      "children": [
+        "8b53b801-16c4-49f3-84ba-96de02793ea8"
+      ]
+    },
+    "8b53b801-16c4-49f3-84ba-96de02793ea8": {
+      "id": "8b53b801-16c4-49f3-84ba-96de02793ea8",
+      "message": {
+        "id": "8b53b801-16c4-49f3-84ba-96de02793ea8",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740117273.767511,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "aion"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91547b7e7a0b79d2-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f54ec4e4-efe7-4840-8819-b1f697f0b8e5",
+      "children": [
+        "2e98cdc6-6bd4-4bbf-af07-f318f62cb3cc"
+      ]
+    },
+    "2e98cdc6-6bd4-4bbf-af07-f318f62cb3cc": {
+      "id": "2e98cdc6-6bd4-4bbf-af07-f318f62cb3cc",
+      "message": {
+        "id": "2e98cdc6-6bd4-4bbf-af07-f318f62cb3cc",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740117302.998606,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a thorough and systematic search for mentions of the software tool 'AION' in archaeological and historical research contexts. I will document every valid source I find, recording the year, source citation, URL, and any relevant notes regarding the data's reliability or provenance.\n\nI will return with a well-formed CSV containing all mentions of 'AION' from scholarly literature, blog posts, about pages, version control repositories, and other credible sources."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8b53b801-16c4-49f3-84ba-96de02793ea8",
+          "request_id": "91547b7e7a0b79d2-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8b53b801-16c4-49f3-84ba-96de02793ea8",
+      "children": [
+        "a49a9cfa-8e36-4176-b957-859acfc7af7a"
+      ]
+    },
+    "a49a9cfa-8e36-4176-b957-859acfc7af7a": {
+      "id": "a49a9cfa-8e36-4176-b957-859acfc7af7a",
+      "message": {
+        "id": "a49a9cfa-8e36-4176-b957-859acfc7af7a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740117302.998679,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a thorough and systematic search for mentions of the software tool 'AION' in archaeological and historical research contexts. I will document every valid source I find, recording the year, source citation, URL, and any relevant notes regarding the data's reliability or provenance.\\n\\nI will return with a well-formed CSV containing all mentions of 'AION' from scholarly literature, blog posts, about pages, version control repositories, and other credible sources.\",\"title\":\"Comprehensive Research on AION Software Tool\",\"prompt\":\"Conduct an exhaustive and systematic search for the archaeology and historical research-related software tool 'AION.' The search must include scholarly literature, software repositories, blogs, project pages, and other valid sources. The goal is to document every mention of the tool from 1995 onwards.\\n\\nFor each valid mention of 'AION,' return the data in a well-formed quoted CSV format with the following columns:\\n\\n\\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\"\\n\\n- \\\"Tool\\\": The tool's name, consistently recorded as 'AION'.\\n- \\\"Year\\\": The year of publication from the source; if unavailable, use 'n.d.'\\n- \\\"Source\\\": The citation or domain + page title.\\n- \\\"URL\\\": The link to the source.\\n- \\\"AI Notes\\\": Any concerns, provenance issues, or uncertainties about the data quality.\\n\\nThis research should be careful and methodical, ensuring that every mention is documented properly. If uncertainty arises regarding the tool's validity or scope, indicate it in 'AI Notes' rather than making assumptions. If no relevant information is found, report this as well. Systematically explore all available data sources to ensure comprehensive coverage.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "2e98cdc6-6bd4-4bbf-af07-f318f62cb3cc",
+          "request_id": "91547b7e7a0b79d2-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "2e98cdc6-6bd4-4bbf-af07-f318f62cb3cc",
+      "children": [
+        "09b0ebaf-cec3-4e36-9bfc-7ddf41878e0e"
+      ]
+    },
+    "09b0ebaf-cec3-4e36-9bfc-7ddf41878e0e": {
+      "id": "09b0ebaf-cec3-4e36-9bfc-7ddf41878e0e",
+      "message": {
+        "id": "09b0ebaf-cec3-4e36-9bfc-7ddf41878e0e",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740117302.998734,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on AION Software Tool",
+          "async_task_prompt": "Conduct an exhaustive and systematic search for the archaeology and historical research-related software tool 'AION.' The search must include scholarly literature, software repositories, blogs, project pages, and other valid sources. The goal is to document every mention of the tool from 1995 onwards.\n\nFor each valid mention of 'AION,' return the data in a well-formed quoted CSV format with the following columns:\n\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n- \"Tool\": The tool's name, consistently recorded as 'AION'.\n- \"Year\": The year of publication from the source; if unavailable, use 'n.d.'\n- \"Source\": The citation or domain + page title.\n- \"URL\": The link to the source.\n- \"AI Notes\": Any concerns, provenance issues, or uncertainties about the data quality.\n\nThis research should be careful and methodical, ensuring that every mention is documented properly. If uncertainty arises regarding the tool's validity or scope, indicate it in 'AI Notes' rather than making assumptions. If no relevant information is found, report this as well. Systematically explore all available data sources to ensure comprehensive coverage.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on AION Software Tool",
+            "completed_with_time": "Research completed in 6m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "a49a9cfa-8e36-4176-b957-859acfc7af7a",
+          "request_id": "91547b7e7a0b79d2-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b8152c50008191ac05350c00ae7e3d",
+          "async_task_conversation_id": "67b81536-9404-8004-8410-90e924fbbbb7",
+          "async_task_created_at": "2025-02-21 05:55:02.984354+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a49a9cfa-8e36-4176-b957-859acfc7af7a",
+      "children": [
+        "4027693a-98ba-4fe0-ad6b-1122aa1c97f1"
+      ]
+    },
+    "4027693a-98ba-4fe0-ad6b-1122aa1c97f1": {
+      "id": "4027693a-98ba-4fe0-ad6b-1122aa1c97f1",
+      "message": {
+        "id": "4027693a-98ba-4fe0-ad6b-1122aa1c97f1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740117682.074186,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"AION\",\"2024\",\"Journal of Open Source Software, 9(96)\u301025\u2020L4-L11\u3011\",\"https://doi.org/10.21105/joss.06210\",\"Peer-reviewed publication describing the AION tool (R package)\u301025\u2020L4-L11\u3011.\"\n\"AION\",\"2024\",\"Advances in Archaeological Practice (Cambridge)\u30105\u2020L1-L4\u3011\",\"https://www.cambridge.org/core/journals/advances-in-archaeological-practice/article/tesselle-project-a-collection-of-r-packages-for-research-and-teaching-in-archaeology/9DC71362A0778FE1F7A243CEF85117A0\",\"Referenced as part of the Tesselle project; AION cited as an archaeology-focused R package\u30105\u2020L1-L4\u3011.\"\n\"AION\",\"2023\",\"Journal of Open Archaeology Data (open-archaeo dataset)\u301056\u2020L88-L96\u3011\",\"https://openarchaeologydata.metajnl.com/articles/10.5334/joad.111\",\"Included as an entry in the Open-Archaeo list of archaeological software (548-item dataset)\u301021\u2020L86-L94\u3011.\"\n\"AION\",\"2023\",\"RWeekly (2023-W25 issue)\u301032\u2020L123-L130\u3011\",\"https://rweekly.org/2023-W25.html\",\"Listed as a new CRAN package (v1.0.0) in June 2023\u301032\u2020L123-L130\u3011.\"\n\"AION\",\"2024\",\"CRAN package page\u301040\u2020L15-L23\u3011\",\"https://CRAN.R-project.org/package=aion\",\"Official CRAN listing for AION; version 1.3.0 published Dec 2024 (initial release mid-2023)\u301040\u2020L15-L23\u3011.\"\n\"AION\",\"2024\",\"Zenodo (software archive)\u301028\u2020L15-L23\u3011\",\"https://doi.org/10.5281/zenodo.8032278\",\"Zenodo repository for AION (concept DOI for archived versions; v1.3.0 deposited 2024)\u301028\u2020L15-L23\u3011.\"\n\"AION\",\"n.d.\",\"GitHub (tesselle/aion repository)\u301037\u2020L139-L146\u3011\",\"https://github.com/tesselle/aion\",\"Source code repository on GitHub (archived, moved to Codeberg for active development)\u301037\u2020L139-L146\u3011.\"\n\"AION\",\"n.d.\",\"Tesselle project site (AION documentation)\u30108\u2020L37-L45\u3011\",\"https://packages.tesselle.org/aion/\",\"Official documentation and reference page for AION within the Tesselle R package collection\u30108\u2020L37-L45\u3011.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 100,
+              "end_ix": 111,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: aion citation info",
+                "url": "https://cran.r-project.org/web/packages/aion/citation.html#:~:text=,06210",
+                "text": "> Frerebeau N (2024). \u201caion: An R Package to Represent Archaeological Time Series.\u201d Journal of Open Source Software, 9(96). doi:10.21105/joss.06210.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 25,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 4,
+                  "end_line_num": 11
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 214,
+              "end_ix": 225,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: aion citation info",
+                "url": "https://cran.r-project.org/web/packages/aion/citation.html#:~:text=,06210",
+                "text": "> Frerebeau N (2024). \u201caion: An R Package to Represent Archaeological Time Series.\u201d Journal of Open Source Software, 9(96). doi:10.21105/joss.06210.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 25,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 4,
+                  "end_line_num": 11
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 290,
+              "end_ix": 299,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "The tesselle Project: A Collection of R Packages for Research and Teaching in Archaeology | Advances in Archaeological Practice | Cambridge Core",
+                "url": "https://www.cambridge.org/core/journals/advances-in-archaeological-practice/article/tesselle-project-a-collection-of-r-packages-for-research-and-teaching-in-archaeology/9DC71362A0778FE1F7A243CEF85117A0#:~:text=relies%20on%20aion%20,with%20time%20series%20in%20archaeology",
+                "text": "relies on aion (Frerebeau and Roe Reference Frerebeau and Roe 2023; https://packages.tesselle.org/aion/), which makes it easier to work with time series in archaeology.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 596,
+              "end_ix": 605,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "The tesselle Project: A Collection of R Packages for Research and Teaching in Archaeology | Advances in Archaeological Practice | Cambridge Core",
+                "url": "https://www.cambridge.org/core/journals/advances-in-archaeological-practice/article/tesselle-project-a-collection-of-r-packages-for-research-and-teaching-in-archaeology/9DC71362A0778FE1F7A243CEF85117A0#:~:text=relies%20on%20aion%20,with%20time%20series%20in%20archaeology",
+                "text": "relies on aion (Frerebeau and Roe Reference Frerebeau and Roe 2023; https://packages.tesselle.org/aion/), which makes it easier to work with time series in archaeology.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 5,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 678,
+              "end_ix": 690,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Open-archaeo: A Resource for Documenting Archaeological Software Development Practices | Journal of Open Archaeology Data",
+                "url": "https://doi.org/10.5334/joad.111#:~:text=Year%3A%202023",
+                "text": "Year: 2023",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 56,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 88,
+                  "end_line_num": 96
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 852,
+              "end_ix": 864,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "aion \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/post/aion/#:~:text=aion",
+                "text": "aion",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 21,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 86,
+                  "end_line_num": 94
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 906,
+              "end_ix": 920,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "R Weekly 2023-W25 slice(), columns, Bayes | RWeekly.org - Blogs to Learn R from the Community",
+                "url": "https://rweekly.org/2023-W25.html#:~:text=Data%20with%20Complex%20Structure%20,Series%20Data%20for%20Further%20Analysis",
+                "text": "Data with Complex Structure * {aion} 1.0.0: Archaeological Time Series * {pcutils} 0.1.0: Some Useful Functions for Statistics and Visualization * {hdflex} 0.1.0: High-Dimensional Aggregate Density Forecasts * {tdata} 0.2.0.0: Prepare Your Time-Series Data for Further Analysis",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 32,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 123,
+                  "end_line_num": 130
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1009,
+              "end_ix": 1023,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "R Weekly 2023-W25 slice(), columns, Bayes | RWeekly.org - Blogs to Learn R from the Community",
+                "url": "https://rweekly.org/2023-W25.html#:~:text=Data%20with%20Complex%20Structure%20,Series%20Data%20for%20Further%20Analysis",
+                "text": "Data with Complex Structure * {aion} 1.0.0: Archaeological Time Series * {pcutils} 0.1.0: Some Useful Functions for Statistics and Visualization * {hdflex} 0.1.0: High-Dimensional Aggregate Density Forecasts * {tdata} 0.2.0.0: Prepare Your Time-Series Data for Further Analysis",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 32,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 123,
+                  "end_line_num": 130
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1058,
+              "end_ix": 1070,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: Package aion",
+                "url": "https://cloud.r-project.org/web/packages/aion/index.html#:~:text=tinysnapshot%20%2C%20%208%20Published%3A,com%2Ftesselle%2Faion%2Fissues%20License%3A%20GPL%20%28%E2%89%A5%203",
+                "text": "tinysnapshot ,  8 Published: 2024-12-10 DOI: 10.32614/CRAN.package.aion Author: Nicolas Frerebeau [Image 0: ORCID iD] [aut, cre], Joe Roe [Image 1: ORCID iD] [aut], Brice Lebrun [Image 2: ORCID iD] [ctb] (Logo designer), Universit\u00e9 Bordeaux Montaigne [fnd], CNRS [fnd] Maintainer: Nicolas Frerebeau <nicolas.frerebeau at u-bordeaux-montaigne.fr> BugReports: https://github.com/tesselle/aion/issues License: GPL (\u2265 3)",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 40,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 15,
+                  "end_line_num": 23
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1206,
+              "end_ix": 1218,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "CRAN: Package aion",
+                "url": "https://cloud.r-project.org/web/packages/aion/index.html#:~:text=tinysnapshot%20%2C%20%208%20Published%3A,com%2Ftesselle%2Faion%2Fissues%20License%3A%20GPL%20%28%E2%89%A5%203",
+                "text": "tinysnapshot ,  8 Published: 2024-12-10 DOI: 10.32614/CRAN.package.aion Author: Nicolas Frerebeau [Image 0: ORCID iD] [aut, cre], Joe Roe [Image 1: ORCID iD] [aut], Brice Lebrun [Image 2: ORCID iD] [ctb] (Logo designer), Universit\u00e9 Bordeaux Montaigne [fnd], CNRS [fnd] Maintainer: Nicolas Frerebeau <nicolas.frerebeau at u-bordeaux-montaigne.fr> BugReports: https://github.com/tesselle/aion/issues License: GPL (\u2265 3)",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 40,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 15,
+                  "end_line_num": 23
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1261,
+              "end_ix": 1273,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "aion: An R Package to Represent Archaeological Time Series",
+                "url": "https://doi.org/10.5281/zenodo.8032278#:~:text=Published%20December%2010%2C%202024%20,0",
+                "text": "Published December 10, 2024  | Version v1.3.0",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 28,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 15,
+                  "end_line_num": 23
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1402,
+              "end_ix": 1414,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "aion: An R Package to Represent Archaeological Time Series",
+                "url": "https://doi.org/10.5281/zenodo.8032278#:~:text=Published%20December%2010%2C%202024%20,0",
+                "text": "Published December 10, 2024  | Version v1.3.0",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 28,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 15,
+                  "end_line_num": 23
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1465,
+              "end_ix": 1479,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - tesselle/aion: Archaeological Time Series - Moved to https://codeberg.org/tesselle/aion",
+                "url": "https://github.com/tesselle/aion#:~:text=",
+                "text": "*  Star 10",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 37,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 139,
+                  "end_line_num": 146
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1602,
+              "end_ix": 1616,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "GitHub - tesselle/aion: Archaeological Time Series - Moved to https://codeberg.org/tesselle/aion",
+                "url": "https://github.com/tesselle/aion#:~:text=",
+                "text": "*  Star 10",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 37,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 139,
+                  "end_line_num": 146
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1676,
+              "end_ix": 1687,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeological Time Series \u2022 aion",
+                "url": "https://packages.tesselle.org/aion/#:~:text=aion%20provides%20a%20system%20of,makes%20calculations%20and%20comparisons%20easier",
+                "text": "aion provides a system of classes and methods to represent and work with such time-series (and time intervals). Dates are represented as rata die (Reingold and Dershowitz 2018), i.e.\u00a0the number of days since 01-01-01 (Gregorian), with negative values for earlier dates. This allows to represent dates independently of any calendar: it makes calculations and comparisons easier.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 37,
+                  "end_line_num": 45
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1819,
+              "end_ix": 1830,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeological Time Series \u2022 aion",
+                "url": "https://packages.tesselle.org/aion/#:~:text=aion%20provides%20a%20system%20of,makes%20calculations%20and%20comparisons%20easier",
+                "text": "aion provides a system of classes and methods to represent and work with such time-series (and time intervals). Dates are represented as rata die (Reingold and Dershowitz 2018), i.e.\u00a0the number of days since 01-01-01 (Gregorian), with negative values for earlier dates. This allows to represent dates independently of any calendar: it makes calculations and comparisons easier.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 37,
+                  "end_line_num": 45
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301025\u2020L4-L11\u3011",
+              "start_idx": 100,
+              "end_idx": 111,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: aion citation info",
+              "url": "https://cran.r-project.org/web/packages/aion/citation.html#:~:text=,06210",
+              "pub_date": null,
+              "snippet": "> Frerebeau N (2024). \u201caion: An R Package to Represent Archaeological Time Series.\u201d Journal of Open Source Software, 9(96). doi:10.21105/joss.06210.",
+              "attribution": "cran.r-project.org"
+            },
+            {
+              "matched_text": "\u301025\u2020L4-L11\u3011",
+              "start_idx": 214,
+              "end_idx": 225,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: aion citation info",
+              "url": "https://cran.r-project.org/web/packages/aion/citation.html#:~:text=,06210",
+              "pub_date": null,
+              "snippet": "> Frerebeau N (2024). \u201caion: An R Package to Represent Archaeological Time Series.\u201d Journal of Open Source Software, 9(96). doi:10.21105/joss.06210.",
+              "attribution": "cran.r-project.org"
+            },
+            {
+              "matched_text": "\u30105\u2020L1-L4\u3011",
+              "start_idx": 290,
+              "end_idx": 299,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "The tesselle Project: A Collection of R Packages for Research and Teaching in Archaeology | Advances in Archaeological Practice | Cambridge Core",
+              "url": "https://www.cambridge.org/core/journals/advances-in-archaeological-practice/article/tesselle-project-a-collection-of-r-packages-for-research-and-teaching-in-archaeology/9DC71362A0778FE1F7A243CEF85117A0#:~:text=relies%20on%20aion%20,with%20time%20series%20in%20archaeology",
+              "pub_date": null,
+              "snippet": "relies on aion (Frerebeau and Roe Reference Frerebeau and Roe 2023; https://packages.tesselle.org/aion/), which makes it easier to work with time series in archaeology.",
+              "attribution": "cambridge.org"
+            },
+            {
+              "matched_text": "\u30105\u2020L1-L4\u3011",
+              "start_idx": 596,
+              "end_idx": 605,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "The tesselle Project: A Collection of R Packages for Research and Teaching in Archaeology | Advances in Archaeological Practice | Cambridge Core",
+              "url": "https://www.cambridge.org/core/journals/advances-in-archaeological-practice/article/tesselle-project-a-collection-of-r-packages-for-research-and-teaching-in-archaeology/9DC71362A0778FE1F7A243CEF85117A0#:~:text=relies%20on%20aion%20,with%20time%20series%20in%20archaeology",
+              "pub_date": null,
+              "snippet": "relies on aion (Frerebeau and Roe Reference Frerebeau and Roe 2023; https://packages.tesselle.org/aion/), which makes it easier to work with time series in archaeology.",
+              "attribution": "cambridge.org"
+            },
+            {
+              "matched_text": "\u301056\u2020L88-L96\u3011",
+              "start_idx": 678,
+              "end_idx": 690,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Open-archaeo: A Resource for Documenting Archaeological Software Development Practices | Journal of Open Archaeology Data",
+              "url": "https://doi.org/10.5334/joad.111#:~:text=Year%3A%202023",
+              "pub_date": null,
+              "snippet": "Year: 2023",
+              "attribution": "doi.org"
+            },
+            {
+              "matched_text": "\u301021\u2020L86-L94\u3011",
+              "start_idx": 852,
+              "end_idx": 864,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "aion \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/post/aion/#:~:text=aion",
+              "pub_date": null,
+              "snippet": "aion",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u301032\u2020L123-L130\u3011",
+              "start_idx": 906,
+              "end_idx": 920,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "R Weekly 2023-W25 slice(), columns, Bayes | RWeekly.org - Blogs to Learn R from the Community",
+              "url": "https://rweekly.org/2023-W25.html#:~:text=Data%20with%20Complex%20Structure%20,Series%20Data%20for%20Further%20Analysis",
+              "pub_date": null,
+              "snippet": "Data with Complex Structure * {aion} 1.0.0: Archaeological Time Series * {pcutils} 0.1.0: Some Useful Functions for Statistics and Visualization * {hdflex} 0.1.0: High-Dimensional Aggregate Density Forecasts * {tdata} 0.2.0.0: Prepare Your Time-Series Data for Further Analysis",
+              "attribution": "rweekly.org"
+            },
+            {
+              "matched_text": "\u301032\u2020L123-L130\u3011",
+              "start_idx": 1009,
+              "end_idx": 1023,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "R Weekly 2023-W25 slice(), columns, Bayes | RWeekly.org - Blogs to Learn R from the Community",
+              "url": "https://rweekly.org/2023-W25.html#:~:text=Data%20with%20Complex%20Structure%20,Series%20Data%20for%20Further%20Analysis",
+              "pub_date": null,
+              "snippet": "Data with Complex Structure * {aion} 1.0.0: Archaeological Time Series * {pcutils} 0.1.0: Some Useful Functions for Statistics and Visualization * {hdflex} 0.1.0: High-Dimensional Aggregate Density Forecasts * {tdata} 0.2.0.0: Prepare Your Time-Series Data for Further Analysis",
+              "attribution": "rweekly.org"
+            },
+            {
+              "matched_text": "\u301040\u2020L15-L23\u3011",
+              "start_idx": 1058,
+              "end_idx": 1070,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: Package aion",
+              "url": "https://cloud.r-project.org/web/packages/aion/index.html#:~:text=tinysnapshot%20%2C%20%208%20Published%3A,com%2Ftesselle%2Faion%2Fissues%20License%3A%20GPL%20%28%E2%89%A5%203",
+              "pub_date": null,
+              "snippet": "tinysnapshot ,  8 Published: 2024-12-10 DOI: 10.32614/CRAN.package.aion Author: Nicolas Frerebeau [Image 0: ORCID iD] [aut, cre], Joe Roe [Image 1: ORCID iD] [aut], Brice Lebrun [Image 2: ORCID iD] [ctb] (Logo designer), Universit\u00e9 Bordeaux Montaigne [fnd], CNRS [fnd] Maintainer: Nicolas Frerebeau <nicolas.frerebeau at u-bordeaux-montaigne.fr> BugReports: https://github.com/tesselle/aion/issues License: GPL (\u2265 3)",
+              "attribution": "cloud.r-project.org"
+            },
+            {
+              "matched_text": "\u301040\u2020L15-L23\u3011",
+              "start_idx": 1206,
+              "end_idx": 1218,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "CRAN: Package aion",
+              "url": "https://cloud.r-project.org/web/packages/aion/index.html#:~:text=tinysnapshot%20%2C%20%208%20Published%3A,com%2Ftesselle%2Faion%2Fissues%20License%3A%20GPL%20%28%E2%89%A5%203",
+              "pub_date": null,
+              "snippet": "tinysnapshot ,  8 Published: 2024-12-10 DOI: 10.32614/CRAN.package.aion Author: Nicolas Frerebeau [Image 0: ORCID iD] [aut, cre], Joe Roe [Image 1: ORCID iD] [aut], Brice Lebrun [Image 2: ORCID iD] [ctb] (Logo designer), Universit\u00e9 Bordeaux Montaigne [fnd], CNRS [fnd] Maintainer: Nicolas Frerebeau <nicolas.frerebeau at u-bordeaux-montaigne.fr> BugReports: https://github.com/tesselle/aion/issues License: GPL (\u2265 3)",
+              "attribution": "cloud.r-project.org"
+            },
+            {
+              "matched_text": "\u301028\u2020L15-L23\u3011",
+              "start_idx": 1261,
+              "end_idx": 1273,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "aion: An R Package to Represent Archaeological Time Series",
+              "url": "https://doi.org/10.5281/zenodo.8032278#:~:text=Published%20December%2010%2C%202024%20,0",
+              "pub_date": null,
+              "snippet": "Published December 10, 2024  | Version v1.3.0",
+              "attribution": "doi.org"
+            },
+            {
+              "matched_text": "\u301028\u2020L15-L23\u3011",
+              "start_idx": 1402,
+              "end_idx": 1414,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "aion: An R Package to Represent Archaeological Time Series",
+              "url": "https://doi.org/10.5281/zenodo.8032278#:~:text=Published%20December%2010%2C%202024%20,0",
+              "pub_date": null,
+              "snippet": "Published December 10, 2024  | Version v1.3.0",
+              "attribution": "doi.org"
+            },
+            {
+              "matched_text": "\u301037\u2020L139-L146\u3011",
+              "start_idx": 1465,
+              "end_idx": 1479,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - tesselle/aion: Archaeological Time Series - Moved to https://codeberg.org/tesselle/aion",
+              "url": "https://github.com/tesselle/aion#:~:text=",
+              "pub_date": null,
+              "snippet": "*  Star 10",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301037\u2020L139-L146\u3011",
+              "start_idx": 1602,
+              "end_idx": 1616,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "GitHub - tesselle/aion: Archaeological Time Series - Moved to https://codeberg.org/tesselle/aion",
+              "url": "https://github.com/tesselle/aion#:~:text=",
+              "pub_date": null,
+              "snippet": "*  Star 10",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u30108\u2020L37-L45\u3011",
+              "start_idx": 1676,
+              "end_idx": 1687,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeological Time Series \u2022 aion",
+              "url": "https://packages.tesselle.org/aion/#:~:text=aion%20provides%20a%20system%20of,makes%20calculations%20and%20comparisons%20easier",
+              "pub_date": null,
+              "snippet": "aion provides a system of classes and methods to represent and work with such time-series (and time intervals). Dates are represented as rata die (Reingold and Dershowitz 2018), i.e.\u00a0the number of days since 01-01-01 (Gregorian), with negative values for earlier dates. This allows to represent dates independently of any calendar: it makes calculations and comparisons easier.",
+              "attribution": "packages.tesselle.org"
+            },
+            {
+              "matched_text": "\u30108\u2020L37-L45\u3011",
+              "start_idx": 1819,
+              "end_idx": 1830,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeological Time Series \u2022 aion",
+              "url": "https://packages.tesselle.org/aion/#:~:text=aion%20provides%20a%20system%20of,makes%20calculations%20and%20comparisons%20easier",
+              "pub_date": null,
+              "snippet": "aion provides a system of classes and methods to represent and work with such time-series (and time intervals). Dates are represented as rata die (Reingold and Dershowitz 2018), i.e.\u00a0the number of days since 01-01-01 (Gregorian), with negative values for earlier dates. This allows to represent dates independently of any calendar: it makes calculations and comparisons easier.",
+              "attribution": "packages.tesselle.org"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b8152c50008191ac05350c00ae7e3d",
+          "async_task_title": "Comprehensive Research on AION Software Tool"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "09b0ebaf-cec3-4e36-9bfc-7ddf41878e0e",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "4027693a-98ba-4fe0-ad6b-1122aa1c97f1",
+  "plugin_ids": null,
+  "conversation_id": "67b81501-7d84-8004-9f35-c646c3394995",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://packages.tesselle.org/aion/",
+    "https://www.cambridge.org/core/journals/advances-in-archaeological-practice/article/tesselle-project-a-collection-of-r-packages-for-research-and-teaching-in-archaeology/9DC71362A0778FE1F7A243CEF85117A0",
+    "https://rweekly.org/2023-W25.html",
+    "https://openarchaeologydata.metajnl.com/articles/10.5334/joad.111"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b81501-7d84-8004-9f35-c646c3394995"
+}

@@ -1,0 +1,406 @@
+{
+  "title": "v7-iDig",
+  "create_time": 1740208317.936784,
+  "update_time": 1740210072.134271,
+  "mapping": {
+    "aaa10836-8fcc-4670-8ec5-722331e4d556": {
+      "id": "aaa10836-8fcc-4670-8ec5-722331e4d556",
+      "message": null,
+      "parent": null,
+      "children": [
+        "256aa1e0-d9b5-43a8-833b-58b7799858b1"
+      ]
+    },
+    "256aa1e0-d9b5-43a8-833b-58b7799858b1": {
+      "id": "256aa1e0-d9b5-43a8-833b-58b7799858b1",
+      "message": {
+        "id": "256aa1e0-d9b5-43a8-833b-58b7799858b1",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa10836-8fcc-4670-8ec5-722331e4d556",
+      "children": [
+        "575c8fa9-a7f5-48e5-930b-d72151a5980e"
+      ]
+    },
+    "575c8fa9-a7f5-48e5-930b-d72151a5980e": {
+      "id": "575c8fa9-a7f5-48e5-930b-d72151a5980e",
+      "message": {
+        "id": "575c8fa9-a7f5-48e5-930b-d72151a5980e",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740208317.939325,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915d2a407f22d5e0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "256aa1e0-d9b5-43a8-833b-58b7799858b1",
+      "children": [
+        "ccacdd0b-ec64-4b86-8716-12926e8c63e4"
+      ]
+    },
+    "ccacdd0b-ec64-4b86-8716-12926e8c63e4": {
+      "id": "ccacdd0b-ec64-4b86-8716-12926e8c63e4",
+      "message": {
+        "id": "ccacdd0b-ec64-4b86-8716-12926e8c63e4",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740208319.196345,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand. Please provide the name or acronym of the first archaeology or historical studies-related software tool you'd like me to research. I'll follow the methodology you've outlined carefully."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "575c8fa9-a7f5-48e5-930b-d72151a5980e",
+          "request_id": "915d2a407f22d5e0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "575c8fa9-a7f5-48e5-930b-d72151a5980e",
+      "children": [
+        "9ef02943-cba5-4150-9828-678f091be82a"
+      ]
+    },
+    "9ef02943-cba5-4150-9828-678f091be82a": {
+      "id": "9ef02943-cba5-4150-9828-678f091be82a",
+      "message": {
+        "id": "9ef02943-cba5-4150-9828-678f091be82a",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740208319.196504,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ccacdd0b-ec64-4b86-8716-12926e8c63e4",
+          "request_id": "915d2a407f22d5e0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ccacdd0b-ec64-4b86-8716-12926e8c63e4",
+      "children": [
+        "515f0acf-6115-4e2c-bb6b-c37108ecfbbb"
+      ]
+    },
+    "515f0acf-6115-4e2c-bb6b-c37108ecfbbb": {
+      "id": "515f0acf-6115-4e2c-bb6b-c37108ecfbbb",
+      "message": {
+        "id": "515f0acf-6115-4e2c-bb6b-c37108ecfbbb",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740208330.695458,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "iDig"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "915d2a891934d5e0-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9ef02943-cba5-4150-9828-678f091be82a",
+      "children": [
+        "0f76d55a-0521-4d17-98f7-237339144d61"
+      ]
+    },
+    "0f76d55a-0521-4d17-98f7-237339144d61": {
+      "id": "0f76d55a-0521-4d17-98f7-237339144d61",
+      "message": {
+        "id": "0f76d55a-0521-4d17-98f7-237339144d61",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740208339.293159,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will systematically research iDig, an archaeology or historical studies-related software tool, ensuring accuracy and completeness. I will collect and record:\n\n- Every source mentioning iDig from 1995 onwards\n- Publication years strictly from sources, without inference\n- Source citations, URLs, and AI notes indicating concerns or uncertainties\n\nI will take my time to explore all relevant search results and systematically check adjacent years for mentions. I will get back to you with a well-formed quoted CSV inside a fenced code block as soon as the research is completed."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "515f0acf-6115-4e2c-bb6b-c37108ecfbbb",
+          "request_id": "915d2a891934d5e0-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "515f0acf-6115-4e2c-bb6b-c37108ecfbbb",
+      "children": [
+        "82ae4ee8-106c-4c34-99df-c291a7889d4a"
+      ]
+    },
+    "82ae4ee8-106c-4c34-99df-c291a7889d4a": {
+      "id": "82ae4ee8-106c-4c34-99df-c291a7889d4a",
+      "message": {
+        "id": "82ae4ee8-106c-4c34-99df-c291a7889d4a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740208339.293281,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will systematically research iDig, an archaeology or historical studies-related software tool, ensuring accuracy and completeness. I will collect and record:\\n\\n- Every source mentioning iDig from 1995 onwards\\n- Publication years strictly from sources, without inference\\n- Source citations, URLs, and AI notes indicating concerns or uncertainties\\n\\nI will take my time to explore all relevant search results and systematically check adjacent years for mentions. I will get back to you with a well-formed quoted CSV inside a fenced code block as soon as the research is completed.\",\"title\":\"Comprehensive Research on iDig Archaeology Software\",\"prompt\":\"Conduct an extensive and systematic search for mentions of the archaeology-related software tool **iDig** from 1995 onwards. Follow these guidelines:\\n\\n- Collect and record every **valid mention** of iDig across multiple sources, including:\\n  - Source code repositories (GitHub, GitLab, Bitbucket, etc.)\\n  - Scholarly literature (journals, conference proceedings, preprints, etc.)\\n  - Blog posts, institutional pages, and official websites\\n  - Any other valid sources mentioning the tool\\n\\n- For **each** valid mention found, provide:\\n  - \\\"Tool\\\": Consistently use **iDig** as the name\\n  - \\\"Year\\\": Extract the **exact** publication year from the source (use \\\"n.d.\\\" if no date is available)\\n  - \\\"Source\\\": Citation or webpage title + domain\\n  - \\\"URL\\\": Direct URL to the source\\n  - \\\"AI Notes\\\": Indicate any concerns or uncertainties about the data provenance\\n\\n- If a **year is found**, systematically explore **adjacent years** (+-1 year) to ensure completeness\\n- Do **not** infer any dates\u2014record only **explicit publication years**\\n- Format results as a **well-formed quoted CSV** inside a fenced code block\\n\\nEnsure the research is careful, accurate, and methodically documented. Take as much time as necessary to verify and validate sources.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "0f76d55a-0521-4d17-98f7-237339144d61",
+          "request_id": "915d2a891934d5e0-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "0f76d55a-0521-4d17-98f7-237339144d61",
+      "children": [
+        "1e77065c-5f18-4eec-81c0-863df18ffcf5"
+      ]
+    },
+    "1e77065c-5f18-4eec-81c0-863df18ffcf5": {
+      "id": "1e77065c-5f18-4eec-81c0-863df18ffcf5",
+      "message": {
+        "id": "1e77065c-5f18-4eec-81c0-863df18ffcf5",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740208339.293373,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Research on iDig Archaeology Software",
+          "async_task_prompt": "Conduct an extensive and systematic search for mentions of the archaeology-related software tool **iDig** from 1995 onwards. Follow these guidelines:\n\n- Collect and record every **valid mention** of iDig across multiple sources, including:\n  - Source code repositories (GitHub, GitLab, Bitbucket, etc.)\n  - Scholarly literature (journals, conference proceedings, preprints, etc.)\n  - Blog posts, institutional pages, and official websites\n  - Any other valid sources mentioning the tool\n\n- For **each** valid mention found, provide:\n  - \"Tool\": Consistently use **iDig** as the name\n  - \"Year\": Extract the **exact** publication year from the source (use \"n.d.\" if no date is available)\n  - \"Source\": Citation or webpage title + domain\n  - \"URL\": Direct URL to the source\n  - \"AI Notes\": Indicate any concerns or uncertainties about the data provenance\n\n- If a **year is found**, systematically explore **adjacent years** (+-1 year) to ensure completeness\n- Do **not** infer any dates\u2014record only **explicit publication years**\n- Format results as a **well-formed quoted CSV** inside a fenced code block\n\nEnsure the research is careful, accurate, and methodically documented. Take as much time as necessary to verify and validate sources.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Research on iDig Archaeology Software",
+            "completed_with_time": "Research completed in 7m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "82ae4ee8-106c-4c34-99df-c291a7889d4a",
+          "request_id": "915d2a891934d5e0-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b978d2e6b48191b7a73c43e3b2cea0",
+          "async_task_conversation_id": "67b978d2-f9c8-8004-9934-69b613c21b7f",
+          "async_task_created_at": "2025-02-22 07:12:19.268495+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "82ae4ee8-106c-4c34-99df-c291a7889d4a",
+      "children": [
+        "e81dfacb-d624-4c23-8497-3ce31b08f444"
+      ]
+    },
+    "e81dfacb-d624-4c23-8497-3ce31b08f444": {
+      "id": "e81dfacb-d624-4c23-8497-3ce31b08f444",
+      "message": {
+        "id": "e81dfacb-d624-4c23-8497-3ce31b08f444",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740208780.98241,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"iDig\",\"2015\",\"iDig Archaeology app now available - archaeology.wiki\",\"https://www.archaeology.wiki/blog/2015/03/23/idig-archaeology-app-now-available/\",\"None (official news release)\"\n\"iDig\",\"2016\",\"iDig: A Glimpse into the Future of Archaeology - ascsa.edu.gr\",\"https://www.ascsa.edu.gr/news/newsDetails/bruce-on-idig\",\"None (institutional news article)\"\n\"iDig\",\"2016\",\"iDig \u2013 Recording Archaeology: a review - intarch.ac.uk\",\"https://intarch.ac.uk/journal/issue42/13/uildriks.html\",\"None (peer-reviewed journal review)\"\n\"iDig\",\"2016\",\"Archeo Magazine Issue 375 (Maggio 2016) - issuu.com\",\"https://issuu.com/timelinepublishing_archeo/docs/arc375_all\",\"None (Italian archaeology magazine)\"\n\"iDig\",\"2015\",\"Mobilizing the Past (NEH workshop schedule) - neh.gov\",\"https://www.neh.gov/sites/default/files/inline-files/creighton_university_the_potential_of_digital_archaeology.pdf\",\"Year refers to 2015 workshop event\"\n\"iDig\",\"2019\",\"iDAI.field 2: A Modern Approach to Distributed Fieldwork - chnt.at\",\"https://www.chnt.at/wp-content/uploads/eBook_CHNT22_Cuy_etal.pdf\",\"None (conference proceedings)\"\n\"iDig\",\"2021\",\"Digital Workflows in Archaeological Practice (blog) - mediterraneanworld.wordpress.com\",\"https://mediterraneanworld.wordpress.com/2021/01/20/digital-workflows-in-archaeological-practice/\",\"None (blog summarizing scholarly article)\"\n\"iDig\",\"2022\",\"Information Technology and Archaeological Excavations: A Brief Overview - sci-cult.com\",\"https://www.sci-cult.com/wp-content/uploads/8.2/8_2_SI_9_Psarros_et_al.pdf\",\"None (open-access scholarly article)\"\n\"iDig\",\"2023\",\"The 2023 Season Begins (EBAP blog) - ebapexcavations.org\",\"https://ebapexcavations.org/2023/06/11/the-2023-season-begins/\",\"None (project blog post)\"\n\"iDig\",\"2024\",\"Cutting-edge digital technologies help reveal the past - princeton.edu\",\"https://www.princeton.edu/news/2024/04/09/princeton-archaeologists-are-using-cutting-edge-digital-technologies-help-reveal\",\"None (university news article)\"\n\"iDig\",\"2019\",\"De la fiche US \u00e0 la tablette num\u00e9rique (Akerentia case study) - openedition.org\",\"https://books.openedition.org/psorbonne/38466\",\"None (French academic publication)\"\n\"iDig\",\"n.d.\",\"iDig official site - idig.tips\",\"https://idig.tips/\",\"No date provided (official tool website)\"\n\"iDig\",\"n.d.\",\"iDig Server repository - github.com\",\"https://github.com/iDig-Recording-Archaeology/idig-server\",\"No date provided (source code repository)\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b978d2e6b48191b7a73c43e3b2cea0",
+          "async_task_title": "Comprehensive Research on iDig Archaeology Software"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "1e77065c-5f18-4eec-81c0-863df18ffcf5",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "e81dfacb-d624-4c23-8497-3ce31b08f444",
+  "plugin_ids": null,
+  "conversation_id": "67b978bd-a544-8004-8bd3-c0170f774d93",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.neh.gov/sites/default/files/inline-files/creighton_university_the_potential_of_digital_archaeology.pdf",
+    "https://www.sci-cult.com/wp-content/uploads/8.2/8_2_SI_9_Psarros_et_al.pdf",
+    "https://www.archaeology.wiki/blog/2015/03/23/idig-archaeology-app-now-available/",
+    "https://www.ascsa.edu.gr/news/newsDetails/bruce-on-idig",
+    "https://intarch.ac.uk/journal/issue42/13/uildriks.html",
+    "https://mediterraneanworld.wordpress.com/2021/01/20/digital-workflows-in-archaeological-practice/",
+    "https://idig.tips/",
+    "https://www.chnt.at/wp-content/uploads/eBook_CHNT22_Cuy_etal.pdf",
+    "https://www.princeton.edu/news/2024/04/09/princeton-archaeologists-are-using-cutting-edge-digital-technologies-help-reveal"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b978bd-a544-8004-8bd3-c0170f774d93"
+}

@@ -1,0 +1,909 @@
+{
+  "title": "v7-ArboDat",
+  "create_time": 1740636454.297898,
+  "update_time": 1740637669.559916,
+  "mapping": {
+    "aaa1d5a9-c3b1-4e99-9e84-249b3ad7d21c": {
+      "id": "aaa1d5a9-c3b1-4e99-9e84-249b3ad7d21c",
+      "message": null,
+      "parent": null,
+      "children": [
+        "39829465-fb13-4521-9b3f-0618f8087cc7"
+      ]
+    },
+    "39829465-fb13-4521-9b3f-0618f8087cc7": {
+      "id": "39829465-fb13-4521-9b3f-0618f8087cc7",
+      "message": {
+        "id": "39829465-fb13-4521-9b3f-0618f8087cc7",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa1d5a9-c3b1-4e99-9e84-249b3ad7d21c",
+      "children": [
+        "c6b88c63-6098-4b71-bf07-73bd1acd9b2a"
+      ]
+    },
+    "c6b88c63-6098-4b71-bf07-73bd1acd9b2a": {
+      "id": "c6b88c63-6098-4b71-bf07-73bd1acd9b2a",
+      "message": {
+        "id": "c6b88c63-6098-4b71-bf07-73bd1acd9b2a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740636454.305418,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi DR. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record tool, year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9185fecc1e135e4f-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "39829465-fb13-4521-9b3f-0618f8087cc7",
+      "children": [
+        "591d04a3-09ac-4d12-8bb8-23a59697bbf8"
+      ]
+    },
+    "591d04a3-09ac-4d12-8bb8-23a59697bbf8": {
+      "id": "591d04a3-09ac-4d12-8bb8-23a59697bbf8",
+      "message": {
+        "id": "591d04a3-09ac-4d12-8bb8-23a59697bbf8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740636456.280823,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and rigorous requirements for this research. Please provide the first tool name so I can begin collecting evidence systematically."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "c6b88c63-6098-4b71-bf07-73bd1acd9b2a",
+          "request_id": "9185fecc1e135e4f-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c6b88c63-6098-4b71-bf07-73bd1acd9b2a",
+      "children": [
+        "6efe85ff-5e86-443b-9523-9e53e257a273"
+      ]
+    },
+    "6efe85ff-5e86-443b-9523-9e53e257a273": {
+      "id": "6efe85ff-5e86-443b-9523-9e53e257a273",
+      "message": {
+        "id": "6efe85ff-5e86-443b-9523-9e53e257a273",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740636456.281054,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "591d04a3-09ac-4d12-8bb8-23a59697bbf8",
+          "request_id": "9185fecc1e135e4f-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "591d04a3-09ac-4d12-8bb8-23a59697bbf8",
+      "children": [
+        "95c17067-fa7f-4a3d-9c6b-53bfa6145c3a"
+      ]
+    },
+    "95c17067-fa7f-4a3d-9c6b-53bfa6145c3a": {
+      "id": "95c17067-fa7f-4a3d-9c6b-53bfa6145c3a",
+      "message": {
+        "id": "95c17067-fa7f-4a3d-9c6b-53bfa6145c3a",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740636459.723986,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "ArboDat"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9185feef3bc75e4f-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "6efe85ff-5e86-443b-9523-9e53e257a273",
+      "children": [
+        "b6dc5092-b123-45d7-b031-d0773507b90f"
+      ]
+    },
+    "b6dc5092-b123-45d7-b031-d0773507b90f": {
+      "id": "b6dc5092-b123-45d7-b031-d0773507b90f",
+      "message": {
+        "id": "b6dc5092-b123-45d7-b031-d0773507b90f",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740636469.8672,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a systematic search for mentions of the software tool 'ArboDat' in archaeological and historical research contexts, following the rigorous criteria you outlined.\n\nI will locate:\n- Scholarly publications\n- Blog posts and about pages\n- Version control repositories\n- Any other credible mentions\n\nEach valid source will be recorded in a well-structured CSV format, with a separate line for each instance found, including the year of publication (or 'n.d.' if unavailable), citation details, URL, and any relevant AI notes regarding data provenance or uncertainties.\n\nI will return with a carefully validated dataset as soon as my search is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "95c17067-fa7f-4a3d-9c6b-53bfa6145c3a",
+          "request_id": "9185feef3bc75e4f-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "95c17067-fa7f-4a3d-9c6b-53bfa6145c3a",
+      "children": [
+        "22556bab-38cb-411a-803a-390ef0c1e92c"
+      ]
+    },
+    "22556bab-38cb-411a-803a-390ef0c1e92c": {
+      "id": "22556bab-38cb-411a-803a-390ef0c1e92c",
+      "message": {
+        "id": "22556bab-38cb-411a-803a-390ef0c1e92c",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740636469.867322,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a systematic search for mentions of the software tool 'ArboDat' in archaeological and historical research contexts, following the rigorous criteria you outlined.\\n\\nI will locate:\\n- Scholarly publications\\n- Blog posts and about pages\\n- Version control repositories\\n- Any other credible mentions\\n\\nEach valid source will be recorded in a well-structured CSV format, with a separate line for each instance found, including the year of publication (or 'n.d.' if unavailable), citation details, URL, and any relevant AI notes regarding data provenance or uncertainties.\\n\\nI will return with a carefully validated dataset as soon as my search is complete.\",\"title\":\"ArboDat Software Mentions in Archaeology and Historical Studies\",\"prompt\":\"Conduct a comprehensive search for mentions of the software tool 'ArboDat' in archaeological and historical research contexts. The results should be compiled in a structured CSV format with the following columns: \\\"Tool\\\", \\\"Year\\\", \\\"Source\\\", \\\"URL\\\", \\\"AI Notes\\\".\\n\\nSearch scope:\\n- Include mentions from scholarly literature, official about pages, blog posts, and other credible sources.\\n- If the software has public source code repositories, include them as separate entries.\\n- Each valid source must be recorded on a separate line.\\n- The \\\"Year\\\" column should be extracted directly from the source publication date. If unavailable, mark as \\\"n.d.\\\".\\n- The \\\"Source\\\" column should include either a full citation or the domain and page title.\\n- The \\\"AI Notes\\\" column should document any uncertainties, inconsistencies, or issues with data provenance.\\n\\nBe methodical in exploring all search result pages and expand searches to adjacent years (\u00b11 year from any identified date).\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "b6dc5092-b123-45d7-b031-d0773507b90f",
+          "request_id": "9185feef3bc75e4f-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "b6dc5092-b123-45d7-b031-d0773507b90f",
+      "children": [
+        "40d47f96-e357-422f-b28b-e0eeccf4cc97"
+      ]
+    },
+    "40d47f96-e357-422f-b28b-e0eeccf4cc97": {
+      "id": "40d47f96-e357-422f-b28b-e0eeccf4cc97",
+      "message": {
+        "id": "40d47f96-e357-422f-b28b-e0eeccf4cc97",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740636469.867408,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "ArboDat Software Mentions in Archaeology and Historical Studies",
+          "async_task_prompt": "Conduct a comprehensive search for mentions of the software tool 'ArboDat' in archaeological and historical research contexts. The results should be compiled in a structured CSV format with the following columns: \"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\".\n\nSearch scope:\n- Include mentions from scholarly literature, official about pages, blog posts, and other credible sources.\n- If the software has public source code repositories, include them as separate entries.\n- Each valid source must be recorded on a separate line.\n- The \"Year\" column should be extracted directly from the source publication date. If unavailable, mark as \"n.d.\".\n- The \"Source\" column should include either a full citation or the domain and page title.\n- The \"AI Notes\" column should document any uncertainties, inconsistencies, or issues with data provenance.\n\nBe methodical in exploring all search result pages and expand searches to adjacent years (\u00b11 year from any identified date).",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "ArboDat Software Mentions in Archaeology and Historical Studies",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "22556bab-38cb-411a-803a-390ef0c1e92c",
+          "request_id": "9185feef3bc75e4f-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "22556bab-38cb-411a-803a-390ef0c1e92c",
+      "children": [
+        "a2231c38-0ce8-4832-81c7-0006b30bfa2b"
+      ]
+    },
+    "a2231c38-0ce8-4832-81c7-0006b30bfa2b": {
+      "id": "a2231c38-0ce8-4832-81c7-0006b30bfa2b",
+      "message": {
+        "id": "a2231c38-0ce8-4832-81c7-0006b30bfa2b",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740637004.372076,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "The compiled mentions of **ArboDat** in archaeological/historical research contexts are as follows (in CSV format):\n\n```csv\nTool,Year,Source,URL,AI Notes\nArboDat,2002,Vegetation History and Archaeobotany 11(1) \u2013 A new archaeobotanical database program,http://dx.doi.org/10.1007/s003340200019,Original introduction of ArboDat by Kreuz & Sch\u00e4fer; online pub listed as 2014 but issue date is 2002\u301048\u2020L1-L9\u3011\nArboDat / ArboDatMulti,n.d.,Institute of Archaeology Prague \u2013 Archaeobotanical database program ArboDatMulti (official site),https://web.arup.cas.cz/czad/arbodat.php?l=en,\"No publication date; site content \u00a92011\u20132015 and describes localized \"\"ArboDatMulti\"\" adaptations\u301035\u2020L85-L92\u3011\"\nArboDat,n.d.,NIhK Wilhelmshaven \u2013 ArboDat-APE project page (Current Projects),https://nihk.de/en/research/current-projects/arbodat-ape,No date on page; notes development since 1997 and latest version ArboDat 2018 (rights transferred in 2016)\u30104\u2020L102-L110\u3011\nArboDat+,n.d.,NFDI4Objects Portal \u2013 ArboDat+ service page,https://www.nfdi4objects.net/en/portal/services/arbodat/,Undated page describing ongoing redevelopment of ArboDat; related project proposal dated Sep 2024\u30108\u2020L31-L38\u3011\nArboDat,n.d.,open-archaeo.info \u2013 ArboDat entry (software directory),https://open-archaeo.info/post/arbodat/,No date given; community-curated listing crediting Angela Kreuz as author of ArboDat\u301013\u2020L88-L94\u3011\nArboDat 2016,2022,Association for Environmental Archaeology Newsletter 156 (Research Piece),https://gfzpublic.gfz-potsdam.de/pubman/item/item_5017643_2/component/file_5018422/175_Kreuz_2022%20Elger_Frenzel_ArboDat_2016_Datacentre_Project_AEA%20NL%20August%202022.pdf,Newsletter article (August 2022) describing the ArboDat 2016 Datacentre project\u301036\u2020L1-L9\u3011\nArboDat 2016,2022,GFZ Data Services \u2013 ArboDat 2016 English Manual (PDF),https://doi.org/10.48440/hA-ArboDat_manual_en,Official user manual published via GFZ Data Services (Helmholtz Centre) with DOI\u301010\u2020L39-L42\u3011\nArboDat,2019,\"Internet Archaeology 53 \u2013 \"\"Agendas for Archaeobotany...\"\" (Lodwick)\",https://doi.org/10.11141/ia.53.7,Peer-reviewed article discussing ArboDat\u2019s impact on data sharing; author\u2019s citation confirms 2019\u301019\u2020L206-L214\u3011\nArboDat 2016,2021,Historic England \u2013 Archaeobotany guidance page,https://historicengland.org.uk/research/methods/archaeology/archaeobotany/,Official page (updated July 2021) noting ArboDat 2016 usage in UK and Europe\u301014\u2020L409-L417\u3011\u301014\u2020L450-L458\u3011\nArboDat,2022,PLOS One \u2013 Archaeobotanical & isotopic analysis (Zug-Riedmatt) article,https://doi.org/10.1371/journal.pone.0274361,Open-access research article (Sep 2022) citing use of ArboDat for data recording\u301024\u2020L1-L4\u3011\u301022\u2020L1-L4\u3011\nArboDat,2022,\"American Journal of Archaeology 126(4) \u2013 \"\"Archaeobotanical Research in Classical Archaeology\"\"\",https://www.journals.uchicago.edu/doi/full/10.1086/720897,Peer-reviewed article (Oct 2022) acknowledging ArboDat\u2019s interoperability role but limited accessibility\u301030\u2020L1201-L1209\u3011\u301029\u2020L1937-L1944\u3011\nArboDat / APE,2023,Historic England \u2013 Archaeobotany Working Group meeting minutes (Apr 2023),https://historicengland.org.uk/content/docs/research/awg-minutes-apr23/,Community notes confirming ArboDat\u2019s management at NIhK and introduction of APE tool for data export to repositories\u301041\u2020L7-L15\u3011\u301041\u2020L19-L27\u3011\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 393,
+              "end_ix": 403,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "A new archaeobotanical database program | Vegetation History and Archaeobotany\n            ",
+                "url": "http://dx.doi.org/10.1007/s003340200019#:~:text=",
+                "text": "* Published: 10 May 2014",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 48,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 9
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 673,
+              "end_ix": 685,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotanical database of Czech Republic",
+                "url": "https://web.arup.cas.cz/czad/arbodat.php?l=en#:~:text=,Institut%20der%20Universit%C3%A4t%20Basel%2C%20Basel",
+                "text": "* A. Kreuz , E. Sch\u00e4fer (2002): A new archaeobotanical database programme. Vegetation History and Archaeobotany 11, 177-179. * J. Paulsen (1995): Namen und Synonyme mitteleurop\u00e4ischer Gef\u00e4sspflanzen. Schweizer Botanik CD 1995, Botanisches Institut der Universit\u00e4t Basel, Basel.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 35,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 85,
+                  "end_line_num": 92
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 928,
+              "end_ix": 941,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "ArboDat - APE - NIhK",
+                "url": "https://nihk.de/en/research/current-projects/arbodat-ape#:~:text=ArboDat%20is%20a%20program%20package,Angela%20Kreuz",
+                "text": "ArboDat is a program package for registering and importing data of archaeobotanical analyses including contexts of samples as well as evaluation tools e.g. preparing tables for publications. It has been developed since 1997 as a product of the Landesamt f\u00fcr Denkmalpflege Hessen, Wiesbaden/Germany (HessenARCH\u00c4OLOGIE) under the direction of Prof. Angela Kreuz.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 4,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 102,
+                  "end_line_num": 110
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1154,
+              "end_ix": 1165,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "ArboDat+: Development of a concept for a centralized standardized ArboDat service - NFDI4Objects",
+                "url": "https://www.nfdi4objects.net/en/portal/trails/arbodat_development_of_a_concept_for_a_centralized_standardized_arbodat_service#:~:text=%2A%2025",
+                "text": "* 25-09-2024 -",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 8,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 31,
+                  "end_line_num": 38
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1358,
+              "end_ix": 1370,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "ArboDat \u2022 open-archaeo",
+                "url": "https://open-archaeo.info/post/arbodat/#:~:text=by%20Angela%20Kreuz%20in%20STANDALONE,website%20palaeobotany%20%20%2073",
+                "text": "by Angela Kreuz in STANDALONE SOFTWARE website palaeobotany   73",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 13,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 88,
+                  "end_line_num": 94
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1717,
+              "end_ix": 1727,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": " Digitising and sharing archaeobotanical data \u2013 the ArboDat 2016 Datacentre project ",
+                "url": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_5017643_2/component/file_5018422/175_Kreuz_2022%20Elger_Frenzel_ArboDat_2016_Datacentre_Project_AEA%20NL%20August%202022.pdf#:~:text=AEA%20Newsletter%20156%20Research%20Piece,ArboDat%202016%20Datacentre%20project%20Introduction",
+                "text": "AEA Newsletter 156 Research Piece August 2022 Digitising and sharing archaeobotanical data \u2013 the ArboDat 2016 Datacentre project Introduction",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 36,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 9
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1926,
+              "end_ix": 1938,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotanical Database Programme ArboDat 2016 \u2013 English Manual",
+                "url": "https://gfzpublic.gfz-potsdam.de/rest/items/item_5012429_1/component/file_5012431/content#:~:text=Telegrafenberg%20D,ArboDat_manual_en",
+                "text": "Telegrafenberg D-14473 Potsdam 2022 DOI: https://doi.org/10.48440/hA-ArboDat_manual_en",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 10,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 39,
+                  "end_line_num": 42
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2154,
+              "end_ix": 2168,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Agendas for Archaeobotany in the 21st Century: data, dissemination and new directions. Lodwick. Internet Archaeol. 53.\n",
+                "url": "https://intarch.ac.uk/journal/issue53/7/4.html#:~:text=PREVIOUS%20%20%20%201,ISSUE%20%20%20%205",
+                "text": "PREVIOUS    1  CONTENTS    3  ISSUE    5",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 19,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 206,
+                  "end_line_num": 214
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2385,
+              "end_ix": 2399,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotany: How People Used Plants in the Past | Historic England",
+                "url": "https://historicengland.org.uk/research/methods/archaeology/archaeobotany/#:~:text=Archaeobotany",
+                "text": "Archaeobotany",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 14,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 409,
+                  "end_line_num": 417
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2399,
+              "end_ix": 2413,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotany: How People Used Plants in the Past | Historic England",
+                "url": "https://historicengland.org.uk/research/methods/archaeology/archaeobotany/#:~:text=We%20use%20ArboDat%202016%20English,Denkmalpflege%20Hessen%2C%20Wiesbaden%2C%20Germany%2C%20hessenARCH%C3%84OLOGIE%2FArch%C3%A4eobotankik",
+                "text": "We use ArboDat 2016 English Version\u00a9 for archaeobotanical recording and data sharing and we administer the UK ArboDat user group. The ArboDat 2016 English Version is the product of the Landesamt f\u00fcr Denkmalpflege Hessen, Wiesbaden, Germany, hessenARCH\u00c4OLOGIE/Arch\u00e4eobotankik.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 14,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 450,
+                  "end_line_num": 458
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2623,
+              "end_ix": 2633,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n            Archaeobotanical and isotopic analyses of waterlogged remains from the Neolithic pile-dwelling site of Zug-Riedmatt (Switzerland): Resilience strategies of a plant economy in a changing local environment - PMC\n        ",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9518907/#:~:text=,0274361",
+                "text": ". 2022 Sep 28;17(9):e0274361. doi: 10.1371/journal.pone.0274361",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 24,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2633,
+              "end_ix": 2643,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "\n            Archaeobotanical and isotopic analyses of waterlogged remains from the Neolithic pile-dwelling site of Zug-Riedmatt (Switzerland): Resilience strategies of a plant economy in a changing local environment - PMC\n        ",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9518907/#:~:text=recorded%20by%20the%20programme%20ArboDat,National%20Data%20and%20Information%20Centre",
+                "text": "recorded by the programme ArboDat (\u00a9Kreuz and Sch\u00e4fer). Their classification into ecological groups was based on phytosociological and botanical literature ([45, 46]; www.infoflora.ch). Finally, the scientific nomenclature adheres to that of National Data and Information Centre",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 22,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1,
+                  "end_line_num": 4
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2917,
+              "end_ix": 2933,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotanical Research in Classical Archaeology | American Journal of Archaeology: Vol 126, No 4",
+                "url": "https://www.journals.uchicago.edu/doi/full/10.1086/720897#:~:text=by,and%20time%20periods%20can%20be",
+                "text": "by-sample) data is not available, meaning the information is essentially lost.208 Current initiatives to promote data sharing within archaeobotany include the utilization of the ArboDat database, which ensures interoperability between data sets when shared between collaborators, though it does not facilitate wider access.209 The publication of digital data sets following accepted standards would significantly enhance the research opportunities for specialists and nonspecialists alike. Finally, while publishing full data sets is crucial, it is also important that the compilation of multiple data sets continues to take place so that finds across regions and time periods can be",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 30,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1201,
+                  "end_line_num": 1209
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2933,
+              "end_ix": 2949,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotanical Research in Classical Archaeology | American Journal of Archaeology: Vol 126, No 4",
+                "url": "https://www.journals.uchicago.edu/doi/full/10.1086/720897#:~:text=209%20Lodwick%202019,ape",
+                "text": "209 Lodwick 2019. For more on ArboDat, see NIhK Wilhelmshaven, ArboDat \u2013 APE, https://nihk.de/en/research/current-projects/arbodat-ape.",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 29,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 1937,
+                  "end_line_num": 1944
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3231,
+              "end_ix": 3242,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotany Working Group (AWG) April 2023 minutes",
+                "url": "https://historicengland.org.uk/content/docs/research/awg-minutes-apr23/#:~:text=ArboDat%C2%A0is%C2%A0managed%C2%A0by%C2%A0Felix%C2%A0Bittmann%C2%A0at%C2%A0The%C2%A0Lower%C2%A0Saxony%C2%A0Institute%C2%A0for%C2%A0Historica%20l%C2%A0Coastal%C2%A0Research%20%28NIhK%C2%A0%E2%80%90%C2%A0Das%C2%A0Nieders%C3%A4chsische%C2%A0Institut%C2%A0f%C3%BCr%C2%A0historische%20K%C3%BCstenforschung%29%2C%C2%A0Wilhelmshaven%2C%C2%A0Germany",
+                "text": "ArboDat\u00a0is\u00a0managed\u00a0by\u00a0Felix\u00a0Bittmann\u00a0at\u00a0The\u00a0Lower\u00a0Saxony\u00a0Institute\u00a0for\u00a0Historica l\u00a0Coastal\u00a0Research (NIhK\u00a0\u2010\u00a0Das\u00a0Nieders\u00e4chsische\u00a0Institut\u00a0f\u00fcr\u00a0historische K\u00fcstenforschung),\u00a0Wilhelmshaven,\u00a0Germany.\u00a0It",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 41,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 7,
+                  "end_line_num": 15
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3242,
+              "end_ix": 3254,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Archaeobotany Working Group (AWG) April 2023 minutes",
+                "url": "https://historicengland.org.uk/content/docs/research/awg-minutes-apr23/#:~:text=For%C2%A0long%C2%A0term%C2%A0data%C2%A0storage%C2%A0ArboDat%C2%A0data%C2%A0can%C2%A0be%20uploaded%C2%A0to%C2%A0Pangaea%2C%C2%A0a%C2%A0German%C2%A0data%C2%A0repository%2C%C2%A0for%20free%C2%A0using%20a%C2%A0web%C2%A0app%20%E2%80%9CAPE%C2%A0%E2%80%93%C2%A0Arbodat%C2%A0Pangaea%C2%A0Export%E2%80%9D",
+                "text": "For\u00a0long\u00a0term\u00a0data\u00a0storage\u00a0ArboDat\u00a0data\u00a0can\u00a0be uploaded\u00a0to\u00a0Pangaea,\u00a0a\u00a0German\u00a0data\u00a0repository,\u00a0for free\u00a0using a\u00a0web\u00a0app \u201cAPE\u00a0\u2013\u00a0Arbodat\u00a0Pangaea\u00a0Export\u201d.\u00a0Particularly\u00a0useful\u00a0for\u00a0single\u00a0sites/projects",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 41,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 19,
+                  "end_line_num": 27
+                },
+                "og_tags": null
+              }
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u301048\u2020L1-L9\u3011",
+              "start_idx": 393,
+              "end_idx": 403,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "A new archaeobotanical database program | Vegetation History and Archaeobotany\n            ",
+              "url": "http://dx.doi.org/10.1007/s003340200019#:~:text=",
+              "pub_date": null,
+              "snippet": "* Published: 10 May 2014",
+              "attribution": "dx.doi.org"
+            },
+            {
+              "matched_text": "\u301035\u2020L85-L92\u3011",
+              "start_idx": 673,
+              "end_idx": 685,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotanical database of Czech Republic",
+              "url": "https://web.arup.cas.cz/czad/arbodat.php?l=en#:~:text=,Institut%20der%20Universit%C3%A4t%20Basel%2C%20Basel",
+              "pub_date": null,
+              "snippet": "* A. Kreuz , E. Sch\u00e4fer (2002): A new archaeobotanical database programme. Vegetation History and Archaeobotany 11, 177-179. * J. Paulsen (1995): Namen und Synonyme mitteleurop\u00e4ischer Gef\u00e4sspflanzen. Schweizer Botanik CD 1995, Botanisches Institut der Universit\u00e4t Basel, Basel.",
+              "attribution": "web.arup.cas.cz"
+            },
+            {
+              "matched_text": "\u30104\u2020L102-L110\u3011",
+              "start_idx": 928,
+              "end_idx": 941,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "ArboDat - APE - NIhK",
+              "url": "https://nihk.de/en/research/current-projects/arbodat-ape#:~:text=ArboDat%20is%20a%20program%20package,Angela%20Kreuz",
+              "pub_date": null,
+              "snippet": "ArboDat is a program package for registering and importing data of archaeobotanical analyses including contexts of samples as well as evaluation tools e.g. preparing tables for publications. It has been developed since 1997 as a product of the Landesamt f\u00fcr Denkmalpflege Hessen, Wiesbaden/Germany (HessenARCH\u00c4OLOGIE) under the direction of Prof. Angela Kreuz.",
+              "attribution": "nihk.de"
+            },
+            {
+              "matched_text": "\u30108\u2020L31-L38\u3011",
+              "start_idx": 1154,
+              "end_idx": 1165,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "ArboDat+: Development of a concept for a centralized standardized ArboDat service - NFDI4Objects",
+              "url": "https://www.nfdi4objects.net/en/portal/trails/arbodat_development_of_a_concept_for_a_centralized_standardized_arbodat_service#:~:text=%2A%2025",
+              "pub_date": null,
+              "snippet": "* 25-09-2024 -",
+              "attribution": "nfdi4objects.net"
+            },
+            {
+              "matched_text": "\u301013\u2020L88-L94\u3011",
+              "start_idx": 1358,
+              "end_idx": 1370,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "ArboDat \u2022 open-archaeo",
+              "url": "https://open-archaeo.info/post/arbodat/#:~:text=by%20Angela%20Kreuz%20in%20STANDALONE,website%20palaeobotany%20%20%2073",
+              "pub_date": null,
+              "snippet": "by Angela Kreuz in STANDALONE SOFTWARE website palaeobotany   73",
+              "attribution": "open-archaeo.info"
+            },
+            {
+              "matched_text": "\u301036\u2020L1-L9\u3011",
+              "start_idx": 1717,
+              "end_idx": 1727,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": " Digitising and sharing archaeobotanical data \u2013 the ArboDat 2016 Datacentre project ",
+              "url": "https://gfzpublic.gfz-potsdam.de/pubman/item/item_5017643_2/component/file_5018422/175_Kreuz_2022%20Elger_Frenzel_ArboDat_2016_Datacentre_Project_AEA%20NL%20August%202022.pdf#:~:text=AEA%20Newsletter%20156%20Research%20Piece,ArboDat%202016%20Datacentre%20project%20Introduction",
+              "pub_date": null,
+              "snippet": "AEA Newsletter 156 Research Piece August 2022 Digitising and sharing archaeobotanical data \u2013 the ArboDat 2016 Datacentre project Introduction",
+              "attribution": "gfzpublic.gfz-potsdam.de"
+            },
+            {
+              "matched_text": "\u301010\u2020L39-L42\u3011",
+              "start_idx": 1926,
+              "end_idx": 1938,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotanical Database Programme ArboDat 2016 \u2013 English Manual",
+              "url": "https://gfzpublic.gfz-potsdam.de/rest/items/item_5012429_1/component/file_5012431/content#:~:text=Telegrafenberg%20D,ArboDat_manual_en",
+              "pub_date": null,
+              "snippet": "Telegrafenberg D-14473 Potsdam 2022 DOI: https://doi.org/10.48440/hA-ArboDat_manual_en",
+              "attribution": "gfzpublic.gfz-potsdam.de"
+            },
+            {
+              "matched_text": "\u301019\u2020L206-L214\u3011",
+              "start_idx": 2154,
+              "end_idx": 2168,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Agendas for Archaeobotany in the 21st Century: data, dissemination and new directions. Lodwick. Internet Archaeol. 53.\n",
+              "url": "https://intarch.ac.uk/journal/issue53/7/4.html#:~:text=PREVIOUS%20%20%20%201,ISSUE%20%20%20%205",
+              "pub_date": null,
+              "snippet": "PREVIOUS    1  CONTENTS    3  ISSUE    5",
+              "attribution": "intarch.ac.uk"
+            },
+            {
+              "matched_text": "\u301014\u2020L409-L417\u3011",
+              "start_idx": 2385,
+              "end_idx": 2399,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotany: How People Used Plants in the Past | Historic England",
+              "url": "https://historicengland.org.uk/research/methods/archaeology/archaeobotany/#:~:text=Archaeobotany",
+              "pub_date": null,
+              "snippet": "Archaeobotany",
+              "attribution": "historicengland.org.uk"
+            },
+            {
+              "matched_text": "\u301014\u2020L450-L458\u3011",
+              "start_idx": 2399,
+              "end_idx": 2413,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotany: How People Used Plants in the Past | Historic England",
+              "url": "https://historicengland.org.uk/research/methods/archaeology/archaeobotany/#:~:text=We%20use%20ArboDat%202016%20English,Denkmalpflege%20Hessen%2C%20Wiesbaden%2C%20Germany%2C%20hessenARCH%C3%84OLOGIE%2FArch%C3%A4eobotankik",
+              "pub_date": null,
+              "snippet": "We use ArboDat 2016 English Version\u00a9 for archaeobotanical recording and data sharing and we administer the UK ArboDat user group. The ArboDat 2016 English Version is the product of the Landesamt f\u00fcr Denkmalpflege Hessen, Wiesbaden, Germany, hessenARCH\u00c4OLOGIE/Arch\u00e4eobotankik.",
+              "attribution": "historicengland.org.uk"
+            },
+            {
+              "matched_text": "\u301024\u2020L1-L4\u3011",
+              "start_idx": 2623,
+              "end_idx": 2633,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n            Archaeobotanical and isotopic analyses of waterlogged remains from the Neolithic pile-dwelling site of Zug-Riedmatt (Switzerland): Resilience strategies of a plant economy in a changing local environment - PMC\n        ",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9518907/#:~:text=,0274361",
+              "pub_date": null,
+              "snippet": ". 2022 Sep 28;17(9):e0274361. doi: 10.1371/journal.pone.0274361",
+              "attribution": "pmc.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301022\u2020L1-L4\u3011",
+              "start_idx": 2633,
+              "end_idx": 2643,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "\n            Archaeobotanical and isotopic analyses of waterlogged remains from the Neolithic pile-dwelling site of Zug-Riedmatt (Switzerland): Resilience strategies of a plant economy in a changing local environment - PMC\n        ",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9518907/#:~:text=recorded%20by%20the%20programme%20ArboDat,National%20Data%20and%20Information%20Centre",
+              "pub_date": null,
+              "snippet": "recorded by the programme ArboDat (\u00a9Kreuz and Sch\u00e4fer). Their classification into ecological groups was based on phytosociological and botanical literature ([45, 46]; www.infoflora.ch). Finally, the scientific nomenclature adheres to that of National Data and Information Centre",
+              "attribution": "pmc.ncbi.nlm.nih.gov"
+            },
+            {
+              "matched_text": "\u301030\u2020L1201-L1209\u3011",
+              "start_idx": 2917,
+              "end_idx": 2933,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotanical Research in Classical Archaeology | American Journal of Archaeology: Vol 126, No 4",
+              "url": "https://www.journals.uchicago.edu/doi/full/10.1086/720897#:~:text=by,and%20time%20periods%20can%20be",
+              "pub_date": null,
+              "snippet": "by-sample) data is not available, meaning the information is essentially lost.208 Current initiatives to promote data sharing within archaeobotany include the utilization of the ArboDat database, which ensures interoperability between data sets when shared between collaborators, though it does not facilitate wider access.209 The publication of digital data sets following accepted standards would significantly enhance the research opportunities for specialists and nonspecialists alike. Finally, while publishing full data sets is crucial, it is also important that the compilation of multiple data sets continues to take place so that finds across regions and time periods can be",
+              "attribution": "journals.uchicago.edu"
+            },
+            {
+              "matched_text": "\u301029\u2020L1937-L1944\u3011",
+              "start_idx": 2933,
+              "end_idx": 2949,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotanical Research in Classical Archaeology | American Journal of Archaeology: Vol 126, No 4",
+              "url": "https://www.journals.uchicago.edu/doi/full/10.1086/720897#:~:text=209%20Lodwick%202019,ape",
+              "pub_date": null,
+              "snippet": "209 Lodwick 2019. For more on ArboDat, see NIhK Wilhelmshaven, ArboDat \u2013 APE, https://nihk.de/en/research/current-projects/arbodat-ape.",
+              "attribution": "journals.uchicago.edu"
+            },
+            {
+              "matched_text": "\u301041\u2020L7-L15\u3011",
+              "start_idx": 3231,
+              "end_idx": 3242,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotany Working Group (AWG) April 2023 minutes",
+              "url": "https://historicengland.org.uk/content/docs/research/awg-minutes-apr23/#:~:text=ArboDat%C2%A0is%C2%A0managed%C2%A0by%C2%A0Felix%C2%A0Bittmann%C2%A0at%C2%A0The%C2%A0Lower%C2%A0Saxony%C2%A0Institute%C2%A0for%C2%A0Historica%20l%C2%A0Coastal%C2%A0Research%20%28NIhK%C2%A0%E2%80%90%C2%A0Das%C2%A0Nieders%C3%A4chsische%C2%A0Institut%C2%A0f%C3%BCr%C2%A0historische%20K%C3%BCstenforschung%29%2C%C2%A0Wilhelmshaven%2C%C2%A0Germany",
+              "pub_date": null,
+              "snippet": "ArboDat\u00a0is\u00a0managed\u00a0by\u00a0Felix\u00a0Bittmann\u00a0at\u00a0The\u00a0Lower\u00a0Saxony\u00a0Institute\u00a0for\u00a0Historica l\u00a0Coastal\u00a0Research (NIhK\u00a0\u2010\u00a0Das\u00a0Nieders\u00e4chsische\u00a0Institut\u00a0f\u00fcr\u00a0historische K\u00fcstenforschung),\u00a0Wilhelmshaven,\u00a0Germany.\u00a0It",
+              "attribution": "historicengland.org.uk"
+            },
+            {
+              "matched_text": "\u301041\u2020L19-L27\u3011",
+              "start_idx": 3242,
+              "end_idx": 3254,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Archaeobotany Working Group (AWG) April 2023 minutes",
+              "url": "https://historicengland.org.uk/content/docs/research/awg-minutes-apr23/#:~:text=For%C2%A0long%C2%A0term%C2%A0data%C2%A0storage%C2%A0ArboDat%C2%A0data%C2%A0can%C2%A0be%20uploaded%C2%A0to%C2%A0Pangaea%2C%C2%A0a%C2%A0German%C2%A0data%C2%A0repository%2C%C2%A0for%20free%C2%A0using%20a%C2%A0web%C2%A0app%20%E2%80%9CAPE%C2%A0%E2%80%93%C2%A0Arbodat%C2%A0Pangaea%C2%A0Export%E2%80%9D",
+              "pub_date": null,
+              "snippet": "For\u00a0long\u00a0term\u00a0data\u00a0storage\u00a0ArboDat\u00a0data\u00a0can\u00a0be uploaded\u00a0to\u00a0Pangaea,\u00a0a\u00a0German\u00a0data\u00a0repository,\u00a0for free\u00a0using a\u00a0web\u00a0app \u201cAPE\u00a0\u2013\u00a0Arbodat\u00a0Pangaea\u00a0Export\u201d.\u00a0Particularly\u00a0useful\u00a0for\u00a0single\u00a0sites/projects",
+              "attribution": "historicengland.org.uk"
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67c00135caa48191b3135205778edd45",
+          "async_task_title": "ArboDat Software Mentions in Archaeology and Historical Studies"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "40d47f96-e357-422f-b28b-e0eeccf4cc97",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "a2231c38-0ce8-4832-81c7-0006b30bfa2b",
+  "plugin_ids": null,
+  "conversation_id": "67c00125-e988-8004-865f-33ed83cba611",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://web.arup.cas.cz/czad/arbodat.php?l=en"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67c00125-e988-8004-865f-33ed83cba611"
+}

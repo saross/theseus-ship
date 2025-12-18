@@ -1,0 +1,395 @@
+{
+  "title": "v7-LifeForms",
+  "create_time": 1740277319.223491,
+  "update_time": 1740280660.178508,
+  "mapping": {
+    "aaa19166-fbbb-4322-97f8-5e7163d745c3": {
+      "id": "aaa19166-fbbb-4322-97f8-5e7163d745c3",
+      "message": null,
+      "parent": null,
+      "children": [
+        "3eae693c-0c07-4aae-994c-ae77597cb382"
+      ]
+    },
+    "3eae693c-0c07-4aae-994c-ae77597cb382": {
+      "id": "3eae693c-0c07-4aae-994c-ae77597cb382",
+      "message": {
+        "id": "3eae693c-0c07-4aae-994c-ae77597cb382",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa19166-fbbb-4322-97f8-5e7163d745c3",
+      "children": [
+        "81173022-4b6e-4a7e-9955-400b19c14263"
+      ]
+    },
+    "81173022-4b6e-4a7e-9955-400b19c14263": {
+      "id": "81173022-4b6e-4a7e-9955-400b19c14263",
+      "message": {
+        "id": "81173022-4b6e-4a7e-9955-400b19c14263",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740277319.249056,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9163bed9ea416a6c-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "3eae693c-0c07-4aae-994c-ae77597cb382",
+      "children": [
+        "7e5946a3-9be6-48f2-82ae-6b126e47ed90"
+      ]
+    },
+    "7e5946a3-9be6-48f2-82ae-6b126e47ed90": {
+      "id": "7e5946a3-9be6-48f2-82ae-6b126e47ed90",
+      "message": {
+        "id": "7e5946a3-9be6-48f2-82ae-6b126e47ed90",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740277334.304657,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand the methodology and careful attention required for this research. Please provide the first archaeology or historical studies-related software tool name, and I will begin a systematic search following your outlined criteria."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "81173022-4b6e-4a7e-9955-400b19c14263",
+          "request_id": "9163bed9ea416a6c-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "81173022-4b6e-4a7e-9955-400b19c14263",
+      "children": [
+        "a46bad84-c86f-4db5-9e2f-8bb9d73c3136"
+      ]
+    },
+    "a46bad84-c86f-4db5-9e2f-8bb9d73c3136": {
+      "id": "a46bad84-c86f-4db5-9e2f-8bb9d73c3136",
+      "message": {
+        "id": "a46bad84-c86f-4db5-9e2f-8bb9d73c3136",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740277334.304817,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "7e5946a3-9be6-48f2-82ae-6b126e47ed90",
+          "request_id": "9163bed9ea416a6c-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "7e5946a3-9be6-48f2-82ae-6b126e47ed90",
+      "children": [
+        "445ea5f0-1a60-4324-b36f-7c395542c5ce"
+      ]
+    },
+    "445ea5f0-1a60-4324-b36f-7c395542c5ce": {
+      "id": "445ea5f0-1a60-4324-b36f-7c395542c5ce",
+      "message": {
+        "id": "445ea5f0-1a60-4324-b36f-7c395542c5ce",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740277338.619952,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "LifeForms"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9163bf54bfd66a6c-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a46bad84-c86f-4db5-9e2f-8bb9d73c3136",
+      "children": [
+        "ba55a5f9-2837-43a1-b227-aaf523d4eae3"
+      ]
+    },
+    "ba55a5f9-2837-43a1-b227-aaf523d4eae3": {
+      "id": "ba55a5f9-2837-43a1-b227-aaf523d4eae3",
+      "message": {
+        "id": "ba55a5f9-2837-43a1-b227-aaf523d4eae3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740277350.688405,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a thorough search for references to the software tool *LifeForms* in archaeology and historical sciences. I will compile a well-formed CSV with each mention I find, documenting the year, source, URL, and any relevant notes on the data provenance or quality. I will take care to review each source systematically and include all valid references from 1995 onward. I will update you once the research is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "445ea5f0-1a60-4324-b36f-7c395542c5ce",
+          "request_id": "9163bf54bfd66a6c-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "445ea5f0-1a60-4324-b36f-7c395542c5ce",
+      "children": [
+        "c2c67156-25c1-4bad-a9a8-227f12ab223a"
+      ]
+    },
+    "c2c67156-25c1-4bad-a9a8-227f12ab223a": {
+      "id": "c2c67156-25c1-4bad-a9a8-227f12ab223a",
+      "message": {
+        "id": "c2c67156-25c1-4bad-a9a8-227f12ab223a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740277350.688521,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a thorough search for references to the software tool *LifeForms* in archaeology and historical sciences. I will compile a well-formed CSV with each mention I find, documenting the year, source, URL, and any relevant notes on the data provenance or quality. I will take care to review each source systematically and include all valid references from 1995 onward. I will update you once the research is complete.\",\"title\":\"Comprehensive Evidence Collection for LifeForms Software\",\"prompt\":\"Conduct a comprehensive search for references to the software tool *LifeForms* in archaeology and historical sciences. This should include references from scholarly literature, blogs, about pages, version control repositories, and any other valid sources from 1995 onward. The data should be compiled in a well-formed quoted CSV inside a fenced code block with the following columns:\\n\\n- \\\"Tool\\\": The tool name (*LifeForms* in this case).\\n- \\\"Year\\\": The year of the source, or \\\"n.d.\\\" if no date is available.\\n- \\\"Source\\\": Citation or domain + page title.\\n- \\\"URL\\\": The direct URL to the source.\\n- \\\"AI Notes\\\": Any relevant concerns, uncertainties, or observations about the data provenance or quality.\\n\\nEach valid reference found must be included as a separate row, and searches should be expanded by \u00b11 year from any discovered date. Avoid extrapolating dates; only use those explicitly stated in sources. Ensure thoroughness by reviewing all search results systematically. \\n\\nReturn results in a markdown fenced code block CSV format.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "ba55a5f9-2837-43a1-b227-aaf523d4eae3",
+          "request_id": "9163bf54bfd66a6c-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "ba55a5f9-2837-43a1-b227-aaf523d4eae3",
+      "children": [
+        "b3e60bb6-984a-4a39-94ef-afb03dc4cd63"
+      ]
+    },
+    "b3e60bb6-984a-4a39-94ef-afb03dc4cd63": {
+      "id": "b3e60bb6-984a-4a39-94ef-afb03dc4cd63",
+      "message": {
+        "id": "b3e60bb6-984a-4a39-94ef-afb03dc4cd63",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740277358.862766,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Comprehensive Evidence Collection for LifeForms Software",
+          "async_task_prompt": "Conduct a comprehensive search for references to the software tool *LifeForms* in archaeology and historical sciences. This should include references from scholarly literature, blogs, about pages, version control repositories, and any other valid sources from 1995 onward. The data should be compiled in a well-formed quoted CSV inside a fenced code block with the following columns:\n\n- \"Tool\": The tool name (*LifeForms* in this case).\n- \"Year\": The year of the source, or \"n.d.\" if no date is available.\n- \"Source\": Citation or domain + page title.\n- \"URL\": The direct URL to the source.\n- \"AI Notes\": Any relevant concerns, uncertainties, or observations about the data provenance or quality.\n\nEach valid reference found must be included as a separate row, and searches should be expanded by \u00b11 year from any discovered date. Avoid extrapolating dates; only use those explicitly stated in sources. Ensure thoroughness by reviewing all search results systematically. \n\nReturn results in a markdown fenced code block CSV format.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Comprehensive Evidence Collection for LifeForms Software",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "auto",
+          "parent_id": "c2c67156-25c1-4bad-a9a8-227f12ab223a",
+          "request_id": "9163bf54bfd66a6c-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c2c67156-25c1-4bad-a9a8-227f12ab223a",
+      "children": [
+        "a8a5ebce-22ad-4ced-b4f8-a1ac3ffb3d46"
+      ]
+    },
+    "a8a5ebce-22ad-4ced-b4f8-a1ac3ffb3d46": {
+      "id": "a8a5ebce-22ad-4ced-b4f8-a1ac3ffb3d46",
+      "message": {
+        "id": "a8a5ebce-22ad-4ced-b4f8-a1ac3ffb3d46",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740277767.827407,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Source\",\"URL\",\"AI Notes\"\n\"LifeForms\",\"2001\",\"Internet Archaeology Issue 10 \u2013 Sculpture, Dance and Heritage: animating dance sequences from temple reliefs using movement modelling software\",\"https://intarch.ac.uk/journal/issue10/iyer_toc.html\",\"Peer-reviewed archaeology journal article by A. Lopez y Royo Iyer describing use of LifeForms 3.0.1 to reconstruct ancient dance; credible academic source.\"\n\"LifeForms\",\"2001\",\"wissenschaft.de \u2013 Computer-Animation l\u00e4sst javanische Figuren wieder tanzen\",\"https://www.wissenschaft.de/geschichte-archaeologie/computer-animation-laesst-javanische-figuren-wieder-tanzen/\",\"German science news article summarizing Lopez y Royo's project and use of LifeForms; popular media source (coverage of academic work).\"\n\"LifeForms\",\"2005\",\"Journal of Material Culture 10(1) \u2013 Embodying a Site: Choreographing Prambanan\",\"https://citeseerx.ist.psu.edu/document?doi=10.1.1.494.6380\",\"Scholarly article by Lopez y Royo referencing the LifeForms-based dance reconstruction (cites Lopez y Royo 2001); published by SAGE, high-quality source.\"\n\"LifeForms\",\"2006\",\"Stanford Humanities Lab \u2013 ReConstructing and RePresenting Dance: Exploring the Dance/Archaeology Conjunction\",\"http://humanitieslab.stanford.edu/ArchaeologyDanceConjunction/693\",\"Online monograph (Stanford Metamedia) by Lopez y Royo expanding on dance/archaeology research; likely includes LifeForms usage. Original site now offline (referenced via Smithsonian archive).\"\n\"LifeForms\",\"2013\",\"ias.surrey.ac.uk \u2013 Corporeal Computing: A Performative Archaeology of Digital Gesture\",\"https://www.ias.surrey.ac.uk/event/corporeal-computing/\",\"Conference page noting LifeForms as a groundbreaking tool (context is digital performance; 'archaeology' in title is metaphorical). Not a research study but a relevant reference.\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67ba866eb5a08191b429466f28b910e1",
+          "async_task_title": "Comprehensive Evidence Collection for LifeForms Software"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "b3e60bb6-984a-4a39-94ef-afb03dc4cd63",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "a8a5ebce-22ad-4ced-b4f8-a1ac3ffb3d46",
+  "plugin_ids": null,
+  "conversation_id": "67ba8646-d734-8004-b36c-27ddb26beea1",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.wissenschaft.de/geschichte-archaeologie/computer-animation-laesst-javanische-figuren-wieder-tanzen/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67ba8646-d734-8004-b36c-27ddb26beea1"
+}

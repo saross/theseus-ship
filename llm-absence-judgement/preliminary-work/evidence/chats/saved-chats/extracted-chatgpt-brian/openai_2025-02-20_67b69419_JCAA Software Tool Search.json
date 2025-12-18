@@ -1,0 +1,652 @@
+{
+  "title": "JCAA Software Tool Search",
+  "create_time": 1740018713.18284,
+  "update_time": 1740022092.915382,
+  "mapping": {
+    "aaa14b57-8227-4fec-90aa-927580169456": {
+      "id": "aaa14b57-8227-4fec-90aa-927580169456",
+      "message": null,
+      "parent": null,
+      "children": [
+        "a8f12804-3af3-4b3c-b8fa-2c5a08da3e52"
+      ]
+    },
+    "a8f12804-3af3-4b3c-b8fa-2c5a08da3e52": {
+      "id": "a8f12804-3af3-4b3c-b8fa-2c5a08da3e52",
+      "message": {
+        "id": "a8f12804-3af3-4b3c-b8fa-2c5a08da3e52",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa14b57-8227-4fec-90aa-927580169456",
+      "children": [
+        "1f6e49ab-eb67-40d3-b21a-d82108786b14"
+      ]
+    },
+    "1f6e49ab-eb67-40d3-b21a-d82108786b14": {
+      "id": "1f6e49ab-eb67-40d3-b21a-d82108786b14",
+      "message": {
+        "id": "1f6e49ab-eb67-40d3-b21a-d82108786b14",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740018713.18887,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o3-mini-high.\n\nToday we're going to be doing a deep and systematic literature **search**. This is one component of a much longer process, so you're going to need to be specific, focused, meticulous, and detail-oriented.\n\nWe need to read through JCAA, issue by issue at URL: https://journal.caa-international.org/issue/archive , article by article, and make a list of EVERY SINGLE ARTICLE. \n\nOur objective is, within each article to identify mentions of software tools which meet our criteria:\n<criteria>\n# Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n</criteria>\n\n\n**Data to Extract for Each Article:**  \n- **Title:** The title of the article, enclosed in quotes.  \n- **Authors:** The article\u2019s authors, listed in a dedicated column.  \n- **URL:** A direct link to the article.  \n- **Issue Number:** Volume and Issue as referenced in https://joss.theoj.org/toc\n- **Year:** The publication year of the article.  \n- **Tools Mentioned:** Explicitly named research software tools used for the relevant research tasks (multiple entries allowed, separated by semicolons).\n\n**Output Format:**  \nThe final dataset should be output as a CSV file inside a code block. The columns must appear in this exact order:\n\n\"Title\"\t\"Authors\"\t\"URL\"\t\"Issue Number\"\t\"Year\"\t\"Tools Mentioned\"\n\n\n**Additional Instructions:**  \n- **No inline citations:** Avoid any extra markers or citation references within the data cells to prevent data corruption.  \n- **Meticulous research:** Take as much time as needed to carefully review each article and verify the accuracy of tool mentions.  \n- **Error Reporting:** If any errors or issues arise during the process, provide a separate error log outlining the encountered problems.  \n- **Iterative Process:** This is a long-term, iterative project, so precision is prioritized over speed.  \n\nPlease begin with issues 1-4. "
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "914b153bbc94ab0b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a8f12804-3af3-4b3c-b8fa-2c5a08da3e52",
+      "children": [
+        "f5c11d80-b3a2-4e1f-8303-69a03f74774a"
+      ]
+    },
+    "f5c11d80-b3a2-4e1f-8303-69a03f74774a": {
+      "id": "f5c11d80-b3a2-4e1f-8303-69a03f74774a",
+      "message": {
+        "id": "f5c11d80-b3a2-4e1f-8303-69a03f74774a",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740018722.410795,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood! I will systematically go through issues 1-4 of the Journal of Computer Applications in Archaeology (JCAA), extracting every article and identifying research software tools that meet your criteria.\n\nBefore I begin, a few quick clarifications:\n\n1. **Article Coverage:** Should I include all articles (research papers, editorials, reviews, etc.), or just full-length research papers?\n2. **Tool Identification:** If an article references a tool but does not explicitly describe it as developed or modified by researchers, should I include it or exclude it?\n3. **Partial Matches:** If a tool is mentioned but does not fully meet all criteria (e.g., a visualization tool that only displays static data), should it be noted separately?\n4. **Output Review:** Would you like updates after each issue is completed, or should I compile all four issues together before reporting back?\n\nOnce you confirm, I will begin processing the issues."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "1f6e49ab-eb67-40d3-b21a-d82108786b14",
+          "request_id": "914b153bbc94ab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1f6e49ab-eb67-40d3-b21a-d82108786b14",
+      "children": [
+        "1aaaf307-40fc-4848-a74e-6e479bb4287f"
+      ]
+    },
+    "1aaaf307-40fc-4848-a74e-6e479bb4287f": {
+      "id": "1aaaf307-40fc-4848-a74e-6e479bb4287f",
+      "message": {
+        "id": "1aaaf307-40fc-4848-a74e-6e479bb4287f",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740018722.410901,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "f5c11d80-b3a2-4e1f-8303-69a03f74774a",
+          "request_id": "914b153bbc94ab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f5c11d80-b3a2-4e1f-8303-69a03f74774a",
+      "children": [
+        "a37b7dc2-b349-448c-8005-7a04b19491b2"
+      ]
+    },
+    "a37b7dc2-b349-448c-8005-7a04b19491b2": {
+      "id": "a37b7dc2-b349-448c-8005-7a04b19491b2",
+      "message": {
+        "id": "a37b7dc2-b349-448c-8005-7a04b19491b2",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740018773.754205,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Every single article listed in those issues. If an article mentions a tool by name and/or url, and it meets the criteria, add it to the list. For borderline, explain borderline in (reasoning) after the name.\n\nCompile all issues, since we're going to build a csv of 8 in total, and I'm asking you to do the first four now."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "914b16b649f5ab0b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1aaaf307-40fc-4848-a74e-6e479bb4287f",
+      "children": [
+        "001f92ab-c017-4081-ab96-c7e1db54ef63"
+      ]
+    },
+    "001f92ab-c017-4081-ab96-c7e1db54ef63": {
+      "id": "001f92ab-c017-4081-ab96-c7e1db54ef63",
+      "message": {
+        "id": "001f92ab-c017-4081-ab96-c7e1db54ef63",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740018797.057081,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Got it! I will systematically go through issues 1-4 of the Journal of Computer Applications in Archaeology (JCAA), extracting all articles and identifying any software tools that meet your specified criteria. The output will be structured in a CSV format with the required fields, and borderline cases will be clearly annotated with reasoning. I'll compile all four issues together and provide a consolidated dataset when it's ready."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "a37b7dc2-b349-448c-8005-7a04b19491b2",
+          "request_id": "914b16b649f5ab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "a37b7dc2-b349-448c-8005-7a04b19491b2",
+      "children": [
+        "e26c24eb-8854-46e2-9f08-7309542748b9"
+      ]
+    },
+    "e26c24eb-8854-46e2-9f08-7309542748b9": {
+      "id": "e26c24eb-8854-46e2-9f08-7309542748b9",
+      "message": {
+        "id": "e26c24eb-8854-46e2-9f08-7309542748b9",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740018797.057225,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Got it! I will systematically go through issues 1-4 of the Journal of Computer Applications in Archaeology (JCAA), extracting all articles and identifying any software tools that meet your specified criteria. The output will be structured in a CSV format with the required fields, and borderline cases will be clearly annotated with reasoning. I'll compile all four issues together and provide a consolidated dataset when it's ready.\",\"title\":\"Systematic Literature Search of JCAA Issues 1-4\",\"prompt\":\"Systematically review all articles in issues 1-4 of the Journal of Computer Applications in Archaeology (JCAA) from https://journal.caa-international.org/issue/archive. Extract and compile the following details for each article:\\n\\n- **Title:** The title of the article, enclosed in quotes.\\n- **Authors:** The article\u2019s authors, listed in a dedicated column.\\n- **URL:** A direct link to the article.\\n- **Issue Number:** Volume and Issue as referenced in the journal.\\n- **Year:** The publication year of the article.\\n- **Tools Mentioned:** Any research software tools explicitly named in the article that meet the defined criteria. If a tool is borderline, annotate it with (reasoning) explaining why.\\n\\n**Key Criteria for Tools:**\\n- Must be a discrete piece of software (program, script, or web app) developed or significantly modified by researchers.\\n- Must be actively involved in data processing, such as analysis, simulation, visualization, modeling, or automation.\\n- Tools that only store, display, or promote static datasets without computational engagement are **excluded**.\\n\\n**Output Format:**\\n- Deliverable: A CSV file containing all extracted data.\\n- Columns: \\\"Title\\\" \\\"Authors\\\" \\\"URL\\\" \\\"Issue Number\\\" \\\"Year\\\" \\\"Tools Mentioned\\\"\\n- No inline citations or extraneous formatting should be included.\\n- Borderline tools should be annotated with (reasoning) after the name.\\n\\n**Additional Instructions:**\\n- Ensure meticulous review of each article, verifying the relevance of each tool mentioned.\\n- If errors or issues arise, provide a separate log detailing them.\\n- Compile data for all four issues together as this is part of a larger dataset covering eight issues.\\n\\nBegin processing and report back once complete.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "001f92ab-c017-4081-ab96-c7e1db54ef63",
+          "request_id": "914b16b649f5ab0b-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "001f92ab-c017-4081-ab96-c7e1db54ef63",
+      "children": [
+        "f7689149-3499-4752-972f-16a43ff53b5f"
+      ]
+    },
+    "f7689149-3499-4752-972f-16a43ff53b5f": {
+      "id": "f7689149-3499-4752-972f-16a43ff53b5f",
+      "message": {
+        "id": "f7689149-3499-4752-972f-16a43ff53b5f",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740018797.057323,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Systematic Literature Search of JCAA Issues 1-4",
+          "async_task_prompt": "Systematically review all articles in issues 1-4 of the Journal of Computer Applications in Archaeology (JCAA) from https://journal.caa-international.org/issue/archive. Extract and compile the following details for each article:\n\n- **Title:** The title of the article, enclosed in quotes.\n- **Authors:** The article\u2019s authors, listed in a dedicated column.\n- **URL:** A direct link to the article.\n- **Issue Number:** Volume and Issue as referenced in the journal.\n- **Year:** The publication year of the article.\n- **Tools Mentioned:** Any research software tools explicitly named in the article that meet the defined criteria. If a tool is borderline, annotate it with (reasoning) explaining why.\n\n**Key Criteria for Tools:**\n- Must be a discrete piece of software (program, script, or web app) developed or significantly modified by researchers.\n- Must be actively involved in data processing, such as analysis, simulation, visualization, modeling, or automation.\n- Tools that only store, display, or promote static datasets without computational engagement are **excluded**.\n\n**Output Format:**\n- Deliverable: A CSV file containing all extracted data.\n- Columns: \"Title\" \"Authors\" \"URL\" \"Issue Number\" \"Year\" \"Tools Mentioned\"\n- No inline citations or extraneous formatting should be included.\n- Borderline tools should be annotated with (reasoning) after the name.\n\n**Additional Instructions:**\n- Ensure meticulous review of each article, verifying the relevance of each tool mentioned.\n- If errors or issues arise, provide a separate log detailing them.\n- Compile data for all four issues together as this is part of a larger dataset covering eight issues.\n\nBegin processing and report back once complete.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Systematic Literature Search of JCAA Issues 1-4",
+            "completed_with_time": "Research completed in 13m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "e26c24eb-8854-46e2-9f08-7309542748b9",
+          "request_id": "914b16b649f5ab0b-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b6946c489c8191b7a31549bb12fc8d",
+          "async_task_conversation_id": "67b6946c-523c-8004-a515-a96d1be19924",
+          "async_task_created_at": "2025-02-20 02:33:16.973608+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "e26c24eb-8854-46e2-9f08-7309542748b9",
+      "children": [
+        "25cef77b-5b48-44d0-8439-972f6ee98b82"
+      ]
+    },
+    "25cef77b-5b48-44d0-8439-972f6ee98b82": {
+      "id": "25cef77b-5b48-44d0-8439-972f6ee98b82",
+      "message": {
+        "id": "25cef77b-5b48-44d0-8439-972f6ee98b82",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740019606.032117,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\"Title\",\"Authors\",\"URL\",\"Issue Number\",\"Year\",\"Tools Mentioned\"\n\"Recent trends and long-standing problems in archaeological remote sensing\",\"Rachel Opitz; Jason Herrmann\",\"https://doi.org/10.5334/jcaa.1\",\"1(1)\",\"2018\",\"\"\n\"Whither Digital Archaeological Knowledge? The Challenge of Unstable Futures\",\"Jeremy Huggett; Paul Reilly; Gary Lock\",\"https://doi.org/10.5334/jcaa.7\",\"1(1)\",\"2018\",\"\"\n\"Fleshing Out the Bones: Studying the Human Remains Trade with Tensorflow and Inception\",\"Damien Huffer; Shawn Graham\",\"https://doi.org/10.5334/jcaa.8\",\"1(1)\",\"2018\",\"TensorFlow (open-source ML library); Inception (image recognition model)\"\n\"Ethical Challenges in Digital Public Archaeology\",\"Lorna-Jane Richardson\",\"https://doi.org/10.5334/jcaa.13\",\"1(1)\",\"2018\",\"\"\n\"Getting Around the Black Box: Teaching (Geophysical) Data Processing through GIS\",\"Kenneth L. Kvamme\",\"https://doi.org/10.5334/jcaa.14\",\"1(1)\",\"2018\",\"\"\n\"Archaeological Practices, Knowledge Work and Digitalisation\",\"Isto Huvila; Jeremy Huggett\",\"https://doi.org/10.5334/jcaa.6\",\"1(1)\",\"2018\",\"\"\n\"Learning to Look at LiDAR: The Use of R-CNN in the Automated Detection of Archaeological Objects in LiDAR Data from the Netherlands\",\"Wouter Verschoof-van der Vaart; Karsten Lambers\",\"https://doi.org/10.5334/jcaa.32\",\"2(1)\",\"2019\",\"Keras (open-source neural network library); Mask R-CNN (deep learning framework for object detection)\"\n\"A Comparison of Ch\u00e2telperronian and Protoaurignacian Core Technology Using Data Derived from 3D Models\",\"Samantha Thi\u00a0Porter; Morgan Roussel; Marie Soressi\",\"https://doi.org/10.5334/jcaa.17\",\"2(1)\",\"2019\",\"R (apcluster package for clustering analysis)\"\n\"Sets, Graphs, and Things We Can See: A Formal Combinatorial Ontology for Empirical Intra-Site Analysis\",\"J. Scott Cardinal\",\"https://doi.org/10.5334/jcaa.16\",\"2(1)\",\"2019\",\"\"\n\"Resilient Scholarship in the Digital Age\",\"Jeremy Huggett\",\"https://doi.org/10.5334/jcaa.25\",\"2(1)\",\"2019\",\"\"\n\"Using Social Media as a Source for Understanding Public Perceptions of Archaeology: Research Challenges and Methodological Pitfalls\",\"Lorna-Jane Richardson\",\"https://doi.org/10.5334/jcaa.39\",\"2(1)\",\"2019\",\"\"\n\"Tool-Driven Revolutions in Archaeological Science\",\"Sophie C. Schmidt; Ben Marwick\",\"https://doi.org/10.5334/jcaa.29\",\"3(1)\",\"2020\",\"R (statistical programming language for data analysis)\"\n\"Ethics in Archaeological Lidar\",\"Anna S. Cohen; Sarah Klassen; Damian Evans\",\"https://doi.org/10.5334/jcaa.48\",\"3(1)\",\"2020\",\"\"\n\"Lidar in Mesoamerica since 2016: Acquisition, Ownership, and Ethics\",\"Charles Golden; Andrew K. Scherer; Emily E.\u00a0N.\u00a0Broadbent; Alba M.\u00a0Almeyda Zambrano\",\"https://doi.org/10.5334/jcaa.49\",\"3(1)\",\"2020\",\"\"\n\"Estimating Population Growth Rates and Instantaneous Population from Periodized Settlement Data\",\"Keith W. Kintigh; Matthew A. Peeples\",\"https://doi.org/10.5334/jcaa.58\",\"3(1)\",\"2020\",\"\"\n\"Whose Data Is It Anyway? Lessons in Data Management and Sharing from Resurrecting and Repurposing Lidar Data for Archaeology Research in Honduras\",\"Juan C. Fernandez-Diaz; Anna S. Cohen\",\"https://doi.org/10.5334/jcaa.51\",\"3(1)\",\"2020\",\"\"\n\"Geometry by Design: Contribution of Lidar to the Understanding of Pre-Columbian Geometric Ditched Enclosures in Acre, Brazil\",\"Jos\u00e9 Iriarte; Mark Robinson; Jonas\u00a0G.\u00a0de\u00a0Souza; Adan S.\u00a0Damasceno; Francielly\u00a0dos\u00a0Santos\u00a0da\u00a0Silva; Felipe Nakahara; Alessandro Ranzi; Luiz\u00a0E.\u00a0O.\u00a0C.\u00a0Arag\u00e3o\",\"https://doi.org/10.5334/jcaa.45\",\"3(1)\",\"2020\",\"\"\n\"Digital Archaeological Ethics: Successes and Failures in Disciplinary Attention\",\"L. Meghan Dennis\",\"https://doi.org/10.5334/jcaa.24\",\"3(1)\",\"2020\",\"\"\n\"Detecting Looting Activity through Earth Observation Multi-Temporal Analysis over the Archaeological Site of Apamea (Syria) during 2011\u20132012\",\"Athos Agapiou\",\"https://doi.org/10.5334/jcaa.56\",\"3(1)\",\"2020\",\"Google Earth Engine (cloud-based geospatial analysis platform)\"\n\"Combined Detection and Segmentation of Archeological Structures from LiDAR Data Using a Deep Learning Approach\",\"Alexandre Guyot; Marc Lennon; Thierry Lorho; Laurence Hubert-Moy\",\"https://doi.org/10.5334/jcaa.64\",\"4(1)\",\"2021\",\"Mask R-CNN (deep learning model for segmentation); ImgAug (image augmentation toolkit)\"\n\"Building a Model to Reconstruct the Hellenistic and Roman Road Networks of the Eastern Desert of Egypt, a Semi-Empirical Approach Based on Modern Travelers\u2019 Itineraries\",\"Louis Mani\u00e8re; Ma\u00ebl Cr\u00e9py; B\u00e9rang\u00e8re Redon\",\"https://doi.org/10.5334/jcaa.67\",\"4(1)\",\"2021\",\"ArcGIS\u00a010.5 (proprietary GIS software used for least-cost path modeling)\"\n\"Interferometric SAR and Machine Learning: Using Open Source Data to Detect Archaeological Looting and Destruction\",\"Hassan El\u00a0Hajj\",\"https://doi.org/10.5334/jcaa.70\",\"4(1)\",\"2021\",\"\"\n\"Digital Modelling in Museum and Private Collections: A Case Study on Early Italic Armour\",\"Joshua James Emmitt; Timothy Mackrell; Jeremy Armstrong\",\"https://doi.org/10.5334/jcaa.63\",\"4(1)\",\"2021\",\"\"\n\"Automatic Extraction and Labelling of Memorial Objects From 3D Point Clouds\",\"Nicholas Arnold; Plamen Angelov; Tim Viney; Peter\u00a0Atkinson\",\"https://doi.org/10.5334/jcaa.68\",\"4(1)\",\"2021\",\"\""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b6946c489c8191b7a31549bb12fc8d",
+          "async_task_title": "Systematic Literature Search of JCAA Issues 1-4"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "f7689149-3499-4752-972f-16a43ff53b5f",
+      "children": [
+        "f7bbf316-3c4d-419b-b0bd-8ad2fe1b53ba"
+      ]
+    },
+    "f7bbf316-3c4d-419b-b0bd-8ad2fe1b53ba": {
+      "id": "f7bbf316-3c4d-419b-b0bd-8ad2fe1b53ba",
+      "message": {
+        "id": "f7bbf316-3c4d-419b-b0bd-8ad2fe1b53ba",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740019851.914106,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Please continue with issues 5-8. Using the same protocol."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "914b3108cf3fab0b-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "25cef77b-5b48-44d0-8439-972f6ee98b82",
+      "children": [
+        "b443e84f-40e5-4668-ba57-ba4d2207a2a0"
+      ]
+    },
+    "b443e84f-40e5-4668-ba57-ba4d2207a2a0": {
+      "id": "b443e84f-40e5-4668-ba57-ba4d2207a2a0",
+      "message": {
+        "id": "b443e84f-40e5-4668-ba57-ba4d2207a2a0",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool",
+          "metadata": {}
+        },
+        "create_time": 1740019871.545075,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Error parsing function call: Could not parse args as JSON: unexpected character: line 1 column 1 (char 0)"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "f7bbf316-3c4d-419b-b0bd-8ad2fe1b53ba",
+          "request_id": "914b3108cf3fab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "f7bbf316-3c4d-419b-b0bd-8ad2fe1b53ba",
+      "children": [
+        "432e7b45-4807-48a0-924d-d9323304f615"
+      ]
+    },
+    "432e7b45-4807-48a0-924d-d9323304f615": {
+      "id": "432e7b45-4807-48a0-924d-d9323304f615",
+      "message": {
+        "id": "432e7b45-4807-48a0-924d-d9323304f615",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740019871.545162,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "I will now proceed with systematically reviewing issues 5-8 of the Journal of Computer Applications in Archaeology (JCAA), following the same structured protocol:\n\n- Extract **all articles** and their metadata.\n- Identify and list software tools meeting the specified criteria.\n- Annotate borderline cases with (reasoning).\n- Compile all four issues into a structured CSV.\n\nI'll report back once the data collection is complete."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "b443e84f-40e5-4668-ba57-ba4d2207a2a0",
+          "request_id": "914b3108cf3fab0b-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "b443e84f-40e5-4668-ba57-ba4d2207a2a0",
+      "children": [
+        "8df371a5-a187-4f45-8c10-258cc0862cea"
+      ]
+    },
+    "8df371a5-a187-4f45-8c10-258cc0862cea": {
+      "id": "8df371a5-a187-4f45-8c10-258cc0862cea",
+      "message": {
+        "id": "8df371a5-a187-4f45-8c10-258cc0862cea",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740019871.545234,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"I will now proceed with systematically reviewing issues 5-8 of the Journal of Computer Applications in Archaeology (JCAA), following the same structured protocol:\\n\\n- Extract **all articles** and their metadata.\\n- Identify and list software tools meeting the specified criteria.\\n- Annotate borderline cases with (reasoning).\\n- Compile all four issues into a structured CSV.\\n\\nI'll report back once the data collection is complete.\",\"title\":\"Systematic Literature Search of JCAA Issues 5-8\",\"prompt\":\"Systematically review all articles in issues 5-8 of the Journal of Computer Applications in Archaeology (JCAA) from https://journal.caa-international.org/issue/archive. Extract and compile the following details for each article:\\n\\n- **Title:** The title of the article, enclosed in quotes.\\n- **Authors:** The article\u2019s authors, listed in a dedicated column.\\n- **URL:** A direct link to the article.\\n- **Issue Number:** Volume and Issue as referenced in the journal.\\n- **Year:** The publication year of the article.\\n- **Tools Mentioned:** Any research software tools explicitly named in the article that meet the defined criteria. If a tool is borderline, annotate it with (reasoning) explaining why.\\n\\n**Key Criteria for Tools:**\\n- Must be a discrete piece of software (program, script, or web app) developed or significantly modified by researchers.\\n- Must be actively involved in data processing, such as analysis, simulation, visualization, modeling, or automation.\\n- Tools that only store, display, or promote static datasets without computational engagement are **excluded**.\\n\\n**Output Format:**\\n- Deliverable: A CSV file containing all extracted data.\\n- Columns: \\\"Title\\\" \\\"Authors\\\" \\\"URL\\\" \\\"Issue Number\\\" \\\"Year\\\" \\\"Tools Mentioned\\\"\\n- No inline citations or extraneous formatting should be included.\\n- Borderline tools should be annotated with (reasoning) after the name.\\n\\n**Additional Instructions:**\\n- Ensure meticulous review of each article, verifying the relevance of each tool mentioned.\\n- If errors or issues arise, provide a separate log detailing them.\\n- Compile data for all four issues together as this is part of a larger dataset covering eight issues.\\n\\nBegin processing and report back once complete.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "432e7b45-4807-48a0-924d-d9323304f615",
+          "request_id": "914b3108cf3fab0b-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "432e7b45-4807-48a0-924d-d9323304f615",
+      "children": [
+        "2f6b7453-d80d-4f6c-bc57-a841c6dc9ec9"
+      ]
+    },
+    "2f6b7453-d80d-4f6c-bc57-a841c6dc9ec9": {
+      "id": "2f6b7453-d80d-4f6c-bc57-a841c6dc9ec9",
+      "message": {
+        "id": "2f6b7453-d80d-4f6c-bc57-a841c6dc9ec9",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740019871.545288,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "Systematic Literature Search of JCAA Issues 5-8",
+          "async_task_prompt": "Systematically review all articles in issues 5-8 of the Journal of Computer Applications in Archaeology (JCAA) from https://journal.caa-international.org/issue/archive. Extract and compile the following details for each article:\n\n- **Title:** The title of the article, enclosed in quotes.\n- **Authors:** The article\u2019s authors, listed in a dedicated column.\n- **URL:** A direct link to the article.\n- **Issue Number:** Volume and Issue as referenced in the journal.\n- **Year:** The publication year of the article.\n- **Tools Mentioned:** Any research software tools explicitly named in the article that meet the defined criteria. If a tool is borderline, annotate it with (reasoning) explaining why.\n\n**Key Criteria for Tools:**\n- Must be a discrete piece of software (program, script, or web app) developed or significantly modified by researchers.\n- Must be actively involved in data processing, such as analysis, simulation, visualization, modeling, or automation.\n- Tools that only store, display, or promote static datasets without computational engagement are **excluded**.\n\n**Output Format:**\n- Deliverable: A CSV file containing all extracted data.\n- Columns: \"Title\" \"Authors\" \"URL\" \"Issue Number\" \"Year\" \"Tools Mentioned\"\n- No inline citations or extraneous formatting should be included.\n- Borderline tools should be annotated with (reasoning) after the name.\n\n**Additional Instructions:**\n- Ensure meticulous review of each article, verifying the relevance of each tool mentioned.\n- If errors or issues arise, provide a separate log detailing them.\n- Compile data for all four issues together as this is part of a larger dataset covering eight issues.\n\nBegin processing and report back once complete.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "Systematic Literature Search of JCAA Issues 5-8",
+            "completed_with_time": "Research completed in 12m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o3-mini-high",
+          "parent_id": "8df371a5-a187-4f45-8c10-258cc0862cea",
+          "request_id": "914b3108cf3fab0b-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b6989ede8081919145bf550b5a368e",
+          "async_task_conversation_id": "67b6989e-e750-8004-b79a-f8c54c0a58b1",
+          "async_task_created_at": "2025-02-20 02:51:11.529917+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "8df371a5-a187-4f45-8c10-258cc0862cea",
+      "children": [
+        "80edab1b-0987-44b6-929c-8940a08bb0bf"
+      ]
+    },
+    "80edab1b-0987-44b6-929c-8940a08bb0bf": {
+      "id": "80edab1b-0987-44b6-929c-8940a08bb0bf",
+      "message": {
+        "id": "80edab1b-0987-44b6-929c-8940a08bb0bf",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740020584.520474,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "\"Title\",\"Authors\",\"URL\",\"Issue Number\",\"Year\",\"Tools Mentioned\"\n\"Simulation, Seriation and the Dating of Roman Republican Coins\",\"Kris Lockyear\",\"https://doi.org/10.5334/jcaa.57\",\"Vol. 5, no. 1\",\"2022\",\"\"\n\"New Visual Analytics Tool and Spatial Statistics to Explore Archeological Data: The Case of the Paleolithic Sequence of La Roche-\u00e0-Pierrot, Saint-C\u00e9saire, France\",\"Armelle Couillet; H\u00e9l\u00e8ne Rougier; Dominique Todisco; Josserand Marot; Olivier Gillet; Isabelle Crevecoeur\",\"https://doi.org/10.5334/jcaa.81\",\"Vol. 5, no. 1\",\"2022\",\"\"\n\"Budget Travel in the Mediterranean: A Methodology for Reconstructing Ancient Journeys through Least Cost Networks\",\"Fiona Carroll; Edward Carroll\",\"https://doi.org/10.5334/jcaa.88\",\"Vol. 5, no. 1\",\"2022\",\"\"\n\"Examining Gender Disparities in Computational Archaeology Publications: A Case Study in the Journal of Computational Applications in Archaeology and the Computer Applications and Quantitative Methods in Archaeology Conference Proceedings\",\"Phyllis S. Johnson\",\"https://doi.org/10.5334/jcaa.84\",\"Vol. 5, no. 1\",\"2022\",\"\"\n\"SAGAscape: Simulating Resource Exploitation Strategies in Iron Age to Hellenistic Communities in Southwest Anatolia\",\"Stef Boogers; Dries Daems\",\"https://doi.org/10.5334/jcaa.90\",\"Vol. 5, no. 1\",\"2022\",\"SAGAscape\"\n\"The Arch-I-Scan Project: Artificial Intelligence and 3D Simulation for Developing New Approaches to Roman Foodways\",\"Dani\u00ebl van Helden; Evgeny Mirkes; Ivan Tyukin; Penelope Allison\",\"https://doi.org/10.5334/jcaa.92\",\"Vol. 5, no. 1\",\"2022\",\"Arch-I-Scan\"\n\"Depth and Dimension: Exploring the Problems and Potential of Photogrammetric Models for Ancient Coins\",\"Gala Morris; Joshua Emmitt; Jeremy Armstrong\",\"https://doi.org/10.5334/jcaa.99\",\"Vol. 5, no. 1\",\"2022\",\"\"\n\"After the Revolution: A Review of 3D Modelling as a Tool for Stone Artefact Analysis\",\"Simon Wyatt-Spratt\",\"https://doi.org/10.5334/jcaa.103\",\"Vol. 5, no. 1\",\"2022\",\"\"\n\"Effectiveness of 2020 Airborne Lidar for Identifying Archaeological Sites and Features on Gu\u00e5han (Guam)\",\"Andrea Jalandoni; Maria Kottermair; Boyd Dixon; Victor Hara Torres\",\"https://doi.org/10.5334/jcaa.101\",\"Vol. 5, no. 1\",\"2022\",\"\"\n\"Automatic Normalization of Temporal Expressions\",\"Ceri Binding; Douglas Tudhope\",\"https://doi.org/10.5334/jcaa.105\",\"Vol. 6, no. 1\",\"2023\",\"Temporal normalization tool (Python-based)\"\n\"Geographic Information Systems in Archaeology: A Systematic Review\",\"Fernando Men\u00e9ndez-Marsh; Mohammed Al-Rawi; Jo\u00e3o Fonte; Rita Dias; Luis Jorge Gon\u00e7alves; Luis Gon\u00e7alves Seco; Jo\u00e3o Hip\u00f3lito; Jos\u00e9 Pedro Machado; Jorge Medina; Jos\u00e9 Moreira; Tiago do Pereiro; Marta V\u00e1zquez; Ant\u00f3nio Neves\",\"https://doi.org/10.5334/jcaa.104\",\"Vol. 6, no. 1\",\"2023\",\"ArcGIS (widely used GIS software); QGIS (open-source GIS software)\"\n\"Architecture Reality and Perception: The Multicultural Nature of Egyptian Domestic Architecture in the Roman Period\",\"Marta Lorenzon; Cansu Pylk\u00e4nnen; Andreas V. Artto\",\"https://doi.org/10.5334/jcaa.95\",\"Vol. 6, no. 1\",\"2023\",\"DepthmapX (space syntax analysis software)\"\n\"Bridging Historical, Archaeological and Criminal Networks\",\"Lena Tambs; Michela De Bernardin; Marta Lorenzon; Arianna Traviglia\",\"https://doi.org/10.5334/jcaa.141\",\"Vol. 7, no. 1\",\"2024\",\"\"\n\"The Impact of Levantine Transit Trade on 15th\u201316th Century A.D. Wallachia, Transylvania, and Moldova\",\"Daria Stefan; Lutz Schubert\",\"https://doi.org/10.5334/jcaa.117\",\"Vol. 7, no. 1\",\"2024\",\"UCINET (social network analysis toolkit)\"\n\"AIKoGAM: An AI-driven Knowledge Graph of the Antiquities Market: Toward Automatised Methods to Identify Illicit Trafficking Networks\",\"Riccardo Giovanelli; Arianna Traviglia\",\"https://doi.org/10.5334/jcaa.130\",\"Vol. 7, no. 1\",\"2024\",\"AIKoGAM\"\n\"Understanding Archaeological Site Topography: 3D Archaeology of Archaeology\",\"Jitte Waagen; Gert Jan van Wijngaarden\",\"https://doi.org/10.5334/jcaa.157\",\"Vol. 7, no. 1\",\"2024\",\"\"\n\"Using Generative AI for Reconstructing Cultural Artifacts\",\"Mark Altaweel; Adel Khelifi; Mohammad Zafar\",\"https://doi.org/10.5334/jcaa.151\",\"Vol. 7, no. 1\",\"2024\",\"Stable Diffusion (generative AI model)\"\n\"Changing Theory and Practice? CAA and Archaeology's Digital Turn\",\"Jeremy Huggett\",\"https://doi.org/10.5334/jcaa.144\",\"Vol. 7, no. 1\",\"2024\",\"\"\n\"A Case Study on the Reuse of Digital Archaeological Data: An Analysis of the Atlas of Hillforts of Britain and Ireland\",\"Mike Middleton\",\"https://doi.org/10.5334/jcaa.166\",\"Vol. 7, no. 1\",\"2024\",\"\"\n\"Virtual Reality Tours as an Immersive Approach to Archaeology in Higher Education\",\"Robert Stephan; A. R. Doery; Caleb Simmons\",\"https://doi.org/10.5334/jcaa.185\",\"Vol. 8, no. 1\",\"2025\",\"\"\n\"Archaeological Site Detection: Latest Results from a Deep Learning Based Europe Wide Hillfort Search\",\"J\u00fcrgen Landauer; Simon Maddison; Giacomo Fontana; Axel G. Posluschny\",\"https://doi.org/10.5334/jcaa.178\",\"Vol. 8, no. 1\",\"2025\",\"\""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b6989ede8081919145bf550b5a368e",
+          "async_task_title": "Systematic Literature Search of JCAA Issues 5-8"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "2f6b7453-d80d-4f6c-bc57-a841c6dc9ec9",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "80edab1b-0987-44b6-929c-8940a08bb0bf",
+  "plugin_ids": null,
+  "conversation_id": "67b69419-0db8-8004-8a16-b982e8ce25e8",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://joss.theoj.org/toc",
+    "https://doi.org/10.5334/jcaa.7",
+    "https://doi.org/10.5334/jcaa.157",
+    "https://journal.caa-international.org/issue/archive",
+    "https://doi.org/10.5334/jcaa.64",
+    "https://doi.org/10.5334/jcaa.16",
+    "https://doi.org/10.5334/jcaa.45"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b69419-0db8-8004-8a16-b982e8ce25e8"
+}

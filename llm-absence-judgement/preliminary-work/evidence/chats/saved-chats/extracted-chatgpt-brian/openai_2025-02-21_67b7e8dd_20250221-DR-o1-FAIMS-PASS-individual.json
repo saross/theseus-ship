@@ -1,0 +1,645 @@
+{
+  "title": "20250221-DR-o1-FAIMS-PASS-individual",
+  "create_time": 1740105949.683858,
+  "update_time": 1740107896.591673,
+  "mapping": {
+    "aaa11188-3332-490e-9dfc-f282e41f2501": {
+      "id": "aaa11188-3332-490e-9dfc-f282e41f2501",
+      "message": null,
+      "parent": null,
+      "children": [
+        "9b86d368-4fd0-4271-9e1f-dcad2539a3fa"
+      ]
+    },
+    "9b86d368-4fd0-4271-9e1f-dcad2539a3fa": {
+      "id": "9b86d368-4fd0-4271-9e1f-dcad2539a3fa",
+      "message": {
+        "id": "9b86d368-4fd0-4271-9e1f-dcad2539a3fa",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa11188-3332-490e-9dfc-f282e41f2501",
+      "children": [
+        "9aa131b3-23aa-487f-ae2e-5dfc6ccb9497"
+      ]
+    },
+    "9aa131b3-23aa-487f-ae2e-5dfc6ccb9497": {
+      "id": "9aa131b3-23aa-487f-ae2e-5dfc6ccb9497",
+      "message": {
+        "id": "9aa131b3-23aa-487f-ae2e-5dfc6ccb9497",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740105949.686434,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o3-mini-high. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you batches of archaeology and historical science-related software tools from 1995 onwards. \n\nWe need to build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Citation\", \"URL\", \"Evidence\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found\n* Citation, any valid citation if the source is an academically valid source\n* URL, url of the resource where you found the thing. Do not use a HTML in-line citation style, give us the full url that the citation would have resolved to. Do not give us a line if there is no web page.\n* Evidence, we are looking for \"proof of life\" of the software tool, i.e. a mention in a research paper, journal article, github commit, blog post, or any dated hit on a web page. Construe this category of proof of life broadly, but it's essential that you are *consistent* with your nomenclature here. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. \n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we need at least one mention (though one is sufficient) for each tool. Obviously, many of these tools were created after the fact, so we'll want to expand our search by +- 1 year from any date we find. \n\nIt is essential that you find a mention per year if it is possible to find. \nThis requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every year, we want indications about their status (if it exists and is well supported by a web page, commit, or scholarly source construed broadly)\nYou will build a CSV with the output.\n\n\n\nWhen you respond with data:\n1. Give me a stateful response of this list and your status of each item on the list (todo, done, out of scope but real, confabulated)\n2. Build the CSV of evidence you have found.\n3. ANY mention of that tool in ANY year should be on the CSV, regardless of source. Do try to find it's source code, do try to find scholarly literature, do a general search on blog posts and social media.\n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "91536705cca8a7ad-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9b86d368-4fd0-4271-9e1f-dcad2539a3fa",
+      "children": [
+        "1d7fe6eb-bd16-400f-aa76-2a276f984001"
+      ]
+    },
+    "1d7fe6eb-bd16-400f-aa76-2a276f984001": {
+      "id": "1d7fe6eb-bd16-400f-aa76-2a276f984001",
+      "message": {
+        "id": "1d7fe6eb-bd16-400f-aa76-2a276f984001",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740105955.879845,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your methodology and criteria. Before we begin, please provide the first batch of archaeology and historical science-related software tools for me to research. Once you provide the list, I will systematically search for mentions of each tool from 1995 onward, documenting evidence in the requested CSV format."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "9aa131b3-23aa-487f-ae2e-5dfc6ccb9497",
+          "request_id": "91536705cca8a7ad-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9aa131b3-23aa-487f-ae2e-5dfc6ccb9497",
+      "children": [
+        "998ff0bd-6054-4e05-b6a4-a43b1dd6576a"
+      ]
+    },
+    "998ff0bd-6054-4e05-b6a4-a43b1dd6576a": {
+      "id": "998ff0bd-6054-4e05-b6a4-a43b1dd6576a",
+      "message": {
+        "id": "998ff0bd-6054-4e05-b6a4-a43b1dd6576a",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740105955.880007,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "1d7fe6eb-bd16-400f-aa76-2a276f984001",
+          "request_id": "91536705cca8a7ad-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "1d7fe6eb-bd16-400f-aa76-2a276f984001",
+      "children": [
+        "876309a8-7f07-4f10-803c-9f7cc70d7731"
+      ]
+    },
+    "876309a8-7f07-4f10-803c-9f7cc70d7731": {
+      "id": "876309a8-7f07-4f10-803c-9f7cc70d7731",
+      "message": {
+        "id": "876309a8-7f07-4f10-803c-9f7cc70d7731",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740105962.969699,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "FAIMS"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9153675a990fa7ad-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "998ff0bd-6054-4e05-b6a4-a43b1dd6576a",
+      "children": [
+        "8953f47f-9c5e-455c-bd62-6ef01cbd7cf8"
+      ]
+    },
+    "8953f47f-9c5e-455c-bd62-6ef01cbd7cf8": {
+      "id": "8953f47f-9c5e-455c-bd62-6ef01cbd7cf8",
+      "message": {
+        "id": "8953f47f-9c5e-455c-bd62-6ef01cbd7cf8",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740105986.931093,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Understood. I will conduct a systematic and thorough search for mentions of FAIMS (Field Acquired Information Management Systems) from 1995 onward. This will include searching for proof of life in academic sources, GitHub commits, blog posts, and other valid references. I will compile a quoted CSV with the required columns and provide notes on any uncertainties or issues found. I will update you once I have gathered and structured the data."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "876309a8-7f07-4f10-803c-9f7cc70d7731",
+          "request_id": "9153675a990fa7ad-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "876309a8-7f07-4f10-803c-9f7cc70d7731",
+      "children": [
+        "11db6d58-ad02-4f5f-9a52-0d2138ecdab3"
+      ]
+    },
+    "11db6d58-ad02-4f5f-9a52-0d2138ecdab3": {
+      "id": "11db6d58-ad02-4f5f-9a52-0d2138ecdab3",
+      "message": {
+        "id": "11db6d58-ad02-4f5f-9a52-0d2138ecdab3",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740105986.931185,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Understood. I will conduct a systematic and thorough search for mentions of FAIMS (Field Acquired Information Management Systems) from 1995 onward. This will include searching for proof of life in academic sources, GitHub commits, blog posts, and other valid references. I will compile a quoted CSV with the required columns and provide notes on any uncertainties or issues found. I will update you once I have gathered and structured the data.\",\"title\":\"FAIMS Archaeology Software Mentions from 1995 Onward\",\"prompt\":\"Conduct a comprehensive search for mentions of the FAIMS (Field Acquired Information Management Systems) software tool in archaeology and historical sciences from 1995 onward. \\n\\nFor each year in which FAIMS is mentioned, document the following details in a quoted CSV format:\\n- \\\"Tool\\\": FAIMS\\n- \\\"Year\\\": Year of the mention\\n- \\\"Citation\\\": Any valid academic citation, if applicable\\n- \\\"URL\\\": Full URL where the mention was found\\n- \\\"Evidence\\\": Proof of life such as a reference in a research paper, GitHub commit, blog post, or any dated mention on a web page\\n- \\\"AI Notes\\\": Any concerns, uncertainties, or observations about data provenance or quality\\n\\nExpand the search by \u00b11 year from any date found to ensure comprehensive coverage. Document any potential issues or gaps in the AI Notes column.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "8953f47f-9c5e-455c-bd62-6ef01cbd7cf8",
+          "request_id": "9153675a990fa7ad-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "8953f47f-9c5e-455c-bd62-6ef01cbd7cf8",
+      "children": [
+        "eab04862-58e5-4ee3-8b79-3e09079033d3"
+      ]
+    },
+    "eab04862-58e5-4ee3-8b79-3e09079033d3": {
+      "id": "eab04862-58e5-4ee3-8b79-3e09079033d3",
+      "message": {
+        "id": "eab04862-58e5-4ee3-8b79-3e09079033d3",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740105986.931252,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "FAIMS Archaeology Software Mentions from 1995 Onward",
+          "async_task_prompt": "Conduct a comprehensive search for mentions of the FAIMS (Field Acquired Information Management Systems) software tool in archaeology and historical sciences from 1995 onward. \n\nFor each year in which FAIMS is mentioned, document the following details in a quoted CSV format:\n- \"Tool\": FAIMS\n- \"Year\": Year of the mention\n- \"Citation\": Any valid academic citation, if applicable\n- \"URL\": Full URL where the mention was found\n- \"Evidence\": Proof of life such as a reference in a research paper, GitHub commit, blog post, or any dated mention on a web page\n- \"AI Notes\": Any concerns, uncertainties, or observations about data provenance or quality\n\nExpand the search by \u00b11 year from any date found to ensure comprehensive coverage. Document any potential issues or gaps in the AI Notes column.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "FAIMS Archaeology Software Mentions from 1995 Onward",
+            "completed_with_time": "Research completed in 11m",
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "11db6d58-ad02-4f5f-9a52-0d2138ecdab3",
+          "request_id": "9153675a990fa7ad-SYD",
+          "timestamp_": "absolute",
+          "async_task_id": "deepresch_67b7e902949c8191a8c796f6ac53ab25",
+          "async_task_conversation_id": "67b7e902-a7e8-8004-864a-5fd303c4bef7",
+          "async_task_created_at": "2025-02-21 02:46:26.910623+00:00"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "11db6d58-ad02-4f5f-9a52-0d2138ecdab3",
+      "children": [
+        "e7072f8f-f019-4f63-b1dd-3514c655711e"
+      ]
+    },
+    "e7072f8f-f019-4f63-b1dd-3514c655711e": {
+      "id": "e7072f8f-f019-4f63-b1dd-3514c655711e",
+      "message": {
+        "id": "e7072f8f-f019-4f63-b1dd-3514c655711e",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740106624.705592,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\n\"Tool\",\"Year\",\"Citation\",\"URL\",\"Evidence\",\"AI Notes\"\n\"FAIMS\",\"2012\",\"N/A\",\"https://www.unsw.edu.au/newsroom/news/2012/07/archaeology-goes-digital\",\"FAIMS project received a federal grant of $950,000 in 2012 to develop mobile apps for archaeological data capture\u30108\u2020L199-L207\u3011\",\"Early sources use 'Federated' in the name; first public mention via funding news in 2012\"\n\"FAIMS\",\"2013\",\"Ross et al. (2013) Australian Archaeology 77: 110-119\",\"http://australianarchaeology.com/wp-content/uploads/2013/11/Ross-et-al-2013.pdf\",\"NeCTAR awarded the FAIMS project ~AUD$950k (June 2012\u2013Dec 2013) to develop archaeological information management systems\u301018\u2020L368-L376\u3011\",\"Academic article documenting FAIMS development and funding timeline\"\n\"FAIMS\",\"2014\",\"N/A\",\"https://staff.itee.uq.edu.au/jane/grants.html\",\"ARC LIEF grant LE140100151 for FAIMS (2014\u20132015) awarded AUD$400,000\u301058\u2020L43-L49\u3011\",\"Grant record confirms 2014 funding; few independent publications this year\"\n\"FAIMS\",\"2015\",\"Sobotkova et al. (2015) CAA Conf. Proc., Amsterdam Univ. Press, pp.80\u201388\",\"https://pure.au.dk/portal/en/publications/arbitrary-offline-data-capture-on-all-of-your-androids-the-faims-\",\"FAIMS was established in 2012 to build open-source eResearch tools for archaeological data management (presented at CAA 2013, published 2015)\u301037\u2020L40-L47\u3011\",\"Conference paper (published 2015) highlights FAIMS as a 2012-born digital archaeology platform\"\n\"FAIMS\",\"2016\",\"N/A\",\"https://ardc.edu.au/article/seven-years-of-faims-mobile-and-still-going-strong/\",\"The FAIMS project received an ARC LIEF award in 2014 and a RAAP grant in 2016, used to enhance the platform per user feedback\u301035\u2020L200-L205\u3011\",\"No 2016-specific publication; funding noted in a later summary (2019) \u2013 potential gap in contemporary reporting\"\n\"FAIMS\",\"2017\",\"N/A\",\"https://faims.edu.au/about/\",\"Project timeline notes FAIMS v2.5 was released in 2017 as an update to the platform\u301031\u2020L99-L106\u3011\",\"Limited external mentions in 2017; information drawn from internal project timeline (possible data gap)\"\n\"FAIMS\",\"2018\",\"Ballsun\u2010Stanton et al. (2018) SoftwareX 7: 47\u201352\",\"https://doi.org/10.1016/j.softx.2017.12.006\",\"\\\"FAIMS Mobile is a native Android application supported by an Ubuntu server\\\" \u2013 first formal software description published in 2018\u301074\u2020L228-L236\u3011\",\"Peer-reviewed software announcement (open-source tool described for archaeology and other field sciences)\"\n\"FAIMS\",\"2019\",\"N/A\",\"https://ardc.edu.au/article/seven-years-of-faims-mobile-and-still-going-strong/\",\"Since its inception in 2012, FAIMS has been deployed in 58+ workflows across six continents and various disciplines\u301035\u2020L163-L170\u3011\",\"ARDC article (2019) summarizes seven years of FAIMS growth; provides retrospective evidence of continued use\"\n\"FAIMS\",\"2020\",\"N/A\",\"https://osf.io/mqk45/wiki/\",\"In Dec 2019, ARDC awarded a team led by Macquarie University $600k (over 3 years) to rebuild FAIMS as a modern field data platform\u301051\u2020L61-L69\u3011\",\"FAIMS 3.0 redevelopment began; evidence from project\u2019s OSF record (reflects 2020 kickoff \u2013 mostly internal documentation)\"\n\"FAIMS\",\"2021\",\"N/A\",\"https://faims.edu.au/about/\",\"Internal alpha (v0.1.0) and beta (v0.3.0) versions of FAIMS 3.0 were released for testing in 2021\u301031\u2020L107-L114\u3011\",\"No major public releases or papers in 2021; development progress noted in internal timeline (potential coverage gap)\"\n\"FAIMS\",\"2022\",\"Sobotkova et al. (2022) Journal of Field Archaeology 47(1)\",\"https://faims.edu.au/news/\",\"Field reports from a FAIMS-supported survey in Greece were published by the Journal of Field Archaeology (leadership team as co-authors)\u301071\u2020L292-L299\u3011\",\"Significant research output demonstrating FAIMS usage; project leaders and archaeologists co-authored a field study paper\"\n\"FAIMS\",\"2023\",\"N/A\",\"https://faims.edu.au/about/\",\"FAIMS3 v0.7 was released in Dec 2022, and in June 2023 the software was rebranded as Fieldmark\u2122 for its next-generation rollout\u301030\u2020L71-L75\u3011\",\"Rebranding and new release announced; mostly communicated via project channels, highlighting a transition to Fieldmark (no external publication yet)\"\n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [
+            {
+              "start_ix": 268,
+              "end_ix": 281,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            },
+            {
+              "start_ix": 648,
+              "end_ix": 662,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            },
+            {
+              "start_ix": 872,
+              "end_ix": 884,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "Information about Jane Hunter",
+                "url": "https://staff.itee.uq.edu.au/jane/grants.html#:~:text=,2015%2C%20%24150%2C000",
+                "text": "* ARC Discovery Indigenous IN140100033, Defining the Impact of Regionalism on Aboriginal Housing and Settlements, Go-Sam, Moran, Memmott, Hunter, 2014-2016, $530,000 * ARC LIEF LE140100151, Federated Archeological Information Management System (FAIMS), 2014-2015, $400,000 * US Office of Secretary of Defence, SBIR Grant, Semantic Technologies for Materials Design and Development, 2014-2015, $150,000",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 58,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 43,
+                  "end_line_num": 49
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 1305,
+              "end_ix": 1317,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            },
+            {
+              "start_ix": 1645,
+              "end_ix": 1659,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            },
+            {
+              "start_ix": 1910,
+              "end_ix": 1923,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            },
+            {
+              "start_ix": 2276,
+              "end_ix": 2290,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "FAIMS-Mobile-Flexible-open-source-software-for-field-research/faims.md at master \u00b7 FAIMS/FAIMS-Mobile-Flexible-open-source-software-for-field-research \u00b7 GitHub",
+                "url": "https://github.com/FAIMS/FAIMS-Mobile-Flexible-open-source-software-for-field-research/blob/master/faims.md#:~:text=FAIMS%20Mobile%20is%20a%20native,comprehensive%20datasets%20that%20can%20be",
+                "text": "FAIMS Mobile is a native Android application supported by an Ubuntu server facilitating human-mediated field research across disciplines. It consists of \u2018core\u2019 Java and Ruby software providing a platform for data capture, which can be deeply customised using \u2018definition packets\u2019 consisting of XML documents (data schema and UI) and Beanshell scripts (automation). Definition packets can be autogenerated using an XML-based domain specific language. FAIMS Mobile includes features allowing rich and efficient data capture tailored to the needs of fieldwork. It also promotes synthetic research and improves transparency and reproducibility through the production of comprehensive datasets that can be",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 74,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 228,
+                  "end_line_num": 236
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 2619,
+              "end_ix": 2633,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            },
+            {
+              "start_ix": 2927,
+              "end_ix": 2939,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "OSF | FAIMS 3.0 Electronic Field Notebooks Wiki",
+                "url": "https://osf.io/mqk45/wiki/#:~:text=%5BTimeline%5D%28https%3A%2F%2Fosf.io%2Fmqk45%2Fwiki%2FTimeline%2F%29%2A%20,of%20current%20software%20stacks%20and",
+                "text": "[Timeline](https://osf.io/mqk45/wiki/Timeline/)* # Overview In December 2019 the [Australian Research Data Commons](https://ardc.edu.au) (ARDC) [awarded a team of researchers led by Macquarie University $600,000](https://ardc.edu.au/news/our-platforms-investment/) over three years to build a digital platform for data collection in the field and offline. This was matched by $720,920 in co-investment from project partners. ## What are we doing? This project will see the re-build of [FAIMS Mobile](https://www.fedarch.org/faims-mobile/) a robust data collection tool now at the end of its digital life, making the most of current software stacks and",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 51,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 61,
+                  "end_line_num": 69
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3214,
+              "end_ix": 3228,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            },
+            {
+              "start_ix": 3591,
+              "end_ix": 3605,
+              "citation_format_type": "tether_v4",
+              "metadata": {
+                "type": "webpage",
+                "title": "FAIMS3 News - FAIMS 3.0 Electronic Field Notebooks",
+                "url": "https://faims.edu.au/news/#:~:text=Hot%20off%20the%20e,Lupack%20and%20Panagiota%20Kasimi%20is",
+                "text": "Hot off the e-press, field reports for a FAIMS-supported archaeological survey on the Perachora Peninsula, Greece, have just been released by Journal of Field Archaeology. The paper by FAIMS 3.0 leadership team members Adela Sobotkova, Shawn A. Ross, Brian Ballsun-Stanton, FAIMS 2.6 alumni Petra Hermankova\u00a0and Christian Nassif-Haynes, and archaeologists Susan Lupack and Panagiota Kasimi is...",
+                "pub_date": null,
+                "extra": {
+                  "cited_message_idx": 71,
+                  "search_result_idx": null,
+                  "evidence_text": "",
+                  "start_line_num": 292,
+                  "end_line_num": 299
+                },
+                "og_tags": null
+              }
+            },
+            {
+              "start_ix": 3910,
+              "end_ix": 3922,
+              "citation_format_type": "tether_v4",
+              "invalid_reason": "Error while extracting cite metadata: Invalid line numbers in citation"
+            }
+          ],
+          "content_references": [
+            {
+              "matched_text": "\u30108\u2020L199-L207\u3011",
+              "start_idx": 268,
+              "end_idx": 281,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "\u301018\u2020L368-L376\u3011",
+              "start_idx": 648,
+              "end_idx": 662,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "\u301058\u2020L43-L49\u3011",
+              "start_idx": 872,
+              "end_idx": 884,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "Information about Jane Hunter",
+              "url": "https://staff.itee.uq.edu.au/jane/grants.html#:~:text=,2015%2C%20%24150%2C000",
+              "pub_date": null,
+              "snippet": "* ARC Discovery Indigenous IN140100033, Defining the Impact of Regionalism on Aboriginal Housing and Settlements, Go-Sam, Moran, Memmott, Hunter, 2014-2016, $530,000 * ARC LIEF LE140100151, Federated Archeological Information Management System (FAIMS), 2014-2015, $400,000 * US Office of Secretary of Defence, SBIR Grant, Semantic Technologies for Materials Design and Development, 2014-2015, $150,000",
+              "attribution": "staff.itee.uq.edu.au"
+            },
+            {
+              "matched_text": "\u301037\u2020L40-L47\u3011",
+              "start_idx": 1305,
+              "end_idx": 1317,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "\u301035\u2020L200-L205\u3011",
+              "start_idx": 1645,
+              "end_idx": 1659,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "\u301031\u2020L99-L106\u3011",
+              "start_idx": 1910,
+              "end_idx": 1923,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "\u301074\u2020L228-L236\u3011",
+              "start_idx": 2276,
+              "end_idx": 2290,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "FAIMS-Mobile-Flexible-open-source-software-for-field-research/faims.md at master \u00b7 FAIMS/FAIMS-Mobile-Flexible-open-source-software-for-field-research \u00b7 GitHub",
+              "url": "https://github.com/FAIMS/FAIMS-Mobile-Flexible-open-source-software-for-field-research/blob/master/faims.md#:~:text=FAIMS%20Mobile%20is%20a%20native,comprehensive%20datasets%20that%20can%20be",
+              "pub_date": null,
+              "snippet": "FAIMS Mobile is a native Android application supported by an Ubuntu server facilitating human-mediated field research across disciplines. It consists of \u2018core\u2019 Java and Ruby software providing a platform for data capture, which can be deeply customised using \u2018definition packets\u2019 consisting of XML documents (data schema and UI) and Beanshell scripts (automation). Definition packets can be autogenerated using an XML-based domain specific language. FAIMS Mobile includes features allowing rich and efficient data capture tailored to the needs of fieldwork. It also promotes synthetic research and improves transparency and reproducibility through the production of comprehensive datasets that can be",
+              "attribution": "github.com"
+            },
+            {
+              "matched_text": "\u301035\u2020L163-L170\u3011",
+              "start_idx": 2619,
+              "end_idx": 2633,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "\u301051\u2020L61-L69\u3011",
+              "start_idx": 2927,
+              "end_idx": 2939,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "OSF | FAIMS 3.0 Electronic Field Notebooks Wiki",
+              "url": "https://osf.io/mqk45/wiki/#:~:text=%5BTimeline%5D%28https%3A%2F%2Fosf.io%2Fmqk45%2Fwiki%2FTimeline%2F%29%2A%20,of%20current%20software%20stacks%20and",
+              "pub_date": null,
+              "snippet": "[Timeline](https://osf.io/mqk45/wiki/Timeline/)* # Overview In December 2019 the [Australian Research Data Commons](https://ardc.edu.au) (ARDC) [awarded a team of researchers led by Macquarie University $600,000](https://ardc.edu.au/news/our-platforms-investment/) over three years to build a digital platform for data collection in the field and offline. This was matched by $720,920 in co-investment from project partners. ## What are we doing? This project will see the re-build of [FAIMS Mobile](https://www.fedarch.org/faims-mobile/) a robust data collection tool now at the end of its digital life, making the most of current software stacks and",
+              "attribution": "osf.io"
+            },
+            {
+              "matched_text": "\u301031\u2020L107-L114\u3011",
+              "start_idx": 3214,
+              "end_idx": 3228,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            },
+            {
+              "matched_text": "\u301071\u2020L292-L299\u3011",
+              "start_idx": 3591,
+              "end_idx": 3605,
+              "alt": null,
+              "type": "webpage_extended",
+              "title": "FAIMS3 News - FAIMS 3.0 Electronic Field Notebooks",
+              "url": "https://faims.edu.au/news/#:~:text=Hot%20off%20the%20e,Lupack%20and%20Panagiota%20Kasimi%20is",
+              "pub_date": null,
+              "snippet": "Hot off the e-press, field reports for a FAIMS-supported archaeological survey on the Perachora Peninsula, Greece, have just been released by Journal of Field Archaeology. The paper by FAIMS 3.0 leadership team members Adela Sobotkova, Shawn A. Ross, Brian Ballsun-Stanton, FAIMS 2.6 alumni Petra Hermankova\u00a0and Christian Nassif-Haynes, and archaeologists Susan Lupack and Panagiota Kasimi is...",
+              "attribution": "faims.edu.au"
+            },
+            {
+              "matched_text": "\u301030\u2020L71-L75\u3011",
+              "start_idx": 3910,
+              "end_idx": 3922,
+              "alt": null,
+              "type": "hidden",
+              "invalid": true
+            }
+          ],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67b7e902949c8191a8c796f6ac53ab25",
+          "async_task_title": "FAIMS Archaeology Software Mentions from 1995 Onward"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "eab04862-58e5-4ee3-8b79-3e09079033d3",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "e7072f8f-f019-4f63-b1dd-3514c655711e",
+  "plugin_ids": null,
+  "conversation_id": "67b7e8dd-36f0-8004-9f40-1bc16a42afff",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://pure.au.dk/portal/en/publications/arbitrary-offline-data-capture-on-all-of-your-androids-the-faims-",
+    "https://faims.edu.au/about/",
+    "https://ardc.edu.au/article/seven-years-of-faims-mobile-and-still-going-strong/",
+    "https://staff.itee.uq.edu.au/jane/grants.html",
+    "https://www.unsw.edu.au/newsroom/news/2012/07/archaeology-goes-digital",
+    "https://faims.edu.au/news/"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67b7e8dd-36f0-8004-9f40-1bc16a42afff"
+}

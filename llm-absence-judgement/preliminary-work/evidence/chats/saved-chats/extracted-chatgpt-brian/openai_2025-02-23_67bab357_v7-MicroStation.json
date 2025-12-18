@@ -1,0 +1,399 @@
+{
+  "title": "v7-MicroStation",
+  "create_time": 1740288856.246543,
+  "update_time": 1740289374.208993,
+  "mapping": {
+    "aaa10027-d426-4767-9b20-21f6ee212460": {
+      "id": "aaa10027-d426-4767-9b20-21f6ee212460",
+      "message": null,
+      "parent": null,
+      "children": [
+        "9b48bfab-584f-4d2d-b438-b17d6bba68f4"
+      ]
+    },
+    "9b48bfab-584f-4d2d-b438-b17d6bba68f4": {
+      "id": "9b48bfab-584f-4d2d-b438-b17d6bba68f4",
+      "message": {
+        "id": "9b48bfab-584f-4d2d-b438-b17d6bba68f4",
+        "author": {
+          "role": "system",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": null,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 0.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "aaa10027-d426-4767-9b20-21f6ee212460",
+      "children": [
+        "d99a3e56-f151-4619-adbe-e462fe73d96b"
+      ]
+    },
+    "d99a3e56-f151-4619-adbe-e462fe73d96b": {
+      "id": "d99a3e56-f151-4619-adbe-e462fe73d96b",
+      "message": {
+        "id": "d99a3e56-f151-4619-adbe-e462fe73d96b",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740288856.248997,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Hi o1. Today we are going to be collecting evidence for a research paper. \n\n# Ground rules\n\nABOVE ALL ELSE, if you are unsure about something, or do not have evidence from a web page supporting a claim, do not make a claim. If there is any doubt, there is no doubt.\n\nThis is research. SPEND EXTRA TIME above and beyond normal, to collect data carefully and methodically. We don't care about how long it takes, only that your research is accurate and epistemologically grounded. Care and attention to detail second only to the prior rule.\n\n# Definitions\n\n## Tool definition\nFor our project, a software tool is any discrete piece of software\u2014be it a program, script, or web application\u2014that is developed or substantially modified by researchers to perform specific, research-oriented computational tasks. These tasks must involve active data processing, such as analysis, simulation, visualization, modeling, or automation, where input data is dynamically created, documented, transformed, or interpreted to generate meaningful results. In contrast, products whose primary function is to simply display, store, or promote static datasets\u2014without offering mechanisms for active computational engagement\u2014are excluded. \n\nIn essence, a valid software tool for our purposes is one that not only **supports research in archaeology or historical sciences** but does so by actively collecting and/or processing data rather than merely serving as a generic data repository or static interface.\n\nIt is our belief that the tools we have given you meet this criteria, however, if there is an absence of evidence supporting our belief, it is REQUIRED that you inform us of any problems. IF YOU ARE UNSURE, INDICATE IT rather than giving an answer.\n\n# Task\n\nI will be giving you the name or acronym of an archaeology and historical studies-related software tool which dates somewhere from 1995 onwards. \n\nYou must build a well-formed quoted CSV inside a fenced code block with the following columns:\ncsv\n\"Tool\", \"Year\", \"Source\", \"URL\", \"AI Notes\"\n\n* Tool is our key column. It is essential to be consistent in tool name, following the input we give you. If there is an issue indicate it in notes.\n* Year, year from the web page, article, or source you found, n.d. is a valid entry for \"no date\"\n* Source: Citation or (Domain + Page Title)\n* URL, url of the resource. \n* AI notes: any notes, concerns, or uncertainties you have with the data provenance or quality. Do not use HTML citations.\n\nThis is a comprehensive and systematic search. For each year, 1995 onwards, we one mention (one line) per source found. Obviously, many of these tools were created after 1995, so we'll want to expand our search by +- 1 year from any date we find. When you find a source, systematically explore adjacent years in your searches.\n\nDO NOT extrapolate dates from sources. ONLY include dates where a source has been published in that year. We will perform all necessary inference, if you include a line for EACH valid source you find. For undated items, indicate \"n.d.\"\n\nThis research requires that you be thoughtful, systematic, and take your time. You will likely need to visit EVERY SINGLE PAGE of search results for a given tool. \n\nTo repeat back.\n\nI'm going to give you a list of tools, one by one.\nYou will search for them.\nFor every source you find,  we want to record year/n.d., source (citation or title), and url\n\nYou MUST build a CSV with the output in your direct response to the deep research process.\n\nAllowed sources: \n* Do try to find it's source code in published version control repos (add a row if they have public code, as the commits will have dates)\n* do try to find scholarly literature (each to one row)\n* do include blog posts and about pages (each to one row)\n* do include any other mentions of the tool (each to one row)\n\nWhen you respond with data:\nRESULTS: Build a markdown **fenced code block** CSV of evidence you have found with  ANY mention of that tool in ANY year/n.d. should be on the CSV, regardless of source. Include one line for EACH source you find. Do not include any inline citations automatically generated by the deep research process (i.e., AI-generated or system-injected references i.e. \u3010deep research\u3011 or &#8203;:contentReference[oaicite). \n\nDo you understand?"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9164d884ce5da97d-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "9b48bfab-584f-4d2d-b438-b17d6bba68f4",
+      "children": [
+        "73cd07b4-12b6-4454-b382-71c44102ac29"
+      ]
+    },
+    "73cd07b4-12b6-4454-b382-71c44102ac29": {
+      "id": "73cd07b4-12b6-4454-b382-71c44102ac29",
+      "message": {
+        "id": "73cd07b4-12b6-4454-b382-71c44102ac29",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740288858.72748,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Yes, I understand your requirements fully. Please provide the name or acronym of the first archaeology or historical studies-related software tool that you would like me to research."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "d99a3e56-f151-4619-adbe-e462fe73d96b",
+          "request_id": "9164d884ce5da97d-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "d99a3e56-f151-4619-adbe-e462fe73d96b",
+      "children": [
+        "c17971ba-0180-4445-85b9-8a825bf80488"
+      ]
+    },
+    "c17971ba-0180-4445-85b9-8a825bf80488": {
+      "id": "c17971ba-0180-4445-85b9-8a825bf80488",
+      "message": {
+        "id": "c17971ba-0180-4445-85b9-8a825bf80488",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.clarify_with_text",
+          "metadata": {}
+        },
+        "create_time": 1740288858.727613,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            ""
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "is_visually_hidden_from_conversation": true,
+          "command": "clarify_with_text",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "73cd07b4-12b6-4454-b382-71c44102ac29",
+          "request_id": "9164d884ce5da97d-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "73cd07b4-12b6-4454-b382-71c44102ac29",
+      "children": [
+        "ad09cf32-7a49-4054-b01c-f1c275f1018f"
+      ]
+    },
+    "ad09cf32-7a49-4054-b01c-f1c275f1018f": {
+      "id": "ad09cf32-7a49-4054-b01c-f1c275f1018f",
+      "message": {
+        "id": "ad09cf32-7a49-4054-b01c-f1c275f1018f",
+        "author": {
+          "role": "user",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740288974.22395,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "MicroStation"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "system_hints": [
+            "research"
+          ],
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          },
+          "dictation": false,
+          "request_id": "9164db66ca48a97d-SYD",
+          "message_source": null,
+          "timestamp_": "absolute",
+          "message_type": null
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "c17971ba-0180-4445-85b9-8a825bf80488",
+      "children": [
+        "36745396-abe8-4206-b7a0-bad7d4137e14"
+      ]
+    },
+    "36745396-abe8-4206-b7a0-bad7d4137e14": {
+      "id": "36745396-abe8-4206-b7a0-bad7d4137e14",
+      "message": {
+        "id": "36745396-abe8-4206-b7a0-bad7d4137e14",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740288986.299533,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "Got it! I will systematically search for mentions of the software tool **MicroStation** from 1995 onwards, ensuring I collect every possible valid source that meets our criteria. Each relevant source will be recorded in a well-formatted CSV with **Tool Name, Year, Source, URL, and AI Notes**, following the strict evidence-based approach outlined.\n\nI will be thorough, reviewing version control repositories, scholarly literature, blog posts, official pages, and other relevant sources. Once the research is completed, I will return with a detailed CSV in a fenced code block.\n\nI'll update you as soon as the results are ready."
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": null,
+        "weight": 1.0,
+        "metadata": {
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ad09cf32-7a49-4054-b01c-f1c275f1018f",
+          "request_id": "9164db66ca48a97d-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ad09cf32-7a49-4054-b01c-f1c275f1018f",
+      "children": [
+        "ea9ca45f-8ff9-41fd-86b3-b3b7696fcce1"
+      ]
+    },
+    "ea9ca45f-8ff9-41fd-86b3-b3b7696fcce1": {
+      "id": "ea9ca45f-8ff9-41fd-86b3-b3b7696fcce1",
+      "message": {
+        "id": "ea9ca45f-8ff9-41fd-86b3-b3b7696fcce1",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740288986.299667,
+        "update_time": null,
+        "content": {
+          "content_type": "code",
+          "language": "json",
+          "response_format_name": null,
+          "text": "{\"task_violates_safety_guidelines\":false,\"user_def_doesnt_want_research\":false,\"response\":\"Got it! I will systematically search for mentions of the software tool **MicroStation** from 1995 onwards, ensuring I collect every possible valid source that meets our criteria. Each relevant source will be recorded in a well-formatted CSV with **Tool Name, Year, Source, URL, and AI Notes**, following the strict evidence-based approach outlined.\\n\\nI will be thorough, reviewing version control repositories, scholarly literature, blog posts, official pages, and other relevant sources. Once the research is completed, I will return with a detailed CSV in a fenced code block.\\n\\nI'll update you as soon as the results are ready.\",\"title\":\"MicroStation Archaeology Software Research\",\"prompt\":\"Conduct a systematic search for the software tool **MicroStation** in relation to archaeology and historical sciences from 1995 onwards. The research should focus on collecting explicit mentions of the tool from valid sources, ensuring each entry meets the defined criteria.\\n\\nFor every valid mention, extract the following details:\\n- **Tool:** Maintain consistency with the name **MicroStation**\\n- **Year:** Year from the web page, article, or source (n.d. if no date is available)\\n- **Source:** Citation or (Domain + Page Title)\\n- **URL:** Direct link to the source\\n- **AI Notes:** Any concerns, uncertainties, or notes on data quality or provenance\\n\\n### Research Scope:\\n- Check for **source code repositories** (e.g., GitHub, GitLab, Bitbucket) with publicly available code that includes timestamps (commits, release dates, etc.).\\n- Locate **scholarly articles** (Google Scholar, ResearchGate, Academia.edu, university websites) that discuss MicroStation in archaeology and historical sciences.\\n- Find **official documentation, blog posts, and about pages** mentioning its applications in archaeology.\\n- Include any **mentions of the tool in relevant historical and archaeological research contexts**.\\n\\n### Important Notes:\\n- **One mention per year per source** (if a source discusses the tool in multiple years, create separate entries).\\n- **Do not extrapolate dates**\u2014record only what is explicitly available.\\n- **Be systematic**: Explore all possible results thoroughly, ensuring maximum accuracy and reliability.\\n\\nOnce research is complete, return the data in a **fenced CSV code block**, ensuring each row represents a unique source mentioning the tool. No AI-generated or system-injected references should be included.\"}"
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "finish_details": {
+            "type": "stop",
+            "stop_tokens": [
+              200007
+            ]
+          },
+          "is_complete": true,
+          "citations": [],
+          "content_references": [],
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "36745396-abe8-4206-b7a0-bad7d4137e14",
+          "request_id": "9164db66ca48a97d-SYD",
+          "timestamp_": "absolute",
+          "is_loading_message": true
+        },
+        "recipient": "research_kickoff_tool.start_research_task",
+        "channel": null
+      },
+      "parent": "36745396-abe8-4206-b7a0-bad7d4137e14",
+      "children": [
+        "d52ffa71-168a-4c93-9abb-025ede1d26ce"
+      ]
+    },
+    "d52ffa71-168a-4c93-9abb-025ede1d26ce": {
+      "id": "d52ffa71-168a-4c93-9abb-025ede1d26ce",
+      "message": {
+        "id": "d52ffa71-168a-4c93-9abb-025ede1d26ce",
+        "author": {
+          "role": "tool",
+          "name": "research_kickoff_tool.start_research_task",
+          "metadata": {}
+        },
+        "create_time": 1740289005.619172,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": []
+        },
+        "status": "finished_successfully",
+        "end_turn": false,
+        "weight": 1.0,
+        "metadata": {
+          "async_task_title": "MicroStation Archaeology Software Research",
+          "async_task_prompt": "Conduct a systematic search for the software tool **MicroStation** in relation to archaeology and historical sciences from 1995 onwards. The research should focus on collecting explicit mentions of the tool from valid sources, ensuring each entry meets the defined criteria.\n\nFor every valid mention, extract the following details:\n- **Tool:** Maintain consistency with the name **MicroStation**\n- **Year:** Year from the web page, article, or source (n.d. if no date is available)\n- **Source:** Citation or (Domain + Page Title)\n- **URL:** Direct link to the source\n- **AI Notes:** Any concerns, uncertainties, or notes on data quality or provenance\n\n### Research Scope:\n- Check for **source code repositories** (e.g., GitHub, GitLab, Bitbucket) with publicly available code that includes timestamps (commits, release dates, etc.).\n- Locate **scholarly articles** (Google Scholar, ResearchGate, Academia.edu, university websites) that discuss MicroStation in archaeology and historical sciences.\n- Find **official documentation, blog posts, and about pages** mentioning its applications in archaeology.\n- Include any **mentions of the tool in relevant historical and archaeological research contexts**.\n\n### Important Notes:\n- **One mention per year per source** (if a source discusses the tool in multiple years, create separate entries).\n- **Do not extrapolate dates**\u2014record only what is explicitly available.\n- **Be systematic**: Explore all possible results thoroughly, ensuring maximum accuracy and reliability.\n\nOnce research is complete, return the data in a **fenced CSV code block**, ensuring each row represents a unique source mentioning the tool. No AI-generated or system-injected references should be included.",
+          "async_task_type": "research",
+          "async_task_status_messages": {
+            "initial": "MicroStation Archaeology Software Research",
+            "completed_with_time": null,
+            "completed_no_time": "Completed research",
+            "completed": "Researched for ",
+            "error": "Research failed",
+            "cancelled": "Research cancelled"
+          },
+          "b1de6e2_s": true,
+          "command": "start_research_task",
+          "message_type": null,
+          "model_slug": "research",
+          "default_model_slug": "o1-pro",
+          "parent_id": "ea9ca45f-8ff9-41fd-86b3-b3b7696fcce1",
+          "request_id": "9164db66ca48a97d-SYD",
+          "timestamp_": "absolute"
+        },
+        "recipient": "all",
+        "channel": null
+      },
+      "parent": "ea9ca45f-8ff9-41fd-86b3-b3b7696fcce1",
+      "children": [
+        "56a19c59-0d7e-4f84-9be8-08bafef25bcc"
+      ]
+    },
+    "56a19c59-0d7e-4f84-9be8-08bafef25bcc": {
+      "id": "56a19c59-0d7e-4f84-9be8-08bafef25bcc",
+      "message": {
+        "id": "56a19c59-0d7e-4f84-9be8-08bafef25bcc",
+        "author": {
+          "role": "assistant",
+          "name": null,
+          "metadata": {}
+        },
+        "create_time": 1740289338.602599,
+        "update_time": null,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "```csv\nTool,Year,Source,URL,AI Notes\nMicroStation,1996,csanet.org (CSA Newsletter Vol. IX No.2 \u2013 \u201cMicrostation 95\u201d review),https://csanet.org/newsletter/aug96/nl089613.html,\"Newsletter article by archaeologist H. Eiteljorg II reviewing MicroStation 95 in an archaeological project (credible, contemporary evaluation).\"\nMicroStation,1999,proceedings.caaconference.org (CAA 1999 \u2013 \u201cMultimedia Technology in Cartography as a tool for Archaeology\u201d),http://proceedings.caaconference.org/files/1999/12_Farjas_et_al_CAA_1999.pdf,\"Conference paper (CAA 1999) by Farjas et al. explicitly mentions using MicroStation for texturing and 3D visualization in archaeological cartography (reliable published source).\"\nMicroStation,1999,sha.org (SHA 1999 Conference Program \u2013 Poplar Forest abstract),https://sha.org/assets/documents/meetings/1999/Final%20SHA%20Program%20-%201999.pdf,\"Abstract from the 1999 Society for Historical Archaeology meeting \u2013 describes a project (Poplar Forest) using MicroStation to overlay historical landscapes (official conference documentation).\"\nMicroStation,2001,people.inf.ethz.ch (VAST 2001 paper \u2013 MURALE Project),https://people.inf.ethz.ch/pomarc/pubs/CosmasVAST01.pdf,\"Academic paper (VAST 2001, Athens) on the MURALE project (Cosmas et al.) noting MicroStation as a CAD environment for photogrammetric modeling and stratigraphy recording (high-quality scholarly source).\"\nMicroStation,2002,epubs.stfc.ac.uk (ACM 2002 \u2013 3D MURALE System Architecture),https://epubs.stfc.ac.uk/manifestation/926/MURALE03.pdf,\"Peer-reviewed article (\u00a92002 ACM) on 3D archaeological recording (MURALE project) mentioning exporting site models to Bentley MicroStation for visualization (explicit reference in a reputable publication).\"\nMicroStation,2002,archeology.uark.edu (\u201cPhotogrammetry at The Narrows\u201d \u2013 Arkansas Archeological Survey),https://archeology.uark.edu/rockart/index.html?pageName=Photogrammetry%20at%20the%20Narrows,\"Web article (2002) by the Arkansas Archeological Survey discussing photogrammetric recording of rock art; notes MicroStation (with ImageStation) for 3D digitization of site features (credible institutional source).\"\nMicroStation,2004,isprs.org (ISPRS 2004 Congress paper \u2013 Jabal Haroun Project),https://www.isprs.org/proceedings/XXXV/congress/comm5/papers/696.pdf,\"Scientific paper (2004, ISPRS Congress) by K. Koistinen et al. on multitemporal imagery in archaeology \u2013 mentions importing excavation survey data into MicroStation (with TerraSurvey) for 3D modeling (strong scholarly provenance).\"\nMicroStation,2005,cipaheritagedocumentation.org (CIPA 2005 symposium paper \u2013 underwater archaeology),https://www.cipaheritagedocumentation.org/wp-content/uploads/2018/12/Drap-e.a.-Integration-of-multi-source-spatial-information-and-xml-information-system-in-underwater-archaeology.pdf,\"Conference paper (CIPA 2005, Torino) by P.\u00a0Drap et al. describing an underwater excavation; explicitly references using MicroStation V8 for visualizing merged sonar point clouds (trusted professional source).\"\nMicroStation,2006,shs.hal.science (Eurographics/VAST 2006 paper \u2013 Patias et al.),https://shs.hal.science/halshs-00264610/document,\"Academic publication (VAST 2006) by Patias et al. on a low-cost 3D documentation system, stating future integration with CAD environments \u201clike Bentley MicroStation\u201d for archaeological mapping (credible scholarly reference).\"\nMicroStation,2008,isprs.org (ISPRS 2008 Congress paper \u2013 industrial archaeology 3D modeling),https://www.isprs.org/proceedings/XXXVII/congress/5_pdf/51.pdf,\"Research paper (2008, ISPRS Congress) by A.\u00a0Gruenkemeier et al. on 3D documentation in industrial archaeology \u2013 notes a complete 3D historic building model was created in Bentley MicroStation (authoritative source, clear mention).\"\nMicroStation,n.d.,archaiabrno.org (Archaia Brno \u201cInformatics\u201d page),https://www.archaiabrno.org/home_en/?acc=informatika,\"Undated organizational page from Archaia Brno (Czech Republic) reporting technology use in archaeology \u2013 it states that since 1998 field excavation plans have been digitized using MicroStation 95 (firsthand institutional information, timeline context).\"\nMicroStation,2017,monticello.org (Monticello South Pavilion & Wing archaeology report),https://monticello-www.s3.amazonaws.com/files/resources/south-pavilion-and-wing-report-final.pdf,\"Technical report (covers 2016\u20132017 excavations at Monticello) indicating that site maps and drawings were digitized in Bentley\u2019s MicroStation CAD program; demonstrates ongoing use of MicroStation in historical archaeology (credible project documentation).\" \n```"
+          ]
+        },
+        "status": "finished_successfully",
+        "end_turn": true,
+        "weight": 1.0,
+        "metadata": {
+          "citations": [],
+          "content_references": [],
+          "timestamp_": "absolute",
+          "message_type": null,
+          "is_async_task_result_message": true,
+          "b1de6e2_rm": true,
+          "async_task_id": "deepresch_67bab3ed8fa48191ba72c7edded9f1e3",
+          "async_task_title": "MicroStation Archaeology Software Research"
+        },
+        "recipient": "all",
+        "channel": "final"
+      },
+      "parent": "d52ffa71-168a-4c93-9abb-025ede1d26ce",
+      "children": []
+    }
+  },
+  "moderation_results": [],
+  "current_node": "56a19c59-0d7e-4f84-9be8-08bafef25bcc",
+  "plugin_ids": null,
+  "conversation_id": "67bab357-eeb4-8004-b79a-74fc208ab716",
+  "conversation_template_id": null,
+  "gizmo_id": null,
+  "gizmo_type": null,
+  "is_archived": false,
+  "is_starred": null,
+  "safe_urls": [
+    "https://www.archaiabrno.org/home_en/?acc=informatika",
+    "https://people.inf.ethz.ch/pomarc/pubs/CosmasVAST01.pdf",
+    "https://www.cipaheritagedocumentation.org/wp-content/uploads/2018/12/Drap-e.a.-Integration-of-multi-source-spatial-information-and-xml-information-system-in-underwater-archaeology.pdf",
+    "https://monticello-www.s3.amazonaws.com/files/resources/south-pavilion-and-wing-report-final.pdf",
+    "https://www.isprs.org/proceedings/XXXV/congress/comm5/papers/696.pdf"
+  ],
+  "blocked_urls": [],
+  "default_model_slug": "research",
+  "conversation_origin": null,
+  "is_read_only": null,
+  "voice": null,
+  "async_status": null,
+  "disabled_tool_ids": [],
+  "is_do_not_remember": null,
+  "memory_scope": "global_enabled",
+  "context_scopes": null,
+  "sugar_item_id": null,
+  "sugar_item_visible": false,
+  "pinned_time": null,
+  "is_study_mode": false,
+  "owner": null,
+  "id": "67bab357-eeb4-8004-b79a-74fc208ab716"
+}
