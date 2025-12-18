@@ -91,8 +91,8 @@
 
 ### Derived CSV Files (in project)
 
-- `tool_discovery_summary.csv` — 244 unique tools (de-duplicated)
-- `tool_discovery_granular.csv` — 351 discovery instances
+- `tool-discovery-summary.csv` — 244 unique tools (de-duplicated)
+- `tool-discovery-granular.csv` — 351 discovery instances
 - `tool_verification_status_final.csv` — 242 tools with verification status
 - `slop_evaluation_results.csv` — 10 entries with quality metrics
 - `word_counts_all_entries.csv` — 89 entries with field-by-field word counts

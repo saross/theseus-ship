@@ -1,7 +1,7 @@
 # Session Handover: Discovery Event Verification
 
 **Last updated:** 2025-12-18 (JOINT REVIEW COMPLETE)
-**Task:** Manual verification of tool discovery events in `results-tools/tool_discovery_granular.csv`
+**Task:** Manual verification of tool discovery events in `results-tools/tool-discovery-granular.csv`
 
 ---
 
@@ -147,7 +147,7 @@ All remaining batches verified in extended session:
 
 ## Files
 
-- **Data file**: `results-tools/tool_discovery_granular.csv`
+- **Data file**: `results-tools/tool-discovery-granular.csv`
 - **Status legend**: `results-tools/verification-status-legend.md`
 - **This handover**: `planning/session-handover.md`
 

@@ -1,6 +1,6 @@
 # Disambiguation Failures: Detailed Characterisation (v2)
 
-**v2 Note (3 Dec 2025)**: This version corrects the Bwigg classification. Original analysis characterised Bwigg as "origin unknown" / "no signal" / "possible confabulation". Re-checking `tool_discovery_granular.csv` reveals Bwigg was cross-validated (found by ChatGPT DR and Perplexity DR, 3 instances total) with a specific article citation. Bwigg is therefore a verified real tool that represents a methodological limit, not a discovery failure.
+**v2 Note (3 Dec 2025)**: This version corrects the Bwigg classification. Original analysis characterised Bwigg as "origin unknown" / "no signal" / "possible confabulation". Re-checking `tool-discovery-granular.csv` reveals Bwigg was cross-validated (found by ChatGPT DR and Perplexity DR, 3 instances total) with a specific article citation. Bwigg is therefore a verified real tool that represents a methodological limit, not a discovery failure.
 
 ---
 
@@ -198,6 +198,6 @@ When Claude broke from "don't ask questions" instructions (Fountain, Microware),
 
 | Original Claim | Correction | Evidence |
 |----------------|------------|----------|
-| "Bwigg: origin unknown" | Bwigg is a verified 2003 tool | tool_discovery_granular.csv: 3 instances, 2 services |
+| "Bwigg: origin unknown" | Bwigg is a verified 2003 tool | tool-discovery-granular.csv: 3 instances, 2 services |
 | "Bwigg: possible confabulation" | Specific article citation exists | IA issue 13, Christen 2003 |
 | "Bwigg: Type C (no signal)" | Reclassified as Type D (minimal footprint, verified real) | Cross-validation confirms real tool |

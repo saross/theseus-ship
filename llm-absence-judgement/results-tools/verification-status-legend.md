@@ -1,6 +1,6 @@
 # Verification Status Legend
 
-This document describes the status codes used in `tool_discovery_granular.csv` to track the outcome of **each individual discovery event**.
+This document describes the status codes used in `tool-discovery-granular.csv` to track the outcome of **each individual discovery event**.
 
 Each row in the granular CSV represents one tool discovered by one LLM run. The same tool name may appear multiple times with different statuses if different runs produced different outcomes.
 
@@ -303,7 +303,7 @@ This case illustrates why per-event tracking matters. Three runs discovered "Bwi
 | FullDetail Sample | ChatGPT DR | UNCLEAR | Vague description, cannot verify |
 | Perplexity-SyntheticPrompt | Perplexity | CONFABULATION | Fabricated Broad Institute genomics tool |
 
-Cross-validation counts in `tool_discovery_summary.csv` can be misleading when different runs confabulate different tools with the same name.
+Cross-validation counts in `tool-discovery-summary.csv` can be misleading when different runs confabulate different tools with the same name.
 
 ---
 

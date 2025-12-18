@@ -10,8 +10,8 @@ Generated: December 2025
 
 | File | Rows | Size | Purpose |
 |------|------|------|---------|
-| `tool_discovery_summary.csv` | 244 | 72K | **De-duplicated tool list**: One row per unique tool with aggregated discovery metadata (services, journals, hallucination risk) |
-| `tool_discovery_granular.csv` | 351 | 121K | **All discovery instances**: One row per discovery event, preserving full provenance (which service found what, in which journal, from which run) |
+| `tool-discovery-summary.csv` | 244 | 72K | **De-duplicated tool list**: One row per unique tool with aggregated discovery metadata (services, journals, hallucination risk) |
+| `tool-discovery-granular.csv` | 351 | 121K | **All discovery instances**: One row per discovery event, preserving full provenance (which service found what, in which journal, from which run) |
 | `tool_discovery_complete.xlsx` | — | 75K | Excel workbook containing both summary and granular sheets |
 
 **Key columns in summary**: Tool_Name_Standardised, Discovery_Count, LLM_Services, Hallucination_Risk
@@ -105,10 +105,10 @@ Generated: December 2025
 ## File Relationships
 
 ```
-tool_discovery_granular.csv (351 instances)
+tool-discovery-granular.csv (351 instances)
         │
         ▼ de-duplicate by Tool_Name_Standardised
-tool_discovery_summary.csv (244 unique tools)
+tool-discovery-summary.csv (244 unique tools)
         │
         ▼ verify each tool
 tool_verification_status_final.csv (242 tools with status)

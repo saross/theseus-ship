@@ -1,6 +1,6 @@
 ## Failure Analysis: Detailed Evidence from Chat Review (v2)
 
-**v2 Note (3 Dec 2025)**: This version corrects the Bwigg classification. Original analysis characterised Bwigg as "origin unknown" / "insufficient signal". Re-checking `tool_discovery_granular.csv` reveals Bwigg was cross-validated (found by ChatGPT DR and Perplexity DR, 3 instances total) with a specific article citation: "Bwigg: An Internet facility for Bayesian radiocarbon wiggle-matching" by J. Andrés Christen, Internet Archaeology issue 13 (2003). Bwigg is therefore a verified real tool that failed downstream due to minimal online presence, not a discovery failure.
+**v2 Note (3 Dec 2025)**: This version corrects the Bwigg classification. Original analysis characterised Bwigg as "origin unknown" / "insufficient signal". Re-checking `tool-discovery-granular.csv` reveals Bwigg was cross-validated (found by ChatGPT DR and Perplexity DR, 3 instances total) with a specific article citation: "Bwigg: An Internet facility for Bayesian radiocarbon wiggle-matching" by J. Andrés Christen, Internet Archaeology issue 13 (2003). Bwigg is therefore a verified real tool that failed downstream due to minimal online presence, not a discovery failure.
 
 ---
 

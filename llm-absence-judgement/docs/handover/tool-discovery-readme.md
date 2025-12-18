@@ -9,8 +9,8 @@ This dataset contains **all tools discovered** during the AI-assisted journal se
 | File | Description |
 |------|-------------|
 | `tool_discovery_complete.xlsx` | Excel workbook with both sheets |
-| `tool_discovery_summary.csv` | De-duplicated: one row per unique tool |
-| `tool_discovery_granular.csv` | All instances: one row per discovery |
+| `tool-discovery-summary.csv` | De-duplicated: one row per unique tool |
+| `tool-discovery-granular.csv` | All instances: one row per discovery |
 
 ## Dataset Statistics
 

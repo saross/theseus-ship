@@ -22,15 +22,38 @@ The four Excel Spreadsheets represent the source-of-truth for our results:
 ↓ tools with complete metadata
 03 (Evidence of life)
 
-## LLM derivatives generated from source-of-truth files but not yet integreated
+## Derived CSV Files
 
-The other files:
+### Discovery Data
 
-- tool_discovery_granular.csv
-- tool_discovery_summary.csv
+- **tool-discovery-granular.csv** — 350 discovery events with full provenance (which LLM found what, in which journal, from which run)
+- **tool-discovery-summary.csv** — 244 unique tools (de-duplicated) with aggregated discovery metadata
 
-are refinements / derivatives of the two tool-discovery pathways (our own discovery and OpenArchaeo) that were produced by Claude Opus 4.5 in the chat interface but not yet integrated into the source-of-truth documents above.
+### Verification Data
 
-## Suggested mode-of-work
+- **verification-status-legend.md** — Detailed documentation of verification status codes and criteria
+- **verification-sample.csv** — Sample verification data
 
-The Excel spreadsheets represent the results we built up, including successes and failures, as we initiated our research pipeline, but they are cumbersome to work with. I suggest that when we need to work with this data, we extract the sheet in question as a CSV, do the work on it, and then at the end of data / results analysis, we can re-integrate that CSV either by replacing the original sheet (if it represents relatively minor changes) or inserting it as a new sheet. I have copies of the originals online (as Google Sheets) and backed up locally. 
+### Final Verification Summary (2025-12-18)
+
+All 350 discovery events have been manually verified:
+
+| Status | Count | % |
+|--------|-------|---|
+| CONFIRMED | 230 | 65.7% |
+| MISATTRIBUTED | 70 | 20.0% |
+| CONFABULATION | 50 | 14.3% |
+
+**Outcome**: 230 successes (65.7%), 120 failures (34.3%)
+
+Summary-level verification (244 unique tools):
+
+| Status | Count |
+|--------|-------|
+| VERIFIED | 156 |
+| MISATTRIBUTED | 52 |
+| CONFABULATION | 36 |
+
+## Suggested Mode of Work
+
+The Excel spreadsheets represent the results we built up, including successes and failures, as we initiated our research pipeline, but they are cumbersome to work with. I suggest that when we need to work with this data, we extract the sheet in question as a CSV, do the work on it, and then at the end of data/results analysis, we can re-integrate that CSV either by replacing the original sheet (if it represents relatively minor changes) or inserting it as a new sheet. I have copies of the originals online (as Google Sheets) and backed up locally. 

@@ -34,7 +34,7 @@ Raw Discovery → Filtered → Metadata → Evidence
 | SoftwareX-run1 | 12 | 12 | ~10 | ChatGPT DR | Access failure |
 | Perplexity-SyntheticPrompt | 9 | 9 | 9 | Perplexity | Sample/test |
 
-### 1.2 Raw Discovery Summary (from `tool_discovery_summary.csv`)
+### 1.2 Raw Discovery Summary (from `tool-discovery-summary.csv`)
 
 - **Total unique standardised tools**: 244
 
