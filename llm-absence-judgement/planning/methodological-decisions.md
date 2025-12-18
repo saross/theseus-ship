@@ -83,7 +83,32 @@
 
 ---
 
+## Evidence Review Decisions
+
+### 5. Handling Tool Name Collisions
+
+**Decision**: When evidence events refer to a different tool with the same name as our investigated tool, exclude those events and track the colliding tool for later investigation.
+
+**Process**:
+1. Identify collision during evidence review
+2. Determine which tool matches our metadata (that's the one we keep)
+3. Mark colliding evidence as EXCLUDED with note explaining collision
+4. Add colliding tool to `tools-for-later-investigation.md`
+
+**Rationale**:
+- Maintains pipeline integrity (only evidence for tools with metadata)
+- Colliding tools are often legitimate and worth future investigation
+- Avoids conflating lifecycle data for different software
+
+**Examples**:
+- **Tabula**: PDF extractor (in our metadata) vs tabula R package (Frerebeau) — excluded R package evidence
+
+**Date**: 2025-12-18
+
+---
+
 ## Notes
 
 - This document captures decisions; see `key-quantitative-findings.md` for detailed data accounting
 - See `session-handover.md` for verification workflow details
+- See `tools-for-later-investigation.md` for colliding tools deferred to future work

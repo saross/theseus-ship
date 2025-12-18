@@ -12,3 +12,4 @@ Each entry documents an emergent pattern that proved effective, with:
 ## Contents
 
 1. [Human-in-the-Loop Review](human-in-the-loop-review.md) - Efficiently reviewing large candidate sets with calibrated AI assistance
+2. [Evidence Review Prompt](evidence-review-prompt.md) - Verifying evidence-of-life events for tool lifecycle research
