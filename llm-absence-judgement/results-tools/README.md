@@ -29,6 +29,54 @@ The four Excel Spreadsheets represent the source-of-truth for our results:
 - **tool-discovery-granular.csv** — 350 discovery events with full provenance (which LLM found what, in which journal, from which run)
 - **tool-discovery-summary.csv** — 244 unique tools (de-duplicated) with aggregated discovery metadata
 
+### OpenArchaeo Data
+
+- **tool-openarchaeo-granular.csv** — 513 items from OpenArchaeo export tracked through the classification and investigation pipeline
+
+#### Column definitions
+
+| Column | Description |
+|--------|-------------|
+| Tool | Item name from OpenArchaeo |
+| Has-DVCS | Whether tool has a full DVCS repository (GitHub, GitLab, Bitbucket, etc.) — excludes Gists |
+| Gist-only | Whether the only code hosting is a GitHub Gist (no full repository) |
+| AI-classification | LLM classification against tool definition (yes/no) |
+| Human-review | Human review outcome (Yes = accepted as tool) |
+| In-final-list | Whether tool made it to the final OpenArchaeo tool list |
+| Discovery-overlap | Whether tool also appeared in LLM Discovery pathway |
+| Unique-to-OpenArchaeo | Tool is in final list but NOT in Discovery pathway |
+| Investigated | Whether metadata/evidence-of-life was collected for this tool |
+
+#### Note on DVCS vs Gist distinction
+
+GitHub Gists are excluded from the "Has-DVCS" column because:
+
+- **Gists are lightweight code snippets**, not full repositories
+- **No collaborative infrastructure** — no issues, pull requests, or discussions
+- **No versioning workflow** — no releases, tags, or meaningful commit history
+- **Typically "fire and forget"** — created to share code once, rarely maintained
+
+For lifecycle analysis, a Gist provides only a single data point (existence), whereas a full repository allows reconstruction of the tool's development history through commits, releases, and activity patterns.
+
+#### Pipeline summary
+
+| Stage | Count |
+|-------|-------|
+| Raw OpenArchaeo export | 513 |
+| With full DVCS | 452 |
+| Without DVCS (incl. Gist-only) | 61 |
+| AI classified as tool | 341 |
+| Human-reviewed as tool | 375 (372 unique*) |
+| In final tool list | 375 (372 unique*) |
+| — With DVCS | 343 |
+| — Without DVCS | 32 (of which 7 Gist-only) |
+| Overlap with Discovery | 20 |
+| Unique to OpenArchaeo | 355 |
+| Investigated (metadata) | 20 (all from Discovery overlap) |
+| NOT investigated | 355 (all unique to OpenArchaeo) |
+
+*3 case-insensitive duplicates: harris-matrix (×2), outliner/outlineR, seriation/Seriation
+
 ### Verification Data
 
 - **verification-status-legend.md** — Detailed documentation of verification status codes and criteria
