@@ -45,7 +45,8 @@ The four Excel Spreadsheets represent the source-of-truth for our results:
 | In-final-list | Whether tool made it to the final OpenArchaeo tool list |
 | Discovery-overlap | Whether tool also appeared in LLM Discovery pathway |
 | Unique-to-OpenArchaeo | Tool is in final list but NOT in Discovery pathway |
-| Investigated | Whether metadata/evidence-of-life was collected for this tool |
+| Metadata-investigated | Whether metadata was collected (yes only for Discovery overlap tools) |
+| Evidence-investigated | Whether evidence-of-life was collected (Discovery overlap OR no-DVCS tools) |
 
 #### Note on DVCS vs Gist distinction
 
@@ -72,8 +73,9 @@ For lifecycle analysis, a Gist provides only a single data point (existence), wh
 | — Without DVCS | 32 (of which 7 Gist-only) |
 | Overlap with Discovery | 20 |
 | Unique to OpenArchaeo | 355 |
-| Investigated (metadata) | 20 (all from Discovery overlap) |
-| NOT investigated | 355 (all unique to OpenArchaeo) |
+| Metadata investigated | 20 (all from Discovery overlap) |
+| Evidence investigated | 43 (20 Discovery overlap + 23 no-DVCS unique) |
+| Not investigated at all | 332 (unique to OpenArchaeo, with DVCS) |
 
 *3 case-insensitive duplicates: harris-matrix (×2), outliner/outlineR, seriation/Seriation
 
