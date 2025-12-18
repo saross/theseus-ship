@@ -79,6 +79,33 @@ For lifecycle analysis, a Gist provides only a single data point (existence), wh
 
 *3 case-insensitive duplicates: harris-matrix (×2), outliner/outlineR, seriation/Seriation
 
+### Evidence Data
+
+- **tool-evidence-granular.csv** — 965 evidence-of-life events for Discovery pathway tools only (excludes OpenArchaeo no-DVCS unique tools)
+
+#### Column definitions
+
+| Column | Description |
+|--------|-------------|
+| Tool | Tool name |
+| Year | Year of the evidence reference (or "n.d." if undated) |
+| Source | Title/description of the source document |
+| URL | Link to the source |
+| AI_Notes | LLM-generated notes about the evidence |
+| Tool_Source | Method used to find evidence (all "OpenAI Deep Research query") |
+| Author | Who collected this evidence (BBS or SAR) |
+
+#### Evidence summary
+
+| Metric | Count |
+|--------|-------|
+| Total evidence events | 965 |
+| Unique tools | 96 |
+| BBS contributions | 804 (83%) |
+| SAR contributions | 161 (17%) |
+
+**Note**: This CSV excludes 214 evidence events for 23 OpenArchaeo no-DVCS tools that did not go through the full Discovery → Metadata → Evidence pipeline. See `planning/methodological-decisions.md` for rationale.
+
 ### Verification Data
 
 - **verification-status-legend.md** — Detailed documentation of verification status codes and criteria
