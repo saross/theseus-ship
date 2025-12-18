@@ -474,7 +474,7 @@ No entries exhibited characteristic slop patterns: verbosity without information
 
 - archr R package: **CONFIRMED NON-EXISTENT**
 - ArchABM: **FALSE_POSITIVE** (wrong domain — indoor air quality, not archaeology)
-- ChronoModelr: **CONFABULATION_NEAR_MATCH** (real package is RChronoModel)
+- ChronoModelr: **CONFABULATED_NEAR_MATCH** (real package is RChronoModel)
 - tidypaleo: Confirmed real (CRAN)
 - SAGAscape: Confirmed real (JCAA 2022) but Perplexity data chimeric
 - joad.90: Confirmed real DOI, content is "NERD" not "GeoViz"

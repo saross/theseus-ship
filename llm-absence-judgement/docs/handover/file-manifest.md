@@ -37,7 +37,7 @@
 - ChronoModelr identified as confabulation (real tool is RChronoModel)
 
 ### Session #4 (LLM paper results verification #4)
-- ChronoModelr reclassified as "CONFABULATION_NEAR_MATCH"
+- ChronoModelr reclassified as "CONFABULATED_NEAR_MATCH"
 - **ArchABM revealed as sophisticated confabulation** with DOI hijacking (10.21105/joss.01201 → TraitDB)
 - archr confirmed as hallucination
 - Multiple JOAD "extreme fail" tools confirmed as fabrications

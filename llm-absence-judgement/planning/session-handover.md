@@ -22,11 +22,11 @@
 |--------|-------|---|
 | CONFIRMED | 230 | 65.7% |
 | MISATTRIBUTED | 70 | 20.0% |
-| CONFABULATION | 50 | 14.3% |
+| CONFABULATED | 50 | 14.3% |
 
 **Outcome:** 230 successes (65.7%), 120 failures (34.3%)
 
-**Note:** DISCOVERY_ERROR merged into CONFABULATION. Sketchfab (2 events for same article) harmonised to CONFABULATION - source hallucination pattern.
+**Note:** DISCOVERY_ERROR merged into CONFABULATED. Sketchfab (2 events for same article) harmonised to CONFABULATED - source hallucination pattern.
 
 ---
 
@@ -69,7 +69,7 @@ Working through entries in batches of 10:
 
 - **CONFIRMED**: Tool exists and is correctly identified as archaeological/research software
 - **MISATTRIBUTED**: Tool exists but is generic software, not research-specific (e.g., Paint Shop Pro, WordPress)
-- **CONFABULATION**: Tool does not exist, name is fabricated, OR tool exists but presence in source was fabricated (source hallucination)
+- **CONFABULATED**: Tool does not exist, name is fabricated, OR tool exists but presence in source was fabricated (source hallucination)
 - **UNCLEAR**: Cannot determine; needs further investigation
 
 ---
@@ -132,8 +132,8 @@ Articles in this batch:
 All remaining batches verified in extended session:
 
 - **Batches 4-11 (Lines 55-134)**: IA articles - mix of CONFIRMED research tools and MISATTRIBUTED generic software
-- **Batches 12-19 (Lines 135-214)**: IA articles continued, JOSS-worthless-o3 run (many CONFABULATIONS), JCAA articles
-- **Batches 20-26 (Lines 215-284)**: JCAA articles, JOAD-extreme fail run (all CONFABULATIONS), JOSS-fail-possible run
+- **Batches 12-19 (Lines 135-214)**: IA articles continued, JOSS-worthless-o3 run (many confabulations), JCAA articles
+- **Batches 20-26 (Lines 215-284)**: JCAA articles, JOAD-extreme fail run (all confabulations), JOSS-fail-possible run
 - **Batches 27-30 (Lines 285-330)**: JOSS-secondpass (much better quality), Perplexity-SyntheticPrompt-DR
 - **Batches 31-32 (Lines 331-351)**: Perplexity run, SoftwareX-run1-accessFail
 

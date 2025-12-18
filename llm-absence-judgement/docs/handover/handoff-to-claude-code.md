@@ -138,7 +138,7 @@ Despite appearing "cross-validated" (found by 2+ services), web searches confirm
 
 **ChronoModelr: Confabulation Near-Match**
 No "ChronoModelr" exists on CRAN. The real package is **RChronoModel** (R prefix, not r suffix). LLMs likely conflated ChronoModel (standalone software) with R package naming conventions.
-Classification: `CONFABULATION_NEAR_MATCH` — recoverable error pointing to real tool.
+Classification: `CONFABULATED_NEAR_MATCH` — recoverable error pointing to real tool.
 
 **Critical Methodological Finding: Cross-Validation ≠ Verification**
 Multiple LLM services can independently hallucinate the same non-existent tool. "Cross-validated" status (found by 2+ services) does not guarantee the tool exists — both services may have similar training data gaps or naming pattern biases.

@@ -142,7 +142,7 @@ Despite having NaN authors and incomplete metadata (an **extraction completeness
 | Status | Count | Examples |
 |--------|-------|----------|
 | CONFIRMED | 14 | tidypaleo, aRchaic, mapDamage, mortAAR, pyrho |
-| CONFABULATION | 14 | archr, ArchABM, ChronoModelr, pastR, pyArchaeo |
+| CONFABULATED | 14 | archr, ArchABM, ChronoModelr, pastR, pyArchaeo |
 | MISATTRIBUTED | 1 | MicroPasts (crowdsourcing platform, not research tool) |
 
 **Key insight**: The "worthless" designation refers to extraction quality, not tool validity. Half were real tools.
@@ -508,7 +508,7 @@ EVIDENCE PHASE (125 tools, 1,179 rows)
 |--------|-------|---|
 | CONFIRMED | 171 | 48.9% |
 | MISATTRIBUTED | 98 | 28.0% |
-| CONFABULATION | 45 | 12.9% |
+| CONFABULATED | 45 | 12.9% |
 | UNCLEAR | 33 | 9.4% |
 | DISCOVERY_ERROR | 3 | 0.9% |
 

@@ -92,10 +92,10 @@ If a paper references another paper that mentions a tool, this is still a valid 
 | `CONFIRMED` | Tool exists, mentioned in source, meets tool definition | OxCal, York System, MODES |
 | `UNCLEAR` | Insufficient detail to verify | Bwigg in FullDetail sample |
 | `MISATTRIBUTED` | Real tool mentioned but **does not meet tool definition** | Internet Explorer 3, VRML, Twitter API |
-| `CONFABULATION` | Fabrication - tool does not exist OR tool exists but presence in source was fabricated | PyCoCu, Bwigg (Perplexity), Sketchfab (source hallucination) |
+| `CONFABULATED` | Fabrication - tool does not exist OR tool exists but presence in source was fabricated | PyCoCu, Bwigg (Perplexity), Sketchfab (source hallucination) |
 | (empty) | Not yet verified | Pending verification |
 
-**Note:** DISCOVERY_ERROR (tool not found in claimed source) was merged into CONFABULATION to avoid singleton categories. These "source hallucinations" are distinguished by evidence notes explaining that the tool exists but its presence in the cited article was fabricated.
+**Note:** DISCOVERY_ERROR (tool not found in claimed source) was merged into CONFABULATED to avoid singleton categories. These "source hallucinations" are distinguished by evidence notes explaining that the tool exists but its presence in the cited article was fabricated.
 
 ### MISATTRIBUTED Subcategories
 
@@ -121,7 +121,7 @@ As of 2025-12-18 (all 350 events fully verified with evidence notes, updated aft
 |--------|-------|---|-------------|
 | CONFIRMED | 230 | 65.7% | Genuine research tools meeting definition |
 | MISATTRIBUTED | 70 | 20.0% | Real tools but don't meet definition |
-| CONFABULATION | 50 | 14.3% | Fabrications (tool or source) |
+| CONFABULATED | 50 | 14.3% | Fabrications (tool or source) |
 | UNCLEAR | 0 | 0.0% | Minimal extraction, cannot verify |
 
 ### Outcome Summary
@@ -129,7 +129,7 @@ As of 2025-12-18 (all 350 events fully verified with evidence notes, updated aft
 | Category | Count | % |
 |----------|-------|---|
 | **Successes** (CONFIRMED) | 230 | 65.7% |
-| **Failures** (MISATTRIBUTED + DISCOVERY_ERROR + CONFABULATION) | 120 | 34.3% |
+| **Failures** (MISATTRIBUTED + CONFABULATED) | 120 | 34.3% |
 | **Uncertain** (UNCLEAR) | 0 | 0.0% |
 
 ### Metadata Cross-Reference Corrections (2025-12-18)
@@ -148,7 +148,7 @@ As of 2025-12-18 (all 350 events fully verified with evidence notes, updated aft
 
 ## Source Hallucination Cases
 
-These cases involve real tools where the LLM fabricated their presence in a specific source article. Now merged into CONFABULATION category.
+These cases involve real tools where the LLM fabricated their presence in a specific source article. Now merged into CONFABULATED category.
 
 ### Sketchfab (Line 109)
 
@@ -167,7 +167,7 @@ These were initially flagged as source errors but later verified as present in t
 
 ## Confabulation Verification Protocol
 
-When investigating suspected confabulations, **always check all of the following sources** before classifying a tool as CONFABULATION:
+When investigating suspected confabulations, **always check all of the following sources** before classifying a tool as CONFABULATED:
 
 1. **Links in LLM output** - Check any URLs/DOIs provided in the discovery output
 2. **GitHub** - Search `github.com` for exact tool name and variations
@@ -189,7 +189,7 @@ When investigating suspected confabulations, **always check all of the following
 
 ### Recording Evidence Notes
 
-For CONFABULATION entries, the evidence note should document:
+For CONFABULATED entries, the evidence note should document:
 - Which sources were checked (GitHub, CRAN, PyPI, web search)
 - Whether similar/related real tools were found (near-miss pattern)
 - The specific confabulation pattern identified
@@ -301,7 +301,7 @@ This case illustrates why per-event tracking matters. Three runs discovered "Bwi
 |-----|-----|--------|----------------|
 | IA-run2-success | ChatGPT DR | CONFIRMED | Real Bwigg (Christen 2003 Bayesian wiggle-matching) |
 | FullDetail Sample | ChatGPT DR | UNCLEAR | Vague description, cannot verify |
-| Perplexity-SyntheticPrompt | Perplexity | CONFABULATION | Fabricated Broad Institute genomics tool |
+| Perplexity-SyntheticPrompt | Perplexity | CONFABULATED | Fabricated Broad Institute genomics tool |
 
 Cross-validation counts in `tool-discovery-summary.csv` can be misleading when different runs confabulate different tools with the same name.
 
@@ -331,8 +331,8 @@ Two separate JOSS discovery runs produced overlapping results:
 ### Implications for Verification
 
 Both JOSS runs have been fully verified:
-- **JOSS-worthless-o3**: 14 CONFIRMED, 14 CONFABULATION, 1 MISATTRIBUTED (29 total)
-- **Joss-fail-possible**: 18 CONFIRMED, 14 CONFABULATION, 2 MISATTRIBUTED (34 total)
+- **JOSS-worthless-o3**: 14 CONFIRMED, 14 CONFABULATED, 1 MISATTRIBUTED (29 total)
+- **Joss-fail-possible**: 18 CONFIRMED, 14 CONFABULATED, 2 MISATTRIBUTED (34 total)
 
 The "worthless" designation refers to **extraction completeness** (NaN authors, incomplete metadata), not verification status. A run can have poor extraction quality but still discover real tools.
 

@@ -50,7 +50,7 @@ Bwigg,VERIFIED_REAL,LOW (cross-validated),2,Multiple (sample run) | Internet Arc
 CAinterprTools,VERIFIED_REAL (baseline/evidence/metadata),MEDIUM,1,SoftwareX,REAL,
 CeramicNet,LIKELY_HALLUCINATED,HIGH,1,JOAD,HALLUCINATED,
 ChronCluster,UNCERTAIN_LIKELY_HALLUCINATION,MEDIUM,2,JOSS,UNCERTAIN,"Not found on CRAN, GitHub, open-archaeo, or ctv-archaeology. Only similar tool is Chronoclust (bioinformatics cytometry, unrelated). Possible name confusion with ChronoModel, ArchaeoChron, or chronos."
-ChronoModelr,CONFABULATION_NEAR_MATCH,MEDIUM,2,JOSS,CONFABULATION_NEAR_MATCH,"Likely confabulation: 'ChronoModelr' doesn't exist. Real package is 'RChronoModel' (R prefix, not r suffix). May be chimeric conflation of ChronoModel + R naming conventions. Recoverable by informed researcher."
+ChronoModelr,CONFABULATED_NEAR_MATCH,MEDIUM,2,JOSS,CONFABULATED_NEAR_MATCH,"Likely confabulation: 'ChronoModelr' doesn't exist. Real package is 'RChronoModel' (R prefix, not r suffix). May be chimeric conflation of ChronoModel + R naming conventions. Recoverable by informed researcher."
 ClimBayes,VERIFIED_REAL (additional known),MEDIUM,1,JOSS,REAL,
 Climate Vulnerability Index,VERIFIED_REAL (additional known),LOW,1,Internet Archaeology,REAL,
 Cloud2FEM (finite-element mesh generator for heritage building point clouds&#8203,VERIFIED_REAL (additional known),MEDIUM,1,SoftwareX,REAL,

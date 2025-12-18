@@ -42,7 +42,7 @@ All 350 discovery events have been manually verified:
 |--------|-------|---|
 | CONFIRMED | 230 | 65.7% |
 | MISATTRIBUTED | 70 | 20.0% |
-| CONFABULATION | 50 | 14.3% |
+| CONFABULATED | 50 | 14.3% |
 
 **Outcome**: 230 successes (65.7%), 120 failures (34.3%)
 
@@ -52,7 +52,7 @@ Summary-level verification (244 unique tools):
 |--------|-------|
 | VERIFIED | 156 |
 | MISATTRIBUTED | 52 |
-| CONFABULATION | 36 |
+| CONFABULATED | 36 |
 
 ## Suggested Mode of Work
 
