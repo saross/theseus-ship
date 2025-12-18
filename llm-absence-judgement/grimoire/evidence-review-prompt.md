@@ -86,6 +86,27 @@ After reviewing the summary:
 - **Manual check**: User will verify specific events themselves
 - **Exclude events**: Mark specific events as EXCLUDED with reason
 
+## Handling Inaccessible Sources
+
+### Broken URLs (404 errors)
+
+1. Attempt a web search to find if the resource has moved
+2. Check common archives (note: Wayback Machine may not be fetchable)
+3. If found at new location, note the updated URL
+4. If not found, mark as NEEDS_VERIFICATION for user to check
+
+### Paywalled Sources (403 errors)
+
+For academic journals behind paywalls:
+
+1. Extract author(s) and title from the URL/DOI metadata via web search
+2. Present to user for manual verification
+3. User confirms via institutional access, then mark CONFIRMED
+
+### Zenodo/Repository Errors
+
+If Zenodo or similar repositories fail to fetch, consider setting up API access for batch verification.
+
 ## Handling Collisions
 
 When evidence refers to a different tool with the same name:
