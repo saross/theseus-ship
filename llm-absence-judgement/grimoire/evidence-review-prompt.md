@@ -103,9 +103,11 @@ For each evidence event, attempt to verify via WebFetch:
 |--------------|--------|
 | **Accessible** | Mark CONFIRMED if tool mentioned, CONFABULATED if not |
 | **404 (broken)** | Web search for moved resource; if not found, pass URL to user |
-| **403 (paywalled)** | Extract author/title via web search; pass citation to user for library lookup |
+| **403 (paywalled)** | Check title/abstract (often visible); if tool mentioned, CONFIRMED; else pass citation to user |
 | **PDF too large** | Pass URL to user for manual download |
 | **Fetch error** | Retry once; if still failing, pass URL to user |
+
+**Note on paywalled sources**: Titles and abstracts are typically visible even behind paywalls. Check these first - if the tool name appears in title or abstract, mark CONFIRMED without requiring full-text access.
 
 ### Step 3: Present to User
 
