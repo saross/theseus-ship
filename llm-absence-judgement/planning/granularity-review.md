@@ -45,9 +45,9 @@ The metadata investigation phase identified several items that were extracted as
 **Metadata verdict**: Described as an infrastructure/portal, not a software tool.
 
 - [ ] GRANULARITY_ERROR (infrastructure, not software)
-- [ ] TOOL (the portal/infrastructure itself counts as a research tool)
+- [X] TOOL (the portal/infrastructure itself counts as a research tool)
 
-**Notes**:
+**Notes**: This is a reasonable assertion from the metadata search, BUT tools can be web apps / SaaS, and the Ariadne portal has enough intrinsic functionality to count as a 'tool'.
 
 ---
 
@@ -62,9 +62,9 @@ The metadata investigation phase identified several items that were extracted as
 **Metadata verdict**: Legitimate 3D software, but "entirely bypassed by the archaeological community."
 
 - [ ] NOT_ARCHAEOLOGICAL (real software, but no archaeological adoption)
-- [ ] TOOL (general-purpose tool that could be used in archaeology)
+- [X] TOOL (general-purpose tool that could be used in archaeology)
 
-**Notes**:
+**Notes**: The Discovery and Evidence phases both cite / document archaeological use cases, the Metadata research agent just failed to find them.
 
 ---
 
@@ -79,9 +79,9 @@ The metadata investigation phase identified several items that were extracted as
 **Metadata verdict**: Legitimate survey software, but no evidence of archaeological adoption.
 
 - [ ] NOT_ARCHAEOLOGICAL (real software, but no archaeological adoption)
-- [ ] TOOL (general-purpose tool mentioned in archaeological contexts)
+- [X] TOOL (general-purpose tool mentioned in archaeological contexts)
 
-**Notes**:
+**Notes**: The Discovery and Evidence phases both cite / document archaeological use cases, the Metadata research agent just failed to find them.
 
 ---
 
@@ -96,9 +96,9 @@ The metadata investigation phase identified several items that were extracted as
 **Metadata verdict**: Data product, not software. Uses ESRI ArcGIS geodatabase architecture but is accessed as data, not installed as software.
 
 - [ ] GRANULARITY_ERROR (data product, not software)
-- [ ] TOOL (the geodatabase/GIS constitutes a research tool)
+- [X] TOOL (the geodatabase/GIS constitutes a research tool)
 
-**Notes**:
+**Notes**: Data product is OK, we'd intended to include such products - metadata research agent is being a little too strict in interpretation, but Discovery agent interpreted correctly.
 
 ---
 
@@ -113,9 +113,9 @@ The metadata investigation phase identified several items that were extracted as
 **Metadata verdict**: Service-based, not distributable software.
 
 - [ ] GRANULARITY_ERROR (service, not distributable software)
-- [ ] TOOL (web applications count as software tools)
+- [X] TOOL (web applications count as software tools)
 
-**Notes**:
+**Notes**: SaaS / web apps still count as tools.
 
 ---
 
@@ -131,9 +131,9 @@ The metadata investigation phase identified several items that were extracted as
 
 - [ ] BORDERLINE (keep as tool but note limitations)
 - [ ] GRANULARITY_ERROR (administrative system, not research software)
-- [ ] TOOL
+- [X] TOOL
 
-**Notes**:
+**Notes**: 'Admin' tools can be repurposed for research, as with the AKB in Bulgaria (a similar system)
 
 ---
 
@@ -149,27 +149,31 @@ The metadata investigation phase identified several items that were extracted as
 
 - [ ] BORDERLINE (conceptual/prototype, not production software)
 - [ ] GRANULARITY_ERROR (never fully implemented)
-- [ ] TOOL
+- [X] TOOL
 
-**Notes**:
+**Notes**: We're studying tool lifecycles, so seeing tools that never make it out of prototype is useful.
 
 ---
 
 ## Summary of Potential Reclassifications
 
-| Item | Current Status | Suggested Status | Reason |
-|------|---------------|------------------|--------|
-| VirtualArch | GRANULARITY_ERROR | GRANULARITY_ERROR | Project, not tool |
-| ARIADNE | CONFIRMED | ? | Infrastructure/portal |
-| TrueSpace | CONFIRMED | ? | No archaeological adoption |
-| LSS | CONFIRMED | ? | No archaeological adoption |
-| WallGIS | CONFIRMED | ? | Data product, not software |
-| LogicistWriter | ? | ? | Service, not distributable |
-| Endovélico | ? | ? | Administrative system |
-| ArchaeoGRID | ? | ? | Prototype only |
+| Item | Current Status | Final Decision | Reason |
+| ---- | -------------- | -------------- | ------ |
+| VirtualArch | GRANULARITY_ERROR | GRANULARITY_ERROR | Project, not tool (FOLLOWED) |
+| ARIADNE | CONFIRMED | TOOL | Portal counts as research tool (FOLLOWED) |
+| TrueSpace | CONFIRMED | TOOL | Discovery/evidence found use cases (REJECTED) |
+| LSS | CONFIRMED | TOOL | Discovery/evidence found use cases (REJECTED) |
+| WallGIS | CONFIRMED | TOOL | Data products are acceptable (FOLLOWED) |
+| LogicistWriter | New | TOOL | Web apps count as tools (FOLLOWED) |
+| Endovélico | CONFIRMED | TOOL | Admin tools can be repurposed (FOLLOWED) |
+| ArchaeoGRID | New | TOOL | Prototype lifecycle is valuable data (FOLLOWED) |
 
 ---
 
 ## User Decisions
 
-After review, update the relevant discovery and evidence files with confirmed classifications.
+**Review completed**: 2025-12-21
+
+All items reviewed. VirtualArch confirmed as GRANULARITY_ERROR (project, not tool). All other items confirmed as TOOL - user rejected Claude's metadata-phase concerns for TrueSpace and LSS (discovery/evidence phases found valid use cases), and followed Claude's decisions for the remaining items.
+
+Discovery, evidence, and metadata files updated with final classifications. Review notes added to tool-metadata-granular.csv indicating FOLLOWED/REJECTED decisions.
