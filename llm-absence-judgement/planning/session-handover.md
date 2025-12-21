@@ -92,7 +92,7 @@ All entries from article: "Sensuous and reflexive GIS: exploring visualisation a
 | 35 | Vistapro | CONFIRMED | Commercial landscape visualisation software repurposed for archaeological terrain modelling |
 | 36 | Vistamorph | CONFIRMED | Commercial morphing/animation software used for archaeological visualisation sequences |
 | 37 | Photomodeller | CONFIRMED | Photogrammetry software for 3D reconstruction - research-relevant (cf. Agisoft inclusion) |
-| 38 | Fountain | CONFIRMED | VRML authoring tool used for archaeological 3D model creation |
+| 38 | Fountain (VRML tool) | CONFIRMED | VRML authoring tool used for archaeological 3D model creation |
 | 39 | Pioneer | CONFIRMED | Commercial 3D landscape software repurposed for archaeological terrain visualisation |
 | 40 | Pioneer Pro | CONFIRMED | Commercial 3D landscape software (enhanced version) repurposed for archaeological visualisation |
 | 41 | Truespace | CONFIRMED | Commercial 3D modelling software repurposed for archaeological object/site reconstruction |
@@ -187,3 +187,95 @@ Three confabulations in SoftwareX-run1-accessFail thoroughly verified using full
 
 All items in `verification-todo.md` have been resolved:
 - Line 106: Virtual Amarna Project → MISATTRIBUTED (digital archive/dataset, not software tool)
+
+---
+
+## Evidence Event Verification (2025-12-21)
+
+**Current Progress:**
+
+| Status | Count |
+|--------|-------|
+| CONFIRMED | 868 |
+| UNVERIFIED | 29 |
+| UNVERIFIABLE | 14 |
+| CONFABULATED | 50 |
+| COLLISION | 4 |
+
+### Session Updates (2025-12-21)
+
+**Completed this session:**
+
+1. **Straditize PDF Verification**
+   - Event 815 (straditize, 2021 J Ecology): CONFABULATED - PDF verified, straditize NOT mentioned
+   - Event 816 (Straditize, 2023 eprints.soton.ac.uk): CONFIRMED - "Straditize software (Sommer, 2019)" on page 6
+   - Events 817, 818 (straditize, 2023): CONFIRMED - user verified
+
+2. **Spatial Analyst Events**
+   - Event 776 (2001): UNVERIFIABLE - CUP website error
+   - Event 778 (2003): UNVERIFIABLE - ESRI page no longer exists
+
+3. **Batch CSV Updates Applied**
+   - MicroStation, Rhino for AutoCAD, SASSA, Shoredate, SpadeR, STAR updates processed
+   - 17 events total updated this session
+
+### Previous Session Updates (2025-12-20)
+
+1. **Fountain/Story Fountain Disambiguation**
+   - Identified double collision: "Fountain (VRML tool)" (1996) vs "Story Fountain (CIPHER project)" (2002-2005) vs Fountain screenplay format
+   - Updated all files with disambiguated names
+   - Documented in working-notes-section4-clean.md Section 15
+
+2. **kdedemo Events Verified**
+   - Event 447 (kdedemo2, 1997): CONFIRMED - CAA97 paper verified
+   - Event 448 (kdedemo2, 2007): UNVERIFIABLE - CiteSeerX returned 'not found'
+
+3. **ArcGIS skeletal templates Event**
+   - Event 51 (2010): UNVERIFIABLE - Cambridge page not found
+
+4. **PDF Upload Verification (2025-12-20)**
+   - Event 445 (kdedemo1 & kdedemo2, 1996): CONFABULATED - CAA95 paper describes MATLAB KDE routines but does NOT name tools explicitly
+   - Event 666 (PyCoCu, 2022): CONFABULATED - JCAA paper discusses R/Shiny visualisation but does NOT mention PyCoCu
+
+5. **Batch User Verifications Processed (2025-12-20)**
+   - 9 events confirmed: 385, 460, 462, 463, 465, 468, 570, 667, 668
+   - 6 events unverifiable: 130, 381, 384, 461, 466, 467
+
+### Files Updated
+
+- `results-tools/tool-evidence-granular.csv` - status updates
+- `planning/user-manual-review-log.md` - verification records
+- `planning/unverified-events-review.md` - summary counts
+- `docs/handover/working-notes-section4-clean.md` - case study documentation
+
+---
+
+## Methodological Observations
+
+### Granularity Issues: Discovery Phase Finding Non-Tools
+
+**Observation:** The discovery phase identified a number of items as "tools" that subsequent metadata investigation or evidence review showed were not actually software tools. This represents a granularity or classification problem in the discovery phase, where the LLM extracted items that superficially resembled tools but failed to meet the operational definition.
+
+**Categories of non-tools identified:**
+
+1. **Projects/Infrastructure** (not distributable software):
+   - VirtualArch: EU project that created site-specific applications, not a unified software platform
+
+2. **Data Products** (not software):
+   - WallGIS: Geodatabase distributed via ADS as data files, not software
+
+3. **Services/Portals** (not installable software):
+   - ARIADNE: Research infrastructure/portal
+   - LogicistWriter: Web-based service hosted on Huma-Num
+
+4. **No Archaeological Adoption** (real software, but not used in archaeology):
+   - TrueSpace: 3D modelling software with no evidence of archaeological use
+   - LSS (Land Survey System): Survey software with no archaeological adoption
+
+5. **Borderline Cases** (limited implementation or administrative purpose):
+   - ArchaeoGRID: Conceptual framework/prototype never fully implemented
+   - Endovélico: Administrative inventory system rather than research software
+
+**Implications:** This finding suggests that LLM-based discovery may over-extract items that match surface features of tools (software-like names, technical descriptions) without properly evaluating whether they meet the functional definition of research software. The metadata collection phase serves as an important filter, but some non-tools may still pass through to evidence collection.
+
+**Documentation:** Full review with user confirmation checkboxes in `planning/granularity-review.md`.
