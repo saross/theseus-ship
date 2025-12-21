@@ -2,6 +2,17 @@
 
 A workflow for reviewing evidence-of-life events to verify tool lifecycle data.
 
+## Critical Distinction: QA on Existing Data Only
+
+**This workflow verifies EXISTING evidence-events from the source data (03-tool-evidence.xlsx).** The task is to confirm that each specific source listed in our dataset actually mentions the tool as claimed.
+
+**This is NOT**:
+- Finding new evidence or new sightings of tools
+- Confirming a tool exists by finding it mentioned elsewhere
+- Searching for alternative sources that mention the tool
+
+**A valid confirmation requires**: The SPECIFIC source listed in the evidence-event explicitly mentions the tool. Finding the same tool mentioned in a different source does not confirm the event.
+
 ## Context
 
 Use this approach when:
@@ -90,26 +101,70 @@ After reviewing the summary:
 
 **Goal**: Resolve all URLs autonomously, then present unresolvable items to user.
 
-### Step 1: Attempt All URLs
+### Step 1: Title/Abstract Verification via Web Search
 
-For each evidence event, attempt to verify via WebFetch:
+**When you cannot access a full PDF**, use web search to check if the tool appears in the title or abstract of THE SPECIFIC SOURCE listed in the evidence-event. This is a workaround for inaccessible full-text, not a way to find alternative evidence.
+
+**Key principle**: You are verifying the SPECIFIC source in our dataset, not finding other sources that mention the tool.
+
+1. **Search for the specific source**: `"[Source Title]" [author] [year]`
+2. **Check if tool appears in title/abstract**: Search results often show titles and abstract snippets
+3. **Only mark CONFIRMED if**: The tool name appears explicitly in the title or abstract of THAT source
+4. **If tool not visible in title/abstract**: Mark UNVERIFIED (requires full-text access)
+
+**Example - VALID confirmation**:
+- Event claims: "SASSA mentioned in EGU 2007 abstract by Smith"
+- Search: `"SASSA" EGU 2007 Smith`
+- Result shows: Abstract title "SASSA: A Support System for Archaeological Survey"
+- Action: CONFIRMED - tool explicitly in title of the specific source
+
+**Example - INVALID confirmation**:
+- Event claims: "straditize mentioned in Journal of Ecology 2019 paper"
+- Search: `straditize "Journal of Ecology" 2019`
+- Result shows: straditize exists (JOSS paper), but no evidence THIS specific J.Ecology paper mentions it
+- Action: UNVERIFIED - cannot confirm the specific source without full-text access
+
+**Do NOT mark CONFIRMED just because**:
+- The tool exists and is used in that field
+- Other papers in the same journal use the tool
+- The paper topic seems related to the tool's function
+
+### Step 2: Attempt URLs for Remaining Events
+
+For events not resolved via title/abstract search, attempt to verify via WebFetch:
 - Follow redirects (DOIs often redirect to publisher sites)
 - For PDFs, attempt to fetch and search for tool name
 - Record: tool mentioned (yes/no), year matches (yes/no)
 
-### Step 2: Handle Failures by Type
+### Step 3: Handle Failures by Type
 
 | Failure Type | Action |
 |--------------|--------|
 | **Accessible** | Mark CONFIRMED if tool mentioned, CONFABULATED if not |
-| **404 (broken)** | Web search for moved resource; if not found, pass URL to user |
+| **404 (broken)** | Web search for moved resource; if found, verify; if not found, mark UNVERIFIED |
 | **403 (paywalled)** | Check title/abstract (often visible); if tool mentioned, CONFIRMED; else pass citation to user |
-| **PDF too large** | Pass URL to user for manual download |
+| **PDF too large** | Pass URL to user for manual search (see PDF verification protocol below) |
 | **Fetch error** | Retry once; if still failing, pass URL to user |
+| **Site blocked** | Note for user verification (e.g., StackExchange, Wikipedia) |
 
 **Note on paywalled sources**: Titles and abstracts are typically visible even behind paywalls. Check these first - if the tool name appears in title or abstract, mark CONFIRMED without requiring full-text access.
 
-### Step 3: Present to User
+**Note on 404s**: URLs that were valid during the original LLM run may have since broken. If web search cannot locate a moved copy, mark UNVERIFIED rather than CONFABULATED - absence of evidence is not evidence of fabrication.
+
+**Note on user downloads**: When the user downloads a PDF for verification, they place it in `bibliography/`. Read the file from there to check for tool mentions.
+
+### PDF Verification Protocol
+
+When a PDF is too large to fetch or parse:
+
+1. **Provide the URL** to the user with the tool name to search for
+2. **User searches with Ctrl+F** - if they find the reference, they confirm and provide the relevant text
+3. **If user cannot find it**, they download the PDF to `bibliography/` for Claude to verify
+4. **Mark accordingly**: CONFIRMED if user finds mention, proceed to step 3 if not found
+
+This minimises unnecessary file transfers while maintaining verification rigour.
+
+### Step 4: Present to User
 
 After autonomous verification, present:
 
@@ -138,17 +193,46 @@ After review, update `tool-evidence-granular.csv` with:
 
 | Column | Values |
 |--------|--------|
-| Review_Status | CONFIRMED, CONFABULATED, EXCLUDED, UNVERIFIED |
+| Review_Status | CONFIRMED, CONFABULATED, COLLISION, UNVERIFIED |
 | Review_Notes | Brief note explaining status |
 
 ### Status Definitions
 
 | Status | Meaning |
 |--------|---------|
-| CONFIRMED | Source exists and mentions the tool correctly |
-| CONFABULATED | Source exists but tool is NOT mentioned (fabricated reference) |
-| EXCLUDED | Evidence is for a different tool (collision) |
-| UNVERIFIED | Could not verify; awaiting user confirmation |
+| CONFIRMED | Source exists and mentions the correct tool |
+| CONFABULATED | Source exists but does NOT mention the tool (fabricated reference) |
+| COLLISION | Source mentions a different tool with the same name |
+| UNVERIFIED | Could not verify yet (PDF inaccessible, URL broken, awaiting user check) |
+
+## Batch Processing Strategy
+
+For large-scale verification:
+
+### Recommended Approach
+
+**Parallel URL fetching**: Fetch 4-6 URLs simultaneously to maximise throughput while staying within rate limits.
+
+**Batch by tool**: Process all events for one tool before moving to the next. This keeps context coherent and makes collision detection easier.
+
+**Present results incrementally**: After each tool batch, present summary and get user confirmation before proceeding. This catches workflow issues early.
+
+### Batch Sizes
+
+| Dataset Size | Recommended Batch |
+|--------------|-------------------|
+| < 20 events | Single batch, all tools |
+| 20-100 events | 3-5 tools per batch |
+| 100+ events | 1 tool per batch, parallel URL fetches |
+
+### Progress Tracking
+
+Use TodoWrite to track:
+- Tools pending review
+- Current tool in progress
+- Tools completed with issue counts
+
+This provides visibility to user and prevents losing track during long sessions.
 
 ## Origin
 
