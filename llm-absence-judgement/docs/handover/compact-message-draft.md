@@ -21,11 +21,11 @@ Academic paper on LLM research capabilities in humanities/social sciences. Autoe
 
 **Metadata Outcomes** (Discovery pathway only):
 - 83 Success
-- 6 Failure (Bwigg, FaceNet, Fountain, Microware, pnuts, PyCoCu)
+- 6 Failure (Bwigg, FaceNet, Fountain (VRML tool), Microware, pnuts, PyCoCu)
 - 4 New (spawned: ArchaeoGRID, OpenArchaeo semantic web, OpenGuide, Rhinoceros 3D)
 - 2 Failure|Spawned New, 2 Success|Spawned New
 
-**Key Anomaly**: 5/6 metadata failures still got evidence collected (FaceNet, Fountain, Microware, pnuts, PyCoCu). Reflects independent operation: metadata used Claude, evidence used ChatGPT DR.
+**Key Anomaly**: 5/6 metadata failures still got evidence collected (FaceNet, Fountain (VRML tool), Microware, pnuts, PyCoCu). Reflects independent operation: metadata used Claude, evidence used ChatGPT DR.
 
 **Bwigg Special Case**: Cross-validated real tool (3 discoveries, specific IA article from 2003: "Bwigg: An Internet facility for Bayesian radiocarbon wiggle-matching" by J. Andrés Christen) that failed BOTH metadata AND evidence. Only tool to fall through entire pipeline. Likely due to minimal online footprint for 20+ year old tool.
 
@@ -44,7 +44,7 @@ Academic paper on LLM research capabilities in humanities/social sciences. Autoe
 ## Failure Analysis Findings
 
 **No hallucinations in failure cases**. When tools didn't exist, Claude correctly identified this and produced helpful context. Failure types:
-1. Name collision (FaceNet, Fountain, Microware, pnuts) — dominant non-archaeological software with same name
+1. Name collision (FaceNet, Fountain (VRML tool), Microware, pnuts) — dominant non-archaeological software with same name
 2. Real but undocumented (PyCoCu - site-specific script from Sécher et al. 2020)
 3. Minimal online footprint (Bwigg - real 2003 tool, cross-validated discovery, but couldn't document further)
 4. Discovery granularity: MASA → split into 3 component tools

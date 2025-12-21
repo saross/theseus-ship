@@ -26,7 +26,7 @@ Analysis of successful discovery, metadata, and evidence collection runs reveals
    - Domain-specific tools: BCal, ArchEd, Stratigraph, FAIMS, Intrasis
    - Period-appropriate generic technologies: VRML, QuickTime VR (relevant for 1990s-2000s web archaeology articles)
    
-4. **Multi-Tool Recognition**: Articles mentioning multiple tools had them correctly separated by semicolons (e.g., "Vistapro; Vistamorph; Photomodeller; Fountain; Pioneer; Pioneer Pro")
+4. **Multi-Tool Recognition**: Articles mentioning multiple tools had them correctly separated by semicolons (e.g., "Vistapro; Vistamorph; Photomodeller; Fountain (VRML tool); Pioneer; Pioneer Pro")
 
 **Residual Issues Within Success:**
 - Some generic technologies included (ActiveX, PowerPoint) â€” borderline but justifiable in historical context

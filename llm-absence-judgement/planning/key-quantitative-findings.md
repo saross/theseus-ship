@@ -224,7 +224,7 @@ All 8 metadata failures came from **successful discovery runs with LOW hallucina
 | Tool | Failure Type | Discovery Source | Run Quality | Root Cause |
 |------|--------------|------------------|-------------|------------|
 | FaceNet | Name collision | JOSS | success-secondpass | Name matched Google's neural network, not archaeological tool |
-| Fountain | Name collision | Internet Archaeology | success | Generic name matched multiple unrelated software |
+| Fountain (VRML tool) | Name collision | Internet Archaeology | success | Generic name matched multiple unrelated software |
 | Microware | Name collision | Internet Archaeology | success | Generic term for dental microwear analysis software |
 | pnuts | Name collision | Internet Archaeology | success | Matched Yahoo's distributed database platform |
 | Bwigg | Minimal footprint | Multiple | cross-validated | Real tool (Christen 2003) predates web documentation conventions |
@@ -239,7 +239,7 @@ These tool names exist in the archaeological literature but are obscured by more
 | Tool | What Claude Found Instead | Archaeological Context |
 |------|---------------------------|------------------------|
 | **FaceNet** | Google's neural network for face recognition | Mentioned in JOSS archaeological article, but search results overwhelmed by Google's 2015 facial recognition tool |
-| **Fountain** | Screenplay markup language | Claude asked for disambiguation—couldn't identify archaeology-specific version |
+| **Fountain (VRML tool)** | Screenplay markup language | Claude asked for disambiguation—couldn't identify archaeology-specific version |
 | **Microware** | OS-9 operating system by Microware Systems Corporation (1977-2001) | Possibly a generic reference to "microware analysis" software for dental microwear studies |
 | **pnuts** | Yahoo's distributed database (PNUTS) or Java scripting language (Pnuts) | Real archaeological tool likely obscured by more prominent namesakes |
 
@@ -401,7 +401,7 @@ Note: 2 rows have missing data (NaN values), so actual valid rows = 1,179.
 | FieldWorker | FieldWorker Advanced, FieldWorker Pro |
 | Perseus Digital Library | Perseus 2.0 |
 
-**Also notable**: Metadata failures (FaceNet, Fountain, Microware, pnuts, Grid Machine, Wcvt2Pov, PyCoCu) appear in evidence because evidence was collected for all discovered tools, regardless of metadata success.
+**Also notable**: Metadata failures (FaceNet, Fountain (VRML tool), Microware, pnuts, Grid Machine, Wcvt2Pov, PyCoCu) appear in evidence because evidence was collected for all discovered tools, regardless of metadata success.
 
 ---
 
@@ -445,7 +445,7 @@ METADATA PHASE (98 tools)
 │   └── New (spawned): 6
 │
 └── Failed: 8
-    ├── Name collision: 4 (FaceNet, Fountain, Microware, pnuts)
+    ├── Name collision: 4 (FaceNet, Fountain (VRML tool), Microware, pnuts)
     ├── Minimal footprint: 1 (Bwigg)
     ├── Insufficient docs: 1 (Wcvt2Pov - spawned POV-Ray)
     ├── No online presence: 1 (PyCoCu)

@@ -231,7 +231,7 @@ These tools were discovered but could not be successfully investigated:
 |------|----------------|
 | Bwigg | Insufficient documentation online |
 | FaceNet | Name collision (Google neural network) |
-| Fountain | Name collision (multiple software) |
+| Fountain (VRML tool) | Name collision (multiple software) |
 | Grid Machine | Confabulation â€” does not exist |
 | Microware | Name collision (generic term) |
 | PyCoCu | No verifiable online presence |

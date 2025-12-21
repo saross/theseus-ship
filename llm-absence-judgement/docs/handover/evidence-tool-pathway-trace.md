@@ -72,7 +72,7 @@ These tools could not be successfully investigated due to disambiguation failure
 |------|----------------|---------------------|
 | Bwigg | Minimal online footprint (verified real: 2003 IA article) | No |
 | FaceNet | Name collision (Google neural network) | Yes (7 rows)* |
-| Fountain | Name collision (multiple software) | Yes (7 rows)* |
+| Fountain (VRML tool) | Name collision (multiple software) | Yes (7 rows)* |
 | Microware | Name collision (generic term) | Yes (9 rows)* |
 | pnuts | Name collision (Yahoo platform) | Yes (4 rows)* |
 | PyCoCu | No verifiable online presence | Yes (5 rows)* |
@@ -166,7 +166,7 @@ New tools discovered during investigation of other tools:
 | FieldWorker Advanced | 2 |
 | FieldWorker Pro | 2 |
 | FilmColors | 15 |
-| Fountain | 7 |
+| Fountain (VRML tool) | 7 |
 | Gephi | 9 |
 | GlottoSpace | 5 |
 | glottoTrees | 11 |
@@ -269,7 +269,7 @@ Several tools appear under variant names. These should be treated as the same to
 Notably, 5 of 6 metadata failures still received evidence collection:
 
 - FaceNet (7 rows)
-- Fountain (7 rows)
+- Fountain (VRML tool) (7 rows)
 - Microware (9 rows)
 - pnuts (4 rows)
 - PyCoCu (5 rows)

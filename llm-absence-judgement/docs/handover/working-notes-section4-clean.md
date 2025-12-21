@@ -113,7 +113,7 @@ These tools were investigated for evidence but NOT added to Master List for meta
 | Tool | Problem | Actual Result |
 |------|---------|---------------|
 | FaceNet | Google neural network | Wrong domain entirely |
-| Fountain | Multiple software with this name | Ambiguous reference |
+| Fountain (VRML tool) | Multiple software with this name | Ambiguous reference |
 | Microware | Generic term | Multiple unrelated tools |
 | pnuts | Yahoo platform | Wrong domain |
 
@@ -560,7 +560,78 @@ This section documents gaps identified during Claude Code's review of handover m
 
 ---
 
-## 15. Project Management: Outstanding Tasks
+## 15. Double Collision Case Study: Fountain / Story Fountain
+
+*Discovered: 20 December 2025 during evidence verification*
+
+### 15.1 Summary
+
+During evidence QA verification, a naming collision was discovered involving **three distinct tools** sharing similar names:
+
+| Tool | Description | Source |
+|------|-------------|--------|
+| **Fountain (VRML tool)** | VRML authoring tool for 3D archaeological models | Internet Archaeology 1996 (Gillings & Goodrick) |
+| **Fountain (screenplay)** | Screenplay markup language | John August & Stu Maschwitz, 2012 |
+| **Story Fountain (CIPHER project)** | Heritage storytelling tool | Open University, 2002–2005 |
+
+### 15.2 What Happened
+
+1. **Discovery phase** (ChatGPT Deep Research) correctly identified "Fountain" from the 1996 Internet Archaeology article about VRML visualisation.
+
+2. **Metadata phase** (Claude) attempted to research "Fountain" but found the screenplay markup language instead. Claude appropriately asked for disambiguation rather than proceeding with wrong tool — this was logged as a metadata "failure" due to name collision.
+
+3. **Evidence phase** (ChatGPT Deep Research) was asked to find evidence for "Fountain" but returned 7 evidence rows for an entirely different tool: "Story Fountain" from the CIPHER heritage project at Open University.
+
+### 15.3 How It Was Discovered
+
+During verification of Event 348 (CAA 2005 paper), the user downloaded the PDF and found it explicitly mentioned "Story Fountain" — not the VRML "Fountain" that was originally discovered.
+
+Tracing the provenance revealed:
+- Discovery files contained "Fountain" (VRML tool)
+- Metadata files contained "Fountain" (renamed to "Story Fountain" before disambiguation)
+- Evidence files contained references to CIPHER "Story Fountain"
+- None of the evidence actually pertained to the discovered tool
+
+### 15.4 Resolution
+
+All files updated with disambiguated names:
+
+| File Type | Tool Name |
+|-----------|-----------|
+| Discovery (01a, 01b, granular CSVs) | Fountain (VRML tool) |
+| Metadata (02) | Fountain (VRML tool) |
+| Evidence (granular CSV) | Story Fountain (CIPHER project) |
+| Documentation | Both names with clarifying suffixes |
+
+### 15.5 Implications
+
+**For the dataset:**
+- The VRML "Fountain" has no verified evidence (evidence collected was for wrong tool)
+- "Story Fountain (CIPHER project)" has 7 evidence rows but was never in the discovery pipeline
+- This represents a previously undocumented failure mode
+
+**For the paper:**
+This is an example of **double collision** — the same generic name collided with different tools at different pipeline stages:
+1. Metadata collision: VRML Fountain → Screenplay Fountain
+2. Evidence collision: VRML Fountain → CIPHER Story Fountain
+
+The discovery prompt worked correctly; failures occurred downstream when the generic name matched different prominent tools in different contexts.
+
+**Methodological note:**
+This case demonstrates that even "successful" discovery entries require end-to-end verification. The tool was correctly discovered but evidence was collected for an entirely different tool with a confusingly similar name.
+
+### 15.6 Files Updated
+
+- `02-tool-metadata.xlsx` — Fountain → Fountain (VRML tool)
+- `tool-discovery-granular.csv` — Fountain → Fountain (VRML tool)
+- `tool-discovery-summary.csv` — Fountain → Fountain (VRML tool)
+- `01b-tool-openarchaeo-work.xlsx` — Fountain → Fountain (VRML tool)
+- `tool-evidence-granular.csv` — Story Fountain → Story Fountain (CIPHER project)
+- Multiple documentation files in `docs/handover/`, `planning/`, `text-revisions/`
+
+---
+
+## 16. Project Management: Outstanding Tasks
 
 ### Immediate (for Section 4 completion)
 

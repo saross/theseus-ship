@@ -24,7 +24,7 @@ This represents ChatGPT DR's genuine literature-mining capability finding someth
 | FaceNet | Google's face recognition system | None found |
 | Microware | OS-9 operating system | None found |
 | pnuts | Java scripting language | None (Claude provided full metadata, flagged non-applicability) |
-| Fountain | Screenplay markup language | None found |
+| Fountain (VRML tool) | Screenplay markup language | None found |
 
 **Type 1c: Insufficient Signal (Genuinely Undiscoverable)**
 
@@ -112,7 +112,7 @@ This contrasts with earlier model comparisons (Gemini hallucinating contributors
 
 | Attribution | Count | Tools |
 |-------------|-------|-------|
-| Discovery: name collision | 4 | FaceNet, Fountain, Microware, pnuts |
+| Discovery: name collision | 4 | FaceNet, Fountain (VRML tool), Microware, pnuts |
 | Discovery: insufficient signal | 1 | Wcvt2Pov (→ POV-Ray) |
 | Discovery: real but undocumented | 1 | PyCoCu |
 | Discovery: doesn't exist | 1 | Grid Machine (→ ArchaeoGRID) |

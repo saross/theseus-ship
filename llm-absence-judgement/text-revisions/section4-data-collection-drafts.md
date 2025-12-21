@@ -62,7 +62,7 @@ The eight documented failures fell into distinct categories:
 
 | Failure Type | Count | Examples |
 |--------------|-------|----------|
-| Name collisions | 4 | FaceNet, Fountain, Microware, pnuts |
+| Name collisions | 4 | FaceNet, Fountain (VRML tool), Microware, pnuts |
 | Insufficient documentation | 2 | Bwigg, Wcvt2Pov |
 | No online presence | 1 | PyCoCu |
 | Confabulated tool name | 1 | Grid Machine → led to ArchaeoGRID |

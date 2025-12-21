@@ -70,7 +70,7 @@ The tool definition emphasises software "developed or substantially modified by 
 | Generic surveying software | **EXCLUDE** | Not research-specific | Land Survey System |
 | Format conversion utilities in research workflow | **INCLUDE** | Supporting research data processing pipeline | Wcvt2Pov (3D format converter) |
 | Standards/formats | **EXCLUDE** | Specifications, not software tools | VRML |
-| VRML authoring tools | **INCLUDE** | Software tools for creating 3D content | Fountain |
+| VRML authoring tools | **INCLUDE** | Software tools for creating 3D content | Fountain (VRML tool) |
 
 ### Companion Programs and Plugins
 

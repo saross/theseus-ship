@@ -64,11 +64,11 @@ These failures represent cases where the metadata prompt could not produce valid
 
 **Status**: Likely ChatGPT DR error — possibly misread a citation or conflated tools.
 
-### Fountain
+### Fountain (VRML tool)
 
 **What Claude found**: Fountain the screenplay markup language/software.
 
-**Why it failed**: The name is dominated by the screenwriting tool. No archaeological "Fountain" exists.
+**Why it failed**: The name is dominated by the screenwriting tool. The archaeological Fountain (VRML tool) from Internet Archaeology 1996 was obscured.
 
 **Model behaviour**: Asked for disambiguation despite instructions not to — the name collision created enough uncertainty that the model broke from instruction compliance. This is actually appropriate epistemic behaviour.
 
@@ -133,7 +133,7 @@ This case demonstrates that **perfect discovery does not guarantee downstream su
 | FaceNet | B: Name collision | Google's face recognition | None found | Correct failure |
 | Microware | B: Name collision | OS-9 operating system | None found | Correct failure after redirection |
 | pnuts | B: Name collision | Java scripting language | None found | Full metadata + explicit non-applicability |
-| Fountain | B: Name collision | Screenplay markup | None found | Requested disambiguation |
+| Fountain (VRML tool) | B: Name collision | Screenplay markup | None found | Requested disambiguation |
 | Wcvt2Pov | C: No signal | Nothing (POV-Ray related) | N/A | Correct failure, identified related tool |
 | **Bwigg** | **D: Minimal footprint (verified real)** | **2003 IA article** | **Yes (radiocarbon)** | **Correct failure — methodological limit** |
 
@@ -174,7 +174,7 @@ It failed downstream because **minimal online footprint makes documentation impo
 
 ### 5. Disambiguation Requests Were Appropriate
 
-When Claude broke from "don't ask questions" instructions (Fountain, Microware), it was responding to genuine ambiguity where proceeding would produce meaningless results. This shows appropriate judgment — prioritising accuracy over instruction compliance.
+When Claude broke from "don't ask questions" instructions (Fountain (VRML tool), Microware), it was responding to genuine ambiguity where proceeding would produce meaningless results. This shows appropriate judgment — prioritising accuracy over instruction compliance.
 
 ---
 
@@ -186,7 +186,7 @@ When Claude broke from "don't ask questions" instructions (Fountain, Microware),
 
 3. **ChatGPT DR Limitations**: The discovery prompt's failures reveal:
    - Tendency to surface obscure but real tools (PyCoCu, Bwigg)
-   - Tendency to misattribute or conflate names (Microware, pnuts, Fountain)
+   - Tendency to misattribute or conflate names (Microware, pnuts, Fountain (VRML tool))
 
 4. **Epistemic Honesty**: Claude's consistent pattern of stating "I could not find this" rather than inventing plausible-sounding content is a significant positive finding for research applications.
 

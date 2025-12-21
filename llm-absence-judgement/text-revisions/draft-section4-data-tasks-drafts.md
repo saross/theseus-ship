@@ -63,7 +63,7 @@ Cross-referencing discovered tools against metadata collection outcomes provides
 - 28 (39%) did not pass verification
 
 Of the 28 unverified tools, eight are documented failures from metadata collection:
-- 4 name collisions (FaceNet, Fountain, Microware, pnuts)
+- 4 name collisions (FaceNet, Fountain (VRML tool), Microware, pnuts)
 - 1 insufficient documentation (Wcvt2Pov)
 - 1 no online presence (PyCoCu)
 - 1 confabulated name (Grid Machine → serendipitously led to ArchaeoGRID)
@@ -111,7 +111,7 @@ Metadata collection produced complete records for 89 of 97 tools investigated (9
 
 | Failure Type | Count | Examples | Attribution |
 |--------------|-------|----------|-------------|
-| Name collisions | 4 | FaceNet, Fountain, Microware, pnuts | Discovery error |
+| Name collisions | 4 | FaceNet, Fountain (VRML tool), Microware, pnuts | Discovery error |
 | Insufficient documentation | 1 | Wcvt2Pov | Discovery error |
 | No online presence | 1 | PyCoCu | Discovery error |
 | Confabulated tool name | 1 | Grid Machine → led to ArchaeoGRID | Discovery error |

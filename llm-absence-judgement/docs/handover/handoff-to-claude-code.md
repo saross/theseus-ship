@@ -194,7 +194,7 @@ Some documents reference **1,874 rows / 105 tools**; others reference **1,179 ro
 
 | Type | Count | Examples |
 |------|-------|----------|
-| Name collision | 4 | FaceNet, Fountain, Microware, pnuts |
+| Name collision | 4 | FaceNet, Fountain (VRML tool), Microware, pnuts |
 | Minimal online footprint | 1 | Bwigg (real but undocumentable via web) |
 | Insufficient documentation | 1 | Wcvt2Pov |
 | No online presence | 1 | PyCoCu |
