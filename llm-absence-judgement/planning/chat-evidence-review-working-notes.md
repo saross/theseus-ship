@@ -150,6 +150,20 @@ This contains more extensive breakdown of phases and methodology.
 
 ---
 
+## Methodological Observations
+
+### Single-task prompt design (22 December 2025)
+
+Evidence for why prompts should focus on one task at a time: the metadata prompt repeatedly states that a tool "has no archaeological uses", yet the evidence prompt (run on the same tool) finds numerous archaeological uses. This contradiction suggests that when a prompt attempts to handle multiple assessment tasks simultaneously, the model may make premature judgements that foreclose deeper investigation. Separating the metadata collection task from the evidence-of-life search allows the model to pursue each task without the other's conclusions contaminating its reasoning.
+
+### JOSS trial run TODO placeholders (23 December 2025)
+
+The `tool-discovery-granular.csv` file contains 34 entries from the JOSS "fail-possible" run (lines 243-276) with `TODO` in the URL_DOI column instead of actual DOIs. These entries document a trial where the LLM was asked to identify archaeological tools published in the Journal of Open Source Software. The results showed a ~40% confabulation rate—the model invented plausible-sounding tool names that don't exist (e.g., "RACER", "ChronCluster", "archCandy").
+
+**Decision**: Leave the TODO placeholders as-is rather than looking up actual DOIs for confirmed tools. The incomplete data is itself evidence of the failure mode: the LLM provided tool names and years but failed to provide verifiable DOIs, making independent verification difficult. This documents how confabulated references can appear superficially credible (correct journal, plausible year, real-sounding name) while lacking the specificity needed for verification.
+
+---
+
 ## Related Files
 
 - Plan draft: `/home/shawn/.claude/plans/jazzy-hopping-lamport.md`
