@@ -1,18 +1,22 @@
 # Unverified Events Review
 
-**Updated**: 2025-12-21
+**Updated**: 2025-12-23
+**Status**: COMPLETE
 
 ## Summary
 
 | Status | Count |
 |--------|-------|
-| CONFIRMED | 868 |
-| UNVERIFIED | 29 |
-| UNVERIFIABLE | 14 |
-| CONFABULATED | 50 |
+| CONFIRMED | 945 |
+| CONFABULATED | 52 |
+| UNVERIFIABLE | 22 |
+| GRANULARITY_ERROR | 17 |
 | COLLISION | 4 |
+| **Total** | **1040** |
 
-**Remaining to verify**: 29 events
+**Remaining to verify**: 0 events
+
+All events have been reviewed. This document preserves the manual verification workflow for audit purposes.
 
 ---
 
@@ -655,11 +659,11 @@ Support System for Archaeologists
 **Response**:
 
 - [ ] Confirmed
-- [ ] Unverifiable
+- [X] Unverifiable
 - [ ] Confabulated
 - [ ] PDF uploaded
 
-**Notes**:
+**Notes**: 404 - page no longer exists
 
 
 #### Event 794 (n.d.)
@@ -1250,18 +1254,18 @@ analysis were executed on said values
 
 #### Event 936 (1997.0)
 
-- **Source**: kcl.ac.uk – “The Pentacle Method: Structured VRML Development” (D. Baker BSc thesis)
+- **Source**: kcl.ac.uk – "The Pentacle Method: Structured VRML Development" (D. Baker BSc thesis)
 - **URL**: https://kvl.cch.kcl.ac.uk/makingspace/documents/PentacleMethod.pdf
 - **Prior note**: PDF too large to verify
 
 **Response**:
 
-- [ ] Confirmed
+- [X] Confirmed
 - [ ] Unverifiable
 - [ ] Confabulated
 - [ ] PDF uploaded
 
-**Notes**:
+**Notes**: PDF lists WCVT2POV as multi 3D graphic file format converter
 
 
 #### Event 941 (1999.0)
