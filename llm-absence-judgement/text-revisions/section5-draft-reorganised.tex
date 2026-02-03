@@ -1,0 +1,27 @@
+% ======================================================================
+% SECTION 5: DISCUSSION - DRAFT CONTENT
+% ======================================================================
+% Content moved from Section 4 (Findings) that belongs in Discussion
+% Source: section4-draft-reorganised.tex
+% ======================================================================
+
+% ----------------------------------------------------------------------
+% PROMPT EVOLUTION AND TRADE-OFFS (from Tool Discovery section)
+% ----------------------------------------------------------------------
+
+% Context: Error rates dropped from ~52% (early) to ~33% (main) to 7.4% (late)
+% This content explains WHY that improvement occurred
+
+Examination of the chat transcripts reveals the prompt evolution underlying this improvement:
+
+\textbf{Early runs} used broad, exploratory prompts. A typical sample run (February 2025) asked the system to ``make a csv of every single software tool mentioned in the Journal Internet Archaeology, from its first issue to the present one,'' with minimal constraints on output format or verification requirements. These runs produced high confabulation rates as the model extrapolated beyond its actual search results.
+
+\textbf{Main production runs} added structural constraints. Prompts specified exact column formats (``Title, Authors, URL, Issue Number, Year, Tools Mentioned''), explicit instructions to ``take extra time and be meticulous,'' and clearer scope boundaries (e.g., ``issues 31--67''). Error rates improved but remained substantial, particularly for journals with less web presence.
+
+\textbf{Late secondpass runs} employed highly structured prompts with multiple safeguards: numbered step-by-step instructions, pre-compiled lists of candidate items to verify, explicit example output rows, constraints like ``no partial references or placeholders,'' and direct instructions to verify rather than search (``Do not search for articles. Use the CSV I gave you''). These runs achieved the lowest error rates but required substantially more prompt engineering effort---the final JOSS secondpass prompt exceeded 250 lines.
+
+This progression illustrates a fundamental trade-off: achieving reliable LLM output required iterative prompt refinement that consumed considerable researcher time, partially offsetting the efficiency gains that motivated LLM adoption in the first place.
+
+% ----------------------------------------------------------------------
+% END MOVED CONTENT
+% ----------------------------------------------------------------------
