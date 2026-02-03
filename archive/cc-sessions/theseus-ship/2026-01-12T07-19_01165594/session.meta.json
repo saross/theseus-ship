@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "01165594-5a75-4c12-aec9-384d630d76cc",
+    "started_at": "2026-01-12T07:19:12.171Z",
+    "ended_at": "2026-01-12T07:23:58.567Z",
+    "duration_minutes": 4
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-opus-4-5-20251101",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 11,
+    "total_tokens": 2015,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [],
+    "modified": [],
+    "referenced": []
+  },
+  "statistics": {
+    "turns": 24,
+    "human_messages": 24,
+    "assistant_messages": 37,
+    "thinking_blocks": 11,
+    "tool_calls": {
+      "total": 22,
+      "by_type": {
+        "Bash": 12,
+        "Glob": 1,
+        "Read": 7,
+        "Grep": 2
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 154808,
+      "by_type": {
+        "Glob": {
+          "count": 1,
+          "bytes": 78
+        },
+        "Bash": {
+          "count": 12,
+          "bytes": 22664
+        },
+        "Read": {
+          "count": 7,
+          "bytes": 131392
+        },
+        "Grep": {
+          "count": 2,
+          "bytes": 674
+        }
+      },
+      "largest_single_output_bytes": 57753
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "19055778caafe1837592c1cbef54b321f930b4dbc0db4929f0516032df98b9a0",
+    "jsonl_bytes": 517031,
+    "archived_at": "2026-02-03T20:01:56.465340",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 139321,
+    "jsonl_bytes_uncompressed": 517031,
+    "jsonl_sha256_uncompressed": "72038f761ecc2d208796539a7cca40d2669dfa43a2cba761b6ef329bd68e37aa"
+  }
+}

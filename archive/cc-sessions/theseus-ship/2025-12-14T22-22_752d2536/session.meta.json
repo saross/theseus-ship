@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "752d2536-7135-4543-8d6e-72e2571f5174",
+    "started_at": "2025-12-14T22:22:39.700Z",
+    "ended_at": "2025-12-15T03:25:14.591Z",
+    "duration_minutes": 302
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "<synthetic>",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 166,
+    "total_tokens": 23543,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [
+      {
+        "path": "llm-absence-judgement/planning/verification-todo.md",
+        "type": "document",
+        "description": ""
+      }
+    ],
+    "modified": [
+      {
+        "path": "llm-absence-judgement/planning/session-handover.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool_discovery_granular.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/verification-sample.csv",
+        "type": "data",
+        "description": ""
+      }
+    ],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement/results-tools/02-tool-metadata.xlsx",
+        "type": "other",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 362,
+    "human_messages": 362,
+    "assistant_messages": 635,
+    "thinking_blocks": 166,
+    "tool_calls": {
+      "total": 344,
+      "by_type": {
+        "Read": 46,
+        "Edit": 147,
+        "WebFetch": 81,
+        "WebSearch": 24,
+        "TodoWrite": 27,
+        "Glob": 1,
+        "Skill": 1,
+        "mcp__ide__executeCode": 1,
+        "Bash": 8,
+        "Write": 1,
+        "Grep": 7
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 931771,
+      "by_type": {
+        "Read": {
+          "count": 46,
+          "bytes": 300900
+        },
+        "Edit": {
+          "count": 137,
+          "bytes": 492871
+        },
+        "WebFetch": {
+          "count": 81,
+          "bytes": 46558
+        },
+        "WebSearch": {
+          "count": 24,
+          "bytes": 70997
+        },
+        "TodoWrite": {
+          "count": 27,
+          "bytes": 4320
+        },
+        "Glob": {
+          "count": 1,
+          "bytes": 450
+        },
+        "Skill": {
+          "count": 1,
+          "bytes": 21
+        },
+        "mcp__ide__executeCode": {
+          "count": 1,
+          "bytes": 60
+        },
+        "Bash": {
+          "count": 8,
+          "bytes": 3209
+        },
+        "Write": {
+          "count": 1,
+          "bytes": 111
+        },
+        "Grep": {
+          "count": 7,
+          "bytes": 12274
+        }
+      },
+      "largest_single_output_bytes": 38730
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "7142a501aaeb30a251baac51203d4c8017dbbd1d24c1060c70e109dc9d23402d",
+    "jsonl_bytes": 18043249,
+    "archived_at": "2026-02-03T20:01:43.717842",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 3180458,
+    "jsonl_bytes_uncompressed": 18043249,
+    "jsonl_sha256_uncompressed": "ea6fe95f6c18a2f753df8c908b77950d48cc559e2c8b38db508c3616a08479ea"
+  },
+  "_relationship_hints": {
+    "continues_hint": null,
+    "references_hints": [],
+    "detection_notes": [
+      "Found continuation language: 'last\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'"
+    ]
+  }
+}

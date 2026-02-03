@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "62a82c2a-aed3-4ed5-961e-ee582eb3df41",
+    "started_at": "2026-01-12T11:38:50.977Z",
+    "ended_at": "2026-01-17T04:04:11.705Z",
+    "duration_minutes": 6745
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-opus-4-5-20251101",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 493,
+    "total_tokens": 73607,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [
+      {
+        "path": "llm-absence-judgement/.env",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/section4-consistency-notes.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results/literature/literature-discovery-summary.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/scripts/fetch-zotero-collections.py",
+        "type": "code",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/text-revisions/section4-draft-reorganised.tex",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/text-revisions/section5-draft-reorganised.tex",
+        "type": "other",
+        "description": ""
+      }
+    ],
+    "modified": [
+      {
+        "path": "llm-absence-judgement/.gitignore",
+        "type": "other",
+        "description": ""
+      }
+    ],
+    "referenced": [
+      {
+        "path": "README.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/README.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/absence-judgement.tex",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/handoff-to-claude-code.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/working-notes-section4-clean.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/evidence-review-workflow.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/key-quantitative-findings.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/session-handover.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/unverified-events-review.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/verification-todo.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/brian-5-may.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/brian-8-may-dh.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-brian/openai_2025-02-11_67aae9c0_20250211-DeepResearch-o1pro-Internet Archaeology first run.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-brian/openai_2025-02-13_67ad330e_20250213-DR-o3-fail-Internet Archaeology Tool List.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-brian/openai_2025-02-13_67ad3bc3_20250213-DR-o3-IA issues 1-67.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-brian/openai_2025-02-20_67b692f0_20250219-o3minihigh-JOAD issue iteration.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-brian/openai_2025-02-20_67b6961c_JOSS Archaeology Tools Search.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-brian/openai_2025-03-16_67d5f6c9_20250316-4_5-ai paper part 2.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-brian/openai_2025-05-07_681b0d5b_20250507 - 4_5 - Abs Judge - v3.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-chatgpt-shawn/2025-02-23_tool-research-guidelines.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-02-11_9f9e1308_Exploring the Limitations of Large Language Models.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-02-12_a2dbfde0_AI_s Limitations in Academic Research.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-03-12_73234e75_Comprehensive Research Prompt for Digital Humanities Landsca.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-04-05_a2a8e2e6_Cooperative AI Tools for Humanities Research.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-04-21_79175ca1_Theoretical Framework for Judging Research Validity.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-01_56821f46_Methodology for Autoethnographic Study of AI Research Tools.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-01_5b75f7c3_DR-v7-FAIMS.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-07_d3e14107_20250507 - AbsJud - Section 4 Questions.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-08_c1198781_Comprehensive Digital Humanities Research for 2025.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-24_197e49ea_Evaluating Operator_s Technoscholastic Tendencies in Digital.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-24_a224367f_Hi Opus_ Here are your notes t___.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-31_57ff5121_AbsJud - Sect 4 - Google.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-brian/2025-05-31_ee463650_AI Research Limitations Study.json",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/saved-chats/extracted-claude-shawn/2025-05-30_research-software-tools-in-archaeology.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-discovery-granular.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-discovery-summary.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results/literature/literature-review-errors.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results/literature/source-manual.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results/tools/tool-discovery-granular.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results/tools/tool-discovery-summary.csv",
+        "type": "data",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 606,
+    "human_messages": 606,
+    "assistant_messages": 1261,
+    "thinking_blocks": 493,
+    "tool_calls": {
+      "total": 511,
+      "by_type": {
+        "Bash": 153,
+        "Glob": 29,
+        "Read": 137,
+        "Grep": 64,
+        "Task": 2,
+        "Write": 9,
+        "ExitPlanMode": 3,
+        "Edit": 101,
+        "TodoWrite": 13
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 2661115,
+      "by_type": {
+        "Bash": {
+          "count": 153,
+          "bytes": 109436
+        },
+        "Glob": {
+          "count": 29,
+          "bytes": 57718
+        },
+        "Read": {
+          "count": 137,
+          "bytes": 2065829
+        },
+        "Grep": {
+          "count": 64,
+          "bytes": 322797
+        },
+        "Task": {
+          "count": 2,
+          "bytes": 21186
+        },
+        "Write": {
+          "count": 9,
+          "bytes": 3213
+        },
+        "ExitPlanMode": {
+          "count": 3,
+          "bytes": 10956
+        },
+        "Edit": {
+          "count": 101,
+          "bytes": 67900
+        },
+        "TodoWrite": {
+          "count": 13,
+          "bytes": 2080
+        }
+      },
+      "largest_single_output_bytes": 124168
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "9777ca9aef3ecbef7a82769d3a7ae40660f232215098e947f1394bba25af78d2",
+    "jsonl_bytes": 12393623,
+    "archived_at": "2026-02-03T20:01:40.590905",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 2281600,
+    "jsonl_bytes_uncompressed": 12393623,
+    "jsonl_sha256_uncompressed": "492c6be0df5274dd3922fd125d9236bfffca965d0978b71b72a676289d2a827e"
+  },
+  "_relationship_hints": {
+    "continues_hint": null,
+    "references_hints": [
+      "62a82c2a-aed3-4ed5-961e-ee582eb3df41"
+    ],
+    "detection_notes": [
+      "Found session ID reference: 62a82c2a-aed3-4ed5-961e-ee582eb3df41",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "agent-cf270ac0",
+    "started_at": "2025-12-13T20:08:33.492Z",
+    "ended_at": "2025-12-13T20:08:33.492Z",
+    "duration_minutes": 0
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-haiku-4-5-20251001",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 0,
+    "total_tokens": 0,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [],
+    "modified": [],
+    "referenced": []
+  },
+  "statistics": {
+    "turns": 0,
+    "human_messages": 0,
+    "assistant_messages": 1,
+    "thinking_blocks": 0,
+    "tool_calls": {
+      "total": 0,
+      "by_type": {}
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 0,
+      "by_type": {},
+      "largest_single_output_bytes": 0
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "f9347ba62797f5bd0e505e38472db1b5a13d10f3cc23a079fcb79de19b2149c0",
+    "jsonl_bytes": 1619,
+    "archived_at": "2026-02-03T20:01:39.188354",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 980,
+    "jsonl_bytes_uncompressed": 1619,
+    "jsonl_sha256_uncompressed": "4d2376f843a8acc152236c14f659a8b919505e0cf020baa4a06742714f55c3d6"
+  }
+}

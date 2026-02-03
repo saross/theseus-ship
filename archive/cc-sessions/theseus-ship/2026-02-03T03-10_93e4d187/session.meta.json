@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "93e4d187-81b6-4327-9a9a-b0053b5366ea",
+    "started_at": "2026-02-03T03:10:42.906Z",
+    "ended_at": "2026-02-03T06:58:07.072Z",
+    "duration_minutes": 227
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-opus-4-5-20251101",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 29,
+    "total_tokens": 6700,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [],
+    "modified": [],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement/.gitignore",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/section4-consistency-notes.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/section4-reorganisation-plan.md",
+        "type": "document",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 112,
+    "human_messages": 112,
+    "assistant_messages": 177,
+    "thinking_blocks": 29,
+    "tool_calls": {
+      "total": 106,
+      "by_type": {
+        "Bash": 50,
+        "Read": 20,
+        "Glob": 2,
+        "Task": 9,
+        "AskUserQuestion": 4,
+        "Write": 2,
+        "ExitPlanMode": 5,
+        "Edit": 14
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 276879,
+      "by_type": {
+        "Bash": {
+          "count": 50,
+          "bytes": 48806
+        },
+        "Read": {
+          "count": 20,
+          "bytes": 152575
+        },
+        "Glob": {
+          "count": 2,
+          "bytes": 1442
+        },
+        "Task": {
+          "count": 9,
+          "bytes": 51731
+        },
+        "AskUserQuestion": {
+          "count": 4,
+          "bytes": 3302
+        },
+        "Write": {
+          "count": 2,
+          "bytes": 15094
+        },
+        "ExitPlanMode": {
+          "count": 4,
+          "bytes": 2133
+        },
+        "Edit": {
+          "count": 14,
+          "bytes": 1796
+        }
+      },
+      "largest_single_output_bytes": 16205
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "621d1a9827369e3f035d2f7f1e3b704674d9803ff68fbbbaa6750eb0f067091b",
+    "jsonl_bytes": 3191866,
+    "archived_at": "2026-02-03T20:01:46.895587",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 390145,
+    "jsonl_bytes_uncompressed": 3191866,
+    "jsonl_sha256_uncompressed": "42fdbf47080d9d137fe7658be3b2926907b05a2659f72fd6c64556d8cab360af"
+  },
+  "_relationship_hints": {
+    "continues_hint": null,
+    "references_hints": [
+      "93e4d187-81b6-4327-9a9a-b0053b5366ea"
+    ],
+    "detection_notes": [
+      "Found continuation language: 'last\\s+session'",
+      "Found session ID reference: 93e4d187-81b6-4327-9a9a-b0053b5366ea",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'last\\s+session'"
+    ]
+  }
+}

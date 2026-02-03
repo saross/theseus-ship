@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "7e5ad75f-3a61-44f1-9ec2-9b7fca1481bb",
+    "started_at": "2025-12-21T04:16:09.622Z",
+    "ended_at": "2025-12-21T08:56:08.781Z",
+    "duration_minutes": 279
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-opus-4-5-20251101",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 135,
+    "total_tokens": 19048,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [
+      {
+        "path": "llm-absence-judgement/planning/granularity-review.md",
+        "type": "document",
+        "description": ""
+      }
+    ],
+    "modified": [
+      {
+        "path": "llm-absence-judgement/planning/session-handover.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/user-manual-review-log.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-discovery-granular.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-discovery-summary.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-evidence-granular.csv",
+        "type": "data",
+        "description": ""
+      }
+    ],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement/planning/chat-evidence-review-working-notes.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/unverified-events-review.md",
+        "type": "document",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 227,
+    "human_messages": 227,
+    "assistant_messages": 396,
+    "thinking_blocks": 135,
+    "tool_calls": {
+      "total": 213,
+      "by_type": {
+        "Read": 27,
+        "TodoWrite": 12,
+        "Grep": 46,
+        "Glob": 2,
+        "Bash": 77,
+        "Edit": 48,
+        "Write": 1
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 708009,
+      "by_type": {
+        "Read": {
+          "count": 27,
+          "bytes": 295457
+        },
+        "TodoWrite": {
+          "count": 12,
+          "bytes": 1920
+        },
+        "Grep": {
+          "count": 46,
+          "bytes": 88759
+        },
+        "Glob": {
+          "count": 2,
+          "bytes": 1945
+        },
+        "Bash": {
+          "count": 77,
+          "bytes": 142589
+        },
+        "Edit": {
+          "count": 48,
+          "bytes": 177227
+        },
+        "Write": {
+          "count": 1,
+          "bytes": 112
+        }
+      },
+      "largest_single_output_bytes": 57111
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "0c5ec64e4b9f691c8165d6be4c4b960f71577aa9ccb8b24ce955579ea0473602",
+    "jsonl_bytes": 15956117,
+    "archived_at": "2026-02-03T20:01:44.301579",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 4208774,
+    "jsonl_bytes_uncompressed": 15956117,
+    "jsonl_sha256_uncompressed": "78b92631e5c380c8bd2de6063125f0eff4928b28deae52693a1a5985e2678cab"
+  },
+  "_relationship_hints": {
+    "continues_hint": null,
+    "references_hints": [],
+    "detection_notes": [
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'"
+    ]
+  }
+}

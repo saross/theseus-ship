@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "agent-ad020ee",
+    "started_at": "2025-12-18T00:30:09.505Z",
+    "ended_at": "2025-12-18T00:31:14.070Z",
+    "duration_minutes": 1
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-haiku-4-5-20251001",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 0,
+    "total_tokens": 0,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [],
+    "modified": [],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/.gitignore",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/grimoire/README.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/handover-to-CC/DOCUMENT_RELATIONSHIP_GUIDE.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/handover-to-CC/FILE_MANIFEST.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/handover-to-CC/HANDOFF_TO_CLAUDE_CODE_clean.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/handover-to-CC/PROJECT_DATA_MANIFEST.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/session-handover.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/verification-todo.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/prompts-library-tools/system-prompts/writingStyleGuide.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/readme.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/scripts/parse_chatgpt_export.py",
+        "type": "code",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/scripts/parse_claude_export.py",
+        "type": "code",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 25,
+    "human_messages": 25,
+    "assistant_messages": 32,
+    "thinking_blocks": 0,
+    "tool_calls": {
+      "total": 24,
+      "by_type": {
+        "Glob": 3,
+        "Bash": 8,
+        "Read": 13
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 115237,
+      "by_type": {
+        "Glob": {
+          "count": 3,
+          "bytes": 26706
+        },
+        "Bash": {
+          "count": 8,
+          "bytes": 16309
+        },
+        "Read": {
+          "count": 13,
+          "bytes": 72222
+        }
+      },
+      "largest_single_output_bytes": 20468
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "5dbf75b5d93c5bd78d4ee730a6aea23cf41f3a991d5fa1eb592616f41fc7c182",
+    "jsonl_bytes": 282668,
+    "archived_at": "2026-02-03T20:01:39.307194",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 46676,
+    "jsonl_bytes_uncompressed": 282668,
+    "jsonl_sha256_uncompressed": "5ef0ba78fbc6470b764da81b570eead3ed3f71d4a4d7a275400a655e63828112"
+  }
+}

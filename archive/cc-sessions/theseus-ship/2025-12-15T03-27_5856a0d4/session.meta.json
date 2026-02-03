@@ -1,0 +1,421 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "5856a0d4-f1c0-408c-957d-23d7a99f7b79",
+    "started_at": "2025-12-15T03:27:54.650Z",
+    "ended_at": "2025-12-21T01:15:19.261Z",
+    "duration_minutes": 8507
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-opus-4-5-20251101",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 1444,
+    "total_tokens": 145928,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [
+      {
+        "path": "llm-absence-judgement/README.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/grimoire/evidence-review-prompt.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/evidence-review-workflow.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/methodological-decisions.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/tools-for-later-investigation.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/preliminary-work/evidence/chats/INDEX.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/prompts-library-tools/README.md",
+        "type": "document",
+        "description": ""
+      }
+    ],
+    "modified": [
+      {
+        "path": "llm-absence-judgement/docs/handover/disambiguation-failures-analysis-v2.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/failure-analysis-v2.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/file-manifest.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/handoff-to-claude-code.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/project-data-manifest.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/success-analysis-comprehensive.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/tool-discovery-readme.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/tool_verification_status_final.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/docs/handover/working-notes-section4-clean.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/grimoire/README.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/key-quantitative-findings.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/session-handover.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/unverified-events-review.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/user-manual-review-log.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/verification-todo.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/README.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-evidence-granular.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/verification-status-legend.md",
+        "type": "document",
+        "description": ""
+      }
+    ],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement/bibliography/21_Beardah_Baxter_CAA_1995.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/bibliography/41_McAuley_Kilfeather_CAA_2005.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/bibliography/81-1-2135-1-10-20220303.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/bibliography/Journal of Ecology - 2020 - Woodbridge - What drives biodiversity patterns  Using long\u2010term multidisciplinary data to.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/bibliography/PHN-2012-September1.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/bibliography/Pelagios \u2013 Connecting Histories of Place. Part I_ Methods and Tools.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/bibliography/Woodbridge_et_al_PEARL.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/bibliography/teaching-for-data-reuse-and-working-toward-digital-literacy-in-archaeology.pdf",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/grimoire/human-in-the-loop-review.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/chat-evidence-review-working-notes.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/02-tool-metadata.xlsx",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool_discovery_granular.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool_discovery_summary.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/scripts/find_missing_conversations.py",
+        "type": "code",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 2697,
+    "human_messages": 2697,
+    "assistant_messages": 4656,
+    "thinking_blocks": 1444,
+    "tool_calls": {
+      "total": 2508,
+      "by_type": {
+        "Glob": 20,
+        "Read": 109,
+        "Bash": 616,
+        "WebFetch": 921,
+        "WebSearch": 500,
+        "Edit": 157,
+        "TodoWrite": 114,
+        "Task": 3,
+        "Write": 8,
+        "AskUserQuestion": 1,
+        "ExitPlanMode": 1,
+        "Grep": 55,
+        "Skill": 2,
+        "mcp__ide__executeCode": 1
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 4993652,
+      "by_type": {
+        "Glob": {
+          "count": 20,
+          "bytes": 5385
+        },
+        "Read": {
+          "count": 109,
+          "bytes": 1362362
+        },
+        "Bash": {
+          "count": 616,
+          "bytes": 895911
+        },
+        "WebFetch": {
+          "count": 921,
+          "bytes": 409286
+        },
+        "WebSearch": {
+          "count": 500,
+          "bytes": 1810628
+        },
+        "Edit": {
+          "count": 157,
+          "bytes": 244044
+        },
+        "TodoWrite": {
+          "count": 114,
+          "bytes": 18240
+        },
+        "Task": {
+          "count": 3,
+          "bytes": 33334
+        },
+        "Write": {
+          "count": 8,
+          "bytes": 890
+        },
+        "AskUserQuestion": {
+          "count": 1,
+          "bytes": 527
+        },
+        "ExitPlanMode": {
+          "count": 1,
+          "bytes": 9974
+        },
+        "Grep": {
+          "count": 55,
+          "bytes": 202969
+        },
+        "Skill": {
+          "count": 2,
+          "bytes": 42
+        },
+        "mcp__ide__executeCode": {
+          "count": 1,
+          "bytes": 60
+        }
+      },
+      "largest_single_output_bytes": 87181
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "25e3beb18d797062d48c45432dad2066c8527c1401a7a0699fb4a200754c4f0f",
+    "jsonl_bytes": 86102149,
+    "archived_at": "2026-02-03T20:01:46.811817",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 42945573,
+    "jsonl_bytes_uncompressed": 86102149,
+    "jsonl_sha256_uncompressed": "625a40d9c428810e83e3bbd4455efe2f46c58a121a5a4fdf3e7693a6a32cff2e"
+  },
+  "_relationship_hints": {
+    "continues_hint": null,
+    "references_hints": [],
+    "detection_notes": [
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'",
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'",
+      "Found continuation language: 'previous\\s+session'"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "agent-a8c42d6",
+    "started_at": "2025-12-18T00:30:09.503Z",
+    "ended_at": "2025-12-18T00:31:03.941Z",
+    "duration_minutes": 0
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-haiku-4-5-20251001",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 0,
+    "total_tokens": 0,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [],
+    "modified": [],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement/grimoire/README.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/readme.md",
+        "type": "document",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 21,
+    "human_messages": 21,
+    "assistant_messages": 27,
+    "thinking_blocks": 0,
+    "tool_calls": {
+      "total": 20,
+      "by_type": {
+        "Bash": 18,
+        "Read": 2
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 30542,
+      "by_type": {
+        "Bash": {
+          "count": 18,
+          "bytes": 25727
+        },
+        "Read": {
+          "count": 2,
+          "bytes": 4815
+        }
+      },
+      "largest_single_output_bytes": 3878
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "fd41549e2161467c1bd4fe58ee51ba5e36c5e3f7ee6c460b28f7da070a954f29",
+    "jsonl_bytes": 112722,
+    "archived_at": "2026-02-03T20:01:39.291043",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 14834,
+    "jsonl_bytes_uncompressed": 112722,
+    "jsonl_sha256_uncompressed": "ec9d54b327b37ff6da783ffb4d77ef67df338f6f271a2a2a5486daade74aa211"
+  }
+}

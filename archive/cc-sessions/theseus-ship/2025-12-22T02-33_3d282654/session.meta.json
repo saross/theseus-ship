@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "3d282654-265b-4b1e-b182-6adb580c0dfb",
+    "started_at": "2025-12-22T02:33:35.753Z",
+    "ended_at": "2025-12-23T07:24:22.050Z",
+    "duration_minutes": 1730
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-opus-4-5-20251101",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 110,
+    "total_tokens": 12364,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [],
+    "modified": [
+      {
+        "path": "llm-absence-judgement/planning/chat-evidence-review-working-notes.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/planning/unverified-events-review.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-discovery-granular.csv",
+        "type": "data",
+        "description": ""
+      }
+    ],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement/data/01a-tool-discovery.xlsx",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/data/tool-discovery-granular.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/data/tool-discovery-summary.csv",
+        "type": "data",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/grimoire/evidence-review-prompt.md",
+        "type": "document",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/01a-tool-discovery.xlsx",
+        "type": "other",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/results-tools/tool-discovery-summary.csv",
+        "type": "data",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 130,
+    "human_messages": 130,
+    "assistant_messages": 276,
+    "thinking_blocks": 110,
+    "tool_calls": {
+      "total": 113,
+      "by_type": {
+        "Glob": 9,
+        "Read": 15,
+        "Edit": 7,
+        "Bash": 65,
+        "TodoWrite": 9,
+        "WebFetch": 1,
+        "WebSearch": 2,
+        "Grep": 5
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 377430,
+      "by_type": {
+        "Glob": {
+          "count": 9,
+          "bytes": 1446
+        },
+        "Read": {
+          "count": 15,
+          "bytes": 190694
+        },
+        "Edit": {
+          "count": 7,
+          "bytes": 17239
+        },
+        "Bash": {
+          "count": 65,
+          "bytes": 132999
+        },
+        "TodoWrite": {
+          "count": 9,
+          "bytes": 1440
+        },
+        "WebFetch": {
+          "count": 1,
+          "bytes": 410
+        },
+        "WebSearch": {
+          "count": 2,
+          "bytes": 8987
+        },
+        "Grep": {
+          "count": 5,
+          "bytes": 24215
+        }
+      },
+      "largest_single_output_bytes": 78732
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "57faca8442b88750d5c51e50918aa5f00c398f407d00cd1fac4c36251d7df79e",
+    "jsonl_bytes": 1856594,
+    "archived_at": "2026-02-03T20:01:43.789471",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 415589,
+    "jsonl_bytes_uncompressed": 1856594,
+    "jsonl_sha256_uncompressed": "d6955543b19632c22c4e478a41dabd83f1b31cc7ba2581a6484a85710884a148"
+  },
+  "_relationship_hints": {
+    "continues_hint": null,
+    "references_hints": [],
+    "detection_notes": [
+      "Found continuation language: 'continu(?:e|ing|ed)\\s+from'"
+    ]
+  }
+}

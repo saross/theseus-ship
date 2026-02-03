@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.1",
+  "session": {
+    "id": "agent-aa4fb38",
+    "started_at": "2025-12-18T00:30:09.506Z",
+    "ended_at": "2025-12-18T00:30:46.498Z",
+    "duration_minutes": 0
+  },
+  "project": {
+    "name": "theseus-ship",
+    "directory": "/home/shawn/Code/theseus-ship"
+  },
+  "model": {
+    "provider": "anthropic",
+    "model_id": "claude-haiku-4-5-20251001",
+    "access_method": "claude-code-cli"
+  },
+  "thinking_blocks": {
+    "included": true,
+    "count": 0,
+    "total_tokens": 0,
+    "token_count_method": "estimated",
+    "sharing_preference": "research-only",
+    "use_constraints": [
+      "analysis-for-improvement",
+      "research-publication-aggregated"
+    ],
+    "excluded_uses": [
+      "training-data",
+      "public-display-individual"
+    ],
+    "nature_note": "Work-in-progress reasoning traces, not polished output. May contain abandoned paths and self-corrections."
+  },
+  "relationships": {
+    "continues": null,
+    "continuedBy": null,
+    "isPartOf": [
+      "theseus-ship"
+    ],
+    "isParallelTo": [],
+    "supersedes": null,
+    "references": [],
+    "branchesFrom": null
+  },
+  "artifacts": {
+    "created": [],
+    "modified": [],
+    "referenced": [
+      {
+        "path": "llm-absence-judgement/scripts/find_missing_conversations.py",
+        "type": "code",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/scripts/parse_chatgpt_export.py",
+        "type": "code",
+        "description": ""
+      },
+      {
+        "path": "llm-absence-judgement/scripts/parse_claude_export.py",
+        "type": "code",
+        "description": ""
+      }
+    ]
+  },
+  "statistics": {
+    "turns": 13,
+    "human_messages": 13,
+    "assistant_messages": 18,
+    "thinking_blocks": 0,
+    "tool_calls": {
+      "total": 12,
+      "by_type": {
+        "Glob": 1,
+        "Bash": 5,
+        "Read": 3,
+        "mcp__ide__getDiagnostics": 3
+      }
+    },
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+    },
+    "estimated_cost_usd": 0.0,
+    "tool_outputs": {
+      "total_bytes": 71044,
+      "by_type": {
+        "Glob": {
+          "count": 1,
+          "bytes": 12140
+        },
+        "Bash": {
+          "count": 5,
+          "bytes": 2567
+        },
+        "Read": {
+          "count": 3,
+          "bytes": 55801
+        },
+        "mcp__ide__getDiagnostics": {
+          "count": 3,
+          "bytes": 536
+        }
+      },
+      "largest_single_output_bytes": 23761
+    }
+  },
+  "auto_generated": {
+    "title": "Untitled Session",
+    "purpose": "No description provided",
+    "tags": []
+  },
+  "three_ps": {
+    "prompt_summary": "",
+    "process_summary": "",
+    "provenance_summary": ""
+  },
+  "archive": {
+    "jsonl_path": "session.jsonl.gz",
+    "jsonl_sha256": "008a6c38dab38bfaec8df4752435c2a02b13843427c09dfe68308bb29a32f104",
+    "jsonl_bytes": 169836,
+    "archived_at": "2026-02-03T20:01:39.282784",
+    "jsonl_compression": "gzip",
+    "jsonl_bytes_compressed": 27534,
+    "jsonl_bytes_uncompressed": 169836,
+    "jsonl_sha256_uncompressed": "51baac9c1156803f194aba851ad2d04e1d3b01bc586c28b3e01688af0d228b7d"
+  }
+}
